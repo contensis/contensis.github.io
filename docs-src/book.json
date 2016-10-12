@@ -1,0 +1,15 @@
+{
+  "title": "Contensis 9 Documentation",
+  "description": null,
+  "links": {
+    "sharing": {
+        "all": false,
+        "facebook": false,
+        "twitter": false
+    },
+    "sidebar": {
+        "Contensis": "http://zengenti.com/en-gb/products/contensis/contensis.aspx"
+    }
+  },
+  "plugins": ["toggle-chapters"]
+}

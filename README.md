@@ -7,7 +7,7 @@ The following repository contains two gitbook projects where draft documentation
 This folder contains the source documentation that makes up the User documentation
 
 ### docs
-This folder contains the compiled GitBook for the **User documentation** and is avaliable as a GitHub pages [project site](http://https://contensis.github.io/docs/index.html)
+This folder contains the compiled GitBook for the **User documentation** and is avaliable as a GitHub pages [project site](https://contensis.github.io/docs/index.html)
 
 
 ## API Documentation
@@ -16,4 +16,4 @@ This folder contains the compiled GitBook for the **User documentation** and is 
 This folder contains the source documentation that makes up the API documentation
 
 ### api
-This folder contains the compiled GitBook for the **API documentation** and is avaliable as a GitHub pages [project site](http://https://contensis.github.io/api/index.html)
+This folder contains the compiled GitBook for the **API documentation** and is avaliable as a GitHub pages [project site](https://contensis.github.io/api/index.html)

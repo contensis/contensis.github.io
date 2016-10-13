@@ -10,6 +10,5 @@
     "sidebar": {
         "Contensis": "http://zengenti.com/en-gb/products/contensis/contensis.aspx"
     }
-  },
-  "plugins": ["toggle-chapters"]
+  }
 }

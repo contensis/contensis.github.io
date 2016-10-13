@@ -72,4 +72,4 @@ When you are writing documentation, its helpful to see it in the context of the 
   ```
 4. Navigate to the localhost location specified in the output in your favorite browser and you should see a site similar to the screenshot below
 
-![GitBook Example](contensis.github.io/help/gitbook-example.png)
+![GitBook Example](/help/gitbook-example.png)

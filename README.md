@@ -73,3 +73,38 @@ When you are writing documentation, its helpful to see it in the context of the 
 4. Navigate to the localhost location specified in the output in your favorite browser and you should see a site similar to the screenshot below
 
 ![GitBook Example](/help/gitbook-example.png)
+
+
+### Build the static site
+Whilst serving a local copy of the book allows you to see what your working on we need to create a production version of the site to be served by GitHub pages.
+
+1. Use the terminal and navigate to the root of your contensis.github.io repository
+2. Running the following commands for the particular documentation will create a build that can be committed with your changes.
+
+  **User Docs**
+  ```
+  $ gitbook build docs-src docs
+  ```
+
+  **API Docs**
+  ```
+  $ gitbook build api-src api
+  ```
+
+3. You'll see a similar output as below
+
+    ```
+    info: 8 plugins are installed
+    info: 7 explicitly listed
+    info: loading plugin "toggle-chapters"... OK
+    info: loading plugin "highlight"... OK
+    info: loading plugin "search"... OK
+    info: loading plugin "lunr"... OK
+    info: loading plugin "sharing"... OK
+    info: loading plugin "fontsettings"... OK
+    info: loading plugin "theme-default"... OK
+    info: found 8 pages
+    info: found 1 asset files
+    info: >> generation finished with success in 3.1s !
+    ```
+4. Any pages that you have added or amended can now be committed alongside the static site.

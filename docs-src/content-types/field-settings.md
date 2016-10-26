@@ -7,3 +7,5 @@ The first text field added to the content type will be set as the display field,
 
 The display field is used in listings, the entry reference field editor and through the API to identify entries.
 
+## Format
+## Default value

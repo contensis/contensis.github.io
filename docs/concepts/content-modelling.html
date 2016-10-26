@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Projects · Contensis 9 Documentation</title>
+        <title>Content Modelling · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="create.html" />
+    <link rel="next" href="../content-types/" />
     
     
-    <link rel="prev" href="../entries/" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -118,9 +118,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../concepts/">
+        <li class="chapter " data-level="2.1" data-path="./">
             
-                <a href="../concepts/">
+                <a href="./">
             
                     
                     Concepts
@@ -132,9 +132,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../concepts/content-modelling.html">
+        <li class="chapter active" data-level="2.1.1" data-path="content-modelling.html">
             
-                <a href="../concepts/content-modelling.html">
+                <a href="content-modelling.html">
             
                     
                     Content Modelling
@@ -176,9 +176,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.4" data-path="./">
+        <li class="chapter " data-level="2.4" data-path="../projects/">
             
-                <a href="./">
+                <a href="../projects/">
             
                     
                     Projects
@@ -190,9 +190,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.4.1" data-path="create.html">
+        <li class="chapter " data-level="2.4.1" data-path="../projects/create.html">
             
-                <a href="create.html">
+                <a href="../projects/create.html">
             
                     
                     Create
@@ -203,9 +203,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.2" data-path="delete.html">
+        <li class="chapter " data-level="2.4.2" data-path="../projects/delete.html">
             
-                <a href="delete.html">
+                <a href="../projects/delete.html">
             
                     
                     Delete
@@ -216,9 +216,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4.3" data-path="update.html">
+        <li class="chapter " data-level="2.4.3" data-path="../projects/update.html">
             
-                <a href="update.html">
+                <a href="../projects/update.html">
             
                     
                     Update
@@ -297,7 +297,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Projects</a>
+        <a href=".." >Content Modelling</a>
     </h1>
 </div>
 
@@ -312,13 +312,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="projects">Projects</h1><p>You can easily manage projects within Contensis</p><ul><li><a href="create.html">Create a project</a>
-</li>
-<li><a href="delete.html">Delete a project</a>
-</li>
-<li><a href="update.html">Update a project</a>
-</li></ul>
-
+                                <h1 id="content-modelling">Content Modelling</h1><p>You define content models in Contensis by creating content types  against a project. Content modelling is restricted to the content types in a given project although you can access content types against multiple projects through our APIs.</p><h2 id="content-types">Content types</h2><p>A content type describes a type of content broken down into chunks.</p><blockquote><p><em>e.g.</em> A &#x2018;Film&#x2019; content type could contain the following chunks. Title, Film Poster, Length/Run Time, Budget, Overview, Director and cast members.</p></blockquote><p>You create a content type using our content type builder or you can programmatically create a content type defined in JSON using our Management API.</p><p>Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of <a href="">field types</a> are supported.</p><p>A field has a name, a data type and a set of additional properties such as validation, editor types and editorial guidelines.</p><p>Content types can be linked together using entry reference fields to aid the building of rich content models and relationships.</p><blockquote><p><em>e.g.</em> Linking a film to a list of cast members located in a content type of people.</p></blockquote><h2 id="entries">Entries</h2><p>Each item of content created from a content type is referred to as an entry. An entry contains the structured chunks of content defined by the content type.</p><p>In our film content type example, an entry would represent a single film containing its title, artwork, release date, overview text and other field values. Additional films can be added by creating new entries.</p><h2 id="summary">Summary</h2><p>These two core concepts allow rich content models to be defined and used in your website or application and form the basis of content modelling in Contensis.</p>
                                 
                                 </section>
                             
@@ -345,12 +339,12 @@
 
             
                 
-                <a href="../entries/" class="navigation navigation-prev " aria-label="Previous page: Entries">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Concepts">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="create.html" class="navigation navigation-next " aria-label="Next page: Create">
+                <a href="../content-types/" class="navigation navigation-next " aria-label="Next page: Content Types">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -361,7 +355,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Projects","level":"2.4","depth":1,"next":{"title":"Create","level":"2.4.1","depth":2,"path":"projects/create.md","ref":"projects/create.md","articles":[]},"previous":{"title":"Entries","level":"2.3","depth":1,"path":"entries/README.md","ref":"entries/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"projects/README.md","mtime":"2016-10-13T14:52:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-26T12:12:53.095Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Content Modelling","level":"2.1.1","depth":2,"next":{"title":"Content Types","level":"2.2","depth":1,"path":"content-types/README.md","ref":"content-types/README.md","articles":[]},"previous":{"title":"Concepts","level":"2.1","depth":1,"path":"concepts/README.md","ref":"concepts/README.md","articles":[{"title":"Content Modelling","level":"2.1.1","depth":2,"path":"concepts/content-modelling.md","ref":"concepts/content-modelling.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"concepts/content-modelling.md","mtime":"2016-10-26T12:08:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-26T12:12:53.095Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

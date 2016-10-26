@@ -4,6 +4,7 @@
 
 ## Core Themes
 * [Concepts](/concepts/README.md)
+	* [Content Modelling](/concepts/content-modelling.md)
 * [Content Types](/content-types/README.md)
 * [Entries](/entries/README.md)
 * [Projects](/projects/README.md)

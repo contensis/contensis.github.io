@@ -1,6 +1,5 @@
 # Adding fields to a content type
-A content type is made up of a number of fields. This allows us to break up large blobs of content into smaller chunks, making content more flexible and reusable.
-
+A content type is made up of a number of fields. Fields allow us to break up large blobs of content into smaller chunks, making content more flexible and reusable.
 
 ## Adding a field
 Adding fields to a content type is easy. With the content type open for editing:
@@ -15,10 +14,26 @@ Give the field a name that clearly identifies its content. The field name is use
 
 The field name will also be visible to an author when they are creating an entry.
 
-> **Note:** Once a content type has been saved its not possible to change the generate field ID. If you want to change the name you'll need to do so before saving. 
+> **Note:** Once a content type has been saved its not possible to change the generate field ID. If you want to change the name you'll need to do so before saving.
+
+Read through our [field settings](/content-types/field-settings.md) article to get a better understanding of each setting.
+
+## Adding a field with a name previously used [^1]
+
+
+
 
 ## Reordering fields in a content type
-You can change the order of fields in a content type by using the up and down buttons displayed against a field. Simply press the up or down arrow buttons to change the buttons order.
+You can change the order of fields in a content type by using the up and down buttons displayed against a field. Simply press the up or down arrow buttons to change the field order.
 
+#### Footnotes
 
+----
+
+[^1]
+**Scenario:** Re add field with the same name
+- **Given** I have a content type
+- **and** the content type has entries
+- **When** I re add a field that previously existed
+- **Then** what happens to the historical data associated with the field?
 

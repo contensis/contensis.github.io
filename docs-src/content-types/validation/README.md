@@ -2,9 +2,9 @@
 
 Using validation rules against your content type fields will ensure your content model meets your organisational needs and bring consistency to your content.
 
-Content type fields vary in the content that they are storing. The validations available will also vary depending on the field
+Content type fields store different types of data. The validation available for each type will vary.
 
-The following table outlines the available validations and fields that are supported.
+The following table outlines the available validations and field types that are supported.
 
 | Validation| Supported Fields |
 | --- | --- |

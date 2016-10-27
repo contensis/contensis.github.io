@@ -6,10 +6,6 @@ To remove a field from a content type:
 
 
 
-
-
-
-
 ## Footnotes:
 
 **Scenario:** Remove a field from content type

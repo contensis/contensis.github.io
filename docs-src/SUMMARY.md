@@ -12,10 +12,9 @@
 	* [Adding fields to a content type](/content-types/adding-fields-to-a-content-type.md)
 	* [Removing fields from a content type](/content-types/removing-fields-from-a-content-type.md)
 	* [Delete a content type](/content-types/delete-a-content-type.md)
-
-* [Field Settings](/content-types/field-settings.md)
-	* [Display field](/content-types/field-settings/display-field.md)
-
+	* [Field settings](/content-types/field-settings.md)
+	* [Versioning](/content-types/versioning.md)
+	* [Workflow state](/content-types/workflow-state.md)
 * [Validation](/content-types/validation/README.md)
 	* [Required](/content-types/validation/required-validation.md)
 	* [Regular expression](/content-types/validation/regex-validation.md)

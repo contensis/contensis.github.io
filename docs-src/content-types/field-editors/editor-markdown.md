@@ -1,4 +1,4 @@
-# Markdown Editor
+# Markdown field editor
 The Markdown Editor provides the user the ability to write blocks of text using the markdown syntax.
 
 ## Settings

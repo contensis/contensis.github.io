@@ -1,4 +1,4 @@
-# Entry Reference
+# Entry reference field editor
 
 ## Multiple
 

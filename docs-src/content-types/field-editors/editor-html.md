@@ -1,4 +1,4 @@
-# HTML Editor
+# HTML field editor
 The HTML Editor provides the user the ability to create blocks of rich text including Headings, Lists, Bold, Italic as well as links.
 
 ## Settings

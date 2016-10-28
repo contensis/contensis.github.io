@@ -1,4 +1,4 @@
-# Image
+# Image field editor
 
 ## Multiple
 ## Help instructions

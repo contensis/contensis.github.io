@@ -1,4 +1,4 @@
-# Text Field Editor
+# Text field editor
 Text fields are used to store any text content. This editor is the most commonly used field editor due to the variety of content it can contain. 
 
 ## Settings

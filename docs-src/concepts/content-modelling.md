@@ -1,4 +1,4 @@
-# Content Modelling
+# Content modelling
 
 You define content models in Contensis by creating content types  against a project. Content modelling is restricted to the content types in a given project although you can access content types against multiple projects through our APIs.
 

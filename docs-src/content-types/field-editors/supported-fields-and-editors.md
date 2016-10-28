@@ -1,7 +1,7 @@
 # Supported fields and editors
 A field may support multiple editors, it depends on the format selected on the field to what editors are available. The tables below outline the supported editors.
 
-## Multi Editor Support
+## Multi editor support
 Each of the following field types have support for different editors depending on the format selected. In some instances, some formats have multiple editors if there are various ways to capture the data. 
 
 > *e.g.* Date / Time field has an editor that simply captures the date or one that will capture date and time.
@@ -39,7 +39,7 @@ Each of the following field types have support for different editors depending o
 | Range    | Date Range          |
 | Range    | Date / Time Range   |
 
-## Single Editor Support
+## Single editor support
 Each of the following field types have support for one editor type.
 
 | Field Type      | Editor              |

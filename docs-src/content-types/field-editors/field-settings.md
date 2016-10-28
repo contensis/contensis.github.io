@@ -1,4 +1,4 @@
-# Field Settings
+# Field settings
 
 ## Name
 The name property describes the field content. The name entered here will be displayed to an author when creating an entry. Its used to identify the chunk of content.

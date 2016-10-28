@@ -16,10 +16,10 @@ You can use the custom option in the validation dropdown to create your own. Usi
 
 > **Note:** Expressions need to be written in the Javascript syntax to be valid.
 
-### Predefined Regular Expressions
+### Predefined regular expressions
 We've included some predefined expressions covering some standard scenarios. 
 
-#### Website Address
+#### Website address
 
 	/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/g
 
@@ -29,7 +29,7 @@ We've included some predefined expressions covering some standard scenarios.
 | https://zenhub.zengenti.com | name@example |
 | http://zengenti.com/en-gb/products/contensis/contensis.aspx | notawebsite.com |
 
-#### Email Address
+#### Email address
 
 	^(?:(?:[\w`~!#$%^&*\-=+;:{}'|,?\/]+(?:(?:\.(?:"(?:\\?[\w`~!#$%^&*\-=+;:{}'|,?\/\.()<>\[\] @]|\\"|\\\\)*"|[\w`~!#$%^&*\-=+;:{}'|,?\/]+))*\.[\w`~!#$%^&*\-=+;:{}'|,?\/]+)?)|(?:"(?:\\?[\w`~!#$%^&*\-=+;:{}'|,?\/\.()<>\[\] @]|\\"|\\\\)+"))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$
 

@@ -10,7 +10,7 @@ The quote field editor is an editor that allows you to record quotes and a sourc
 ## Supported validation
 This field editor supported the following validation methods.
 
-- [Required Field](/content-types/validation/required-validation.md)
+- [Required field](/content-types/validation/required-validation.md)
 
 ## Properties
 
@@ -18,7 +18,7 @@ This field editor supported the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder text for the quote |
-| [Help Instructions](/content-types/field-editors/field-properties.md#help-instructions) | A sanitised name to be used by the API. |
+| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  provides guidance to an author of the expected content that the field should contain. |
 
 ### Source placeholder text
 The [placeholder](/content-types/field-editors/field-properties.md#placeholder-text) text for the source citation.

@@ -10,14 +10,14 @@ The Markdown Editor provides the user the ability to write blocks of text using 
 ## Supported validation
 This field editor supported the following validation methods.
 
-- [Required Field](/content-types/validation/required-validation.md)
+- [Required field](/content-types/validation/required-validation.md)
 
 ## Properties
 
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Help Instructions](/content-types/field-editors/field-properties.md#help-instructions) | A sanitised name to be used by the API. |
+| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
 | [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to *Medium*. |
   
 ### Show toolbar

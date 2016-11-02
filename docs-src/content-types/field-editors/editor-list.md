@@ -1,5 +1,7 @@
-# List Editor
+# List field editor
+The list field editor will display a list of items for an author to select from that are set in the list values properties text box.
 
+The type of list displayed will depend on if multiple selection is allowed. Single selection lists are served by a radio button list [^1], checkbox lists are used when multiple selection is set.
 
 ## Settings
 | Setting name | Summary|
@@ -21,7 +23,18 @@ This field editor supported the following validation methods.
 | [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### List values
-### Validation message
+This property expects a comma separated list of values that are to be displayed in the list. 
+
+> *e.g.* Red, Blue, Green, Orange, Purple 
+
+### Validation message 
+Why is this here? [^2]
+
+#### Footnotes:
+
+---
+[^1]: Should we not just use a drop down menu?
+[^2]: This field seems to have an unnecessary validation message in the editor properties
 
 
 

@@ -1,5 +1,7 @@
 # Image field editor
+This field editor allows an author to make single or multiple selections of images that have been uploaded to Contensis.
 
+Selection is made in an images gallery. Single or multiple selection of images is determined by the allow multiple field setting.
 
 ## Settings
 | Setting name | Summary|
@@ -22,6 +24,8 @@ This field editor supported the following validation methods.
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 | [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
 
-### Requires captions
-default no
+### Requires caption
+The caption requirement forces an author to include a caption for each image they have selected in the field editor.
+
 ### Validation message
+An optional validation message can be entered to inform an author why the caption is required.

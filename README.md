@@ -1,6 +1,6 @@
 # Draft Documentation
 
-The following repository contains two gitbook projects where draft documentation can be written for a release.
+The following repository contains two gitbook projects where draft documentation can be written for a release, its based on [GitBook Toolchain](https://toolchain.gitbook.com/) toolset.
 
 ## User Documentation
 ### docs-src

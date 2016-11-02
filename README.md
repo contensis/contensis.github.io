@@ -1,6 +1,6 @@
 # Draft Documentation
 
-The following repository contains two gitbook projects where draft documentation can be written for a release.
+The following repository contains two gitbook projects where draft documentation can be written for a release, its based on [GitBook Toolchain](https://toolchain.gitbook.com/) toolset.
 
 ## User Documentation
 ### docs-src
@@ -11,6 +11,7 @@ This folder contains the compiled GitBook for the **User documentation** and is 
 
 
 ## API Documentation
+The API docs uses the [API theme](https://github.com/GitbookIO/theme-api) for GitBooks and has its own configutation options. 
 
 ### api-src
 This folder contains the source documentation that makes up the API documentation

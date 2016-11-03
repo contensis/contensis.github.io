@@ -1,11 +1,26 @@
 {
-   "plugins":[
-      "theme-api"
-   ],
-   "pluginsConfig":{
-      "theme-api":{
-          "theme":"dark",
-          "split": true
-      }
-   }
+    "plugins": [
+        "theme-api"
+    ],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark",
+            "split": true,
+            "languages": [
+                {
+                    "lang": "cs",
+                    "name": "C#",
+                    "default": true
+                },
+                {
+                    "lang": "js",
+                    "name": "JavaScript"
+                },
+                {
+                    "lang": "http",
+                    "name": "HTTP"
+                }
+            ]
+        }
+    }
 }

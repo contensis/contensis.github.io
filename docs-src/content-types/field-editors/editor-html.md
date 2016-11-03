@@ -1,6 +1,8 @@
 # HTML field editor
 The HTML Editor provides the user the ability to create blocks of rich text including Headings, Lists, Bold, Italic as well as links.
 
+The editor is powered by the Redactor editor. We automatically strip out any invalid HTML, including removing all `<span>` tags, empty tags, and style attributes.
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

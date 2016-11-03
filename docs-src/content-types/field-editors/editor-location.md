@@ -1,4 +1,7 @@
-# Location Editor
+# Location field editor
+The location field editor enables an author to provide an accurate location within an entry. A location can be set using the search which is powered by Google places, alternatively by navigating around using the map.
+
+Finer adjustments to location can be set by dragging the map pin  to an exact position or alternatively entering latitude / longitude values in to the editor.
 
 ## Settings
 | Setting name | Summary|
@@ -19,15 +22,14 @@ This field editor supported the following validation methods.
 | [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
 | [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to Medium. |
 
+### Show latitude and longitude
+Its possible to enter exact latitude and longitude values into the entry editor, however most authors will want to use the search or set a location by using the map.
 
+This setting determines if the latitude and longitude number fields should be present in the entry editor. 
 
-### Show latitude and longtitude
-Do you want to allow editors to enter latitude and longtitude?
+By default these fields are not displayed. 
 
-Default No
+### Show search
+If you want your authors to manually set the location by using the navigation controls then you can disable the search box from the field editor.
 
-
-### Show Search
-Do you want to allow editors to search for a location?
-
-Default yes
+The search box is on by default.

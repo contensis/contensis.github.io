@@ -634,9 +634,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../../projects/create.html">
+        <li class="chapter " data-level="7.1.1" data-path="../../projects/create.md">
             
-                <a href="../../projects/create.html">
+                <span>
             
                     
                     Create a project
@@ -647,9 +647,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.2" data-path="../../projects/delete.html">
+        <li class="chapter " data-level="7.1.2" data-path="../../projects/delete.md">
             
-                <a href="../../projects/delete.html">
+                <span>
             
                     
                     Delete a project
@@ -660,9 +660,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../../projects/update.html">
+        <li class="chapter " data-level="7.1.3" data-path="../../projects/update.md">
             
-                <a href="../../projects/update.html">
+                <span>
             
                     
                     Update an existing project
@@ -756,10 +756,22 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="date--date-time">Date / Date Time</h1><h2 id="field-editors">Field Editors</h2><p>Date
-Date / Time
-Date Range
-Date Time Range</p><h2 id="settings">Settings</h2><table>
+                                <h1 id="datetime-field-editors">Date/time field editors</h1><p>The date / time field editors have four distinct flavours, providing the flexibility to capture the data you require.</p><table>
+<thead>
+<tr><th>Type</th>
+<th>Summary</th>
+</tr></thead><tbody>
+<tr><td>Date</td>
+<td>A single date picker</td>
+</tr><tr><td>Date and time</td>
+<td>A date and time picker</td>
+</tr><tr><td>Date range</td>
+<td>Two date pickers to provide a range</td>
+</tr><tr><td>Date and time range</td>
+<td>Two date and time pickers to provide a range</td>
+</tr></tbody></table>
+
+<p>The date range editors become available when the format of a Date / Time field are set to range.</p><blockquote><p><strong>Note:</strong> we do not support time without a date as we store date and times as UTC. While there may be some use cases for time on its own we recommend you use a text field with a regular expression for validation.</p></blockquote><h2 id="settings">Settings</h2><table>
 <thead>
 <tr><th>Setting name</th>
 <th>Summary</th>
@@ -780,12 +792,15 @@ Date Time Range</p><h2 id="settings">Settings</h2><table>
 <th>Summary</th>
 </tr></thead><tbody>
 <tr><td><a href="field-properties.html#placeholder-text">Placeholder text</a></td>
-<td>The placeholder property specifies a short hint that describes the expected value of a field.</td>
+<td>The placeholder property specifies a short hint that describes the expected value of a field. <sup><a href="#fn_1" id="reffn_1">1</a></sup></td>
 </tr><tr><td><a href="field-properties.html#help-instructions">Help instructions</a></td>
 <td>Provides guidance to an author of the expected content that the field should contain.</td>
 </tr></tbody></table>
 
-<h3 id="future-dates">Future dates</h3><p>Do you want to allow an editor to select dates in the future</p><p>Default yes</p><h3 id="past-dates">Past dates</h3><p>Do you want to allow an editor to select dates in the past</p><p>Default yes</p>
+<h3 id="future-dates">Future dates</h3><p>This property sets if you want an author to be able to select a date in the future <em>e.g.</em> a date greater than today. This is enabled by default.</p><h3 id="past-dates">Past dates</h3><p>This property sets if you want an author to be able to select a dates in the past <em>e.g.</em> a date less than today. This is enabled by default.</p><h4 id="footnotes">Footnotes</h4><hr><blockquote id="fn_1">
+<sup>1</sup>. Should we provide placeholder text / labelling for date ranges<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -828,7 +843,7 @@ Date Time Range</p><h2 id="settings">Settings</h2><table>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Date / Date Time","level":"5.1.17","depth":2,"next":{"title":"Asset","level":"5.1.18","depth":2,"path":"content-types/field-editors/editor-asset.md","ref":"content-types/field-editors/editor-asset.md","articles":[]},"previous":{"title":"Composer","level":"5.1.16","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-date-datetime.md","mtime":"2016-10-28T15:52:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-28T15:54:42.513Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Date / Date Time","level":"5.1.17","depth":2,"next":{"title":"Asset","level":"5.1.18","depth":2,"path":"content-types/field-editors/editor-asset.md","ref":"content-types/field-editors/editor-asset.md","articles":[]},"previous":{"title":"Composer","level":"5.1.16","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-date-datetime.md","mtime":"2016-11-02T15:19:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-02T15:20:26.647Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,10 +1,16 @@
-# Date / Date Time
+# Date/time field editors
+The date / time field editors have four distinct flavours, providing the flexibility to capture the data you require.
 
-## Field Editors
-Date
-Date / Time
-Date Range
-Date Time Range
+| Type | Summary|
+| ---| --- |
+| Date | A single date picker |
+| Date and time | A date and time picker |
+| Date range | Two date pickers to provide a range |
+| Date and time range | Two date and time pickers to provide a range |
+
+The date range editors become available when the format of a Date / Time field are set to range.
+
+> **Note:** we do not support time without a date as we store date and times as UTC. While there may be some use cases for time on its own we recommend you use a text field with a regular expression for validation.
 
 ## Settings
 | Setting name | Summary|
@@ -24,15 +30,18 @@ This field editor supported the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. [^1]|
 | [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Future dates
-Do you want to allow an editor to select dates in the future
-
-Default yes
+This property sets if you want an author to be able to select a date in the future *e.g.* a date greater than today. This is enabled by default.
 
 ### Past dates
-Do you want to allow an editor to select dates in the past
+This property sets if you want an author to be able to select a dates in the past *e.g.* a date less than today. This is enabled by default.
 
-Default yes
+
+#### Footnotes
+
+---
+
+[^1]: Should we provide placeholder text / labelling for date ranges

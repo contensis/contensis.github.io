@@ -19,6 +19,10 @@
                 {
                     "lang": "http",
                     "name": "HTTP"
+                },
+                {
+                    "lang": "json",
+                    "name": "JSON"
                 }
             ]
         }

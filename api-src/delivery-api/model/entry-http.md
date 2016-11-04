@@ -1,6 +1,6 @@
 # Overview
 
-A full [overview of Entries can be found here [TODO]]()
+A full [overview of entries can be found here [TODO]]()
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
@@ -44,11 +44,11 @@ This json shows an example Entry based on a Film Content Type:
         "overview": "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark force…",
         "meta": {},
         "version": {
-            "createdBy": "k.dodd",
+            "createdBy": "s.derrickson",
             "created": "2016-10-12T09:29:18.5144641+01:00",
-            "modifiedBy": "k.dodd",
+            "modifiedBy": "b.cumberbatch",
             "modified": "2016-10-13T10:15:12.1973648+01:00",
-            "publishedBy": "k.dodd",
+            "publishedBy": "b.cumberbatch",
             "published": "2016-10-13T10:15:12.1973648+01:00",
             "versionNo": "2.0"
         }

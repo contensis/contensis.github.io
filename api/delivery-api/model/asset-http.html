@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Entry Data · GitBook</title>
+        <title>Asset - HTTP · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../accessing-entries/entry-get.html" />
+    <link rel="next" href="asset-cs.html" />
     
     
-    <link rel="prev" href="entry.html" />
+    <link rel="prev" href="entry-cs.html" />
     
 
     </head>
@@ -146,12 +146,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="entry.html">
+        <li class="chapter " data-level="3.1" data-path="entry-http.html">
             
-                <a href="entry.html">
+                <a href="entry-http.html">
             
                     
-                    Entry
+                    Entry - HTTP
             
                 </a>
             
@@ -159,12 +159,51 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.2" data-path="entry-data.html">
+        <li class="chapter " data-level="3.2" data-path="entry-cs.html">
             
-                <a href="entry-data.html">
+                <a href="entry-cs.html">
             
                     
-                    Entry Data
+                    Entry - C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="asset-http.html">
+            
+                <a href="asset-http.html">
+            
+                    
+                    Asset - HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="asset-cs.html">
+            
+                <a href="asset-cs.html">
+            
+                    
+                    Asset - C#
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="entry-methods-cs.html">
+            
+                <a href="entry-methods-cs.html">
+            
+                    
+                    Entry Methods - C#
             
                 </a>
             
@@ -288,7 +327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Entry Data</a>
+        <a href="../.." >Asset - HTTP</a>
     </h1>
 </div>
 
@@ -304,23 +343,80 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="overview">Overview</h1>
-<p>Accessing field data from an Entry is simple with only two methods</p>
-<div class="api-method"><div class="api-method-definition"><p>sdcsdc</p>
-</div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><p>sdcsdc</p>
-<pre><code class="lang-cs">
+<p>Assets are effectively an extension of entries, with additional properties containing details about the file they represent. An asset is an entry with a dataFormat value equal to &apos;asset&apos;, which allows them to be identified and queried independently to entries.</p>
+<h2 id="standard-fields">Standard Fields</h2>
+<p>All assets have the following standard entry fields</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>The title of the asset</td>
+</tr>
+<tr>
+<td>description</td>
+<td>The description for the asset</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>A readonly collection of asset specific fields</td>
+</tr>
+</tbody>
+</table>
+<h2 id="default-properties">Default Properties</h2>
+<p>All assets have the following default readonly properties</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filename</td>
+<td>The name of the actual file, with extension included</td>
+</tr>
+<tr>
+<td>fileSize</td>
+<td>The file size in bytes</td>
+</tr>
+<tr>
+<td>extension</td>
+<td>The file extension</td>
+</tr>
+<tr>
+<td>fieldId</td>
+<td>The GUID identifier of the file resource</td>
+</tr>
+<tr>
+<td>uri</td>
+<td>The URI path to the file, excluding the domain</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extended-properties">Extended Properties</h2>
+<h3 id="images">Images</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>The name of the actual file, with extension included</td>
+</tr>
+</tbody>
+</table>
 
-</code></pre>
-<p>sdc</p>
-</div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><p>erferferf</p>
-<pre><code class="lang-js"><span class="hljs-comment">// TODO</span>
-</code></pre>
-</div><div class="api-method-sample" data-lang="http" data-name="HTTP"><p>HTTP eeee</p>
-<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/projects
-
-<span class="clojure">{
-}
-</span></code></pre>
-</div></div></div>
                                 
                                 </section>
                             
@@ -353,7 +449,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Entry Data","level":"3.2","depth":1,"next":{"title":"Get","level":"4.1","depth":1,"path":"delivery-api/accessing-entries/entry-get.md","ref":"delivery-api/accessing-entries/entry-get.md","articles":[]},"previous":{"title":"Entry","level":"3.1","depth":1,"path":"delivery-api/model/entry.md","ref":"delivery-api/model/entry.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"cs","name":"C#","default":true},{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/entry-data.md","mtime":"2016-11-02T17:01:15.284Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-03T16:55:10.785Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Asset - HTTP","level":"3.3","depth":1,"next":{"title":"Asset - C#","level":"3.4","depth":1,"path":"delivery-api/model/asset-cs.md","ref":"delivery-api/model/asset-cs.md","articles":[]},"previous":{"title":"Entry - C#","level":"3.2","depth":1,"path":"delivery-api/model/entry-cs.md","ref":"delivery-api/model/entry-cs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"cs","name":"C#","default":true},{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/asset-http.md","mtime":"2016-11-04T10:37:19.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-04T15:23:46.164Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

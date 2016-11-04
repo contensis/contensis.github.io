@@ -1,10 +1,14 @@
 # Overview
 
-Entries purpose and [full overview can be found here]("#")
+A full [overview of entries can be found here [TODO]]()
 
-[NEED TO TALK ABOUT ENTRY VARIATIONS]
+An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
-## Properties
+## Standard Properties
+
+These are the standard properties that all entries have. The languageCode property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
+
+### Entry
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
@@ -16,10 +20,21 @@ Entries purpose and [full overview can be found here]("#")
 | Version | VersionInfo | Version information for the Entry | 
 | MetaData | MetaData | MetaData associated with the Entry instance | 
 
+### VersionInfo
+
+| Property | Type | Description |
+| :------- | :--- | :---------- |
+| Created | DateTime | The date the entry was created |
+| CreatedBy | string | The user id of who created the entry |
+| Modified | DateTime | The date the entry version was last modified |
+| ModifiedBy | string | The user id of who last modified the entry |
+| Published | DateTime | The date the entry version was last published |
+| PublishedBy | string | The user id of who last published the entry |
+
 ## Methods
 
 | Method | Returns | Description |
 | :----- | :------ | :-----------|
-| Get(string fieldName) | dynamic | Gets a field item by name and returns a dynamic object |
-| Get`<Type>`(string fieldName) | Type | Gets a field item by name and attempts to cast to the specified generic type |
-| HasValue(string fieldName) | bool | A helper function to determine whether a field exists of has a value |
+| [Get(string fieldName)](./entry-methods-cs.html#get) | dynamic | Gets a field item by name and returns a dynamic object |
+| [Get`<Type>`(string fieldName)](./entry-methods-cs.html#gett) | Type | Gets a field item by name and attempts to cast to the specified generic type |
+| [HasValue(string fieldName)](./entry-methods-cs.html#hasvalue) | bool | A helper function to determine whether a field exists of has a value |

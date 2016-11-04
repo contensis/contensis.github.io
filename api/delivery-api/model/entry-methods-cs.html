@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>List · GitBook</title>
+        <title>Entry Methods - C# · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="entry-search.html" />
+    <link rel="next" href="../accessing-entries/entry-get.html" />
     
     
-    <link rel="prev" href="entry-get.html" />
+    <link rel="prev" href="asset-cs.html" />
     
 
     </head>
@@ -146,9 +146,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../model/entry-http.html">
+        <li class="chapter " data-level="3.1" data-path="entry-http.html">
             
-                <a href="../model/entry-http.html">
+                <a href="entry-http.html">
             
                     
                     Entry - HTTP
@@ -159,9 +159,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../model/entry-cs.html">
+        <li class="chapter " data-level="3.2" data-path="entry-cs.html">
             
-                <a href="../model/entry-cs.html">
+                <a href="entry-cs.html">
             
                     
                     Entry - C#
@@ -172,9 +172,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../model/asset-http.html">
+        <li class="chapter " data-level="3.3" data-path="asset-http.html">
             
-                <a href="../model/asset-http.html">
+                <a href="asset-http.html">
             
                     
                     Asset - HTTP
@@ -185,9 +185,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../model/asset-cs.html">
+        <li class="chapter " data-level="3.4" data-path="asset-cs.html">
             
-                <a href="../model/asset-cs.html">
+                <a href="asset-cs.html">
             
                     
                     Asset - C#
@@ -198,9 +198,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="../model/entry-methods-cs.html">
+        <li class="chapter active" data-level="3.5" data-path="entry-methods-cs.html">
             
-                <a href="../model/entry-methods-cs.html">
+                <a href="entry-methods-cs.html">
             
                     
                     Entry Methods - C#
@@ -218,9 +218,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="entry-get.html">
+        <li class="chapter " data-level="4.1" data-path="../accessing-entries/entry-get.html">
             
-                <a href="entry-get.html">
+                <a href="../accessing-entries/entry-get.html">
             
                     
                     Get
@@ -231,9 +231,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.2" data-path="entries-list.html">
+        <li class="chapter " data-level="4.2" data-path="../accessing-entries/entries-list.html">
             
-                <a href="entries-list.html">
+                <a href="../accessing-entries/entries-list.html">
             
                     
                     List
@@ -244,9 +244,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="entry-search.html">
+        <li class="chapter " data-level="4.3" data-path="../accessing-entries/entry-search.html">
             
-                <a href="entry-search.html">
+                <a href="../accessing-entries/entry-search.html">
             
                     
                     Search
@@ -327,7 +327,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >List</a>
+        <a href="../.." >Entry Methods - C#</a>
     </h1>
 </div>
 
@@ -342,7 +342,79 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="entry-methods">Entry Methods</h1>
+<h2 id="get">Get</h2>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">dynamic</span> <span class="hljs-title">Get</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> fieldName</span>)
+</span>{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>fieldName</em></p>
+<blockquote>
+<p>Type: string<br>The name of the requested field</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Get the title field as dynamic</span>
+<span class="hljs-keyword">dynamic</span> title = entry.Get(<span class="hljs-string">&quot;title&quot;</span>)
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="gett">Get<code>&lt;T&gt;</code></h2>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><h3 id="syntax">Syntax</h3>
+<pre><code class="lang-cs"><span class="hljs-keyword">public</span> T Get&lt;T&gt;(<span class="hljs-keyword">string</span> fieldName)
+{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>T</em></p>
+<blockquote>
+<p>The type to attempt to cast the field data to</p>
+</blockquote>
+<p><em>fieldName</em></p>
+<blockquote>
+<p>Type: string<br>The name of the requested field</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Get the title field as defined type</span>
+<span class="hljs-keyword">string</span> title = entry.Get&lt;<span class="hljs-keyword">string</span>&gt;(<span class="hljs-string">&quot;title&quot;</span>)
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="hasvalue">HasValue</h2>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><h3 id="syntax">Syntax</h3>
+<pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">HasValue</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> fieldName</span>)
+</span>{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>fieldName</em></p>
+<blockquote>
+<p>Type: string<br>The name of the field to check</p>
+</blockquote>
+<h3 id="return-value">Return Value</h3>
+<blockquote>
+<p>Type: boolean<br><strong>true</strong> if the field exists and is not null, otherwise <strong>false</strong></p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">if</span> (entry.HasValue(<span class="hljs-string">&quot;title&quot;</span>))
+{
+    <span class="hljs-comment">// Get the location field as type</span>
+    Location title = entry.Get&lt;Location&gt;(<span class="hljs-string">&quot;filmingLocation&quot;</span>)
+}
+</code></pre>
+</div></div></div>
                                 
                                 </section>
                             
@@ -375,7 +447,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"List","level":"4.2","depth":1,"next":{"title":"Search","level":"4.3","depth":1,"path":"delivery-api/accessing-entries/entry-search.md","ref":"delivery-api/accessing-entries/entry-search.md","articles":[]},"previous":{"title":"Get","level":"4.1","depth":1,"path":"delivery-api/accessing-entries/entry-get.md","ref":"delivery-api/accessing-entries/entry-get.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"cs","name":"C#","default":true},{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/entries-list.md","mtime":"2016-11-02T16:48:09.340Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-04T15:23:46.164Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Entry Methods - C#","level":"3.5","depth":1,"next":{"title":"Get","level":"4.1","depth":1,"path":"delivery-api/accessing-entries/entry-get.md","ref":"delivery-api/accessing-entries/entry-get.md","articles":[]},"previous":{"title":"Asset - C#","level":"3.4","depth":1,"path":"delivery-api/model/asset-cs.md","ref":"delivery-api/model/asset-cs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"cs","name":"C#","default":true},{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/entry-methods-cs.md","mtime":"2016-11-04T15:22:23.812Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-04T15:23:46.164Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

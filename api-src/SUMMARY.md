@@ -7,8 +7,11 @@
 
 ### Model
 
-* [Entry](/delivery-api/model/entry.md)
-* [Entry Data](/delivery-api/model/entry-data.md)
+* [Entry - HTTP](/delivery-api/model/entry-http.md)
+* [Entry - C#](/delivery-api/model/entry-cs.md)
+* [Asset - HTTP](/delivery-api/model/asset-http.md)
+* [Asset - C#](/delivery-api/model/asset-cs.md)
+* [Entry Methods - C#](/delivery-api/model/entry-methods-cs.md)
 
 ### Accessing Entries
 * [Get](/delivery-api/accessing-entries/entry-get.md)

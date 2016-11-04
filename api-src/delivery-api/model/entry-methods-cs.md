@@ -2,6 +2,8 @@
 
 ## Get
 
+Gets a field from an entry by *fieldName* and returns a dynamic object instance. 
+
 ### Syntax
 
 {% method -%}
@@ -21,6 +23,8 @@ public dynamic Get(string fieldName)
 
 ### Remarks
 
+Returns *null* if the field is not found or if the field value is null.
+
 ### Examples
 
 {% method -%}
@@ -35,10 +39,12 @@ dynamic title = entry.Get("title")
 
 ## Get`<T>`
 
-{% method -%}
-{% sample lang="cs" -%}
+Gets a field from an entry by *fieldName* and returns a typed object instance.
 
 ### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
 
 ```cs
 public T Get<T>(string fieldName)
@@ -58,6 +64,8 @@ public T Get<T>(string fieldName)
 
 ### Remarks
 
+If the API cannot successfully cast or convert the field value then it will return the default for the specified type. Requesting field values by the wrong type will __not__ result in exceptions being thrown.
+
 ### Examples
 
 {% method -%}
@@ -72,10 +80,12 @@ string title = entry.Get<string>("title")
 
 ## HasValue
 
-{% method -%}
-{% sample lang="cs" -%}
+Determines whether the field exists and the value is not null.
 
 ### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
 
 ```cs
 public bool HasValue(string fieldName)
@@ -96,6 +106,8 @@ public bool HasValue(string fieldName)
 
 
 ### Remarks
+
+If the *fieldName* is not defined in the content type that the entry is based on then it will return null.
 
 ### Examples
 

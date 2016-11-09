@@ -8,22 +8,20 @@ All assets have the following standard entry fields
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| Title | The title of the asset |
-| description | The description for the asset |
-| properties | A readonly collection of asset specific fields |
+| Title | string | The title of the asset |
+| Description | string | The description for the asset |
+| properties | PropertiesDictionary | A readonly collection of asset specific fields |
 
+## PropertiesDictionary
 
-## Default Properties
-
-All assets have the following default readonly properties
-
-| Name | Description |
-| ---- | ----------- |
-| filename | The name of the actual file, with extension included |
-| fileSize | The file size in bytes |
-| extension | The file extension |
-| fieldId | The GUID identifier of the file resource |
-| uri | The URI path to the file, excluding the domain |
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| Filename | The name of the actual file, with extension included |
+| FileSize | The file size in bytes |
+| Extension | The file extension |
+| FieldId | The GUID identifier of the file resource |
+| Uri | The URI path to the file, excluding the domain |
+| [fieldName] | string | TODO |
 
 ## Extended Properties
 

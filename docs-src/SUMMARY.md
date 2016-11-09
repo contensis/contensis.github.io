@@ -10,12 +10,12 @@
 
 * [Viewing content types](/content-types/viewing-content-types.md)
 * [Create a content type](/content-types/create-a-content-type.md)
-* [Update a content type](/content-types/update-a-content-type.md)
 * [Adding fields to a content type](/content-types/adding-fields-to-a-content-type.md)
 * [Removing fields from a content type](/content-types/removing-fields-from-a-content-type.md)
+* [Update a content type](/content-types/update-a-content-type.md)
 * [Delete a content type](/content-types/delete-a-content-type.md)
 * [Versioning](/content-types/versioning.md)
-* [Workflow state](/content-types/workflow-state.md)
+* [Workflow states](/content-types/workflow-states.md)
 
 ### Validation
 
@@ -53,13 +53,19 @@
 ## Entries
 
 * [Overview](/entries/README.md)
+* [Viewing entries](/entries/viewing-entries.md)
+* [Create an entry](/entries/create-an-entry.md)
+* [Update an entry](/entries/update-an-entry.md)
+* [Delete an entry](/entries/delete-an-entry.md)
+* [Workflow states](/entries/workflow-states.md)
+* [Entry versioning](/entries/entry-versioning.md)
 
 ## Projects
 
 * [Overview](/projects/README.md)
-  * [Create a project](/projects/create.md)
-  * [Delete a project](/projects/delete.md)
-  * [Update an existing project](/projects/update.md)
+  * [Create a project](/projects/create-a-project.md)
+  * [Delete a project](/projects/delete-a-project.md)
+  * [Update an existing project](/projects/update-a-project.md)
 
 
 ## API Documentation

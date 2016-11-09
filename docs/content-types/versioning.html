@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="workflow-state.html" />
+    <link rel="next" href="workflow-states.html" />
     
     
     <link rel="prev" href="delete-a-content-type.html" />
@@ -164,20 +164,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="update-a-content-type.html">
-            
-                <a href="update-a-content-type.html">
-            
-                    
-                    Update a content type
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.4" data-path="adding-fields-to-a-content-type.html">
+        <li class="chapter " data-level="3.3" data-path="adding-fields-to-a-content-type.html">
             
                 <a href="adding-fields-to-a-content-type.html">
             
@@ -190,12 +177,25 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="removing-fields-from-a-content-type.html">
+        <li class="chapter " data-level="3.4" data-path="removing-fields-from-a-content-type.html">
             
                 <a href="removing-fields-from-a-content-type.html">
             
                     
                     Removing fields from a content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="update-a-content-type.html">
+            
+                <a href="update-a-content-type.html">
+            
+                    
+                    Update a content type
             
                 </a>
             
@@ -229,12 +229,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.8" data-path="workflow-state.html">
+        <li class="chapter " data-level="3.8" data-path="workflow-states.html">
             
-                <a href="workflow-state.html">
+                <a href="workflow-states.html">
             
                     
-                    Workflow state
+                    Workflow states
             
                 </a>
             
@@ -613,6 +613,84 @@
             
         </li>
     
+        <li class="chapter " data-level="6.2" data-path="../entries/viewing-entries.html">
+            
+                <a href="../entries/viewing-entries.html">
+            
+                    
+                    Viewing entries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../entries/create-an-entry.html">
+            
+                <a href="../entries/create-an-entry.html">
+            
+                    
+                    Create an entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../entries/update-an-entry.html">
+            
+                <a href="../entries/update-an-entry.html">
+            
+                    
+                    Update an entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../entries/delete-an-entry.html">
+            
+                <a href="../entries/delete-an-entry.html">
+            
+                    
+                    Delete an entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../entries/workflow-states.html">
+            
+                <a href="../entries/workflow-states.html">
+            
+                    
+                    Workflow states
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../entries/entry-versioning.html">
+            
+                <a href="../entries/entry-versioning.html">
+            
+                    
+                    Entry versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -634,9 +712,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1.1" data-path="../projects/create.md">
+        <li class="chapter " data-level="7.1.1" data-path="../projects/create-a-project.html">
             
-                <span>
+                <a href="../projects/create-a-project.html">
             
                     
                     Create a project
@@ -647,9 +725,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.2" data-path="../projects/delete.md">
+        <li class="chapter " data-level="7.1.2" data-path="../projects/delete-a-project.html">
             
-                <span>
+                <a href="../projects/delete-a-project.html">
             
                     
                     Delete a project
@@ -660,9 +738,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.1.3" data-path="../projects/update.md">
+        <li class="chapter " data-level="7.1.3" data-path="../projects/update-a-project.html">
             
-                <span>
+                <a href="../projects/update-a-project.html">
             
                     
                     Update an existing project
@@ -756,7 +834,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="versioning">Versioning</h1><p>All changes to a content type are recorded in version history. Its version number will depend on the workflow set that the content type is in. When a content type is first created its version is 0.1.</p><blockquote><p><strong>Note:</strong> in Contensis 9 its not possible to revert a content type to a previous version, however we are saving the changes about a content type to be used in a future release.</p></blockquote><h2 id="saving-a-content-type">Saving a content type</h2><p>Each time a change is made to a content type and saved the minor version number is incremented and the changes are recorded in a diff.</p><blockquote><p><em>e.g.</em> Adding a field to a newly created content type and pressing save would increment the version number from 0.1 to 0.2.</p></blockquote><h3 id="no-changes-made">No changes made</h3><p>When a content type has not changed since its last save, any subsequent presses of the save button will no affect the version number. <sup><a href="#fn_1" id="reffn_1">1</a></sup></p><h2 id="publishing-a-content-type">Publishing a content type</h2><p>When a content type is ready for publishing, pressing the publish button in the content type builder will change the major  version number against the content type.</p><blockquote><p><em>e.g.</em> Having added all my fields to my newly created content type and saved it. Pressing publish increments the version number from 0.2 to 1.0 and moves the workflow state of the content type to publish.<sup><a href="#fn_2" id="reffn_2">2</a></sup></p></blockquote><h4 id="footnotes">Footnotes:</h4><hr><blockquote id="fn_1">
+                                <h1 id="versioning">Versioning</h1><p>All changes to a content type are recorded in version history. It&apos;s version number will depend on the workflow state that the content type is in. When a content type is first created its version is 0.1.</p><blockquote><p><strong>Note:</strong> in Contensis 9 its not possible to revert a content type to a previous version, however we are saving the changes about a content type to be used in a future release.</p></blockquote><h2 id="saving-a-content-type">Saving a content type</h2><p>Each time a change is made to a content type and saved the minor version number is incremented and the changes are recorded in a diff.</p><blockquote><p><em>e.g.</em> Adding a field to a newly created content type and pressing save would increment the version number from 0.1 to 0.2.</p></blockquote><h3 id="no-changes-made">No changes made</h3><p>When a content type has not changed since its last save, any subsequent presses of the save button will no affect the version number. <sup><a href="#fn_1" id="reffn_1">1</a></sup></p><h2 id="publishing-a-content-type">Publishing a content type</h2><p>When a content type is ready for publishing, pressing the publish button in the content type builder will change the major  version number against the content type.</p><blockquote><p><em>e.g.</em> Having added all my fields to my newly created content type and saved it. Pressing publish increments the version number from 0.2 to 1.0 and moves the workflow state of the content type to publish.<sup><a href="#fn_2" id="reffn_2">2</a></sup></p></blockquote><h4 id="footnotes">Footnotes:</h4><hr><blockquote id="fn_1">
 <sup>1</sup>. Should we disable the save button when no changes have been made?<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
 </blockquote>
 <blockquote id="fn_2">
@@ -794,7 +872,7 @@
                 </a>
                 
                 
-                <a href="workflow-state.html" class="navigation navigation-next " aria-label="Next page: Workflow state">
+                <a href="workflow-states.html" class="navigation navigation-next " aria-label="Next page: Workflow states">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -805,7 +883,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Versioning","level":"3.7","depth":1,"next":{"title":"Workflow state","level":"3.8","depth":1,"path":"content-types/workflow-state.md","ref":"content-types/workflow-state.md","articles":[]},"previous":{"title":"Delete a content type","level":"3.6","depth":1,"path":"content-types/delete-a-content-type.md","ref":"content-types/delete-a-content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/versioning.md","mtime":"2016-10-27T15:44:39.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-02T15:20:26.647Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Versioning","level":"3.7","depth":1,"next":{"title":"Workflow states","level":"3.8","depth":1,"path":"content-types/workflow-states.md","ref":"content-types/workflow-states.md","articles":[]},"previous":{"title":"Delete a content type","level":"3.6","depth":1,"path":"content-types/delete-a-content-type.md","ref":"content-types/delete-a-content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/versioning.md","mtime":"2016-11-09T13:39:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-09T14:28:05.765Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -22,6 +22,7 @@ These are the standard properties that all entries have. The languageCode proper
 | [languageCode].version.modifiedBy | string | The user id of who last modified the entry |
 | [languageCode].version.published | string | The date the entry version was last published |
 | [languageCode].version.publishedBy | string | The user id of who last published the entry |
+| [languageCode].VersionNo | string | The version of the entry | 
 | [languageCode].metadata | object | Metadata associated with the Entry instance | 
 
 

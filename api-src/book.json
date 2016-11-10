@@ -5,13 +5,8 @@
     "pluginsConfig": {
         "theme-api": {
             "theme": "dark",
-            "split": true,
+            "split": false,
             "languages": [
-                {
-                    "lang": "cs",
-                    "name": "C#",
-                    "default": true
-                },
                 {
                     "lang": "js",
                     "name": "JavaScript"
@@ -23,6 +18,11 @@
                 {
                     "lang": "json",
                     "name": "JSON"
+                },
+                {
+                    "lang": "cs",
+                    "name": "C#",
+                    "default": true
                 }
             ]
         }

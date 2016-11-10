@@ -17,19 +17,8 @@ These are the standard properties that all entries have. The languageCode proper
 | ProjectId | string | The API identifer of the project the entry belongs to |
 | DataFormat | string | Either 'entry' or 'asset' |
 | LanguageCode | string | The language of the Entry instance |
-| Version | VersionInfo | Version information for the Entry | 
+| Version | [VersionInfo](versioninfo.md) | Version information for the Entry | 
 | MetaData | MetaData | MetaData associated with the Entry instance | 
-
-### VersionInfo
-
-| Property | Type | Description |
-| :------- | :--- | :---------- |
-| Created | DateTime | The date the entry was created |
-| CreatedBy | string | The user id of who created the entry |
-| Modified | DateTime | The date the entry version was last modified |
-| ModifiedBy | string | The user id of who last modified the entry |
-| Published | DateTime | The date the entry version was last published |
-| PublishedBy | string | The user id of who last published the entry |
 
 ## Methods
 

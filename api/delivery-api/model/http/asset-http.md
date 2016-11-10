@@ -32,3 +32,8 @@ All assets have the following default readonly properties
 | Name | Description |
 | ---- | ----------- |
 | width | The name of the actual file, with extension included |
+| height | The height of the image |
+| altText | The default alt text defined for the image resource |
+| caption | The default caption defined for the image resource |
+
+<br /><br />

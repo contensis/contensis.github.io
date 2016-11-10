@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>API Instantiation · GitBook</title>
+        <title>Getting Started · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -63,10 +63,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="model/http/entry-http.html" />
+    <link rel="next" href="api-instantiation.html" />
     
     
-    <link rel="prev" href="getting-started.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -141,7 +141,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="getting-started.html">
+        <li class="chapter active" data-level="2.2" data-path="getting-started.html">
             
                 <a href="getting-started.html">
             
@@ -154,7 +154,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.3" data-path="api-instantiation.html">
+        <li class="chapter " data-level="2.3" data-path="api-instantiation.html">
             
                 <a href="api-instantiation.html">
             
@@ -461,7 +461,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >API Instantiation</a>
+        <a href=".." >Getting Started</a>
     </h1>
 </div>
 
@@ -476,46 +476,122 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="api-instantiation">API Instantiation</h1>
-<h2 id="default-configuration">Default Configuration</h2>
-<p>Default configuration can be set once on the application startup which will be effective for all ContensisClient instantiations, negating the need to provide configuration values each and every time the API is used. On the startup of a Contensis website, the configuration code is set to reflect the context of the publishing server, ensuring that the correct service url, project API id, project default language and delivery context (preview or live) are set. </p>
-<p>Additionally the security properties are set, which simplifies the usage of the API. The client id and shared secret are obtained from the API key management screen. This is then used to call the security service to obtain a claims-based bearer token and to validate that the user can access resources from the service. The list of scopes define what you would like your client to be able to do (<a href="">see the scopes section for more information</a>).</p>
-<p>This same approach can be used in non-Contensis based frameworks such as ASP.NET MVC or the Nancy framework.</p>
-<div class="api-method"><div class="api-method-definition"><h5 id="api-initialisation">API Initialisation</h5>
-</div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">var</span> defaultConfiguration = <span class="hljs-keyword">new</span> ContensisClientConfiguration(
-    rootUrl: <span class="hljs-string">&quot;http://cms.contensis.com&quot;</span>,
-    projectApiId: <span class="hljs-string">&quot;myProject&quot;</span>,
-    defaultLanguageCode: <span class="hljs-string">&quot;fr-fr&quot;</span>, <span class="hljs-comment">// default: en-GB</span>
-    deliveryContext: DeliveryContext.Preview, <span class="hljs-comment">// default: Live</span>
-    clientId: <span class="hljs-string">&quot;651465e0-2fb8-4b0f-aa2f-1ab34cfe0513&quot;</span>,
-    sharedSecret: <span class="hljs-string">&quot;2327d623-d44e-41ef-a837-717a626f4b75-098348eb-b0a6-4023-a64a-805536024dfb-1a558c9c-49dc-4709-9e8b-c203f60fda80&quot;</span>,
-    scopes: Scopes.All.ToList() <span class="hljs-comment">// default: All</span>
-);
+                                <h1 id="getting-started">Getting Started</h1>
+<p>In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the <a href="">Delivery API</a>. Throughout the documentation we use examples based on our sample MoviesDB project.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul>
+<li>You have an understanding of creating content in the Navigation Tree</li>
+<li>You know how to create and edit Webpages and Razor Views</li>
+</ul>
+<h2 id="create-a-new-project">Create a new Project</h2>
+<p><a href="">Projects</a> are the home for all your content in Contensis. Create a new project called MoviesDB <sup><a href="#fn_1" id="reffn_1">1</a></sup> using the default values for assets and languages.</p>
+<h2 id="create-a-content-type">Create a Content Type</h2>
+<p>You can <a href="">create a new Content Type</a> easily in the Content Type editors in the Contensis UI. Create a content type called <em>Film</em> with the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>API ID</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>name</td>
+<td>Text</td>
+<td>The name of the film</td>
+</tr>
+<tr>
+<td>Synopsis</td>
+<td>synopsis</td>
+<td>Text</td>
+<td>A overview of what the film is about</td>
+</tr>
+<tr>
+<td>Year of Release</td>
+<td>yearOfRelease</td>
+<td>Number (Integer)</td>
+<td>The year the film was released</td>
+</tr>
+<tr>
+<td>Cover Image</td>
+<td>coverImage</td>
+<td>Image</td>
+<td>A reference to the cover image asset</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TODO: define all needed films</strong> </p>
+<h2 id="upload-the-film-images">Upload the Film Images</h2>
+<p>Content doesn&apos;t look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct <a href="">asset link</a> or as an <a href="">image</a>. We will be using the image type so that we can add our our captions!</p>
+<ul>
+<li><a href="">the-dark-knight.jpeg</a></li>
+<li>Image 2</li>
+<li>Image 3</li>
+<li>etc.</li>
+</ul>
+<h2 id="create-some-films">Create Some Films</h2>
+<p>Now it&apos;s time to create some content!</p>
+<p><a href="">Create entries</a> for the films using the data in the table:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Overview</th>
+<th>Year of Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Dark Knight</td>
+<td>Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.</td>
+<td>2008</td>
+</tr>
+<tr>
+<td><strong>TODO: Add more</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-a-film-listing-in-a-razor-view">Create a Film Listing in a Razor View</h2>
+<p>Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don&apos;t know how to create your own pages then read this tutorial</p>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><h3 id="syntax">Syntax</h3>
+<pre><code class="lang-cs">@<span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api.Delivery <span class="hljs-comment">// Reference the Delivery API</span>
 
-ContensisClient.Configure(defaultConfiguration);
-</code></pre>
-</div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><pre><code class="lang-js"><span class="hljs-comment">// TODO</span>
+@{
+    <span class="hljs-comment">// Create a client to allow access to the content, this will use the </span>
+    <span class="hljs-comment">// current project context</span>
+    <span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+    <span class="hljs-comment">// Get the films as a PagedList of Entries</span>
+    <span class="hljs-keyword">var</span> films = client.Entries.List(<span class="hljs-string">&quot;films&quot;</span>);
+}
+
+&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film-listing&quot;</span>&gt;
+
+@<span class="hljs-keyword">foreach</span>(<span class="hljs-keyword">var</span> film <span class="hljs-keyword">in</span> films.Items)
+{
+    &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film&quot;</span>&gt;
+        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film-name&quot;</span>&gt;@film.Get(<span class="hljs-string">&quot;name&quot;</span>)&lt;/div&gt;
+        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film-synopsis&quot;</span>&gt;
+            &lt;img src=<span class="hljs-string">&quot;@film.Get(&quot;</span>coverImage<span class="hljs-string">&quot;).Asset.Properties.Uri&quot;</span>&gt;
+        &lt;/div&gt;
+        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film-synopsis&quot;</span>&gt;@film.Get(<span class="hljs-string">&quot;synopsis&quot;</span>)&lt;/div&gt;
+        &lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">&quot;film-year-of-release&quot;</span>&gt;@film.Get(<span class="hljs-string">&quot;yearOfRelease&quot;</span>)&lt;/div&gt;
+    &lt;/div&gt;
+}
+
+&lt;/div&gt;
 </code></pre>
 </div></div></div>
 
-<h2 id="client-creation">Client Creation</h2>
-<p>All operations for the API hang off the ContentClient type, which is created using the static method ContensisClient.Create(). The Create() method allows parts of the Default configuration to be partially or completely overridden for that instance.</p>
-<div class="api-method"><div class="api-method-definition"><h5 id="creating-a-contensisclient">Creating a ContensisClient</h5>
-</div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api;
-<span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api.Delivery;
 
-<span class="hljs-comment">// Create with full configuration settings</span>
-<span class="hljs-keyword">var</span> client = ContensisClient.Create(<span class="hljs-string">&quot;projectId&quot;</span>, <span class="hljs-string">&quot;http://cms.contensis.com&quot;</span>, <span class="hljs-string">&quot;client id&quot;</span>, <span class="hljs-string">&quot;shared secret&quot;</span>, <span class="hljs-keyword">new</span>[] { Scopes.All });
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. FilmsDB or MoviesDB, Film or Movie?<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
+</blockquote>
 
-<span class="hljs-comment">// Create with default configuration</span>
-<span class="hljs-keyword">var</span> client = ContensisClient.Create();
-
-<span class="hljs-comment">// Create with default configuration, but targetting a different project</span>
-<span class="hljs-keyword">var</span> client = ContensisClient.Create(<span class="hljs-string">&quot;sharedAssets&quot;</span>);
-</code></pre>
-</div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><pre><code class="lang-js"><span class="hljs-comment">// TODO</span>
-</code></pre>
-</div></div></div>
                                 
                                 </section>
                             
@@ -548,7 +624,7 @@ ContensisClient.Configure(defaultConfiguration);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API Instantiation","level":"2.3","depth":1,"next":{"title":"Entry","level":"4.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"previous":{"title":"Getting Started","level":"2.2","depth":1,"path":"delivery-api/getting-started.md","ref":"delivery-api/getting-started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/api-instantiation.md","mtime":"2016-11-10T15:34:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-10T23:07:38.087Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"2.2","depth":1,"next":{"title":"API Instantiation","level":"2.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"previous":{"title":"Introduction","level":"2.1","depth":1,"path":"delivery-api/README.md","ref":"delivery-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/getting-started.md","mtime":"2016-11-10T16:53:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-10T23:07:38.087Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

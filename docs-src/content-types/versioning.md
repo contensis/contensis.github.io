@@ -1,5 +1,5 @@
 # Versioning
-All changes to a content type are recorded in version history. Its version number will depend on the workflow set that the content type is in. When a content type is first created its version is 0.1.
+All changes to a content type are recorded in version history. It's version number will depend on the workflow state that the content type is in. When a content type is first created its version is 0.1.
 
 > **Note:** in Contensis 9 its not possible to revert a content type to a previous version, however we are saving the changes about a content type to be used in a future release.
 

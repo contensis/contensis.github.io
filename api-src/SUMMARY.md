@@ -1,6 +1,24 @@
 # Summary
 * [Overview](README.md)
+* [Data Types](/common/data-types.md)
 * [Handling Errors](/common/api-errors.md)
+* [Language Variations](/common/language-variations.md)
+
+## Common Types
+* [Common Types](/common/types/README.md)
+
+### HTTP
+* [DateRange](/common/types/http/daterange-http.md)
+* [Location](/common/types/http/location-http.md)
+* [Quote](/common/types/http/quote-http.md)
+* [Version Info](/common/types/http/versioninfo-http.md)
+
+### .NET
+* [DateRange](/common/types/dotnet/daterange-dotnet.md)
+* [Location](/common/types/dotnet/location-dotnet.md)
+* [Quote](/common/types/dotnet/quote-dotnet.md)
+* [Version Info](/common/types/dotnet/versioninfo-dotnet.md)
+* [ValidationError](/common/types/dotnet/validationerror-dotnet.md)
 
 ## Delivery API
 * [Introduction](/delivery-api/README.md)
@@ -14,12 +32,9 @@
 * [Asset](/delivery-api/model/http/asset-http.md)
 
 #### .NET
-* [Entry](/delivery-api/model/cs/entry-cs.md)
-* [Entry Methods](/delivery-api/model/cs/entry-methods-cs.md)
-* [Asset](/delivery-api/model/cs/asset-cs.md)
-* [VersionInfo](/delivery-api/model/cs/versioninfo-cs.md)
-* [DateRange](/delivery-api/model/cs/daterange-cs.md)
-* [Location](/delivery-api/model/cs/location-cs.md)
+* [Entry](/delivery-api/model/dotnet/entry-dotnet.md)
+* [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
+* [Entry Methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
 
 ### Accessing Entries
 * [Get](/delivery-api/accessing-entries/entry-get.md)

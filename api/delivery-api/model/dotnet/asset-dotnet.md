@@ -16,14 +16,16 @@ All assets have the following standard entry fields
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| Filename | The name of the actual file, with extension included |
-| FileSize | The file size in bytes |
-| Extension | The file extension |
-| FieldId | The GUID identifier of the file resource |
-| Uri | The URI path to the file, excluding the domain |
-| [fieldName] | string | TODO |
+| Filename | string | The name of the actual file, with extension included |
+| FileSize | long | The file size in bytes |
+| Extension | string | The file extension |
+| FieldId | string | The GUID identifier of the file resource |
+| Uri | string | The URI path to the file, excluding the domain |
+| [fieldName] | object | An indexed accessor to extended properties which are not exposed as typed properties |
 
 ## Extended Properties
+
+These are properties that are specific to an asset type. Currently this is limited to images, but new extended properties may be added for images (such as cameraModel) in the future or for other asset types.
 
 ### Images
 

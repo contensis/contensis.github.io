@@ -41,7 +41,7 @@ catch(ValidationException valEx)
 }
 catch(ApiException apiEx)
 {
-    // Something went went, likely on the server
+    // Something went wrong, likely on the server
 }
 catch(Exception ex)
 {

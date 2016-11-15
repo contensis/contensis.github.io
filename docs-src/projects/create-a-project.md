@@ -12,10 +12,10 @@ If your license key supports multiple projects and you are logged in to Contensi
 
 2. A project requires a unique name and API name and a default language to be set. We'll automatically generate a sanitised API name from the project name you have entered.
 
- > Its not possible to change the API name once you've created the project. 
+ > **Note:** Its not possible to change the API name once you've created the project. 
 
 3. **Assets**
-We automatically assign some default asset types that are common across sites. Add or remove additional asset types that you need for your project.
+We automatically assign some default asset types that are common across sites. Add or remove additional asset types that you need for your project by typing into the field and pressing enter.
 
 4. **Languages**
 Each project has a default language. If you have a multi language license key you'll also be able to set what languages you want to support.

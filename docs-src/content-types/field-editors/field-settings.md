@@ -3,12 +3,19 @@
 ## Name
 The name property describes the field content. The name entered here will be displayed to an author when creating an entry. Its used to identify the chunk of content.
 
-The name entered is also used to generate the field ID. 
+The name entered is also used to generate the field ID.
+
+> The Name field is limited to 50 characters. 
 
 ## Field ID
 The Field ID is used to identify the field within a content type through the API. Field IDs have to be unique within a content type. 
 
-The field ID is automatically generated when entering a field name. You can update the field name up until the content type is saved, any name you enter will be sanitised.[^1] [^2]  
+The field ID is automatically generated when entering a field name. Any name you enter will be sanitised.
+
+If you attempt to use a name already in use then a number will be appended to the field ID.
+
+> The Field ID is limited to 50 characters. 
+
 
 ## Default value
 The default value property sets the default content for a field when an entry is created. If no change is made by an author when editing the entry then the default entry will be used.
@@ -29,11 +36,4 @@ The display field is used in listings, the entry reference field editor and thro
 
 For a content type to be published it requires a single text field to be present.
 
-The first text field added to the content type will be set as the display field, if you decide you want to use another field for your displayed field you can change it at a later date.
-
-
-**Footnotes**:
-----
-[^1]: Change the behaviour of the field id. It should be possible to change the field ID up until the content type has been published.
-
-[^2]: What happens if a fieldID is entered that matches an existing ID?
+The first text field added to the content type will be used as the display field, if you decide you want to use another field for your display field you can change it at a later date.

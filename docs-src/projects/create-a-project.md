@@ -10,14 +10,16 @@ If your license key supports multiple projects and you are logged in to Contensi
 
 	In both instances the *Project Setup* screen will open.
 
-2. A project requires a unique name and API name and a default language to be set. We'll automatically generate a sanitised API name from the project name you have entered.
+2. Give your project a unique name.
 
- > **Note:** Its not possible to change the API name once you've created the project.
+> This field is restricted to 64 characters.
 
-3. **Assets**
-We automatically assign some default asset types that are commonly used. Add or remove additional asset types that you need for your project by typing into the field and pressing enter.
+3. The API name will automatically be created and sanitised from the project name you enter.
 
-4. **Languages**
-Each project has a default language. If you have purchased the multilingual module you'll also be able to set which languages you want to support.
+> **Note:** Its not possible to change the API name once you've created the project.
 
-5. Having set the properties for your project and press *Create*, your project will be created and you'll be navigated to the dashboard of the new project.
+4. We automatically assign some default asset types that are commonly used. Add or remove additional asset types that you need for your project by typing into the field and pressing enter.
+
+5. Each project has a default language. If you have purchased the multilingual module you'll also be able to set which languages you want to support.
+
+6. Having set the properties for your project and press *Create*, your project will be created and you'll be navigated to the dashboard of the new project.

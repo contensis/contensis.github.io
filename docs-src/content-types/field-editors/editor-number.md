@@ -1,4 +1,4 @@
-# Integer and decimal field editors
+# Number field editor
 
 The number field accepts numeric input either as a integer or decimal depending on the number format chosen.
 

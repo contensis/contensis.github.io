@@ -12,7 +12,7 @@ The type of list displayed will depend on if multiple selection is allowed. Sing
 | [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -20,14 +20,14 @@ This field editor supported the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### List values
-This property expects a comma separated list of values that are to be displayed in the list. 
+This property expects a comma separated list of values that are to be displayed in the list.
 
-> *e.g.* Red, Blue, Green, Orange, Purple 
+> *e.g.* Red, Blue, Green, Orange, Purple
 
-### Validation message 
+### Validation message
 Why is this here? [^2]
 
 #### Footnotes:
@@ -35,6 +35,3 @@ Why is this here? [^2]
 ---
 [^1]: Should we not just use a drop down menu?
 [^2]: This field seems to have an unnecessary validation message in the editor properties
-
-
-

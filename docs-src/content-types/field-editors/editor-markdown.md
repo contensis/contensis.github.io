@@ -13,7 +13,7 @@ The content entered into the markdown editor is stored and  returned through the
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -22,17 +22,17 @@ This field editor supported the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 | [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to *Medium*. |
 
-  
+
 ### Show toolbar
-The setting enables you to disable the editor toolbar from being displayed. This would require an author to understand how to write in the markdown syntax. 
+The setting enables you to disable the editor toolbar from being displayed. This would require an author to understand how to write in the markdown syntax.
 
 Its default is set to *No*.
 
 ### Show status
-This setting changes the visibility of the character and word count below the markdown editor. 
+This setting changes the visibility of the character and word count below the markdown editor.
 
 Its default is set to *No*.
 

@@ -4,7 +4,7 @@ This editor is a powerful one allowing you to relate existing entries in other c
 
 You can make single or multiple selections of entries allowing you to create rich content models.
 
-> *e.g.* in a film content type you may want to list a selection of actors that are defined in you people content type. 
+> *e.g.* in a film content type you may want to list a selection of actors that are defined in you people content type.
 
 ## Settings
 | Setting name | Summary|
@@ -15,7 +15,7 @@ You can make single or multiple selections of entries allowing you to create ric
 | [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -26,10 +26,10 @@ This field editor supported the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Content type
-The option selected from the dropdown determines which content type you want to model your content with.[^2] 
+The option selected from the dropdown determines which content type you want to model your content with.[^2]
 
 [^1]: Should this editor simply be called entries?
 [^2]: This would benefit from some contextual help

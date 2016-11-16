@@ -15,7 +15,7 @@ When multiple selection is set each value selected is added as pill lozenge with
 
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -25,15 +25,15 @@ This field editor supported the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field, in the case of the searchable dropdown this value will set the default text. [^1] | 
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field, in the case of the searchable dropdown this value will set the default text. [^1] |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### List values
-This property expects a comma separated list of values that are to be displayed in the dropdown. 
+This property expects a comma separated list of values that are to be displayed in the dropdown.
 
-> *e.g.* Red, Blue, Green, Orange, Purple 
+> *e.g.* Red, Blue, Green, Orange, Purple
 
-### Validation message 
+### Validation message
 Why is this even here? [^2]
 
 #### Footnotes:
@@ -42,4 +42,3 @@ Why is this even here? [^2]
 
 [^1]: Should the placeholder text be removed, and instead the default value be set to Please select?
 [^2]: This needs to be removed.
-

@@ -21,7 +21,7 @@ The date range editors become available when the format of a Date / Time field a
 
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -31,7 +31,7 @@ This field editor supported the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. [^1]|
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Future dates
 This property sets if you want an author to be able to select a date in the future *e.g.* a date greater than today. This is enabled by default.

@@ -1,7 +1,7 @@
 # Removing fields from a content type
 The effect on removing a field from a content type will vary depending on the content types published state and wether any entries have been created.
 
-To remove a field from a content type, simply press the cross button on the field to remove it from the content type.
+With a content type open for editing simply press the cross button on the field to remove it from the content type.
 
 > **Published content type with entries**
 	When removing a field from a content type, its worth bearing in mind that the field may be in use by an entry.[^1]

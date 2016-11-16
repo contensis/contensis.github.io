@@ -8,7 +8,6 @@ The following table outlines the available validations and field types that are 
 
 | Validation| Supported Fields |
 | --- | --- |
-| Required | Text, Markup, Quote, Number, Location, List, Taxonomy, Composer, Asset, Entry reference, Image |
-| Regular Expression Pattern Matching | Text |
-| Character Count | Text |
-
+| [Required](/content-types/validation/required-validation.md) | Text, Markup, Quote, Number, Location, List, Taxonomy, Composer, Asset, Entry reference, Image |
+| [Regular Expression Pattern Matching](/content-types/validation/regex-validation.md) | Text |
+| [Character Count](/content-types/validation/character-count-validation.md) | Text |

@@ -5,15 +5,6 @@ Validates that the field contains a value. The field must contain a value for th
 With a content type open for editing:
 
 - Select the field you want to set a validation rule against.
-- With the field active the properties panel is displayed, select Validation from the panel navigation.
+- With the field active the properties panel is displayed, select **Validation** from the panel navigation.
 - Change the required toggle to true to make the field required.
-- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Validation message* text box. [^1]
-
-## What the editor sees
-
-
-#### Footnotes:
-
-----
-
-[^1]: We need to test that all validations have default validation messages as well as support for custom validation messages. Ensure custom validation text labels are consistent.
+- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Validation message* text box.

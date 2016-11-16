@@ -1,5 +1,5 @@
 # Boolean field editor
-The boolean field editor has only two possible values usually a true / false condition. The boolean field editor is represented as a toggle switch in the entry editor. But the values that are stored in the database are simply a 1/0.
+The boolean field editor has only two possible values a true / false condition. The boolean field editor is represented as a toggle switch in the entry editor. But the values that are stored in the database are simply a 1/0.
 
 
 ## Settings
@@ -13,7 +13,7 @@ The boolean field editor has only two possible values usually a true / false con
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### True condition value
 The true condition value provides a text label representation for the true condition of a boolean. It could be a variety of positive labels such as True, Yes, On, Valid or Enabled.

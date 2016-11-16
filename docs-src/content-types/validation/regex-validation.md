@@ -1,7 +1,7 @@
 # Regular expression pattern matching
 This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
 
-A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters in a field of an entry. 
+A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters in a field of an entry.
 
 ## How to set the validation
 With a content type open for editing:
@@ -9,7 +9,7 @@ With a content type open for editing:
 - Select the field you want to set a validation rule against.
 - With the field active the properties panel is displayed, select **Validation** from the panel navigation.
 - Select from the matches pattern dropdown the required pattern you want to use, alternative you can define your own using the custom option.
-- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Validation message* text box. [^1]
+- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Validation message* text box.
 
 ## Setting a custom expression
 You can use the custom option in the validation dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
@@ -17,7 +17,7 @@ You can use the custom option in the validation dropdown to create your own. Usi
 > **Note:** Expressions need to be written in the Javascript syntax to be valid.
 
 ### Predefined regular expressions
-We've included some predefined expressions covering some standard scenarios. 
+We've included some predefined expressions covering some standard scenarios.
 
 #### Website address
 
@@ -49,11 +49,3 @@ We've included some predefined expressions covering some standard scenarios.
 | SY8 3EG | SY8_3EG |
 | sy83eg | sy8-3eg |
 | SY83EG | sy8 £eg |
-
-## What the editor sees
-
-#### Footnotes:
-
-----
-
-[^1]: We need to test that all validations have default validation messages as well as support for custom validation messages. Ensure custom validation text labels are consistent.

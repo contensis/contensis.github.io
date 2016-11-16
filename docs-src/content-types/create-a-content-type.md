@@ -10,5 +10,4 @@ To define a new type of content in Contensis you'll need to create a new content
 5. The API name will automatically be created and sanitised from the content type name you enter.
 > The API name is restricted to 50 characters.
 6. You can add an optional description to distinguish the content type in the listing.
-7. Press the **Create** button to create your new content type. The content type builder will open so you can start creating your content type.
-8. Pressing **Save** will save the content type without containing any fields.
+7. Press the **Create** button to create your new content type. The content type builder will open so you can start [adding fields to your content type](adding-fields-to-a-content-type.md).

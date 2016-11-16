@@ -40,6 +40,3 @@ Its default is set to *No*.
 Its possible to edit markdown in a fullscreen window within Contensis to provide a distraction free writing experience. This setting determines if authors should be allowed to enter full screen.
 
 Its default is set to *No*.
-
-
-[^1]: Has duplicate panel title of Markdown

@@ -56,7 +56,7 @@ public T Get<T>(string fieldName)
 ### Parameters
 
 *T*
-> The type to attempt to cast the field data to
+> The type to attempt to cast the field data to. The type will either be a [DataType](/common/data-types), a supported [Data Format type](/common/types/README.md) or a [custom type]()
 
 *fieldName*
 > Type: string  

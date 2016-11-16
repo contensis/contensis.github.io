@@ -64,7 +64,7 @@ Synchronous
 var query = new Query(
     Op.Contains("title", "Batman"),
     Op.Or(
-        Op.GreateThan("yearOfRelease", 1960),
+        Op.GreaterThan("yearOfRelease", 1960),
         Op.Contains("synopsis", "gotham")
     )
 );
@@ -168,7 +168,7 @@ Order by 'yearOfRelease' in a descending direction using the '-' token.
 
 ## Paging
 
-Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly.
+Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly. The page number can also be specified to allow which set of results is to be returned.
 
 
 

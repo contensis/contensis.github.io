@@ -27,6 +27,13 @@
 
 ### Reference
 
+### Accessing Entries
+
+#### .NET
+* [Get](/delivery-api/accessing-entries/dotnet/entry-get-dotnet.md)
+* [List](/delivery-api/accessing-entries/dotnet/entries-list-dotnet.md)
+* [Search](/delivery-api/accessing-entries/entry-search.md)
+
 #### .HTTP
 * [Entry](/delivery-api/model/http/entry-http.md)
 * [Asset](/delivery-api/model/http/asset-http.md)
@@ -35,11 +42,6 @@
 * [Entry](/delivery-api/model/dotnet/entry-dotnet.md)
 * [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
 * [Entry Methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
-
-### Accessing Entries
-* [Get](/delivery-api/accessing-entries/entry-get.md)
-* [List](/delivery-api/accessing-entries/entries-list.md)
-* [Search](/delivery-api/accessing-entries/entry-search.md)
 
 ### Cookbook
 * [Cookbook](/delivery-api/cookbook/README.md)

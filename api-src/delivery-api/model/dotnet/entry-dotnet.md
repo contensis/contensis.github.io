@@ -17,13 +17,15 @@ These are the standard properties that all entries have. The languageCode proper
 | ProjectId | string | The API identifer of the project the entry belongs to |
 | DataFormat | string | Either 'entry' or 'asset' |
 | LanguageCode | string | The language of the Entry instance |
-| Version | [VersionInfo](versioninfo.md) | Version information for the Entry | 
-| MetaData | MetaData | MetaData associated with the Entry instance | 
+| Version | [VersionInfo](versioninfo-dotnet.md) | Version information for the Entry | 
+| MetaData[^1] | MetaData | MetaData associated with the Entry instance | 
 
 ## Methods
 
 | Method | Returns | Description |
 | :----- | :------ | :-----------|
-| [Get(string fieldName)](./entry-methods-cs.html#get) | dynamic | Gets a field item by name and returns a dynamic object |
-| [Get`<Type>`(string fieldName)](./entry-methods-cs.html#gett) | Type | Gets a field item by name and attempts to cast to the specified generic type |
-| [HasValue(string fieldName)](./entry-methods-cs.html#hasvalue) | bool | A helper function to determine whether a field exists of has a value |
+| [Get(string fieldName)](./entry-methods-dotnet.html#get) | dynamic | Gets a field item by name and returns a dynamic object |
+| [Get`<Type>`(string fieldName)](./entry-methods-dotnet.html#gett) | `<Type>` | Gets a field item by name and attempts to cast to the specified generic type |
+| [HasValue(string fieldName)](./entry-methods-dotnet.html#hasvalue) | bool | A helper function to determine whether a field exists of has a value |
+
+[^1]: Needs to be re-cased to Metadata 

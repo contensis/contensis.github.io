@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Content Modelling · Contensis 9 Documentation</title>
+        <title>Entry versioning · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../content-types/viewing-content-types.html" />
+    <link rel="next" href="../projects/" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="workflow-states.html" />
     
 
     </head>
@@ -118,9 +118,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="content-modelling.html">
+        <li class="chapter " data-level="2.1" data-path="../concepts/content-modelling.html">
             
-                <a href="content-modelling.html">
+                <a href="../concepts/content-modelling.html">
             
                     
                     Content Modelling
@@ -600,9 +600,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../entries/">
+        <li class="chapter " data-level="6.1" data-path="./">
             
-                <a href="../entries/">
+                <a href="./">
             
                     
                     Overview
@@ -613,9 +613,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="../entries/viewing-entries.html">
+        <li class="chapter " data-level="6.2" data-path="viewing-entries.html">
             
-                <a href="../entries/viewing-entries.html">
+                <a href="viewing-entries.html">
             
                     
                     Viewing entries
@@ -626,9 +626,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="../entries/create-an-entry.html">
+        <li class="chapter " data-level="6.3" data-path="create-an-entry.html">
             
-                <a href="../entries/create-an-entry.html">
+                <a href="create-an-entry.html">
             
                     
                     Create an entry
@@ -639,9 +639,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="../entries/update-an-entry.html">
+        <li class="chapter " data-level="6.4" data-path="update-an-entry.html">
             
-                <a href="../entries/update-an-entry.html">
+                <a href="update-an-entry.html">
             
                     
                     Update an entry
@@ -652,9 +652,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="../entries/delete-an-entry.html">
+        <li class="chapter " data-level="6.5" data-path="delete-an-entry.html">
             
-                <a href="../entries/delete-an-entry.html">
+                <a href="delete-an-entry.html">
             
                     
                     Delete an entry
@@ -665,9 +665,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="../entries/workflow-states.html">
+        <li class="chapter " data-level="6.6" data-path="workflow-states.html">
             
-                <a href="../entries/workflow-states.html">
+                <a href="workflow-states.html">
             
                     
                     Workflow states
@@ -678,9 +678,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.7" data-path="../entries/entry-versioning.html">
+        <li class="chapter active" data-level="6.7" data-path="entry-versioning.html">
             
-                <a href="../entries/entry-versioning.html">
+                <a href="entry-versioning.html">
             
                     
                     Entry versioning
@@ -819,7 +819,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Content Modelling</a>
+        <a href=".." >Entry versioning</a>
     </h1>
 </div>
 
@@ -834,7 +834,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="content-modelling">Content modelling</h1><p>You define content models in Contensis by creating content types  against a project. Content modelling is restricted to the content types in a given project although you can access content types against multiple projects through our APIs.</p><h2 id="content-types">Content types</h2><p>A content type describes a type of content broken down into chunks.</p><blockquote><p><em>e.g.</em> A &#x2018;Film&#x2019; content type could contain the following chunks. Title, Film Poster, Length/Run Time, Budget, Overview, Director and cast members.</p></blockquote><p>You create a content type using our content type builder or you can programmatically create a content type defined in JSON using our Management API.</p><p>Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of <a href="">field types</a> are supported.</p><p>A field has a name, a data type and a set of additional properties such as validation, editor types and editorial guidelines.</p><p>Content types can be linked together using entry reference fields to aid the building of rich content models and relationships.</p><blockquote><p><em>e.g.</em> Linking a film to a list of cast members located in a content type of people.</p></blockquote><h2 id="entries">Entries</h2><p>Each item of content created from a content type is referred to as an entry. An entry contains the structured chunks of content defined by the content type.</p><p>In our film content type example, an entry would represent a single film containing its title, artwork, release date, overview text and other field values. Additional films can be added by creating new entries.</p><h2 id="summary">Summary</h2><p>These two core concepts allow rich content models to be defined and used in your website or application and form the basis of content modelling in Contensis.</p>
+                                <h1 id="entry-versioning">Entry versioning</h1><p>All changes to a entry are recorded in version history. It&apos;s version number will depend on the workflow state that the entry is in. When an entry is first created its version is 0.1.</p><blockquote><p><strong>Note:</strong> in Contensis 9 its not possible to revert a entry to a previous version, however we are saving the changes about a entry to be used in a future release.</p></blockquote><h2 id="saving-a-entry">Saving a entry</h2><p>Each time a change is made to a content type and saved the minor version number is incremented and the changes are recorded in a diff.</p><blockquote><p><em>e.g.</em> Adding some text within a field of a newly created entry and pressing save would increment the version number from 0.1 to 0.2.</p></blockquote><p><strong>No changes made</strong>
+When an entry has not changed since its last save then the save button button will be disabled.</p><h2 id="publishing-an-entry">Publishing an entry</h2><p>When an entry is ready for publishing, pressing the publish button in the entry editor will change the major version number against the entry.</p><blockquote><p><em>e.g.</em> Having populated all the fields of my newly created entry and saved it. Pressing publish would increment the version number from 0.2 to 1.0 and moves the workflow state of the content type to published. Once published the publish button will become disabled.</p></blockquote>
                                 
                                 </section>
                             
@@ -861,12 +862,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Contensis 9 Overview">
+                <a href="workflow-states.html" class="navigation navigation-prev " aria-label="Previous page: Workflow states">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../content-types/viewing-content-types.html" class="navigation navigation-next " aria-label="Next page: Viewing content types">
+                <a href="../projects/" class="navigation navigation-next " aria-label="Next page: Overview">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -877,7 +878,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Content Modelling","level":"2.1","depth":1,"next":{"title":"Viewing content types","level":"3.1","depth":1,"path":"content-types/viewing-content-types.md","ref":"content-types/viewing-content-types.md","articles":[]},"previous":{"title":"Contensis 9 Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"concepts/content-modelling.md","mtime":"2016-10-28T15:45:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-16T17:22:13.864Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Entry versioning","level":"6.7","depth":1,"next":{"title":"Overview","level":"7.1","depth":1,"path":"projects/README.md","ref":"projects/README.md","articles":[{"title":"Create a project","level":"7.1.1","depth":2,"path":"projects/create-a-project.md","ref":"projects/create-a-project.md","articles":[]},{"title":"Delete a project","level":"7.1.2","depth":2,"path":"projects/delete-a-project.md","ref":"projects/delete-a-project.md","articles":[]},{"title":"Update an existing project","level":"7.1.3","depth":2,"path":"projects/update-a-project.md","ref":"projects/update-a-project.md","articles":[]}]},"previous":{"title":"Workflow states","level":"6.6","depth":1,"path":"entries/workflow-states.md","ref":"entries/workflow-states.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"entries/entry-versioning.md","mtime":"2016-11-09T14:29:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-16T17:22:13.864Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

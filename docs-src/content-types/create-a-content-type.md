@@ -6,7 +6,7 @@ To define a new type of content in Contensis you'll need to create a new content
 2. Select **Content Types** from the drawer to open the content types listing screen.
 3. Press the **New Content Type** button, a *Create new content type* modal window will be displayed.
 4. Give your content type a name e.g. Films
-> This field is restricted to 50 characters.
+> The content type name is restricted to 50 characters.
 5. The API name will automatically be created and sanitised from the content type name you enter.
 > The API name is restricted to 50 characters.
 6. You can add an optional description to distinguish the content type in the listing.

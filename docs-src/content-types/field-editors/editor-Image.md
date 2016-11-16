@@ -1,7 +1,7 @@
 # Image field editor
 This field editor allows an author to make single or multiple selections of images that have been uploaded to Contensis.
 
-Selection is made in an images gallery. Single or multiple selection of images is determined by the allow multiple field setting.
+Selection is made in an image gallery. Single or multiple selection of images is determined by the allow multiple field setting.
 
 ## Settings
 | Setting name | Summary|
@@ -14,7 +14,6 @@ Selection is made in an images gallery. Single or multiple selection of images i
 This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
-
 
 ## Properties
 

@@ -1,5 +1,4 @@
 # Entry reference field editor [^1]
-
 This editor is a powerful one allowing you to relate existing entries in other content types to the the current entry that is being authored.
 
 You can make single or multiple selections of entries allowing you to create rich content models.
@@ -32,4 +31,3 @@ This field editor supports the following validation methods.
 The option selected from the dropdown determines which content type you want to model your content with.[^2]
 
 [^1]: Should this editor simply be called entries?
-[^2]: This would benefit from some contextual help

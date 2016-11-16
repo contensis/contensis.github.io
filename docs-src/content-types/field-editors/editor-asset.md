@@ -26,11 +26,10 @@ This field editor supports the following validation methods.
 ### Type
 Types of asset can be restricted in the gallery to a single asset type by selecting the type from the property dropdown.
 
-The dropdown list is populated with assets types supported by the current project. Some system reserved asset types are not displayed in this list such as forms, templates, polls and databases. [^2]
+The dropdown list is populated with assets types supported by the current project. Some system reserved asset types are not displayed in this list such as forms, templates, polls and databases.
 
 #### Footnotes:
 
 ---
 
 [^1]: Is the placeholder text used in the asset editor?
-[^2]: Should we allow the restriction to be made to more than a single type?

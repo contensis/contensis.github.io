@@ -1,5 +1,5 @@
 # Text field editor
-Text fields are used to store any text content. This editor is the most commonly used field editor due to the variety of content it can contain. 
+Text fields are used to store any text content. This editor is the most commonly used field editor due to the variety of content it can contain.
 
 ## Settings
 | Setting name | Summary|
@@ -7,7 +7,7 @@ Text fields are used to store any text content. This editor is the most commonly
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
 | [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. |
-| [Display field](/content-types/field-editors/field-settings.md#display-field) | The display field is used in listings, the entry reference field editor and through the API to identify entries. |
+| [Title field](/content-types/field-editors/field-settings.md#display-field) | The title field is used in listings, the entry reference field editor and through the API to identify entries. |
 
 
 ## Supported validation
@@ -23,6 +23,4 @@ This field editor supported the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Help Instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
-
-
+| [Content guidelines](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |

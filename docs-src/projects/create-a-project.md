@@ -4,7 +4,7 @@ If your license key supports multiple projects and you are logged in to Contensi
 
 1. Creating a new project varies slightly depending on how many projects are in your system.
 
-	**Single Project:** If you have a single project, select create project from the vertical navigation bar.
+	**Single Project:** If you have a single project, select *create project* from the vertical navigation bar.
 	
 	**Multiple Projects:** If you already have multiple projects then creating a project is launched from the bottom of the project selector list.
 

@@ -12,7 +12,7 @@ To update the name of your content type, simply update the name in the details p
 > **Note:** This will have no effect on the API Name. The API Name cannot be changed once its been set.
 
 ## Update description
-The content type description provides summary information within the content type listing screen describing what the content type is used for.
+The content type description provides summary information describing what the content type is used for. It is displayed in the content type listing screen and during the entry creation process.
 
 You can update the description in the details panel of the content type.
 

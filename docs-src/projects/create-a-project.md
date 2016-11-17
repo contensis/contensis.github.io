@@ -18,8 +18,8 @@ If your license key supports multiple projects and you are logged in to Contensi
 
 > **Note:** Its not possible to change the API name once you've created the project.
 
-4. We automatically assign some default asset types that are commonly used. Add or remove additional asset types that you need for your project by typing into the field and pressing enter.
+4. We automatically assign some default asset types that are commonly used. Add additional asset types that you need for your project by typing into the field and pressing enter.
 
 5. Each project has a default language. If you have purchased the multilingual module you'll also be able to set which languages you want to support.
 
-6. Having set the properties for your project and press *Create*, your project will be created and you'll be navigated to the dashboard of the new project.
+6. Having set the properties for your project and pressed *Create*, your project will be created and you'll be navigated to the dashboard of the new project.

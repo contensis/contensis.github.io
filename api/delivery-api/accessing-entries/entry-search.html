@@ -729,14 +729,32 @@
 
 <h2 id="paging">Paging</h2>
 <p>Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly. The page number can also be specified to allow which set of results is to be returned.</p>
-<h2 id="searching-fields">Searching Fields</h2>
-<h3 id="standard">Standard</h3>
-<ul>
-<li>id</li>
-<li>contentType</li>
-<li>projectId</li>
-<li>version.versionNo</li>
-</ul>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs">{
+    <span class="hljs-comment">// Create a query</span>
+    <span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> Query(
+        Op.EqualTo(<span class="hljs-string">&quot;contentTypeId&quot;</span>, <span class="hljs-string">&quot;film&quot;</span>));
+
+    <span class="hljs-comment">// Set the paging options</span>
+    query.PageSize = <span class="hljs-number">50</span>; 
+
+    <span class="hljs-comment">// Get the 2nd result set</span>
+    query.PageIndex = <span class="hljs-number">1</span>; 
+}
+</code></pre>
+</div><div class="api-method-sample" data-lang="http" data-name="HTTP"><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-number">50</span>,
+    <span class="hljs-string">&quot;pageIndex&quot;</span>: <span class="hljs-number">1</span>
+}
+</code></pre>
+</div></div></div>
+
+
+<h2 id="specifying-fields">Specifying Fields</h2>
+<h3 id="system-fields">System Fields</h3>
+<p>The fields for search generally match the names defined in the entry structure, for example &apos;id&apos;, &apos;contentTypeId&apos;, &apos;projectId&apos;, etc. Field data not held at the root of the entry, such as the version information are accessed using a dot notation, i.e. &apos;version.versionNo&apos;, &apos;version.published&apos;, etc.</p>
+<p>The &apos;titleField&apos; field is a dynamic value, determined by the &apos;Title Field&apos; value in the Content Type.</p>
+<h3 id="data-fields">Data Fields</h3>
+<p>Fields defined in the Content Type for the entry can be accessed by their api id.</p>
 <h2 id="full-example">Full Example</h2>
 <p>The example below combine the ordering and paging concepts</p>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> Query(
@@ -809,7 +827,7 @@ query.PageSize = <span class="hljs-number">50</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Search","level":"8.3","depth":1,"next":{"title":"Entry","level":"9.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"previous":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/entry-search.md","mtime":"2016-11-16T11:19:37.246Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-16T17:34:24.685Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Search","level":"8.3","depth":1,"next":{"title":"Entry","level":"9.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"previous":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/entry-search.md","mtime":"2016-11-17T11:47:09.009Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-17T12:02:46.947Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

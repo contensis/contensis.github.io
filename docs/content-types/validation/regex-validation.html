@@ -445,12 +445,12 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.10" data-path="../field-editors/editor-integer-decimal.html">
+        <li class="chapter " data-level="5.1.10" data-path="../field-editors/editor-number.html">
             
-                <a href="../field-editors/editor-integer-decimal.html">
+                <a href="../field-editors/editor-number.html">
             
                     
-                    Integer / Decimal
+                    Number
             
                 </a>
             
@@ -840,7 +840,7 @@
 </li>
 <li>Select from the matches pattern dropdown the required pattern you want to use, alternative you can define your own using the custom option.
 </li>
-<li>You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the <em>Validation message</em> text box. <sup><a href="#fn_1" id="reffn_1">1</a></sup>
+<li>You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the <em>Validation message</em> text box.
 </li></ul>
 <h2 id="setting-a-custom-expression">Setting a custom expression</h2><p>You can use the custom option in the validation dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p><blockquote><p><strong>Note:</strong> Expressions need to be written in the Javascript syntax to be valid.</p></blockquote><h3 id="predefined-regular-expressions">Predefined regular expressions</h3><p>We&apos;ve included some predefined expressions covering some standard scenarios.</p><h4 id="website-address">Website address</h4><pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g</code></pre>
 <table>
@@ -884,9 +884,6 @@
 <td>sy8 &#xA3;eg</td>
 </tr></tbody></table>
 
-<h2 id="what-the-editor-sees">What the editor sees</h2><h4 id="footnotes">Footnotes:</h4><hr><blockquote id="fn_1">
-<sup>1</sup>. We need to test that all validations have default validation messages as well as support for custom validation messages. Ensure custom validation text labels are consistent.<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
-</blockquote>
 
                                 
                                 </section>
@@ -930,7 +927,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"4.1.2","depth":2,"next":{"title":"Character count","level":"4.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"4.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-10-28T15:46:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-16T09:32:16.645Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"4.1.2","depth":2,"next":{"title":"Character count","level":"4.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"4.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-11-16T17:12:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-16T17:22:13.864Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

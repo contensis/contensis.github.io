@@ -12,12 +12,12 @@ The Data Type is the storage type for a field. TODO: Add more here
 | boolean | A value of `true` or `false` |
 | datetime | A point in time |
 | object | Any arbitary structure as JSON or a string |
-| stringArray | A array of string types |
-| integerArray | A array of string types |
-| decimalArray | A array of string types |
-| booleanArray | A array of string types |
-| datetimeArray | A array of string types |
-| objectArray | A array of string types |
+| stringArray | An array of strings |
+| integerArray | An array of integers |
+| decimalArray | An array of decimals |
+| booleanArray | An array of booleans |
+| datetimeArray | An array of datetimes |
+| objectArray | An array of objects |
 
 ## Data Format
 
@@ -35,5 +35,3 @@ The DataFormat is designed to allow custom types to be added. The value is a sim
 | quote | object | A quote with text and a source |
 | field | objectArray |Represents a composed field type, usually defined as an ObjectArray Data Type |
 | image | object | Wraps an Asset with an additional Caption property |
-
----

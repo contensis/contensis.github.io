@@ -1,5 +1,4 @@
-# Integer and decimal field editors
-
+# Number field editor
 The number field accepts numeric input either as a integer or decimal depending on the number format chosen.
 
 ## Settings
@@ -10,7 +9,7 @@ The number field accepts numeric input either as a integer or decimal depending 
 | [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. e.g. a default number value 500.
 
 ## Supported validation
-This field editor supported the following validation methods.
+This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -19,8 +18,7 @@ This field editor supported the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Decimal places
 If the number format has been set to a decimal then the number of decimal places that should be allowed can be set against this property.
-

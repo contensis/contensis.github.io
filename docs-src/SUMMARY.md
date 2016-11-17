@@ -37,7 +37,7 @@
   * [HTML](/content-types/field-editors/editor-html.md)
   * [Markdown](/content-types/field-editors/editor-markdown.md)
   * [Quote](/content-types/field-editors/editor-quote.md)
-  * [Integer \/ Decimal](/content-types/field-editors/editor-integer-decimal.md)
+  * [Number](/content-types/field-editors/editor-number.md)
   * [Boolean](/content-types/field-editors/editor-boolean.md)
   * [Location](/content-types/field-editors/editor-location.md)
   * [List](/content-types/field-editors/editor-list.md)
@@ -72,4 +72,3 @@
 
 * [Delivery API](https://contensis.github.io/api/index.html)
 * [Management API](https://contensis.github.io/api/index.html)
-

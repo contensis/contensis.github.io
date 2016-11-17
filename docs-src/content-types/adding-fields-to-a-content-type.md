@@ -8,7 +8,7 @@ Adding fields to a content type is easy. With the content type open for editing:
 2. The field you added will be active, indicated by the green border that surrounds the field.
 
 ### Set field name 
-The properties for the field will be displayed in the right hand panel when a field is active.
+The properties for a field will be displayed in the right hand panel when the field is active.
 
 Give the field a name that clearly identifies its content. The field name is used to generate a sanitised field ID that a developer will use through the API.
 

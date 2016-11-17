@@ -1,5 +1,5 @@
 # Viewing content types
-Content types are stored centrally against a Contensis project.  You can view the content types by navigating to the content types listing screen.
+Content types are stored centrally against a project.  You can view content types by navigating to the content types listing screen.
 
 ## Content type listing screen
 - Press the **Content Types & Entries** button in the vertical toolbar. The drawer will open revealing a number of options.

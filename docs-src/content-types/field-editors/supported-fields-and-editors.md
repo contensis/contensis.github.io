@@ -9,48 +9,48 @@ Each of the following field types have support for different editors depending o
 ### Text
 | Format   | Editor              |
 | -------- | ------------------- |
-| Text     | Text                |
-| Text     | Multiline Text      |
-| Heading  | Heading             |
+| Text     | [Text](/content-types/field-editors/editor-text.md)         |
+| Text     | [Multiline Text](/content-types/field-editors/editor-multiline-text.md)      |
+| Heading  | [Heading](/content-types/field-editors/editor-heading.md)             |
 
 ### Markup
 | Format   | Editor              |
 | -------- | ------------------- |
-| HTML     | HTML                |
-| Markdown | Markdown            |
+| HTML     | [HTML](/content-types/field-editors/editor-html.md)                |
+| Markdown | [Markdown](/content-types/field-editors/editor-markdown.md)            |
 
 ### Number
 | Format   | Editor              |
 | -------- | ------------------- |
-| Integer  | Integer             |
-| Decimal  | Decimal             |
+| Integer  | [Integer](/content-types/field-editors/editor-number.md)             |
+| Decimal  | [Decimal](/content-types/field-editors/editor-number.md)             |
 
 ## List
 | Editor              |
 | ------------------- |
-| List                |
-| Searchable Dropdown |
+| [List](/content-types/field-editors/editor-list.md)                |
+| [Searchable Dropdown](/content-types/field-editors/editor-searchable-dropdown.md) |
 
 ## Date
 | Format   | Editor              |
 | -------- | ------------------- |
-| Single   | Date                |
-| Single   | Date / Time         |
-| Range    | Date Range          |
-| Range    | Date / Time Range   |
+| Single   | [Date](/content-types/field-editors/editor-date-datetime.md)                |
+| Single   | [Date / Time](/content-types/field-editors/editor-date-datetime.md)         |
+| Range    | [Date Range](/content-types/field-editors/editor-date-datetime.md)          |
+| Range    | [Date / Time Range](/content-types/field-editors/editor-date-datetime.md)   |
 
 ## Single editor support
 Each of the following field types have support for one editor type.
 
 | Field Type      | Editor              |
 | --------------- | ------------------- |
-| Boolean         | Boolean             |
-| Location        | Location            |
-| Taxonomy        | Taxonomy            |
-| Composer        | Composer            |
-| Quote           | Quote               |
-| Asset           | Asset Gallery       |
-| Image           | Image Gallery       |
-| Entry Reference | Entry Dropdown      |
+| Boolean         | [Boolean](/content-types/field-editors/editor-boolean.md)             |
+| Location        | [Location](/content-types/field-editors/editor-location.md)            |
+| Taxonomy        | [Taxonomy](/content-types/field-editors/editor-taxonomy.md)            |
+| Composer        | [Composer](/content-types/field-editors/editor-composer.md)            |
+| Quote           | [Quote](/content-types/field-editors/editor-quote.md)               |
+| Asset           | [Asset Gallery](/content-types/field-editors/editor-asset.md)       |
+| Image           | [Image Gallery](/content-types/field-editors/editor-image.md)       |
+| Entry | [Entry](/content-types/field-editors/editor-reference.md)      |
 
 

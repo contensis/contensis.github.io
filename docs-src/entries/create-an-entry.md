@@ -12,5 +12,3 @@ Follow the steps below to create an entry.
 > The minor version will increment upon each save. Take a look at our [entry versioning](/entries/entry-versioning.md) article for a better understanding on how entries are versioned.
 
 7. When you are ready to publish the entry press the **Publish** button.
-
-> **Note:** The number of fields that need populating will vary between content types, depending on how they have been created. Some fields may be marked as required whilst other fields may expect the content captured to be in a particular format.

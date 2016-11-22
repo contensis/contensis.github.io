@@ -7,4 +7,4 @@ Making changes to an entry is a matter of locating the entry from the entries li
 4. The entry will open for editing.
 5. You will need to save and publish any changes for them to take effect.
 
-Take a look at our [versioning](entries/entry-versioning.md) and [workflow states](entries/workflow-states.md) article to get a better understanding of how we handle entries at different stages of the authoring process.
+Take a look at our [versioning](/entries/entry-versioning.md) and [workflow states](/entries/workflow-states.md) article to get a better understanding of how we handle entries at different stages of the authoring process.

@@ -9,7 +9,7 @@ A **Draft** entry is indicated in a listing with a grey border or has a grey loz
 Another indication that the item is in draft is that it has no major version in its version number *e.g.* 0.6.
 
 ## Awaiting publish
-When an entry has been published at least once, and has had changes made to it and saved. Then the content type is placed into the Awaiting publish state until it is published.
+When an entry has been published at least once, and has had changes made to it and saved. Then the entry is placed into the Awaiting publish state until it is published.
 
 It's effectively published and has a new draft state. 
 

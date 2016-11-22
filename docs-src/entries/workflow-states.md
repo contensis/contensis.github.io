@@ -1,5 +1,5 @@
 # Workflow states
-Entries exist in a workflow state. They have one of the following statuses, Draft, Awaiting publish or Published. If a multi lingual license is present then the Awaiting translation and Not yet translated states come in to use.
+Entries exist in a workflow state. They have one of the following states, Draft, Awaiting publish or Published. If a multi lingual license is present then the Awaiting translation and Not yet translated states come in to use.
 
 ## Draft
 When an entry is created it is in the draft state until it has been published for the first time.
@@ -25,7 +25,7 @@ An entry marked as **Published** is indicated in a listing with a green border o
 Another indication that the item is in the Published state is that it only has a major number in its version number *e.g.* 2.0.
 
 ## Not yet translated *(licensed feature)*
-When a language variation exists and its content has not yet been created then the entry will have the Not yet translated status.
+When a language variation exists and its content has not yet been created then the entry will have the Not yet translated state.
 
 ## Awaiting translation *(licensed feature)*
-When a language variation has a published version and changes to the master language have been made then the entry will have the Awaiting translation status.
+When a language variation has a published version and changes to the master language have been made then the entry will have the Awaiting translation state.

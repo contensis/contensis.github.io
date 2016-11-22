@@ -1,4 +1,4 @@
-# Removing fields from a content type
+# Remove fields from a content type
 The effect on removing a field from a content type will vary depending on the content types published state and wether any entries have been created.
 
 With a content type open for editing simply press the cross button on the field to remove it from the content type.

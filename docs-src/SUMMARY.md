@@ -8,10 +8,10 @@
 
 ### Basics
 
-* [Viewing content types](/content-types/viewing-content-types.md)
+* [View and filter content types](/content-types/view-and-filter-content-types.md)
 * [Create a content type](/content-types/create-a-content-type.md)
-* [Adding fields to a content type](/content-types/adding-fields-to-a-content-type.md)
-* [Removing fields from a content type](/content-types/removing-fields-from-a-content-type.md)
+* [Add fields to a content type](/content-types/add-fields-to-a-content-type.md)
+* [Remove fields from a content type](/content-types/remove-fields-from-a-content-type.md)
 * [Update a content type](/content-types/update-a-content-type.md)
 * [Delete a content type](/content-types/delete-a-content-type.md)
 * [Versioning](/content-types/versioning.md)
@@ -53,7 +53,7 @@
 ## Entries
 
 * [Overview](/entries/README.md)
-* [Viewing entries](/entries/viewing-entries.md)
+* [View and filter entries](/entries/viewing-entries.md)
 * [Create an entry](/entries/create-an-entry.md)
 * [Update an entry](/entries/update-an-entry.md)
 * [Delete an entry](/entries/delete-an-entry.md)

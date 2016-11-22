@@ -1,4 +1,4 @@
-# Creating a new content type
+# Create a new content type
 
 To define a new type of content in Contensis you'll need to create a new content type. Follow the steps below to begin the process.
 

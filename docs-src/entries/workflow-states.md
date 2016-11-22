@@ -27,16 +27,5 @@ Another indication that the item is in the Published state is that it only has a
 ## Not yet translated *(licensed feature)*
 When a language variation exists and its content has not yet been created then the entry will have the Not yet translated status.
 
-[^1] 
-
 ## Awaiting translation *(licensed feature)*
 When a language variation has a published version and changes to the master language have been made then the entry will have the Awaiting translation status.
-
-[^2]
-
-#### Footnotes
-
----
-
-[^1]: Flesh out status colour
-[^2]: Flesh out status colour

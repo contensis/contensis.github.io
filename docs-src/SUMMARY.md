@@ -27,12 +27,11 @@
 
 ### Field Editors
 
-* [Field Editors](/content-types/field-editors/README.md)
-  * [Supported Fields and Editors](/content-types/field-editors/supported-fields-and-editors.md)
+* [Supported fields and editors](/content-types/field-editors/README.md)
   * [Field settings](/content-types/field-editors/field-settings.md)
   * [Field properties](/content-types/field-editors/field-properties.md)
   * [Text](/content-types/field-editors/editor-text.md)
-  * [Multiline Text](/content-types/field-editors/editor-multiline-text.md)
+  * [Multiline text](/content-types/field-editors/editor-multiline-text.md)
   * [Heading](/content-types/field-editors/editor-heading.md)
   * [HTML](/content-types/field-editors/editor-html.md)
   * [Markdown](/content-types/field-editors/editor-markdown.md)
@@ -41,19 +40,19 @@
   * [Boolean](/content-types/field-editors/editor-boolean.md)
   * [Location](/content-types/field-editors/editor-location.md)
   * [List](/content-types/field-editors/editor-list.md)
-  * [Searchable Dropdown](/content-types/field-editors/editor-searchable-dropdown.md)
+  * [Searchable dropdown](/content-types/field-editors/editor-searchable-dropdown.md)
   * [Taxonomy](/content-types/field-editors/editor-taxonomy.md)
   * [Composer](/content-types/field-editors/editor-composer.md)
   * [Date \/ Date Time](/content-types/field-editors/editor-date-datetime.md)
   * [Asset](/content-types/field-editors/editor-asset.md)
   * [Image](/content-types/field-editors/editor-image.md)
-  * [Entry Reference](/content-types/field-editors/editor-entry-reference.md)
+  * [Entry](/content-types/field-editors/editor-entry.md)
 
 
 ## Entries
 
 * [Overview](/entries/README.md)
-* [View and filter entries](/entries/viewing-entries.md)
+* [View and filter entries](/entries/view-and-filter-entries.md)
 * [Create an entry](/entries/create-an-entry.md)
 * [Update an entry](/entries/update-an-entry.md)
 * [Delete an entry](/entries/delete-an-entry.md)

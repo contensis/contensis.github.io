@@ -1,5 +1,7 @@
 # Adding fields to a content type
-A content type is made up of a number of fields. Fields allow us to break up large blobs of content into smaller chunks, making content more flexible and reusable.
+A content type is made up of a set of fields. Fields allow us to break up large blobs of content into smaller chunks, making content more flexible and reusable.
+
+> A content type can contain up to 50 fields.
 
 Fields comprise of a type, format and a field editor. The supported types, formats and editors are outlined in the following [article.](/content-types/field-editors/supported-fields-and-editors.md)
 

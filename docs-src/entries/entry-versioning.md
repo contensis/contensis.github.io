@@ -1,7 +1,7 @@
 # Entry versioning
-All changes to a entry are recorded in version history. It's version number will depend on the workflow state that the entry is in. When an entry is first created its version is 0.1.
+All changes to an entry are recorded in version history. It's version number will depend on the workflow state that the entry is in. When an entry is first created its version is 0.1.
 
-> **Note:** in Contensis 9 it's not possible to revert a entry to a previous version, however, we are saving the changes for entries so that they will be available for use in a future release.
+> **Note:** in Contensis 9 it's not possible to revert an entry to a previous version, however, we are saving the changes for entries so that they will be available for use in a future release.
 
 ## Saving a entry
 Each time a change is made to an entry and saved, the minor version number is incremented and the changes are recorded in the version history.

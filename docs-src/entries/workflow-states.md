@@ -6,12 +6,12 @@ When an entry is created it is in the Draft state until it has been published fo
 
 A **Draft** entry is indicated in a listing with a grey border or has a grey lozenge in the entry editor.
 
-Another indication that the item is in draft is that it has no major version in its version number *e.g.* 0.6.
+Another indication that the item is in Draft is that it has no major version in its version number *e.g.* 0.6.
 
 ## Awaiting publish
 When an entry has been published at least once, and has had changes made to it and saved, then the entry is placed into the Awaiting publish state until it is published.
 
-It's an entry that is published and has a new changes waiting to be published.
+It's an entry that is published and has new changes waiting to be published.
 
 An entry marked as **Awaiting publish** is indicated in a listing with an orange border or has an orange lozenge in the entry editor.
 

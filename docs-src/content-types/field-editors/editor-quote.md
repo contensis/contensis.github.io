@@ -1,5 +1,5 @@
 # Quote field editor
-The quote field editor is an editor that allows you to record quotes and a source citation within an entry. Its handy when you want to include a quote from a customer in a case study or a famous quote in a blog post. The source citation is optional.
+The quote field editor allows you to record quote and a source citation within an entry. It's handy when you want to include a quote from a customer in a case study or a famous quote in a blog post. The source citation is optional.
 
 ## Settings
 | Setting name | Summary|
@@ -24,7 +24,7 @@ This field editor supports the following validation methods.
 The [placeholder](/content-types/field-editors/field-properties.md#placeholder-text) text for the source citation.
 
 ### Require source?
-If you want to enforce a source to be included then set this toggle to yes. Its default value is set to *No.*
+Completion of the source field can be enforced by setting the toggle to yes. Its default value is set to *No.*
 
 ### Custom message
-Provide a custom message when the source citation is not included by populating the textbox.
+Displays a custom message when the source citation is not populated by the author.

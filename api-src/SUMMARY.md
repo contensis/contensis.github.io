@@ -53,5 +53,4 @@
 * [Query Operators](/common/query-api/query-operators.md)
 
 ## Security
-* [Authentication](/delivery-api/entry-fields.md)
-* [Authorization](/delivery-api/entry-fields.md)
+* [Authentication](/delivery-api/authentication-dotnet.md)

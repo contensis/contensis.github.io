@@ -52,11 +52,11 @@ POST: /api/search
 
 ## Sub-Queries
 
-A sub-query is a query within another query and is used to return results that will be used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](/common/query-api/query-operators.md#logical-operators).
+A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](/common/query-api/query-operators.md#logical-operators).
 
 {% method -%}
 
-This example demonstrates a simple search with default ordering and paging options:
+This example demonstrates a simple search with a sub-query:
 
 {% sample lang="cs" -%}
 Synchronous
@@ -214,7 +214,7 @@ Fields defined in the Content Type for the entry can be accessed by their api id
 
 ## Full Example
 
-The example below combine the ordering and paging concepts
+The example below combines the ordering and paging concepts
 
 {% method -%}
 
@@ -260,6 +260,3 @@ POST: /api/search
 ```
 
 {% endmethod %}
-
-
-[^1]: Need to add stories to (1) order by title (2) change 'DisplayField' to 'TitleField' in Content Types

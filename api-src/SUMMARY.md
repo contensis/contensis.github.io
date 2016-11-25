@@ -8,12 +8,14 @@
 * [Common Types](/common/types/README.md)
 
 ### HTTP
+* [Composed Field](/common/types/http/composed-http.md)
 * [DateRange](/common/types/http/daterange-http.md)
 * [Location](/common/types/http/location-http.md)
 * [Quote](/common/types/http/quote-http.md)
 * [Version Info](/common/types/http/versioninfo-http.md)
 
 ### .NET
+* [Composed Field](/common/types/dotnet/composed-dotnet.md)
 * [DateRange](/common/types/dotnet/daterange-dotnet.md)
 * [Location](/common/types/dotnet/location-dotnet.md)
 * [Quote](/common/types/dotnet/quote-dotnet.md)

@@ -1,6 +1,6 @@
 # Getting Started
 
-In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the [Delivery API](). Throughout the documentation we use examples based on our sample MoviesDB project.
+In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the Delivery API. Throughout the documentation we use examples based on our sample MoviesDB project.
 
 ## Assumptions
 
@@ -9,11 +9,11 @@ In this section you will be guided through defining and creating content using t
 
 ## Create a new Project
 
-[Projects]() are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
+[Projects](/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
 
 ## Create a Content Type
 
-You can [create a new Content Type]() easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
+You can [create a new Content Type](/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
 | Field Name | API ID | Type | Description |
 | ---------- | ------ | ---- | ----------- |
@@ -26,7 +26,7 @@ You can [create a new Content Type]() easily in the Content Type editors in the 
 
 ## Upload the Film Images
 
-Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link]() or as an [image](). We will be using the image type so that we can add our our captions!
+Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link]() or as an [image](). We will be using the image type so that we can add our captions!
 
 - [the-dark-knight.jpeg]()
 - Image 2
@@ -37,7 +37,7 @@ Content doesn't look very good without some images, so now add the cover images 
 
 Now it's time to create some content!
 
-[Create entries]() for the films using the data in the table:
+[Create entries](/docs/entries/create-an-entry.html) for the films using the data in the table:
 
 | Name | Overview | Year of Release | 
 | ---- | -------- | --------------- |
@@ -47,7 +47,7 @@ Now it's time to create some content!
 
 ## Create a Film Listing in a Razor View
 
-Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don't know how to create your own pages then read this tutorial
+Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don't know how to create your own pages then [read this tutorial]().
 
 {% method -%}
 {% sample lang="cs" -%}

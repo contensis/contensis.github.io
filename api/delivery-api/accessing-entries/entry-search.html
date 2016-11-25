@@ -174,7 +174,20 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../../common/types/http/daterange-http.html">
+        <li class="chapter " data-level="3.1" data-path="../../common/types/http/composed-http.html">
+            
+                <a href="../../common/types/http/composed-http.html">
+            
+                    
+                    Composed Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../common/types/http/daterange-http.html">
             
                 <a href="../../common/types/http/daterange-http.html">
             
@@ -187,7 +200,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../../common/types/http/location-http.html">
+        <li class="chapter " data-level="3.3" data-path="../../common/types/http/location-http.html">
             
                 <a href="../../common/types/http/location-http.html">
             
@@ -200,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../../common/types/http/quote-http.html">
+        <li class="chapter " data-level="3.4" data-path="../../common/types/http/quote-http.html">
             
                 <a href="../../common/types/http/quote-http.html">
             
@@ -213,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../../common/types/http/versioninfo-http.html">
+        <li class="chapter " data-level="3.5" data-path="../../common/types/http/versioninfo-http.html">
             
                 <a href="../../common/types/http/versioninfo-http.html">
             
@@ -233,7 +246,20 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../../common/types/dotnet/daterange-dotnet.html">
+        <li class="chapter " data-level="4.1" data-path="../../common/types/dotnet/composed-dotnet.html">
+            
+                <a href="../../common/types/dotnet/composed-dotnet.html">
+            
+                    
+                    Composed Field
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../../common/types/dotnet/daterange-dotnet.html">
             
                 <a href="../../common/types/dotnet/daterange-dotnet.html">
             
@@ -246,7 +272,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../../common/types/dotnet/location-dotnet.html">
+        <li class="chapter " data-level="4.3" data-path="../../common/types/dotnet/location-dotnet.html">
             
                 <a href="../../common/types/dotnet/location-dotnet.html">
             
@@ -259,7 +285,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../../common/types/dotnet/quote-dotnet.html">
+        <li class="chapter " data-level="4.4" data-path="../../common/types/dotnet/quote-dotnet.html">
             
                 <a href="../../common/types/dotnet/quote-dotnet.html">
             
@@ -272,7 +298,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="../../common/types/dotnet/versioninfo-dotnet.html">
+        <li class="chapter " data-level="4.5" data-path="../../common/types/dotnet/versioninfo-dotnet.html">
             
                 <a href="../../common/types/dotnet/versioninfo-dotnet.html">
             
@@ -285,7 +311,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="../../common/types/dotnet/validationerror-dotnet.html">
+        <li class="chapter " data-level="4.6" data-path="../../common/types/dotnet/validationerror-dotnet.html">
             
                 <a href="../../common/types/dotnet/validationerror-dotnet.html">
             
@@ -642,8 +668,8 @@
 </div></div></div>
 
 <h2 id="sub-queries">Sub-Queries</h2>
-<p>A sub-query is a query within another query and is used to return results that will be used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of <a href="../../common/query-api/query-operators.html#logical-operators">logical operators</a>.</p>
-<div class="api-method"><div class="api-method-definition"><p>This example demonstrates a simple search with default ordering and paging options:</p>
+<p>A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of <a href="../../common/query-api/query-operators.html#logical-operators">logical operators</a>.</p>
+<div class="api-method"><div class="api-method-definition"><p>This example demonstrates a simple search with a sub-query:</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><p>Synchronous</p>
 <pre><code class="lang-cs"><span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> Query(
     Op.Contains(<span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;Batman&quot;</span>),
@@ -743,7 +769,7 @@
 <h3 id="data-fields">Data Fields</h3>
 <p>Fields defined in the Content Type for the entry can be accessed by their api id.</p>
 <h2 id="full-example">Full Example</h2>
-<p>The example below combine the ordering and paging concepts</p>
+<p>The example below combines the ordering and paging concepts</p>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">var</span> query = <span class="hljs-keyword">new</span> Query(
     Op.Contains(<span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;Batman&quot;</span>),
     Op.GreaterThan(<span class="hljs-string">&quot;lengthRunTime&quot;</span>, <span class="hljs-number">200</span>)
@@ -777,11 +803,6 @@ query.PageSize = <span class="hljs-number">50</span>;
 </span></code></pre>
 </div></div></div>
 
-
-<blockquote id="fn_1">
-<sup>1</sup>. Need to add stories to (1) order by title (2) change &apos;DisplayField&apos; to &apos;TitleField&apos; in Content Types<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
-</blockquote>
-
                                 
                                 </section>
                             
@@ -814,7 +835,7 @@ query.PageSize = <span class="hljs-number">50</span>;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Search","level":"8.3","depth":1,"next":{"title":"Entry","level":"9.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"previous":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/entry-search.md","mtime":"2016-11-17T11:47:09.009Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-24T17:20:10.624Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Search","level":"8.3","depth":1,"next":{"title":"Entry","level":"9.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"previous":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/entry-search.md","mtime":"2016-11-25T13:47:39.157Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T13:55:39.787Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

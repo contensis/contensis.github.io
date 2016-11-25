@@ -10,7 +10,7 @@ All assets have the following standard entry fields
 | ---- | ---- | ----------- |
 | Title | string | The title of the asset |
 | Description | string | The description for the asset |
-| properties | PropertiesDictionary | A readonly collection of asset specific fields |
+| Properties | PropertiesDictionary | A readonly collection of asset specific fields |
 
 ## PropertiesDictionary
 

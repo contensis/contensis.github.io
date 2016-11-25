@@ -1,6 +1,6 @@
-# Overview
+# Entries
 
-A full [overview of entries can be found here [TODO]]()
+A full [overview of entries can be found here](https://contensis.github.io/docs/entries/)
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 

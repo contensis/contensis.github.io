@@ -1,4 +1,4 @@
-# Overview
+# Assets
 
 Assets are effectively an extension of entries, with additional properties containing details about the file they represent. An asset is an entry with a dataFormat value equal to 'asset', which allows them to be identified and queried independently to entries.
 

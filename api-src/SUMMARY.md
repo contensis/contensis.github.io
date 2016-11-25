@@ -55,4 +55,4 @@
 * [Query Operators](/common/query-api/query-operators.md)
 
 ## Security
-* [Authentication](/delivery-api/authentication-dotnet.md)
+* [Authentication](/delivery-api/authentication.md)

@@ -26,7 +26,7 @@ You can [create a new Content Type](https://contensis.github.io/docs/content-typ
 
 ## Upload the Film Images
 
-Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link]() or as an [image](). We will be using the image type so that we can add our captions!
+Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link](/delivery-api/linked-content.md) or as an [image](/delivery-api/linked-content.md#image). We will be using the image type so that we can add our captions!
 
 - [the-dark-knight.jpeg]()
 - Image 2
@@ -42,12 +42,12 @@ Now it's time to create some content!
 | Name | Overview | Year of Release | 
 | ---- | -------- | --------------- |
 | The Dark Knight | Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker. |  2008 |
-| **TODO: Add more** |
+
 
 
 ## Create a Film Listing in a Razor View
 
-Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don't know how to create your own pages then [read this tutorial]().
+Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don't know how to create your own pages then [read this tutorial](https://zenhub.zengenti.com/Contensis/R83/Development/Razor/Razoroverview.aspx).
 
 {% method -%}
 {% sample lang="cs" -%}

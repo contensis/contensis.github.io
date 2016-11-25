@@ -643,7 +643,7 @@
 <li><a href="#get-by-string-id-async">GetAsync(String, String, Integer)</a></li>
 </ul>
 <h2 id="get-by-guid-id">Get by Guid Id</h2>
-<p>Gets an entry by it&apos;s Guid identifier</p>
+<p>Gets an entry by its Guid identifier</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> Entry <span class="hljs-title">Get</span>(<span class="hljs-params">Guid id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -665,7 +665,7 @@
 <p>Type: <code>integer</code><br>The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
-<p>Returns <em>null</em> if entry with an id matching specified id does not exist.</p>
+<p>Returns <em>null</em> if an entry with an id matching the specified id does not exist.</p>
 <h3 id="examples">Examples</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
 <span class="hljs-keyword">var</span> client = ContensisClient.Create();
@@ -677,7 +677,7 @@ Entry film = client.Entries.Get(filmGuid, <span class="hljs-string">&quot;fr-fr&
 
 <hr>
 <h2 id="get-by-string-id">Get by String Id</h2>
-<p>Gets an entry by it&apos;s identifier</p>
+<p>Gets an entry by its identifier</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> Entry <span class="hljs-title">Get</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -699,7 +699,7 @@ Entry film = client.Entries.Get(filmGuid, <span class="hljs-string">&quot;fr-fr&
 <p>Type: <code>integer</code><br>The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
-<p>Returns <em>null</em> if entry with an id matching specified id does not exist. If the id string is not a valid <code>Guid</code> format then an exception will be thrown.</p>
+<p>Returns <em>null</em> if an entry with an id matching the specified id does not exist. If the id string is not a valid <code>Guid</code> format then an exception will be thrown.</p>
 <h3 id="examples">Examples</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
 <span class="hljs-keyword">var</span> client = ContensisClient.Create();
@@ -711,7 +711,7 @@ Entry film = client.Entries.Get(filmGuid, <span class="hljs-string">&quot;fr-fr&
 
 <hr>
 <h2 id="get-by-guid-id-async">Get by Guid Id Async</h2>
-<p>Gets an entry by it&apos;s Guid identifier asynchronously</p>
+<p>Gets an entry by its Guid identifier asynchronously</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;Entry&gt; <span class="hljs-title">GetAsync</span>(<span class="hljs-params">Guid id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -733,7 +733,7 @@ Entry film = client.Entries.Get(filmGuid, <span class="hljs-string">&quot;fr-fr&
 <p>Type: <code>integer</code><br>The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
-<p>Returns <em>null</em> if entry with an id matching specified id does not exist.</p>
+<p>Returns <em>null</em> if an entry with an id matching the specified id does not exist.</p>
 <h3 id="examples">Examples</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
 <span class="hljs-keyword">var</span> client = ContensisClient.Create();
@@ -745,7 +745,7 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(fil
 
 <hr>
 <h2 id="get-by-string-id-async">Get by String Id Async</h2>
-<p>Gets an entry by it&apos;s String identifier asynchronously</p>
+<p>Gets an entry by its String identifier asynchronously</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;Entry&gt; <span class="hljs-title">GetAsync</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -764,10 +764,10 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(fil
 </blockquote>
 <p><em>entryLinkDepth</em></p>
 <blockquote>
-<p>Type: <code>integer</code><br>The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
+<p>Type: <code>integer</code><br>The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
-<p>Returns <em>null</em> if entry with an id matching specified id does not exist. If the id string is not a valid <code>Guid</code> format then an exception will be thrown.</p>
+<p>Returns <em>null</em> if an entry with an id matching the specified id does not exist. If the id string is not a valid <code>Guid</code> format then an exception will be thrown.</p>
 <h3 id="examples">Examples</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
 <span class="hljs-keyword">var</span> client = ContensisClient.Create();
@@ -811,7 +811,7 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(fil
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get","level":"8.1","depth":1,"next":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"previous":{"title":"API Instantiation","level":"5.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","mtime":"2016-11-16T14:44:30.700Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T14:08:49.005Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get","level":"8.1","depth":1,"next":{"title":"List","level":"8.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"previous":{"title":"API Instantiation","level":"5.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","mtime":"2016-11-25T14:32:12.485Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T14:34:18.982Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

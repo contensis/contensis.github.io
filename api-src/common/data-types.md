@@ -2,7 +2,7 @@
 
 ## Data Types
 
-The Data Type is the storage type for a field. TODO: Add more here
+The Data Type is the storage type for a field and determines how the field data is validated and indexed for search.
 
 | Type | Description |
 | ---- | ----------- |
@@ -33,5 +33,5 @@ The DataFormat is designed to allow custom types to be added. The value is a sim
 | asset | object | An asset format that represents a file resource |
 | location | object | Represents a point on the surface of Earth |
 | quote | object | A quote with text and a source |
-| field | objectArray |Represents a composed field type, usually defined as an ObjectArray Data Type |
+| field | objectArray |Represents a composed field type, defined as an ObjectArray Data Type |
 | image | object | Wraps an Asset with an additional Caption property |

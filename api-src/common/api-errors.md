@@ -18,7 +18,7 @@ Ensure all status codes we expose are covered [^2]
 Errors returned as HTTP errors are subsequently handled in an appropriate language specific manner.
 
 {% method -%}
-##### Example
+### Example
 
 Handling .NET exceptions: [^1]
 

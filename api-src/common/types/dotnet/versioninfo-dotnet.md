@@ -22,4 +22,4 @@ The *VersionNo* follows a two-part versioning scheme:
 
 > {Major}.{Minor}
 
-The *minor* part is incremented on every sucessful update to the entry. The *major* part is incremented once the entry has been approved and subsequently published, which in turn resets the {minor} part to zero.
+The *minor* part is incremented on every sucessful update to the entry. The *major* part is incremented once the entry has been approved and subsequently published, which in turn resets the *minor* part to zero.

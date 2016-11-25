@@ -9,11 +9,11 @@ In this section you will be guided through defining and creating content using t
 
 ## Create a new Project
 
-[Projects](/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
+[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
 
 ## Create a Content Type
 
-You can [create a new Content Type](/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
+You can [create a new Content Type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
 | Field Name | API ID | Type | Description |
 | ---------- | ------ | ---- | ----------- |
@@ -37,7 +37,7 @@ Content doesn't look very good without some images, so now add the cover images 
 
 Now it's time to create some content!
 
-[Create entries](/docs/entries/create-an-entry.html) for the films using the data in the table:
+[Create entries](https://contensis.github.io/docs/entries/create-an-entry.html) for the films using the data in the table:
 
 | Name | Overview | Year of Release | 
 | ---- | -------- | --------------- |

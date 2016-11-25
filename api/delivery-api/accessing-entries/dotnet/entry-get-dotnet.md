@@ -10,7 +10,7 @@ Requesting an individual entry can be achieved by using one of the `Get` method 
 
 ## Get by Guid Id
 
-Gets an entry by it's Guid identifier
+Gets an entry by its Guid identifier
 
 ### Syntax
 
@@ -40,7 +40,7 @@ public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
 
 ### Remarks
 
-Returns *null* if entry with an id matching specified id does not exist.
+Returns *null* if an entry with an id matching the specified id does not exist.
 
 ### Examples
 
@@ -59,7 +59,7 @@ Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
 
 ## Get by String Id
 
-Gets an entry by it's identifier
+Gets an entry by its identifier
 
 ### Syntax
 
@@ -89,7 +89,7 @@ public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
 
 ### Remarks
 
-Returns *null* if entry with an id matching specified id does not exist. If the id string is not a valid `Guid` format then an exception will be thrown.
+Returns *null* if an entry with an id matching the specified id does not exist. If the id string is not a valid `Guid` format then an exception will be thrown.
 
 ### Examples
 
@@ -108,7 +108,7 @@ Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
 
 ## Get by Guid Id Async
 
-Gets an entry by it's Guid identifier asynchronously
+Gets an entry by its Guid identifier asynchronously
 
 ### Syntax
 
@@ -138,7 +138,7 @@ public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLink
 
 ### Remarks
 
-Returns *null* if entry with an id matching specified id does not exist.
+Returns *null* if an entry with an id matching the specified id does not exist.
 
 ### Examples
 
@@ -157,7 +157,7 @@ Entry film = await client.Entries.GetAsync(filmGuid, "fr-fr", 3);
 
 ## Get by String Id Async
 
-Gets an entry by it's String identifier asynchronously
+Gets an entry by its String identifier asynchronously
 
 ### Syntax
 
@@ -183,11 +183,11 @@ public async Task<Entry> GetAsync(string id, string languageCode = null, entryLi
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
 
 ### Remarks
 
-Returns *null* if entry with an id matching specified id does not exist. If the id string is not a valid `Guid` format then an exception will be thrown.
+Returns *null* if an entry with an id matching the specified id does not exist. If the id string is not a valid `Guid` format then an exception will be thrown.
 
 ### Examples
 

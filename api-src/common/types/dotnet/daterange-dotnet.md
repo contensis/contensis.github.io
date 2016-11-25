@@ -17,11 +17,13 @@ The *From* and *To* properties are of type nullable DateTime and can be partly s
 
 ## Validation
 
+The *From* value cannot be a later date than the *To* value.
+
 ## Examples
 
 {% method -%}
 
-##### Get a DateRange field object
+### Get a DateRange field object
 
 {% sample lang="cs" -%}
 

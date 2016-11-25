@@ -8,9 +8,11 @@ The DateRange class represents a start and end point in time.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| From | DateTime? | The datetime the range starts |
-| To | DateTime? | The datetime the range ends |
+| from | DateTime? | The datetime the range starts |
+| to | DateTime? | The datetime the range ends |
 
-## Remarks
+## Validation
 
-##
+The *From* value cannot be a later date than the *To* value.
+
+## Example

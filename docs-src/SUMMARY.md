@@ -4,7 +4,7 @@
 
 ## Concepts
 * [Content modelling](/concepts/content-modelling.md)
-*
+
 ## API Key Management
 * [Overview](/api-keys/README.md)
 

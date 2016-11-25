@@ -26,4 +26,4 @@ These are the standard properties that all entries have. The languageCode proper
 | :----- | :------ | :-----------|
 | [Get(string fieldName)](./entry-methods-dotnet.html#get) | dynamic | Gets a field item by name and returns a dynamic object |
 | [Get`<Type>`(string fieldName)](./entry-methods-dotnet.html#gett) | `<Type>` | Gets a field item by name and attempts to cast to the specified generic type |
-| [HasValue(string fieldName)](./entry-methods-dotnet.html#hasvalue) | bool | A helper function to determine whether a field exists of has a value |
+| [HasValue(string fieldName)](./entry-methods-dotnet.html#hasvalue) | bool | A helper function to determine whether a field exists and has a value |

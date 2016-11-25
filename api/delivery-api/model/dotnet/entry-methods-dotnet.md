@@ -100,7 +100,7 @@ public bool HasValue(string fieldName)
 > Type: string  
 > The name of the field to check
 
-### Return Value
+### Return value
 > Type: boolean  
 > __true__ if the field exists and is not null, otherwise __false__
 

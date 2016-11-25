@@ -1,4 +1,4 @@
-# List Entries by Content Types
+# List entries by content types
 
 
 - List(string contentTypeId, string languageCode, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)
@@ -34,7 +34,7 @@
 - ListAsync(string contentTypeId, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)
 
 
-## Suggested Change
+## Suggested change
 
 {% method -%}
 {% sample lang="cs" -%}

@@ -1,35 +1,35 @@
 # Summary
 * [Overview](README.md)
-* [Data Types](/common/data-types.md)
-* [Handling Errors](/common/api-errors.md)
-* [Language Variations](/common/language-variations.md)
+* [Data types](/common/data-types.md)
+* [Handling errors](/common/api-errors.md)
+* [Language variations](/common/language-variations.md)
 
-## Common Types
-* [Common Types](/common/types/README.md)
+## Common types
+* [Common types](/common/types/README.md)
 
 ### HTTP
-* [Composed Field](/common/types/http/composed-http.md)
+* [ComposedField](/common/types/http/composed-http.md)
 * [DateRange](/common/types/http/daterange-http.md)
 * [Location](/common/types/http/location-http.md)
 * [Quote](/common/types/http/quote-http.md)
-* [Version Info](/common/types/http/versioninfo-http.md)
+* [VersionInfo](/common/types/http/versioninfo-http.md)
 
 ### .NET
-* [Composed Field](/common/types/dotnet/composed-dotnet.md)
+* [ComposedField](/common/types/dotnet/composed-dotnet.md)
 * [DateRange](/common/types/dotnet/daterange-dotnet.md)
 * [Location](/common/types/dotnet/location-dotnet.md)
 * [Quote](/common/types/dotnet/quote-dotnet.md)
-* [Version Info](/common/types/dotnet/versioninfo-dotnet.md)
+* [VersionInfo](/common/types/dotnet/versioninfo-dotnet.md)
 * [ValidationError](/common/types/dotnet/validationerror-dotnet.md)
 
 ## Delivery API
 * [Introduction](/delivery-api/README.md)
-* [Getting Started](/delivery-api/getting-started.md)
-* [API Instantiation](/delivery-api/api-instantiation.md)
+* [Getting started](/delivery-api/getting-started.md)
+* [API instantiation](/delivery-api/api-instantiation.md)
 
 ### Reference
 
-### Accessing Entries
+### Accessing entries
 
 #### .NET
 * [Get](/delivery-api/accessing-entries/dotnet/entry-get-dotnet.md)
@@ -43,7 +43,7 @@
 #### .NET
 * [Entry](/delivery-api/model/dotnet/entry-dotnet.md)
 * [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
-* [Entry Methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
+* [Entry methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
 
 ### Cookbook
 * [Cookbook](/delivery-api/cookbook/README.md)
@@ -52,7 +52,7 @@
 * [Introduction](/management-api/README.md)
 
 ## Query API
-* [Query Operators](/common/query-api/query-operators.md)
+* [Query operators](/common/query-api/query-operators.md)
 
 ## Security
 * [Authentication](/delivery-api/authentication.md)

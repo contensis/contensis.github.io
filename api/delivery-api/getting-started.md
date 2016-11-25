@@ -1,4 +1,4 @@
-# Getting Started
+# Getting started
 
 In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the Delivery API. Throughout the documentation we use examples based on our sample MoviesDB project.
 
@@ -7,11 +7,11 @@ In this section you will be guided through defining and creating content using t
 - You have an understanding of creating content in the Navigation Tree
 - You know how to create and edit Webpages and Razor Views
 
-## Create a new Project
+## Create a new project
 
 [Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
 
-## Create a Content Type
+## Create a content type
 
 You can [create a new Content Type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
@@ -24,7 +24,7 @@ You can [create a new Content Type](https://contensis.github.io/docs/content-typ
 
 **TODO: define all needed films** 
 
-## Upload the Film Images
+## Upload the film images
 
 Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link](/delivery-api/linked-content.md) or as an [image](/delivery-api/linked-content.md#image). We will be using the image type so that we can add our captions!
 
@@ -33,7 +33,7 @@ Content doesn't look very good without some images, so now add the cover images 
 - Image 3
 - etc.
 
-## Create Some Films
+## Create some films
 
 Now it's time to create some content!
 
@@ -45,7 +45,7 @@ Now it's time to create some content!
 
 
 
-## Create a Film Listing in a Razor View
+## Create a film listing in a razor view
 
 Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don't know how to create your own pages then [read this tutorial](https://zenhub.zengenti.com/Contensis/R83/Development/Razor/Razoroverview.aspx).
 

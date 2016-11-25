@@ -2,7 +2,7 @@
 
 Things go wrong, either because the client is asking for something that does not exist, a network failure occurred or a bug is in the code. All non-success HTTP responses are treated as errors and are wrapped up in the client APIs to allow them to be handled.
 
-## Error Types
+## Error types
 
 | Status Code | Error Code | Description |
 | ----------- | -------------- | ----------- |
@@ -11,16 +11,16 @@ Things go wrong, either because the client is asking for something that does not
 | 404| NotFound | The resource does not exist at the specified endpoint |
 | 500 | ServerError | Something went wrong processing the request |
 
-Ensure all status codes we expose are covered [^2]
+Ensure all status codes we expose are covered
 
-## Handling Errors
+## Handling errors
 
 Errors returned as HTTP errors are subsequently handled in an appropriate language specific manner.
 
 {% method -%}
 ### Example
 
-Handling .NET exceptions: [^1]
+Handling .NET exceptions:
 
 {% sample lang="cs" -%}
 ```cs
@@ -55,8 +55,3 @@ catch(Exception ex)
 ```
 
 {% endmethod %}
-
-
-[^1]: Need to check what exception type is being thrown if it is not a ValidationException - may introduce `ApiException` or `ContensisException` - TBD
-
-[^2]: This may change once the validation logic is re-vamped, may have more

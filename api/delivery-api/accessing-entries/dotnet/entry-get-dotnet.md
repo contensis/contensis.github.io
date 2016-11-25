@@ -1,4 +1,4 @@
-# Getting an Entry
+# Getting an entry
 
 Requesting an individual entry can be achieved by using one of the `Get` method overloads. Additionally 
 
@@ -8,7 +8,7 @@ Requesting an individual entry can be achieved by using one of the `Get` method 
 - [GetAsync(String, String, Integer)](#get-by-string-id-async)
 
 
-## Get by Guid Id
+## Get by guid id
 
 Gets an entry by its Guid identifier
 
@@ -36,7 +36,7 @@ public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
 
 ### Remarks
 
@@ -57,7 +57,7 @@ Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
 
 ---
 
-## Get by String Id
+## Get by string id
 
 Gets an entry by its identifier
 
@@ -85,7 +85,7 @@ public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
 
 ### Remarks
 
@@ -106,7 +106,7 @@ Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
 
 ---
 
-## Get by Guid Id Async
+## Get by guid id async
 
 Gets an entry by its Guid identifier asynchronously
 
@@ -134,7 +134,7 @@ public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLink
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
 
 ### Remarks
 
@@ -155,7 +155,7 @@ Entry film = await client.Entries.GetAsync(filmGuid, "fr-fr", 3);
 
 ---
 
-## Get by String Id Async
+## Get by string id async
 
 Gets an entry by its String identifier asynchronously
 

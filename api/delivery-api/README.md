@@ -1,4 +1,4 @@
-# Delivery API Docs
+# Delivery API docs
 
 ## Introduction
 
@@ -12,7 +12,7 @@ We envisage that the majority of requirements in your application can be fulfill
 
 The documentation is mainly example-driven with API references to the types for the specific languages:
 
-## Key Concepts
+## Key concepts
 
 [Get started with the Delivery API Quickstart](./getting-started.md)
 

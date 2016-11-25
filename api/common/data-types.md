@@ -1,6 +1,6 @@
-# Field Types
+# Field types
 
-## Data Types
+## Data types
 
 The Data Type is the storage type for a field and determines how the field data is validated and indexed for search.
 
@@ -19,13 +19,13 @@ The Data Type is the storage type for a field and determines how the field data 
 | datetimeArray | An array of datetimes |
 | objectArray | An array of objects |
 
-## Data Format
+## Data format
 
 The Data Format property is used as an extension of a DataType to describe or identify the structure and intent of the data. For example, a Location has a DataType of *object*, and a DataFormat of *location*. 
 
 The DataFormat is designed to allow custom types to be added. The value is a simple string
 
-### Supported Data Formats
+### Supported data formats
 
 | Format | Data Type | Description |
 | ------ | --------- | ----------- |

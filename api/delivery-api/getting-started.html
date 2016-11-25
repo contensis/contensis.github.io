@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Getting Started · GitBook</title>
+        <title>Getting started · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -113,7 +113,7 @@
                 <a href="../common/data-types.html">
             
                     
-                    Data Types
+                    Data types
             
                 </a>
             
@@ -126,7 +126,7 @@
                 <a href="../common/api-errors.html">
             
                     
-                    Handling Errors
+                    Handling errors
             
                 </a>
             
@@ -139,7 +139,7 @@
                 <span>
             
                     
-                    Language Variations
+                    Language variations
             
                 </a>
             
@@ -150,7 +150,7 @@
 
     
         
-        <li class="header">Common Types</li>
+        <li class="header">Common types</li>
         
         
     
@@ -159,7 +159,7 @@
                 <a href="../common/types/">
             
                     
-                    Common Types
+                    Common types
             
                 </a>
             
@@ -179,7 +179,7 @@
                 <a href="../common/types/http/composed-http.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -231,7 +231,7 @@
                 <a href="../common/types/http/versioninfo-http.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -251,7 +251,7 @@
                 <a href="../common/types/dotnet/composed-dotnet.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -303,7 +303,7 @@
                 <a href="../common/types/dotnet/versioninfo-dotnet.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -349,7 +349,7 @@
                 <a href="getting-started.html">
             
                     
-                    Getting Started
+                    Getting started
             
                 </a>
             
@@ -362,7 +362,7 @@
                 <a href="api-instantiation.html">
             
                     
-                    API Instantiation
+                    API instantiation
             
                 </a>
             
@@ -380,7 +380,7 @@
 
     
         
-        <li class="header">Accessing Entries</li>
+        <li class="header">Accessing entries</li>
         
         
     
@@ -501,7 +501,7 @@
                 <a href="model/dotnet/entry-methods-dotnet.html">
             
                     
-                    Entry Methods
+                    Entry methods
             
                 </a>
             
@@ -561,7 +561,7 @@
                 <a href="../common/query-api/query-operators.html">
             
                     
-                    Query Operators
+                    Query operators
             
                 </a>
             
@@ -619,7 +619,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Getting Started</a>
+        <a href=".." >Getting started</a>
     </h1>
 </div>
 
@@ -634,16 +634,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="getting-started">Getting Started</h1>
+                                <h1 id="getting-started">Getting started</h1>
 <p>In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the Delivery API. Throughout the documentation we use examples based on our sample MoviesDB project.</p>
 <h2 id="assumptions">Assumptions</h2>
 <ul>
 <li>You have an understanding of creating content in the Navigation Tree</li>
 <li>You know how to create and edit Webpages and Razor Views</li>
 </ul>
-<h2 id="create-a-new-project">Create a new Project</h2>
+<h2 id="create-a-new-project">Create a new project</h2>
 <p><a href="https://contensis.github.io/docs/projects/" target="_blank">Projects</a> are the home for all your content in Contensis. Create a new project called MoviesDB <sup><a href="#fn_1" id="reffn_1">1</a></sup> using the default values for assets and languages.</p>
-<h2 id="create-a-content-type">Create a Content Type</h2>
+<h2 id="create-a-content-type">Create a content type</h2>
 <p>You can <a href="https://contensis.github.io/docs/content-types/create-a-content-type.html" target="_blank">create a new Content Type</a> easily in the Content Type editors in the Contensis UI. Create a content type called <em>Film</em> with the following fields:</p>
 <table>
 <thead>
@@ -682,7 +682,7 @@
 </tbody>
 </table>
 <p><strong>TODO: define all needed films</strong> </p>
-<h2 id="upload-the-film-images">Upload the Film Images</h2>
+<h2 id="upload-the-film-images">Upload the film images</h2>
 <p>Content doesn&apos;t look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct <a href="linked-content.md">asset link</a> or as an <a href="linked-content.md#image">image</a>. We will be using the image type so that we can add our captions!</p>
 <ul>
 <li><a href="">the-dark-knight.jpeg</a></li>
@@ -690,7 +690,7 @@
 <li>Image 3</li>
 <li>etc.</li>
 </ul>
-<h2 id="create-some-films">Create Some Films</h2>
+<h2 id="create-some-films">Create some films</h2>
 <p>Now it&apos;s time to create some content!</p>
 <p><a href="https://contensis.github.io/docs/entries/create-an-entry.html" target="_blank">Create entries</a> for the films using the data in the table:</p>
 <table>
@@ -709,7 +709,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="create-a-film-listing-in-a-razor-view">Create a Film Listing in a Razor View</h2>
+<h2 id="create-a-film-listing-in-a-razor-view">Create a film listing in a razor view</h2>
 <p>Great, now we can start creating the Razor View that will render the film listing in a Webpage. First, ensure that you have a new webpage created with a placeholder that allows Razor Views - if you don&apos;t know how to create your own pages then <a href="https://zenhub.zengenti.com/Contensis/R83/Development/Razor/Razoroverview.aspx" target="_blank">read this tutorial</a>.</p>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><h3 id="syntax">Syntax</h3>
 <pre><code class="lang-cs">@<span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api.Delivery <span class="hljs-comment">// Reference the Delivery API</span>
@@ -779,7 +779,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"5.2","depth":1,"next":{"title":"API Instantiation","level":"5.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"previous":{"title":"Introduction","level":"5.1","depth":1,"path":"delivery-api/README.md","ref":"delivery-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/getting-started.md","mtime":"2016-11-25T14:50:14.352Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:17:35.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting started","level":"5.2","depth":1,"next":{"title":"API instantiation","level":"5.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"previous":{"title":"Introduction","level":"5.1","depth":1,"path":"delivery-api/README.md","ref":"delivery-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/getting-started.md","mtime":"2016-11-25T15:48:20.058Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:50:35.524Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

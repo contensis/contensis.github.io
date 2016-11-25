@@ -9,7 +9,7 @@ Additionally the security properties are set, which simplifies the usage of the 
 This same approach can be used in non-Contensis based frameworks such as ASP.NET MVC or the Nancy framework.
 
 {% method -%}
-##### API Initialisation
+##### API initialisation
 
 
 {% sample lang="cs" -%}
@@ -34,7 +34,7 @@ ContensisClient.Configure(defaultConfiguration);
 ```
 {% endmethod %}
 
-## Client Creation
+## Client creation
 
 All operations for the API hang off the ContensisClient type, which is created using the static method ContensisClient.Create(). The Create() method allows parts of the Default configuration to be partially or completely overridden for that instance.
 

@@ -50,7 +50,7 @@ POST: /api/search
 
 {% endmethod %}
 
-## Sub-Queries
+## Sub-queries
 
 A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](/common/query-api/query-operators.md#logical-operators).
 
@@ -200,19 +200,19 @@ Paging allows the number of results to be restricted to a defined count so that 
 {% endmethod %}
 
 
-## Specifying Fields
+## Specifying fields
 
-### System Fields
+### System fields
 
 The fields for search generally match the names defined in the entry structure, for example 'id', 'contentTypeId', 'projectId', etc. Field data not held at the root of the entry, such as the version information are accessed using a dot notation, i.e. 'version.versionNo', 'version.published', etc.
 
 The 'titleField' field is a dynamic value, determined by the 'Title Field' value in the Content Type.
 
-### Data Fields
+### Data fields
 
 Fields defined in the Content Type for the entry can be accessed by their api id.
 
-## Full Example
+## Full example
 
 The example below combines the ordering and paging concepts
 

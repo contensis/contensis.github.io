@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>API Instantiation · GitBook</title>
+        <title>API instantiation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -113,7 +113,7 @@
                 <a href="../common/data-types.html">
             
                     
-                    Data Types
+                    Data types
             
                 </a>
             
@@ -126,7 +126,7 @@
                 <a href="../common/api-errors.html">
             
                     
-                    Handling Errors
+                    Handling errors
             
                 </a>
             
@@ -139,7 +139,7 @@
                 <span>
             
                     
-                    Language Variations
+                    Language variations
             
                 </a>
             
@@ -150,7 +150,7 @@
 
     
         
-        <li class="header">Common Types</li>
+        <li class="header">Common types</li>
         
         
     
@@ -159,7 +159,7 @@
                 <a href="../common/types/">
             
                     
-                    Common Types
+                    Common types
             
                 </a>
             
@@ -179,7 +179,7 @@
                 <a href="../common/types/http/composed-http.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -231,7 +231,7 @@
                 <a href="../common/types/http/versioninfo-http.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -251,7 +251,7 @@
                 <a href="../common/types/dotnet/composed-dotnet.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -303,7 +303,7 @@
                 <a href="../common/types/dotnet/versioninfo-dotnet.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -349,7 +349,7 @@
                 <a href="getting-started.html">
             
                     
-                    Getting Started
+                    Getting started
             
                 </a>
             
@@ -362,7 +362,7 @@
                 <a href="api-instantiation.html">
             
                     
-                    API Instantiation
+                    API instantiation
             
                 </a>
             
@@ -380,7 +380,7 @@
 
     
         
-        <li class="header">Accessing Entries</li>
+        <li class="header">Accessing entries</li>
         
         
     
@@ -501,7 +501,7 @@
                 <a href="model/dotnet/entry-methods-dotnet.html">
             
                     
-                    Entry Methods
+                    Entry methods
             
                 </a>
             
@@ -561,7 +561,7 @@
                 <a href="../common/query-api/query-operators.html">
             
                     
-                    Query Operators
+                    Query operators
             
                 </a>
             
@@ -619,7 +619,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >API Instantiation</a>
+        <a href=".." >API instantiation</a>
     </h1>
 </div>
 
@@ -639,7 +639,7 @@
 <p>The default configuration can be set once on the application startup which will be effective for all ContensisClient instantiations, negating the need to provide configuration values each and every time the API is used. On the startup of a Contensis website, the configuration code is set to reflect the context of the publishing server, ensuring that the correct service url, project API id, project default language and delivery context (preview or live) are set. </p>
 <p>Additionally the security properties are set, which simplifies the usage of the API. The client ID and shared secret are obtained from the API key management screen. This is then used to call the security service to obtain a claims-based bearer token and to validate that the user can access resources from the service. The list of scopes define what you would like your client to be able to do (<a href="authentication-dotnet.md">see the scopes section for more information</a>).</p>
 <p>This same approach can be used in non-Contensis based frameworks such as ASP.NET MVC or the Nancy framework.</p>
-<div class="api-method"><div class="api-method-definition"><h5 id="api-initialisation">API Initialisation</h5>
+<div class="api-method"><div class="api-method-definition"><h5 id="api-initialisation">API initialisation</h5>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">var</span> defaultConfiguration = <span class="hljs-keyword">new</span> ContensisClientConfiguration(
     rootUrl: <span class="hljs-string">&quot;http://cms.contensis.com&quot;</span>,
     projectApiId: <span class="hljs-string">&quot;myProject&quot;</span>,
@@ -656,7 +656,7 @@ ContensisClient.Configure(defaultConfiguration);
 </code></pre>
 </div></div></div>
 
-<h2 id="client-creation">Client Creation</h2>
+<h2 id="client-creation">Client creation</h2>
 <p>All operations for the API hang off the ContensisClient type, which is created using the static method ContensisClient.Create(). The Create() method allows parts of the Default configuration to be partially or completely overridden for that instance.</p>
 <div class="api-method"><div class="api-method-definition"><h5 id="creating-a-contensisclient">Creating a ContensisClient</h5>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api;
@@ -706,7 +706,7 @@ ContensisClient.Configure(defaultConfiguration);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API Instantiation","level":"5.3","depth":1,"next":{"title":"Get","level":"8.1","depth":1,"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","articles":[]},"previous":{"title":"Getting Started","level":"5.2","depth":1,"path":"delivery-api/getting-started.md","ref":"delivery-api/getting-started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/api-instantiation.md","mtime":"2016-11-25T14:24:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:17:35.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"API instantiation","level":"5.3","depth":1,"next":{"title":"Get","level":"8.1","depth":1,"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","articles":[]},"previous":{"title":"Getting started","level":"5.2","depth":1,"path":"delivery-api/getting-started.md","ref":"delivery-api/getting-started.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/api-instantiation.md","mtime":"2016-11-25T15:47:20.695Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:50:35.524Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

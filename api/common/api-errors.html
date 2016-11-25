@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Handling Errors · GitBook</title>
+        <title>Handling errors · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -113,7 +113,7 @@
                 <a href="data-types.html">
             
                     
-                    Data Types
+                    Data types
             
                 </a>
             
@@ -126,7 +126,7 @@
                 <a href="api-errors.html">
             
                     
-                    Handling Errors
+                    Handling errors
             
                 </a>
             
@@ -139,7 +139,7 @@
                 <span>
             
                     
-                    Language Variations
+                    Language variations
             
                 </a>
             
@@ -150,7 +150,7 @@
 
     
         
-        <li class="header">Common Types</li>
+        <li class="header">Common types</li>
         
         
     
@@ -159,7 +159,7 @@
                 <a href="types/">
             
                     
-                    Common Types
+                    Common types
             
                 </a>
             
@@ -179,7 +179,7 @@
                 <a href="types/http/composed-http.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -231,7 +231,7 @@
                 <a href="types/http/versioninfo-http.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -251,7 +251,7 @@
                 <a href="types/dotnet/composed-dotnet.html">
             
                     
-                    Composed Field
+                    ComposedField
             
                 </a>
             
@@ -303,7 +303,7 @@
                 <a href="types/dotnet/versioninfo-dotnet.html">
             
                     
-                    Version Info
+                    VersionInfo
             
                 </a>
             
@@ -349,7 +349,7 @@
                 <a href="../delivery-api/getting-started.html">
             
                     
-                    Getting Started
+                    Getting started
             
                 </a>
             
@@ -362,7 +362,7 @@
                 <a href="../delivery-api/api-instantiation.html">
             
                     
-                    API Instantiation
+                    API instantiation
             
                 </a>
             
@@ -380,7 +380,7 @@
 
     
         
-        <li class="header">Accessing Entries</li>
+        <li class="header">Accessing entries</li>
         
         
     
@@ -501,7 +501,7 @@
                 <a href="../delivery-api/model/dotnet/entry-methods-dotnet.html">
             
                     
-                    Entry Methods
+                    Entry methods
             
                 </a>
             
@@ -561,7 +561,7 @@
                 <a href="query-api/query-operators.html">
             
                     
-                    Query Operators
+                    Query operators
             
                 </a>
             
@@ -619,7 +619,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Handling Errors</a>
+        <a href=".." >Handling errors</a>
     </h1>
 </div>
 
@@ -636,7 +636,7 @@
                                 
                                 <h1 id="errors">Errors</h1>
 <p>Things go wrong, either because the client is asking for something that does not exist, a network failure occurred or a bug is in the code. All non-success HTTP responses are treated as errors and are wrapped up in the client APIs to allow them to be handled.</p>
-<h2 id="error-types">Error Types</h2>
+<h2 id="error-types">Error types</h2>
 <table>
 <thead>
 <tr>
@@ -668,11 +668,11 @@
 </tr>
 </tbody>
 </table>
-<p>Ensure all status codes we expose are covered <sup><a href="#fn_2" id="reffn_2">2</a></sup></p>
-<h2 id="handling-errors">Handling Errors</h2>
+<p>Ensure all status codes we expose are covered</p>
+<h2 id="handling-errors">Handling errors</h2>
 <p>Errors returned as HTTP errors are subsequently handled in an appropriate language specific manner.</p>
 <div class="api-method"><div class="api-method-definition"><h3 id="example">Example</h3>
-<p>Handling .NET exceptions: <sup><a href="#fn_1" id="reffn_1">1</a></sup></p>
+<p>Handling .NET exceptions:</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">try</span>
 {
     <span class="hljs-comment">// Get a specific entry</span>
@@ -700,15 +700,6 @@
 </div><div class="api-method-sample" data-lang="js" data-name="JavaScript"><pre><code class="lang-js"><span class="hljs-comment">// TODO</span>
 </code></pre>
 </div></div></div>
-
-
-<blockquote id="fn_1">
-<sup>1</sup>. Need to check what exception type is being thrown if it is not a ValidationException - may introduce <code>ApiException</code> or <code>ContensisException</code> - TBD<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
-</blockquote>
-<blockquote id="fn_2">
-<sup>2</sup>. This may change once the validation logic is re-vamped, may have more<a href="#reffn_2" title="Jump back to footnote [2] in the text."> &#x21A9;</a>
-</blockquote>
-
                                 
                                 </section>
                             
@@ -741,7 +732,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Handling Errors","level":"1.3","depth":1,"next":{"title":"Language Variations","level":"1.4","depth":1,"path":"common/language-variations.md","ref":"common/language-variations.md","articles":[]},"previous":{"title":"Data Types","level":"1.2","depth":1,"path":"common/data-types.md","ref":"common/data-types.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"common/api-errors.md","mtime":"2016-11-25T14:28:06.133Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:17:35.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Handling errors","level":"1.3","depth":1,"next":{"title":"Language variations","level":"1.4","depth":1,"path":"common/language-variations.md","ref":"common/language-variations.md","articles":[]},"previous":{"title":"Data types","level":"1.2","depth":1,"path":"common/data-types.md","ref":"common/data-types.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"common/api-errors.md","mtime":"2016-11-25T15:37:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-25T15:50:35.524Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

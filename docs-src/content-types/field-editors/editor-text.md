@@ -1,5 +1,5 @@
 # Text field editor
-Text fields are used to store any text content. This editor is the most commonly used field editor due to the variety of content it can contain.
+Text fields are used to store any text content. This editor is the most commonly used field editor as it can accommodate a variety of content.
 
 ## Settings
 | Setting name | Summary|
@@ -14,8 +14,8 @@ Text fields are used to store any text content. This editor is the most commonly
 This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
-- [Regular expression pattern matching](/content-types/validation/regex-validation.md)
 - [Character count](/content-types/validation/character-count-validation.md)
+- [Regular expression pattern matching](/content-types/validation/regex-validation.md)
 
 
 ## Properties

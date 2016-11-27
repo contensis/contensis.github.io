@@ -16,3 +16,4 @@ The DateRange class represents a start and end point in time.
 The *From* value cannot be a later date than the *To* value.
 
 ## Example
+

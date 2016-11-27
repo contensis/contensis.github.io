@@ -1,6 +1,6 @@
-# Supported Complex Types
+# Model
 
-## Common
+## Supported Types
 
 - DateRange [ [HTTP](./http/daterange-http.md), [.NET](./dotnet/daterange-dotnet.md) ]
 - Location [ [HTTP](./http/location-http.md), [.NET](./dotnet/daterange-dotnet.md) ]

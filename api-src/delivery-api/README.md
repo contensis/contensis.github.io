@@ -23,17 +23,3 @@ The documentation is mainly example-driven with API references to the types for 
 [Listing Entries by Content Type](./accessing-entries/dotnet/entries-list-dotnet.md)
 
 [Searching for Entries](./accessing-entries/entry-search.md)
-
-## Models
-
-Entries [ [HTTP](./model/http/entry-http.md), [.NET](./model/dotnet/entry-dotnet.md) ]
-
-Assets [ [HTTP](./model/http/asset-http.md), [.NET](./model/dotnet/asset-dotnet.md) ]
-
-Date Range [ [HTTP](/common/types/http/daterange-http.md), [.NET](/common/types/dotnet/daterange-dotnet.md) ]
-
-Quote [ [HTTP](/common/types/http/quote-http.md), [.NET](/common/types/dotnet/quote-dotnet.md) ]
-
-Location [ [HTTP](/common/types/http/location-http.md), [.NET](/common/types/dotnet/location-dotnet.md) ]
-
-Composed Field [ [HTTP](/common/types/http/composed-http.md), [.NET](/common/types/dotnet/composed-dotnet.md) ]

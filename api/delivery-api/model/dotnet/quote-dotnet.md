@@ -1,6 +1,4 @@
-# DateRange
-
-## Overview
+# Quote
 
 The Quote type represents a section of referenced text from an external source.
 
@@ -13,6 +11,8 @@ The Quote type represents a section of referenced text from an external source.
 
 ## Validation
 
+TODO: Confirm if a Validation should exist
+
 ## Examples
 
 {% method -%}
@@ -24,14 +24,14 @@ The Quote type represents a section of referenced text from an external source.
 ```cs
 @{
     // Retrieve a film by it's ID.
-    var film = client.Get("");
+    var film = client.Get("3bb72e32-1fc7-4289-bf65-60a5b8ce1f78");
 
     // Get the field value as a DateRange instance.
-    var filmingPeriod = film.Get<DateRange>("filmingPeriod");
+    var filmQuote = film.Get<Quote>("memorableQuote");
 }
 
-<div class="start">@filmingPeriod.From</div>
-
-<div class="end">@filmingPeriod.To</div>
+<blockquote cite="@filmQuote.Source">
+    @filmQuote.Text
+</blockquote>
 ```
 {% endmethod %}

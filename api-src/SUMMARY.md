@@ -4,30 +4,11 @@
 * [Handling errors](/common/api-errors.md)
 * [Language variations](/common/language-variations.md)
 
-## Common types
-* [Common types](/common/types/README.md)
-
-### HTTP
-* [ComposedField](/common/types/http/composed-http.md)
-* [DateRange](/common/types/http/daterange-http.md)
-* [Location](/common/types/http/location-http.md)
-* [Quote](/common/types/http/quote-http.md)
-* [VersionInfo](/common/types/http/versioninfo-http.md)
-
-### .NET
-* [ComposedField](/common/types/dotnet/composed-dotnet.md)
-* [DateRange](/common/types/dotnet/daterange-dotnet.md)
-* [Location](/common/types/dotnet/location-dotnet.md)
-* [Quote](/common/types/dotnet/quote-dotnet.md)
-* [VersionInfo](/common/types/dotnet/versioninfo-dotnet.md)
-* [ValidationError](/common/types/dotnet/validationerror-dotnet.md)
 
 ## Delivery API
 * [Introduction](/delivery-api/README.md)
 * [Getting started](/delivery-api/getting-started.md)
 * [API instantiation](/delivery-api/api-instantiation.md)
-
-### Reference
 
 ### Accessing entries
 
@@ -36,14 +17,28 @@
 * [List](/delivery-api/accessing-entries/dotnet/entries-list-dotnet.md)
 * [Search](/delivery-api/accessing-entries/entry-search.md)
 
+### Model
+* [Model](/delivery-api/model/README.md)
+
 #### .HTTP
 * [Entry](/delivery-api/model/http/entry-http.md)
 * [Asset](/delivery-api/model/http/asset-http.md)
+* [ComposedField](/delivery-api/model/http/composed-http.md)
+* [DateRange](/delivery-api/model/http/daterange-http.md)
+* [Location](/delivery-api/model/http/location-http.md)
+* [Quote](/delivery-api/model/http/quote-http.md)
+* [VersionInfo](/delivery-api/model/http/versioninfo-http.md)
 
 #### .NET
 * [Entry](/delivery-api/model/dotnet/entry-dotnet.md)
-* [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
 * [Entry methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
+* [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
+* [ComposedField](/delivery-api/model/dotnet/composed-dotnet.md)
+* [DateRange](/delivery-api/model/dotnet/daterange-dotnet.md)
+* [Location](/delivery-api/model/dotnet/location-dotnet.md)
+* [Quote](/delivery-api/model/dotnet/quote-dotnet.md)
+* [VersionInfo](/delivery-api/model/dotnet/versioninfo-dotnet.md)
+* [ValidationError](/delivery-api/model/dotnet/validationerror-dotnet.md)
 
 ### Cookbook
 * [Cookbook](/delivery-api/cookbook/README.md)
@@ -52,7 +47,7 @@
 * [Introduction](/management-api/README.md)
 
 ## Query API
-* [Query operators](/common/query-api/query-operators.md)
+* [Query operators](/common/query-operators.md)
 
 ## Security
 * [Authentication](/delivery-api/authentication.md)

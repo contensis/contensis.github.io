@@ -100,7 +100,7 @@ Returns *null* if an entry with an id matching the specified id does not exist. 
 var client = ContensisClient.Create();
 
 // Get the french variation of the film entry and resolve links to a depth of 3
-Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
+Entry film = client.Entries.Get("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr", 3);
 ```
 {% endmethod %}
 
@@ -198,7 +198,7 @@ Returns *null* if an entry with an id matching the specified id does not exist. 
 var client = ContensisClient.Create();
 
 // Get the french variation of the film entry and resolve links to a depth of 3
-Entry film = await client.Entries.GetAsync(filmGuid, "fr-fr", 3);
+Entry film = await client.Entries.GetAsync("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr", 3);
 ```
 {% endmethod %}
 

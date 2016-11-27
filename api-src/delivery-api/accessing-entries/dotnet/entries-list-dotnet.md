@@ -50,6 +50,7 @@ public PagedList<Entry> List(EntryListOptions options)
 
 var options = new EntryListOptions
 {
+    ContentTypeId = "film",
     PageOptions = new PageOptions(0, 50),
     Fields = new [] { "field1", "field2", "field2" },
     Order = new Order(),

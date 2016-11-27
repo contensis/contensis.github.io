@@ -2,23 +2,23 @@
 
 ## Overview
 
-This type contains all the information relating to the versioning information for an entry or asset. The *Created* and *CreatedBy* property values are established on the creation of the resource and do not change, whereas the remaining property values change as the resource is either modified or published.
+This object contains all the information relating to the versioning information for an entry or asset. The *created* and *createdBy* property values are established on the creation of the resource and do not change, whereas the remaining property values change as the resource is either modified or published.
 
 ## Properties
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| Created | DateTime | The date the entry was created |
-| CreatedBy | string | The user id of who created the entry |
-| Modified | DateTime | The date the entry version was last modified |
-| ModifiedBy | string | The user id of who last modified the entry |
-| Published | DateTime | The date the entry version was last published |
-| PublishedBy | string | The user id of who last published the entry |
-| VersionNo | string | The version of the entry | 
+| created | string | The date the entry was created |
+| createdBy | string | The user id of who created the entry |
+| modified | string | The date the entry version was last modified |
+| modifiedBy | string | The user id of who last modified the entry |
+| published | string | The date the entry version was last published |
+| publishedBy | string | The user id of who last published the entry |
+| versionNo | string | The version of the entry | 
 
 ## Remarks
 
-The *VersionNo* follows a two-part versioning scheme:
+The *versionNo* follows a two-part versioning scheme:
 
 > {Major}.{Minor}
 

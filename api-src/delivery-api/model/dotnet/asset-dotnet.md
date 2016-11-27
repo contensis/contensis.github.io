@@ -7,15 +7,15 @@ Assets are effectively an extension of entries, with additional properties conta
 All assets have the following standard entry fields
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
+| :--- | :--- | :---------- |
 | Title | string | The title of the asset |
 | Description | string | The description for the asset |
-| Properties | PropertiesDictionary | A readonly collection of asset specific fields |
+| Properties | [PropertiesDictionary](#PropertiesDictionary) | A readonly collection of asset specific fields |
 
 ## PropertiesDictionary
 
 | Name | Type | Description |
-| ---- | ---- | ----------- |
+| :--- | :--- | :---------- |
 | Filename | string | The name of the actual file, with extension included |
 | FileSize | long | The file size in bytes |
 | Extension | string | The file extension |
@@ -30,8 +30,7 @@ These are properties that are specific to an asset type. Currently this is limit
 ### Images
 
 | Name | Description |
-| ---- | ----------- |
+| :--- | :---------- |
 | width | The width of the image |
 | height | The height of the image |
 | altText | The default alt text defined for the image resource |
-| caption | The default caption defined for the image resource |

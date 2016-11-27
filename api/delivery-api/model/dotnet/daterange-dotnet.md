@@ -1,7 +1,5 @@
 # DateRange
 
-## Overview
-
 The DateRange type represents a start and end point in time.
 
 ## Properties
@@ -19,7 +17,7 @@ The *From* and *To* properties are of type nullable DateTime and can be partly s
 
 The *From* value cannot be a later date than the *To* value.
 
-## Examples
+## Example
 
 {% method -%}
 

@@ -2,18 +2,29 @@
 
 ## Overview
 
-The DateRange class represents a start and end point in time.
+The DateRange object represents a start and end point in time.
 
 ## Properties
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| from | DateTime? | The datetime the range starts |
-| to | DateTime? | The datetime the range ends |
+| from | string | The datetime the range starts |
+| to | string | The datetime the range ends |
 
 ## Validation
 
-The *From* value cannot be a later date than the *To* value.
+The *from* value cannot be a later date than the *to* value.
 
 ## Example
 
+{% method -%}
+
+{% sample lang="json" -%}
+
+```json
+{
+    "from": "2006-12-06T09:00:00",
+    "lng": "2009-09-10T09:00:00"
+}
+```
+{% endmethod %}

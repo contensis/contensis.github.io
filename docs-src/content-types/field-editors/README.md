@@ -59,7 +59,7 @@ Each of the following field types have support for a single field editor.
 2. Select the field that you want to change the field editor for e.g. a text field. The properties panel will be displayed.
 3. From the properties panel, select *Editor* from the panel navigation. If supported the *Choose a field editor* dropdown will be enabled.
 4. Choose a field editor from the dropdown. e.g Multiline text
-5. Any additional properties that the field editor supports will be displayed in the panel.
+5. Any additional properties that the field editor supports will then be displayed in the panel.
 6. Save any changes you make.
 
-> Note: In the event you have a content type where entries exist, there be potential data loss when changing field editors.
+> Note: In the event you have a content type where entries exist, there may be potential data loss when changing field editors.

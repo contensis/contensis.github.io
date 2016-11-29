@@ -62,4 +62,4 @@ Each of the following field types have support for a single field editor.
 5. Any additional properties that the field editor supports will then be displayed in the panel.
 6. Save any changes you make.
 
-> Note: In the event you have a content type where entries exist, there may be potential data loss when changing field editors.
+> Note: In the event you have a content type where entries exist, there maybe potential data loss when changing field editors.

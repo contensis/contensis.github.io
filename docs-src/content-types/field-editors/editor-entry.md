@@ -1,9 +1,9 @@
 # Entry field editor
-This editor is a powerful one allowing you to relate existing entries in other content types to the the current entry that is being authored.
+This editor is a important one allowing you to relate existing entries in other content types to the current entry that is being authored.
 
 You can make single or multiple selections of entries allowing you to create rich content models.
 
-> *e.g.* in a film content type you may want to list a selection of actors that are defined in you people content type.
+> *e.g.* in a film content type you may want to list a selection of actors that are defined in your people content type.
 
 ## Settings
 | Setting name | Summary|

@@ -862,19 +862,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1><p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p><p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters in a field of an entry.</p><h2 id="how-to-set-the-validation">How to set the validation</h2><p>With a content type open for editing:</p><ul><li>Select the field you want to set a validation rule against.
+                                <h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1><p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p><p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p><h2 id="how-to-set-the-validation">How to set the validation</h2><p>With a content type open for editing:</p><ul><li>Select the field you want to set a validation rule against.
 </li>
 <li>With the field active the properties panel is displayed, select <strong>Validation</strong> from the panel navigation.
 </li>
-<li>Select from the matches pattern dropdown the required pattern you want to use, alternative you can define your own using the custom option.
+<li>Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.
 </li>
-<li>You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the <em>Validation message</em> text box.
+<li>You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the <em>Validation message</em> text box.
 </li></ul>
-<h2 id="setting-a-custom-expression">Setting a custom expression</h2><p>You can use the custom option in the validation dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p><blockquote><p><strong>Note:</strong> Expressions need to be written in the Javascript syntax to be valid.</p></blockquote><h3 id="predefined-regular-expressions">Predefined regular expressions</h3><p>We&apos;ve included some predefined expressions covering some standard scenarios.</p><h4 id="website-address">Website address</h4><pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g</code></pre>
+<h2 id="setting-a-custom-expression">Setting a custom expression</h2><p>You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p><blockquote><p><strong>Note:</strong> Expressions need to be written using the Javascript syntax to be valid.</p></blockquote><h3 id="predefined-regular-expressions">Predefined regular expressions</h3><p>We&apos;ve included some predefined expressions covering some standard scenarios.</p><h4 id="website-address">Website address</h4><pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g</code></pre>
 <table>
 <thead>
-<tr><th>Allowed Values</th>
-<th>Disallowed Values</th>
+<tr><th>Allowed values</th>
+<th>Disallowed values</th>
 </tr></thead><tbody>
 <tr><td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
 <td>special%character@example.com</td>
@@ -887,8 +887,8 @@
 <h4 id="email-address">Email address</h4><pre><code>^(?:(?:[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+(?:(?:\.(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)*&quot;|[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+))*\.[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+)?)|(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)+&quot;))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$</code></pre>
 <table>
 <thead>
-<tr><th>Allowed Values</th>
-<th>Disallowed Values</th>
+<tr><th>Allowed values</th>
+<th>Disallowed values</th>
 </tr></thead><tbody>
 <tr><td>niceandsimple@example.com</td>
 <td>Abc.example.com</td>
@@ -898,11 +898,11 @@
 <td>john..doe@example.com</td>
 </tr></tbody></table>
 
-<h4 id="uk-postcodes">UK Postcodes</h4><pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$</code></pre>
+<h4 id="uk-postcodes">UK postcodes</h4><pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$</code></pre>
 <table>
 <thead>
-<tr><th>Allowed Values</th>
-<th>Disallowed Values</th>
+<tr><th>Allowed values</th>
+<th>Disallowed values</th>
 </tr></thead><tbody>
 <tr><td>SY8 3EG</td>
 <td>SY8_3EG</td>
@@ -955,7 +955,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"5.3","depth":1,"next":{"title":"Character count","level":"5.4","depth":1,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"5.2","depth":1,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-11-16T17:12:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-25T17:42:56.672Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"5.3","depth":1,"next":{"title":"Character count","level":"5.4","depth":1,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"5.2","depth":1,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-11-29T10:28:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-11-29T14:56:36.911Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

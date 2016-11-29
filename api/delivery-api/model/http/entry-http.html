@@ -614,7 +614,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="entries">Entries</h1>
-<p>A full <a href="https://contensis.github.io/docs/entries/" target="_blank">overview of entries can be found here</a></p>
+<p>A full <a href="https://contensis.github.io/docs/entries/" target="_blank">overview of entries can be found here</a>.</p>
 <p>An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. </p>
 <h2 id="standard-properties">Standard properties</h2>
 <p>These are the standard properties that all entries have. The languageCode property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. </p>
@@ -635,7 +635,7 @@
 <tr>
 <td style="text-align:left">contentTypeId</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">The API identifier of the Content Type that the Entry is based on</td>
+<td style="text-align:left">The API identifier of the content type that the entry is based on</td>
 </tr>
 <tr>
 <td style="text-align:left">projectId</td>
@@ -650,12 +650,12 @@
 <tr>
 <td style="text-align:left">[languageCode]</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left">The container of the Entry data</td>
+<td style="text-align:left">The container of the entry data</td>
 </tr>
 <tr>
 <td style="text-align:left">[languageCode].version</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left">Version information for the Entry</td>
+<td style="text-align:left">Version information for the entry</td>
 </tr>
 <tr>
 <td style="text-align:left">[languageCode].version.created</td>
@@ -695,12 +695,12 @@
 <tr>
 <td style="text-align:left">[languageCode].metadata</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left">Metadata associated with the Entry instance</td>
+<td style="text-align:left">Metadata associated with the entry instance</td>
 </tr>
 </tbody>
 </table>
 <div class="api-method"><div class="api-method-definition"><h2 id="example">Example</h2>
-<p>This json shows an example Entry based on a Film Content Type:</p>
+<p>This JSON shows an example Entry based on a Film Content Type:</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span>,
     <span class="hljs-string">&quot;contentTypeId&quot;</span>: <span class="hljs-string">&quot;film&quot;</span>,
@@ -756,7 +756,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Entry","level":"6.1","depth":1,"next":{"title":"Asset","level":"6.2","depth":1,"path":"delivery-api/model/http/asset-http.md","ref":"delivery-api/model/http/asset-http.md","articles":[]},"previous":{"title":"Model","level":"5.1","depth":1,"path":"delivery-api/model/README.md","ref":"delivery-api/model/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/http/entry-http.md","mtime":"2016-11-25T15:46:49.825Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-27T22:50:48.570Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Entry","level":"6.1","depth":1,"next":{"title":"Asset","level":"6.2","depth":1,"path":"delivery-api/model/http/asset-http.md","ref":"delivery-api/model/http/asset-http.md","articles":[]},"previous":{"title":"Model","level":"5.1","depth":1,"path":"delivery-api/model/README.md","ref":"delivery-api/model/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/http/entry-http.md","mtime":"2016-11-29T15:18:40.050Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-29T15:57:54.018Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

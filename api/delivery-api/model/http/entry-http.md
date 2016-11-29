@@ -1,6 +1,6 @@
 # Entries
 
-A full [overview of entries can be found here](https://contensis.github.io/docs/entries/)
+A full [overview of entries can be found here](https://contensis.github.io/docs/entries/).
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
@@ -11,11 +11,11 @@ These are the standard properties that all entries have. The languageCode proper
 | Property | Type | Description |
 | :------- | :--- | :---------- |
 | id | string | The entry identifier as GUID |
-| contentTypeId | string  | The API identifier of the Content Type that the Entry is based on |
+| contentTypeId | string  | The API identifier of the content type that the entry is based on |
 | projectId | string | The API identifer of the project the entry belongs to |
 | dataFormat | string | Either 'entry' or 'asset' |
-| [languageCode] | object | The container of the Entry data |
-| [languageCode].version | object | Version information for the Entry | 
+| [languageCode] | object | The container of the entry data |
+| [languageCode].version | object | Version information for the entry | 
 | [languageCode].version.created | string | The date the entry was created |
 | [languageCode].version.createdBy | string | The user id of who created the entry |
 | [languageCode].version.modified | string | The date the entry version was last modified |
@@ -23,14 +23,14 @@ These are the standard properties that all entries have. The languageCode proper
 | [languageCode].version.published | string | The date the entry version was last published |
 | [languageCode].version.publishedBy | string | The user id of who last published the entry |
 | [languageCode].VersionNo | string | The version of the entry | 
-| [languageCode].metadata | object | Metadata associated with the Entry instance | 
+| [languageCode].metadata | object | Metadata associated with the entry instance | 
 
 
 {% method -%}
 
 ## Example
 
-This json shows an example Entry based on a Film Content Type:
+This JSON shows an example Entry based on a Film Content Type:
 
 {% sample lang="json" -%}
 ```json

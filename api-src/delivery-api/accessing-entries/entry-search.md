@@ -104,7 +104,7 @@ var query = new Query(
 
 ## Ordering
 
-Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritized in the order that they are added. By default if no order clauses are specified then the entry results are ordered by the TitleField [^1] in an ascending direction.
+Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the TitleField [^1] in an ascending direction.
 
 {% method -%}
 
@@ -210,11 +210,11 @@ The 'titleField' field is a dynamic value, determined by the 'Title Field' value
 
 ### Data fields
 
-Fields defined in the Content Type for the entry can be accessed by their api id.
+Fields defined in the Content Type for the entry can be accessed by their API id.
 
 ## Full example
 
-The example below combines the ordering and paging concepts
+The example below combines the ordering and paging concepts:
 
 {% method -%}
 

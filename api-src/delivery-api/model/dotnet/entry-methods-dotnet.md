@@ -1,4 +1,4 @@
-# Entry Methods
+# Entry methods
 
 ## Get
 

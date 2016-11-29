@@ -11,7 +11,7 @@ The Data Type is the storage type for a field and determines how the field data 
 | decimal | A number with a fractional part |
 | boolean | A value of `true` or `false` |
 | datetime | A point in time |
-| object | Any arbitary structure as JSON or a string |
+| object | Any arbitrary structure as JSON or a string |
 | stringArray | An array of strings |
 | integerArray | An array of integers |
 | decimalArray | An array of decimals |
@@ -21,9 +21,9 @@ The Data Type is the storage type for a field and determines how the field data 
 
 ## Data format
 
-The Data Format property is used as an extension of a DataType to describe or identify the structure and intent of the data. For example, a Location has a DataType of *object*, and a DataFormat of *location*. 
+The Data Format property is used as an extension of a DataType to describe or identify the structure and intent of the data. For example, a Location has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a Data Type of *string* and a DataFormat of *html*.  
 
-The DataFormat is designed to allow custom types to be added. The value is a simple string
+The DataFormat is a string value as is designed to allow custom types to be added.
 
 ### Supported data formats
 
@@ -31,7 +31,7 @@ The DataFormat is designed to allow custom types to be added. The value is a sim
 | ------ | --------- | ----------- |
 | entry | object | An entry format for storing content |
 | asset | object | An asset format that represents a file resource |
-| location | object | Represents a point on the surface of Earth |
+| location | object | Represents a point on the surface of the Earth |
 | quote | object | A quote with text and a source |
 | field | objectArray |Represents a composed field type, defined as an ObjectArray Data Type |
 | image | object | Wraps an Asset with an additional Caption property |

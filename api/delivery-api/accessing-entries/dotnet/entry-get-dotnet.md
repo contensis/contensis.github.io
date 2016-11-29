@@ -2,15 +2,15 @@
 
 Requesting an individual entry can be achieved by using one of the `Get` method overloads. Additionally 
 
-- [Get(Guid, String, Integer))](#get-by-guid-id)
+- [Get(Guid, String, Integer)](#get-by-guid-id)
 - [Get(String, String, Integer)](#get-by-string-id)
 - [GetAsync(Guid, String, Integer)](#get-by-guid-id-async)  
 - [GetAsync(String, String, Integer)](#get-by-string-id-async)
 
 
-## Get by guid id
+## Get by Guid id
 
-Gets an entry by its Guid identifier
+Gets an entry by its `Guid` identifier
 
 ### Syntax
 
@@ -28,7 +28,7 @@ public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
 
 *id*
 > Type: `Guid`  
-> The id of the Entry.
+> The id of the entry.
 
 *languageCode*
 > Type: `string`  
@@ -36,7 +36,7 @@ public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
 
@@ -77,7 +77,7 @@ public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
 
 *id*
 > Type: `string`  
-> The id of the Entry.
+> The id of the entry.
 
 *languageCode*
 > Type: `string`  
@@ -108,7 +108,7 @@ Entry film = client.Entries.Get("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr",
 
 ## Get by guid id async
 
-Gets an entry by its Guid identifier asynchronously
+Gets an entry by its `Guid` identifier asynchronously
 
 ### Syntax
 
@@ -126,7 +126,7 @@ public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLink
 
 *id*
 > Type: `Guid`  
-> The id of the Entry.
+> The id of the entry.
 
 *languageCode*
 > Type: `string`  
@@ -157,7 +157,7 @@ Entry film = await client.Entries.GetAsync(filmGuid, "fr-fr", 3);
 
 ## Get by string id async
 
-Gets an entry by its String identifier asynchronously
+Gets an entry by its `string` identifier asynchronously
 
 ### Syntax
 
@@ -175,7 +175,7 @@ public async Task<Entry> GetAsync(string id, string languageCode = null, entryLi
 
 *id*
 > Type: `string`  
-> The id of the Entry.
+> The id of the entry.
 
 *languageCode*
 > Type: `string`  

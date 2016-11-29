@@ -616,13 +616,13 @@
                                 <h1 id="getting-an-entry">Getting an entry</h1>
 <p>Requesting an individual entry can be achieved by using one of the <code>Get</code> method overloads. Additionally </p>
 <ul>
-<li><a href="#get-by-guid-id">Get(Guid, String, Integer))</a></li>
+<li><a href="#get-by-guid-id">Get(Guid, String, Integer)</a></li>
 <li><a href="#get-by-string-id">Get(String, String, Integer)</a></li>
 <li><a href="#get-by-guid-id-async">GetAsync(Guid, String, Integer)</a>  </li>
 <li><a href="#get-by-string-id-async">GetAsync(String, String, Integer)</a></li>
 </ul>
-<h2 id="get-by-guid-id">Get by guid id</h2>
-<p>Gets an entry by its Guid identifier</p>
+<h2 id="get-by-guid-id">Get by Guid id</h2>
+<p>Gets an entry by its <code>Guid</code> identifier</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> Entry <span class="hljs-title">Get</span>(<span class="hljs-params">Guid id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -633,7 +633,7 @@
 <h3 id="parameters">Parameters</h3>
 <p><em>id</em></p>
 <blockquote>
-<p>Type: <code>Guid</code><br>The id of the Entry.</p>
+<p>Type: <code>Guid</code><br>The id of the entry.</p>
 </blockquote>
 <p><em>languageCode</em></p>
 <blockquote>
@@ -641,7 +641,7 @@
 </blockquote>
 <p><em>entryLinkDepth</em></p>
 <blockquote>
-<p>Type: <code>integer</code><br>The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.</p>
+<p>Type: <code>integer</code><br>The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  <strong>Please note:</strong> linked assets are always fully resolved.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
 <p>Returns <em>null</em> if an entry with an id matching the specified id does not exist.</p>
@@ -667,7 +667,7 @@ Entry film = client.Entries.Get(filmGuid, <span class="hljs-string">&quot;fr-fr&
 <h3 id="parameters">Parameters</h3>
 <p><em>id</em></p>
 <blockquote>
-<p>Type: <code>string</code><br>The id of the Entry.</p>
+<p>Type: <code>string</code><br>The id of the entry.</p>
 </blockquote>
 <p><em>languageCode</em></p>
 <blockquote>
@@ -690,7 +690,7 @@ Entry film = client.Entries.Get(<span class="hljs-string">&quot;456e5f2a-a1cf-45
 
 <hr>
 <h2 id="get-by-guid-id-async">Get by guid id async</h2>
-<p>Gets an entry by its Guid identifier asynchronously</p>
+<p>Gets an entry by its <code>Guid</code> identifier asynchronously</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;Entry&gt; <span class="hljs-title">GetAsync</span>(<span class="hljs-params">Guid id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -701,7 +701,7 @@ Entry film = client.Entries.Get(<span class="hljs-string">&quot;456e5f2a-a1cf-45
 <h3 id="parameters">Parameters</h3>
 <p><em>id</em></p>
 <blockquote>
-<p>Type: <code>Guid</code><br>The id of the Entry.</p>
+<p>Type: <code>Guid</code><br>The id of the entry.</p>
 </blockquote>
 <p><em>languageCode</em></p>
 <blockquote>
@@ -724,7 +724,7 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(fil
 
 <hr>
 <h2 id="get-by-string-id-async">Get by string id async</h2>
-<p>Gets an entry by its String identifier asynchronously</p>
+<p>Gets an entry by its <code>string</code> identifier asynchronously</p>
 <h3 id="syntax">Syntax</h3>
 <div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;Entry&gt; <span class="hljs-title">GetAsync</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> id, <span class="hljs-keyword">string</span> languageCode = <span class="hljs-keyword">null</span>, entryLinkDepth = <span class="hljs-number">0</span></span>)
 </span>{
@@ -735,7 +735,7 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(fil
 <h3 id="parameters">Parameters</h3>
 <p><em>id</em></p>
 <blockquote>
-<p>Type: <code>string</code><br>The id of the Entry.</p>
+<p>Type: <code>string</code><br>The id of the entry.</p>
 </blockquote>
 <p><em>languageCode</em></p>
 <blockquote>
@@ -790,7 +790,7 @@ Entry film = <span class="hljs-keyword">await</span> client.Entries.GetAsync(<sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get","level":"4.1","depth":1,"next":{"title":"List","level":"4.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"previous":{"title":"API instantiation","level":"2.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","mtime":"2016-11-25T16:50:10.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-27T22:50:48.570Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get","level":"4.1","depth":1,"next":{"title":"List","level":"4.2","depth":1,"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","articles":[]},"previous":{"title":"API instantiation","level":"2.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","mtime":"2016-11-29T15:53:19.337Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-29T15:57:54.018Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

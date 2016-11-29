@@ -31,6 +31,6 @@ These are properties that are specific to an asset type. Currently this is limit
 
 | Name | Description |
 | :--- | :---------- |
-| width | The width of the image |
-| height | The height of the image |
-| altText | The default alt text defined for the image resource |
+| Width | The width of the image |
+| Height | The height of the image |
+| AltText | The default alt text defined for the image resource |

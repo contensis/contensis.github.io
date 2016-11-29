@@ -6,8 +6,8 @@ Content type fields store different types of data. The validation available for 
 
 The following table outlines the available validations and field types that are supported.
 
-| Validation| Supported Fields |
+| Validation| Supported fields |
 | --- | --- |
 | [Required](/content-types/validation/required-validation.md) | Text, Markup, Quote, Number, Location, List, Taxonomy, Composer, Asset, Entry reference, Image |
-| [Regular Expression Pattern Matching](/content-types/validation/regex-validation.md) | Text |
-| [Character Count](/content-types/validation/character-count-validation.md) | Text |
+| [Regular expression pattern matching](/content-types/validation/regex-validation.md) | Text |
+| [Character count](/content-types/validation/character-count-validation.md) | Text |

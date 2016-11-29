@@ -1,18 +1,18 @@
 # Regular expression pattern matching
 This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
 
-A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters in to a field of an entry.
+A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.
 
 ## How to set the validation
 With a content type open for editing:
 
 - Select the field you want to set a validation rule against.
 - With the field active the properties panel is displayed, select **Validation** from the panel navigation.
-- Select from the matches pattern dropdown the required pattern you want to use, alternative you can define your own using the custom option.
+- Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.
 - You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.
 
 ## Setting a custom expression
-You can use the custom option in the validation dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
+You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
 
 > **Note:** Expressions need to be written using the Javascript syntax to be valid.
 

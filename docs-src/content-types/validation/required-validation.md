@@ -7,4 +7,4 @@ With a content type open for editing:
 - Select the field you want to set a validation rule against.
 - With the field active the properties panel is displayed, select **Validation** from the panel navigation.
 - Change the required toggle to true to make the field required.
-- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Validation message* text box.
+- You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.

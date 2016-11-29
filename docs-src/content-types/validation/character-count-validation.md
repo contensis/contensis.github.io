@@ -1,5 +1,5 @@
 # Character count
-Validates that the value of a text field is within a specified range. You can define a range by specifying the 'min' and the 'max' value (the values are included in the range). You can specify only 'min' or max values to set a constraint on the minimum and maximum allowed value.
+Validates that the value of a text field is within a specified range. You can define a range by specifying the 'min' and the 'max' values (the values are included in the range). You can specify only 'min' or 'max' values to set a constraint on the minimum and maximum allowed value.
 
 ## How to set the validation
 With a content type open for editing:
@@ -20,4 +20,4 @@ With a content type open for editing:
 
 > *e.g.* Requires a maximum of 200 characters
 
-- You can also provide an alternative validation message to be displayed when the field fails validation on save, by entering it in the *Error message* text box.
+- You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.

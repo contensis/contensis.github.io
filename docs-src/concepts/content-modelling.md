@@ -5,9 +5,9 @@ You define content models in Contensis by creating content types  against a proj
 ## Content types
 A content type describes a type of content broken down into chunks.
 
-> *e.g.* A ‘Film’ content type could contain the following chunks. Title, Film Poster, Length/Run Time, Budget, Overview, Director and cast members.
+> *e.g.* A ‘film’ content type could contain the following chunks, title, film poster, length/run time, budget, overview, director and cast members.
 
-You create a content type using our content type builder or you can programmatically create a content type defined in JSON using our Management API.
+You can create a content type using our content type builder or you can programmatically create a content type defined in JSON using our Management API.
 
 Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of [field types]() are supported.
 
@@ -24,5 +24,3 @@ In our film content type example, an entry would represent a single film contain
 
 ## Summary
 These two core concepts allow rich content models to be defined and used in your website or application and form the basis of content modelling in Contensis.
-
-

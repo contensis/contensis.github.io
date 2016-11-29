@@ -8,10 +8,10 @@ Fields comprise of a type, format and a field editor. The supported types, forma
 ## Add a field
 Adding fields to a content type is easy. With the content type open for editing:
 
-1. Press on one of the field type buttons in the toolbox you want to add to your content type. The field will be added to the bottom of your content type.
-2. The field you added will be active, indicated by the green border that surrounds the field.
+1. Press on the field type button in the toolbox for the field that you want to add to your content type. The field will be added to the bottom of your content type.
+2. The field you've added will be active, as indicated by the green border that surrounds it.
 
-### Set field name
+### Set a field name
 The properties for a field will be displayed in the right hand panel when the field is active.
 
 Give the field a name that clearly identifies its content. The field name is used to generate a sanitised field ID that a developer will use through the API.

@@ -8,7 +8,7 @@ Selection is made in an image gallery. Single or multiple selection of images is
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
+| [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
 This field editor supports the following validation methods.
@@ -20,7 +20,6 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Requires caption

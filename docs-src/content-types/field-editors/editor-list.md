@@ -9,7 +9,7 @@ The type of list displayed will depend on if multiple selection is allowed. Sing
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
 | [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. |
-| [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
+| [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
 This field editor supports the following validation methods.

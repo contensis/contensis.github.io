@@ -8,7 +8,7 @@ Selection is made in an asset gallery. Single or multiple selection of assets is
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
+| [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
 This field editor supports the following validation methods.
@@ -20,16 +20,9 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text [^1]](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Help instructions](/content-types/field-editors/field-properties.md#help-instructions) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Type
-Types of asset can be restricted in the gallery to a single asset type by selecting the type from the property dropdown.
+The display of available assets in the gallery will be restricted to show only those types selected in the Type dropdown.
 
-The dropdown list is populated with assets types supported by the current project. Some system reserved asset types are not displayed in this list such as forms, templates, polls and databases.
-
-#### Footnotes:
-
----
-
-[^1]: Is the placeholder text used in the asset editor?
+The dropdown list is populated with asset types supported by the current project. Some system reserved asset types are not displayed in this list such as forms, templates, polls and databases.

@@ -10,7 +10,7 @@ The taxonomy editor supports single and multiple selection, and allows you to sp
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Allow multiple](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
+| [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
 This field editor supports the following validation methods.

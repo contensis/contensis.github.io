@@ -1,6 +1,6 @@
 # Quote
 
-The Quote type represents a section of referenced text from an external source.
+The quote type represents a section of referenced text from an external source.
 
 ## Properties
 
@@ -9,15 +9,11 @@ The Quote type represents a section of referenced text from an external source.
 | text | `string` | The quote text |
 | source | `string` | The source of the quote |
 
-## Validation
-
-TODO: Confirm if a Validation should exist
-
 ## Example
 
 {% method -%}
 
-The example shows a query object:
+This example shows a quote object:
 
 {% sample lang="json" -%}
 ```json

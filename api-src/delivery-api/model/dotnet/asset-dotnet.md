@@ -4,7 +4,7 @@ Assets are effectively an extension of entries, with additional properties conta
 
 ## Standard fields
 
-All assets have the following standard entry fields
+All assets have the following standard entry fields:
 
 | Name | Type | Description |
 | :--- | :--- | :---------- |

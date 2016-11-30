@@ -24,7 +24,7 @@ The *from* value cannot be a later date than the *to* value.
 ```json
 {
     "from": "2006-12-06T09:00:00",
-    "lng": "2009-09-10T09:00:00"
+    "to": "2009-09-10T09:00:00"
 }
 ```
 {% endmethod %}

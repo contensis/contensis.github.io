@@ -30,7 +30,7 @@ These are the standard properties that all entries have. The languageCode proper
 
 ## Example
 
-This JSON shows an example Entry based on a Film Content Type:
+This JSON shows an example entry based on a Film content type:
 
 {% sample lang="json" -%}
 ```json

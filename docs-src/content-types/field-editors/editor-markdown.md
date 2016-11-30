@@ -1,5 +1,5 @@
 # Markdown field editor
-The markdown editor provides the user the ability to write blocks of content using the markdown syntax.
+The markdown editor provides the user with the ability to write blocks of content using the markdown syntax.
 
 We use the SimpleMDE markdown editor as it provides a rich toolset including fullscreen mode.
 
@@ -13,7 +13,7 @@ The content entered into the markdown editor is stored and  returned through the
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
 
 ## Supported validation
-This field editor supports the following validation methods.
+This field editor supports the following validation methods:
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -27,7 +27,7 @@ This field editor supports the following validation methods.
 
 
 ### Show toolbar
-The setting enables you to disable the editor toolbar from being displayed. This would require an author to understand how to write in the markdown syntax.
+This setting enables you to disable the editor toolbar from being displayed. This would require an author to understand how to write in the markdown syntax.
 
 Its default is set to *No*.
 
@@ -37,6 +37,6 @@ This setting changes the visibility of the character and word count below the ma
 Its default is set to *No*.
 
 ### Allow fullscreen
-Its possible to edit markdown in a fullscreen window within Contensis to provide a distraction free writing experience. This setting determines if authors should be allowed to enter full screen.
+It's possible to edit markdown in a fullscreen window within Contensis to provide a distraction free writing experience. This setting determines if authors should be allowed to enter fullscreen.
 
 Its default is set to *No*.

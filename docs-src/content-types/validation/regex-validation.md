@@ -14,7 +14,7 @@ With a content type open for editing:
 ## Setting a custom expression
 You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
 
-> **Note:** Expressions need to be written using the Javascript syntax to be valid.
+> **Note:** Expressions need to be written using the JavaScript syntax to be valid.
 
 ### Predefined regular expressions
 We've included some predefined expressions covering some standard scenarios.

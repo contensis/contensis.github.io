@@ -3,7 +3,7 @@ This field editor allows an author to make single or multiple selections of file
 
 Selection is made in an asset gallery. Single or multiple selection of assets is determined by the allow multiple field setting.
 
-## Settings
+### Settings
 | Setting name | Summary|
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|

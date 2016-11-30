@@ -40,6 +40,9 @@ $ npm install gitbook-cli -g
 When you are writing documentation, its helpful to see it in the context of the GitBook site. You can serve a local copy of the book that will automatically refresh as you make changes.
 
 1. Use the terminal and navigate to the root of your contensis.github.io repository
+
+> Note: If you are using the command prompt on windows you'll need to 'Run as administrator'
+
 2. Running the following command will start a local server for the user docs.
 
   **User Docs**

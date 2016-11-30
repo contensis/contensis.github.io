@@ -85,7 +85,7 @@ public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
 
@@ -106,7 +106,7 @@ Entry film = client.Entries.Get("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr",
 
 ---
 
-## Get by guid id async
+## Get by Guid id async
 
 Gets an entry by its `Guid` identifier asynchronously
 
@@ -134,7 +134,7 @@ public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLink
 
 *entryLinkDepth*
 > Type: `integer`  
-> The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default no entry data is resolved.
+> The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
 

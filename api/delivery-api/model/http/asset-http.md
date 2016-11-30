@@ -4,7 +4,7 @@ Assets are effectively an extension of entries, with additional properties conta
 
 ## Standard fields
 
-All assets have the following standard entry fields
+All assets have the following standard entry fields:
 
 | Name | Description |
 | ---- | ----------- |
@@ -15,14 +15,14 @@ All assets have the following standard entry fields
 
 ## Default properties
 
-All assets have the following default readonly properties
+All assets have the following default readonly properties:
 
 | Name | Description |
-| ---- | ----------- |
+| -------- | ----------- |
 | filename | The name of the actual file, with extension included |
 | fileSize | The file size in bytes |
 | extension | The file extension |
-| fieldId | The GUID identifier of the file resource |
+| fieldId | The `Guid` identifier of the file resource |
 | uri | The URI path to the file, excluding the domain |
 
 ## Extended properties
@@ -30,7 +30,7 @@ All assets have the following default readonly properties
 ### Images
 
 | Name | Description |
-| ---- | ----------- |
+| -------- | ----------- |
 | width | The width of the image |
 | height | The height of the image |
 | altText | The default alt text defined for the image resource |

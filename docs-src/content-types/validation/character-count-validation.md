@@ -20,4 +20,4 @@ With a content type open for editing:
 
 > *e.g.* Requires a maximum of 200 characters
 
-- You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Error message* text box.
+- You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.

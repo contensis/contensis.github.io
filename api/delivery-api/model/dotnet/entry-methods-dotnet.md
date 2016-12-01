@@ -25,7 +25,7 @@ public dynamic Get(string fieldName)
 
 Returns *null* if the field is not found or if the field value is null.
 
-### Examples
+### Example
 
 {% method -%}
 {% sample lang="cs" -%}
@@ -66,7 +66,7 @@ public T Get<T>(string fieldName)
 
 If the API cannot successfully cast or convert the field value then it will return the default for the specified type. Requesting field values by the wrong type will __not__ result in exceptions being thrown.
 
-### Examples
+### Example
 
 {% method -%}
 {% sample lang="cs" -%}
@@ -109,7 +109,7 @@ public bool HasValue(string fieldName)
 
 If the *fieldName* is not defined in the content type that the entry is based on then it will return null.
 
-### Examples
+### Example
 
 {% method -%}
 {% sample lang="cs" -%}

@@ -21,9 +21,9 @@ The Data Type is the storage type for a field and determines how the field data 
 
 ## Data format
 
-The Data Format property is used as an extension of a DataType to describe or identify the structure and intent of the data. For example, a Location has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a Data Type of *string* and a DataFormat of *html*.  
+The Data Format property is used as an extension of a DataType to describe or identify the structure and intent of the data. For example, a Location has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a DataType of *string* and a DataFormat of *html*.  
 
-The DataFormat is a string value as is designed to allow custom types to be added.
+The DataFormat is a string value and is designed to allow custom types to be added.
 
 ### Supported data formats
 

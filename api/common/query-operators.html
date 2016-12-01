@@ -325,7 +325,20 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="../delivery-api/model/http/location-http.html">
+        <li class="chapter " data-level="6.5" data-path="../delivery-api/model/http/image-http.html">
+            
+                <a href="../delivery-api/model/http/image-http.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../delivery-api/model/http/location-http.html">
             
                 <a href="../delivery-api/model/http/location-http.html">
             
@@ -338,7 +351,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="../delivery-api/model/http/quote-http.html">
+        <li class="chapter " data-level="6.7" data-path="../delivery-api/model/http/quote-http.html">
             
                 <a href="../delivery-api/model/http/quote-http.html">
             
@@ -351,7 +364,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.7" data-path="../delivery-api/model/http/versioninfo-http.html">
+        <li class="chapter " data-level="6.8" data-path="../delivery-api/model/http/versioninfo-http.html">
             
                 <a href="../delivery-api/model/http/versioninfo-http.html">
             
@@ -436,7 +449,20 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="../delivery-api/model/dotnet/location-dotnet.html">
+        <li class="chapter " data-level="7.6" data-path="../delivery-api/model/dotnet/image-dotnet.html">
+            
+                <a href="../delivery-api/model/dotnet/image-dotnet.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../delivery-api/model/dotnet/location-dotnet.html">
             
                 <a href="../delivery-api/model/dotnet/location-dotnet.html">
             
@@ -449,7 +475,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.7" data-path="../delivery-api/model/dotnet/quote-dotnet.html">
+        <li class="chapter " data-level="7.8" data-path="../delivery-api/model/dotnet/quote-dotnet.html">
             
                 <a href="../delivery-api/model/dotnet/quote-dotnet.html">
             
@@ -462,7 +488,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.8" data-path="../delivery-api/model/dotnet/versioninfo-dotnet.html">
+        <li class="chapter " data-level="7.9" data-path="../delivery-api/model/dotnet/versioninfo-dotnet.html">
             
                 <a href="../delivery-api/model/dotnet/versioninfo-dotnet.html">
             
@@ -475,7 +501,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.9" data-path="../delivery-api/model/dotnet/validationerror-dotnet.html">
+        <li class="chapter " data-level="7.10" data-path="../delivery-api/model/dotnet/validationerror-dotnet.html">
             
                 <a href="../delivery-api/model/dotnet/validationerror-dotnet.html">
             
@@ -613,7 +639,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="query-operators">Query Operators</h1>
+                                <h1 id="query-operators">Query operators</h1>
 <h2 id="logical-operators">Logical Operators</h2>
 <div class="api-method"><div class="api-method-definition"><h3 id="and">And</h3>
 <p>This would return any document where first is 1 AND second is 2.
@@ -682,7 +708,7 @@ The <em>And</em> operator is the default logical operator and is not required to
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="not">Not</h3>
-<p>The not expects an inner operator so in the example any document where <em>first</em> is not equal to <em>7</em> would be returned.</p>
+<p>The not expects an inner operator so in the example any document where <em>first</em> is NOT equal to <em>7</em> would be returned.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;not&quot;</span>: {
@@ -699,9 +725,9 @@ The <em>And</em> operator is the default logical operator and is not required to
 </div></div></div>
 
 <hr>
-<h2 id="relational--equality-operators">Relational &amp; Equality Operators</h2>
+<h2 id="relational--equality-operators">Relational &amp; equality operators</h2>
 <div class="api-method"><div class="api-method-definition"><h3 id="between">Between</h3>
-<p>In this example if our field is between <em>18</em> and <em>45</em> (inclusive) it would match.</p>
+<p>In this example, if our field is between <em>18</em> and <em>45</em> (inclusive) it would match.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;age&quot;</span>,
@@ -717,7 +743,7 @@ The <em>And</em> operator is the default logical operator and is not required to
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="contains">Contains</h3>
-<p>This would match on a field called <em>description</em> containing the phrase &apos;batman&apos;</p>
+<p>This would match on a field called <em>description</em> containing the phrase &apos;batman&apos;.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;description&quot;</span>,
@@ -782,7 +808,7 @@ You can use a value of <em>false</em> if you want documents that do not contain 
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="greaterthan">GreaterThan</h3>
-<p>In the example any items that has a field called <em>first</em> and a value that is greater than 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is greater than 7 would be returned.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>,
@@ -798,7 +824,7 @@ You can use a value of <em>false</em> if you want documents that do not contain 
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="greaterthanorequalto">GreaterThanOrEqualTo</h3>
-<p>In the example any items that has a field called <em>first</em> and a value that is greater than or equal to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is greater than or equal to 7 would be returned.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>,
@@ -815,7 +841,7 @@ You can use a value of <em>false</em> if you want documents that do not contain 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="in">In</h3>
 <p>In the example any document that where the field <em>first</em> is equal to 1,7 or 11 would be returned.
-The values should be of the same type, in this case <em>integer</em></p>
+The values should be of the same type, in this case <em>integer</em>.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>,
@@ -831,7 +857,7 @@ The values should be of the same type, in this case <em>integer</em></p>
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="lessthan">LessThan</h3>
-<p>In the example any items that has a field called <em>first</em> and a value that is less than to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is less than to 7 would be returned.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>,
@@ -847,7 +873,7 @@ The values should be of the same type, in this case <em>integer</em></p>
 
 <hr>
 <div class="api-method"><div class="api-method-definition"><h3 id="lessthanorequalto">LessThanOrEqualTo</h3>
-<p>In the example any items that has a field called <em>first</em> and a value that is less than or equal to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is less than or equal to 7 would be returned.</p>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
     <span class="hljs-string">&quot;where&quot;</span>: [{
         <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>,
@@ -911,7 +937,7 @@ The values should be of the same type, in this case <em>integer</em></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"10.1","depth":1,"next":{"title":"Authentication","level":"11.1","depth":1,"path":"delivery-api/authentication.md","ref":"delivery-api/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"9.1","depth":1,"path":"management-api/README.md","ref":"management-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"common/query-operators.md","mtime":"2016-11-27T16:07:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-30T11:33:48.999Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"10.1","depth":1,"next":{"title":"Authentication","level":"11.1","depth":1,"path":"delivery-api/authentication.md","ref":"delivery-api/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"9.1","depth":1,"path":"management-api/README.md","ref":"management-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"common/query-operators.md","mtime":"2016-12-01T10:52:01.271Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-01T16:58:13.220Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

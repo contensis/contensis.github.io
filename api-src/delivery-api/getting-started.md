@@ -9,13 +9,13 @@ In this section you will be guided through defining and creating content using t
 
 ## Create a new project
 
-[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
+[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB using the default values for assets and languages.
 
 ## Create a content type
 
 You can [create a new Content Type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
-| Field Name | API ID | Type | Description |
+| Field name | API ID | Type | Description |
 | ---------- | ------ | ---- | ----------- |
 | Name | name | Text | The name of the film |
 | Synopsis | synopsis | Text | A overview of what the film is about |
@@ -39,7 +39,7 @@ Now it's time to create some content!
 
 [Create entries](https://contensis.github.io/docs/entries/create-an-entry.html) for the films using the data in the table:
 
-| Name | Overview | Year of Release |
+| Name | Overview | Year of release |
 | ---- | -------- | --------------- |
 | The Dark Knight | Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker. |  2008 |
 
@@ -84,7 +84,3 @@ Great, now we can start creating the Razor View that will render the film listin
 ```
 {% endmethod %}
 
-
----
-
-[^1]: FilmsDB or MoviesDB, Film or Movie?

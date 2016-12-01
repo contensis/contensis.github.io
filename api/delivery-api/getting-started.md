@@ -4,29 +4,29 @@ In this section you will be guided through defining and creating content using t
 
 ## Assumptions
 
-- You have an understanding of creating content in the Navigation Tree
-- You know how to create and edit Webpages and Razor Views
+- You have an understanding of creating content in the navigation tree.
+- You know how to create and edit webpages and Razor Views.
 
 ## Create a new project
 
-[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB [^1] using the default values for assets and languages.
+[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB using the default values for assets and languages.
 
 ## Create a content type
 
 You can [create a new Content Type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
-| Field Name | API ID | Type | Description |
+| Field name | API ID | Type | Description |
 | ---------- | ------ | ---- | ----------- |
 | Name | name | Text | The name of the film |
 | Synopsis | synopsis | Text | A overview of what the film is about |
-| Year of Release | yearOfRelease | Number (Integer) | The year the film was released |
-| Cover Image | coverImage | Image | A reference to the cover image asset |
+| Year of release | yearOfRelease | Number (integer) | The year the film was released |
+| Cover image | coverImage | Image | A reference to the cover image asset |
 
 **TODO: define all needed films** 
 
 ## Upload the film images
 
-Content doesn't look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link](/delivery-api/linked-content.md) or as an [image](/delivery-api/linked-content.md#image). We will be using the image type so that we can add our captions!
+Content will benefit from the inclusion of images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct [asset link](/delivery-api/linked-content.md) or as an [image](/delivery-api/linked-content.md#image). We will be using the image type so that we can add our captions!
 
 - [the-dark-knight.jpeg]()
 - Image 2
@@ -39,7 +39,7 @@ Now it's time to create some content!
 
 [Create entries](https://contensis.github.io/docs/entries/create-an-entry.html) for the films using the data in the table:
 
-| Name | Overview | Year of Release | 
+| Name | Overview | Year of release |
 | ---- | -------- | --------------- |
 | The Dark Knight | Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker. |  2008 |
 
@@ -58,7 +58,7 @@ Great, now we can start creating the Razor View that will render the film listin
 @using Zengenti.Contensis.Core.Api.Delivery // Reference the Delivery API
 
 @{
-    // Create a client to allow access to the content, this will use the 
+    // Create a client to allow access to the content, this will use the
     // current project context
     var client = ContensisClient.Create();
 
@@ -84,7 +84,3 @@ Great, now we can start creating the Razor View that will render the film listin
 ```
 {% endmethod %}
 
-
----
-
-[^1]: FilmsDB or MoviesDB, Film or Movie?

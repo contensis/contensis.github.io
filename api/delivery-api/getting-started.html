@@ -325,7 +325,20 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="model/http/location-http.html">
+        <li class="chapter " data-level="6.5" data-path="model/http/image-http.html">
+            
+                <a href="model/http/image-http.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="model/http/location-http.html">
             
                 <a href="model/http/location-http.html">
             
@@ -338,7 +351,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="model/http/quote-http.html">
+        <li class="chapter " data-level="6.7" data-path="model/http/quote-http.html">
             
                 <a href="model/http/quote-http.html">
             
@@ -351,7 +364,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.7" data-path="model/http/versioninfo-http.html">
+        <li class="chapter " data-level="6.8" data-path="model/http/versioninfo-http.html">
             
                 <a href="model/http/versioninfo-http.html">
             
@@ -436,7 +449,20 @@
             
         </li>
     
-        <li class="chapter " data-level="7.6" data-path="model/dotnet/location-dotnet.html">
+        <li class="chapter " data-level="7.6" data-path="model/dotnet/image-dotnet.html">
+            
+                <a href="model/dotnet/image-dotnet.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="model/dotnet/location-dotnet.html">
             
                 <a href="model/dotnet/location-dotnet.html">
             
@@ -449,7 +475,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.7" data-path="model/dotnet/quote-dotnet.html">
+        <li class="chapter " data-level="7.8" data-path="model/dotnet/quote-dotnet.html">
             
                 <a href="model/dotnet/quote-dotnet.html">
             
@@ -462,7 +488,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.8" data-path="model/dotnet/versioninfo-dotnet.html">
+        <li class="chapter " data-level="7.9" data-path="model/dotnet/versioninfo-dotnet.html">
             
                 <a href="model/dotnet/versioninfo-dotnet.html">
             
@@ -475,7 +501,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.9" data-path="model/dotnet/validationerror-dotnet.html">
+        <li class="chapter " data-level="7.10" data-path="model/dotnet/validationerror-dotnet.html">
             
                 <a href="model/dotnet/validationerror-dotnet.html">
             
@@ -617,17 +643,17 @@
 <p>In this section you will be guided through defining and creating content using the editor screens in the Contensis UI and then rendering the content out in a Razor view using the Delivery API. Throughout the documentation we use examples based on our sample MoviesDB project.</p>
 <h2 id="assumptions">Assumptions</h2>
 <ul>
-<li>You have an understanding of creating content in the Navigation Tree</li>
-<li>You know how to create and edit Webpages and Razor Views</li>
+<li>You have an understanding of creating content in the navigation tree.</li>
+<li>You know how to create and edit webpages and Razor Views.</li>
 </ul>
 <h2 id="create-a-new-project">Create a new project</h2>
-<p><a href="https://contensis.github.io/docs/projects/" target="_blank">Projects</a> are the home for all your content in Contensis. Create a new project called MoviesDB <sup><a href="#fn_1" id="reffn_1">1</a></sup> using the default values for assets and languages.</p>
+<p><a href="https://contensis.github.io/docs/projects/" target="_blank">Projects</a> are the home for all your content in Contensis. Create a new project called MoviesDB using the default values for assets and languages.</p>
 <h2 id="create-a-content-type">Create a content type</h2>
 <p>You can <a href="https://contensis.github.io/docs/content-types/create-a-content-type.html" target="_blank">create a new Content Type</a> easily in the Content Type editors in the Contensis UI. Create a content type called <em>Film</em> with the following fields:</p>
 <table>
 <thead>
 <tr>
-<th>Field Name</th>
+<th>Field name</th>
 <th>API ID</th>
 <th>Type</th>
 <th>Description</th>
@@ -647,13 +673,13 @@
 <td>A overview of what the film is about</td>
 </tr>
 <tr>
-<td>Year of Release</td>
+<td>Year of release</td>
 <td>yearOfRelease</td>
-<td>Number (Integer)</td>
+<td>Number (integer)</td>
 <td>The year the film was released</td>
 </tr>
 <tr>
-<td>Cover Image</td>
+<td>Cover image</td>
 <td>coverImage</td>
 <td>Image</td>
 <td>A reference to the cover image asset</td>
@@ -662,7 +688,7 @@
 </table>
 <p><strong>TODO: define all needed films</strong> </p>
 <h2 id="upload-the-film-images">Upload the film images</h2>
-<p>Content doesn&apos;t look very good without some images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct <a href="linked-content.md">asset link</a> or as an <a href="linked-content.md#image">image</a>. We will be using the image type so that we can add our captions!</p>
+<p>Content will benefit from the inclusion of images, so now add the cover images for the films. Images are added to Contensis by [uploading them into the contensis tree] and can then be referenced within an entry as either a direct <a href="linked-content.md">asset link</a> or as an <a href="linked-content.md#image">image</a>. We will be using the image type so that we can add our captions!</p>
 <ul>
 <li><a href="">the-dark-knight.jpeg</a></li>
 <li>Image 2</li>
@@ -677,7 +703,7 @@
 <tr>
 <th>Name</th>
 <th>Overview</th>
-<th>Year of Release</th>
+<th>Year of release</th>
 </tr>
 </thead>
 <tbody>
@@ -694,7 +720,7 @@
 <pre><code class="lang-cs">@<span class="hljs-keyword">using</span> Zengenti.Contensis.Core.Api.Delivery <span class="hljs-comment">// Reference the Delivery API</span>
 
 @{
-    <span class="hljs-comment">// Create a client to allow access to the content, this will use the </span>
+    <span class="hljs-comment">// Create a client to allow access to the content, this will use the</span>
     <span class="hljs-comment">// current project context</span>
     <span class="hljs-keyword">var</span> client = ContensisClient.Create();
 
@@ -720,11 +746,6 @@
 </code></pre>
 </div></div></div>
 
-
-<hr>
-<blockquote id="fn_1">
-<sup>1</sup>. FilmsDB or MoviesDB, Film or Movie?<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
-</blockquote>
 
                                 
                                 </section>
@@ -758,7 +779,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Getting started","level":"2.2","depth":1,"next":{"title":"API instantiation","level":"2.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"previous":{"title":"Introduction","level":"2.1","depth":1,"path":"delivery-api/README.md","ref":"delivery-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/getting-started.md","mtime":"2016-11-25T15:48:20.058Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-11-30T11:33:48.999Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting started","level":"2.2","depth":1,"next":{"title":"API instantiation","level":"2.3","depth":1,"path":"delivery-api/api-instantiation.md","ref":"delivery-api/api-instantiation.md","articles":[]},"previous":{"title":"Introduction","level":"2.1","depth":1,"path":"delivery-api/README.md","ref":"delivery-api/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/getting-started.md","mtime":"2016-12-01T10:55:30.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-01T16:58:13.220Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

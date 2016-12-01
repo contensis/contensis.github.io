@@ -23,10 +23,8 @@
 	* [Delete a content type](/content-types/delete-a-content-type.md)
 	* [Versioning](/content-types/versioning.md)
 	* [Workflow states](/content-types/workflow-states.md)
-* [Multi language support](/content-types/multi-language-support.md)
-	* [Add a language to a content type](/content-types/add-a-language-to-a-content-type.md)
-	* [Remove a language from a content type](/content-types/remove-a-language-from-a-content-type.md)
-
+	* [Enable or disable languages for a content type](/content-types/enable-disable-languages.md)
+	
 ### Validation
 * [Overview](/content-types/validation/README.md)
 	* [Required](/content-types/validation/required-validation.md)

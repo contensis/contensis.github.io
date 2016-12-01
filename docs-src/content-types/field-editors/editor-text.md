@@ -15,7 +15,7 @@ This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
 - [Character count](/content-types/validation/character-count-validation.md)
-- [Regular expression pattern matching](/content-types/validation/regex-validation.md)
+- [Matches pattern](/content-types/validation/regex-validation.md)
 
 
 ## Properties

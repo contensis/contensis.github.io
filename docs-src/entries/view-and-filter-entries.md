@@ -13,7 +13,7 @@ The filtering options will vary depending on whether you have purchased a multil
 ### Filter by content type
 By default, the listing screen will display all entries for every content type in your project. You can narrow down the number of entries displayed by changing the content type dropdown from *All* to a specific content type in the list.
 
-#### Multiple languages
+### Multiple languages
 If you have a multilingual license then the entry listing screen will be filtered to all content types in your project for the master language.
 
 ### Filter by status

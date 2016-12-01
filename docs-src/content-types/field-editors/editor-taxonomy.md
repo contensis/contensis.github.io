@@ -1,9 +1,9 @@
 # Taxonomy field editor
-This editor allows you to bind a list of existing taxonomy nodes from the taxonomy manager into a selection that can be made by an author.
+This editor allows you to bind a list of existing taxonomy nodes from the taxonomy manager to a field where one or more items are available for selection by an author.
 
-This is an ideal field editor for centrally managing static values, examples being categorisations, language or country lists that may be used elsewhere in your project.
+This is an ideal field editor for centrally managing static values, examples being categorisations, languages, or country lists that may be used elsewhere in your project.
 
-The taxonomy editor supports single and multiple selection, and allows you to specify a root taxonomy node from where values can be selected from.
+The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from where values can be selected.
 
 ## Settings
 | Setting name | Summary|
@@ -13,7 +13,7 @@ The taxonomy editor supports single and multiple selection, and allows you to sp
 | [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
-This field editor supports the following validation methods.
+This field editor supports the following validation methods:
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -25,4 +25,4 @@ This field editor supports the following validation methods.
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Root node
-The root node property allows you to select a node that values can be selected from. If no node is selected the whole of your taxonomy will be visible in the editor.
+The root node property allows you to select a node to determine what values can be selected by an author. If no node selection is made, then all taxonomy values will be visible in the editor.

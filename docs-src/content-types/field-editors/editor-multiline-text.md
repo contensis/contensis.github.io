@@ -1,5 +1,5 @@
 # Multiline text field editor
-Multiline text fields are used to store any text content. This editor is used used when content needs to span over multiple lines during authoring.
+Multiline text fields are used to store any text content. This editor is used when content needs to span over multiple lines during authoring.
 
 ## Settings
 | Setting name | Summary|
@@ -14,8 +14,8 @@ Multiline text fields are used to store any text content. This editor is used us
 This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
-- [Regular expression pattern matching](/content-types/validation/regex-validation.md)
 - [Character count](/content-types/validation/character-count-validation.md)
+- [Matches pattern](/content-types/validation/regex-validation.md)
 
 
 ## Properties

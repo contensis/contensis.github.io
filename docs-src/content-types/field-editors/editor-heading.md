@@ -14,14 +14,15 @@ The heading field editor is a text field editor that supports three fixed sizes.
 This field editor supports the following validation methods.
 
 - [Required field](/content-types/validation/required-validation.md)
-- [Regular expression pattern matching](/content-types/validation/regex-validation.md)
-- [Character count](/content-types/validation/character-count-validation.md)
+- [Number of characters](/content-types/validation/character-count-validation.md)
+- [Matches pattern](/content-types/validation/regex-validation.md)
+
 
 
 ## Properties
 
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 | [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered heading in the entry editor. Its default value is set to *Medium*. |

@@ -1,4 +1,4 @@
-# Query Operators
+# Query operators
 
 ## Logical Operators
 
@@ -97,7 +97,7 @@ var query = new Query(
 
 ### Not
 
-The not expects an inner operator so in the example any document where *first* is not equal to *7* would be returned.
+The not expects an inner operator so in the example any document where *first* is NOT equal to *7* would be returned.
 
 {% sample lang="json" -%}
 ```json
@@ -123,12 +123,12 @@ var query = new Query(
 
 ---
 
-## Relational & Equality Operators
+## Relational & equality operators
 
 {% method -%}
 ### Between
 
-In this example if our field is between *18* and *45* (inclusive) it would match.
+In this example, if our field is between *18* and *45* (inclusive) it would match.
 
 {% sample lang="json" -%}
 ```json
@@ -154,7 +154,7 @@ var query = new Query(
 {% method -%}
 ### Contains
 
-This would match on a field called *description* containing the phrase 'batman'
+This would match on a field called *description* containing the phrase 'batman'.
 
 {% sample lang="json" -%}
 ```json
@@ -259,7 +259,7 @@ var query = new Query(
 {% method -%}
 ### GreaterThan
 
-In the example any items that has a field called *first* and a value that is greater than 7 would be returned.
+In the example any item that has a field called *first* and a value that is greater than 7 would be returned.
 
 {% sample lang="json" -%}
 ```json
@@ -285,7 +285,7 @@ var query = new Query(
 {% method -%}
 ### GreaterThanOrEqualTo
 
-In the example any items that has a field called *first* and a value that is greater than or equal to 7 would be returned.
+In the example any item that has a field called *first* and a value that is greater than or equal to 7 would be returned.
 
 {% sample lang="json" -%}
 ```json
@@ -312,7 +312,7 @@ var query = new Query(
 ### In
 
 In the example any document that where the field *first* is equal to 1,7 or 11 would be returned.
-The values should be of the same type, in this case *integer*
+The values should be of the same type, in this case *integer*.
 
 {% sample lang="json" -%}
 ```json
@@ -338,7 +338,7 @@ var query = new Query(
 {% method -%}
 ### LessThan
 
-In the example any items that has a field called *first* and a value that is less than to 7 would be returned.
+In the example any item that has a field called *first* and a value that is less than to 7 would be returned.
 
 {% sample lang="json" -%}
 ```json
@@ -364,7 +364,7 @@ var query = new Query(
 {% method -%}
 ### LessThanOrEqualTo
 
-In the example any items that has a field called *first* and a value that is less than or equal to 7 would be returned.
+In the example any item that has a field called *first* and a value that is less than or equal to 7 would be returned.
 
 {% sample lang="json" -%}
 ```json

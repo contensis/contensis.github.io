@@ -11,7 +11,7 @@ Selection is made in an image gallery. Single or multiple selection of images is
 | [Multiple selection](/content-types/field-editors/field-settings.md#allow-multiple) |  Allows multiple selection within a field. |
 
 ## Supported validation
-This field editor supports the following validation methods.
+This field editor supports the following validation methods:
 
 - [Required field](/content-types/validation/required-validation.md)
 
@@ -21,9 +21,10 @@ This field editor supports the following validation methods.
 | Property name | Summary|
 | ---| --- |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 
 ### Requires caption
 The caption requirement forces an author to include a caption for each image they have selected in the field editor.
 
-### Validation message
-An optional validation message can be entered to inform an author why the caption is required.
+### Requires caption error message
+An optional validation message can be entered to inform an author that a caption is required.

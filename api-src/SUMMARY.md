@@ -40,7 +40,6 @@
 * [Location](/delivery-api/model/dotnet/location-dotnet.md)
 * [Quote](/delivery-api/model/dotnet/quote-dotnet.md)
 * [VersionInfo](/delivery-api/model/dotnet/versioninfo-dotnet.md)
-* [ValidationError](/delivery-api/model/dotnet/validationerror-dotnet.md)
 
 ### Cookbook
 * [Cookbook](/delivery-api/cookbook/README.md)

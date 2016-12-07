@@ -665,6 +665,22 @@
 </tr>
 </tbody>
 </table>
+<h2 id="image-fields">Image fields</h2>
+<p>In addition to the standard entry fields, image content types have the following:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td>The default alt text defined for the image resource</td>
+</tr>
+</tbody>
+</table>
 <h2 id="default-properties">Default properties</h2>
 <p>All assets have the following default readonly properties:</p>
 <table>
@@ -684,20 +700,13 @@
 <td>The file size in bytes</td>
 </tr>
 <tr>
-<td>extension</td>
-<td>The file extension</td>
-</tr>
-<tr>
-<td>fieldId</td>
-<td>The <code>Guid</code> identifier of the file resource</td>
-</tr>
-<tr>
 <td>uri</td>
 <td>The URI path to the file, excluding the domain</td>
 </tr>
 </tbody>
 </table>
 <h2 id="extended-properties">Extended properties</h2>
+<p>Extended properties are specific to a content type:</p>
 <h3 id="images">Images</h3>
 <table>
 <thead>
@@ -716,17 +725,43 @@
 <td>The height of the image</td>
 </tr>
 <tr>
-<td>altText</td>
-<td>The default alt text defined for the image resource</td>
-</tr>
-<tr>
 <td>caption</td>
 <td>The default caption defined for the image resource</td>
 </tr>
 </tbody>
 </table>
-<p><br><br></p>
-
+<h2 id="example-json">Example JSON</h2>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span>,
+    <span class="hljs-string">&quot;contentTypeId&quot;</span>: <span class="hljs-string">&quot;Image&quot;</span>,
+    <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;movieDb&quot;</span>,
+    <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;asset&quot;</span>,
+    <span class="hljs-string">&quot;en-GB&quot;</span>: {
+        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Deadpool cover&quot;</span>,
+        <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Cover art for the Deadpool film&quot;</span>,
+        <span class="hljs-string">&quot;altText&quot;</span>: <span class="hljs-string">&quot;Deadpool jumping over a car, shooting numerous men&quot;</span>,
+        <span class="hljs-string">&quot;metadata&quot;</span>: {
+            <span class="hljs-string">&quot;originalId&quot;</span>: <span class="hljs-number">12345</span>
+        },
+        <span class="hljs-string">&quot;properties&quot;</span>: {
+            <span class="hljs-string">&quot;filename&quot;</span>: <span class="hljs-string">&quot;deadpool.jpg&quot;</span>,
+            <span class="hljs-string">&quot;fileSize&quot;</span>: <span class="hljs-number">34323</span>,
+            <span class="hljs-string">&quot;width&quot;</span>: <span class="hljs-number">800</span>,
+            <span class="hljs-string">&quot;width&quot;</span>: <span class="hljs-number">1200</span>
+        },
+        <span class="hljs-string">&quot;version&quot;</span>: {
+            <span class="hljs-string">&quot;createdBy&quot;</span>: <span class="hljs-string">&quot;s.derrickson&quot;</span>,
+            <span class="hljs-string">&quot;created&quot;</span>: <span class="hljs-string">&quot;2016-10-12T09:29:18.5144641+01:00&quot;</span>,
+            <span class="hljs-string">&quot;modifiedBy&quot;</span>: <span class="hljs-string">&quot;b.cumberbatch&quot;</span>,
+            <span class="hljs-string">&quot;modified&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
+            <span class="hljs-string">&quot;publishedBy&quot;</span>: <span class="hljs-string">&quot;b.cumberbatch&quot;</span>,
+            <span class="hljs-string">&quot;published&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
+            <span class="hljs-string">&quot;versionNo&quot;</span>: <span class="hljs-string">&quot;2.0&quot;</span>
+        }
+    }
+}
+</code></pre>
+</div></div></div>
                                 
                                 </section>
                             
@@ -759,7 +794,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Asset","level":"6.2","depth":1,"next":{"title":"ComposedField","level":"6.3","depth":1,"path":"delivery-api/model/http/composed-http.md","ref":"delivery-api/model/http/composed-http.md","articles":[]},"previous":{"title":"Entry","level":"6.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/http/asset-http.md","mtime":"2016-11-30T11:25:20.046Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-01T16:58:13.220Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Asset","level":"6.2","depth":1,"next":{"title":"ComposedField","level":"6.3","depth":1,"path":"delivery-api/model/http/composed-http.md","ref":"delivery-api/model/http/composed-http.md","articles":[]},"previous":{"title":"Entry","level":"6.1","depth":1,"path":"delivery-api/model/http/entry-http.md","ref":"delivery-api/model/http/entry-http.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/http/asset-http.md","mtime":"2016-12-02T15:07:21.370Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-07T16:50:55.166Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

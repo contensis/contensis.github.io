@@ -43,7 +43,7 @@ This JSON shows an example entry based on a Film content type:
         "title": "Doctor Strange",
         "yearOfRelease": 2016,
         "overview": "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark force…",
-        "meta": {},
+        "metadata": {},
         "version": {
             "createdBy": "s.derrickson",
             "created": "2016-10-12T09:29:18.5144641+01:00",

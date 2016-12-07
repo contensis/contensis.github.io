@@ -1,41 +1,41 @@
-# DateRange
+# Images
 
-The DateRange type represents a start and end point in time.
+The Image type represents a link to an image with an associated caption.
 
 ## Properties
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| From | DateTime? | The datetime the range starts |
-| To | DateTime? | The datetime the range ends |
+| Caption | `string` | The image caption, defined in the entry |
+| Asset | `Asset` | The asset that is linked to from the entry |
 
 ## Remarks
 
-The *From* and *To* properties are of type nullable DateTime and can be partly set.
+The caption property allows instance specific text to be associated with a linked image.
 
-## Validation
-
-The *From* value cannot be a later date than the *To* value.
+Unlike entry links, an asset link is always resolved so that the full asset details are included when retrieved.
 
 ## Example
 
 {% method -%}
 
-### Get a DateRange field object
+### Get an Image field object
 
 {% sample lang="cs" -%}
 
 ```cs
 @{
     // Retrieve a film by it's ID.
-    var film = client.Get("0aabad4e-a083-4a88-bd75-b2674e2f8298");
+    var filmEntry = client.Get("0aabad4e-a083-4a88-bd75-b2674e2f8298");
 
-    // Get the field value as a DateRange instance.
-    var filmingPeriod = film.Get<DateRange>("filmingPeriod");
+    // Get the field value as an Image instance.
+    var coverImage = film.Get<Image>("coverImage");
 }
 
-<div class="start">@filmingPeriod.From</div>
+<figure>
+  <img src="@coverImage.Asset.Uri" alt="@coverImage.Asset.Propeties["altText"]" width="304" height="228">
+  <figcaption>@coverImage.Caption</figcaption>
+</figure>
 
-<div class="end">@filmingPeriod.To</div>
 ```
 {% endmethod %}

@@ -114,9 +114,10 @@ The example below shows how a composed field with different field types can be r
 
 <div>
  
-@foreach(var item in synopsis)
+@foreach(ComposedFieldItem item in synopsis)
 {
-    // Loop through the ComposedFieldItems in the ComposedField and render
+    // Loop through the ComposedFieldItems in the ComposedField and render the items
+    // 
 
     if (item.Type == "mainHeading")
     {

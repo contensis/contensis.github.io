@@ -1,5 +1,5 @@
 # Entry field editor
-This editor is a important one allowing you to relate existing entries in other content types to the current entry that is being authored.
+This editor is an important one allowing you to relate existing entries in other content types to the current entry that is being authored.
 
 You can make single or multiple selections of entries allowing you to create rich content models.
 

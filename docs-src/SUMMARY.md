@@ -61,10 +61,9 @@
 	* [Delete an entry](/entries/delete-an-entry.md)
 	* [Workflow states](/entries/workflow-states.md)
 	* [Entry versioning](/entries/entry-versioning.md)
-* [Multi language support](/entries/multi-language-support.md)
-	* [Create language variation](/entries/create-a-language-variation.md)
-	* [Delete language variation](/entries/delete-a-language-variation.md)
-
+	* [Multi language support](/entries/multi-language-support.md)
+	* [Translate an entry](/entries/translate-an-entry.md)
+	
 ## Projects
 * [Overview](/projects/README.md)
 	* [Create a project](/projects/create-a-project.md)

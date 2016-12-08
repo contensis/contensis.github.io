@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="create-a-language-variation.md" />
+    <link rel="next" href="translate-an-entry.html" />
     
     
     <link rel="prev" href="entry-versioning.html" />
@@ -802,12 +802,7 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter active" data-level="7.2" data-path="multi-language-support.html">
+        <li class="chapter active" data-level="7.1.7" data-path="multi-language-support.html">
             
                 <a href="multi-language-support.html">
             
@@ -818,28 +813,14 @@
             
 
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.2.1" data-path="create-a-language-variation.md">
-            
-                <span>
-            
-                    
-                    Create language variation
-            
-                </a>
-            
-
-            
         </li>
     
-        <li class="chapter " data-level="7.2.2" data-path="delete-a-language-variation.md">
+        <li class="chapter " data-level="7.1.8" data-path="translate-an-entry.html">
             
-                <span>
+                <a href="translate-an-entry.html">
             
                     
-                    Delete language variation
+                    Translate an entry
             
                 </a>
             
@@ -982,33 +963,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="multi-language-support">Multi language support</h1><p>When a multilingual license key is present in Contensis then entries can be created in multiple languages.</p><p>The languages that are available for an entry to be created against, is determined by those assigned to a <a href="../projects/update-a-project.html">project</a> and <a href="../content-types/enable-disable-languages.html">enabled</a> for a content type.</p><blockquote><p><strong>Note</strong>: The default language is set against a project and cannot be changed once created.</p></blockquote><h2 id="language-workflow">Language workflow</h2><ul><li>An entry is a container for the default language and all its language variations.
-</li>
-<li>When an entry is created, its created in the default language, once published, additional language variations can be created.
-</li>
-<li>When creating a language variation you&apos;ll be provided a split view, with the default language displayed to translate from.
-</li>
-<li>Deleting an entry in the default language will remove the entry completely along with all language variations.
-</li>
-<li>Deleting a language variation of an entry has no effect on the default language. 
-</li>
-<li>A language variation can be recreated once deleted.
-</li></ul>
-<h2 id="disabling-a-language">Disabling a language</h2><p>Given I have a content type with multiple language enabled
-and I have entries in the default language
-and I have entries translated into additional languages
-When I disable a language
-Then what happens to the existing entries?</p><ol><li>Prompt on disable to delete entries
-</li>
-<li>Are entries kept?
-</li>
-<li>What happens if I enable the language again?
-</li></ol>
-<h2 id="content">Content</h2><ul><li>New content types get all languages by default 
-</li>
-<li>additional languages have to be enabled
-</li></ul>
-<h2 id="supported-languages">Supported languages</h2><p>We support the following languages in Contensis.</p><table>
+                                <h1 id="multi-language-support">Multi language support</h1><p>When a multilingual license key is present in Contensis then entries can be created in multiple languages.</p><p>The languages that are available for an entry to be created against, is determined by those assigned to a <a href="../projects/update-a-project.html">project</a> and <a href="../content-types/enable-disable-languages.html">enabled</a> for a content type.</p><blockquote><p><strong>Note</strong>: The default language is set against a project and cannot be changed once created.</p></blockquote><h2 id="translation-workflow">Translation workflow</h2><p>Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language.</p><p>This workflow ensures that as the default content is updated we can correctly notify authors of different languages that a change has been made, and is likely to require translation.</p><h2 id="supported-languages">Supported languages</h2><p>We support the following languages in Contensis.</p><table>
 <thead>
 <tr><th>Languages</th>
 <th>Region code</th>
@@ -1053,16 +1008,6 @@ Then what happens to the existing entries?</p><ol><li>Prompt on disable to delet
 <td style="text-align:left">cy</td>
 </tr></tbody></table>
 
-<p><strong>As a</strong> content strategist <strong>I want</strong> my default language content published before language variations can be created <strong>so that</strong> the variations are kept in sync with the default content.</p><ul><li><strong>Given</strong> I create an entry
-</li>
-<li><strong>and</strong> the entry is saved
-</li>
-<li><strong>and</strong> not published
-</li>
-<li><strong>When</strong> I navigate to an alternative language in the entry listing screen
-</li>
-<li><strong>Then</strong> the newly created entry should not be visible for translation
-</li></ul>
 
                                 
                                 </section>
@@ -1095,7 +1040,7 @@ Then what happens to the existing entries?</p><ol><li>Prompt on disable to delet
                 </a>
                 
                 
-                <a href="create-a-language-variation.md" class="navigation navigation-next " aria-label="Next page: Create language variation">
+                <a href="translate-an-entry.html" class="navigation navigation-next " aria-label="Next page: Translate an entry">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1106,7 +1051,7 @@ Then what happens to the existing entries?</p><ol><li>Prompt on disable to delet
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Multi language support","level":"7.2","depth":1,"next":{"title":"Create language variation","level":"7.2.1","depth":2,"path":"entries/create-a-language-variation.md","ref":"entries/create-a-language-variation.md","articles":[]},"previous":{"title":"Entry versioning","level":"7.1.6","depth":2,"path":"entries/entry-versioning.md","ref":"entries/entry-versioning.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"entries/multi-language-support.md","mtime":"2016-12-01T12:12:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-05T14:09:12.164Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Multi language support","level":"7.1.7","depth":2,"next":{"title":"Translate an entry","level":"7.1.8","depth":2,"path":"entries/translate-an-entry.md","ref":"entries/translate-an-entry.md","articles":[]},"previous":{"title":"Entry versioning","level":"7.1.6","depth":2,"path":"entries/entry-versioning.md","ref":"entries/entry-versioning.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"entries/multi-language-support.md","mtime":"2016-12-08T08:53:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-08T08:53:36.089Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

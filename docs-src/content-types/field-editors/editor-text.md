@@ -1,6 +1,9 @@
 # Text field editor
 Text fields are used to store any text content. This editor is the most commonly used field editor as it can accommodate a variety of content.
 
+## Appearance
+![Text Field Editor](/images/field-editor-text.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

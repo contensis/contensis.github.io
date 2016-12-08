@@ -3,6 +3,9 @@ The location field editor enables an author to provide an accurate location with
 
 Finer adjustments to location can be set by dragging the map pin to an exact position, or alternatively, entering latitude / longitude values in to the editor.
 
+## Appearance
+![Location Field Editor](/images/field-editor-location.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

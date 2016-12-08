@@ -6,6 +6,9 @@ We use the SimpleMDE markdown editor as it provides a rich toolset including ful
 ## Limitations
 The content entered into the markdown editor is stored and  returned through the Delivery API as pure markdown. Any links or images referenced in the markdown editor have to be external as we do not parse the markdown content.
 
+## Appearance
+![Markdown Field Editor](/images/field-editor-markdown.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

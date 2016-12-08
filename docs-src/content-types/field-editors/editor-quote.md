@@ -1,6 +1,9 @@
 # Quote field editor
 The quote field editor allows you to record a quote and a source citation within an entry. It's handy when you want to include a quote from a customer in a case study or a famous quote in a blog post. The source citation is optional.
 
+## Appearance
+![Quote Field Editor](/images/field-editor-quote.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

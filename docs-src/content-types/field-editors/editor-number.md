@@ -1,6 +1,9 @@
 # Number field editor
 The number field accepts numeric input either as an integer or decimal depending on the number format chosen.
 
+## Appearance
+![Number Field Editor](/images/field-editor-number.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

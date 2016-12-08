@@ -5,6 +5,9 @@ This is an ideal field editor for centrally managing static values, examples bei
 
 The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from where values can be selected.
 
+## Appearance
+![Taxonomy Field Editor](/images/field-editor-taxonomy.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

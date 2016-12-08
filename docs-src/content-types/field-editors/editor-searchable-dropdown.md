@@ -5,6 +5,9 @@ The type of dropdown displayed will depend on if multiple selection is allowed. 
 
 When multiple selection is set each value selected is added as pill lozenge with a cross which allows items to be removed from the list.
 
+## Appearance
+![Searchable Dropdown Field Editor](/images/field-editor-searchabledropdown.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

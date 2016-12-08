@@ -1,6 +1,9 @@
 # Multiline text field editor
 Multiline text fields are used to store any text content. This editor is used when content needs to span over multiple lines during authoring.
 
+## Appearance
+![Multiline Text Field Editor](/images/field-editor-multiline-text.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

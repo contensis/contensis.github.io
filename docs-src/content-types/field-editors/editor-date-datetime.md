@@ -12,6 +12,16 @@ The date range editors become available when the format of a Date / Time field a
 
 > **Note:** we do not support time without a date as we store date and times as UTC. While there may be some use cases for time on its own we recommend you use a text field with a regular expression for validation.
 
+## Appearance
+**Date**
+![Date Field Editor](/images/field-editor-date.png)
+**Date / Time**
+![Date / Time Field Editor](/images/field-editor-date-time.png)
+**Date Range**
+![Date Range Field Editor](/images/field-editor-date-range.png)
+**Date / Time Range**
+![Date / Time Range Field Editor](/images/field-editor-date-time-range.png)
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

@@ -13,7 +13,7 @@
 	* [Delete an API key](/api-keys/delete-an-api-key.md)
 	* [Disable an API key](/api-keys/disable-an-api-key.md)
 
-### Content Types
+## Content Types
 * [Overview](/content-types/README.md)
 	* [View and filter content types](/content-types/view-and-filter-content-types.md)
 	* [Create a content type](/content-types/create-a-content-type.md)

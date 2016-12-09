@@ -40,7 +40,7 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. [^1]|
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Future dates
@@ -48,10 +48,3 @@ This property sets if you want an author to be able to select a date in the futu
 
 ### Past dates
 This property sets if you want an author to be able to select a dates in the past *e.g.* a date less than today. This is enabled by default.
-
-
-#### Footnotes
-
----
-
-[^1]: Should we provide placeholder text / labelling for date ranges

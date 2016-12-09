@@ -2,7 +2,7 @@
 Validates that the value of a text field is within a specified range. You can define a range by specifying the 'min' and the 'max' values (the values are included in the range). Alternatively, you can specify an individual 'min' or 'max' value to set a constraint on the minimum or maximum allowed value.
 
 ## Appearance
-![Matches pattern validation](/images/validation-numberofcharacters.png)
+![Character count validation](/images/validation-numberofcharacters.png)
 
 ## How to set the validation
 With a content type open for editing:

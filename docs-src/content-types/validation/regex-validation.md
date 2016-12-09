@@ -3,6 +3,9 @@ This validation method ensures that the value of a field matches a specific patt
 
 A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.
 
+## Appearance
+![Matches pattern validation](/images/validation-matchespattern.png)
+
 ## How to set the validation
 With a content type open for editing:
 

@@ -1,6 +1,9 @@
 # Required
 Validates that the field contains a value. The field must contain a value for the entry to be saved.
 
+## Appearance
+![Appearance validation](/images/validation-required.png)
+
 ## How to set the validation
 With a content type open for editing:
 

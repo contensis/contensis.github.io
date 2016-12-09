@@ -1,16 +1,13 @@
 # Remove fields from a content type
-The effect on removing a field from a content type will vary depending on the content types published state and wether any entries have been created.
+If you no longer require a field within a content type it can easily be removed by following the steps. Be aware that this field will be removed from any published entries.
 
-With a content type open for editing simply press the cross button on the field to remove it from the content type.
+> **Warning:** Removing a field and any associated data is irreversible, only do this if you are confident that field is no longer required.
 
-> **Published content type with entries**
-	When removing a field from a content type, its worth bearing in mind that the field may be in use by an entry.[^1]
+With a content type open for editing:
 
-## Footnotes:
+1. Locate the field in you content type that you want to remove.
+2. Press the cross button on the field to remove it from the content type. A confirmation screen will be displayed.
+3. Press delete to confirm the removal of the field.
+4. Press save, followed by publish to confirm your changes.
 
-[^1]:
-**Scenario:** Remove a field from content type
-- **Given** I have a content type
-- **and** the content type has entries
-- **When** I remove a field
-- **Then** what happens to the data associated with the field?
+> **Note:** Any code created referencing the removed field would return null or the default value for the type through the Delivery API.

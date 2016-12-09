@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Regular expression pattern matching
 This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
 
@@ -105,4 +104,3 @@ We've included some predefined expressions covering some standard scenarios.
 | SY8 3EG | SY8_3EG |
 | sy83eg | sy8-3eg |
 | SY83EG | sy8 £eg |
->>>>>>> origin/master

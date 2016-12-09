@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Required
 Validates that the field contains a value. The field must contain a value for the entry to be saved.
 
@@ -23,4 +22,3 @@ With a content type open for editing:
 - With the field active the properties panel is displayed, select **Validation** from the panel navigation.
 - Change the required field toggle to true to make the field required.
 - You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.
->>>>>>> origin/master

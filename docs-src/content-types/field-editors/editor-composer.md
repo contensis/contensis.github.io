@@ -6,6 +6,8 @@ When you add a composer field to a content type, you are setting up a container 
 
 A composer field provides a richer editing experience for an author when used for areas like blogs, articles and how to guides.
 
+## Appearance
+![Composer Field Editor](/images/field-editor-composer.png)
 
 ## Settings
 | Setting name | Summary|

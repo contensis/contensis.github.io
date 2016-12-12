@@ -6,8 +6,8 @@ The Image type container of an image asset with an associated caption.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| caption | `string` | The image caption, defined in the entry |
-| asset | `object` | The asset that is linked to from the entry |
+| caption | string | The image caption, defined in the entry |
+| asset | object | The asset that is linked to from the entry |
 
 ## Remarks
 
@@ -50,7 +50,7 @@ Unlike entry links, an asset link is always resolved so that the full asset deta
             "published": "1999-11-02T17:30:31.73",
             "versionNo": "1.0"
         },
-        
+
     },
     "caption": "Fight club is a great film!"
 }

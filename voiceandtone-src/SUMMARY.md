@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 
 ## Grammar and punctuation
-* [Jargon and guilding](/grammar-punctuation/jargon-gilding.md)
+* [Jargon and gilding](/grammar-punctuation/jargon-gilding.md)
 * [Capitalisation](/grammar-punctuation/capitalisation.md)
 * [Punctuation](/grammar-punctuation/punctuation.md)
 * [Acronyms and abbreviations](/grammar-punctuation/acronyms-abbreviations.md)

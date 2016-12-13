@@ -6,8 +6,8 @@ The DateRange type represents a start and end point in time.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| From | DateTime? | The datetime the range starts |
-| To | DateTime? | The datetime the range ends |
+| From | DateTime | The datetime the range starts |
+| To | DateTime | The datetime the range ends |
 
 ## Remarks
 

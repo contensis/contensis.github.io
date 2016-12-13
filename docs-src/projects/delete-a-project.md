@@ -1,5 +1,5 @@
 # Delete a project
-A project can only be deleted by a System Administrator with access to the management console.
+A project can only be deleted by a System Administrator with access to the *Management Console*.
 
 To delete a project follow the steps, please bear in mind that deleting a project is irreversible. The only way to restore a project is from a database backup.
 

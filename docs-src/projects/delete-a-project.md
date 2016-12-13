@@ -3,7 +3,7 @@ A project can only be deleted by a System Administrator with access to the *Mana
 
 To delete a project follow the steps, please bear in mind that deleting a project is irreversible. The only way to restore a project is from a database backup.
 
-> **Note**: you must always have one project in Contensis. If you are attempting to delete the last project, then the delete button described in the steps will not be present.
+> **Note**: you must always have one project in Contensis. If you are attempting to delete the last project, then the delete button described in the steps will not be displayed.
 
 1. Ensure you are in the project you want to delete, by navigating to the project using the project selector from the vertical toolbar.
 2. Open the management console and select the Project Overview screen from the menu.

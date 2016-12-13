@@ -1,6 +1,6 @@
 # Composed fields
 
-The `ComposedField` type contains the data that the [Composer editor](https://contensis.github.io/docs/content-types/field-editors/editor-composer.html) defines. It is a read-only list of `ComposedFieldItem` instances, which expose a *Type* property and *Value* methods. The *Value* methods return the data for the field. The *Type* property is a name given to an *allowed field type validation* defined in the content type that the entry is based on. 
+The `ComposedField` type contains the data that the [Composer editor](https://contensis.github.io/docs/content-types/field-editors/editor-composer.html) defines. It is a read-only list of `ComposedFieldItem` instances, which expose a *Type* property and *Value* methods. The *Value* methods return the data for the field. The *Type* property is a name given to an *allowed field type validation* defined in the content type that the entry is based on.
 
 An *allowed field type* is essentially any standard field (such as Image, Heading, Location, etc.) that restricts what types of field can be added to a `ComposedField`.
 
@@ -28,7 +28,7 @@ public dynamic Value()
 
 ### Remarks
 
-Complex objects will be returned as dynamic [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) instances.
+Complex objects will be returned as dynamic [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx instances.
 
 {% method -%}
 
@@ -71,7 +71,7 @@ public T Value<T>()
 
 ### Remarks
 
-For complex objects, If the type of T does not match the value type, then either a null value will be returned or an object of type T is returned with no property values.
+For complex objects, if the type of T does not match the value type, then either a null value will be returned or an object of type T is returned with no property values.
 
 {% method -%}
 
@@ -113,11 +113,11 @@ The example below shows how a composed field with different field types can be r
 }
 
 <div>
- 
+
 @foreach(ComposedFieldItem item in synopsis)
 {
     // Loop through the ComposedFieldItems in the ComposedField and render the items
-    // 
+    //
 
     if (item.Type == "mainHeading")
     {

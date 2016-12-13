@@ -26,10 +26,10 @@ The Location class represents a geographic coordinate that specifies the positio
     // Get the field value as a Location instance.
     var filmingLocation = film.Get<Location>("filmingLocation");
 
-    // combine lat/lng into a string
+    // combine lat/lng into a string.
     var latLng = $"{filmingLocation.Lat},{filmingLocation.Lng}";
 
-    // Use Google map API to generate a map image
+    // Use Google map API to generate a map image.
     var imgUrl = "https://maps.googleapis.com/maps/api/staticmap?center="+latLng+"&zoom=14&size=400x300&sensor=false";
 }
 

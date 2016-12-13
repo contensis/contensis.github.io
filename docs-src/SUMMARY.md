@@ -24,7 +24,7 @@
 	* [Versioning](/content-types/versioning.md)
 	* [Workflow states](/content-types/workflow-states.md)
 	* [Enable or disable languages for a content type](/content-types/enable-disable-languages.md)
-	
+
 ### Validation
 * [Overview](/content-types/validation/README.md)
 	* [Required](/content-types/validation/required-validation.md)
@@ -63,12 +63,12 @@
 	* [Entry versioning](/entries/entry-versioning.md)
 	* [Multi language support](/entries/multi-language-support.md)
 	* [Translate an entry](/entries/translate-an-entry.md)
-	
+
 ## Projects
 * [Overview](/projects/README.md)
 	* [Create a project](/projects/create-a-project.md)
+	* [Update a project](/projects/update-a-project.md)
 	* [Delete a project](/projects/delete-a-project.md)
-	* [Update an existing project](/projects/update-a-project.md)
 
 ## API Documentation
 * [Delivery API](https://contensis.github.io/api/index.html)

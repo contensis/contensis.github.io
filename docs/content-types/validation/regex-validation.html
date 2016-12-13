@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Regular expression · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Regular expression · Contensis 9 Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -651,7 +651,7 @@
                 <a href="../field-editors/editor-date-datetime.html">
             
                     
-                    Date / Date Time
+                    Date \/ Date Time
             
                 </a>
             
@@ -867,12 +867,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.2" data-path="../../projects/delete-a-project.html">
+        <li class="chapter " data-level="8.1.2" data-path="../../projects/update-a-project.html">
             
-                <a href="../../projects/delete-a-project.html">
+                <a href="../../projects/update-a-project.html">
             
                     
-                    Delete a project
+                    Update a project
             
                 </a>
             
@@ -880,12 +880,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.3" data-path="../../projects/update-a-project.html">
+        <li class="chapter " data-level="8.1.3" data-path="../../projects/delete-a-project.html">
             
-                <a href="../../projects/update-a-project.html">
+                <a href="../../projects/delete-a-project.html">
             
                     
-                    Update an existing project
+                    Delete a project
             
                 </a>
             
@@ -924,8 +924,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://www.zengenti.com" target="blank" class="gitbook-link">
+          © Copyright Zengenti 2016
         </a>
     </li>
 </ul>
@@ -963,106 +963,189 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1><p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p><p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p><h2 id="appearance">Appearance</h2><p><img alt="Matches pattern validation" src="../../images/validation-matchespattern.png"></p><h2 id="how-to-set-the-validation">How to set the validation</h2><p>With a content type open for editing:</p><ul><li>Select the field you want to set a validation rule against.
-</li>
-<li>With the field active the properties panel is displayed, select <strong>Validation</strong> from the panel navigation.
-</li>
-<li>Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.
-</li>
-<li>You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the <em>Validation message</em> text box.
-</li></ul>
-<h2 id="setting-a-custom-expression">Setting a custom expression</h2><p>You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p><blockquote><p><strong>Note:</strong> Expressions need to be written using the JavaScript syntax to be valid.</p></blockquote><h3 id="predefined-regular-expressions">Predefined regular expressions</h3><p>We&apos;ve included some predefined expressions covering some standard scenarios.</p><h4 id="website-address">Website address</h4><pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g</code></pre>
-<table>
+                                <h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1>
+<p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p>
+<p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p>
+<h2 id="appearance">Appearance</h2>
+<p><img src="../../images/validation-matchespattern.png" alt="Matches pattern validation"></p>
+<h2 id="how-to-set-the-validation">How to set the validation</h2>
+<p>With a content type open for editing:</p>
+<ul>
+<li>Select the field you want to set a validation rule against.</li>
+<li>With the field active the properties panel is displayed, select <strong>Validation</strong> from the panel navigation.</li>
+<li>Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.</li>
+<li>You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the <em>Validation message</em> text box.</li>
+</ul>
+<h2 id="setting-a-custom-expression">Setting a custom expression</h2>
+<p>You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p>
+<blockquote>
+<p><strong>Note:</strong> Expressions need to be written using the JavaScript syntax to be valid.</p>
+</blockquote>
+<h3 id="predefined-regular-expressions">Predefined regular expressions</h3>
+<p>We&apos;ve included some predefined expressions covering some standard scenarios.</p>
+<h4 id="website-address">Website address</h4>
+<pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
 <td>special%character@example.com</td>
-</tr><tr><td><a href="https://zenhub.zengenti.com" target="_blank">https://zenhub.zengenti.com</a></td>
+</tr>
+<tr>
+<td><a href="https://zenhub.zengenti.com" target="_blank">https://zenhub.zengenti.com</a></td>
 <td>name@example</td>
-</tr><tr><td><a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank">http://zengenti.com/en-gb/products/contensis/contensis.aspx</a></td>
+</tr>
+<tr>
+<td><a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank">http://zengenti.com/en-gb/products/contensis/contensis.aspx</a></td>
 <td>notawebsite.com</td>
-</tr></tbody></table>
-
-<h4 id="email-address">Email address</h4><pre><code>^(?:(?:[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+(?:(?:\.(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)*&quot;|[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+))*\.[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+)?)|(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)+&quot;))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$</code></pre>
-<table>
+</tr>
+</tbody>
+</table>
+<h4 id="email-address">Email address</h4>
+<pre><code>^(?:(?:[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+(?:(?:\.(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)*&quot;|[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+))*\.[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+)?)|(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)+&quot;))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td>niceandsimple@example.com</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>niceandsimple@example.com</td>
 <td>Abc.example.com</td>
-</tr><tr><td>very.common@example.com</td>
+</tr>
+<tr>
+<td>very.common@example.com</td>
 <td>A@b@c@example.com</td>
-</tr><tr><td>a.little.lengthy.but.fine@dept.example.com</td>
+</tr>
+<tr>
+<td>a.little.lengthy.but.fine@dept.example.com</td>
 <td>john..doe@example.com</td>
-</tr></tbody></table>
-
-<h4 id="uk-postcodes">UK postcodes</h4><pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$</code></pre>
-<table>
+</tr>
+</tbody>
+</table>
+<h4 id="uk-postcodes">UK postcodes</h4>
+<pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td>SY8 3EG</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SY8 3EG</td>
 <td>SY8_3EG</td>
-</tr><tr><td>sy83eg</td>
+</tr>
+<tr>
+<td>sy83eg</td>
 <td>sy8-3eg</td>
-</tr><tr><td>SY83EG</td>
+</tr>
+<tr>
+<td>SY83EG</td>
 <td>sy8 &#xA3;eg</td>
-</tr></tbody></table>
-
-<p>=======</p><h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1><p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p><p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p><h2 id="how-to-set-the-validation">How to set the validation</h2><p>With a content type open for editing:</p><ul><li>Select the field you want to set a validation rule against.
-</li>
-<li>With the field active the properties panel is displayed, select <strong>Validation</strong> from the panel navigation.
-</li>
-<li>Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.
-</li>
-<li>You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the <em>Validation message</em> text box.
-</li></ul>
-<h2 id="setting-a-custom-expression">Setting a custom expression</h2><p>You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p><blockquote><p><strong>Note:</strong> Expressions need to be written using the JavaScript syntax to be valid.</p></blockquote><h3 id="predefined-regular-expressions">Predefined regular expressions</h3><p>We&apos;ve included some predefined expressions covering some standard scenarios.</p><h4 id="website-address">Website address</h4><pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g</code></pre>
-<table>
+</tr>
+</tbody>
+</table>
+<p>=======</p>
+<h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1>
+<p>This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p>
+<p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p>
+<h2 id="how-to-set-the-validation">How to set the validation</h2>
+<p>With a content type open for editing:</p>
+<ul>
+<li>Select the field you want to set a validation rule against.</li>
+<li>With the field active the properties panel is displayed, select <strong>Validation</strong> from the panel navigation.</li>
+<li>Select from the matches pattern dropdown the required pattern you want to use, alternatively you can define your own using the custom option.</li>
+<li>You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the <em>Validation message</em> text box.</li>
+</ul>
+<h2 id="setting-a-custom-expression">Setting a custom expression</h2>
+<p>You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like <a href="https://regex101.com/" target="_blank">Regular Expression 101</a> to test your expression, makes things easier.</p>
+<blockquote>
+<p><strong>Note:</strong> Expressions need to be written using the JavaScript syntax to be valid.</p>
+</blockquote>
+<h3 id="predefined-regular-expressions">Predefined regular expressions</h3>
+<p>We&apos;ve included some predefined expressions covering some standard scenarios.</p>
+<h4 id="website-address">Website address</h4>
+<pre><code>/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&amp;\/\/=]*)/g
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
 <td>special%character@example.com</td>
-</tr><tr><td><a href="https://zenhub.zengenti.com" target="_blank">https://zenhub.zengenti.com</a></td>
+</tr>
+<tr>
+<td><a href="https://zenhub.zengenti.com" target="_blank">https://zenhub.zengenti.com</a></td>
 <td>name@example</td>
-</tr><tr><td><a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank">http://zengenti.com/en-gb/products/contensis/contensis.aspx</a></td>
+</tr>
+<tr>
+<td><a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank">http://zengenti.com/en-gb/products/contensis/contensis.aspx</a></td>
 <td>notawebsite.com</td>
-</tr></tbody></table>
-
-<h4 id="email-address">Email address</h4><pre><code>^(?:(?:[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+(?:(?:\.(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)*&quot;|[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+))*\.[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+)?)|(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)+&quot;))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$</code></pre>
-<table>
+</tr>
+</tbody>
+</table>
+<h4 id="email-address">Email address</h4>
+<pre><code>^(?:(?:[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+(?:(?:\.(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)*&quot;|[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+))*\.[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/]+)?)|(?:&quot;(?:\\?[\w`~!#$%^&amp;*\-=+;:{}&apos;|,?\/\.()&lt;&gt;\[\] @]|\\&quot;|\\\\)+&quot;))@(?:[a-zA-Z\d\-]+(?:\.[a-zA-Z\d\-]+)*|\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])$
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td>niceandsimple@example.com</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>niceandsimple@example.com</td>
 <td>Abc.example.com</td>
-</tr><tr><td>very.common@example.com</td>
+</tr>
+<tr>
+<td>very.common@example.com</td>
 <td>A@b@c@example.com</td>
-</tr><tr><td>a.little.lengthy.but.fine@dept.example.com</td>
+</tr>
+<tr>
+<td>a.little.lengthy.but.fine@dept.example.com</td>
 <td>john..doe@example.com</td>
-</tr></tbody></table>
-
-<h4 id="uk-postcodes">UK postcodes</h4><pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$</code></pre>
-<table>
+</tr>
+</tbody>
+</table>
+<h4 id="uk-postcodes">UK postcodes</h4>
+<pre><code>^([a-z]{1,2}[a-z0-9]{1,2})\s*?(\d[a-z]{2})$
+</code></pre><table>
 <thead>
-<tr><th>Allowed values</th>
+<tr>
+<th>Allowed values</th>
 <th>Disallowed values</th>
-</tr></thead><tbody>
-<tr><td>SY8 3EG</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SY8 3EG</td>
 <td>SY8_3EG</td>
-</tr><tr><td>sy83eg</td>
+</tr>
+<tr>
+<td>sy83eg</td>
 <td>sy8-3eg</td>
-</tr><tr><td>SY83EG</td>
+</tr>
+<tr>
+<td>SY83EG</td>
 <td>sy8 &#xA3;eg</td>
-</tr></tbody></table>
-
+</tr>
+</tbody>
+</table>
 
                                 
                                 </section>
@@ -1106,7 +1189,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"5.1.2","depth":2,"next":{"title":"Character count","level":"5.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"5.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-12-09T12:53:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-09T15:29:57.220Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"5.1.2","depth":2,"next":{"title":"Character count","level":"5.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"5.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-12-09T12:53:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-13T12:31:20.254Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

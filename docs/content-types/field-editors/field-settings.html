@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Field settings · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Field settings · Contensis 9 Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -651,7 +651,7 @@
                 <a href="editor-date-datetime.html">
             
                     
-                    Date / Date Time
+                    Date \/ Date Time
             
                 </a>
             
@@ -867,12 +867,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.2" data-path="../../projects/delete-a-project.html">
+        <li class="chapter " data-level="8.1.2" data-path="../../projects/update-a-project.html">
             
-                <a href="../../projects/delete-a-project.html">
+                <a href="../../projects/update-a-project.html">
             
                     
-                    Delete a project
+                    Update a project
             
                 </a>
             
@@ -880,12 +880,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.3" data-path="../../projects/update-a-project.html">
+        <li class="chapter " data-level="8.1.3" data-path="../../projects/delete-a-project.html">
             
-                <a href="../../projects/update-a-project.html">
+                <a href="../../projects/delete-a-project.html">
             
                     
-                    Update an existing project
+                    Delete a project
             
                 </a>
             
@@ -924,8 +924,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://www.zengenti.com" target="blank" class="gitbook-link">
+          © Copyright Zengenti 2016
         </a>
     </li>
 </ul>
@@ -963,7 +963,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="field-settings">Field settings</h1><h2 id="name">Name</h2><p>The name property describes the field content. The name entered here will be displayed to an author when creating an entry. Its used to identify the chunk of content.</p><p>The name entered is also used to generate the field ID.</p><blockquote><p>The Name field is limited to 50 alphanumeric characters, symbols are also supported.</p></blockquote><h2 id="field-id">Field ID</h2><p>The Field ID is used to identify the field within a content type through the API. Field IDs have to be unique within a content type.</p><p>The field ID is automatically generated when entering a field name. Any name you enter will be sanitised.</p><p>If you attempt to use a name already in use then a number will be appended to the field ID.</p><blockquote><p>The Field ID is limited to 50 alphanumeric characters, symbols are not supported.</p></blockquote><h2 id="default-value">Default value</h2><p>The default value property sets the default content for a field when an entry is created. If no change is made by an author when editing the entry then the default entry will be used.</p><p><em>e.g.</em> By default location fields are set to have a default location of London. If the default location is not updated by an author then the location for the entry will be set to London.</p><p>The type of default value input will vary between editors.</p><h2 id="format">Format</h2><p>Some fields support different formats of data. By changing the data format you are specifying that type of data that is stored and returned via the API.</p><p>Depending on the format you specify you may be provided with different types of field editor for the field.</p><p><em>e.g.</em> If you were to select the date field and change its format from single to range you&apos;d be provided with a set of editors that support date from and date to.</p><h2 id="title-field">Title field</h2><p>The title field is used in listings, the entry field editor and through the API to identify entries.</p><blockquote><p>For a content type to be published it requires a single text field to be set as the title.</p></blockquote><p>The first text field added to the content type will be used as the title field, if you decide you want to use another field for your title field you can change it at a later date.</p>
+                                <h1 id="field-settings">Field settings</h1>
+<h2 id="name">Name</h2>
+<p>The name property describes the field content. The name entered here will be displayed to an author when creating an entry. Its used to identify the chunk of content.</p>
+<p>The name entered is also used to generate the field ID.</p>
+<blockquote>
+<p>The Name field is limited to 50 alphanumeric characters, symbols are also supported.</p>
+</blockquote>
+<h2 id="field-id">Field ID</h2>
+<p>The Field ID is used to identify the field within a content type through the API. Field IDs have to be unique within a content type.</p>
+<p>The field ID is automatically generated when entering a field name. Any name you enter will be sanitised.</p>
+<p>If you attempt to use a name already in use then a number will be appended to the field ID.</p>
+<blockquote>
+<p>The Field ID is limited to 50 alphanumeric characters, symbols are not supported.</p>
+</blockquote>
+<h2 id="default-value">Default value</h2>
+<p>The default value property sets the default content for a field when an entry is created. If no change is made by an author when editing the entry then the default entry will be used.</p>
+<p><em>e.g.</em> By default location fields are set to have a default location of London. If the default location is not updated by an author then the location for the entry will be set to London.</p>
+<p>The type of default value input will vary between editors.</p>
+<h2 id="format">Format</h2>
+<p>Some fields support different formats of data. By changing the data format you are specifying that type of data that is stored and returned via the API.</p>
+<p>Depending on the format you specify you may be provided with different types of field editor for the field.</p>
+<p><em>e.g.</em> If you were to select the date field and change its format from single to range you&apos;d be provided with a set of editors that support date from and date to.</p>
+<h2 id="title-field">Title field</h2>
+<p>The title field is used in listings, the entry field editor and through the API to identify entries.</p>
+<blockquote>
+<p>For a content type to be published it requires a single text field to be set as the title.</p>
+</blockquote>
+<p>The first text field added to the content type will be used as the title field, if you decide you want to use another field for your title field you can change it at a later date.</p>
+
                                 
                                 </section>
                             
@@ -1006,7 +1034,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Field settings","level":"6.1.1","depth":2,"next":{"title":"Field properties","level":"6.1.2","depth":2,"path":"content-types/field-editors/field-properties.md","ref":"content-types/field-editors/field-properties.md","articles":[]},"previous":{"title":"Supported fields and editors","level":"6.1","depth":1,"path":"content-types/field-editors/README.md","ref":"content-types/field-editors/README.md","articles":[{"title":"Field settings","level":"6.1.1","depth":2,"path":"content-types/field-editors/field-settings.md","ref":"content-types/field-editors/field-settings.md","articles":[]},{"title":"Field properties","level":"6.1.2","depth":2,"path":"content-types/field-editors/field-properties.md","ref":"content-types/field-editors/field-properties.md","articles":[]},{"title":"Text","level":"6.1.3","depth":2,"path":"content-types/field-editors/editor-text.md","ref":"content-types/field-editors/editor-text.md","articles":[]},{"title":"Multiline text","level":"6.1.4","depth":2,"path":"content-types/field-editors/editor-multiline-text.md","ref":"content-types/field-editors/editor-multiline-text.md","articles":[]},{"title":"Heading","level":"6.1.5","depth":2,"path":"content-types/field-editors/editor-heading.md","ref":"content-types/field-editors/editor-heading.md","articles":[]},{"title":"HTML","level":"6.1.6","depth":2,"path":"content-types/field-editors/editor-html.md","ref":"content-types/field-editors/editor-html.md","articles":[]},{"title":"Markdown","level":"6.1.7","depth":2,"path":"content-types/field-editors/editor-markdown.md","ref":"content-types/field-editors/editor-markdown.md","articles":[]},{"title":"Quote","level":"6.1.8","depth":2,"path":"content-types/field-editors/editor-quote.md","ref":"content-types/field-editors/editor-quote.md","articles":[]},{"title":"Number","level":"6.1.9","depth":2,"path":"content-types/field-editors/editor-number.md","ref":"content-types/field-editors/editor-number.md","articles":[]},{"title":"Boolean","level":"6.1.10","depth":2,"path":"content-types/field-editors/editor-boolean.md","ref":"content-types/field-editors/editor-boolean.md","articles":[]},{"title":"Location","level":"6.1.11","depth":2,"path":"content-types/field-editors/editor-location.md","ref":"content-types/field-editors/editor-location.md","articles":[]},{"title":"List","level":"6.1.12","depth":2,"path":"content-types/field-editors/editor-list.md","ref":"content-types/field-editors/editor-list.md","articles":[]},{"title":"Searchable dropdown","level":"6.1.13","depth":2,"path":"content-types/field-editors/editor-searchable-dropdown.md","ref":"content-types/field-editors/editor-searchable-dropdown.md","articles":[]},{"title":"Taxonomy","level":"6.1.14","depth":2,"path":"content-types/field-editors/editor-taxonomy.md","ref":"content-types/field-editors/editor-taxonomy.md","articles":[]},{"title":"Composer","level":"6.1.15","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},{"title":"Date / Date Time","level":"6.1.16","depth":2,"path":"content-types/field-editors/editor-date-datetime.md","ref":"content-types/field-editors/editor-date-datetime.md","articles":[]},{"title":"Asset","level":"6.1.17","depth":2,"path":"content-types/field-editors/editor-asset.md","ref":"content-types/field-editors/editor-asset.md","articles":[]},{"title":"Image","level":"6.1.18","depth":2,"path":"content-types/field-editors/editor-image.md","ref":"content-types/field-editors/editor-image.md","articles":[]},{"title":"Entry","level":"6.1.19","depth":2,"path":"content-types/field-editors/editor-entry.md","ref":"content-types/field-editors/editor-entry.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/field-settings.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-09T15:29:57.220Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Field settings","level":"6.1.1","depth":2,"next":{"title":"Field properties","level":"6.1.2","depth":2,"path":"content-types/field-editors/field-properties.md","ref":"content-types/field-editors/field-properties.md","articles":[]},"previous":{"title":"Supported fields and editors","level":"6.1","depth":1,"path":"content-types/field-editors/README.md","ref":"content-types/field-editors/README.md","articles":[{"title":"Field settings","level":"6.1.1","depth":2,"path":"content-types/field-editors/field-settings.md","ref":"content-types/field-editors/field-settings.md","articles":[]},{"title":"Field properties","level":"6.1.2","depth":2,"path":"content-types/field-editors/field-properties.md","ref":"content-types/field-editors/field-properties.md","articles":[]},{"title":"Text","level":"6.1.3","depth":2,"path":"content-types/field-editors/editor-text.md","ref":"content-types/field-editors/editor-text.md","articles":[]},{"title":"Multiline text","level":"6.1.4","depth":2,"path":"content-types/field-editors/editor-multiline-text.md","ref":"content-types/field-editors/editor-multiline-text.md","articles":[]},{"title":"Heading","level":"6.1.5","depth":2,"path":"content-types/field-editors/editor-heading.md","ref":"content-types/field-editors/editor-heading.md","articles":[]},{"title":"HTML","level":"6.1.6","depth":2,"path":"content-types/field-editors/editor-html.md","ref":"content-types/field-editors/editor-html.md","articles":[]},{"title":"Markdown","level":"6.1.7","depth":2,"path":"content-types/field-editors/editor-markdown.md","ref":"content-types/field-editors/editor-markdown.md","articles":[]},{"title":"Quote","level":"6.1.8","depth":2,"path":"content-types/field-editors/editor-quote.md","ref":"content-types/field-editors/editor-quote.md","articles":[]},{"title":"Number","level":"6.1.9","depth":2,"path":"content-types/field-editors/editor-number.md","ref":"content-types/field-editors/editor-number.md","articles":[]},{"title":"Boolean","level":"6.1.10","depth":2,"path":"content-types/field-editors/editor-boolean.md","ref":"content-types/field-editors/editor-boolean.md","articles":[]},{"title":"Location","level":"6.1.11","depth":2,"path":"content-types/field-editors/editor-location.md","ref":"content-types/field-editors/editor-location.md","articles":[]},{"title":"List","level":"6.1.12","depth":2,"path":"content-types/field-editors/editor-list.md","ref":"content-types/field-editors/editor-list.md","articles":[]},{"title":"Searchable dropdown","level":"6.1.13","depth":2,"path":"content-types/field-editors/editor-searchable-dropdown.md","ref":"content-types/field-editors/editor-searchable-dropdown.md","articles":[]},{"title":"Taxonomy","level":"6.1.14","depth":2,"path":"content-types/field-editors/editor-taxonomy.md","ref":"content-types/field-editors/editor-taxonomy.md","articles":[]},{"title":"Composer","level":"6.1.15","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},{"title":"Date \\/ Date Time","level":"6.1.16","depth":2,"path":"content-types/field-editors/editor-date-datetime.md","ref":"content-types/field-editors/editor-date-datetime.md","articles":[]},{"title":"Asset","level":"6.1.17","depth":2,"path":"content-types/field-editors/editor-asset.md","ref":"content-types/field-editors/editor-asset.md","articles":[]},{"title":"Image","level":"6.1.18","depth":2,"path":"content-types/field-editors/editor-image.md","ref":"content-types/field-editors/editor-image.md","articles":[]},{"title":"Entry","level":"6.1.19","depth":2,"path":"content-types/field-editors/editor-entry.md","ref":"content-types/field-editors/editor-entry.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/field-settings.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-13T12:31:20.254Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

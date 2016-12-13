@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Searchable dropdown · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Searchable dropdown · Contensis 9 Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -651,7 +651,7 @@
                 <a href="editor-date-datetime.html">
             
                     
-                    Date / Date Time
+                    Date \/ Date Time
             
                 </a>
             
@@ -867,12 +867,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.2" data-path="../../projects/delete-a-project.html">
+        <li class="chapter " data-level="8.1.2" data-path="../../projects/update-a-project.html">
             
-                <a href="../../projects/delete-a-project.html">
+                <a href="../../projects/update-a-project.html">
             
                     
-                    Delete a project
+                    Update a project
             
                 </a>
             
@@ -880,12 +880,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.3" data-path="../../projects/update-a-project.html">
+        <li class="chapter " data-level="8.1.3" data-path="../../projects/delete-a-project.html">
             
-                <a href="../../projects/update-a-project.html">
+                <a href="../../projects/delete-a-project.html">
             
                     
-                    Update an existing project
+                    Delete a project
             
                 </a>
             
@@ -924,8 +924,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://www.zengenti.com" target="blank" class="gitbook-link">
+          © Copyright Zengenti 2016
         </a>
     </li>
 </ul>
@@ -963,35 +963,74 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="searchable-dropdown-field-editor">Searchable dropdown field editor</h1><p>The searchable dropdown field editor provides a way to use keyword searches to filter down a large list of values that are set in the list values properties text box.</p><p>The type of dropdown displayed will depend on if multiple selection is allowed. Single selections allow a single value to be searched for an set, very similar to a standard dropdown menu with the additional support for search.</p><p>When multiple selection is set each value selected is added as pill lozenge with a cross which allows items to be removed from the list.</p><h2 id="appearance">Appearance</h2><p><img alt="Searchable Dropdown Field Editor" src="../../images/field-editor-searchabledropdown.png"></p><h2 id="settings">Settings</h2><table>
+                                <h1 id="searchable-dropdown-field-editor">Searchable dropdown field editor</h1>
+<p>The searchable dropdown field editor provides a way to use keyword searches to filter down a large list of values that are set in the list values properties text box.</p>
+<p>The type of dropdown displayed will depend on if multiple selection is allowed. Single selections allow a single value to be searched for an set, very similar to a standard dropdown menu with the additional support for search.</p>
+<p>When multiple selection is set each value selected is added as pill lozenge with a cross which allows items to be removed from the list.</p>
+<h2 id="appearance">Appearance</h2>
+<p><img src="../../images/field-editor-searchabledropdown.png" alt="Searchable Dropdown Field Editor"></p>
+<h2 id="settings">Settings</h2>
+<table>
 <thead>
-<tr><th>Setting name</th>
+<tr>
+<th>Setting name</th>
 <th>Summary</th>
-</tr></thead><tbody>
-<tr><td><a href="field-settings.html#name">Name</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="field-settings.html#name">Name</a></td>
 <td>A text label to identify the field in an entry.</td>
-</tr><tr><td><a href="field-settings.html#field-id">Field ID</a></td>
+</tr>
+<tr>
+<td><a href="field-settings.html#field-id">Field ID</a></td>
 <td>A sanitised name to be used by the API.</td>
-</tr><tr><td><a href="field-settings.html#default-value">Default value</a></td>
+</tr>
+<tr>
+<td><a href="field-settings.html#default-value">Default value</a></td>
 <td>The default value property sets the default content for a field when an entry is created.</td>
-</tr><tr><td><a href="field-settings.html#allow-multiple">Multiple selection</a></td>
+</tr>
+<tr>
+<td><a href="field-settings.html#allow-multiple">Multiple selection</a></td>
 <td>Allows multiple selection within a field.</td>
-</tr></tbody></table>
-
-<h2 id="supported-validation">Supported validation</h2><p>This field editor supports the following validation methods.</p><ul><li><a href="../validation/required-validation.html">Required field</a>
-</li></ul>
-<h2 id="properties">Properties</h2><h3 id="common-properties">Common properties</h3><table>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-validation">Supported validation</h2>
+<p>This field editor supports the following validation methods.</p>
+<ul>
+<li><a href="../validation/required-validation.html">Required field</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="common-properties">Common properties</h3>
+<table>
 <thead>
-<tr><th>Property name</th>
+<tr>
+<th>Property name</th>
 <th>Summary</th>
-</tr></thead><tbody>
-<tr><td><a href="field-properties.html#placeholder-text">Placeholder text</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="field-properties.html#placeholder-text">Placeholder text</a></td>
 <td>The placeholder property specifies a short hint that describes the expected value of a field, in the case of the searchable dropdown this value will set the default text. <sup><a href="#fn_1" id="reffn_1">1</a></sup></td>
-</tr><tr><td><a href="field-properties.html#content-guidelines">Content guidelines</a></td>
+</tr>
+<tr>
+<td><a href="field-properties.html#content-guidelines">Content guidelines</a></td>
 <td>Provides guidance to an author of the expected content that the field should contain.</td>
-</tr></tbody></table>
-
-<h3 id="list-values">List values</h3><p>This property expects a comma separated list of values that are to be displayed in the dropdown.</p><blockquote><p><em>e.g.</em> Red, Blue, Green, Orange, Purple</p></blockquote><h3 id="validation-message">Validation message</h3><p>Why is this even here? <sup><a href="#fn_2" id="reffn_2">2</a></sup></p><h4 id="footnotes">Footnotes:</h4><hr><blockquote id="fn_1">
+</tr>
+</tbody>
+</table>
+<h3 id="list-values">List values</h3>
+<p>This property expects a comma separated list of values that are to be displayed in the dropdown.</p>
+<blockquote>
+<p><em>e.g.</em> Red, Blue, Green, Orange, Purple</p>
+</blockquote>
+<h3 id="validation-message">Validation message</h3>
+<p>Why is this even here? <sup><a href="#fn_2" id="reffn_2">2</a></sup></p>
+<h4 id="footnotes">Footnotes:</h4>
+<hr>
+<blockquote id="fn_1">
 <sup>1</sup>. Should the placeholder text be removed, and instead the default value be set to Please select?<a href="#reffn_1" title="Jump back to footnote [1] in the text."> &#x21A9;</a>
 </blockquote>
 <blockquote id="fn_2">
@@ -1040,7 +1079,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Searchable dropdown","level":"6.1.13","depth":2,"next":{"title":"Taxonomy","level":"6.1.14","depth":2,"path":"content-types/field-editors/editor-taxonomy.md","ref":"content-types/field-editors/editor-taxonomy.md","articles":[]},"previous":{"title":"List","level":"6.1.12","depth":2,"path":"content-types/field-editors/editor-list.md","ref":"content-types/field-editors/editor-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-searchable-dropdown.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-09T15:29:57.220Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Searchable dropdown","level":"6.1.13","depth":2,"next":{"title":"Taxonomy","level":"6.1.14","depth":2,"path":"content-types/field-editors/editor-taxonomy.md","ref":"content-types/field-editors/editor-taxonomy.md","articles":[]},"previous":{"title":"List","level":"6.1.12","depth":2,"path":"content-types/field-editors/editor-list.md","ref":"content-types/field-editors/editor-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-searchable-dropdown.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-13T12:31:20.254Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

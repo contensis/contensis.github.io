@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>Taxonomy · Contensis 9 Documentation</title>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Taxonomy · Contensis 9 Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.0">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
         
@@ -651,7 +651,7 @@
                 <a href="editor-date-datetime.html">
             
                     
-                    Date / Date Time
+                    Date \/ Date Time
             
                 </a>
             
@@ -867,12 +867,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.2" data-path="../../projects/delete-a-project.html">
+        <li class="chapter " data-level="8.1.2" data-path="../../projects/update-a-project.html">
             
-                <a href="../../projects/delete-a-project.html">
+                <a href="../../projects/update-a-project.html">
             
                     
-                    Delete a project
+                    Update a project
             
                 </a>
             
@@ -880,12 +880,12 @@
             
         </li>
     
-        <li class="chapter " data-level="8.1.3" data-path="../../projects/update-a-project.html">
+        <li class="chapter " data-level="8.1.3" data-path="../../projects/delete-a-project.html">
             
-                <a href="../../projects/update-a-project.html">
+                <a href="../../projects/delete-a-project.html">
             
                     
-                    Update an existing project
+                    Delete a project
             
                 </a>
             
@@ -924,8 +924,8 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+        <a href="https://www.zengenti.com" target="blank" class="gitbook-link">
+          © Copyright Zengenti 2016
         </a>
     </li>
 </ul>
@@ -963,31 +963,59 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="taxonomy-field-editor">Taxonomy field editor</h1><p>This editor allows you to bind a list of existing taxonomy nodes from the taxonomy manager to a field where one or more items are available for selection by an author.</p><p>This is an ideal field editor for centrally managing static values, examples being categorisations, languages, or country lists that may be used elsewhere in your project.</p><p>The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from where values can be selected.</p><h2 id="appearance">Appearance</h2><p><img alt="Taxonomy Field Editor" src="../../images/field-editor-taxonomy.png"></p><h2 id="settings">Settings</h2><table>
+                                <h1 id="taxonomy-field-editor">Taxonomy field editor</h1>
+<p>This editor allows you to bind a list of existing taxonomy nodes from the taxonomy manager to a field where one or more items are available for selection by an author.</p>
+<p>This is an ideal field editor for centrally managing static values, examples being categorisations, languages, or country lists that may be used elsewhere in your project.</p>
+<p>The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from where values can be selected.</p>
+<h2 id="appearance">Appearance</h2>
+<p><img src="../../images/field-editor-taxonomy.png" alt="Taxonomy Field Editor"></p>
+<h2 id="settings">Settings</h2>
+<table>
 <thead>
-<tr><th>Setting name</th>
+<tr>
+<th>Setting name</th>
 <th>Summary</th>
-</tr></thead><tbody>
-<tr><td><a href="field-settings.html#name">Name</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="field-settings.html#name">Name</a></td>
 <td>A text label to identify the field in an entry.</td>
-</tr><tr><td><a href="field-settings.html#field-id">Field ID</a></td>
+</tr>
+<tr>
+<td><a href="field-settings.html#field-id">Field ID</a></td>
 <td>A sanitised name to be used by the API.</td>
-</tr><tr><td><a href="field-settings.html#allow-multiple">Multiple selection</a></td>
+</tr>
+<tr>
+<td><a href="field-settings.html#allow-multiple">Multiple selection</a></td>
 <td>Allows multiple selection within a field.</td>
-</tr></tbody></table>
-
-<h2 id="supported-validation">Supported validation</h2><p>This field editor supports the following validation methods:</p><ul><li><a href="../validation/required-validation.html">Required field</a>
-</li></ul>
-<h2 id="properties">Properties</h2><h3 id="common-properties">Common properties</h3><table>
+</tr>
+</tbody>
+</table>
+<h2 id="supported-validation">Supported validation</h2>
+<p>This field editor supports the following validation methods:</p>
+<ul>
+<li><a href="../validation/required-validation.html">Required field</a></li>
+</ul>
+<h2 id="properties">Properties</h2>
+<h3 id="common-properties">Common properties</h3>
+<table>
 <thead>
-<tr><th>Property name</th>
+<tr>
+<th>Property name</th>
 <th>Summary</th>
-</tr></thead><tbody>
-<tr><td><a href="field-properties.html#content-guidelines">Content guidelines</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="field-properties.html#content-guidelines">Content guidelines</a></td>
 <td>Provides guidance to an author of the expected content that the field should contain.</td>
-</tr></tbody></table>
+</tr>
+</tbody>
+</table>
+<h3 id="root-node">Root node</h3>
+<p>The root node property allows you to select a node to determine what values can be selected by an author. If no node selection is made, then all taxonomy values will be visible in the editor.</p>
 
-<h3 id="root-node">Root node</h3><p>The root node property allows you to select a node to determine what values can be selected by an author. If no node selection is made, then all taxonomy values will be visible in the editor.</p>
                                 
                                 </section>
                             
@@ -1030,7 +1058,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Taxonomy","level":"6.1.14","depth":2,"next":{"title":"Composer","level":"6.1.15","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},"previous":{"title":"Searchable dropdown","level":"6.1.13","depth":2,"path":"content-types/field-editors/editor-searchable-dropdown.md","ref":"content-types/field-editors/editor-searchable-dropdown.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-taxonomy.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-12-09T15:29:57.220Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Taxonomy","level":"6.1.14","depth":2,"next":{"title":"Composer","level":"6.1.15","depth":2,"path":"content-types/field-editors/editor-composer.md","ref":"content-types/field-editors/editor-composer.md","articles":[]},"previous":{"title":"Searchable dropdown","level":"6.1.13","depth":2,"path":"content-types/field-editors/editor-searchable-dropdown.md","ref":"content-types/field-editors/editor-searchable-dropdown.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/field-editors/editor-taxonomy.md","mtime":"2016-12-09T12:50:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-13T12:31:20.254Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

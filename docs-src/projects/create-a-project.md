@@ -12,11 +12,11 @@ If your license key supports multiple projects and you are logged in to Contensi
 
 2. Give your project a unique name.
 
-> This field is restricted to 64 characters.
+	> This field is restricted to 64 characters.
 
 3. The API name will automatically be created and sanitised from the project name you enter.
 
-> **Note:** Its not possible to change the API name once you've created the project.
+	> **Note:** Its not possible to change the API name once you've created the project.
 
 4. We automatically assign some default asset types that are commonly used. Add additional asset types that you need for your project by typing into the field and pressing enter. You can remove a type by pressing the cross icon next to the asset name.
 

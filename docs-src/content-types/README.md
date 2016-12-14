@@ -1,1 +1,1 @@
-# Content Types
+# Content types

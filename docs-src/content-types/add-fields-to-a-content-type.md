@@ -20,5 +20,7 @@ The field name will also be visible to an author when they are creating an entry
 
 Read through our [field settings](/content-types/field-settings.md) article to get a better understanding of each setting.
 
+> **Warning**: If a field name has previously been used in the content type and is re used, any existing entries containing that field may have data preserved that would be returned via the Delivery API. Any pre existing data would also be shown in the entry editor.
+
 ## Reordering fields in a content type
 You can change the order of fields in a content type by using the up and down buttons displayed against a field. Simply press the up or down arrow buttons to change the field order.

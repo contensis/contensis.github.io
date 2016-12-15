@@ -977,20 +977,19 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="remove-fields-from-a-content-type">Remove fields from a content type</h1>
-<p>If you no longer require a field within a content type it can easily be removed by following the steps. Be aware that this field will be removed from any published entries.</p>
-<blockquote>
-<p><strong>Warning:</strong> Removing a field and any associated data is irreversible, only do this if you are confident that field is no longer required.</p>
-</blockquote>
+<p>If you no longer require a field within a content type it can easily be removed by following the steps.</p>
 <p>With a content type open for editing:</p>
 <ol>
 <li>Locate the field in you content type that you want to remove.</li>
-<li>Press the cross button on the field to remove it from the content type. A confirmation screen will be displayed.</li>
-<li>Press delete to confirm the removal of the field.</li>
-<li>Press save, followed by publish to confirm your changes.</li>
+<li>Press the <strong>cross</strong> on the field to remove it from the content type. A confirmation screen will be displayed.</li>
+<li>Press <strong>Delete</strong> to confirm the removal of the field.</li>
+<li>Press <strong>Save</strong>, followed by <strong>Publish</strong> to confirm your changes.</li>
 </ol>
-<blockquote>
-<p><strong>Note:</strong> Any code created referencing the removed field would return null or the default value for the type through the Delivery API.</p>
-</blockquote>
+<h2 id="field-removal-behaviour">Field removal behaviour</h2>
+<ol>
+<li>The data associated with the removed field for an entry is preserved until the entry is updated and saved.</li>
+<li>Any code created referencing the removed field would return null or the default value for the type through the Delivery API.</li>
+</ol>
 
                                 
                                 </section>
@@ -1034,7 +1033,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Remove fields from a content type","level":"4.1.4","depth":2,"next":{"title":"Update a content type","level":"4.1.5","depth":2,"path":"content-types/update-a-content-type.md","ref":"content-types/update-a-content-type.md","articles":[]},"previous":{"title":"Add fields to a content type","level":"4.1.3","depth":2,"path":"content-types/add-fields-to-a-content-type.md","ref":"content-types/add-fields-to-a-content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/remove-fields-from-a-content-type.md","mtime":"2016-12-09T15:27:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-15T12:27:56.087Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Remove fields from a content type","level":"4.1.4","depth":2,"next":{"title":"Update a content type","level":"4.1.5","depth":2,"path":"content-types/update-a-content-type.md","ref":"content-types/update-a-content-type.md","articles":[]},"previous":{"title":"Add fields to a content type","level":"4.1.3","depth":2,"path":"content-types/add-fields-to-a-content-type.md","ref":"content-types/add-fields-to-a-content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":[]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/remove-fields-from-a-content-type.md","mtime":"2016-12-15T15:33:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-15T15:45:48.561Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

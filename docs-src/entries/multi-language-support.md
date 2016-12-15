@@ -8,7 +8,7 @@ The languages that are available for an entry to be created against, is determin
 ## Translation workflow
 Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language. 
 
-This workflow ensures that as the default content is updated we can correctly notify authors of different languages that a change has been made, and is likely to require translation.
+This workflow ensures that as the default content is updated, authors of different languages will see that a change has been made. The change will be highlighted by the entries workflow state e.g. an entry is *Awaiting Translation*.
 
 ## Supported languages
 We support the following languages in Contensis.
@@ -20,17 +20,17 @@ We support the following languages in Contensis.
 | Danish | da |
 | Dutch | nl |
 | English | en-GB  |
-| American English | en-US |
-| Canadian English | en-CA |
-| Indian English | en-IN |
+| English (American) | en-US |
+| English (Canadian) | en-CA |
+| English (Indian) | en-IN |
 | French | fr |
-| Dutch French | fr-NL|
-| Irish Gaelic | ga-IE |
-| Scottish Gaelic | gd-GB |
+| French (Dutch) | fr-NL|
+| Gaelic (Irish) | ga-IE |
+| Gaelic (Scottish) | gd-GB |
 | German | de |
 | Korean | ko |
 | Portuguese | pt |
 | Spanish | es |
-| American Spanish | es-US |
-| Mexican Spanish | es-MX |
+| Spanish (American) | es-US |
+| Spanish (Mexican) | es-MX |
 | Welsh | cy |

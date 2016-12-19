@@ -2,15 +2,14 @@
 
 * [Introduction](README.md)
 
-* [Grammar and punctuation](/grammar-punctuation/README.md)
-* [Web elements](/web-elements/README.md)
+* [Grammar and Punctuation](/grammar-punctuation/README.md)
+* [Web Elements](/web-elements/README.md)
+* [Word List](word-list.md)
 
 ## Writing guides
 
-* [Writing blog posts](/writing-blog-posts/README.md)
-* [Writing for ZenHub](/writing-for-zenhub/README.md)
-  * [Bold](/writing-for-zenhub/README.md#bold)
-  * [Italics](/writing-for-zenhub/README.md#italics)
+* [Writing Blog Posts](/writing-blog-posts/README.md)
+* [Writing For ZenHub](/writing-for-zenhub/README.md)
 
 ## Contensis
 * [Tooltips](/contensis/README.md#tooltips)

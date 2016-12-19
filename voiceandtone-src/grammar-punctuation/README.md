@@ -1,6 +1,5 @@
-# Punctuation
 
-# Acronyms and abbreviations
+## Acronyms and abbreviations
 For most technical terms that use abbreviations, introduce the full phrase before using its acronym. For example, we can talk about information architecture (IA), then use IA whenever appropriate.
 
 **Exceptions:**
@@ -76,7 +75,7 @@ Gilding is choosing complex, uncommon words when there are simpler, more common 
 - Operate – run
 
 ## Jargon
-Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. We don’t like jargon.
+Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. **We don’t like jargon**.
 
 Avoid corporate jargon:
 

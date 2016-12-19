@@ -2,23 +2,20 @@
 
 * [Introduction](README.md)
 
-## Grammar and punctuation
-* [Jargon and gilding](/grammar-punctuation/jargon-gilding.md)
-* [Capitalisation](/grammar-punctuation/capitalisation.md)
-* [Punctuation](/grammar-punctuation/punctuation.md)
-* [Acronyms and abbreviations](/grammar-punctuation/acronyms-abbreviations.md)
+* [Grammar and punctuation](/grammar-punctuation/README.md)
+* [Web elements](/web-elements/README.md)
 
-## Formatting
-* [Headings](/formatting/formatting.md#headings)
-* [Paragraphs](/formatting/formatting.md#paragraphs)
-* [Bullet lists](/formatting/formatting.md#bullet-lists)
-* [Emphasis](/formatting/formatting.md#emphasis)
+## Writing guides
 
-## Style and tone
-
-## ZenHub
-* [Buttons and icons](/zenhub/buttons-icons.md)
+* [Writing blog posts](/writing-blog-posts/README.md)
+* [Writing for ZenHub](/writing-for-zenhub/README.md)
+  * [Bold](/writing-for-zenhub/README.md#bold)
+  * [Italics](/writing-for-zenhub/README.md#italics)
 
 ## Contensis
-* [Buttons](/contensis/buttons.md)
-* [Placeholder text](/contensis/placeholder-text.md)
+* [Tooltips](/contensis/README.md#tooltips)
+* [Buttons](/contensis/README.md#buttons)
+* [Navigation](/contensis/README.md#navigation)
+* [Checkboxes](/contensis/README.md#checkboxes)
+* [Radio buttons](/contensis/README.md#radio-buttons)
+* [Forms](/contensis/README.md#forms)

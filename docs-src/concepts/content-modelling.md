@@ -1,13 +1,13 @@
 # Content modelling
 
-You define content models in Contensis by creating content types  against a project. Content modelling is restricted to the content types in a given project although you can access content types against multiple projects through our APIs.
+You define content models in Contensis by creating content types for a project. Content modelling is restricted to the content types in a given project - but you can access content types for multiple projects through our APIs.
 
 ## Content types
 A content type describes a type of content broken down into chunks.
 
 > *e.g.* A ‘film’ content type could contain the following chunks, title, film poster, length/run time, budget, overview, director and cast members.
 
-You can create a content type using our content type builder or you can programmatically create a content type defined in JSON using our Management API.
+You can create a content type through our content type builder or programmatically create a content type defined in JSON using our Management API.
 
 Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of [field types]() are supported.
 

@@ -3,7 +3,7 @@ A content type is made up of a set of fields. Fields allow us to break up large 
 
 > A content type can contain up to 50 fields.
 
-Fields comprise of a type, format and a field editor. The supported types, formats and editors are outlined in the following [article.](/content-types/field-editors/README.md)
+Fields comprise a type, format and a field editor. The supported types, formats and editors are outlined in the following [article.](/content-types/field-editors/README.md)
 
 ## Add a field
 Adding fields to a content type is easy. With the content type open for editing:

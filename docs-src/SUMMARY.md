@@ -1,13 +1,10 @@
 # Summary
 
-* [Contensis 9 overview](README.md)
-
-## Concepts
-* [Content modelling](/concepts/content-modelling.md)
+* [Content types and entries](README.md)
 
 ## API Key Management
 * [Overview](/api-keys/README.md)
-	* [View API keys](/api-keys/view-api-keys.md)
+	* [View and filter API keys](/api-keys/view-and-filter-api-keys.md)
 	* [Create an API key](/api-keys/create-an-api-key.md)
 	* [Update an API key](/api-keys/update-an-api-key.md)
 	* [Delete an API key](/api-keys/delete-an-api-key.md)
@@ -25,8 +22,6 @@
 	* [Workflow states](/content-types/workflow-states.md)
 	* [Enable or disable languages for a content type](/content-types/enable-disable-languages.md)
 	* [Setting a preview page for entries](/content-types/setting-a-preview-page-for-entries.md)
-
-
 
 ### Validation
 * [Overview](/content-types/validation/README.md)

@@ -1,1 +1,2 @@
 # Disable an API key
+If you're worried that an API key has been compromised, or you no longer use the application that was accessing your content through a particular API key, you can disable that API key. Follow the steps below to disable the API key.

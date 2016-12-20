@@ -10,5 +10,12 @@
     "sidebar": {
         "Contensis": "http://zengenti.com/en-gb/products/contensis/contensis.aspx"
     }
-  }
+  },
+  "plugins": ["github-edit"],
+  "pluginsConfig": {
+        "github-edit": {
+            "repo": "contensis/contensis.github.io",
+            "branch": "master/docs-src"
+        }
+    }
 }

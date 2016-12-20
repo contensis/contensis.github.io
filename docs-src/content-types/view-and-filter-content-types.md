@@ -8,4 +8,4 @@ Content types are stored for individual projects. You can view content types by 
 ## Filter through content types
 If you have a large number of content types in your project then you may find it easier to search using the filter bar.
 
-- Simply type a word in the filter bar to narrow down the content types displayed.
+- Type a word in the filter bar to narrow down the content types displayed.

@@ -6,9 +6,9 @@ A content type is made up of a set of fields. Fields allow us to break up large 
 Fields comprise a type, format and a field editor. The supported types, formats and editors are outlined in the following [article.](/content-types/field-editors/README.md)
 
 ## Add a field
-Adding fields to a content type is easy. With the content type open for editing:
+With the content type open for editing:
 
-1. Press on the field type button in the toolbox for the field that you want to add to your content type. The field will be added to the bottom of your content type.
+1. Press on the *Field Type* button in the toolbox for the field that you want to add. The field will be added to the bottom of your content type.
 2. The field you've added will be active and indicated by a green border.
 
 ### Set a field name
@@ -18,7 +18,7 @@ Give the field a name that clearly identifies its content. The field name is use
 
 Read through our [field settings](/content-types/field-settings.md) article to get a better understanding of each setting.
 
-> **Warning**: If a field name has previously been used in the content type and is re used, any existing entries containing that field may have data preserved that would be returned via the Delivery API. Any pre existing data would also be shown in the entry editor.
+> **Warning**: If a field name has previously been used in the content type and is reused, any existing entries containing that field may have data preserved that would be returned via the Delivery API. Any pre existing data would also be shown in the entry editor.
 
 ## Reordering fields in a content type
 You can change the order of fields in a content type by using the up and down buttons displayed against a field. Simply press the up or down arrow buttons to change the field order.

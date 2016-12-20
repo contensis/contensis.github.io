@@ -1,5 +1,5 @@
 # Add fields to a content type
-A content type is made up of a set of fields. Fields allow us to break up large blobs of content into smaller chunks, making content more flexible and reusable.
+A content type is made up of a set of fields. Fields allow you to break up large blobs of content into smaller chunks, making content more flexible and reusable.
 
 > A content type can contain up to 50 fields.
 

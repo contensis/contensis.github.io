@@ -12,7 +12,7 @@ With the content type open for editing:
 2. The field you've added will be active and indicated by a green border.
 
 ### Set a field name
-The properties for a field will be displayed in the right hand panel when the field is active.
+The settings for a field will be displayed in the right hand panel when the field is active.
 
 Give the field a name that clearly identifies its content. The field name is used to generate a sanitised field ID that a developer will use through the API. The field name will also be visible to an author when they are creating an entry.
 

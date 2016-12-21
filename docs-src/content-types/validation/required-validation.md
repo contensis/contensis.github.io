@@ -1,5 +1,5 @@
 # Required
-Validates that the field contains a value. The field must contain a value for the entry to be saved.
+The required validation rule checks that a published field contains a value. The field must contain a value for the entry to be saved.
 
 ## Appearance
 ![Required validation](/images/validation-required.png)

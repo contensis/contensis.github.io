@@ -8,7 +8,7 @@ This name is also used to generate the field ID.
 > The name field is limited to 50 alphanumeric characters, symbols are supported.
 
 ## Field ID
-The *Field ID* is used to identify the field within a content type through the API. Field IDs have to be unique within a content type.
+The *Field ID* is used to identify the field within a content type through the API. *Field ID's* have to be unique within a content type.
 
 The field ID is automatically generated when entering a field name. Any name you enter will be sanitised.
 

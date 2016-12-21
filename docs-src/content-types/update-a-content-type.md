@@ -16,4 +16,4 @@ The content type description provides summary information describing what the co
 
 You can update the description in the *Details* panel of the content type.
 
-You will need to save and publish any changes for them to take effect.
+You will need to save and publish any changes for the content type to be updated.

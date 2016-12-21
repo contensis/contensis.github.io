@@ -8,7 +8,7 @@ With the content type open for editing:
 1. Press the *Properties* icon to open the *Details* panel for the content type.
 2. Select the *Languages* tab in the *Details* panel, you'll be presented with a list of languages supported by the project.
 3. Toggle the languages you want to enable.
-4. Press **Save** and **Publish** for the additional languages to be made available for the content types in your project.
+4. Press **Save** and **Publish** for the additional languages to be made available for the entries in your project.
 
 Follow our article on [translating entries](/entries/translate-an-entry.md) to start writing content in another language.
 

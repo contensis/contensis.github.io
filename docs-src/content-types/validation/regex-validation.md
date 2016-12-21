@@ -14,7 +14,7 @@ With a content type open for editing:
 3. An alternative validation message can be added by entering it in the *Validation message* text box. This will be displayed if the field fails validation when published.
 
 ## Setting a custom expression
-You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
+You can use the *Custom* option in the matches pattern dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.
 
 > **Note:** Expressions need to be written using the JavaScript syntax to be valid.
 

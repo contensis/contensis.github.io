@@ -1,5 +1,5 @@
 # Regular expression pattern matching
-This validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
+The *Regular expression* validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
 
 A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.
 

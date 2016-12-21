@@ -19,7 +19,7 @@ If you attempt to use a name already in use then a number will be appended to th
 ## Default value
 The default value property sets the default content for a field when an entry is created. If no change is made by an author when editing the entry then the default entry will be used.
 
-*e.g.* By default location fields are set to have a default location of London. If the default location is not updated by an author then the location for the entry will be set to London.
+*e.g.* Default location fields are set to London. So, if the default location isn't changed, that entry will be set to London.
 
 The type of default value input will vary between editors.
 

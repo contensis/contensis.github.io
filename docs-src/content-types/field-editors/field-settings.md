@@ -20,11 +20,11 @@ The *Default* value property sets the initial content for a field when an entry 
 The type of default value input will vary between editors.
 
 ## Format
-Some fields support different formats of data. By changing the data format you are specifying that type of data that is stored and returned via the API.
+Some fields support different *Formats* of data. By changing the data *Format* you are specifying the type of data that is stored and returned via the API.
 
-Depending on the format you specify you may be provided with different types of field editor for the field.
+Depending on the *Format* you specify you may be provided with different types of field editor for the field.
 
-*e.g.* If you were to select the date field and change its format from *single* to *range* you would see a set of editors that support *date from* and *date to*.
+*e.g.* If you were to select the date field and change its *Format* from *single* to *range* you would see a set of editors that support *date from* and *date to*.
 
 ## Title field
 The *Title* field is used in listings, the entry field editor and through the API to identify entries.

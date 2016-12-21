@@ -1,9 +1,9 @@
 # Remove fields from a content type
-If you no longer require a field within a content type it can easily be removed by following the steps.
+If you no longer require a field within a content type it can be removed by following the steps.
 
 With a content type open for editing:
 
-1. Locate the field in you content type that you want to remove.
+1. Locate the field in the content type that you want to remove.
 2. Press the **cross** on the field to remove it from the content type. A confirmation screen will be displayed.
 3. Press **Delete** to confirm the removal of the field.
 4. Press **Save**, followed by **Publish** to confirm your changes.

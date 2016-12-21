@@ -5,4 +5,4 @@
 3. Press the **Edit** button on the *Entry* you want to edit. The *Entry Editor* screen will open ready for you to make your updates.
 4. Press *Save* and *Publish* to update the *Entry* in your project.
 
-Take a look at our [versioning](/entries/entry-versioning.md) and [workflow states](/entries/workflow-states.md) article for details of how Contensis handles entries at different stages of the authoring process.
+Take a look at our [versioning](/entries/entry-versioning.md) and [workflow states](/entries/workflow-states.md) article for details of how Contensis handles *Entries* at different stages of the authoring process.

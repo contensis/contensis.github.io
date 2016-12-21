@@ -4,9 +4,8 @@ If you no longer require a field within a content type it can be removed by foll
 With a content type open for editing:
 
 1. Locate the field in the content type that you want to remove.
-2. Press the **cross** on the field to remove it from the content type. A confirmation screen will be displayed.
-3. Press **Delete** to confirm the removal of the field.
-4. Press **Save**, followed by **Publish** to confirm your changes.
+2. Press the **cross** on the field to remove it from the content type. A *Delete Field* confirmation screen will be displayed.
+3. Press **Delete**, then **Save**, followed by **Publish** to confirm your changes.
 
 ## Field removal behaviour
 1. The data associated with the removed field for an entry is preserved until the entry is updated and saved.

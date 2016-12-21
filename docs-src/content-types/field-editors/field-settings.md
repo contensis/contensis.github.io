@@ -28,7 +28,7 @@ Some fields support different formats of data. By changing the data format you a
 
 Depending on the format you specify you may be provided with different types of field editor for the field.
 
-*e.g.* If you were to select the date field and change its format from single to range you'd be provided with a set of editors that support date from and date to.
+*e.g.* If you were to select the date field and change its format from *single* to *range* you would see a set of editors that support *date from* and *date to*.
 
 ## Title field
 The title field is used in listings, the entry field editor and through the API to identify entries.

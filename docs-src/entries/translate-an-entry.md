@@ -6,7 +6,7 @@ A language variation is associated with the default language entry which acts as
 ## Create a language variation
 If you have created and published an entry against the default language if a content type, then a language variation of the entry will be visible for any supported languages in the entry listing.
 
-1. Press the **Content Types & Entries** button in the vertical toolbar. The drawer will open revealing a number of options.
+1. Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.
 2. Select **Entries** from the drawer to open the entries listing screen.
 3. Select the language you want to display entries for from the language filter dropdown.
 4. You can further reduce the number of entries displayed by selecting what content type the entry is based on using the content type filter. The entry listing will be updated to display all entries for the content type and languages you've selected.
@@ -19,11 +19,3 @@ If you have created and published an entry against the default language if a con
 
 10. When you are ready to publish the entry press the **Publish** button.
 11. The language variation will now be available through the Delivery API along with the default language content.
-
-
-
-
-
-
-
-

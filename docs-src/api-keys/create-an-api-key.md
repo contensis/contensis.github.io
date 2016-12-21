@@ -3,7 +3,7 @@ If you want to interact with the Management or Delivery API outside of Contensis
 
 You'll learn how to create a new key by following these steps.
 
-1. Press the **Content Types & Entries** button in the vertical toolbar. The drawer will open revealing a couple of options.
+1. Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a couple of options.
 2. Select **API Keys** from the drawer to open the *API Keys listing*.
 3. Press the **New API Key** button, a modal will be displayed.
 4. Give the API key a name by filling the *Name* field.

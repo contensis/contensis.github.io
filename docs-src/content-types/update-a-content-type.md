@@ -1,7 +1,7 @@
 # Update a content type
 Making changes to a content type is a matter of locating the content type from the content types listing and selecting edit.
 
-1. Press the **Content Types & Entries** button in the vertical toolbar. The *Content Types & Entries* drawer will open revealing a number of options.
+1. Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.
 2. Select **Content Types** from the *Content Types & Entries* drawer to open the *Content Types Listing* screen.
 3. Press the **Edit** button next to the content type you want to edit.
 4. The *Content Type Builder* will open.

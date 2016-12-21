@@ -1,7 +1,7 @@
 # Update an entry
 Making changes to an entry is a matter of locating the entry from the entries listing screen and selecting edit.
 
-1. Press the **Content Types & Entries** button in the vertical toolbar. The drawer will open revealing a number of options.
+1. Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.
 2. Select **Entries** from the drawer to open the entries listing screen.
 3. Press the **Edit** button next to the entry you want to edit.
 4. The entry will open for editing.

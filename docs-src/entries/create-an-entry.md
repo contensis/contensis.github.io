@@ -1,9 +1,9 @@
 # Create an entry
-An entry is a piece of content that has been created from a content type. You can create unlimited entries against a content type. 
+An entry is a piece of content that has been created from a content type. You can create unlimited entries against a content type.
 
 Follow the steps below to create an entry.
 
-1. Press the **Content Types & Entries** button in the vertical toolbar. The drawer will open revealing a number of options.
+1. Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.
 2. Select **Entries** from the drawer to open the *Entries* listing screen.
 3. Press the **New Entry** button, a list of content types will be displayed.
 4. Select the content type from the listing that you want to create a new entry for. The entry editor will open for editing.

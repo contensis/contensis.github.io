@@ -15,7 +15,12 @@ The sidebar is used as a way to give users a means of navigating Contensis in a 
 ![Sidebar](/images/ui-language-sidebar.png)
 
 ## Drawer
+A drawer is a component that can slide in from the left or the right of a screen revealing additional options or properties. The drawer is most commonly used with the sidebar to provide secondary navigation.
+
+### Content types and entries
 ![Content types and entries drawer](/images/ui-language-drawer-content-types.png)
+
+### Projects
 ![Projects drawer](/images/ui-language-drawer-projects.png)
 
 ## Widget
@@ -24,16 +29,41 @@ The sidebar is used as a way to give users a means of navigating Contensis in a 
 ## Project explorer
 ![Project explorer](/images/ui-language-project-explorer.png)
 
-## Listing
+### Previous names
+For consistency sake we don't use the following terms.
 
-### Entry listing
+- Treeview
+- Tree
+- Navigator
+- Navigator tree
+
+## Listing
+A listing provides a way to display large volumes of content in a screen. We use two common types although there are three versions in use today.
+
+### Basic listing
+A basic listing is usually used when there are 100 items or less and does not require pagination.
+
+![Content type listing](/images/ui-language-ct-listing.png)
+
+### Table listing
+A table listing is usually used when there are over 100 items, requires pagination and more detailed information needs to be displayed against each item.
+
 ![Entry listing](/images/ui-language-entry-listing.png)
 
-### Content type listing
-![Content type listing](/images/ui-language-ct-listing.png)
+### Grid
+A grid is widely used in Contensis and is most commonly seen in the management console. It's slowly being replaced with basic and table listings. It provides a similar pattern to the table listing.
+
+![Grid](/images/ui-language-grid.png)
+
 
 ## Content type builder
 ![Content type builder](/images/ui-language-ct-builder.png)
+
+## Panel
+![Panel](/images/ui-language-panel.png)
+
+## Toolbox
+![Toolbox](/images/ui-language-toolbox.png)
 
 ## Entry editor
 ![Entry editor](/images/ui-language-entry-editor.png)
@@ -75,4 +105,5 @@ A confirmation modal requires a user to insert a specific text string before the
 - Delete a project
 
 ## Popup window
+A
 ![Popup](/images/ui-language-popup.png)

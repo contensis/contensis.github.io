@@ -1,6 +1,6 @@
 # Validation overview
 
-Using validation rules against your content type fields will ensure your content model meets your organisational needs and brings consistency to your content.
+Using validation rules for your content type fields will ensure your content model meets your organisational needs and brings consistency to your content.
 
 Content type fields store different types of data. The validation available for each type will vary.
 

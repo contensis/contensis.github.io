@@ -57,9 +57,8 @@ Each of the following field types have support for a single field editor.
 With a content type open for editing:
 
 1. Select the field you want to set a validation rule for and pick the **Editor** tab from the *Field Settings* panel. 
-2. If supported the *Choose a field editor* dropdown will be enabled.
-3. Choose a field editor from the dropdown. e.g *Multiline Text*
-4. Any additional properties that the field editor supports will then be displayed in the panel.
-5. Save any changes you make.
+2. You will now be in the *Field Editor* panel. If there is more than one field editor available, choose one from the dropdown. e.g *Multiline Text*.
+3. You can now set any additional properties that the field editor supports e.g *Content Guidelines* in the boxes below the 'Choose field editor' dropdown.
+4. Press *Save* and *Publish* for the additional field editors to be made available for the entries in your project.
 
 > Note: If you have a content type where entries already exist, there maybe potential data loss when changing field editors.

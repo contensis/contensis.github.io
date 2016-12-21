@@ -1,7 +1,7 @@
 # Delete a content type
 Deleting a content type will remove the content type as well as any entries that have been created, even if they are published.
 
-> **Warning:** Deleting a content type and its entries is irreversible, only do this if you are confident that the entries and content type are not in use and are no longer required.
+> **Warning:** Deleting a content type is irreversible, only do this if you are confident that the entries and content type are not in use and are no longer required.
 
 1. Open the content type you want to delete by pressing the edit icon in the *Content Type Listing* screen.
 2. When the *Content Type Builder* opens, the *Details* for the content type will be displayed in the right hand panel.

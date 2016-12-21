@@ -1,14 +1,14 @@
 # Field settings
 
 ## Name
-The *Name* property describes the field content. The *Name* entered here will be displayed to an author when creating an entry. It's used to identify the chunk of content. This *Name* is also used to generate the field ID.
+The *Name* property describes the field content. The *Name* entered here will be displayed to an author when creating an entry. It's used to identify the chunk of content. This *Name* is also sanitised and used to generate the *Field ID*.
 
 > The *Name* field is limited to 50 alphanumeric characters or symbols.
 
 ## Field ID
 The *Field ID* is used to identify the field within a content type through the API. *Field ID's* have to be unique within a content type.
 
-The *Field ID* is automatically generated when creating a field name. Any name you enter will be sanitised. If you attempt to use a *Name* that is already in use then a number will be appended to the *Field ID*.
+The *Field ID* is automatically generated when creating a field name. If you attempt to use a *Name* that is already in use then a number will be appended to the *Field ID*.
 
 > The *Field ID* is limited to 50 alphanumeric characters, symbols are not supported.
 

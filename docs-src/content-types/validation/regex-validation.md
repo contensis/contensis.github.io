@@ -11,7 +11,7 @@ With a content type open for editing:
 
 1. Select the field you want to set a validation rule for and pick the **Validation** tab from the *Field Settings* panel.
 2. Choose the required *Regular expression* pattern you want to use from the *Matches pattern* dropdown, or define your own using the *Custom* option.
-3. You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.
+3. An alternative validation message can be added by entering it in the *Validation message* text box. This will be displayed if the field fails validation when published.
 
 ## Setting a custom expression
 You can use the custom option in the matches pattern dropdown to create your own. Using a handy library and expression checker like [Regular Expression 101](https://regex101.com/) to test your expression, makes things easier.

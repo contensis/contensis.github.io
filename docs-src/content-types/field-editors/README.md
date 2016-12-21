@@ -1,5 +1,5 @@
 # Supported fields and editors
-A field may support different types of field editor, e.g Text or Multiline text. The selected option will then determine what options are available to authors.
+A field may support different types of field editor, e.g *Text* or *Multiline text*. The selected option will then determine what options are available to authors.
 
 ## Field types that support multiple field editors
 Each of the following field types have support for different data formats. In some instances a data format may have multiple field editors available, if there are various ways to capture the data.
@@ -54,12 +54,12 @@ Each of the following field types have support for a single field editor.
 | Entry           | [Entry](/content-types/field-editors/editor-entry.md)    |
 
 ## Changing a field editor
+With a content type open for editing:
 
-1. With a content type open for editing
-2. Select the field that you want to change the field editor for e.g. a text field. The properties panel will be displayed.
-3. From the properties panel, select *Editor* from the panel navigation. If supported the *Choose a field editor* dropdown will be enabled.
-4. Choose a field editor from the dropdown. e.g Multiline text
-5. Any additional properties that the field editor supports will then be displayed in the panel.
-6. Save any changes you make.
+1. Select the field you want to set a validation rule for and pick the **Editor** tab from the *Field Settings* panel. 
+2. If supported the *Choose a field editor* dropdown will be enabled.
+3. Choose a field editor from the dropdown. e.g *Multiline Text*
+4. Any additional properties that the field editor supports will then be displayed in the panel.
+5. Save any changes you make.
 
-> Note: In the event you have a content type where entries exist, there maybe potential data loss when changing field editors.
+> Note: If you have a content type where entries already exist, there maybe potential data loss when changing field editors.

@@ -1,5 +1,5 @@
 # Delete a content type
-Deleting a content type will remove the content type as well as any entries that have been created for the content type, even if they are published.
+Deleting a content type will remove the content type as well as any entries that have been created, even if they are published.
 
 > **Warning:** Deleting a content type and its entries is irreversible, only do this if you are confident that the entries and content type are not in use and are no longer required.
 

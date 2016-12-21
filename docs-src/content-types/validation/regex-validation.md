@@ -10,7 +10,7 @@ A regular expression is a special text string for describing a search pattern. W
 With a content type open for editing:
 
 1. Select the field you want to set a validation rule for and pick the **Validation** tab from the *Field Settings* panel.
-2. Choose the required pattern you want to use from the *Matches pattern* dropdown, or define your own using the *Custom* option.
+2. Choose the required *Regular expression* pattern you want to use from the *Matches pattern* dropdown, or define your own using the *Custom* option.
 3. You can also provide an alternative validation message to be displayed when the field fails validation on publish, by entering it in the *Validation message* text box.
 
 ## Setting a custom expression

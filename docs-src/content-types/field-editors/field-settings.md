@@ -8,7 +8,7 @@ The *Name* property describes the field content. The *Name* entered here will be
 ## Field ID
 The *Field ID* is used to identify the field within a content type through the API. *Field ID's* have to be unique within a content type.
 
-The *Field ID* is automatically generated when creating a field name. If you attempt to use a *Name* that is already in use then a number will be appended to the *Field ID*.
+The *Field ID* is automatically generated when creating a *Name* and sanitised for use as the *Field ID*. If you attempt to use a *Name* that is already in use then a number will be appended to the *Field ID*.
 
 > The *Field ID* is limited to 50 alphanumeric characters, symbols are not supported.
 

@@ -3,7 +3,7 @@
 ## Name
 The *Name* property describes the field content. The name entered here will be displayed to an author when creating an entry. It's used to identify the chunk of content.
 
-The name entered is also used to generate the field ID.
+This name is also used to generate the field ID.
 
 > The name field is limited to 50 alphanumeric characters, symbols are supported.
 

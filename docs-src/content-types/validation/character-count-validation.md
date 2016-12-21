@@ -7,7 +7,7 @@ The *Character count* validation rule checks that the number of characters in a 
 ## How to set the validation
 With a content type open for editing:
 
-1. Select the field you want to set a validation rule forand select the **Validation** tab from the *Field Settings* panel.
+1. Select the field you want to set a character count rule for and select the **Validation** tab from the *Field Settings* panel.
 2. Choose one of the following options from the *Number of characters* dropdown:
 
 **Between** allows you to set the minimum and maximum values for an expected character range.

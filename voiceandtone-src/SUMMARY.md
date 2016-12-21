@@ -12,9 +12,6 @@
 * [Writing For ZenHub](/writing-for-zenhub/README.md)
 
 ## Contensis
-* [Tooltips](/contensis/README.md#tooltips)
-* [Buttons](/contensis/README.md#buttons)
-* [Navigation](/contensis/README.md#navigation)
-* [Checkboxes](/contensis/README.md#checkboxes)
-* [Radio buttons](/contensis/README.md#radio-buttons)
-* [Forms](/contensis/README.md#forms)
+* [Overview](/contensis/README.md)
+* [UI Language](/contensis/ui-language.md)
+* [UI Microcopy](/contensis/ui-micro-copy.md)

@@ -16,9 +16,9 @@ If your content type contains a single language e.g. the default language assign
 When a multilingual license key is present in Contensis the process of deleting an entry is similar but its worth taking note of the difference between deleting a default language and a language variation.
 
 ### Default language
-In the scenario where an entry has been translated in to multiple languages deleting an entry in the default language will remove the default language entry and all its language variations.
+Where an entry has been translated into multiple languages, deleting an entry in the default language will remove the default language entry and all its language variations.
 
-The process is the same for deleting a single language.
+The process is the same as for deleting a single language.
 
 ### Language variations
 1. Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.

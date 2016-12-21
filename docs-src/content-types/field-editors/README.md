@@ -2,7 +2,7 @@
 A field may support different types of field editor, e.g *Text* or *Multiline text*. The selected option will then determine what options are available to authors.
 
 ## Field types that support multiple field editors
-Each of the following field types have support for different data formats. In some instances a data format may have multiple field editors available, if there are various ways to capture the data.
+Each of the following field types support different data formats. In some instances a data format may have multiple field editors available, if there are various ways to capture the data.
 
 > *e.g.* Date / Time field has a field editor that simply captures the date or one that will capture date and time.
 

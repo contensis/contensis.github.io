@@ -5,16 +5,16 @@ The *Name* property describes the field content. The name entered here will be d
 
 This name is also used to generate the field ID.
 
-> The name field is limited to 50 alphanumeric characters, symbols are supported.
+> The name field is limited to 50 alphanumeric characters or symbols.
 
 ## Field ID
 The *Field ID* is used to identify the field within a content type through the API. *Field ID's* have to be unique within a content type.
 
-The field ID is automatically generated when entering a field name. Any name you enter will be sanitised.
+The *Field ID* is automatically generated when entering a field name. Any name you enter will be sanitised.
 
 If you attempt to use a name already in use then a number will be appended to the field ID.
 
-> The field ID is limited to 50 alphanumeric characters, symbols are not supported.
+> The *Field ID* is limited to 50 alphanumeric characters, symbols are not supported.
 
 ## Default value
 The default value property sets the default content for a field when an entry is created. If no change is made by an author when editing the entry then the default entry will be used.

@@ -27,7 +27,7 @@ Depending on the *Format* you specify you may be provided with different types o
 *e.g.* If you were to select the date field and change its *Format* from *single* to *range* you would see a set of editors that support *date from* and *date to*.
 
 ## Title field
-The *Title* field is used in listings, the entry field editor and through the API to identify entries.
+The *Title* field is used in listings, the *Entry Field Editor* and through the API to identify entries.
 
 > For a content type to be published it requires a single text field to be set as the *Title*.
 

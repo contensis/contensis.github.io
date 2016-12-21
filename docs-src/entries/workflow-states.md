@@ -14,7 +14,7 @@ Another indication that the item is *Awaiting publish* is that it has major and 
 ## Published
 When an *Entry* is published and has had no further changes made to it, the *Entry* status will be *Published* and the highlight will be green.
 
-Another indication that the item is in the Published state is that it only has a major number in its version number *e.g.* 2.0.
+Another indication that the item is *Published* is that it only has a major number in its version number *e.g.* 2.0.
 
 ## Not yet translated *(licensed feature)*
 When a language variation exists and its content has not yet been created then the entry will have the *Not yet translated* state.

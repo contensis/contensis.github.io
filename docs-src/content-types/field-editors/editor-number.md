@@ -24,4 +24,4 @@ This field editor supports the following validation methods:
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Decimal places
-If the number format has been set to a decimal then the number of decimal places that should be allowed can be set against this property.
+If the number format has been set to decimal then the number of decimal places that should be allowed can be set for this property.

@@ -1,5 +1,5 @@
 # Workflow states
-Once created, *Entries* will always have one of the following workflow states: *Draft*, *Awaiting publish* or *Published*. If a multilingual license is present then the *Awaiting translation* and *Not yet translated* states will also be available.
+Once created, *Entries* will always have one of the following workflow states: *Draft*, *Awaiting publish* or *Published*. If your license key supports the multilingual module, then the *Awaiting translation* and *Not yet translated* states will also be available.
 
 ## Draft
 When an entry is created it will be in the *Draft* state until it has been published for the first time and will be highlighted in grey.

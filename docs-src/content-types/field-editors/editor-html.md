@@ -1,7 +1,7 @@
 # HTML field editor
-The HTML Editor provides the user with the ability to create blocks of rich text including headings, lists, bold, italic as well as links.
+The HTML Editor provides the user with the ability to create blocks of rich text including headings, lists, bold, italic and links.
 
-The editor is powered by the TinyMCE editor. We automatically strip out any invalid HTML, including removing all `<span>` tags, empty tags, and style attributes.
+The editor is powered by the TinyMCE editor. Contensis automatically strips out any invalid HTML, including removing all `<span>` tags, empty tags, and style attributes.
 
 ## Appearance
 ![HTML Field Editor](/images/field-editor-html.png)

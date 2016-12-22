@@ -1,5 +1,5 @@
 # Translate an entry
-When you want to create content in an alternative language to the default language you'll need to create a language variation.
+When you want to create content in an alternative language to the default you'll need to create a language variation.
 
 A language variation is associated with the default language entry which acts as a container for all language variations. The number of languages available will depend on those supported for the [content type](/content-types/enable-disable-languages.md).
 

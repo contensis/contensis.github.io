@@ -1,7 +1,5 @@
 # Multi language support
-When a multilingual license key is present in Contensis then entries can be created in multiple languages.
-
-The languages that are available for an entry to be created against, is determined by those assigned to a [project](/projects/update-a-project.md) and [enabled](/content-types/enable-disable-languages.md) for a content type.
+When a multilingual license key is present in Contensis then entries can be created in multiple languages. The languages that are available for an entry to be created against, is determined by those assigned to a [project](/projects/update-a-project.md) and [enabled](/content-types/enable-disable-languages.md) for a content type.
 
 > **Note**: The default language is set at project level and cannot be changed once created.
 

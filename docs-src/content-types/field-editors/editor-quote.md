@@ -27,7 +27,7 @@ This field editor supports the following validation methods.
 The [placeholder](/content-types/field-editors/field-properties.md#placeholder-text) text for the source citation.
 
 ### Require source?
-Completion of the source field can be enforced by setting the toggle to yes. Its default value is set to *No.*
+Completion of the source field can be enforced by setting the toggle to *Yes*. Its default value is set to *No.*
 
 ### Custom message
 Displays a custom message when the source citation is not populated by the author.

@@ -1,9 +1,9 @@
 # Viewing content entries
-Content entries are created from content types and are stored against a project. You can view entries by navigating to the entries listing screen.
+Content entries are created from content types and are stored in a project. You can view entries in the *Entries Listing* screen.
 
 ## Entries listing screen
 - Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.
-- Select **Entries** from the drawer to open the entries listing screen.
+- Select **Entries** from the drawer to open the *Entries Listing* screen.
 
 ## Filtering through entries
 If you have a large number of entries in your project then you may find it easier to use the filter panel to narrow down the number of entries displayed.

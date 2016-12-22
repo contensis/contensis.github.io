@@ -1,10 +1,10 @@
 # Supported fields and editors
-A field may support different types of field editor, e.g *Text* or *Multiline text*. The selected option will then determine what options are available to authors.
+A field may support different types of field editor, e.g *Text* or *Multiline Text*. The selected option will then determine what options are available to authors.
 
 ## Field types that support multiple field editors
 Each of the following field types support different data formats. In some instances a data format may have multiple field editors available, if there are various ways to capture the data.
 
-> *e.g.* Date / Time field has a field editor that simply captures the date or one that will capture date and time.
+> *e.g.* The *Date / Time* field has a field editor that captures just the date or one that will capture both date and time.
 
 ### Text
 | Format   | Field Editor              |
@@ -61,4 +61,4 @@ With a content type open for editing:
 3. You can now set any additional properties that the *Field Editor* supports e.g *Content Guidelines* in the boxes below the *Choose field editor* dropdown.
 4. Press *Save* and *Publish* for the additional field editors to be made available for the entries in your project.
 
-> Note: If you have a content type where entries already exist, there maybe potential data loss when changing field editors.
+> Note: If you have a content type where entries already exist, there is potential for data loss when changing field editors.

@@ -10,7 +10,7 @@ If you have created and published an entry in the default language of a content 
 2. Select **Entries** from the drawer to open the *Entries Listing* screen.
 3. Select the language you want to display entries for from the *Language Filter* dropdown.
 4. You can reduce the number of entries displayed by selecting the content type the entry is based on using the *Content Type Filter*. The entry listing will be updated to display all entries for the content type and languages you've selected.
-5. Each entry in the listing has its own status, new entries requiring translation will be indicated by the '*Not yet translated*' [workflow state](/entries/workflow-states.md).
+5. Each entry in the listing has its own status, new entries requiring translation will be indicated by the *Not yet translated* [workflow state](/entries/workflow-states.md).
 6. Locate the entry in the listing that you want to translate and press the **Create** button. The entry will open in a split view editor for editing.
 > The master language content will be displayed in the left hand panel, the other panel represents the language you are currently editing and its fields will be empty.
 8. You can now populate the fields for the new language.

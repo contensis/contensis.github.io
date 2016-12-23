@@ -627,7 +627,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="composed-fields">Composed fields</h1>
-<p>The <code>ComposedField</code> type contains the data that the <a href="https://contensis.github.io/docs/content-types/field-editors/editor-composer.html" target="_blank">Composer editor</a> defines. It is a read-only list of <code>ComposedFieldItem</code> instances, which expose a <em>Type</em> property and <em>Value</em> methods. The <em>Value</em> methods return the data for the field. The <em>Type</em> property is a name given to an <em>allowed field type validation</em> defined in the content type that the entry is based on. </p>
+<p>The <code>ComposedField</code> type contains the data that the <a href="https://contensis.github.io/docs/content-types/field-editors/editor-composer.html" target="_blank">Composer editor</a> defines. It is a read-only list of <code>ComposedFieldItem</code> instances, which expose a <em>Type</em> property and <em>Value</em> methods. The <em>Value</em> methods return the data for the field. The <em>Type</em> property is a name given to an <em>allowed field type validation</em> defined in the content type that the entry is based on.</p>
 <p>An <em>allowed field type</em> is essentially any standard field (such as Image, Heading, Location, etc.) that restricts what types of field can be added to a <code>ComposedField</code>.</p>
 <p>For example, an <em>allowed field</em> could be defined with a type of <em>Heading</em> and given a type name of &quot;mainHeading&quot; or with a type of <em>Image</em> and given a type name of &quot;bannerImage&quot;. There can be multiple <em>allowed fields</em> based on the same type, but a <code>ComposedField</code> cannot contain other <code>ComposedField</code> fields.</p>
 <h1 id="composedfielditem-methods">ComposedFieldItem methods</h1>
@@ -666,7 +666,7 @@
 <p>The type to attempt to cast the field data to.</p>
 </blockquote>
 <h3 id="remarks">Remarks</h3>
-<p>For complex objects, If the type of T does not match the value type, then either a null value will be returned or an object of type T is returned with no property values.</p>
+<p>For complex objects, if the type of T does not match the value type, then either a null value will be returned or an object of type T is returned with no property values.</p>
 <div class="api-method"><div class="api-method-definition"><h3 id="example">Example</h3>
 </div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Get the ComposedField instance</span>
 <span class="hljs-keyword">var</span> composed = film.Get&lt;ComposedField&gt;(<span class="hljs-string">&quot;synopsis&quot;</span>);
@@ -697,7 +697,7 @@
 @<span class="hljs-keyword">foreach</span>(ComposedFieldItem item <span class="hljs-keyword">in</span> synopsis)
 {
     <span class="hljs-comment">// Loop through the ComposedFieldItems in the ComposedField and render the items</span>
-    <span class="hljs-comment">// </span>
+    <span class="hljs-comment">//</span>
 
     <span class="hljs-keyword">if</span> (item.Type == <span class="hljs-string">&quot;mainHeading&quot;</span>)
     {
@@ -727,6 +727,7 @@
 &lt;/div&gt;
 </code></pre>
 </div></div></div>
+
                                 
                                 </section>
                             
@@ -759,7 +760,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ComposedField","level":"7.4","depth":1,"next":{"title":"DateRange","level":"7.5","depth":1,"path":"delivery-api/model/dotnet/daterange-dotnet.md","ref":"delivery-api/model/dotnet/daterange-dotnet.md","articles":[]},"previous":{"title":"Asset","level":"7.3","depth":1,"path":"delivery-api/model/dotnet/asset-dotnet.md","ref":"delivery-api/model/dotnet/asset-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/dotnet/composed-dotnet.md","mtime":"2016-12-07T16:33:02.332Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-07T17:05:40.789Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ComposedField","level":"7.4","depth":1,"next":{"title":"DateRange","level":"7.5","depth":1,"path":"delivery-api/model/dotnet/daterange-dotnet.md","ref":"delivery-api/model/dotnet/daterange-dotnet.md","articles":[]},"previous":{"title":"Asset","level":"7.3","depth":1,"path":"delivery-api/model/dotnet/asset-dotnet.md","ref":"delivery-api/model/dotnet/asset-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/model/dotnet/composed-dotnet.md","mtime":"2016-12-23T10:41:54.730Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-23T10:44:19.638Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

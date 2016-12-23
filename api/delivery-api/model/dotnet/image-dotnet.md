@@ -1,6 +1,6 @@
 # Images
 
-The Image type represents a link to an image with an associated caption.
+The Image type represents a link to an image with an associated caption, if required.
 
 ## Properties
 
@@ -11,7 +11,7 @@ The Image type represents a link to an image with an associated caption.
 
 ## Remarks
 
-The caption property allows instance specific text to be associated with a linked image.
+The caption property allows instance specific text to be associated with an image.
 
 Unlike entry links, an asset link is always resolved so that the full asset details are included when retrieved.
 

@@ -6,12 +6,8 @@ The Quote type represents a section of referenced text from an external source.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| Text | `string` | The quote text |
-| Source | `string` | The source of the quote |
-
-## Validation
-
-TODO: Confirm if a Validation should exist
+| Text | string | The quote text |
+| Source | string | The source of the quote |
 
 ## Examples
 

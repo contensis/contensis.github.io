@@ -28,7 +28,7 @@ public dynamic Value()
 
 ### Remarks
 
-Complex objects will be returned as dynamic [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx instances.
+Complex objects will be returned as dynamic [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) instances.
 
 {% method -%}
 

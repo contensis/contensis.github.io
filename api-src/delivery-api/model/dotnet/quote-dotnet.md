@@ -9,10 +9,6 @@ The Quote type represents a section of referenced text from an external source.
 | Text | string | The quote text |
 | Source | string | The source of the quote |
 
-## Validation
-
-[INCOMPLETE] TODO: Confirm if a Validation should exist
-
 ## Examples
 
 {% method -%}

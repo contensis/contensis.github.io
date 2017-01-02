@@ -626,90 +626,282 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="list-entries-by-content-types">List entries by content types</h1>
+                                <h1 id="list-entries">List entries</h1>
+<p>Requesting a list of entries can be achieved by using one of the <code>List</code> method overloads.</p>
 <ul>
-<li><p>List(string contentTypeId, string languageCode, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0); </p>
-</li>
-<li><p>List(string contentTypeId, string languageCode, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, string languageCode, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, string languageCode, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, string languageCode, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>List(string contentTypeId, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)</p>
-</li>
-<li><p>ListAsync(string contentTypeId, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)</p>
-</li>
+<li><a href="#list">List(pageOptions)</a></li>
+<li><a href="#list-async">ListAsync(pageOptions)</a></li>
+<li><a href="#list-by-content-type">List(contentTypeId, pageOptions)</a></li>
+<li><a href="#list-by-content-type-async">ListAsync(contentTypeId, pageOptions)</a></li>
+<li><a href="#list-by-content-type-with-paging-and-sorting">List(contentTypeId, pageOptions, sortFields)</a></li>
+<li><a href="#list-by-content-type-with-paging-and-sorting-asynchronously">ListAsync(contentTypeId, pageOptions, sortFields)</a></li>
+<li><a href="#list-with-options-object">List(listOptions)</a></li>
+<li><a href="#list-with-options-object-asynchronously">ListAsync(listOptions)</a></li>
 </ul>
-<h2 id="suggested-change">Suggested change</h2>
-<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> contentTypeId</span>)
+<h2 id="list">List</h2>
+<p>Lists entries for all content types, with paging.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params">PageOptions pageOptions = <span class="hljs-keyword">null</span></span>)
 </span>{
-}
-
-<span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params">EntryListOptions options</span>)
-</span>{
-}
-
-<span class="hljs-keyword">var</span> options = <span class="hljs-keyword">new</span> EntryListOptions
-{
-    ContentTypeId = <span class="hljs-string">&quot;film&quot;</span>,
-    PageOptions = <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">0</span>, <span class="hljs-number">50</span>),
-    Fields = <span class="hljs-keyword">new</span> [] { <span class="hljs-string">&quot;field1&quot;</span>, <span class="hljs-string">&quot;field2&quot;</span>, <span class="hljs-string">&quot;field2&quot;</span> },
-    Order = <span class="hljs-keyword">new</span> Order(),
-    DeliveryContext = DeliveryContext.Live
-    ...
 }
 </code></pre>
 </div></div></div>
 
-<h2 id="rest">REST</h2>
-<p><strong>List</strong><br>{projectId}/contenttypes/{contentTypeId}/entries</p>
+<h3 id="parameters">Parameters</h3>
+<p><em>pageOptions</em></p>
 <blockquote>
-<p>string contentTypeId,<br>int pageIndex = 0,<br>int pageSize = 20,<br>string sort = &quot;&quot;,<br>string fields = &quot;&quot;,<br>int entryLinkDepth = 0,<br>bool resolveLinks=true</p>
+<p>Type: PageOptions<br>Paging options for specify the page index and size.</p>
 </blockquote>
-<p><strong>List</strong><br>{projectId}/contenttypes/{contentTypeId}/entries/{version?}</p>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get all entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List();
+
+<span class="hljs-comment">// Get all entries with specified paging options</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List(<span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>));
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-async">List async</h2>
+<p>Lists entries for all content types asynchronously, with paging.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">public</span> Task&lt;PagedList&lt;Entry&gt;&gt; List(PageOptions pageOptions = <span class="hljs-keyword">null</span>)
+{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>pageOptions</em></p>
 <blockquote>
-<p>string contentTypeId,<br>string version = null,<br>string lang = null,<br>int pageIndex = 0,<br>int pageSize = 20,<br>string sort = &quot;&quot;,<br>string fields = &quot;&quot;,<br>int entryLinkDepth = 0,<br>bool resolveLinks=true  </p>
+<p>Type: PageOptions<br>Paging options for specify the page index and size.</p>
 </blockquote>
-<p><strong>List</strong><br>{projectId}/entries</p>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get all entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync();
+
+<span class="hljs-comment">// Get all entries with specified paging options</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync(<span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>));
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-by-content-type">List by content type</h2>
+<p>Lists entries for a specific content type.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> contentTypeId, PageOptions pageOptions = <span class="hljs-keyword">null</span></span>)
+</span>{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>contentTypeId</em></p>
 <blockquote>
-<p>int pageIndex = 0,<br>int pageSize = 20,<br>string sort = &quot;&quot;,<br>string fields = &quot;&quot;,<br>string dataFormat = &quot;&quot;,<br>int entryLinkDepth = 0,<br>bool resolveLinks = true  </p>
+<p>Type: <code>string</code><br>The id of the content type to restrict the entries by.</p>
 </blockquote>
-<p><strong>ListLatest</strong><br>{projectId}/entries/latest</p>
+<p><em>pageOptions</em></p>
 <blockquote>
-<p>int pageIndex = 0,<br>int pageSize = 20,<br>string sort = &quot;&quot;,<br>string fields = &quot;&quot;,<br>string dataFormat = &quot;&quot;,<br>int entryLinkDepth = 0,<br>bool resolveLinks = true  </p>
+<p>Type: PageOptions<br>Paging options for specify the page index and size.</p>
 </blockquote>
-<p><strong>ListPublished</strong><br>{projectId}/entries/published</p>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List(<span class="hljs-string">&quot;film&quot;</span>);
+
+<span class="hljs-comment">// Get all entries with specified paging options</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List(<span class="hljs-string">&quot;film&quot;</span>, <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>));
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-by-content-type-async">List by content type async</h2>
+<p>Lists entries for a specific content type.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">public</span> Task&lt;PagedList&lt;Entry&gt;&gt; ListAsync(<span class="hljs-keyword">string</span> contentTypeId, PageOptions pageOptions = <span class="hljs-keyword">null</span>)
+{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>contentTypeId</em></p>
 <blockquote>
-<p>int pageIndex = 0,<br>int pageSize = 20,<br>string sort = &quot;&quot;,<br>string fields = &quot;&quot;,<br>string dataFormat = &quot;&quot;,<br>int entryLinkDepth = 0,<br>bool resolveLinks = true  </p>
+<p>Type: <code>string</code><br>The id of the content type to restrict the entries by.</p>
 </blockquote>
-<h2 id="changes">Changes</h2>
-<ul>
-<li>Change &apos;sort&apos; to order - to put it inline</li>
-<li>Move &apos;dataFormat&apos; to the management API</li>
-<li>Move &apos;resolveLinks&apos; to the management API</li>
-<li>Move &apos;resolveLinks&apos; to the management API</li>
-</ul>
+<p><em>pageOptions</em></p>
+<blockquote>
+<p>Type: PageOptions<br>Paging options for specify the page index and size.</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync(<span class="hljs-string">&quot;film&quot;</span>);
+
+<span class="hljs-comment">// Get all entries with specified paging options</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync(<span class="hljs-string">&quot;film&quot;</span>, <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>));
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-by-content-type-with-paging-and-sorting">List by content type with paging and sorting</h2>
+<p>Lists entries for a specific content type, with paging and field sort configuration.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> contentTypeId, PageOptions pageOptions, SortFields sortFields</span>)
+</span>{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>contentTypeId</em></p>
+<blockquote>
+<p>Type: <code>string</code><br>The id of the content type to restrict the entries by.</p>
+</blockquote>
+<p><em>pageOptions</em></p>
+<blockquote>
+<p>Type: PageOptions<br>Paging options for specifying the page index and size.</p>
+</blockquote>
+<p><em>sortFields</em></p>
+<blockquote>
+<p>Type: SortFields<br>Sort options for specifying the field sort orders and directions.</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get all entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List(<span class="hljs-string">&quot;film&quot;</span>, <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>), 
+    <span class="hljs-keyword">new</span> SortFields { <span class="hljs-keyword">new</span> SortField(<span class="hljs-string">&quot;title&quot;</span>, SortField.FieldSortDirection.Descending) });
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-by-content-type-with-paging-and-sorting-asynchronously">List by content type with paging and sorting asynchronously</h2>
+<p>Lists entries for a specific content type, with paging and field sort configuration.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">public</span> Task&lt;PagedList&lt;Entry&gt;&gt; ListAsync(<span class="hljs-keyword">string</span> contentTypeId, PageOptions pageOptions, SortFields sortFields)
+{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>contentTypeId</em></p>
+<blockquote>
+<p>Type: <code>string</code><br>The id of the content type to restrict the entries by.</p>
+</blockquote>
+<p><em>pageOptions</em></p>
+<blockquote>
+<p>Type: PageOptions<br>Paging options for specifying the page index and size.</p>
+</blockquote>
+<p><em>sortFields</em></p>
+<blockquote>
+<p>Type: SortFields<br>Sort options for specifying the field sort orders and directions.</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Get all entries with the default paging options</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync(<span class="hljs-string">&quot;film&quot;</span>, <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>), 
+    <span class="hljs-keyword">new</span> SortFields { <span class="hljs-keyword">new</span> SortField(<span class="hljs-string">&quot;title&quot;</span>, SortField.FieldSortDirection.Descending) });
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-with-options-object">List with options object</h2>
+<p>Lists entries using an EntryListOptions object to allow more granular control of entries being returned.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-function"><span class="hljs-keyword">public</span> PagedList&lt;Entry&gt; <span class="hljs-title">List</span>(<span class="hljs-params">EntryListOptions listOptions</span>)
+</span>{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>listOptions</em></p>
+<blockquote>
+<p>Type: EntryListOptions<br>Allows all parameters to be optional set and exposes less commonly used parameters.</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<p>The default for the VersionStatus parameter is <code>VersionStatus.Published</code>.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Use the list options to filter the entry data</span>
+<span class="hljs-keyword">var</span> entries = client.Entries.List(<span class="hljs-keyword">new</span> EntryListOptions{
+    ContentTypeId = <span class="hljs-string">&quot;film&quot;</span>,
+    PageOptions = <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>),
+    SortFields = <span class="hljs-keyword">new</span> SortFields { <span class="hljs-keyword">new</span> SortField(<span class="hljs-string">&quot;title&quot;</span>, SortField.FieldSortDirection.Descending) },
+    VersionStatus = VersionStatus.Latest,
+    Language = <span class="hljs-string">&quot;fr-fr&quot;</span>,
+    EntryLinkDepth = <span class="hljs-number">5</span>,
+    Fields = <span class="hljs-keyword">new</span> { <span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;releaseDate&quot;</span>, <span class="hljs-string">&quot;coverImage&quot;</span> }
+});
+</code></pre>
+</div></div></div>
+
+<hr>
+<h2 id="list-with-options-object-asynchronously">List with options object asynchronously</h2>
+<p>Lists entries using an EntryListOptions object to allow more granular control of entries being returned.</p>
+<h3 id="syntax">Syntax</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-keyword">public</span> Task&lt;PagedList&lt;Entry&gt;&gt; ListAsync(EntryListOptions listOptions)
+{
+}
+</code></pre>
+</div></div></div>
+
+<h3 id="parameters">Parameters</h3>
+<p><em>listOptions</em></p>
+<blockquote>
+<p>Type: EntryListOptions<br>Allows all parameters to be optional set and exposes less commonly used parameters.</p>
+</blockquote>
+<h3 id="remarks">Remarks</h3>
+<p>The default for the PageOptions is PageSize: 20, PageIndex: 0.</p>
+<p>The default for the VersionStatus parameter is <code>VersionStatus.Published</code>.</p>
+<h3 id="examples">Examples</h3>
+<div class="api-method"><div class="api-method-definition"></div><div class="api-method-code"><div class="api-method-sample" data-lang="cs" data-name="C#"><pre><code class="lang-cs"><span class="hljs-comment">// Create a client</span>
+<span class="hljs-keyword">var</span> client = ContensisClient.Create();
+
+<span class="hljs-comment">// Use the list options to filter the entry data</span>
+<span class="hljs-keyword">var</span> entries = <span class="hljs-keyword">await</span> client.Entries.ListAsync(<span class="hljs-keyword">new</span> EntryListOptions{
+    ContentTypeId = <span class="hljs-string">&quot;film&quot;</span>,
+    PageOptions = <span class="hljs-keyword">new</span> PageOptions(<span class="hljs-number">3</span>, <span class="hljs-number">10</span>),
+    SortFields = <span class="hljs-keyword">new</span> SortFields { <span class="hljs-keyword">new</span> SortField(<span class="hljs-string">&quot;title&quot;</span>, SortField.FieldSortDirection.Descending) },
+    VersionStatus = VersionStatus.Latest,
+    Language = <span class="hljs-string">&quot;fr-fr&quot;</span>,
+    EntryLinkDepth = <span class="hljs-number">5</span>,
+    Fields = <span class="hljs-keyword">new</span> { <span class="hljs-string">&quot;title&quot;</span>, <span class="hljs-string">&quot;description&quot;</span>, <span class="hljs-string">&quot;releaseDate&quot;</span>, <span class="hljs-string">&quot;coverImage&quot;</span> }
+});
+</code></pre>
+</div></div></div>
+
+<hr>
 
                                 
                                 </section>
@@ -743,7 +935,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"List","level":"4.2","depth":1,"next":{"title":"Search","level":"4.3","depth":1,"path":"delivery-api/accessing-entries/entry-search.md","ref":"delivery-api/accessing-entries/entry-search.md","articles":[]},"previous":{"title":"Get","level":"4.1","depth":1,"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","mtime":"2016-12-14T09:01:45.339Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-12-23T10:44:19.638Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"List","level":"4.2","depth":1,"next":{"title":"Search","level":"4.3","depth":1,"path":"delivery-api/accessing-entries/entry-search.md","ref":"delivery-api/accessing-entries/entry-search.md","articles":[]},"previous":{"title":"Get","level":"4.1","depth":1,"path":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","ref":"delivery-api/accessing-entries/dotnet/entry-get-dotnet.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"js","name":"JavaScript"},{"lang":"http","name":"HTTP"},{"lang":"json","name":"JSON"},{"lang":"cs","name":"C#","default":true}],"split":false,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"delivery-api/accessing-entries/dotnet/entries-list-dotnet.md","mtime":"2017-01-02T18:38:29.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-02T18:47:14.500Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

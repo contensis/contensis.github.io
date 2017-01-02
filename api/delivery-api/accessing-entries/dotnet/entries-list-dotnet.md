@@ -1,127 +1,417 @@
-# List entries by content types
+# List entries
 
+Requesting a list of entries can be achieved by using one of the `List` method overloads.
 
-- List(string contentTypeId, string languageCode, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)
+- [List(pageOptions)](#list)
+- [ListAsync(pageOptions)](#list-async)
+- [List(contentTypeId, pageOptions)](#list-by-content-type)
+- [ListAsync(contentTypeId, pageOptions)](#list-by-content-type-async)
+- [List(contentTypeId, pageOptions, sortFields)](#list-by-content-type-with-paging-and-sorting)
+- [ListAsync(contentTypeId, pageOptions, sortFields)](#list-by-content-type-with-paging-and-sorting-asynchronously)
+- [List(listOptions)](#list-with-options-object)
+- [ListAsync(listOptions)](#list-with-options-object-asynchronously)
 
-- ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0); 
+## List
 
-- List(string contentTypeId, string languageCode, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)
+Lists entries for all content types, with paging.
 
-- ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)
-
-- List(string contentTypeId, string languageCode, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, string languageCode, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)
-
-- List(string contentTypeId, string languageCode, string[] fields, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, string languageCode, string[] fields, int entryLinkDepth = 0)
-
-- List(string contentTypeId, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, PageOptions pageOptions = null, SortFields sortFields = null, int entryLinkDepth = 0)
-
-- List(string contentTypeId, string[] fields, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, string[] fields, int entryLinkDepth = 0)
-
-- List(string contentTypeId, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, PageOptions pageOptions, string[] fields, int entryLinkDepth = 0)
-
-- List(string contentTypeId, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)
-
-- ListAsync(string contentTypeId, PageOptions pageOptions, SortFields sortFields, string[] fields, int entryLinkDepth = 0)
-
-
-## Suggested change
+### Syntax
 
 {% method -%}
 {% sample lang="cs" -%}
 
 ```cs
-public PagedList<Entry> List(string contentTypeId)
+public PagedList<Entry> List(PageOptions pageOptions = null)
 {
-}
-
-public PagedList<Entry> List(EntryListOptions options)
-{
-}
-
-var options = new EntryListOptions
-{
-    ContentTypeId = "film",
-    PageOptions = new PageOptions(0, 50),
-    Fields = new [] { "field1", "field2", "field2" },
-    Order = new Order(),
-    DeliveryContext = DeliveryContext.Live
-    ...
 }
 ```
 {% endmethod %}
 
-## REST
+### Parameters
 
-**List**  
-{projectId}/contenttypes/{contentTypeId}/entries
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specify the page index and size.
 
-> string contentTypeId,  
-> int pageIndex = 0,  
-> int pageSize = 20,  
-> string sort = "",  
-> string fields = "",  
-> int entryLinkDepth = 0,  
-> bool resolveLinks=true
+### Remarks
 
-**List**  
-{projectId}/contenttypes/{contentTypeId}/entries/{version?}
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
 
-> string contentTypeId,  
-> string version = null,  
-> string lang = null,  
-> int pageIndex = 0,  
-> int pageSize = 20,  
-> string sort = "",  
-> string fields = "",  
-> int entryLinkDepth = 0,  
-> bool resolveLinks=true  
+### Examples
 
-**List**  
-{projectId}/entries
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
 
-> int pageIndex = 0,  
-> int pageSize = 20,  
-> string sort = "",  
-> string fields = "",   
-> string dataFormat = "",   
-> int entryLinkDepth = 0,  
-> bool resolveLinks = true  
+// Get all entries with the default paging options
+var entries = client.Entries.List();
 
-**ListLatest**  
-{projectId}/entries/latest
+// Get all entries with specified paging options
+var entries = client.Entries.List(new PageOptions(3, 10));
+```
+{% endmethod %}
 
-> int pageIndex = 0,  
-> int pageSize = 20,  
-> string sort = "",  
-> string fields = "",  
-> string dataFormat = "",  
-> int entryLinkDepth = 0,  
-> bool resolveLinks = true  
+---
 
-**ListPublished**  
-{projectId}/entries/published
 
-> int pageIndex = 0,  
-> int pageSize = 20,  
-> string sort = "",  
-> string fields = "",  
-> string dataFormat = "",  
-> int entryLinkDepth = 0,  
-> bool resolveLinks = true  
 
-## Changes
 
-- Change 'sort' to order - to put it inline
-- Move 'dataFormat' to the management API
-- Move 'resolveLinks' to the management API
-- Move 'resolveLinks' to the management API
+
+## List async
+
+Lists entries for all content types asynchronously, with paging.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public Task<PagedList<Entry>> List(PageOptions pageOptions = null)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specify the page index and size.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Get all entries with the default paging options
+var entries = await client.Entries.ListAsync();
+
+// Get all entries with specified paging options
+var entries = await client.Entries.ListAsync(new PageOptions(3, 10));
+```
+{% endmethod %}
+
+---
+
+
+
+
+
+## List by content type
+
+Lists entries for a specific content type.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public PagedList<Entry> List(string contentTypeId, PageOptions pageOptions = null)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*contentTypeId*
+> Type: `string`  
+> The id of the content type to restrict the entries by.
+
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specify the page index and size.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Get entries with the default paging options
+var entries = client.Entries.List("film");
+
+// Get all entries with specified paging options
+var entries = client.Entries.List("film", new PageOptions(3, 10));
+```
+{% endmethod %}
+
+---
+
+
+
+
+
+## List by content type async
+
+Lists entries for a specific content type.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public Task<PagedList<Entry>> ListAsync(string contentTypeId, PageOptions pageOptions = null)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*contentTypeId*
+> Type: `string`  
+> The id of the content type to restrict the entries by.
+
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specify the page index and size.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Get entries with the default paging options
+var entries = await client.Entries.ListAsync("film");
+
+// Get all entries with specified paging options
+var entries = await client.Entries.ListAsync("film", new PageOptions(3, 10));
+```
+{% endmethod %}
+
+---
+
+
+
+## List by content type with paging and sorting
+
+Lists entries for a specific content type, with paging and field sort configuration.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public PagedList<Entry> List(string contentTypeId, PageOptions pageOptions, SortFields sortFields)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*contentTypeId*
+> Type: `string`  
+> The id of the content type to restrict the entries by.
+
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specifying the page index and size.
+
+*sortFields*
+> Type: SortFields  
+> Sort options for specifying the field sort orders and directions.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Get all entries with the default paging options
+var entries = client.Entries.List("film", new PageOptions(3, 10), 
+    new SortFields { new SortField("title", SortField.FieldSortDirection.Descending) });
+```
+{% endmethod %}
+
+---
+
+
+
+## List by content type with paging and sorting asynchronously
+
+Lists entries for a specific content type, with paging and field sort configuration.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public Task<PagedList<Entry>> ListAsync(string contentTypeId, PageOptions pageOptions, SortFields sortFields)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*contentTypeId*
+> Type: `string`  
+> The id of the content type to restrict the entries by.
+
+*pageOptions*
+> Type: PageOptions  
+> Paging options for specifying the page index and size.
+
+*sortFields*
+> Type: SortFields  
+> Sort options for specifying the field sort orders and directions.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Get all entries with the default paging options
+var entries = await client.Entries.ListAsync("film", new PageOptions(3, 10), 
+    new SortFields { new SortField("title", SortField.FieldSortDirection.Descending) });
+```
+{% endmethod %}
+
+---
+
+
+
+## List with options object
+
+Lists entries using an EntryListOptions object to allow more granular control of entries being returned.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public PagedList<Entry> List(EntryListOptions listOptions)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*listOptions*
+> Type: EntryListOptions  
+> Allows all parameters to be optional set and exposes less commonly used parameters.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+The default for the VersionStatus parameter is `VersionStatus.Published`.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Use the list options to filter the entry data
+var entries = client.Entries.List(new EntryListOptions{
+    ContentTypeId = "film",
+    PageOptions = new PageOptions(3, 10),
+    SortFields = new SortFields { new SortField("title", SortField.FieldSortDirection.Descending) },
+    VersionStatus = VersionStatus.Latest,
+    Language = "fr-fr",
+    EntryLinkDepth = 5,
+    Fields = new { "title", "description", "releaseDate", "coverImage" }
+});
+```
+{% endmethod %}
+
+---
+
+
+## List with options object asynchronously
+
+Lists entries using an EntryListOptions object to allow more granular control of entries being returned.
+
+### Syntax
+
+{% method -%}
+{% sample lang="cs" -%}
+
+```cs
+public Task<PagedList<Entry>> ListAsync(EntryListOptions listOptions)
+{
+}
+```
+{% endmethod %}
+
+### Parameters
+
+*listOptions*
+> Type: EntryListOptions  
+> Allows all parameters to be optional set and exposes less commonly used parameters.
+
+### Remarks
+
+The default for the PageOptions is PageSize: 20, PageIndex: 0.
+
+The default for the VersionStatus parameter is `VersionStatus.Published`.
+
+### Examples
+
+{% method -%}
+{% sample lang="cs" -%}
+```cs
+// Create a client
+var client = ContensisClient.Create();
+
+// Use the list options to filter the entry data
+var entries = await client.Entries.ListAsync(new EntryListOptions{
+    ContentTypeId = "film",
+    PageOptions = new PageOptions(3, 10),
+    SortFields = new SortFields { new SortField("title", SortField.FieldSortDirection.Descending) },
+    VersionStatus = VersionStatus.Latest,
+    Language = "fr-fr",
+    EntryLinkDepth = 5,
+    Fields = new { "title", "description", "releaseDate", "coverImage" }
+});
+```
+{% endmethod %}
+
+---

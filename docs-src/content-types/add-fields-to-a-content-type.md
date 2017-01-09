@@ -8,7 +8,7 @@ Fields comprise a type, format and a field editor. The supported types, formats 
 ## Add a field
 With the content type open for editing:
 
-1. Press on the *Field Type* button in the toolbox for the field that you want to add. The field will be added to the bottom of your content type.
+1. Press on the **Field Type** button in the toolbox for the field that you want to add. The field will be added to the bottom of your content type.
 2. The field you've added will be active and indicated by a green border.
 
 ### Set a field name
@@ -21,4 +21,4 @@ Read through our [field settings](/content-types/field-settings.md) article to g
 > **Warning**: If a field name has previously been used in the content type and is reused, any existing entries containing that field may have data preserved that would be returned via the Delivery API. Any pre existing data would also be shown in the entry editor.
 
 ## Reordering fields in a content type
-You can change the order of fields in a content type by using the up and down buttons displayed against a field. Simply press the up or down arrow buttons to change the field order.
+You can change the order of fields in a content type by using the up and down buttons displayed for a field.

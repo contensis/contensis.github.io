@@ -1,9 +1,9 @@
 # Taxonomy field editor
-This editor allows you to bind a list of existing taxonomy nodes from the taxonomy manager to a field where one or more items are available for selection by an author.
+This editor allows you to bind a list of existing taxonomy nodes from the *Taxonomy Manager* to a field where one or more items are available for selection by an author.
 
-This is an ideal field editor for centrally managing static values, examples being categorisations, languages, or country lists that may be used elsewhere in your project.
+This is an ideal field editor for centrally managing static values, such as categories, languages, or country lists that may be used elsewhere in your project.
 
-The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from where values can be selected.
+The taxonomy editor supports single and multiple selections, and allows you to specify a root taxonomy node from which values can be selected.
 
 ## Appearance
 ![Taxonomy Field Editor](/images/field-editor-taxonomy.png)

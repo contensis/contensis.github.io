@@ -1,5 +1,5 @@
 # Heading field editor
-The heading field editor is a text field editor that supports three fixed sizes. It enables a developer to separate out defined headings in an entry without the need of a HTML editor.
+The heading field editor is a text field that supports three fixed sizes. It enables a developer to separate defined headings in an entry without an HTML editor.
 
 ## Settings
 | Setting name | Summary|

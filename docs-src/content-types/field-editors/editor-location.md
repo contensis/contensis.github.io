@@ -1,7 +1,7 @@
 # Location field editor
 Using the location field editor you can to provide an accurate location within an entry. A location can be set using the search which is powered by Google Places, or by navigate with the map.
 
-Fine adjustments to location can be set by dragging the map pin to an exact position, or by entering latitude and longitude values.
+Fine adjustments to location can be set by dragging the map pin to an exact position, or by entering latitude and longitude coordinates.
 
 ## Appearance
 ![Location Field Editor](/images/field-editor-location.png)

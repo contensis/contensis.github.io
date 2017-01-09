@@ -35,13 +35,3 @@ This field editor supports the following validation methods.
 This property expects a comma separated list of values that are to be displayed in the dropdown.
 
 > *e.g.* Red, Blue, Green, Orange, Purple
-
-### Validation message
-Why is this even here? [^2]
-
-#### Footnotes:
-
----
-
-[^1]: Should the placeholder text be removed, and instead the default value be set to Please select?
-[^2]: This needs to be removed.

@@ -1,7 +1,7 @@
 # List field editor
 The list field editor will display a list of items for an author to select from that are set in the list values properties text box.
 
-The type of list displayed will depend on if multiple selection is allowed. Single selection lists are served by a radio button list [^1], checkbox lists are used when multiple selection is set.
+The type of list displayed will depend on if multiple selection is allowed. Single selection lists are shown as a radio button list [^1], checkbox lists are used when multiple selection is set.
 
 ## Appearance
 ![List Field Editor](/images/field-editor-list.png)

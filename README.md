@@ -11,7 +11,7 @@ This folder contains the compiled GitBook for the **User documentation** and is 
 
 
 ## API Documentation
-The API docs uses the [API theme](https://github.com/GitbookIO/theme-api) for GitBooks and has its own configutation options.
+The API docs uses the [API theme](https://github.com/GitbookIO/theme-api) for GitBooks and has its own configuration options.
 
 ### api-src
 This folder contains the source documentation that makes up the API documentation
@@ -28,7 +28,7 @@ This folder contains the compiled GitBook for the **API documentation** and is a
 ### GitBook Dependencies
 The best way to install GitBook is via NPM (Node package manager).
 
-If you've not installed node before header over to the node.js [download page] (https://nodejs.org/en/download/) to find the installer for your OS. If you're on windows you'll need to reboot for the PATH variable to take effect.
+If you've not installed node before head over to the node.js [download page] (https://nodejs.org/en/download/) to find the installer for your OS. If you're on windows you'll need to reboot for the PATH variable to take effect.
 
 Once installed at a command prompt, simply run the following command to install GitBook:
 

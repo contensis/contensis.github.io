@@ -1,5 +1,5 @@
 # Boolean field editor
-The Boolean field editor has only two possible values, a true or false condition. The Boolean field editor is represented as a toggle switch in the entry editor. But the values that are stored in the database are simply a 1 or 0.
+The Boolean field editor has only two possible values, a true or false condition. The Boolean field editor is represented as a toggle switch in the entry editor (ut the value stored in the database is 1 or 0).
 
 ## Appearance
 ![Boolean Field Editor](/images/field-editor-boolean.png)
@@ -9,7 +9,7 @@ The Boolean field editor has only two possible values, a true or false condition
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. The values presented are based on the true or false condition values. |
+| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. The values presented are based on the *true* or *false* condition values. |
 
 ## Properties
 ### Common properties
@@ -18,7 +18,7 @@ The Boolean field editor has only two possible values, a true or false condition
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### True condition value
-The true condition value provides a text label representation for the true condition of a Boolean. It could be a variety of positive labels such as true, yes, on, valid or enabled.
+The *true* condition value provides a text label representation for the *true* condition of a Boolean. It could be a variety of positive labels such as *true*, *yes*, *on*, *valid* or *enabled*.
 
 ### False condition value
-The false condition value provides a text label representation for the false condition of a Boolean. It could be a variety of negative labels such as false, no, off, invalid or disabled.
+The *false* condition value provides a text label representation for the false condition of a Boolean. It could be a variety of negative labels such as *false*, *no*, *off*, *invalid* or *disabled*.

@@ -28,7 +28,7 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field, in the case of the searchable dropdown this value will set the default text. [^1] |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field, in the case of the searchable dropdown this value will set the default text. |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### List values

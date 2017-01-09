@@ -29,12 +29,3 @@ This field editor supports the following validation methods.
 This property expects a comma separated list of values that are to be displayed in the list.
 
 > *e.g.* Red, Blue, Green, Orange, Purple
-
-### Validation message
-Why is this here? [^2]
-
-#### Footnotes:
-
----
-[^1]: Should we not just use a drop down menu?
-[^2]: This field seems to have an unnecessary validation message in the editor properties

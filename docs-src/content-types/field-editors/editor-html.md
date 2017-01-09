@@ -1,7 +1,7 @@
 # HTML field editor
-The HTML Editor provides the user with the ability to create blocks of rich text including headings, lists, bold, italic and links.
+The HTML Editor allows you to create blocks of rich text including headings, lists, bold, italic and hyperlinks.
 
-The editor is powered by the TinyMCE editor. Contensis automatically strips out any invalid HTML, including removing all `<span>` tags, empty tags, and style attributes.
+The editor is powered by the TinyMCE editor. Contensis automatically strips out any invalid HTML, including `<span>` tags, empty tags, and style attributes.
 
 ## Appearance
 ![HTML Field Editor](/images/field-editor-html.png)
@@ -25,7 +25,7 @@ This field editor supports the following validation methods.
 | ---| --- |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 | [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to Medium. |
+| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to *Medium*. |
 
 ### Show toolbar
 This setting enables you to disable the editor toolbar and instead use an inline editing toolbar. Its default value is set to *Yes*.

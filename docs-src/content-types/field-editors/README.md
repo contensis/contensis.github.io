@@ -59,6 +59,6 @@ With a content type open for editing:
 1. Select the field you want to change a *Field Editor* for and pick the **Editor** tab from the *Field Settings* panel. 
 2. You will now be in the *Field Editor* panel. If there is more than one *Field Editor* available, choose from the dropdown. e.g *Multiline Text*.
 3. You can now set any additional properties that the *Field Editor* supports e.g *Content Guidelines* in the boxes below the *Choose field editor* dropdown.
-4. Press *Save* and *Publish* for the additional field editors to be made available for the entries in your project.
+4. Press **Save** and **Publish** for the additional field editors to be made available for the entries in your project.
 
 > Note: If you have a content type where entries already exist, there is potential for data loss when changing field editors.

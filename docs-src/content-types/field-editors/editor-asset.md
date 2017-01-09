@@ -23,6 +23,6 @@ This field editor supports the following validation methods.
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Type
-The display of available assets in the gallery will be restricted to show only those types selected in the Type dropdown.
+The display of available assets in the gallery will be restricted to show only those types selected in the *Type* dropdown.
 
 The dropdown list is populated with asset types supported by the current project. Some system reserved asset types are not displayed in this list such as forms, templates, polls and databases.

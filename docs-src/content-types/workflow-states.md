@@ -14,4 +14,4 @@ Another indication that the item is *Awaiting changes* is that it will have majo
 ## Published
 When a content type is published and has had no further changes made to it, the content type status will be *Published* and the highlight will be green.
 
-Another indication that the item is in the Published state is that it only has a major number in its version number *e.g.* 2.0.
+Another indication that the item is in the *Published* state is that it only has a major number in its version number *e.g.* 2.0.

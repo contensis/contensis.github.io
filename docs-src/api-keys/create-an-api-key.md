@@ -1,5 +1,5 @@
 # Create an API key
-If you want to interact with the Management or Delivery API outside of Contensis, you'll need to generate an API key. Users with system administrator permissions can create API keys.
+If you want to use the delivery API outside of a Contensis published site, you'll need to generate an API key. Users with system administrator permissions can create API keys.
 
 You'll learn how to create a new key by following these steps.
 

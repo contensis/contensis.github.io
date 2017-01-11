@@ -45,4 +45,4 @@ To increase the limit to 150,000 requests you'll need to verify your identity wi
 
 If you feel you need more than the 150,000 requests then you can purchase a Google Maps API premium plan.
 
-Full details can be found at the Google Place API [usage an billing site](https://developers.google.com/places/web-service/usage)
+Full details can be found at the Google Place API [usage and billing site](https://developers.google.com/places/web-service/usage)

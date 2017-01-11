@@ -41,7 +41,7 @@ Each text search counts as 10 requests to this service, the default limit in a 2
 ### Increasing the limit
 To increase the limit to 150,000 requests you'll need to verify your identity with Google by adding your billing information through the [Google developer console](https://console.developers.google.com). Once billing information has been added you can create an API Key via the Google API Console. This API key can then be applied to the project setting _Google_ApiKey_Places_.
 
-> **Note:** The credit card details provided fort billing are purely to validate identity. The card will not be charged for use of the Google Places API Web Service.
+> **Note:** The credit card details provided for billing are purely to validate identity. The card will not be charged for use of the Google Places API Web Service.
 
 If you feel you need more than the 150,000 requests then you can purchase a Google Maps API premium plan.
 

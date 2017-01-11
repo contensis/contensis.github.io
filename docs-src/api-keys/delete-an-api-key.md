@@ -1,4 +1,4 @@
-# Disable an API key
+# Delete an API key
 If you no longer use the application that was accessing your content through a particular API key, you can delete the API key permanently.
 
 Follow the steps to delete the API key.

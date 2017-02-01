@@ -6,7 +6,9 @@ The Delivery API is our primary API, designed and focused on enabling you to get
 
 The API is primarily a set of RESTful services to ensure maximum compatibility, delivering content as JSON data and resource files (assets) as text or binary files.
 
+<!--- 
 We envisage that the majority of requirements in your application can be fulfilled using this API, however, if your requirements entail the need to add or update content, then take a look at our [Management API](./management-api/README.md) instead.
+-->
 
 ## Documentation
 
@@ -20,6 +22,6 @@ The documentation is mainly example-driven with API references to the types for 
 
 [Getting an Entry](./accessing-entries/dotnet/entry-get-dotnet.md)
 
-[Listing Entries by Content Type](./accessing-entries/dotnet/entries-list-dotnet.md)
+[Listing Entries](./accessing-entries/dotnet/entries-list-dotnet.md)
 
 [Searching for Entries](./accessing-entries/entry-search.md)

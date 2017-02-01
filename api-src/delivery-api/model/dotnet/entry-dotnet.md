@@ -6,7 +6,7 @@ An entry definition in the Delivery API contains a mixture of standard propertie
 
 ## Standard properties
 
-These are the standard properties that all entries have. The languageCode property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available for an entry at any one time. 
+These are the standard properties that all entries have. An entry can have multiple language variations, which can be be edited, versioned and published independently. In the Delivery API context only a single language variation is available for an entry at any one time. 
 
 ### Entry
 
@@ -16,9 +16,9 @@ These are the standard properties that all entries have. The languageCode proper
 | ContentTypeId | string  | The API identifier of the content type that the entry is based on |
 | ProjectId | string | The API identifer of the project the entry belongs to |
 | DataFormat | string | Either 'entry' or 'asset' |
-| LanguageCode | string | The language of the entry instance |
+| Language | string | The language of the entry instance |
 | Version | [VersionInfo](/common/types/dotnet/versioninfo-dotnet.md) | Version information for the entry | 
-| MetaData | Metadata | Metadata associated with the entry instance | 
+| Metadata | Metadata | Metadata associated with the entry instance | 
 
 ## Methods
 

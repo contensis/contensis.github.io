@@ -6,7 +6,7 @@ When a content type is created it will be in the *Draft* state until it has been
 
 Another indication that the item is in draft is that it has no major version in its version number *e.g.* 0.6.
 
-## Awaiting changes
+## Awaiting Publish
 When a content type has been published at least once, and had further changes saved to it, the content type will be *Awaiting Publish* until it is published. It's effectively published and has a new draft state. Content types that are *Awaiting Publish* will be highlighted in orange.
 
 Another indication that the item is *Awaiting Publish* is that it will have major and minor version numbers *e.g.* 1.6.

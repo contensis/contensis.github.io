@@ -9,5 +9,5 @@ The following table outlines the available validations and field types that are 
 | Validation| Supported fields |
 | --- | --- |
 | [Required](/content-types/validation/required-validation.md) | Text, markup, quote, number, location, list, taxonomy, composer, asset, entry reference, image |
-| [Matches pattern](/content-types/validation/regex-validation.md) | Text |
 | [Number of characters](/content-types/validation/character-count-validation.md) | Text |
+| [Matches pattern](/content-types/validation/regex-validation.md) | Text |

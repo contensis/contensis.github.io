@@ -1,5 +1,5 @@
-# Regular expression pattern matching
-The *Regular expression* validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
+# Matches pattern
+The *Matches pattern* validation method ensures that the value of a field matches a specific pattern defined by a regular expression.
 
 A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.
 
@@ -10,7 +10,7 @@ A regular expression is a special text string for describing a search pattern. W
 With a content type open for editing:
 
 1. Select the field you want to set a validation rule for and pick the **Validation** tab from the *Field Settings* panel.
-2. Choose the required *Regular expression* pattern you want to use from the *Matches pattern* dropdown, or define your own using the *Custom* option.
+2. Choose the required regular expression pattern you want to use from the *Matches pattern* dropdown, or define your own using the *Custom* option.
 3. An alternative validation message can be added by entering it in the *Validation message* text box. This will be displayed if the field fails validation when published.
 
 ## Setting a custom expression
@@ -27,8 +27,8 @@ We've included some predefined expressions covering some standard scenarios.
 
 | Allowed values | Disallowed values |
 | --- | --- |
-| http://www.zengenti.com | special%character@example.com |
-| https://zenhub.zengenti.com | name@example |
+| http://www.zengenti.com | special%character@zengenti.com |
+| https://zenhub.zengenti.com | name@zengenti |
 | http://zengenti.com/en-gb/products/contensis/contensis.aspx | notawebsite.com |
 
 #### Email address

@@ -27,8 +27,6 @@ The date range editors become available when the format of a Date / Time field a
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. |
-
 
 ## Supported validation
 This field editor supports the following validation methods.

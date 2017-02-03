@@ -6,13 +6,13 @@ A content type describes a type of content broken down into chunks.
 
 > *e.g.* A ‘film’ content type could contain the following chunks, title, film poster, length/run time, budget, overview, director and cast members.
 
-You can create a content type through our content type builder or programmatically create a content type defined in JSON using our Management API.
+A content type can be created through our content type builder.
 
-Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of [field types]() are supported.
+Chunks in a content type are defined by fields. A field allows input of a particular type of data. A range of field types are supported.
 
-A field has a name, a data type and a set of additional properties such as validation, editor types and editorial guidelines.
+A field has a name, a data type and a set of additional properties such as validation, editor types and content guidelines.
 
-Content types can be linked together using entry reference fields to aid the building of rich content models and relationships.
+Content types can be linked together using entry fields to aid the building of rich content models and relationships.
 
 > *e.g.* Linking a film to a list of cast members located in a content type of people.
 

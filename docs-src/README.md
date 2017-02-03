@@ -1,5 +1,5 @@
 # Content types and entries
-You define content models in Contensis by creating content types for a project. Content modelling is restricted to the content types in a given project - but you can access content types for multiple projects through our APIs.
+You define content models in Contensis by creating content types for a project. Content modelling is restricted to the content types in a given project - but you can access content types for multiple projects through our Delivery API.
 
 ## Content types
 A content type describes a type of content broken down into chunks.

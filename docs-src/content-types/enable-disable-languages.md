@@ -1,5 +1,5 @@
 # Enable and disable languages for a content type
-A content type is created in the default language of a project. If you have a multilingual license key other languages supported by the project can be enabled for a content type.
+A content type is created in the default language of a project. If you have a multilingual license key, other languages supported by the project can be enabled for a content type.
 
 ## Enable additional languages
 
@@ -13,7 +13,7 @@ With the content type open for editing:
 Follow our article on [translating entries](/entries/translate-an-entry.md) to start writing content in another language.
 
 ## Disable a language
-Disabling a language for a content type will prevent any further entries being created in that language. Any existing entries that have been translated will still be available through the Delivery API until they are deleted.
+Disabling a language for a content type will prevent any further entries being created in that language. Any published entries that have been translated will still be available through the Delivery API until they are deleted.
 
 
 

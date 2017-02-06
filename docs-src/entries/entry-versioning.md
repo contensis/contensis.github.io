@@ -8,10 +8,7 @@ Each time a change is made to an *Entry* and saved, the minor version number is 
 
 > *e.g.* Adding some text to a field of a newly created *Entry* and pressing **Save** would increment the version number from 0.1 to 0.2.
 
-**No changes made**
-When an *Entry* has not changed since its last save, the **Save** button will be disabled.
-
 ## Publishing an *Entry*
 When an *Entry* is ready for publishing, pressing the **Publish** button in the *Entry* editor will change the major version number.
 
-> *e.g.* Having populated all the fields of my newly created *Entry* and saved it. Pressing **Publish** would increment the version number from 0.2 to 1.0 and change the workflow state of the *Entry* to *Published*. Once published the **Publish** button will be disabled until further changes are made.
+> *e.g.* Having populated all the fields of my newly created *Entry* and saved it. Pressing **Publish** would increment the version number from 0.2 to 1.0 and change the workflow state of the *Entry* to *Published*.

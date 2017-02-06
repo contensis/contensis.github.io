@@ -899,8 +899,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="regular-expression-pattern-matching">Regular expression pattern matching</h1>
-<p>The <em>Regular expression</em> validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p>
+                                <h1 id="matches-pattern">Matches pattern</h1>
+<p>The <em>Matches pattern</em> validation method ensures that the value of a field matches a specific pattern defined by a regular expression.</p>
 <p>A regular expression is a special text string for describing a search pattern. We use these expressions to validate the text that an author enters into a field of an entry.</p>
 <h2 id="appearance">Appearance</h2>
 <p><img src="../../images/validation-matchespattern.png" alt="Matches pattern validation"></p>
@@ -908,7 +908,7 @@
 <p>With a content type open for editing:</p>
 <ol>
 <li>Select the field you want to set a validation rule for and pick the <strong>Validation</strong> tab from the <em>Field Settings</em> panel.</li>
-<li>Choose the required <em>Regular expression</em> pattern you want to use from the <em>Matches pattern</em> dropdown, or define your own using the <em>Custom</em> option.</li>
+<li>Choose the required regular expression pattern you want to use from the <em>Matches pattern</em> dropdown, or define your own using the <em>Custom</em> option.</li>
 <li>An alternative validation message can be added by entering it in the <em>Validation message</em> text box. This will be displayed if the field fails validation when published.</li>
 </ol>
 <h2 id="setting-a-custom-expression">Setting a custom expression</h2>
@@ -930,11 +930,11 @@
 <tbody>
 <tr>
 <td><a href="http://www.zengenti.com" target="_blank">http://www.zengenti.com</a></td>
-<td>special%character@example.com</td>
+<td>special%character@zengenti.com</td>
 </tr>
 <tr>
 <td><a href="https://zenhub.zengenti.com" target="_blank">https://zenhub.zengenti.com</a></td>
-<td>name@example</td>
+<td>name@zengenti</td>
 </tr>
 <tr>
 <td><a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank">http://zengenti.com/en-gb/products/contensis/contensis.aspx</a></td>
@@ -1033,7 +1033,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"4.1.2","depth":2,"next":{"title":"Character count","level":"4.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"4.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-edit"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"contensis/contensis.github.io","branch":"master/docs-src"},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":[],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2016-12-21T14:58:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-01-12T15:27:47.735Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Regular expression","level":"4.1.2","depth":2,"next":{"title":"Character count","level":"4.1.3","depth":2,"path":"content-types/validation/character-count-validation.md","ref":"content-types/validation/character-count-validation.md","articles":[]},"previous":{"title":"Required","level":"4.1.1","depth":2,"path":"content-types/validation/required-validation.md","ref":"content-types/validation/required-validation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github-edit"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"contensis/contensis.github.io","branch":"master/docs-src"},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":[],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis 9 Documentation","links":{"sharing":{"all":false,"facebook":false,"twitter":false},"sidebar":{"Contensis":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*","description":null},"file":{"path":"content-types/validation/regex-validation.md","mtime":"2017-02-06T10:26:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-06T14:14:56.917Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -88,16 +88,41 @@ Avoid corporate jargon:
 Often, the most useful word is a technical term. It’s not jargon if it’s the best word for a concept. But, we need to consider non-technical readers. So, it’s usually fine to use HTML, because most people will understand it. But, if we’re talking about using SANs for cloud hosting, we should explain what they are.
 
 ## Numbers
-Todo
+- For all numbers under 10, spell out the number. For all numbers 10 and over, use the numeral.
+- If a number starts a sentence, write it out in full (Thirty-four, for example) except where it starts a title or subheading.
+- For numerals over 999 - insert a comma for clarity: 9,000
+- Spell out common fractions like one-half.
+- Use a 0 where there’s no digit before the decimal point.
+- Use ‘500 to 900’ and not ‘500-900’ (except in tables).
+- Use MB for anything over 1MB: 4MB not 4096KB.
+- Use KB for anything under 1MB: 569KB not 0.55MB.
+- Keep it as accurate as possible and up to 2 decimal places: 4.03MB.
+- Addresses: use ‘to’ in address ranges: 49 to 53 Cherry Street.
 
 ### Dates
-to do
+- use upper case for months: January, February
+- don’t use a comma between the month and year: 14 June 2012
+- when space is an issue - in tables or publication titles, for example - you can use truncated months: Jan, Feb
+- we use ‘to’ in date ranges - not hyphens, en rules or em dashes. For example:
+  - financial year 2011 to 2012
+  - To’ is quicker to read than a dash, and it’s easier for screen readers.
+- Monday to Friday, 9am to 5pm (put different days on a new line, don’t separate with a comma)
+- 10 November to 21 December
+- don’t use quarter for dates, use the months: 'expenses, Jan to Mar 2013’
+- when referring to today (as in a news article) include the date: ‘The minister announced today (14 June 2012) that…’
+
+But we can make sure we get as close to accessible for everyone as we possibly can, simply by being very, very clear.
+
 ### Decimals & fractions
 to do
 ### Percentages
-to do
-### Ranges
-to do
+When using a percentage, write out the full word rather than using the symbol.
+
+**Correct:** Sales are up 35 percent.
+
+**Incorrect:** Sales are up 35%.
+
+
 ### Money
 to do
 ### Temperature

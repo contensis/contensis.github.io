@@ -1,1 +1,25 @@
 # Sprint review
+
+- Ensure that the review is no longer than two hours.
+- Ensure that any suggestions/feedback to improve the product value, inline with the release goal should be added to the product backlog.
+	- Only when it brings real product value
+- All items should be demoable
+	- A full user scenario
+	- Partial implementation - Show a file transmitted from A - B or a POSTMAN example
+	- Or tell a story about the fix/bug/improvement
+		- What it was
+		- how it came to light
+		- impact the client
+- PO to mark the ITEM / Story as Done
+- Review holding task items
+	- Add to backlog
+	- Or Delete (if not aligned in the next 12 months releases)
+- [ ] Rich - Report on the current status of the backlog
+- Items not estimated
+- Potential release date
+- [ ] Rich - Agenda, setting who's going to be demoing and what they are demoing
+- [ ] Rich / Si - Create a process for larger questions relating to the product, architecture, process and vision
+- [ ] Rich / Si - Look at providing some demo examples of different scenarios.
+- [ ] Rich - Who can be present during the review, what stakeholders need to be invited as part of the sprint goal
+- [ ] Rich - Communicate the Sprint Goal in the blog for people to see whats coming up.
+- [ ] Items of feedback from clients/ps using the unreleased features should be brought to review

@@ -11,7 +11,7 @@ Fine adjustments to location can be set by dragging the map pin to an exact posi
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Default value](/content-types/field-editors/field-settings.md#default-value) | You can set a default map location when the field editor is displayed. |
+| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value allows you to set the location that the map should be centred around in the entry editor. |
 
 ## Supported validation
 This field editor supports the following validation methods.

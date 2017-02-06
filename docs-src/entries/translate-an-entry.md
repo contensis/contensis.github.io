@@ -13,9 +13,9 @@ If you have created and published an entry in the default language of a content 
 5. Each entry in the listing has its own status, new entries requiring translation will be indicated by the *Not yet translated* [workflow state](/entries/workflow-states.md).
 6. Locate the entry in the listing that you want to translate and press **Translate**. The entry will open in a split view editor for editing.
 
-> The master language content will be displayed in the left hand panel, the other panel represents the language you are currently editing and its fields will be empty.
+  > The master language content will be displayed in the left hand panel, the other panel represents the language you are currently editing and its fields will be empty.
 
 7. You can now populate the fields for the new language.
 8. Press **Save** between any changes that have been made. When you are ready to publish the entry press the **Publish** button. The language variation will now be available through the Delivery API along with the default language content.
 
-> The minor version will increment upon each save. Take a look at our [entry versioning](/entries/entry-versioning.md) article for more detail on how entries are versioned.
+  > The minor version will increment upon each save. Take a look at our [entry versioning](/entries/entry-versioning.md) article for more detail on how entries are versioned.

@@ -1,5 +1,5 @@
 # Boolean field editor
-The Boolean field editor has only two possible values, a *true* or *false* condition. The Boolean field editor is represented as a toggle switch in the entry editor (but the value stored in the database is 1 or 0).
+The Boolean field editor has only two possible values, a *true* or *false* condition. The Boolean field editor is represented as a toggle switch in the entry editor.
 
 ## Appearance
 ![Boolean Field Editor](/images/field-editor-boolean.png)

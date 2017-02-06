@@ -6,4 +6,24 @@
 - Deal with highest priority issue next sprint
 - Was the main issue in the last retrospective solved, if not it remains the highest priority.
 
-- [ ] Time box retrospective to 1 hour
+- Time boxed to 1 hour
+-
+
+
+
+In confluence
+
+- Releases
+	- Release e.g. Contensis 9
+		- 03-03-2017: Taboo
+			- Sprint Goal - Taboo
+				- Date
+				- Goal / Method / Metrics
+			- Review - Taboo
+				- Agenda
+				- Notes / Actions (Copied from Google Docs)
+			- Retrospective - Taboo
+				- Report
+				- Discussion
+				- What went well
+				- When didn't go so well

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Product owner · GitBook</title>
+        <title>Documentation · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="team-sm.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="estimation.html" />
     
 
     </head>
@@ -109,7 +107,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="team-po.html">
+        <li class="chapter " data-level="2.1" data-path="team-po.html">
             
                 <a href="team-po.html">
             
@@ -286,38 +284,38 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="dod-research.html">
-            
-                <a href="dod-research.html">
-            
-                    
-                    Research
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.2" data-path="dod-spike.html">
-            
-                <a href="dod-spike.html">
-            
-                    
-                    Spike
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.3" data-path="dod-dev.html">
+        <li class="chapter " data-level="5.1" data-path="dod-dev.html">
             
                 <a href="dod-dev.html">
             
                     
-                    User story | subtask | task
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="dod-research.html">
+            
+                <a href="dod-research.html">
+            
+                    
+                    To Do: Research
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="dod-spike.html">
+            
+                <a href="dod-spike.html">
+            
+                    
+                    To Do: Spike
             
                 </a>
             
@@ -330,7 +328,7 @@
                 <a href="dod-analysis.html">
             
                     
-                    Analysis
+                    To Do: Analysis
             
                 </a>
             
@@ -351,6 +349,19 @@
             
                     
                     Estimation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.2" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    Documentation
             
                 </a>
             
@@ -388,7 +399,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Product owner</a>
+        <a href="." >Documentation</a>
     </h1>
 </div>
 
@@ -403,19 +414,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="product-owner">Product owner</h1>
-<p>The Product Owner is responsible for maximising the value of the product and the work of the development team. How this is done may vary widely across organizations, Scrum Teams, and individuals.</p>
-<p>The product owner is the sole person responsible for managing the product backlog. Product backlog management includes:</p>
+                                <h1 id="documentation">Documentation</h1>
+<h2 id="internal-documentation">Internal documentation</h2>
+<h3 id="architectural">Architectural</h3>
 <ul>
-<li>Clearly expressing product backlog items;</li>
-<li>Ordering the items in the product backlog to best achieve goals and missions;</li>
-<li>Optimising the value of the work the development team performs;</li>
-<li>Ensuring that the product backlog is visible, transparent, and clear to all, and shows what the scrum team will work on next</li>
-<li>Ensuring the development team understands items in the product backlog to the level needed.</li>
+<li>Does the task affect the overall architecture. If so then architectural documents are updated to reflect this.</li>
 </ul>
-<p>The product owner may do the above work, or work with the development Team do it. However, the Product Owner remains accountable.</p>
-<p>The product owner is one person, not a committee. The product owner may represent the desires of a committee in the product backlog, but those wanting to change a product backlog item&#x2019;s priority must address the product owner.</p>
-<p>For the product owner to succeed, the entire organisation must respect his or her decisions. The product owner&#x2019;s decisions are visible in the content and ordering of the product backlog. No one is allowed to tell the development team to work from a different set of requirements, and the development team isn&#x2019;t allowed to act on what anyone else says.</p>
+<h3 id="procedural">Procedural</h3>
+<ul>
+<li>Update / document the process in confluence</li>
+</ul>
+<h2 id="api-documentation">API documentation</h2>
+<ul>
+<li>Does it affect public APIs?<ul>
+<li>Yes, update core call and ensure examples are reflective of the change</li>
+<li>If its new behaviour create an example based on the movie theme</li>
+</ul>
+</li>
+</ul>
+<h2 id="zenhub">ZenHub</h2>
+<h3 id="user-documentation">User documentation</h3>
+<ul>
+<li>During testing Has the UI changed in such a way that it affects the ZenHub documentation?<ul>
+<li>Could Tim Broome in involved in updating the documentation<ul>
+<li>Passing on to Rich for quick review</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="release-documentation">Release documentation</h3>
+<ul>
+<li>Install guide</li>
+<li>Pre requisites Server requirements</li>
+<li>Breaking changes</li>
+<li>Changelog / release notes<ul>
+<li>Add new entries against the version the item has been fixed in
+-</li>
+</ul>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -443,14 +481,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Scrum guide">
+                <a href="estimation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Estimation">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="team-sm.html" class="navigation navigation-next " aria-label="Next page: Scrum master">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -459,7 +493,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Product owner","level":"2.1","depth":1,"next":{"title":"Scrum master","level":"2.2","depth":1,"path":"team-sm.md","ref":"team-sm.md","articles":[]},"previous":{"title":"Scrum guide","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"team-po.md","mtime":"2017-02-06T10:26:04.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-06T09:32:05.682Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Documentation","level":"6.2","depth":1,"previous":{"title":"Estimation","level":"6.1","depth":1,"path":"estimation.md","ref":"estimation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"documentation.md","mtime":"2017-02-06T12:53:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-06T14:13:10.105Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -467,10 +501,6 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
-    
-        
-        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>

@@ -21,10 +21,11 @@
 * [Product backlog](product-backlog.md)
 
 ## Definition of done
-* [Research](dod-research.md)
-* [Spike](dod-spike.md)
-* [User story | subtask | task](dod-dev.md)
-* [Analysis](dod-analysis.md)
+* [Development](dod-dev.md)
+* [To Do: Research](dod-research.md)
+* [To Do: Spike](dod-spike.md)
+* [To Do: Analysis](dod-analysis.md)
 
 ## Tools
 * [Estimation](estimation.md)
+* [Documentation](documentation.md)

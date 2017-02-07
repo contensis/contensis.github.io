@@ -8,4 +8,4 @@ Follow the steps to delete the API key.
 3. Find the API Key you want to delete in the list, and press **Delete**. The *Delete API key?* screen will open.
 4. Confirm the deletion of the API key by pressing **Delete**. The API key will be permanently removed.
 
-> **Warning:** An application or website using this API key will expect it to exist to access it’s content. Deleting the API key is irreversible. This action *CANNOT* be undone.
+> **Warning:** An application or website using this API key will expect it to exist to access it’s content. Deleting the API key is irreversible. This action **CANNOT** be undone.

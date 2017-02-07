@@ -1,5 +1,5 @@
 # Viewing API Keys
-API keys provide a way to secure content types for your application. You can view the keys for the current project by navigating to the API keys listing screen.
+API keys provide a way to secure content types for your application. You can view the keys for the current project by navigating to the *API Keys* listing screen.
 
 ## API Keys list
 1. Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.

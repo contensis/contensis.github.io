@@ -3,6 +3,13 @@ This field editor allows an author to make single or multiple selections of imag
 
 Selection is made in an image gallery. Single or multiple selection of images is determined by the allow multiple field setting.
 
+## Appearance
+**Single**
+![Single Image Editor](/images/field-editor-single-image.png)
+**Medium**
+![Multiple Image Editor](/images/field-editor-multiple-image.png)
+
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |

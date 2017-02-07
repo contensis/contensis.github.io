@@ -3,11 +3,6 @@ When a multilingual license key is present in Contensis then entries can be crea
 
 > **Note**: The default language is set at project level and cannot be changed once created.
 
-## Translation workflow
-Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language.
-
-This workflow ensures that as the default content is updated, authors of different languages will see that a change has been made. The change will be highlighted by the entries workflow state e.g. an entry is *Awaiting Translation*.
-
 ## Supported languages
 We support the following languages in Contensis.
 

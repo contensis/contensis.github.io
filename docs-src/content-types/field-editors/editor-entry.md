@@ -3,7 +3,11 @@ This editor is an important one allowing you to relate existing entries in other
 
 You can make single or multiple selections of entries allowing you to create rich content models.
 
-> *e.g.* in a film content type you may want to list a selection of actors that are defined in your people content type.
+## Appearance
+**Single**
+![Single Entry Editor](/images/field-editor-entry-single.png)
+**Medium**
+![Multiple Entry Editor](/images/field-editor-entry-multiple.png)
 
 ## Settings
 | Setting name | Summary|

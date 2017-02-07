@@ -1,34 +1,65 @@
 # Multi language support
-When a multilingual license key is present in Contensis then entries can be created in multiple languages. The languages that are available for an entry to be created against, is determined by those assigned to a [project](/projects/update-a-project.md) and [enabled](/content-types/enable-disable-languages.md) for a content type.
+When a multilingual license key is present in Contensis then entries can be created in multiple languages. The languages that are available for an entry to be created against, is determined by those assigned to a [project](/projects/update-a-project.md) | and [enabled](/content-types/enable-disable-languages.md) | for a content type.
 
 > **Note**: The default language is set at project level and cannot be changed once created.
 
 ## Translation workflow
-Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language. 
+Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language.
 
 This workflow ensures that as the default content is updated, authors of different languages will see that a change has been made. The change will be highlighted by the entries workflow state e.g. an entry is *Awaiting Translation*.
 
 ## Supported languages
 We support the following languages in Contensis.
 
-| Languages | Region code  |
+| Languages |  Code  |
 |:--|:--|
 | Arabic | ar |
+| Bengali | bn |
+| Burmese | my |
 | Chinese | zh |
+| Chinese Simplified - China | zh-CN |
 | Danish | da |
 | Dutch | nl |
-| English | en-GB  |
-| English (American) | en-US |
-| English (Canadian) | en-CA |
-| English (Indian) | en-IN |
+| Dutch - Netherlands | nl-NL |
+| English - Canada | en-ca |
+| English - Great Britain | en-gb |
+| English - India | en-in |
+| English - United States | en-us |
 | French | fr |
-| French (Dutch) | fr-NL|
-| Gaelic (Irish) | ga-IE |
-| Gaelic (Scottish) | gd-GB |
+| French - Canada | fr-ca |
+| French - France | fr-FR |
+| French - Netherlands | fr-nl |
 | German | de |
-| Korean | ko |
+| German - Germany | de-DE |
+| Greek | el |
+| Gujarati | gu |
+| Hindi | hi |
+| Indonesian | id |
+| Irish Gaelic - Ireland | ga-ie |
+| Italian | it |
+| Japanese | ja |
+| Kannada | kn |
+| Korean |  ko |
+| Korean - South Korea | ko-KR |
+| Malay | ms |
+| Marathi | mr |
+| Persian | fa |
+| Polish | pl |
 | Portuguese | pt |
+| Portuguese - Portugal | pt-PT |
+| Punjabi | pa |
+| Romanian | ro |
+| Russian | ru |
+| Scottish Gaelic - Scotland | gd-gb |
 | Spanish | es |
-| Spanish (American) | es-US |
-| Spanish (Mexican) | es-MX |
+| Spanish | es-ES |
+| Spanish - Mexico | es-mx |
+| Spanish - United States | es-us |
+| Swedish | sv |
+| Telugu | te |
+| Thai | th |
+| Turkish | tr |
+| Ukranian | uk |
+| Urdu | ur |
+| Vietnamese | vi |
 | Welsh | cy |

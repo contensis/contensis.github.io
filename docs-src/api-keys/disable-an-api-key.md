@@ -5,6 +5,6 @@ If you're worried that an API key has been compromised, or you no longer use the
 2. Select **API Keys** from the drawer to open the *API Keys* list.
 3. Find the API Key you want to disable in the list, and press **Edit**. The *Edit API key* screen will open.
 4. Toggle the *API Key status* button to disable the API key.
-5. Click **Update API Key**to save your changes. The API key will now be listed as disabled.
+5. Click **Update API Key** to save your changes. The API key will now be listed as disabled.
 
 > **Warning:** Any application or website using this API key will expect it to be enabled to access it’s content.

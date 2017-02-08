@@ -6,7 +6,7 @@ When a multilingual license key is present in Contensis then entries can be crea
 ## Supported languages
 We support the following languages in Contensis.
 
-| Languages |  Code  |
+| Languages |  Language Code / Language and Region  |
 |:--|:--|
 | Arabic | ar |
 | Bengali | bn |
@@ -16,21 +16,21 @@ We support the following languages in Contensis.
 | Danish | da |
 | Dutch | nl |
 | Dutch - Netherlands | nl-NL |
-| English - Canada | en-ca |
-| English - Great Britain | en-gb |
-| English - India | en-in |
-| English - United States | en-us |
+| English - Canada | en-CA |
+| English - Great Britain | en-GB |
+| English - India | en-IN |
+| English - United States | en-US |
 | French | fr |
-| French - Canada | fr-ca |
+| French - Canada | fr-CA |
 | French - France | fr-FR |
-| French - Netherlands | fr-nl |
+| French - Netherlands | fr-NL |
 | German | de |
 | German - Germany | de-DE |
 | Greek | el |
 | Gujarati | gu |
 | Hindi | hi |
 | Indonesian | id |
-| Irish Gaelic - Ireland | ga-ie |
+| Irish Gaelic - Ireland | ga-IE |
 | Italian | it |
 | Japanese | ja |
 | Kannada | kn |
@@ -45,11 +45,11 @@ We support the following languages in Contensis.
 | Punjabi | pa |
 | Romanian | ro |
 | Russian | ru |
-| Scottish Gaelic - Scotland | gd-gb |
+| Scottish Gaelic - Scotland | gd-GB |
 | Spanish | es |
 | Spanish | es-ES |
-| Spanish - Mexico | es-mx |
-| Spanish - United States | es-us |
+| Spanish - Mexico | es-MX |
+| Spanish - United States | es-US |
 | Swedish | sv |
 | Telugu | te |
 | Thai | th |

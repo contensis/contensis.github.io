@@ -1,5 +1,5 @@
 # Supported fields and editors
-A field may support different types of field editor, e.g *Text* or *Multiline Text*. The selected option will then determine which options are available to authors.
+A field may support different types of field editor, e.g Text or Multiline Text. The selected option will then determine which options are available to authors.
 
 ## Field types that support multiple field editors
 Each of the following field types support different data formats. In some instances a data format may have multiple field editors available, if there are various ways to capture the data.
@@ -35,9 +35,9 @@ Each of the following field types support different data formats. In some instan
 | Format   | Field Editor              |
 | -------- | ------------------- |
 | Single   | [Date](/content-types/field-editors/editor-date-datetime.md)                |
-| Single   | [Date / Time](/content-types/field-editors/editor-date-datetime.md)         |
+| Single   | [Date and Time](/content-types/field-editors/editor-date-datetime.md)         |
 | Range    | [Date Range](/content-types/field-editors/editor-date-datetime.md)          |
-| Range    | [Date / Time Range](/content-types/field-editors/editor-date-datetime.md)   |
+| Range    | [Date and Time Range](/content-types/field-editors/editor-date-datetime.md)   |
 
 ## Field types that support single field editors
 Each of the following field types support a single field editor.
@@ -58,7 +58,7 @@ With a content type open for editing:
 
 1. Select the field you want to change a field editor for and pick the **Editor** tab from the *Field Settings* panel. 
 2. You will now be in the *Field Editor* panel. If there is more than one *Field Editor* available, choose from the dropdown. e.g *Multiline Text*.
-3. You can now set any additional properties that the field editor supports e.g *Content Guidelines* in the boxes below the *Choose field editor* dropdown.
+3. You can now set any additional properties that the field editor supports e.g *Content guidelines* in the boxes below the *Choose field editor* dropdown.
 4. Press **Save** and **Publish** for the additional field editors to be made available for the entries in your project.
 
 > Note: If you have a content type where entries already exist, there is potential for data loss when changing field editors.

@@ -17,7 +17,7 @@ The *Default* value property sets the initial content for a field when an entry 
 
 *e.g.* Default location fields are set to London. So, if the default location isn't changed, that entry will be set to London.
 
-The type of default value input will vary between editors.
+The type of default value input will vary between field editors.
 
 ## Format
 Some fields support different *Formats* of data. By changing the data *Format* you are specifying the type of data that is stored and returned via the API.

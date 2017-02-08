@@ -1,5 +1,5 @@
-# Date/time field editors
-The date / time field editors have four distinct flavours, providing the flexibility to capture the data you require.
+# Date and time field editors
+The date and time field editors have four distinct flavours, providing the flexibility to capture the data you require.
 
 | Type | Summary|
 | ---| --- |
@@ -15,12 +15,12 @@ The date range editors become available when the format of a Date / Time field a
 ## Appearance
 **Date**
 ![Date Field Editor](/images/field-editor-date.png)
-**Date / Time**
-![Date / Time Field Editor](/images/field-editor-date-time.png)
+**Date and Time**
+![Date and Time Field Editor](/images/field-editor-date-time.png)
 **Date Range**
 ![Date Range Field Editor](/images/field-editor-date-range.png)
-**Date / Time Range**
-![Date / Time Range Field Editor](/images/field-editor-date-time-range.png)
+**Date and Time Range**
+![Date and Time Range Field Editor](/images/field-editor-date-time-range.png)
 
 ## Settings
 | Setting name | Summary|

@@ -3,14 +3,14 @@
 ## Name
 The *Name* property describes the field content. The *Name* entered here will be displayed to an author when creating an entry. It's used to identify the chunk of content. This *Name* is also sanitised and used to generate the *Field ID*.
 
-> The *Name* field is limited to 50 alphanumeric characters or symbols.
+> The *Name* field is limited to 50 alphanumeric characters or symbols. The words **sys** and **entryTitle** are reserved words and cannot be used.
 
 ## Field ID
 The *Field ID* is used to identify the field within a content type through the API. The *Field ID* is automatically generated when creating a *Name* and sanitised for use as the *Field ID*. 
 
 *Field ID's* have to be unique within a content type. If you attempt to use a *Name* that is already in use then a number will be appended to the *Field ID*.
 
-> The *Field ID* is limited to 50 alphanumeric characters, symbols are not supported.
+> The *Field ID* is limited to 50 alphanumeric characters, symbols are not supported. 
 
 ## Default value
 The *Default* value property sets the initial content for a field when an entry is created. If no change is made by an author when editing the entry then the default value will be used.

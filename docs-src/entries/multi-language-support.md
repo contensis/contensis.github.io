@@ -6,7 +6,7 @@ When a multilingual license key is present in Contensis then entries can be crea
 ## Supported languages
 We support the following languages in Contensis.
 
-| Languages |  Language Code / Language and Region  |
+| Languages |  Language and region code  |
 |:--|:--|
 | Arabic | ar |
 | Bengali | bn |

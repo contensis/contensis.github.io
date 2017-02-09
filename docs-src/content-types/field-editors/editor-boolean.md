@@ -15,7 +15,7 @@ The Boolean field editor has only two possible values, a *true* or *false* condi
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content that the field should contain. |
 
 ### True condition value
 The *true* condition value provides a text label representation for the *true* condition of a Boolean. It could be a variety of positive labels such as *true*, *yes*, *on*, *valid* or *enabled*.

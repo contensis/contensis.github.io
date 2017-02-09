@@ -1,5 +1,5 @@
 # Update an API key
-If you want to update the name of an API key or it's description you can do so by by following these steps.
+If you want to update the name or description of an API key, you can do so by by following these steps.
 
 1. Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.
 2. Select **API Keys** from the drawer to open the *API Keys* list.

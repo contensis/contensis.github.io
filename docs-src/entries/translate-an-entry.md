@@ -8,7 +8,7 @@ All language variations are associated with a default language entry. The defaul
 Once an entry has been created and published in the default language then each of the language variations become available for translation.
 
 ## Translate an entry from the language panel
-1. Press the **Content Types & Entries** button in the sidebar. The **Content Types & Entries** drawer will open revealing a number of options.
+1. Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.
 2. Select **Entries** from the drawer to open the *Entries Listing* screen.
 3. You can reduce the number of entries displayed by selecting the content type the entry is based on using the *Content Type Filter*. The entry listing will be updated to display all entries for the content type you've selected.
 4. Locate the entry in the listing that you want to translate. If the entry is available in other language variations then you will see *'Available in other languages'* in the language column of the listing. Press **Available in other languages** and the language panel will be displayed.

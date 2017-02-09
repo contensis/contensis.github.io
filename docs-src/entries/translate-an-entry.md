@@ -3,7 +3,7 @@
 ## Overview
 Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language. This workflow ensures that as the default language entry is updated, authors of different languages will see that a change has been made. The change will be highlighted by the entries workflow state e.g. an entry is *Awaiting Translation*.
 
-All language variations are associated with a default language entry. The default language entry acts as a container for all language variations. The default language for an entry is based on the default language of the project. The number of languages available for a given entry will depend on those supported by the [content type](/content-types/enable-disable-languages.md).
+All language variations are associated with a default language entry. The default language entry acts as a container for all language variations. The default language for an entry is the default language of the project. The number of languages available for a given entry will depend on those supported by the [content type](/content-types/enable-disable-languages.md).
 
 Once an entry has been created and published in the default language then each of the language variations become available for translation.
 

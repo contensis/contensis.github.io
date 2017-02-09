@@ -1,11 +1,11 @@
-# Viewing content entries
+# View content entries
 Content entries are created from content types and are stored in a project. You can view entries in the *Entries Listing* screen.
 
 ## Entries listing screen
-- Press the **Content Types & Entries** button in the sidebar. The drawer will open revealing a number of options.
+- Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.
 - Select **Entries** from the drawer to open the *Entries Listing* screen.
 
-## Filtering through entries
+## Filter through entries
 If you have a large number of entries in your project then you may find it easier to use the filter panel to narrow down the number of entries displayed.
 
 The filtering options will vary depending on whether you have purchased a multilingual license. The options in the panel work together to build rich filters.

@@ -7,7 +7,7 @@ This workflow ensures that as the default language entry is updated, authors of 
 
 All language variations are associated with a default language entry. The default language entry acts as a container for all language variations. 
 
-The default language for an entry is based on the projects default language. The number of languages available for a given entry will depend on those supported by the [content type](/content-types/enable-disable-languages.md).
+The default language for an entry is based on the default language of the project. The number of languages available for a given entry will depend on those supported by the [content type](/content-types/enable-disable-languages.md).
 
 Once an entry has been created and published in the default language then each of the language variations become available for translation.
 

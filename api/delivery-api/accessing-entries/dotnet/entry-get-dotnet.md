@@ -1,11 +1,11 @@
 # Getting an entry
 
-Requesting an individual entry can be achieved by using one of the `Get` method overloads. Additionally
+Requesting an individual entry can be achieved by using one of the `Get` method overloads.
 
-- [Get(Guid, String, Integer)](#get-by-guid-id)
-- [Get(String, String, Integer)](#get-by-string-id)
-- [GetAsync(Guid, String, Integer)](#get-by-guid-id-async)  
-- [GetAsync(String, String, Integer)](#get-by-string-id-async)
+- [Get(Guid id, string language, int entryLinkDepth)](#get-by-guid-id)
+- [Get(string id, string language, int entryLinkDepth)](#get-by-string-id)
+- [GetAsync(Guid id, string language, int entryLinkDepth)](#get-by-guid-id-async)  
+- [GetAsync(string id, string id, int entryLinkDepth)](#get-by-string-id-async)
 
 
 ## Get by Guid id
@@ -18,7 +18,7 @@ Gets an entry by its `Guid` identifier.
 {% sample lang="cs" -%}
 
 ```cs
-public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
+public Entry Get(Guid id, string language = null, int entryLinkDepth = 0)
 {
 }
 ```
@@ -30,12 +30,12 @@ public Entry Get(Guid id, string languageCode = null, entryLinkDepth = 0)
 > Type: `Guid`  
 > The id of the entry.
 
-*languageCode*
+*language*
 > Type: `string`  
 > The specified language variation for the entry. If no value is provided then the project default language is used.
 
 *entryLinkDepth*
-> Type: `integer`  
+> Type: `int`  
 > The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
@@ -50,8 +50,8 @@ Returns *null* if an entry with an id matching the specified id does not exist.
 // Create a client
 var client = ContensisClient.Create();
 
-// Get the french variation of the film entry and resolve links to a depth of 3
-Entry film = client.Entries.Get(filmGuid, "fr-fr", 3);
+// Get the french variation of the movie entry and resolve links to a depth of 3
+Entry film = client.Entries.Get(movieGuid, "fr-fr", 3);
 ```
 {% endmethod %}
 
@@ -67,7 +67,7 @@ Gets an entry by its identifier.
 {% sample lang="cs" -%}
 
 ```cs
-public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
+public Entry Get(string id, string languageCode = null, int entryLinkDepth = 0)
 {
 }
 ```
@@ -79,12 +79,12 @@ public Entry Get(string id, string languageCode = null, entryLinkDepth = 0)
 > Type: `string`  
 > The id of the entry.
 
-*languageCode*
+*language*
 > Type: `string`  
 > The specified language variation for the entry. If no value is provided then the project default language is used.
 
 *entryLinkDepth*
-> Type: `integer`  
+> Type: `int`  
 > The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
@@ -99,7 +99,7 @@ Returns *null* if an entry with an id matching the specified id does not exist. 
 // Create a client
 var client = ContensisClient.Create();
 
-// Get the french variation of the film entry and resolve links to a depth of 3
+// Get the french variation of the movie entry and resolve links to a depth of 3
 Entry film = client.Entries.Get("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr", 3);
 ```
 {% endmethod %}
@@ -116,7 +116,7 @@ Gets an entry by its `Guid` identifier asynchronously.
 {% sample lang="cs" -%}
 
 ```cs
-public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLinkDepth = 0)
+public async Task<Entry> GetAsync(Guid id, string language = null, int entryLinkDepth = 0)
 {
 }
 ```
@@ -128,12 +128,12 @@ public async Task<Entry> GetAsync(Guid id, string languageCode = null, entryLink
 > Type: `Guid`  
 > The id of the entry.
 
-*languageCode*
+*language*
 > Type: `string`  
 > The specified language variation for the entry. If no value is provided then the project default language is used.
 
 *entryLinkDepth*
-> Type: `integer`  
+> Type: `int`  
 > The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  **Please note:** linked assets are always fully resolved.
 
 ### Remarks
@@ -148,8 +148,8 @@ Returns *null* if an entry with an id matching the specified id does not exist.
 // Create a client
 var client = ContensisClient.Create();
 
-// Get the french variation of the film entry and resolve links to a depth of 3
-Entry film = await client.Entries.GetAsync(filmGuid, "fr-fr", 3);
+// Get the french variation of the movie entry and resolve links to a depth of 3
+Entry film = await client.Entries.GetAsync(movieGuid, "fr-fr", 3);
 ```
 {% endmethod %}
 
@@ -165,7 +165,7 @@ Gets an entry by its `string` identifier asynchronously.
 {% sample lang="cs" -%}
 
 ```cs
-public async Task<Entry> GetAsync(string id, string languageCode = null, entryLinkDepth = 0)
+public async Task<Entry> GetAsync(string id, string language = null, int entryLinkDepth = 0)
 {
 }
 ```
@@ -177,12 +177,12 @@ public async Task<Entry> GetAsync(string id, string languageCode = null, entryLi
 > Type: `string`  
 > The id of the entry.
 
-*languageCode*
+*language*
 > Type: `string`  
 > The specified language variation for the entry. If no value is provided then the project default language is used.
 
 *entryLinkDepth*
-> Type: `integer`  
+> Type: `int`  
 > The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default, no entry data is resolved.
 
 ### Remarks
@@ -197,7 +197,7 @@ Returns *null* if an entry with an id matching the specified id does not exist. 
 // Create a client
 var client = ContensisClient.Create();
 
-// Get the french variation of the film entry and resolve links to a depth of 3
+// Get the french variation of the movie entry and resolve links to a depth of 3
 Entry film = await client.Entries.GetAsync("456e5f2a-a1cf-4520-a46c-e5f22ed299e8", "fr-fr", 3);
 ```
 {% endmethod %}

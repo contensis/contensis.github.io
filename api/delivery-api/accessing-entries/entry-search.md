@@ -1,6 +1,6 @@
 # Search
 
-A Query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.
+A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.
 
 ## Queries
 
@@ -13,7 +13,7 @@ Synchronous
 ```cs
 var query = new Query(
     Op.Contains("title", "Batman"),
-    Op.GreaterThan("lengthRunTime", 200)
+    Op.GreaterThan("runtime", 200)
 );
 
 // Execute the search
@@ -42,7 +42,7 @@ POST: /api/search
         "field": "title",
         "contains": "Batman"
     }, {
-        "field": "lengthRunTime",
+        "field": "runtime",
         "greaterThan": 200
     }]
 }
@@ -64,8 +64,8 @@ Synchronous
 var query = new Query(
     Op.Contains("title", "Batman"),
     Op.Or(
-        Op.GreaterThan("yearOfRelease", 1960),
-        Op.Contains("synopsis", "gotham")
+        Op.GreaterThan("releaseDate", 1960),
+        Op.Contains("tagline", "gotham")
     )
 );
 ```
@@ -87,11 +87,11 @@ var query = new Query(
         {
             "or": [
                 {
-                    "field": "yearOfRelease",
+                    "field": "releaseDate",
                     "greaterThan": 1960
                 },
                 {
-                    "field": "synopsis",
+                    "field": "tagline",
                     "contains": "gotham"
                 }
             ]
@@ -104,27 +104,27 @@ var query = new Query(
 
 ## Ordering
 
-Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the TitleField [^1] in an ascending direction.
+Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.
 
 {% method -%}
 
 {% sample lang="cs" -%}
-Order by 'yearOfRelease'.
+Order by 'releaseDate'.
 
 ```cs
-query.OrderBy.Add("yearOfRelease")
+query.OrderBy.Add("releaseDate")
 ```
 
-Order by 'yearOfRelease' in a descending direction using the '-' token.
+Order by 'releaseDate' in a descending direction using the '-' token.
 
 ```cs
-query.OrderBy.Add("-yearOfRelease")
+query.OrderBy.Add("-releaseDate")
 ```
 
 Multiple order clauses.
 
 ```cs
-query.OrderBy.Add("title", "-yearOfRelease")
+query.OrderBy.Add("title", "-releaseDate")
 ```
 
 {% sample lang="js" -%}
@@ -134,32 +134,32 @@ query.OrderBy.Add("title", "-yearOfRelease")
 ```
 
 {% sample lang="http" -%}
-Order by 'yearOfRelease'.
+Order by 'releaseDate'.
 
 ```json
 {
     "orderBy": [{
-        "asc": "yearOfRelease"
+        "asc": "releaseDate"
     }],
 }
 ```
 
-Order by 'yearOfRelease' in a descending direction using the '-' token.
+Order by 'releaseDate' in a descending direction.
 
 ```json
 {
     "orderBy": [{
-        "desc": "yearOfRelease"
+        "desc": "releaseDate"
     },],
 }
 ```
 
-Order by 'yearOfRelease' in a descending direction using the '-' token.
+Order by 'releaseDate' in a descending direction.
 
 ```json
 {
     "orderBy": [{
-        "desc": "yearOfRelease"
+        "desc": "releaseDate"
     },],
 }
 ```
@@ -204,9 +204,9 @@ Paging allows the number of results to be restricted to a defined count so that 
 
 ### System fields
 
-The fields for search generally match the names defined in the entry structure, for example 'id', 'contentTypeId', 'projectId', etc. Field data not held at the root of the entry, such as the version information are accessed using a dot notation, i.e. 'version.versionNo', 'version.published', etc.
+System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo". 
 
-The 'titleField' field is a dynamic value, determined by the 'Title Field' value in the Content Type.
+The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
 
 ### Data fields
 
@@ -222,10 +222,10 @@ The example below combines the ordering and paging concepts:
 ```cs
 var query = new Query(
     Op.Contains("title", "Batman"),
-    Op.GreaterThan("lengthRunTime", 200)
+    Op.GreaterThan("runtime", 200)
 );
  
-query.OrderBy.Add("-yearOfRelease")
+query.OrderBy.Add("-releaseDate")
 query.PageIndex = 1;
 query.PageSize = 50;
  
@@ -247,13 +247,13 @@ POST: /api/search
     "pageIndex": 1,
     "pageSize": 50,
     "orderBy": [{
-        "desc": "yearOfRelease"
+        "desc": "releaseDate"
     }],
     "where": [{
         "field": "title",
         "contains": "Batman"
     }, {
-        "field": "lengthRunTime",
+        "field": "runtime",
         "greaterThan": 200
     }]
 }

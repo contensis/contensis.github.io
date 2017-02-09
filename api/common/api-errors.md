@@ -37,13 +37,13 @@ catch(ValidationException valEx)
 {
     // Validation error(s)
 }
-catch(ApiException apiEx)
+catch(RestRequestException valEx)
 {
     // Something went wrong, likely on the server
 }
 catch(Exception ex)
 {
-    // Something else went wrong and was unhandled
+    // Something went wrong in the client API
 }
 ```
 

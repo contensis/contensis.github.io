@@ -6,8 +6,8 @@ The Image type container of an image asset with an associated caption.
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| caption | string | The image caption, defined in the entry |
 | asset | object | The asset that is linked to from the entry |
+| caption | string | The image caption, defined in the entry |
 
 ## Remarks
 

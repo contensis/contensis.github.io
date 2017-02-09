@@ -4,9 +4,13 @@ A full [overview of entries can be found here](https://contensis.github.io/docs/
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
+## Data properties
+
+Data properties are items defined by the fields set in a content type. 
+
 ## Standard properties
 
-These are the standard properties that all entries have. The languageCode property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
+These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |

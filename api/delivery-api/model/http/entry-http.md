@@ -4,45 +4,78 @@ A full [overview of entries can be found here](https://contensis.github.io/docs/
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
+## Data properties
+
+Data properties are items defined by the fields set in a content type. 
+
 ## Standard properties
 
-These are the standard properties that all entries have. The languageCode property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
+These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
 
 | Property | Type | Description |
 | :------- | :--- | :---------- |
-| id | string | The entry identifier as GUID |
-| contentTypeId | string  | The API identifier of the content type that the entry is based on |
-| projectId | string | The API identifer of the project the entry belongs to |
-| dataFormat | string | Either 'entry' or 'asset' |
-| [languageCode] | object | The container of the entry data |
-| [languageCode].version | object | Version information for the entry | 
-| [languageCode].version.created | string | The date the entry was created |
-| [languageCode].version.createdBy | string | The user id of who created the entry |
-| [languageCode].version.modified | string | The date the entry version was last modified |
-| [languageCode].version.modifiedBy | string | The user id of who last modified the entry |
-| [languageCode].version.published | string | The date the entry version was last published |
-| [languageCode].version.publishedBy | string | The user id of who last published the entry |
-| [languageCode].VersionNo | string | The version of the entry | 
-| [languageCode].metadata | object | Metadata associated with the entry instance | 
+| sys | object | The container of the entry system data |
+| sys.id | string | The entry identifier as GUID |
+| sys.language | string | The language of the entry variation |
+| sys.uri | string | The entry uri |
+| sys.contentTypeId | string  | The API identifier of the content type that the entry is based on |
+| sys.projectId | string | The API identifer of the project the entry belongs to |
+| sys.dataFormat | string | Either 'entry' or 'asset' |
+| sys.metadata | object | Metadata associated with the entry instance |
+| sys.version | object | Version information for the entry | 
+| sys.version.created | string | The date the entry was created |
+| sys.version.createdBy | string | The user id of who created the entry |
+| sys.version.modified | string | The date the entry version was last modified |
+| sys.version.modifiedBy | string | The user id of who last modified the entry |
+| sys.version.published | string | The date the entry version was last published |
+| sys.version.publishedBy | string | The user id of who last published the entry |
+| sys.version.versionNo | string | The version of the entry | 
 
 
 {% method -%}
 
 ## Example
 
-This JSON shows an example entry based on a Film content type:
+This JSON shows an example entry based on a Movie content type:
 
 {% sample lang="json" -%}
 ```json
 {
-    "id": "71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
-    "contentTypeId": "film",
-    "projectId": "Website",
-    "dataFormat": "entry",
-    "en-GB": {
-        "title": "Doctor Strange",
-        "yearOfRelease": 2016,
-        "overview": "Dr. Stephen Strange's (Benedict Cumberbatch) life changes after a car accident robs him of the use of his hands. When traditional medicine fails him, he looks for healing, and hope, in a mysterious enclave. He quickly learns that the enclave is at the front line of a battle against unseen dark force…",
+    "title": "Back to the future",
+    "tagline": "He's the only kid ever to get into trouble before he was born.",
+    "overview": "Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean \"time machine\" invented by slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.",
+    "trailer": "https://www.youtube.com/watch?v=qvsgGtivCgs",
+    "releaseDate": "1985-07-02T23:00:00Z",
+    "actors": [
+        {
+            "sys": {
+                "id": "a1c983d6-4aaf-4456-9f3d-a6eac3139f1c",
+                "language": "en-GB",
+                "dataFormat": "entry"
+            }
+        },
+        {
+            "sys": {
+                "id": "16f6f2de-e901-4bda-bf3f-092b93ae62a9",
+                "language": "en-GB",
+                "dataFormat": "entry"
+            }
+        },
+        {
+            "sys": {
+                "id": "09b87c0b-67b2-4028-9358-e29ff16f11da",
+                "language": "en-GB",
+                "dataFormat": "entry"
+            }
+        }
+    ],
+    "sys": {
+        "id": "71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
+        "contentTypeId": "movie",
+        "projectId": "movieDb",
+        "language": "en-GB",
+        "uri": "/api/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c",
+        "dataFormat": "entry",
         "metadata": {},
         "version": {
             "createdBy": "s.derrickson",

@@ -9,7 +9,7 @@ Requesting a list of entries can be achieved by using one of the `List` method o
 - [List(string contentTypeId, PageOptions pageOptions, IList<string> order)](#list-by-content-type-with-paging-and-ordering)
 - [ListAsync(string contentTypeId, PageOptions pageOptions, IList<string> order)](#list-by-content-type-with-paging-and-ordering-asynchronously)
 - [List(EntryListOptions listOptions)](#list-with-options-object)
-- [ListAsync(EntryListOptionslistOptions)](#list-with-options-object-asynchronously)
+- [ListAsync(EntryListOptions listOptions)](#list-with-options-object-asynchronously)
 
 ## List
 
@@ -207,7 +207,7 @@ var entries = await client.Entries.ListAsync("movie", new PageOptions(3, 10));
 
 
 
-## List by content type with paging and rdering
+## List by content type with paging and ordering
 
 Lists entries for a specific content type, with paging and field order configuration.
 
@@ -259,7 +259,7 @@ var entries = client.Entries.List("film", new PageOptions(3, 10),
 
 
 
-## List by content type with paging and sorting asynchronously
+## List by content type with paging and ordering asynchronously
 
 Lists entries for a specific content type, with paging and field sort configuration.
 

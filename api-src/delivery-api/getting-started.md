@@ -9,7 +9,7 @@ In this section you will be guided through defining and creating content using t
 
 ## Create a new project
 
-[Projects](https://contensis.github.io/docs/projects/) are the home for all your content in Contensis. Create a new project called MoviesDB using the default values for assets and languages.
+[Projects](https://contensis.github.io/docs/projects/create-a-project.html) are the home for all your content in Contensis. Create a new project called MoviesDB using the default values for assets and languages.
 
 ## Create a content type
 

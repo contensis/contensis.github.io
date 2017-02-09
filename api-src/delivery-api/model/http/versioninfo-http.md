@@ -1,4 +1,4 @@
-# VersionInfo
+# Version Info
 
 ## Overview
 
@@ -23,3 +23,25 @@ The *versionNo* follows a two-part versioning scheme:
 > {Major}.{Minor}
 
 The *Minor* part is incremented on every successful update to the entry. The *Major* part is incremented once the entry has been approved and subsequently published which in turn resets the {Minor} part to zero.
+
+## Example
+
+{% method -%}
+
+This example shows a version info object:
+
+{% sample lang="json" -%}
+```json
+{
+    "created": "2016-08-13T12:14:11.1973648+01:00",
+    "createdBy": "r.smith",
+    "modified": "2016-10-13T10:15:12.1973648+01:00",
+    "modifiedBy": "s.holmes",
+    "published": "2016-10-13T10:15:12.1973648+01:00",
+    "publishedBy": "k.andrews",
+    "versionNo": "3.0"
+}
+```
+{% endmethod %}
+
+

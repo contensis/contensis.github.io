@@ -20,7 +20,7 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder text for the quote |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder text for the quote. |
 | [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
 
 ### Source placeholder text

@@ -27,4 +27,4 @@ The process is the same as for deleting a single language.
 3. Press the *Delete* button in the listing, a *Delete confirmation* window will appear.
 4. Confirm the deletion of the entry by pressing the **Delete** button. The entry will be removed from any site or application that was using the entry.
 
-> **Note:** You'll notice that the entry is still present in the listing with a create button. As a language variation is associated with the master language entry, the language variations content is deleted and the API will not return a language variation for the language. The language variation is now ready for translation and returns to the '*Not yet translated*' [workflow state](/entries/workflow-states.md).
+> **Note:** You'll notice that the entry is still present in the listing with a translate button. As a language variation is associated with the master language entry, the language variations content is deleted and the API will not return a language variation for the language. The language variation is now ready for translation and returns to the '*Not yet translated*' [workflow state](/entries/workflow-states.md).

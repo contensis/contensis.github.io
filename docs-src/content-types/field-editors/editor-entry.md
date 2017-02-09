@@ -1,9 +1,11 @@
 # Entry field editor
-This editor is an important one allowing you to relate existing entries in other content types to the current entry that is being authored.
+This important editor, allows you to relate existing entries in other content types to the current entry that is being authored. You can make single or multiple selections of entries allowing you to create rich content models.
 
-You can make single or multiple selections of entries allowing you to create rich content models.
-
-> *e.g.* in a film content type you may want to list a selection of actors that are defined in your people content type.
+## Appearance
+**Single**
+![Single Entry Editor](/images/field-editor-entry-single.png)
+**Medium**
+![Multiple Entry Editor](/images/field-editor-entry-multiple.png)
 
 ## Settings
 | Setting name | Summary|
@@ -24,8 +26,8 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property provides a short hint describing the expected value of a field. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content the field should contain. |
 
 ### Content type
 The option selected from the dropdown determines which content type you want to model your content with.

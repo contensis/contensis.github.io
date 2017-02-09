@@ -3,6 +3,13 @@ This field editor allows an author to make single or multiple selections of imag
 
 Selection is made in an image gallery. Single or multiple selection of images is determined by the allow multiple field setting.
 
+## Appearance
+**Single**
+![Single Image Editor](/images/field-editor-single-image.png)
+**Medium**
+![Multiple Image Editor](/images/field-editor-multiple-image.png)
+
+
 ## Settings
 | Setting name | Summary|
 | ---| --- |
@@ -20,11 +27,12 @@ This field editor supports the following validation methods:
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property provides a short hint describing the expected value of a field. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content the field should contain. |
+
 
 ### Requires caption
 The caption requirement forces an author to include a caption for each image they have selected in the field editor.
 
 ### Requires caption error message
-An optional validation message can be entered to inform an author that a caption is required.
+An optional validation message can be entered to remind an author that a caption is required.

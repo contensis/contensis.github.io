@@ -11,7 +11,7 @@ Fine adjustments to location can be set by dragging the map pin to an exact posi
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Default value](/content-types/field-editors/field-settings.md#default-value) | You can set a default map location when the field editor is displayed. |
+| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value allows you to set the location that the map should be centred around in the entry editor. |
 
 ## Supported validation
 This field editor supports the following validation methods.
@@ -22,8 +22,8 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
-| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to *Medium*. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content that the field should contain. |
+| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. The default value is set to *Medium*. |
 
 ### Show latitude and longitude
 It's possible to enter exact latitude and longitude values into the entry editor, however, most authors will want to use the search or set a location using the map.

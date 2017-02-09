@@ -7,7 +7,7 @@ You can update the name of a project. Changing the project name will have no aff
 > The project name is restricted to 64 characters.
 
 ## Default language
-It's not possible to change the default language of the project.
+It's not possible to change the default language of a project.
 
 ## Supported languages
 If you have purchased the multilingual module then you can add and remove supported languages for your project.

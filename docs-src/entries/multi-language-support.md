@@ -3,32 +3,58 @@ When a multilingual license key is present in Contensis then entries can be crea
 
 > **Note**: The default language is set at project level and cannot be changed once created.
 
-## Translation workflow
-Entry translation follows a strict workflow and entries can only be created in another language once there is a published version of the default language. 
-
-This workflow ensures that as the default content is updated, authors of different languages will see that a change has been made. The change will be highlighted by the entries workflow state e.g. an entry is *Awaiting Translation*.
-
 ## Supported languages
 We support the following languages in Contensis.
 
-| Languages | Region code  |
+| Languages |  Language and region code  |
 |:--|:--|
 | Arabic | ar |
+| Bengali | bn |
+| Burmese | my |
 | Chinese | zh |
+| Chinese Simplified - China | zh-CN |
 | Danish | da |
 | Dutch | nl |
-| English | en-GB  |
-| English (American) | en-US |
-| English (Canadian) | en-CA |
-| English (Indian) | en-IN |
+| Dutch - Netherlands | nl-NL |
+| English - Canada | en-CA |
+| English - Great Britain | en-GB |
+| English - India | en-IN |
+| English - United States | en-US |
 | French | fr |
-| French (Dutch) | fr-NL|
-| Gaelic (Irish) | ga-IE |
-| Gaelic (Scottish) | gd-GB |
+| French - Canada | fr-CA |
+| French - France | fr-FR |
+| French - Netherlands | fr-NL |
 | German | de |
-| Korean | ko |
+| German - Germany | de-DE |
+| Greek | el |
+| Gujarati | gu |
+| Hindi | hi |
+| Indonesian | id |
+| Irish Gaelic - Ireland | ga-IE |
+| Italian | it |
+| Japanese | ja |
+| Kannada | kn |
+| Korean |  ko |
+| Korean - South Korea | ko-KR |
+| Malay | ms |
+| Marathi | mr |
+| Persian | fa |
+| Polish | pl |
 | Portuguese | pt |
+| Portuguese - Portugal | pt-PT |
+| Punjabi | pa |
+| Romanian | ro |
+| Russian | ru |
+| Scottish Gaelic - Scotland | gd-GB |
 | Spanish | es |
-| Spanish (American) | es-US |
-| Spanish (Mexican) | es-MX |
+| Spanish | es-ES |
+| Spanish - Mexico | es-MX |
+| Spanish - United States | es-US |
+| Swedish | sv |
+| Telugu | te |
+| Thai | th |
+| Turkish | tr |
+| Ukranian | uk |
+| Urdu | ur |
+| Vietnamese | vi |
 | Welsh | cy |

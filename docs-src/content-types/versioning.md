@@ -9,6 +9,6 @@ Each time a change is made to a content type and saved the minor version number 
 > *e.g.* Adding a field to a newly created content type and pressing **Save** would increment the version number from 0.1 to 0.2.
 
 ## Publishing a content type
-When a content type is ready for publishing, pressing the **Publish** button in the *Content Type Builder* will change the major version number.
+When a content type is ready for publishing, pressing **Publish** in the *Content Type Builder* will change the major version number.
 
-> *e.g.* Having added all my fields to a newly created content type and saved it. Pressing **Publish** increments the version number from 0.2 to 1.0 and changes the workflow state of the content type to *Publish*.
+> *e.g.* Having added all my fields to a newly created content type and saved it. Pressing **Publish** increments the version number from 0.2 to 1.0 and changes the workflow state of the content type to *Published*.

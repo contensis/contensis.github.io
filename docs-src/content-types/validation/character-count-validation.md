@@ -1,8 +1,8 @@
-# Character count
-The *Character count* validation rule checks that the number of characters in a text field is within a specified range. You can define a range by setting the minimum and the maximum number value.
+# Number of characters
+The *Number of characters* validation rule checks that the number of characters in a text field meets a minimum or maximum value or is between a range of values.
 
 ## Appearance
-![Character count validation](/images/validation-numberofcharacters.png)
+![Number of characters validation](/images/validation-numberofcharacters.png)
 
 ## How to set the validation
 With a content type open for editing:

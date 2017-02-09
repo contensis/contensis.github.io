@@ -105,3 +105,6 @@ When referring to specific buttons or icons in documentation – use a consisten
 - Project Search – not the spyglass, the search icon
 - When referring to a button, use of capitals is acceptable (to maintain consistency with Contensis UI)
 
+## Click, tap or press
+
+When documenting behaviour in the Contensis UI we should refer to a click as a press. This ensure we are covering touch behaviour or trackpad behaviour where a click isn't actually happening. 

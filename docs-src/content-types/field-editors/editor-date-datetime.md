@@ -1,5 +1,5 @@
-# Date/time field editors
-The date / time field editors have four distinct flavours, providing the flexibility to capture the data you require.
+# Date and time field editors
+The date and time field editors have four distinct flavours, providing the flexibility to capture the data you require.
 
 | Type | Summary|
 | ---| --- |
@@ -15,20 +15,18 @@ The date range editors become available when the format of a Date / Time field a
 ## Appearance
 **Date**
 ![Date Field Editor](/images/field-editor-date.png)
-**Date / Time**
-![Date / Time Field Editor](/images/field-editor-date-time.png)
+**Date and Time**
+![Date and Time Field Editor](/images/field-editor-date-time.png)
 **Date Range**
 ![Date Range Field Editor](/images/field-editor-date-range.png)
-**Date / Time Range**
-![Date / Time Range Field Editor](/images/field-editor-date-time-range.png)
+**Date and Time Range**
+![Date and Time Range Field Editor](/images/field-editor-date-time-range.png)
 
 ## Settings
 | Setting name | Summary|
 | ---| --- |
 | [Name](/content-types/field-editors/field-settings.md#name) | A text label to identify the field in an entry.|
 | [Field ID](/content-types/field-editors/field-settings.md#field-id) | A sanitised name to be used by the API. |
-| [Default value](/content-types/field-editors/field-settings.md#default-value) | The default value property sets the default content for a field when an entry is created. |
-
 
 ## Supported validation
 This field editor supports the following validation methods.
@@ -40,8 +38,8 @@ This field editor supports the following validation methods.
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property specifies a short hint that describes the expected value of a field. |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Placeholder text](/content-types/field-editors/field-properties.md#placeholder-text) | The placeholder property provides a short hint describing the expected value of a field. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content the field should contain. |
 
 ### Future dates
 This property sets if you want an author to be able to select a date in the future *e.g.* a date greater than today. This is enabled by default.

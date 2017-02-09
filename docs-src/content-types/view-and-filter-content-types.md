@@ -1,7 +1,7 @@
 # View and filter content types
 Content types are stored for individual projects. You can view content types by navigating to the *Content Types Listing* screen.
 
-## Content types list screen
+## Content types listing screen
 - Press the **Content Types & Entries** button in the sidebar. The *Content Types & Entries* drawer will open revealing a number of options.
 - Select **Content types** from the drawer to open the *Content Types Listing* screen.
 

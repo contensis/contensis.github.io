@@ -25,7 +25,7 @@ This field editor supports the following validation methods:
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content that the field should contain. |
 
 ### Root node
 The root node property allows you to select a node to determine what values can be selected by an author. If no node selection is made, then all taxonomy values will be visible in the editor.

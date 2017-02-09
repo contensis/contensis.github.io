@@ -1,12 +1,12 @@
 # Field properties
 
 ## Placeholder text
-The placeholder property specifies a short hint that describes the expected value of a field. The hint will be displayed in the input field before the user enters a value.
+The placeholder property provides a short hint describing the expected value of a field. The hint will be displayed in the input field before the user enters a value.
 
 > *e.g.* a sample value or a short description of the expected format
 
 ## Content guidelines
-This property provides guidance to an author of the expected content that the field should contain. Where possible you should make sure you include guidelines for every field in your content type.
+This property provides guidance to an author for the expected content that the field should contain. Where possible you should make sure you include guidelines for every field in your content type.
 
 This will help clarify to an author what content you want added to a field.
 

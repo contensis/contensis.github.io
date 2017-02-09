@@ -34,4 +34,4 @@ This field editor supports the following validation methods:
 The caption requirement forces an author to include a caption for each image they have selected in the field editor.
 
 ### Requires caption error message
-An optional validation message can be entered to inform an author that a caption is required.
+An optional validation message can be entered to remind an author that a caption is required.

@@ -28,9 +28,9 @@ GET: /api/projects/movieDb/entries/99aae243-ad6e-401b-89f9-90a51def6a18/?lang=de
 |HTTP Status Code|Reason|Response Model|
 |-|-|-|
 |200|Success|[Entry]()|
-|404|Entry not found|
-|500|Internal Server Error|
+|404|Entry not found||
+|500|Internal Server Error||
 
----
+
 
 

@@ -23,8 +23,8 @@ This field editor supports the following validation methods:
 ### Common properties
 | Property name | Summary|
 | ---| --- |
-| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author of the expected content that the field should contain. |
-| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. Its default value is set to *Medium*. |
+| [Content guidelines](/content-types/field-editors/field-properties.md#content-guidelines) |  Provides guidance to an author for the expected content that the field should contain. |
+| [Size](/content-types/field-editors/field-properties.md#editor-size) | Determines the size of the rendered editor in the entry editor. The default value is set to *Medium*. |
 
 
 ### Show toolbar

@@ -6,6 +6,8 @@ For most technical terms that use abbreviations, introduce the full phrase befor
 - HTML – all caps
 - CSS – all caps
 
+When using an abbreviation at the start of a title, ensure that the first word following the abbreviation is not capped up.
+
 Avoid these acronyms, because they are unclear or are internal jargon:
 - PS (meaning professional services)
 

@@ -3,7 +3,7 @@ The searchable dropdown field editor provides a way to use keyword searches to f
 
 The type of dropdown displayed will depend on whether multiple selection is allowed. Single selections allow a single value to be searched for and set, very similar to a standard dropdown menu with the additional support for search.
 
-When multiple selection is set each value selected is added as box with a cross which allows items to be removed from the list.
+When multiple selection is set each value selected is added as box with a cross icon which allows items to be removed from the list.
 
 ## Appearance
 ![Searchable Dropdown Field Editor](/images/field-editor-searchabledropdown.png)

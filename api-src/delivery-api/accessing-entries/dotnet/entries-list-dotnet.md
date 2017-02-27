@@ -337,8 +337,6 @@ public PagedList<Entry> List(EntryListOptions listOptions)
 
 The default for the PageOptions is PageSize: 20, PageIndex: 0.
 
-The default for the VersionStatus parameter is `VersionStatus.Published`.
-
 ### Examples
 
 {% method -%}
@@ -388,8 +386,6 @@ public Task<PagedList<Entry>> ListAsync(EntryListOptions listOptions)
 
 The default for the PageOptions is PageSize: 20, PageIndex: 0.
 
-The default for the VersionStatus parameter is `VersionStatus.Published`.
-
 ### Examples
 
 {% method -%}
@@ -403,7 +399,6 @@ var entries = await client.Entries.ListAsync(new EntryListOptions{
     ContentTypeId = "film",
     PageOptions = new PageOptions(3, 10),
     Order = new[] { "title", "-sys.version.created" },
-    VersionStatus = VersionStatus.Latest,
     Language = "fr-fr",
     EntryLinkDepth = 5,
     Fields = new { "title", "description", "releaseDate", "coverImage" }

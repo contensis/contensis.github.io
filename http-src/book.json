@@ -1,0 +1,22 @@
+{
+    "plugins": [
+        "theme-api"
+    ],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark",
+            "split": true,
+            "languages": [
+                {
+                    "lang": "http",
+                    "name": "HTTP",
+                    "default": true
+                },
+                {
+                    "lang": "json",
+                    "name": "JSON"
+                }
+            ]
+        }
+    }
+}

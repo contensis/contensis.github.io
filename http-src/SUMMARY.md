@@ -1,6 +1,4 @@
 ## API Reference
-* [Getting started](getting-started.md)
-* [Instantiation](instantiation.md)
 * [Handling errors](handling-errors.md)
 * [Language variations](language-variations.md)
 
@@ -18,7 +16,7 @@
 * [Asset](model/asset.md)
 
 
-## Delivery API
+## Accessing content
 * [List entries](delivery/list-entries.md)
 * [Get an entry](delivery/get-entry.md)
 * [Linked content](delivery/linked-content.md)

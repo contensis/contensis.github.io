@@ -108,33 +108,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../getting-started.html">
-            
-                <a href="../getting-started.html">
-            
-                    
-                    Getting started
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="../instantiation.html">
-            
-                <a href="../instantiation.html">
-            
-                    
-                    Instantiation
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="../handling-errors.html">
+        <li class="chapter " data-level="1.2" data-path="../handling-errors.html">
             
                 <a href="../handling-errors.html">
             
@@ -147,7 +121,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../language-variations.html">
+        <li class="chapter " data-level="1.3" data-path="../language-variations.html">
             
                 <a href="../language-variations.html">
             
@@ -287,13 +261,13 @@
 
     
         
-        <li class="header">Delivery API</li>
+        <li class="header">Accessing content</li>
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../delivery/list-entries.html">
+        <li class="chapter " data-level="4.1" data-path="../delivery/list-entries.md">
             
-                <a href="../delivery/list-entries.html">
+                <span>
             
                     
                     List entries
@@ -304,9 +278,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../delivery/get-entry.html">
+        <li class="chapter " data-level="4.2" data-path="../delivery/get-entry.md">
             
-                <a href="../delivery/get-entry.html">
+                <span>
             
                     
                     Get an entry
@@ -317,9 +291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../delivery/linked-content.html">
+        <li class="chapter " data-level="4.3" data-path="../delivery/linked-content.md">
             
-                <a href="../delivery/linked-content.html">
+                <span>
             
                     
                     Linked content
@@ -688,8 +662,156 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="entry">Entry</h1>
-
+                                <h1 id="entries">Entries</h1>
+<p>A full <a href="https://contensis.github.io/docs/entries/" target="_blank">overview of entries can be found here</a>.</p>
+<p>An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. </p>
+<h2 id="data-properties">Data properties</h2>
+<p>Data properties are items defined by the fields set in a content type. </p>
+<h2 id="standard-properties">Standard properties</h2>
+<p>These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">sys</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">The container of the entry system data</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The entry identifier as GUID</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.language</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The language of the entry variation</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.uri</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The entry uri</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.contentTypeId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The API identifier of the content type that the entry is based on</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.projectId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The API identifer of the project the entry belongs to</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.dataFormat</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Either &apos;entry&apos; or &apos;asset&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.metadata</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">Metadata associated with the entry instance</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left">Version information for the entry</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.created</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The date the entry was created</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.createdBy</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The user id of who created the entry</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.modified</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The date the entry version was last modified</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.modifiedBy</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The user id of who last modified the entry</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.published</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The date the entry version was last published</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.publishedBy</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The user id of who last published the entry</td>
+</tr>
+<tr>
+<td style="text-align:left">sys.version.versionNo</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The version of the entry</td>
+</tr>
+</tbody>
+</table>
+<div class="api-method"><div class="api-method-definition"><h2 id="example">Example</h2>
+<p>This JSON shows an example entry based on a Movie content type:</p>
+</div><div class="api-method-code"><div class="api-method-sample" data-lang="json" data-name="JSON"><pre><code class="lang-json">{
+    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Back to the future&quot;</span>,
+    <span class="hljs-string">&quot;tagline&quot;</span>: <span class="hljs-string">&quot;He&apos;s the only kid ever to get into trouble before he was born.&quot;</span>,
+    <span class="hljs-string">&quot;overview&quot;</span>: <span class="hljs-string">&quot;Marty McFly, a typical American teenager of the Eighties, is accidentally sent back to 1955 in a plutonium-powered DeLorean \&quot;time machine\&quot; invented by slightly mad scientist. During his often hysterical, always amazing trip back in time, Marty must make certain his teenage parents-to-be meet and fall in love - so he can get back to the future.&quot;</span>,
+    <span class="hljs-string">&quot;trailer&quot;</span>: <span class="hljs-string">&quot;https://www.youtube.com/watch?v=qvsgGtivCgs&quot;</span>,
+    <span class="hljs-string">&quot;releaseDate&quot;</span>: <span class="hljs-string">&quot;1985-07-02T23:00:00Z&quot;</span>,
+    <span class="hljs-string">&quot;actors&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;sys&quot;</span>: {
+                <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;a1c983d6-4aaf-4456-9f3d-a6eac3139f1c&quot;</span>,
+                <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
+                <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;entry&quot;</span>
+            }
+        },
+        {
+            <span class="hljs-string">&quot;sys&quot;</span>: {
+                <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;16f6f2de-e901-4bda-bf3f-092b93ae62a9&quot;</span>,
+                <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
+                <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;entry&quot;</span>
+            }
+        },
+        {
+            <span class="hljs-string">&quot;sys&quot;</span>: {
+                <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;09b87c0b-67b2-4028-9358-e29ff16f11da&quot;</span>,
+                <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
+                <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;entry&quot;</span>
+            }
+        }
+    ],
+    <span class="hljs-string">&quot;sys&quot;</span>: {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span>,
+        <span class="hljs-string">&quot;contentTypeId&quot;</span>: <span class="hljs-string">&quot;movie&quot;</span>,
+        <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;movieDb&quot;</span>,
+        <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
+        <span class="hljs-string">&quot;uri&quot;</span>: <span class="hljs-string">&quot;/api/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span>,
+        <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;entry&quot;</span>,
+        <span class="hljs-string">&quot;metadata&quot;</span>: {},
+        <span class="hljs-string">&quot;version&quot;</span>: {
+            <span class="hljs-string">&quot;createdBy&quot;</span>: <span class="hljs-string">&quot;s.derrickson&quot;</span>,
+            <span class="hljs-string">&quot;created&quot;</span>: <span class="hljs-string">&quot;2016-10-12T09:29:18.5144641+01:00&quot;</span>,
+            <span class="hljs-string">&quot;modifiedBy&quot;</span>: <span class="hljs-string">&quot;b.cumberbatch&quot;</span>,
+            <span class="hljs-string">&quot;modified&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
+            <span class="hljs-string">&quot;publishedBy&quot;</span>: <span class="hljs-string">&quot;b.cumberbatch&quot;</span>,
+            <span class="hljs-string">&quot;published&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
+            <span class="hljs-string">&quot;versionNo&quot;</span>: <span class="hljs-string">&quot;2.0&quot;</span>
+        }
+    }
+}
+</code></pre>
+</div></div></div>
                                 
                                 </section>
                             
@@ -722,7 +844,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Entry","level":"3.3","depth":1,"next":{"title":"Version info","level":"3.3.1","depth":2,"anchor":"#version-info","path":"model/entry.md","ref":"model/entry.md#version-info","articles":[]},"previous":{"title":"Content type","level":"3.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"model/entry.md","mtime":"2017-02-28T15:33:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-28T15:54:30.459Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Entry","level":"3.3","depth":1,"next":{"title":"Version info","level":"3.3.1","depth":2,"anchor":"#version-info","path":"model/entry.md","ref":"model/entry.md#version-info","articles":[]},"previous":{"title":"Content type","level":"3.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"model/entry.md","mtime":"2017-03-01T15:17:45.605Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-01T16:23:47.461Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

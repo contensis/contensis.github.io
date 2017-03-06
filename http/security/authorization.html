@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Authentication · GitBook</title>
+        <title>Authorization · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="authorization.html" />
+    <link rel="next" href="scopes.html" />
     
     
-    <link rel="prev" href="../localization.html" />
+    <link rel="prev" href="authentication.html" />
     
 
     </head>
@@ -141,7 +141,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="authentication.html">
+        <li class="chapter " data-level="2.1" data-path="authentication.html">
             
                 <a href="authentication.html">
             
@@ -154,7 +154,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="authorization.html">
+        <li class="chapter active" data-level="2.2" data-path="authorization.html">
             
                 <a href="authorization.html">
             
@@ -731,7 +731,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Authentication</a>
+        <a href=".." >Authorization</a>
     </h1>
 </div>
 
@@ -746,33 +746,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="authentication">Authentication</h1>
-<p>To access any resource from the Delivery API, a client needs to be authenticated with the Zengenti OAuth2 Identity Provider, which is hosted alongside the Contensis web application. Websites and applications are authenticated using the <a href="https://tools.ietf.org/html/rfc6749#section-4.4" target="_blank">OAuth2 Client Credential flow</a>, which is used to grant access to resources such as Entries, Content Types and Projects.</p>
-<p>The client needs to provide a <em>clientId</em>, a <em>shared secret</em> (which can be created and obtained from the <a href="https://contensis.github.io/docs/api-keys/" target="_blank">API Management screens</a>) and a list of <a href="scopes.html">scopes</a>. These are used to request an <em>access token</em> from the Zengenti Identity Provider, which can then cached locally and passed along with each request as a HTTP Authorization header to the Delivery API services.  If the authentication request fails then a 401 HTTP status code is returned and an exception is thrown.</p>
-<h3 id="example-request">Example request</h3>
-<pre><code class="lang-http"><span class="hljs-attribute">POST</span>: https://cms-yourcontensis.com/authenticate/connect/token
-<span class="hljs-attribute">Content-Type</span>: application/x-www-form-urlencoded
-<span class="hljs-attribute">Accept</span>: application/json
-
-<span class="ini"><span class="hljs-attr">grant_type</span>=client_credentials&amp;
-<span class="hljs-attr">client-id</span>=bda30e56-<span class="hljs-number">4</span>faf-<span class="hljs-number">412</span>c-b460-<span class="hljs-number">6</span>fce9342b162&amp;
-<span class="hljs-attr">client-secret</span>=<span class="hljs-number">1</span>e2759cee76b4ae7947722be71cc33e1-<span class="hljs-number">56</span>a63ae1361241fdab7c9ee90cc8a6b3-<span class="hljs-number">6</span>dc4c02b8eda43d49de499ad5eef1160&amp;
-<span class="hljs-attr">scope</span>=Entry_Read ContentType_Read Project_Read
-</span></code></pre>
-<h3 id="successful-response">Successful response</h3>
-<pre><code class="lang-http">200 - OK
+                                <h1 id="authorization">Authorization</h1>
+<h2 id="bearer-token">Bearer token</h2>
+<p>On a success authentication response the access_token value must be set as the Authorization HTTP header for all REST requests and must be formatted as follows:</p>
+<pre><code class="lang-http"><span class="hljs-attribute">Authorization</span>: bearer {access_token}
+</code></pre>
+<p>Periodically the access token will expire to ensure that if the access token is compromised then any grants are short lived. This expiry can be forecast by using the &quot;expires_in&quot; value returned from an Authentication response or can be handled by catching a <code>401 - Unautorized</code> response.</p>
+<pre><code class="lang-http">401 - Unauthorized
 {
-  &quot;access_token&quot;: &quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlmcEhwSnMxZkdnUG5NRURHdmNNbnhxUmZNMCIsImtpZCI6IjlmcEhwSnMxZkdnUG5NRURHdmNNbnhxUmZNMCJ9.eyJpc3MiOiJodHRwOi8vY21zLWRldmVsb3AuY2xvdWQuY29udGVuc2lzLmNvbS9hdXRoZW50aWNhdGUiLCJhdWQiOiJodHRwOi8vY21zLWRldmVsb3AuY2xvdWQuY29udGVuc2lzLmNvbS9hdXRoZW50aWNhdGUvcmVzb3VyY2VzIiwiZXhwIjoxNDg4Mzc5MzU4LCJuYmYiOjE0ODgzNzU3NTgsImNsaWVudF9pZCI6ImJkYTMwZTU2LTRmYWYtNDEyYy1iNDYwLTZmY2U5MzQyYjE2MiIsImNsaWVudF9zdWIiOiJiZGEzMGU1Ni00ZmFmLSQxMmMtYjQ2MC02ZmNlOTM0MmIxNjIiLCJjbGllbnRfdXNlcm5hbWUiOiJTaW1vbidzIGtleSIsInNjb3BlIjoiRW50cnlfUmVhZCJ9.g1krcmM_2Qe5ZIB_2c8LDmBVP8tc2V2j01PqvlHk8swVLTonF_x-5Iob0Tql8dJN_jDyJyJNx0dzZGAd-w1Gn8qS_6KQR9e4Uk4z1OAd6s1soo6WhXMqgbGJ8Hq9WXgOehZz_Vz2efdGFZ2JJLr7mRRNj-4XL21XhkVYXWnxXfugSZ0tJdBa2rMTxDgz8uVF9Tdrcduy7l85lOjTZL13CwMbrPQebCdTQCty7LKGfF_U3KaWyRtTXwZhUvhq-7wCtEuHymcEAa_8jokL8pT0vhPkvMKZ_SiVCkdnBbwQ6GNFMU_mfjt4b-xgxjUFsHDhQPczosxmn8I7__hRpcsZCQ&quot;,
-  &quot;expires_in&quot;: 3600,
-  &quot;token_type&quot;: &quot;Bearer&quot;
+  &quot;message&quot;: &quot;Authorization has been denied for this request.&quot;
 }
 </code></pre>
-<h3 id="unsuccessful-response">Unsuccessful response</h3>
-<pre><code class="lang-http">400 - BadRequest
-{
-  &quot;error&quot;: &quot;invalid_client&quot;
-}
-</code></pre>
+<p>On an expiry a new access token will need to be requested using the same mechanism as the initial token request.</p>
+<blockquote>
+<p><em>NOTE</em><br>If you want to implement your own Delivery API wrapper, then the implementation must implement the OAuth2 Client Credential flow as specified in <a href="https://tools.ietf.org/html/rfc6749#section-4.4" target="_blank">RFC-6749 standard</a> using the discovery document located at <code>https://*YOUR_CMS_URL*/authenticate</code>.</p>
+</blockquote>
 
                                 
                                 </section>
@@ -806,7 +794,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Authentication","level":"2.1","depth":1,"next":{"title":"Authorization","level":"2.2","depth":1,"path":"security/authorization.md","ref":"security/authorization.md","articles":[]},"previous":{"title":"Localization","level":"1.3","depth":1,"path":"localization.md","ref":"localization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/authentication.md","mtime":"2017-03-02T09:52:31.478Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T13:36:24.950Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Authorization","level":"2.2","depth":1,"next":{"title":"Scopes","level":"2.3","depth":1,"path":"security/scopes.md","ref":"security/scopes.md","articles":[]},"previous":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/authorization.md","mtime":"2017-03-02T09:51:59.444Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T13:36:24.950Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

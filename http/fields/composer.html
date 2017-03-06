@@ -108,9 +108,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../handling-errors.html">
+        <li class="chapter " data-level="1.2" data-path="../handling-errors.md">
             
-                <a href="../handling-errors.html">
+                <span>
             
                     
                     Handling errors
@@ -121,12 +121,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../language-variations.html">
+        <li class="chapter " data-level="1.3" data-path="../localization.html">
             
-                <a href="../language-variations.html">
+                <a href="../localization.html">
             
                     
-                    Language variations
+                    Localization
             
                 </a>
             
@@ -154,7 +154,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../security/scopes.html">
+        <li class="chapter " data-level="2.2" data-path="../security/authorization.html">
+            
+                <a href="../security/authorization.html">
+            
+                    
+                    Authorization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../security/scopes.html">
             
                 <a href="../security/scopes.html">
             
@@ -174,12 +187,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../model/projects.html">
+        <li class="chapter " data-level="3.1" data-path="../model/project.html">
             
-                <a href="../model/projects.html">
+                <a href="../model/project.html">
             
                     
-                    Projects
+                    Project
             
                 </a>
             
@@ -265,9 +278,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../delivery/list-entries.md">
+        <li class="chapter " data-level="4.1" data-path="../accessing/list-entries.html">
             
-                <span>
+                <a href="../accessing/list-entries.html">
             
                     
                     List entries
@@ -278,9 +291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../delivery/get-entry.md">
+        <li class="chapter " data-level="4.2" data-path="../accessing/get-entry.html">
             
-                <span>
+                <a href="../accessing/get-entry.html">
             
                     
                     Get an entry
@@ -291,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../delivery/linked-content.md">
+        <li class="chapter " data-level="4.3" data-path="../accessing/linked-content.html">
             
-                <span>
+                <a href="../accessing/linked-content.html">
             
                     
                     Linked content
@@ -556,6 +569,77 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#queries">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#sub-queries">
+            
+                    
+                    Sub-queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#ordering">
+            
+                    
+                    Ordering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#paging">
+            
+                    
+                    Paging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#weightings">
+            
+                    
+                    Weightings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="6.2" data-path="../search/query-operators.html">
@@ -662,7 +746,57 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="composer">Composer</h1>
+                                <h1 id="composed-fields">Composed fields</h1>
+<p>The composed field type contains the data that the <a href="https://contensis.github.io/docs/content-types/field-editors/editor-composer.html" target="_blank">Composer editor</a> defines. It is an array of objects which expose <em>type</em> and <em>value</em> properties.  The <em>type</em> property is a name given to an <em>allowed field type validation</em> defined in the content type that the entry is based on. The <em>value</em> contains the data for the field.</p>
+<p>An <em>allowed field type</em> is essentially any standard field (such as Image, Heading, Location, etc.) that restricts what types of field can be added to a composed field.</p>
+<p>For example, an <em>allowed field</em> could be defined with a type of <em>Heading</em> and named &quot;mainHeading&quot; or with a type of <em>Image</em> and named &quot;bannerImage&quot;. There can be multiple <em>allowed fields</em> based on the same type, but a composed field cannot contain other composed fields.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The name given to a field type defined in the content type.</td>
+</tr>
+<tr>
+<td style="text-align:left">value</td>
+<td style="text-align:left">Any</td>
+<td style="text-align:left">Any</td>
+<td style="text-align:left">The value of the field, which can be of any type.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
+<p>The JSON below shows an example composed field:</p>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;synopsis&quot;</span>: [
+        {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;mainHeading&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;Plot details&quot;</span>
+        },
+        {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;markup&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;Nearly 10 years have passed since Sarah Connor was targeted for termination by a cyborg from the future. Now her son, John, the future leader of the resistance, is the target for a newer, more deadly terminator. Once again, the resistance has managed to send a protector back to attempt to save John and his mother Sarah.&quot;</span>
+        },
+        {
+            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;memorableQuote&quot;</span>,
+            <span class="hljs-string">&quot;value&quot;</span>: {
+                <span class="hljs-string">&quot;text&quot;</span>: <span class="hljs-string">&quot;I&apos;ll be back!&quot;</span>,
+                <span class="hljs-string">&quot;source&quot;</span>: <span class="hljs-string">&quot;Terminator T-800&quot;</span>
+            }
+        }
+    ]
+}
+</code></pre>
 
                                 
                                 </section>
@@ -696,7 +830,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Composer","level":"5.4","depth":1,"next":{"title":"Date range","level":"5.5","depth":1,"path":"fields/date-range.md","ref":"fields/date-range.md","articles":[]},"previous":{"title":"Date Time","level":"5.3.5","depth":2,"anchor":"#date-time","path":"fields/basic-types.md","ref":"fields/basic-types.md#date-time","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fields/composer.md","mtime":"2017-02-28T16:10:10.288Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-01T16:23:47.461Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Composer","level":"5.4","depth":1,"next":{"title":"Date range","level":"5.5","depth":1,"path":"fields/date-range.md","ref":"fields/date-range.md","articles":[]},"previous":{"title":"Date Time","level":"5.3.5","depth":2,"anchor":"#date-time","path":"fields/basic-types.md","ref":"fields/basic-types.md#date-time","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fields/composer.md","mtime":"2017-03-02T16:19:41.597Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T13:36:24.950Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

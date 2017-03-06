@@ -1,6 +1,6 @@
 # Entries
 
-A full [overview of entries can be found here](https://contensis.github.io/docs/entries/).
+A full [overview of entry concepts can be found here](https://contensis.github.io/docs/entries/).
 
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
 
@@ -12,29 +12,42 @@ Data properties are items defined by the fields set in a content type.
 
 These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
-| sys | object | The container of the entry system data |
-| sys.id | string | The entry identifier as GUID |
-| sys.language | string | The language of the entry variation |
-| sys.uri | string | The entry uri |
-| sys.contentTypeId | string  | The API identifier of the content type that the entry is based on |
-| sys.projectId | string | The API identifer of the project the entry belongs to |
-| sys.dataFormat | string | Either 'entry' or 'asset' |
-| sys.metadata | object | Metadata associated with the entry instance |
-| sys.version | object | Version information for the entry | 
-| sys.version.created | string | The date the entry was created |
-| sys.version.createdBy | string | The user id of who created the entry |
-| sys.version.modified | string | The date the entry version was last modified |
-| sys.version.modifiedBy | string | The user id of who last modified the entry |
-| sys.version.published | string | The date the entry version was last published |
-| sys.version.publishedBy | string | The user id of who last published the entry |
-| sys.version.versionNo | string | The version of the entry | 
+### Entry
+
+| Property | Type | Format | Description |
+| :------- | :--- | :----- | :---------- |
+| [Field] | Any | Any | Field data that is defined in the associated [Content Type](./content-type.md). <br />The data is keyed by a unique field id.  |
+| sys | object | [Sys](#sys) | The container of the entry system data |
+
+### Sys
+
+| Property | Type | Format | Description |
+| :------- | :--- | :----- | :---------- |
+| id | string | GUID | The entry identifier as a 128 bit GUID|
+| projectId | string | | The API identifer of the project the entry belongs to |
+| contentTypeId | string | | The API identifier of the content type that the entry is based on |
+| dataFormat | string | | Either 'entry' or 'asset' |
+| language | string | CultureCode | The language of the entry variation as  |
+| uri | string | URI | The entry uri |
+| metadata | object | | Metadata associated with the entry instance |
+| version | object | [VersionInfo](#versioninfo) | Version info specific to the entry variation |
+
+### VersionInfo
+
+| Property | Type | Format | Description |
+| :------- | :--- | :----- | :---------- |
+| created | string | date-time | The date and time the entry was created |
+| screatedBy | string | | The user id of who created the entry |
+| modified | string | date-time | The date and time the entry version was last modified |
+| modifiedBy | string | | The user id of who last modified the entry |
+| published | string | date-time | The date and time the entry version was last published |
+| publishedBy | string | | The user id of who last published the entry |
+| versionNo | string | {Major}.{Minor} | The version of the entry | 
 
 
 {% method -%}
 
-## Example
+## Entry example
 
 This JSON shows an example entry based on a Movie content type:
 

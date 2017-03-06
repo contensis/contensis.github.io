@@ -4,11 +4,18 @@ A query tree structure, along with order and paging specifiers, allows a search 
 
 ## Queries
 
-{% method -%}
+### System fields
 
-This example demonstrates a simple search with default ordering and paging options:
+System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo". 
 
-{% sample lang="http" -%}
+The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
+
+### Data fields
+
+Fields defined in the Content Type for the entry can be accessed by their API id.
+
+This example demonstrates a simple search with default ordering, paging and weightings:
+
 ```http
 POST: /api/search
 
@@ -23,17 +30,12 @@ POST: /api/search
 }
 ```
 
-{% endmethod %}
-
 ## Sub-queries
 
-A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](/common/query-api/query-operators.md#logical-operators).
-
-{% method -%}
+A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](./query-operators.md#logical-operators).
 
 This example demonstrates a simple search with a sub-query:
 
-{% sample lang="http" -%}
 ```json
 {
     "where": [
@@ -57,15 +59,11 @@ This example demonstrates a simple search with a sub-query:
 }
 ```
 
-{% endmethod %}
-
 ## Ordering
 
 Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.
 
-{% method -%}
 
-{% sample lang="http" -%}
 Order by 'releaseDate'.
 
 ```json
@@ -96,15 +94,9 @@ Order by 'releaseDate' in a descending direction.
 }
 ```
 
-{% endmethod %}
-
 ## Paging
 
 Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly. The page number can also be specified to allow which set of results is to be returned.
-
-{% method -%}
-
-{% sample lang="http" -%}
 
 ```json
 {
@@ -113,44 +105,41 @@ Paging allows the number of results to be restricted to a defined count so that 
 }
 ```
 
-{% endmethod %}
 
 
-## Specifying fields
+## Weightings
 
-### System fields
 
-System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo". 
-
-The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
-
-### Data fields
-
-Fields defined in the Content Type for the entry can be accessed by their API id.
 
 ## Full example
 
 The example below combines the ordering and paging concepts:
 
-{% method -%}
-
-{% sample lang="http" -%}
 ```http
-POST: /api/search
+POST: /api/delivery/projects/{projectId}/entries/search
 {
+    "where": [
+        {
+            "field": "title",
+            "contains": "Batman",
+            "weight": 100
+        },
+        {
+            "field": "synopsis",
+            "textSearch": "gotham",
+            "weight": 30
+        },
+        {
+            "field": "runtime",
+            "greaterThan": 200
+        }
+    ],
+    "orderBy": [
+        {
+            "desc": "releaseDate"
+        }
+    ],
     "pageIndex": 1,
-    "pageSize": 50,
-    "orderBy": [{
-        "desc": "releaseDate"
-    }],
-    "where": [{
-        "field": "title",
-        "contains": "Batman"
-    }, {
-        "field": "runtime",
-        "greaterThan": 200
-    }]
+    "pageSize": 50
 }
 ```
-
-{% endmethod %}

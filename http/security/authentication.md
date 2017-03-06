@@ -1,15 +1,8 @@
 # Authentication
 
-## Overview
-
 To access any resource from the Delivery API, a client needs to be authenticated with the Zengenti OAuth2 Identity Provider, which is hosted alongside the Contensis web application. Websites and applications are authenticated using the [OAuth2 Client Credential flow](https://tools.ietf.org/html/rfc6749#section-4.4), which is used to grant access to resources such as Entries, Content Types and Projects.
 
 The client needs to provide a *clientId*, a *shared secret* (which can be created and obtained from the [API Management screens](https://contensis.github.io/docs/api-keys/)) and a list of [scopes](./scopes.md). These are used to request an *access token* from the Zengenti Identity Provider, which can then cached locally and passed along with each request as a HTTP Authorization header to the Delivery API services.  If the authentication request fails then a 401 HTTP status code is returned and an exception is thrown.
-
-
-{% method -%}
-
-{% sample lang="http" -%}
 
 ### Example request
 
@@ -44,17 +37,7 @@ scope=Entry_Read ContentType_Read Project_Read
 }
 ```
 
-{% endmethod %}
-
-## Bearer token
-
-On a success authentication response the access_token value must be set as the Authorization HTTP header for all REST requests and must be formated as follows:
-
-```http
-Authorization: bearer {access_token}
-```
 
 
-Periodically the access token will expire to ensure that if the access token is compromised then any grants are short lived. On an expiry a new access token will need to be requested using the same mechanism as the initial token request.
 
-If you want to implement your own Delivery API wrapper then the implementation must implement the OAuth2 Client Credential flow as specified in [RFC-6749 standard](https://tools.ietf.org/html/rfc6749#section-4.4) using the discovery document located at `https://*YOUR_CMS_URL*/authenticate`.
+

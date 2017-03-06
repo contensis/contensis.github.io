@@ -108,9 +108,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../handling-errors.html">
+        <li class="chapter " data-level="1.2" data-path="../handling-errors.md">
             
-                <a href="../handling-errors.html">
+                <span>
             
                     
                     Handling errors
@@ -121,12 +121,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../language-variations.html">
+        <li class="chapter " data-level="1.3" data-path="../localization.html">
             
-                <a href="../language-variations.html">
+                <a href="../localization.html">
             
                     
-                    Language variations
+                    Localization
             
                 </a>
             
@@ -154,7 +154,20 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="../security/scopes.html">
+        <li class="chapter " data-level="2.2" data-path="../security/authorization.html">
+            
+                <a href="../security/authorization.html">
+            
+                    
+                    Authorization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../security/scopes.html">
             
                 <a href="../security/scopes.html">
             
@@ -174,12 +187,12 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../model/projects.html">
+        <li class="chapter " data-level="3.1" data-path="../model/project.html">
             
-                <a href="../model/projects.html">
+                <a href="../model/project.html">
             
                     
-                    Projects
+                    Project
             
                 </a>
             
@@ -265,9 +278,9 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../delivery/list-entries.md">
+        <li class="chapter " data-level="4.1" data-path="../accessing/list-entries.html">
             
-                <span>
+                <a href="../accessing/list-entries.html">
             
                     
                     List entries
@@ -278,9 +291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../delivery/get-entry.md">
+        <li class="chapter " data-level="4.2" data-path="../accessing/get-entry.html">
             
-                <span>
+                <a href="../accessing/get-entry.html">
             
                     
                     Get an entry
@@ -291,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../delivery/linked-content.md">
+        <li class="chapter " data-level="4.3" data-path="../accessing/linked-content.html">
             
-                <span>
+                <a href="../accessing/linked-content.html">
             
                     
                     Linked content
@@ -556,6 +569,77 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#queries">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#sub-queries">
+            
+                    
+                    Sub-queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#ordering">
+            
+                    
+                    Ordering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#paging">
+            
+                    
+                    Paging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#weightings">
+            
+                    
+                    Weightings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="6.2" data-path="../search/query-operators.html">
@@ -662,7 +746,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="image">Image</h1>
+                                <h1 id="images">Images</h1>
+<p>The Image type container of an image asset with an associated caption.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Property</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">asset</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left"><a href="../model/asset.html">Asset</a></td>
+<td style="text-align:left">The asset that is linked to from the entry</td>
+</tr>
+<tr>
+<td style="text-align:left">caption</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The image caption, defined in the entry</td>
+</tr>
+</tbody>
+</table>
+<h2 id="remarks">Remarks</h2>
+<p>The caption property allows instance specific text to be associated with a linked image asset.</p>
+<p>Unlike entry links, an asset link is always resolved so that the full asset details are included when retrieved.</p>
+<h2 id="example">Example</h2>
+<pre><code class="lang-json">{
+    <span class="hljs-string">&quot;asset&quot;</span>: {
+        <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Fight Club Poster&quot;</span>,
+        <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Fight Club main poster artwork&quot;</span>,
+        <span class="hljs-string">&quot;altText&quot;</span>: <span class="hljs-string">&quot;Fight Club&quot;</span>,
+        <span class="hljs-string">&quot;sys&quot;</span>: {
+            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;a83c9fcc-51ef-41aa-878f-af5a33ba4b2f&quot;</span>,
+            <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;movieDb&quot;</span>,
+            <span class="hljs-string">&quot;contentTypeId&quot;</span>: <span class="hljs-string">&quot;Image&quot;</span>,
+            <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;asset&quot;</span>,
+            <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
+            <span class="hljs-string">&quot;uri&quot;</span>: <span class="hljs-string">&quot;/images/1999/drama/fight-club.jpeg&quot;</span>,
+            <span class="hljs-string">&quot;properties&quot;</span>: {
+                <span class="hljs-string">&quot;filename&quot;</span>: <span class="hljs-string">&quot;fight-club.jpeg&quot;</span>,
+                <span class="hljs-string">&quot;fileSize&quot;</span>: <span class="hljs-number">6033</span>,
+                <span class="hljs-string">&quot;width&quot;</span>: <span class="hljs-number">300</span>,
+                <span class="hljs-string">&quot;height&quot;</span>: <span class="hljs-number">450</span>
+            },
+            <span class="hljs-string">&quot;version&quot;</span>: {
+                <span class="hljs-string">&quot;createdBy&quot;</span>: <span class="hljs-string">&quot;c.alahniuk&quot;</span>,
+                <span class="hljs-string">&quot;created&quot;</span>: <span class="hljs-string">&quot;1999-11-02T17:30:31.73&quot;</span>,
+                <span class="hljs-string">&quot;modifiedBy&quot;</span>: <span class="hljs-string">&quot;b.pitt&quot;</span>,
+                <span class="hljs-string">&quot;modified&quot;</span>: <span class="hljs-string">&quot;1999-11-02T17:30:31.73&quot;</span>,
+                <span class="hljs-string">&quot;publishedBy&quot;</span>: <span class="hljs-string">&quot;d.fincher&quot;</span>,
+                <span class="hljs-string">&quot;published&quot;</span>: <span class="hljs-string">&quot;1999-11-02T17:30:31.73&quot;</span>,
+                <span class="hljs-string">&quot;versionNo&quot;</span>: <span class="hljs-string">&quot;1.0&quot;</span>
+            }
+        }
+    },
+    <span class="hljs-string">&quot;caption&quot;</span>: <span class="hljs-string">&quot;Fight club is a great film!&quot;</span>
+}
+</code></pre>
 
                                 
                                 </section>
@@ -696,7 +842,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Image","level":"5.6","depth":1,"next":{"title":"Location","level":"5.7","depth":1,"path":"fields/location.md","ref":"fields/location.md","articles":[]},"previous":{"title":"Date range","level":"5.5","depth":1,"path":"fields/date-range.md","ref":"fields/date-range.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fields/image.md","mtime":"2017-02-28T16:10:10.303Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-01T16:23:47.461Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Image","level":"5.6","depth":1,"next":{"title":"Location","level":"5.7","depth":1,"path":"fields/location.md","ref":"fields/location.md","articles":[]},"previous":{"title":"Date range","level":"5.5","depth":1,"path":"fields/date-range.md","ref":"fields/date-range.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fields/image.md","mtime":"2017-03-02T16:14:29.783Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T13:36:24.950Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

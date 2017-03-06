@@ -1,25 +1,24 @@
 ## API Reference
 * [Handling errors](handling-errors.md)
-* [Language variations](language-variations.md)
+* [Localization](localization.md)
 
 ## Security
 * [Authentication](security/authentication.md)
+* [Authorization](security/authorization.md)
 * [Scopes](security/scopes.md)
 
-
 ## Model
-* [Projects](model/projects.md)
+* [Project](model/project.md)
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
   * [Version info](model/entry.md#version-info)
   * [Methods](model/entry.md#methods)
 * [Asset](model/asset.md)
 
-
 ## Accessing content
-* [List entries](delivery/list-entries.md)
-* [Get an entry](delivery/get-entry.md)
-* [Linked content](delivery/linked-content.md)
+* [List entries](accessing/list-entries.md)
+* [Get an entry](accessing/get-entry.md)
+* [Linked content](accessing/linked-content.md)
 
 ## Field types
 * [Data types](fields/data-types.md)
@@ -42,6 +41,11 @@
 
 ## Search
 * [Search basics](search/search-basics.md)
+  * [Queries](search/search-basics.md#queries)
+  * [Sub-queries](search/search-basics.md#sub-queries)
+  * [Ordering](search/search-basics.md#ordering)
+  * [Paging](search/search-basics.md#paging)
+  * [Weightings](search/search-basics.md#weightings)
 * [Query operators](search/query-operators.md)
 
 ## Cookbook

@@ -1,6 +1,6 @@
 # Get an Entry by id
 
-**GET** /api/delivery/**{projectId}**/entries/**{entryId}**
+**GET:** /api/delivery/**{projectId}**/entries/**{entryId}**
 
 ## Parameters
 

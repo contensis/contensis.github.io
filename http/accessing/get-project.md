@@ -2,7 +2,7 @@
 
 Returns a project resource by it's API id.
 
-**GET** /api/delivery/**{projectId}**
+**GET:** /api/delivery/**{projectId}**
 
 ## Example
 

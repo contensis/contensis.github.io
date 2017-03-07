@@ -1,5 +1,4 @@
 ## API Reference
-* [Handling errors](handling-errors.md)
 * [Localization](localization.md)
 
 ## Security
@@ -11,31 +10,27 @@
 * [Project](model/project.md)
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
-  * [Version info](model/entry.md#version-info)
-  * [Methods](model/entry.md#methods)
+  * [Sys](model/entry.md#sys)
+  * [VersionInfo](model/entry.md#versioninfo)
 * [Asset](model/asset.md)
+* [Error](errors.md)
 
 ## Accessing content
-* [List entries](accessing/list-entries.md)
 * [Get an entry](accessing/get-entry.md)
+* [List entries](accessing/list-entries.md)
+* [Get a content type](accessing/get-contenttype.md)
+* [Get a project](accessing/get-project.md)
 * [Linked content](accessing/linked-content.md)
 
 ## Field types
 * [Data types](fields/data-types.md)
 * [Data formats](fields/data-formats.md)
 * [Basic types](fields/basic-types.md)
-  * [Text](fields/basic-types.md#text)
-  * [Number](fields/basic-types.md#number)
-  * [Boolean](fields/basic-types.md#boolean)
-  * [List](fields/basic-types.md#list)
-  * [Date Time](fields/basic-types.md#date-time)
-* [Composer](fields/composer.md)
-* [Date range](fields/date-range.md)
+* [Composed](fields/composed.md)
+* [DateRange](fields/date-range.md)
 * [Image](fields/image.md)
 * [Location](fields/location.md)
-* [Heading](fields/heading.md)
 * [Quote](fields/quote.md)
-* [Taxonomy](fields/taxonomy.md)
 * [HTML](fields/html.md)
 * [Markdown](fields/markdown.md)
 
@@ -48,7 +43,7 @@
   * [Weightings](search/search-basics.md#weightings)
 * [Query operators](search/query-operators.md)
 
-## Cookbook
+<!--## Cookbook
 * [Example one](cookbook/example-one.md)
 * [Example two](cookbook/example-two.md)
-* [Example three](cookbook/example-three.md)
+* [Example three](cookbook/example-three.md)-->

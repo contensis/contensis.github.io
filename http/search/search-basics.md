@@ -20,13 +20,16 @@ This example demonstrates a simple search with default ordering, paging and weig
 POST: /api/search
 
 {
-    "where": [{
-        "field": "title",
-        "contains": "Batman"
-    }, {
-        "field": "runtime",
-        "greaterThan": 200
-    }]
+    "where": [
+        {
+            "field": "title",
+            "contains": "Batman"
+        }, 
+        {
+            "field": "runtime",
+            "greaterThan": 200
+        }
+    ]
 }
 ```
 
@@ -105,8 +108,6 @@ Paging allows the number of results to be restricted to a defined count so that 
 }
 ```
 
-
-
 ## Weightings
 
 
@@ -143,3 +144,8 @@ POST: /api/delivery/projects/{projectId}/entries/search
     "pageSize": 50
 }
 ```
+
+|HTTP Status Code|Reason|Response Model|
+|-|-|-|
+|200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
+|500|Internal Server Error|[Error](/model/errors.md)|

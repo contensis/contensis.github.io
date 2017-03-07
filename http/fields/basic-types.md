@@ -1,12 +1,20 @@
-# Basic types
+# Basic field types
 
-## Text
-## Number
+<!--## Text
+## Decimal
+## Integer
 ## Boolean
 ## List
-## Date time
+## Date time-->
 
 | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | text | string | | The quote text |
-| source | string | | The source of the quote |
+
+
+# Enhanced types
+
+* Html
+* Markdown
+* Taxonomy
+* Heading

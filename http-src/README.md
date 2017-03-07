@@ -1,4 +1,4 @@
-# Delivery API
+# Contensis delivery API
 
 ## Introduction
 
@@ -14,3 +14,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 [Listing Entries](/accessing/list-entries.md)
 
 [Searching for Entries](/search/entry-search.md)
+
+[Getting a Project](/accessing/get-project.md)
+
+[Getting a Content Type](/accessing/get-contenttype.md)

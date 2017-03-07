@@ -2,7 +2,7 @@
 
 Returns a content type resource by it's API id.
 
-**GET** /api/delivery/**{projectId}**/contenttypes/**{contentTypeId}**
+**GET:** /api/delivery/**{projectId}**/contenttypes/**{contentTypeId}**
 
 ## Parameters
 

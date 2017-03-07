@@ -60,3 +60,8 @@ Never underline anything
 
 ## Video
 Todo
+
+## URLS
+We use lowercase characters in out URL structures in all cases.
+
+e.g. https://zenhub.zengenti.com/contensis/r83/kb/assets-uploadable-content/video/insert-a-video.aspx

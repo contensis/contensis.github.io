@@ -158,16 +158,6 @@ This would find any item that has a field called *blends* with a value exactly m
 }
 ```
 
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.EqualTo("blends", 5)
-);
-```
-
-{% endmethod %}
-
 ---
 {% method -%}
 ### Exists
@@ -185,16 +175,6 @@ You can use a value of *false* if you want documents that do not contain a given
 }
 ```
 
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.Exists("fieldName", true)
-);
-```
-
-{% endmethod %}
-
 ---
 {% method -%}
 ### GreaterThan
@@ -211,16 +191,6 @@ In the example any item that has a field called *first* and a value that is grea
 }
 ```
 
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-  Op.GreaterThan("first", 7)
-);
-```
-
-{% endmethod %}
-
 ---
 {% method -%}
 ### GreaterThanOrEqualTo
@@ -236,16 +206,6 @@ In the example any item that has a field called *first* and a value that is grea
     }]
 }
 ```
-
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.GreaterThanOrEqualTo("first", 7)
-);
-```
-
-{% endmethod %}
 
 ---
 {% method -%}
@@ -264,16 +224,6 @@ The values should be of the same type, in this case *integer*.
 }
 ```
 
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.In("first", 1, 7, 11)
-);
-```
-
-{% endmethod %}
-
 ---
 {% method -%}
 ### LessThan
@@ -289,16 +239,6 @@ In the example any item that has a field called *first* and a value that is less
     }]
 }
 ```
-
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.LessThan("first", 7)
-);
-```
-
-{% endmethod %}
 
 ---
 {% method -%}
@@ -316,16 +256,6 @@ In the example any item that has a field called *first* and a value that is less
 }
 ```
 
-{% sample lang="cs" -%}
-
-```cs
-var query = new Query(
-    Op.LessThanOrEqualTo("first", 7)
-);
-```
-
-{% endmethod %}
-
 ---
 {% method -%}
 ### StartsWith
@@ -342,14 +272,21 @@ In the example if the *name* field contains a value starting with ‘war’ it w
 }
 ```
 
-{% sample lang="cs" -%}
+---
 
-```cs
-var query = new Query(
-    Op.StartsWith("name", "war")
-);
+{% method -%}
+### FreeText
+
+In the example the field 'synopsis' is searched upon for any words that match 'gotham' or 'dark' or 'knight'.
+
+{% sample lang="json" -%}
+```json
+{
+    "where": [{
+        "field": "synopsis",
+        "freeText": "gotham dark knight"
+    }]
+}
 ```
-
-{% endmethod %}
 
 ---

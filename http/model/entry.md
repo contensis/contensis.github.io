@@ -27,7 +27,7 @@ These are the standard properties that all entries have. The language property i
 | projectId | string | | The API identifer of the project the entry belongs to |
 | contentTypeId | string | | The API identifier of the content type that the entry is based on |
 | dataFormat | string | | Either 'entry' or 'asset' |
-| language | string | CultureCode | The language of the entry variation as  |
+| language | string | [LanguageCode](/localization.md) | The language code of the entry variation |
 | uri | string | URI | The entry uri |
 | metadata | object | | Metadata associated with the entry instance |
 | version | object | [VersionInfo](#versioninfo) | Version info specific to the entry variation |

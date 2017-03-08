@@ -20,10 +20,9 @@
 ## Model
 * [Project](model/project.md)
 * [Content type](model/content-type.md)
-* [Entry](model/entry.md#entries)
-  <!--* [Sys](model/entry.md#sys)-->
-* [VersionInfo](model/version-info.md)
+* [Entry](model/entry.md)
 * [Asset](model/asset.md)
+* [VersionInfo](model/version-info.md)
 * [Composed](model/composed.md)
 * [DateRange](model/date-range.md)
 * [Image](model/image.md)

@@ -127,7 +127,7 @@ POST: /api/delivery/projects/{projectId}/entries/search
         },
         {
             "field": "synopsis",
-            "textSearch": "gotham",
+            "freeText": "gotham",
             "weight": 30
         },
         {

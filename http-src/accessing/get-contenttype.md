@@ -14,7 +14,7 @@ Returns a content type resource by it's API id.
 ## Example
 
 ```http
-GET: /api/projects/movieDb/contenttypes/movie
+GET: /api/delivery/projects/movieDb/contenttypes/movie
 ```
 
 ## Response Messages

@@ -5,7 +5,7 @@
 ## Parameters
 
 |Name|Parameter Type|Type|Format|Description|
-|-|-|-|-|-|
+|:-|:-|:-|:-|:-|
 |projectId|path|string||The project identifier|
 |entryId|path|string|GUID|The entry identifier as a 128 bit GUID|
 |lang|query|string||The specified language variation for the entry. If no value is provided then the project default language is used|
@@ -20,7 +20,7 @@ GET: /api/delivery/projects/movieDb/entries/99aae243-ad6e-401b-89f9-90a51def6a18
 ## Response Messages
 
 |HTTP Status Code|Reason|Response Model|
-|-|-|-|
-|200|Success|[Entry object](/model/entry.md)|
-|404|Entry not found|[Error](../model/errors.md)|
-|500|Internal Server Error|[Error](../model/errors.md)|
+|:-|:-|:-|
+|200|Success|[Entry](/model/entry.md)|
+|404|Entry not found|[Error](/model/errors.md)|
+|500|Internal Server Error|[Error](/model/errors.md)|

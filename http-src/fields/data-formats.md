@@ -9,13 +9,15 @@ The DataFormat is a string value and is designed to allow custom types to be add
 The following list contains the data formats that are currently understood by Contensis:
 
 | Data Format | Data Type | Description |
-| ------ | --------- | ----------- |
-| entry | Object | An entry format for storing content |
-| asset | Object | An asset format that represents a file resource |
-| location | Object | Represents a point on the surface of the Earth |
-| quote | Object | A quote with text and a source |
-| heading | String | Represents a document heading |
-| field | ObjectArray |Represents a composed field type, defined as an ObjectArray Data Type |
-| image | Object | Wraps an Asset with an additional Caption property |
-| html | String | A string of HTML markup |
-| markdown | String | A string of Markdown markup |
+| :---------- | :-------- | :---------- |
+| [entry](/model/entry.md) | object | An entry format for storing content |
+| [asset](/model/asset.md) | object | An asset format that represents a file resource |
+| [location](/model/location.md) | object | Represents a point on the surface of the Earth |
+| [quote](/model/quote.md) | object | A quote with text and a source |
+| [dateRange](/model/date-range.md) | object | Represents a document heading |
+| field | objectArray |Represents a composed field type, defined as an ObjectArray Data Type |
+| [image](/model/image.md) | object | Wraps an Asset with an additional Caption property |
+| heading | string | Represents a document heading |
+| html | string | A string of HTML markup |
+| markdown | string | A string of Markdown markup |
+

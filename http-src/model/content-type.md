@@ -6,19 +6,21 @@ A Content Type resource can be retrieved from the Delivery API to understand the
 | :------- | :--- | :----- | :---------- |
 | id | string | | A friendly unique content type identifier |
 | projectId | string |  | The project identifier |
-| name | object | [LocalizedValue]()  | The friendly name given to a content type |
-| description | object | [LocalizedValue]() | The description text given to a content type |
+| name | object | [LocalizedValue](#localizedvalue)  | The friendly name given to a content type |
+| description | object | [LocalizedValue](#localizedvalue) | The description text given to a content type |
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings |
-| fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry |
+| fields | object [...] | [Field](/model/field.md)  | A collection of fields that form the schema for an entry |
 | enabled | boolean |  |  |
 | defaultLanguage | string | [LanguageCode](/localization.md) |  |
 | supportedLanguages | string [...] | [LanguageCode](/localization.md) |  |
 | workflowId | string |  | The workflow that derived entries will  |
 | dataFormat | string |  | Either 'entry' or 'asset' |
 | previewUrl | string |  | The url that an example of an entry based on the content type can be viewed |
-| version | object | [VersionInfo](#versioninfo) | Version infomation about the content type |
+| version | object | [VersionInfo](/model/version-info.md) | Version infomation about the content type |
 
 ## Field
+
+The field object is the definition for a what becomes a field within an entry. The field also contains the validations and editor configuration that is used within the Contensis UI and services.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
@@ -28,26 +30,19 @@ A Content Type resource can be retrieved from the Delivery API to understand the
 | dataType | string | [DataType](/fields/data-types.md) | The field data type |
 | dataFormat | string | [DataType](/fields/data-formats.md) | The field data format |
 | default | object | [LocalizedValue](#localizedvalue) | The default value for the field if no value is provided by an editor |
+| validations | object |  | The validations that will be performed on the field when the entry is either created or updated |
 | editor | object | Editor | Configuration for the Contensis entry editor |
 
+## LocalizedValue
 
-## VersionInfo
+A localized value is a object that has values that are keyed by [language codes](/localization.md) which allows multilingual variations of a specific property.
 
-| Property | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| created | string | date-time | The date and time the entry was created |
-| screatedBy | string | | The user id of who created the entry |
-| modified | string | date-time | The date and time the entry version was last modified |
-| modifiedBy | string | | The user id of who last modified the entry |
-| published | string | date-time | The date and time the entry version was last published |
-| publishedBy | string | | The user id of who last published the entry |
-| versionNo | string | {Major}.{Minor} | The version of the entry | 
 
 ## Example
 
 ```json
 {
-    "id": "movie",
+  "id": "movie",
   "projectId": "website",
   "name": {
     "en-GB": "Movie"
@@ -158,16 +153,15 @@ A Content Type resource can be retrieved from the Delivery API to understand the
   ],
   "workflowId": "ContensisMultilingual",
   "dataFormat": "entry",
-  "previewUrl": "http://www.mymoviewebsite.com/movies/terminator"
+  "previewUrl": "http://www.mymoviewebsite.com/movies/terminator",
   "version": {
-    "createdBy": "topdog",
-    "created": "2017-03-07T14:37:27.0998174+00:00",
-    "modifiedBy": "topdog",
-    "modified": "2017-03-07T14:39:16.3337294+00:00",
-    "publishedBy": "topdog",
-    "published": "2017-03-07T14:39:19.3495296+00:00",
-    "versionNo": "1.0"
-  }
+        "createdBy": "s.derrickson",
+        "created": "2016-10-12T09:29:18.5144641+01:00",
+        "modifiedBy": "b.cumberbatch",
+        "modified": "2016-10-13T10:15:12.1973648+01:00",
+        "publishedBy": "b.cumberbatch",
+        "published": "2016-10-13T10:15:12.1973648+01:00",
+        "versionNo": "2.0"
+    }
 }
-
 ```

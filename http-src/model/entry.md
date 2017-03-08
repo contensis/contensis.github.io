@@ -32,17 +32,6 @@ These are the standard properties that all entries have. The language property i
 | metadata | object | | Metadata associated with the entry instance |
 | version | object | [VersionInfo](#versioninfo) | Version info specific to the entry variation |
 
-### VersionInfo
-
-| Property | Type | Format | Description |
-| :------- | :--- | :----- | :---------- |
-| created | string | date-time | The date and time the entry was created |
-| screatedBy | string | | The user id of who created the entry |
-| modified | string | date-time | The date and time the entry version was last modified |
-| modifiedBy | string | | The user id of who last modified the entry |
-| published | string | date-time | The date and time the entry version was last published |
-| publishedBy | string | | The user id of who last published the entry |
-| versionNo | string | {Major}.{Minor} | The version of the entry | 
 
 
 {% method -%}

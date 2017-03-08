@@ -6,15 +6,6 @@
 * [Authorization](security/authorization.md)
 * [Scopes](security/scopes.md)
 
-## Model
-* [Project](model/project.md)
-* [Content type](model/content-type.md)
-* [Entry](model/entry.md)
-  * [Sys](model/entry.md#sys)
-  * [VersionInfo](model/entry.md#versioninfo)
-* [Asset](model/asset.md)
-* [Error](errors.md)
-
 ## Accessing content
 * [Get an entry](accessing/get-entry.md)
 * [List entries](accessing/list-entries.md)
@@ -25,14 +16,21 @@
 ## Field types
 * [Data types](fields/data-types.md)
 * [Data formats](fields/data-formats.md)
-* [Basic types](fields/basic-types.md)
-* [Composed](fields/composed.md)
-* [DateRange](fields/date-range.md)
-* [Image](fields/image.md)
-* [Location](fields/location.md)
-* [Quote](fields/quote.md)
-* [HTML](fields/html.md)
-* [Markdown](fields/markdown.md)
+
+## Model
+* [Project](model/project.md)
+* [Content type](model/content-type.md)
+* [Entry](model/entry.md#entries)
+  <!--* [Sys](model/entry.md#sys)-->
+* [VersionInfo](model/version-info.md)
+* [Asset](model/asset.md)
+* [Composed](model/composed.md)
+* [DateRange](model/date-range.md)
+* [Image](model/image.md)
+* [Location](model/location.md)
+* [Quote](model/quote.md)
+* [Paged list](model/paged-list.md)
+* [Error](model/errors.md)
 
 ## Search
 * [Search basics](search/search-basics.md)

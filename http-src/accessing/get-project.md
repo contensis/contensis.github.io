@@ -13,7 +13,7 @@ GET: /api/delivery/projects/movieDb
 ## Response Messages
 
 |HTTP Status Code|Reason|Response Model|
-|-|-|-|
-|200|Success|[Project](/model/entry.md)|
-|404|Project not found|[Error](../model/errors.md)|
-|500|Internal Server Error|[Error](../model/errors.md)|
+|:-|:-|:-|
+|200|Success|[Project](/model/project.md)|
+|404|Project not found|[Error](/model/errors.md)|
+|500|Internal Server Error|[Error](/model/errors.md)|

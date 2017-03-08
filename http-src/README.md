@@ -13,7 +13,7 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 [Listing Entries](/accessing/list-entries.md)
 
-[Searching for Entries](/search/entry-search.md)
+[Searching for Entries](/search/search-basics.md)
 
 [Getting a Project](/accessing/get-project.md)
 

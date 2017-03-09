@@ -589,25 +589,35 @@
 <table>
 <thead>
 <tr>
-<th>Scope name</th>
-<th>Associated methods</th>
+<th style="text-align:left">Scope name</th>
+<th style="text-align:left">Associated methods</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Entry_Read</td>
-<td><a href="../accessing/get-entry.html">Get Entry by id</a><br><a href="../accessing/list-entries.html#listall">List Entries</a><br><a href="../accessing/list-entries.html#listbycontenttype">List Entries for content type</a></td>
+<td style="text-align:left">Entry_Read</td>
+<td style="text-align:left"><ul><li>[Get Entry by id](/accessing/get-entry.md)</li><li>[List Entries](/accessing/list-entries.md#listall)</li><li>[List Entries for content type](/accessing/list-entries.md#listbycontenttype)</li></ul></td>
 </tr>
 <tr>
-<td>ContentType_Read</td>
-<td><a href="../accessing/get-contenttype.html">Get content type</a></td>
+<td style="text-align:left">ContentType_Read</td>
+<td style="text-align:left"><a href="../accessing/get-contenttype.html">Get content type</a></td>
 </tr>
 <tr>
-<td>Project_Read</td>
-<td><a href="../accessing/get-project.html">Get project</a></td>
+<td style="text-align:left">Project_Read</td>
+<td style="text-align:left"><a href="../accessing/get-project.html">Get project</a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="example-request">Example request</h2>
+<pre><code class="lang-http"><span class="hljs-attribute">POST</span>: https://cms-yourcontensis.com/authenticate/connect/token
+<span class="hljs-attribute">Content-Type</span>: application/x-www-form-urlencoded
+<span class="hljs-attribute">Accept</span>: application/json
+
+<span class="ini"><span class="hljs-attr">grant_type</span>=client_credentials&amp;
+<span class="hljs-attr">client-id</span>=bda30e56-<span class="hljs-number">4</span>faf-<span class="hljs-number">412</span>c-b460-<span class="hljs-number">6</span>fce9342b162&amp;
+<span class="hljs-attr">client-secret</span>=<span class="hljs-number">1</span>e2759cee76b4ae7947722be71cc33e1-<span class="hljs-number">56</span>a63ae1361241fdab7c9ee90cc8a6b3-<span class="hljs-number">6</span>dc4c02b8eda43d49de499ad5eef1160&amp;
+<span class="hljs-attr">scope</span>=Entry_Read ContentType_Read Project_Read
+</span></code></pre>
 
                                 
                                 </section>
@@ -641,7 +651,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Scopes","level":"2.3","depth":1,"next":{"title":"GET an entry","level":"3.1","depth":1,"path":"accessing/get-entry.md","ref":"accessing/get-entry.md","articles":[]},"previous":{"title":"Authorization","level":"2.2","depth":1,"path":"security/authorization.md","ref":"security/authorization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/scopes.md","mtime":"2017-03-07T16:58:22.571Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T13:57:12.799Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Scopes","level":"2.3","depth":1,"next":{"title":"GET an entry","level":"3.1","depth":1,"path":"accessing/get-entry.md","ref":"accessing/get-entry.md","articles":[]},"previous":{"title":"Authorization","level":"2.2","depth":1,"path":"security/authorization.md","ref":"security/authorization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/scopes.md","mtime":"2017-03-09T13:57:41.395Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T14:04:28.382Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -158,6 +158,8 @@ This would find any item that has a field called *blends* with a value exactly m
 }
 ```
 
+{% endmethod %}
+
 ---
 {% method -%}
 ### Exists
@@ -174,6 +176,7 @@ You can use a value of *false* if you want documents that do not contain a given
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -190,6 +193,7 @@ In the example any item that has a field called *first* and a value that is grea
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -206,6 +210,7 @@ In the example any item that has a field called *first* and a value that is grea
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -223,6 +228,7 @@ The values should be of the same type, in this case *integer*.
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -239,6 +245,7 @@ In the example any item that has a field called *first* and a value that is less
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -255,6 +262,7 @@ In the example any item that has a field called *first* and a value that is less
     }]
 }
 ```
+{% endmethod %}
 
 ---
 {% method -%}
@@ -271,6 +279,7 @@ In the example if the *name* field contains a value starting with ‘war’ it w
     }]
 }
 ```
+{% endmethod %}
 
 ---
 
@@ -288,5 +297,6 @@ In the example the field 'synopsis' is searched upon for any words that match 'g
     }]
 }
 ```
+{% endmethod %}
 
 ---

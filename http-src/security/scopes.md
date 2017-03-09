@@ -8,7 +8,7 @@ OAuth2 Scopes allow a developer to specify which resource access their applicati
 | ContentType_Read | [Get content type](/accessing/get-contenttype.md) |
 | Project_Read | [Get project](/accessing/get-project.md) |
 
-## Example request with scopes
+## Example request
 
 ```http
 POST: https://cms-yourcontensis.com/authenticate/connect/token

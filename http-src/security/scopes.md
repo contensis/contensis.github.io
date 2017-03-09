@@ -1,6 +1,6 @@
 # Scopes
 
-OAuth2 Scopes allow a developer to specify which resource access their application requires. These are included as a space-separated list value for the scope parameter when invoking an [Authentication](./authentication.md) request.
+OAuth2 Scopes allow a developer to specify which resource access their application requires. These are included as a space-separated list value for the scope parameter when invoking an [authentication](./authentication.md) request.
 
 | Scope name | Associated methods |
 |:-|:-|

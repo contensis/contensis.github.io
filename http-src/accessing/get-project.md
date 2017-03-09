@@ -1,19 +1,17 @@
-# Get project by id
-
-Returns a project resource by it's API id.
+# Get a single project
 
 **GET:** /api/delivery/**{projectId}**
 
-## Example
+## Example request
 
 ```http
 GET: /api/delivery/projects/movieDb
 ```
 
-## Response Messages
+## Response messages
 
-|HTTP Status Code|Reason|Response Model|
+| HTTP status code | Reason | Response model |
 |:-|:-|:-|
-|200|Success|[Project](/model/project.md)|
-|404|Project not found|[Error](/model/errors.md)|
-|500|Internal Server Error|[Error](/model/errors.md)|
+| 200 | Success | [Project](/model/project.md) |
+| 404 | Project not found | [Error](/model/errors.md) |
+| 500 | Internal Server Error | [Error](/model/errors.md) |

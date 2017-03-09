@@ -2,7 +2,7 @@
 
 ## Bearer token
 
-On a success authentication response the access_token value must be set as the Authorization HTTP header for all REST requests and must be formatted as follows:
+On a successful authentication response the access_token value must be set as the Authorization HTTP header for all REST requests and must be formatted as follows:
 
 ```http
 Authorization: bearer {access_token}

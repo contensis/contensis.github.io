@@ -657,9 +657,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/?lang=de-DE&amp;linkDepth=1&amp;order=title,-releaseDate
-</code></pre>
 <h2 id="response-messages">Response Messages</h2>
 <table>
 <thead>
@@ -682,6 +679,20 @@
 </tr>
 </tbody>
 </table>
+<h2 id="examples">Examples</h2>
+<p><strong>List of all entries - actors, movies, directors, etc.</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/
+</code></pre>
+<p><strong>List of all entries translated to German</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/?lang=de
+</code></pre>
+<p><strong>List of all entries translated to German and ordered by published date descending</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/?lang=de&amp;order=-sys.published
+</code></pre>
+<p><strong>List of all entries with their direct child entries, assets and images resolved</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/?linkDepth=1
+</code></pre>
+<hr>
 <h2 id="list-by-content-type">List by content type</h2>
 <p><strong>GET:</strong> /api/delivery/<strong>{projectId}</strong>/contenttype/<strong>{contentTypeId}</strong>/entries</p>
 <table>
@@ -782,6 +793,19 @@
 </tr>
 </tbody>
 </table>
+<h2 id="examples">Examples</h2>
+<p><strong>List of all movies</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries/
+</code></pre>
+<p><strong>List of all movies translated to German</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de
+</code></pre>
+<p><strong>List of all movies translated to German and ordered by release date descending</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de&amp;order=-releaseDate
+</code></pre>
+<p><strong>List of all movies with their direct child entries, assets and images resolved</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?linkDepth=1
+</code></pre>
 
                                 
                                 </section>
@@ -815,7 +839,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"List entries","level":"3.2","depth":1,"next":{"title":"Get a content type","level":"3.3","depth":1,"path":"accessing/get-contenttype.md","ref":"accessing/get-contenttype.md","articles":[]},"previous":{"title":"Get an entry","level":"3.1","depth":1,"path":"accessing/get-entry.md","ref":"accessing/get-entry.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"accessing/list-entries.md","mtime":"2017-03-08T14:09:04.815Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-08T17:20:00.463Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"List entries","level":"3.2","depth":1,"next":{"title":"Get a content type","level":"3.3","depth":1,"path":"accessing/get-contenttype.md","ref":"accessing/get-contenttype.md","articles":[]},"previous":{"title":"Get an entry","level":"3.1","depth":1,"path":"accessing/get-entry.md","ref":"accessing/get-entry.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"accessing/list-entries.md","mtime":"2017-03-09T13:48:40.298Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T13:50:50.910Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

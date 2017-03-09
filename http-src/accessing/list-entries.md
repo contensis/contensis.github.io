@@ -17,11 +17,6 @@
 |fields|query|string|  | A comma-separated list of [field](/model/content-type.md#field) ids to restrict the fields returned for an entry |
 |lang|query|string|[LanguageCode](/localization.md)| The language variation to return for each entry |
 
-## Example
-
-```http
-GET: /api/delivery/projects/movieDb/entries/?lang=de-DE&linkDepth=1&order=title,-releaseDate
-```
 
 ## Response Messages
 
@@ -30,6 +25,30 @@ GET: /api/delivery/projects/movieDb/entries/?lang=de-DE&linkDepth=1&order=title,
 |200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
 |500|Internal Server Error|[Error](/model/errors.md)|
 
+
+## Examples
+
+**List of all entries - actors, movies, directors, etc.**
+```http
+GET: /api/delivery/projects/movieDb/entries/
+```
+
+**List of all entries translated to German**
+```http
+GET: /api/delivery/projects/movieDb/entries/?lang=de
+```
+
+**List of all entries translated to German and ordered by published date descending**
+```http
+GET: /api/delivery/projects/movieDb/entries/?lang=de&order=-sys.published
+```
+
+**List of all entries with their direct child entries, assets and images resolved**
+```http
+GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
+```
+
+---
 
 ## List by content type
 
@@ -53,3 +72,25 @@ GET: /api/delivery/projects/movieDb/entries/?lang=de-DE&linkDepth=1&order=title,
 |:-|:-|:-|
 |200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
 |500|Internal Server Error|[Error](/model/errors.md)|
+
+## Examples
+
+**List of all movies**
+```http
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries/
+```
+
+**List of all movies translated to German**
+```http
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de
+```
+
+**List of all movies translated to German and ordered by release date descending**
+```http
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de&order=-releaseDate
+```
+
+**List of all movies with their direct child entries, assets and images resolved**
+```http
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?linkDepth=1
+```

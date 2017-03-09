@@ -1,6 +1,6 @@
 # Localization
 
-Localization for an entry is identified by a language code which is formed using either a ISO 639-1 language code or a combination of a [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code and a [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code. Effectively, a Contensis language code can represent a language generically or specifically for a certain country.
+Localization for an entry is identified by a language code which is formed using either a [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code or a combination of a [ISO 639-1](https://en.wikipedia.org/wiki/ISO_639-1) language code and a [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code. Effectively, a Contensis language code can represent a language generically or specifically for a certain country.
 
 The language code is lowercased and if the country code part is included, then that part is separated with a dash and uppercased.
 

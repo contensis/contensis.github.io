@@ -179,7 +179,7 @@
                 <a href="../accessing/get-entry.html">
             
                     
-                    Get an entry
+                    GET an entry
             
                 </a>
             
@@ -192,7 +192,7 @@
                 <a href="../accessing/list-entries.html">
             
                     
-                    List entries
+                    GET list of entries
             
                 </a>
             
@@ -205,7 +205,7 @@
                 <a href="../accessing/get-contenttype.html">
             
                     
-                    Get a content type
+                    GET a content type
             
                 </a>
             
@@ -218,7 +218,7 @@
                 <a href="../accessing/get-project.html">
             
                     
-                    Get a project
+                    GET a project
             
                 </a>
             
@@ -589,7 +589,7 @@
 <p>On a successful authentication response the access_token value must be set as the Authorization HTTP header for all REST requests and must be formatted as follows:</p>
 <pre><code class="lang-http"><span class="hljs-attribute">Authorization</span>: bearer {access_token}
 </code></pre>
-<p>Periodically the access token will expire to ensure that if the access token is compromised then any grants are short lived. This expiry can be forecast by using the &quot;expires_in&quot; value returned from an Authentication response or can be handled by catching a <code>401 - Unautorized</code> response.</p>
+<p>Periodically the access token will expire, to ensure that if compromised then any grants are short lived. This expiry can be forecast by using the &quot;expires_in&quot; value returned from an Authentication response or can be handled by catching a <code>401 - Unautorized</code> response.</p>
 <pre><code class="lang-http">401 - Unauthorized
 {
   &quot;message&quot;: &quot;Authorization has been denied for this request.&quot;
@@ -597,7 +597,7 @@
 </code></pre>
 <p>On an expiry a new access token will need to be requested using the same mechanism as the initial token request.</p>
 <blockquote>
-<p><em>NOTE</em><br>If you want to implement your own Delivery API wrapper, then the implementation must implement the OAuth2 Client Credential flow as specified in <a href="https://tools.ietf.org/html/rfc6749#section-4.4" target="_blank">RFC-6749 standard</a> using the discovery document located at <code>https://*YOUR_CMS_URL*/authenticate</code>.</p>
+<p><strong>Note</strong>  - If you want to implement your own Delivery API wrapper, then it must implement the <a href="https://tools.ietf.org/html/rfc6749#section-4.4" target="_blank">OAuth 2 client credential flow</a> using the discovery document located at <code>https://*YOUR_CMS_URL*/authenticate</code>.</p>
 </blockquote>
 
                                 
@@ -632,7 +632,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Authorization","level":"2.2","depth":1,"next":{"title":"Scopes","level":"2.3","depth":1,"path":"security/scopes.md","ref":"security/scopes.md","articles":[]},"previous":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/authorization.md","mtime":"2017-03-09T13:41:11.652Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T13:50:50.910Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Authorization","level":"2.2","depth":1,"next":{"title":"Scopes","level":"2.3","depth":1,"path":"security/scopes.md","ref":"security/scopes.md","articles":[]},"previous":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/authorization.md","mtime":"2017-03-09T13:51:36.317Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T13:54:23.019Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

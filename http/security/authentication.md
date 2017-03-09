@@ -1,6 +1,10 @@
 # Authentication
 
-To access any resource from the Delivery API, a client needs to be authenticated with the Zengenti OAuth2 Identity Provider, which is hosted alongside the Contensis web application. Websites and applications are authenticated using the [OAuth2 Client Credential flow](https://tools.ietf.org/html/rfc6749#section-4.4), which is used to grant access to resources such as Entries, Content Types and Projects.
+To access any resource from the Delivery API, a client needs to authenticate with the Zengenti OAuth 2 Identity Provider, which is hosted with the Contensis application. 
+
+Websites and applications are authenticated using the [OAuth 2 client credential flow](https://tools.ietf.org/html/rfc6749#section-4.4), which is used to grant access to resources such as entries, content types and projects.
+
+The client needs to provide a *clientId*, a *shared secret* and a list of [scopes](./scopes.md). The *clientId* and *shared secret* can be created in [API Management](https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/api-keys/api-key-overview.aspx). 
 
 The client needs to provide a *clientId*, a *shared secret* (which can be created and obtained from the [API Management screens](https://contensis.github.io/docs/api-keys/)) and a list of [scopes](./scopes.md). These are used to request an *access token* from the Zengenti Identity Provider, which can then be cached locally and passed along with each request as a HTTP Authorization header to the Delivery API services.  If the authentication request fails then a 401 HTTP status code response is returned.
 

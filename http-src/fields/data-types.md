@@ -1,6 +1,6 @@
 # Data types
 
-The Data Type is the storage type for a field and determines how the field data is validated and indexed for search. 
+The data type is the storage type for a field and determines how the field data is validated and indexed for search. 
 
 Contensis supports the following basic data types:
 
@@ -12,12 +12,12 @@ Contensis supports the following basic data types:
 | boolean | A value of `true` or `false` |
 | dateTime | A point in time |
 | object | Any arbitrary structure as JSON or a string |
-| stringArray | An array of Strings |
-| integerArray | An array of Integers |
-| decimalArray | An array of Decimals |
-| booleanArray | An array of Booleans |
-| dateTimeArray | An array of DateTimes |
-| objectArray | An array of Objects |
+| stringArray | An array of strings |
+| integerArray | An array of integers |
+| decimalArray | An array of decimals |
+| booleanArray | An array of booleans |
+| dateTimeArray | An array of dateTimes |
+| objectArray | An array of objects |
 
 
 ## Examples

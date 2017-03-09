@@ -7,10 +7,10 @@
 * [Scopes](security/scopes.md)
 
 ## Accessing content
-* [Get an entry](accessing/get-entry.md)
-* [List entries](accessing/list-entries.md)
-* [Get a content type](accessing/get-contenttype.md)
-* [Get a project](accessing/get-project.md)
+* [GET an entry](accessing/get-entry.md)
+* [GET list of entries](accessing/list-entries.md)
+* [GET a content type](accessing/get-contenttype.md)
+* [GET a project](accessing/get-project.md)
 * [Linked content](accessing/linked-content.md)
 
 ## Field types

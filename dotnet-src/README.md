@@ -1,4 +1,4 @@
-# Delivery API
+# Contensis .NET Delivery API
 
 ## Introduction
 
@@ -16,12 +16,12 @@ The documentation is mainly example-driven with API references to the types for 
 
 ## Key concepts
 
-[Get started with the Delivery API Quickstart](/delivery-api/getting-started.md)
+[Get started with the Delivery API Quickstart](/key-concepts/getting-started.md)
 
-[API Instantiation](/delivery-api/api-instantiation.md)
+[API Instantiation](/key-concepts/api-instantiation.md)
 
-[Getting an Entry](/delivery-api/accessing-entries/dotnet/entry-get-dotnet.md)
+[Getting an Entry](/key-concepts/entry-get.md)
 
-[Listing Entries](/delivery-api/accessing-entries/dotnet/entries-list-dotnet.md)
+[Listing Entries](/key-concepts/entries-list.md)
 
-[Searching for Entries](/delivery-api/accessing-entries/entry-search.md)
+[Searching for Entries](/search/entry-search.md)

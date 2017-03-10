@@ -1,60 +1,40 @@
 # Summary
 
-<!---* [Overview](README.md)--->
+## Security
 
-* [Getting started](/delivery-api/getting-started.md)
-* [API instantiation](/delivery-api/api-instantiation.md)
-* [Data types](/common/data-types.md)
-* [Data format](/common/data-format.md)
-* [Handling errors](/common/api-errors.md)
-* [Language variations](/common/language-variations.md)
+* [Authentication](/security/authentication.md)
+* [Scopes](/security/scopes.md)
 
-## Accessing entries
+## Key concepts
 
-* [Search](/delivery-api/accessing-entries/entry-search.md)
-* [Linked Content](/delivery-api/linked-content.md)
+* [Getting started](/key-concepts/getting-started.md)
+* [API instantiation](/key-concepts/api-instantiation.md)
+* [Get an entry](/key-concepts/entry-get.md)
+* [Listing entries](/key-concepts/entries-list.md)
 
-### HTTP
-* [Get an entry](/delivery-api/accessing-entries/http/entry-get-http.md)
-* [Listing entries](/delivery-api/accessing-entries/http/entries-list-http.md)
 
-### .NET
-* [Get an entry](/delivery-api/accessing-entries/dotnet/entry-get-dotnet.md)
-* [Listing entries](/delivery-api/accessing-entries/dotnet/entries-list-dotnet.md)
+* [Data types](/fields/data-types.md)
+* [Data format](/fields/data-format.md)
+* [Handling errors](/key-concepts/api-errors.md)
+* [Linked Content](/key-concepts/linked-content.md)
+
+
 
 ## Model
-<!---* [Model](/delivery-api/model/README.md)--->
 
-### HTTP
-* [Entry](/delivery-api/model/http/entry-http.md)
-* [Asset](/delivery-api/model/http/asset-http.md)
-* [ComposedField](/delivery-api/model/http/composed-http.md)
-* [DateRange](/delivery-api/model/http/daterange-http.md)
-* [Image](/delivery-api/model/http/image-http.md)
-* [Location](/delivery-api/model/http/location-http.md)
-* [Quote](/delivery-api/model/http/quote-http.md)
-* [VersionInfo](/delivery-api/model/http/versioninfo-http.md)
+* [Entry](/model/entry.md)
+* [Entry methods](/model/entry-methods.md)
+* [Asset](/model/asset.md)
+* [ComposedField](/model/composed.md)
+* [DateRange](/model/daterange.md)
+* [Image](/model/image.md)
+* [Location](/model/location.md)
+* [Quote](/model/quote.md)
+* [VersionInfo](/model/versioninfo.md)
 
-### .NET
-* [Entry](/delivery-api/model/dotnet/entry-dotnet.md)
-* [Entry methods](/delivery-api/model/dotnet/entry-methods-dotnet.md)
-* [Asset](/delivery-api/model/dotnet/asset-dotnet.md)
-* [ComposedField](/delivery-api/model/dotnet/composed-dotnet.md)
-* [DateRange](/delivery-api/model/dotnet/daterange-dotnet.md)
-* [Image](/delivery-api/model/dotnet/image-dotnet.md)
-* [Location](/delivery-api/model/dotnet/location-dotnet.md)
-* [Quote](/delivery-api/model/dotnet/quote-dotnet.md)
-* [VersionInfo](/delivery-api/model/dotnet/versioninfo-dotnet.md)
+## Search
 
-## Cookbook
-* [Cookbook](/delivery-api/cookbook/README.md)
+* [Search basics](/search/entry-search.md)
+* [Query operators](/search/query-operators.md)
 
-<!---## Management API
-* [Introduction](/management-api/README.md)--->
 
-# Query API
-* [Query operators](/common/query-operators.md)
-
-# Security
-* [Authentication](/delivery-api/authentication.md)
-* [Scopes](./delivery-api/scopes.md)

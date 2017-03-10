@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>GET a single content type · GitBook</title>
+        <title>GET a single content type · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -33,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -78,11 +80,19 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -460,7 +470,7 @@
     
         <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
             
-                <a href="../search/search-basics.html">
+                <a href="../search/search-basics.html#search">
             
                     
                     Search basics
@@ -631,7 +641,7 @@
 </tbody>
 </table>
 <h2 id="example-request">Example request</h2>
-<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contenttypes/movie
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">GET:</span> /api/delivery/projects/movieDb/contenttypes/movie
 </code></pre>
 <h2 id="response-messages">Response messages</h2>
 <table>
@@ -703,7 +713,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GET a single content type","level":"4.2","depth":1,"next":{"title":"GET a single entry","level":"4.3","depth":1,"path":"key-concepts/get-entry.md","ref":"key-concepts/get-entry.md","articles":[]},"previous":{"title":"GET a single project","level":"4.1","depth":1,"path":"key-concepts/get-project.md","ref":"key-concepts/get-project.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"key-concepts/get-contenttype.md","mtime":"2017-03-10T17:23:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T18:56:31.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GET a single content type","level":"4.2","depth":1,"next":{"title":"GET a single entry","level":"4.3","depth":1,"path":"key-concepts/get-entry.md","ref":"key-concepts/get-entry.md","articles":[]},"previous":{"title":"GET a single project","level":"4.1","depth":1,"path":"key-concepts/get-project.md","ref":"key-concepts/get-project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/get-contenttype.md","mtime":"2017-03-10T17:23:52.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T21:42:02.943Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -711,6 +721,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -726,14 +740,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

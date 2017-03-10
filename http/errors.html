@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Error responses · GitBook</title>
+        <title>Error responses · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -33,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="styles/website.css">
         
     
         
@@ -78,11 +80,19 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -460,7 +470,7 @@
     
         <li class="chapter " data-level="7.1" data-path="search/search-basics.html">
             
-                <a href="search/search-basics.html">
+                <a href="search/search-basics.html#search">
             
                     
                     Search basics
@@ -600,7 +610,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="error-repsonses">Error repsonses</h1>
+                                <h1 id="error-responses">Error responses</h1>
 <p>Status codes and error responses you can encounter when using the API.</p>
 <p>The Delivery API returns error detail in a generic format so that it can be easily handled in a consistent way. Detailed error information is not exposed in the response to ensure security sensitive details are not leaked.</p>
 <h2 id="typical-http-status-codes">Typical HTTP status codes</h2>
@@ -675,15 +685,15 @@
 </tbody>
 </table>
 <h2 id="example-error-response">Example error response</h2>
-<pre><code class="lang-http">500 - ServerError
+<pre class="language-"><code class="lang-http">500 - ServerError
 {
-    &quot;logId&quot;: &quot;63cb1df0-b82a-459e-accc-635e187f3b8b&quot;,
-    &quot;message&quot;: &quot;An error occurred &quot;,
-    &quot;data&quot;: {
-        &quot;entryId&quot;: &quot;ba8a92bd-0e5f-465e-acec-3cdb3db38df6&quot;,
-        &quot;projectId&quot; &quot;moveiDb&quot;
-    },
-    &quot;type&quot;: &quot;error&quot;
+  &quot;logId&quot;: &quot;63cb1df0-b82a-459e-accc-635e187f3b8b&quot;,
+  &quot;message&quot;: &quot;An error occurred &quot;,
+  &quot;data&quot;: {
+      &quot;entryId&quot;: &quot;ba8a92bd-0e5f-465e-acec-3cdb3db38df6&quot;,
+      &quot;projectId&quot; &quot;moveiDb&quot;
+  },
+  &quot;type&quot;: &quot;error&quot;
 }
 </code></pre>
 
@@ -729,7 +739,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Error responses","level":"1.2","depth":1,"next":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"errors.md","mtime":"2017-03-10T17:17:44.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T18:56:31.507Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Error responses","level":"1.2","depth":1,"next":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"errors.md","mtime":"2017-03-10T19:52:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T21:42:02.943Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -737,6 +747,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -752,14 +766,6 @@
     
         
         <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

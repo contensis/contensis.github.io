@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Scopes · GitBook</title>
+        <title>Scopes · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -33,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -78,11 +80,19 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -460,7 +470,7 @@
     
         <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
             
-                <a href="../search/search-basics.html">
+                <a href="../search/search-basics.html#search">
             
                     
                     Search basics
@@ -625,15 +635,15 @@
 </tbody>
 </table>
 <h2 id="example-request">Example request</h2>
-<pre><code class="lang-http"><span class="hljs-attribute">POST</span>: https://cms-yourcontensis.com/authenticate/connect/token
-<span class="hljs-attribute">Content-Type</span>: application/x-www-form-urlencoded
-<span class="hljs-attribute">Accept</span>: application/json
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">POST:</span> https://cms-yourcontensis.com/authenticate/connect/token
+<span class="token header-name keyword">Content-Type:</span> application/x-www-form-urlencoded
+<span class="token header-name keyword">Accept:</span> application/json
 
-<span class="ini"><span class="hljs-attr">grant_type</span>=client_credentials&amp;
-<span class="hljs-attr">client-id</span>=bda30e56-<span class="hljs-number">4</span>faf-<span class="hljs-number">412</span>c-b460-<span class="hljs-number">6</span>fce9342b162&amp;
-<span class="hljs-attr">client-secret</span>=<span class="hljs-number">1</span>e2759cee76b4ae7947722be71cc33e1-<span class="hljs-number">56</span>a63ae1361241fdab7c9ee90cc8a6b3-<span class="hljs-number">6</span>dc4c02b8eda43d49de499ad5eef1160&amp;
-<span class="hljs-attr">scope</span>=Entry_Read ContentType_Read Project_Read
-</span></code></pre>
+grant_type=client_credentials&amp;
+client-id=bda30e56-4faf-412c-b460-6fce9342b162&amp;
+client-secret=1e2759cee76b4ae7947722be71cc33e1-56a63ae1361241fdab7c9ee90cc8a6b3-6dc4c02b8eda43d49de499ad5eef1160&amp;
+scope=Entry_Read ContentType_Read Project_Read
+</code></pre>
 
                                 
                                 </section>
@@ -677,7 +687,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Scopes","level":"2.3","depth":1,"next":{"title":"Data types","level":"3.1","depth":1,"path":"key-concepts/data-types.md","ref":"key-concepts/data-types.md","articles":[]},"previous":{"title":"Authorization","level":"2.2","depth":1,"path":"security/authorization.md","ref":"security/authorization.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"security/scopes.md","mtime":"2017-03-10T15:33:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T18:56:31.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Scopes","level":"2.3","depth":1,"next":{"title":"Data types","level":"3.1","depth":1,"path":"key-concepts/data-types.md","ref":"key-concepts/data-types.md","articles":[]},"previous":{"title":"Authorization","level":"2.2","depth":1,"path":"security/authorization.md","ref":"security/authorization.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"security/scopes.md","mtime":"2017-03-10T20:57:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T21:42:02.943Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -685,6 +695,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -700,14 +714,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

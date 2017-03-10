@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Asset · GitBook</title>
+        <title>Asset · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -33,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -78,11 +80,19 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -460,7 +470,7 @@
     
         <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
             
-                <a href="../search/search-basics.html">
+                <a href="../search/search-basics.html#search">
             
                     
                     Search basics
@@ -686,37 +696,37 @@
 </tbody>
 </table>
 <h2 id="example-json">Example JSON</h2>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Deadpool cover&quot;</span>,
-    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;Cover art for the Deadpool movie&quot;</span>,
-    <span class="hljs-string">&quot;altText&quot;</span>: <span class="hljs-string">&quot;Deadpool symbol&quot;</span>,
-    <span class="hljs-string">&quot;sys&quot;</span>: {
-        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span>,
-        <span class="hljs-string">&quot;contentTypeId&quot;</span>: <span class="hljs-string">&quot;image&quot;</span>,
-        <span class="hljs-string">&quot;projectId&quot;</span>: <span class="hljs-string">&quot;movieDb&quot;</span>,
-        <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;en-GB&quot;</span>,
-        <span class="hljs-string">&quot;uri&quot;</span>: <span class="hljs-string">&quot;/site-elements/images/covers/deadpool.jpg&quot;</span>,
-        <span class="hljs-string">&quot;dataFormat&quot;</span>: <span class="hljs-string">&quot;asset&quot;</span>,
-        <span class="hljs-string">&quot;metadata&quot;</span>: {
-            <span class="hljs-string">&quot;originalId&quot;</span>: <span class="hljs-number">12345</span>
-        },
-        <span class="hljs-string">&quot;properties&quot;</span>: {
-            <span class="hljs-string">&quot;filename&quot;</span>: <span class="hljs-string">&quot;deadpool.jpg&quot;</span>,
-            <span class="hljs-string">&quot;fileSize&quot;</span>: <span class="hljs-number">34323</span>,
-            <span class="hljs-string">&quot;height&quot;</span>: <span class="hljs-number">800</span>,
-            <span class="hljs-string">&quot;width&quot;</span>: <span class="hljs-number">1200</span>
-        },
-        <span class="hljs-string">&quot;version&quot;</span>: {
-            <span class="hljs-string">&quot;createdBy&quot;</span>: <span class="hljs-string">&quot;s.smith&quot;</span>,
-            <span class="hljs-string">&quot;created&quot;</span>: <span class="hljs-string">&quot;2016-10-12T09:29:18.5144641+01:00&quot;</span>,
-            <span class="hljs-string">&quot;modifiedBy&quot;</span>: <span class="hljs-string">&quot;s.smith&quot;</span>,
-            <span class="hljs-string">&quot;modified&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
-            <span class="hljs-string">&quot;publishedBy&quot;</span>: <span class="hljs-string">&quot;b.cooper&quot;</span>,
-            <span class="hljs-string">&quot;published&quot;</span>: <span class="hljs-string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span>,
-            <span class="hljs-string">&quot;versionNo&quot;</span>: <span class="hljs-string">&quot;2.0&quot;</span>
-        }
-    }
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Deadpool cover&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Cover art for the Deadpool movie&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;altText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Deadpool symbol&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sys&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;contentTypeId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;projectId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;movieDb&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en-GB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/site-elements/images/covers/deadpool.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;dataFormat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;metadata&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;originalId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;deadpool.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fileSize&quot;</span><span class="token operator">:</span> <span class="token number">34323</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">1200</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;createdBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s.smith&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;created&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-12T09:29:18.5144641+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modifiedBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s.smith&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modified&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;publishedBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;b.cooper&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;published&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;versionNo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 
                                 
@@ -761,7 +771,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Asset","level":"6.1","depth":1,"next":{"title":"Image","level":"6.2","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"previous":{"title":"Paged list","level":"5.5","depth":1,"path":"model/paged-list.md","ref":"model/paged-list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"model/asset.md","mtime":"2017-03-10T16:51:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T18:56:31.507Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Asset","level":"6.1","depth":1,"next":{"title":"Image","level":"6.2","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"previous":{"title":"Paged list","level":"5.5","depth":1,"path":"model/paged-list.md","ref":"model/paged-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/asset.md","mtime":"2017-03-10T16:51:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T21:42:02.943Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -769,6 +779,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -784,14 +798,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 

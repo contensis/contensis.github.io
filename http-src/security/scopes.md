@@ -1,12 +1,12 @@
 # Scopes
 
-OAuth2 Scopes allow a developer to specify which resource access their application requires. These are included as a space-separated list value for the scope parameter when invoking an [authentication](./authentication.md) request.
+OAuth 2.0 scopes allow a developer to specify which resources their application can access. These are included as a space-separated list value, in the scope parameter when invoking an [authentication](./authentication.md) request.
 
 | Scope name | Associated methods |
 |:-|:-|
-| Entry_Read | <ul><li>[Get Entry by id](/accessing/get-entry.md)</li><li>[List Entries](/accessing/list-entries.md#listall)</li><li>[List Entries for content type](/accessing/list-entries.md#listbycontenttype)</li></ul> |
-| ContentType_Read | [Get content type](/accessing/get-contenttype.md) |
-| Project_Read | [Get project](/accessing/get-project.md) |
+| Entry_Read | [GET a single entry](/accessing/get-entry.md)<br />[GET a list of all entries ](/accessing/list-entries.md#list-all-entries)<br />[GET a list of entries by content type](/accessing/list-entries.md#list-entries-by-content-type) |
+| ContentType_Read | [GET a single content type](/accessing/get-contenttype.md) |
+| Project_Read | [GET a project](/accessing/get-project.md) |
 
 ## Example request
 

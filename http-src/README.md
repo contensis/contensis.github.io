@@ -7,8 +7,8 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ## Key concepts
 
-- [GET an entry](/accessing/get-entry.md)
-- [GET list of entries](/accessing/list-entries.md)
+- [GET a single project](/accessing/get-project.md)
+- [GET a single content type](/accessing/get-contenttype.md)
+- [GET a single entry](/accessing/get-entry.md)
+- [GET a list of entries](/accessing/list-entries.md)
 - [Search for entries](/search/search-basics.md)
-- [GET a project](/accessing/get-project.md)
-- [GET a content type](/accessing/get-contenttype.md)

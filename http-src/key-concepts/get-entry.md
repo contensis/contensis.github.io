@@ -21,5 +21,5 @@ GET: /api/delivery/projects/movieDb/entries/99aae243-ad6e-401b-89f9-90a51def6a18
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
-| 404 | Entry not found | [Error](errors.md) |
-| 500 | Internal server error | [Error](errors.md) |
+| 404 | Entry not found | [Error](/errors.md) |
+| 500 | Internal server error | [Error](/errors.md) |

@@ -21,7 +21,7 @@
 | HTTP status code | Reason | Response model|
 |:-|:-|:-|
 | 200 | Success | [PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items |
-| 500 | Internal server error | [Error](errors.md) |
+| 500 | Internal server error | [Error](/errors.md) |
 
 ## Example requests
 

@@ -148,4 +148,4 @@ POST: /api/delivery/projects/{projectId}/entries/search
 |HTTP Status Code|Reason|Response Model|
 |-|-|-|
 |200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
-|500|Internal Server Error|[Error](errors.md)|
+|500|Internal server error|[Error](/errors.md)|

@@ -1,15 +1,15 @@
 # ContentType
 
-A Content Type resource can be retrieved from the Delivery API to understand the schema of an [entry](./entry.md). Entries are constructed and validated using the infomation defined in the Fields collection. The
+A content type resource can be retrieved from the Delivery API to understand the schema of an [entry](./entry.md). Entries are constructed and validated using the information defined in the fields collection.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| id | string | | A friendly unique content type identifier |
+| id | string | | A unique content type identifier |
 | projectId | string |  | The project identifier |
 | name | object | [LocalizedValue](#localizedvalue)  | The friendly name given to a content type |
 | description | object | [LocalizedValue](#localizedvalue) | The description text given to a content type |
 | entryTitleField | string |  | The id of the field which should be used as the title in entry listings |
-| fields | object [...] | [Field](/model/field.md)  | A collection of fields that form the schema for an entry |
+| fields | object [...] | [Field](#field)  | A collection of fields that form the schema for an entry |
 | enabled | boolean |  |  |
 | defaultLanguage | string | [LanguageCode](/localization.md) |  |
 | supportedLanguages | string [...] | [LanguageCode](/localization.md) |  |
@@ -20,21 +20,20 @@ A Content Type resource can be retrieved from the Delivery API to understand the
 
 ## Field
 
-The field object is the definition for a what becomes a field within an entry. The field also contains the validations and editor configuration that is used within the Contensis UI and services.
+The field object is the definition of a field within an entry. The field also contains the validations and editor configuration that is used within the Contensis UI and services.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string |  | A unique field identifier |
 | name | object | [LocalizedValue](#localizedvalue) | A friendly name for the field |
 | description | object | [LocalizedValue](#localizedvalue) | The description for the field's purpose |
-| dataType | string | [DataType](/model/data-types.md) | The field data type |
-| dataFormat | string | [DataType](/model/data-formats.md) | The field data format |
+| dataType | string | [DataType](/key-concepts/data-types.md) | The field data type |
+| dataFormat | string | [DataType](/key-concepts/data-formats.md) | The field data format |
 | default | object | [LocalizedValue](#localizedvalue) | The default value for the field if no value is provided by an editor |
 | validations | object |  | The validations that will be performed on the field when the entry is either created or updated |
 | editor | object | Editor | Configuration for the Contensis entry editor |
 
 ## LocalizedValue
-
 A localized value is a object that has values that are keyed by [language codes](/localization.md) which allows multilingual variations of a specific property.
 
 

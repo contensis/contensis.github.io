@@ -1,14 +1,14 @@
 # Data formats
 
-The DataFormat property is used as an extension of a [DataType](/model/data-types.md) to describe or identify the structure and intent of the data. For example, a *Location* has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a DataType of *string* and a DataFormat of *html*.  
+The dataFormat property is used as an extension of a [dataType](/key-concepts/data-types.md) to describe the structure and intent of the data. For example, a *location* has a dataType of *object*, and a dataFormat of *location*. Another example is a HTML block, which has a dataType of *string* and a dataFormat of *html*.  
 
-The DataFormat is a string value and is designed to allow custom types to be added.
+The dataFormat is a string value and is designed to allow custom types to be added.
 
 ## Supported data formats
 
 The following list contains the data formats that are currently understood by Contensis:
 
-| Data Format | Data Type | Description |
+| Data format | Data type | Description |
 | :---------- | :-------- | :---------- |
 | [entry](/model/entry.md) | object | An entry format for storing content |
 | [asset](/model/asset.md) | object | An asset format that represents a file resource |

@@ -1,22 +1,19 @@
 # Entries
-
-A full [overview of entry concepts can be found here](https://contensis.github.io/docs/entries/).
-
-An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on. 
+An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on.
 
 ## Data properties
 
-Data properties are items defined by the fields set in a content type. 
+Data properties are items defined by the [fields collection](/model/content-type.md#field) set in a content type.
 
 ## Standard properties
 
-These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently using the Management API. In the Delivery API context only a single language variation is available on an entry. 
+These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently. In the Delivery API context only a single language variation is available on an entry.
 
 ### Entry
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| [Field] | Any | Any | Field data that is defined in the associated [Content Type](./content-type.md). <br />The data is keyed by a unique field id.  |
+| [Field] | Any | Any | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id.  |
 | sys | object | [Sys](#sys) | The container of the entry system data |
 
 ### Sys
@@ -24,7 +21,7 @@ These are the standard properties that all entries have. The language property i
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID|
-| projectId | string | | The API identifer of the project the entry belongs to |
+| projectId | string | | The API identifier of the project the entry belongs to |
 | contentTypeId | string | | The API identifier of the content type that the entry is based on |
 | dataFormat | string | | Either 'entry' or 'asset' |
 | language | string | [LanguageCode](/localization.md) | The language code of the entry variation |
@@ -33,14 +30,10 @@ These are the standard properties that all entries have. The language property i
 | version | object | [VersionInfo](#versioninfo) | Version info specific to the entry variation |
 
 
+## Example
 
-{% method -%}
+This JSON example shows entry based on a movie content type.
 
-## Entry example
-
-This JSON shows an example entry based on a Movie content type:
-
-{% sample lang="json" -%}
 ```json
 {
     "title": "Back to the future",
@@ -91,4 +84,3 @@ This JSON shows an example entry based on a Movie content type:
     }
 }
 ```
-{% endmethod %}

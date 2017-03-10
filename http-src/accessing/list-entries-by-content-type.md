@@ -1,12 +1,13 @@
-# Get a list of all entries
+# Get a list entries by content type
 
-**GET:** /api/delivery/**{projectId}**/entries
+**GET:** /api/delivery/**{projectId}**/contenttype/**{contentTypeId}**/entries
 
 ## Parameters
 
-| Name | Parameter type | Type | Format | Description |
+| Name | Parameter type|Type|Format|Description|
 |:-|:-|:-|:-|:-|
 | projectId | path | string | | The project identifier |
+| contentTypeId | path |string | | The content type identifier |
 | versionStatus | query | string | | The status of the entry, either *published* or *latest*. The default is *published* |
 | linkDepth | query | number | int | The depth at which to resolve the full entry data for a linked entry or asset, with a maximum depth value of 10 |
 | pageIndex | query | number | int | The index of the result set to return |
@@ -19,33 +20,31 @@
 
 | HTTP status code | Reason | Response model|
 |:-|:-|:-|
-| 200 | Success |[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items |
+| 200 | Success | [PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items |
 | 500 | Internal server error | [Error](/model/errors.md) |
 
 ## Example requests
 
-**List of all entries - actors, movies, directors, etc.**
+**List of all movies**
 
 ```http
-GET: /api/delivery/projects/movieDb/entries/
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries/
 ```
 
-**List of all entries translated to German**
+**List of all movies translated to German**
 
 ```http
-GET: /api/delivery/projects/movieDb/entries/?lang=de
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de
 ```
 
-**List of all entries translated to German and ordered by published date descending**
+**List of all movies translated to German and ordered by release date descending**
 
 ```http
-GET: /api/delivery/projects/movieDb/entries/?lang=de&order=-sys.published
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de&order=-releaseDate
 ```
 
-**List of all entries with their direct child entries, assets and images resolved**
+**List of all movies with their direct child entries, assets and images resolved**
 
 ```http
-GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
+GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?linkDepth=1
 ```
-
----

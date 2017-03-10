@@ -27,8 +27,8 @@ The field object is the definition for a what becomes a field within an entry. T
 | id | string |  | A unique field identifier |
 | name | object | [LocalizedValue](#localizedvalue) | A friendly name for the field |
 | description | object | [LocalizedValue](#localizedvalue) | The description for the field's purpose |
-| dataType | string | [DataType](/fields/data-types.md) | The field data type |
-| dataFormat | string | [DataType](/fields/data-formats.md) | The field data format |
+| dataType | string | [DataType](/model/data-types.md) | The field data type |
+| dataFormat | string | [DataType](/model/data-formats.md) | The field data format |
 | default | object | [LocalizedValue](#localizedvalue) | The default value for the field if no value is provided by an editor |
 | validations | object |  | The validations that will be performed on the field when the entry is either created or updated |
 | editor | object | Editor | Configuration for the Contensis entry editor |

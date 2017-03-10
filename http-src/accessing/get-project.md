@@ -14,4 +14,4 @@ GET: /api/delivery/projects/movieDb
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
 | 404 | Project not found | [Error](/model/errors.md) |
-| 500 | Internal Server Error | [Error](/model/errors.md) |
+| 500 | Internal server error | [Error](/model/errors.md) |

@@ -8,7 +8,7 @@
 |:-|:-|:-|:-|:-|
 | projectId | path | string | | The project identifier |
 | entryId | path | string | GUID | The entry identifier as a 128 bit GUID |
-| lang | query | string | | The specified language variation for the entry. If no value is provided then the project default language is used |
+| lang | query | string | | The specified language variation for the entry. If no value is provided then the projects primary language is used |
 | linkDepth | query | number | int | The depth at which to resolve the full entry data for a linked entry or asset, with a maximum depth value of 10 |
 
 ## Example request

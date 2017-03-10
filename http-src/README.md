@@ -10,5 +10,6 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 - [GET a single project](/accessing/get-project.md)
 - [GET a single content type](/accessing/get-contenttype.md)
 - [GET a single entry](/accessing/get-entry.md)
-- [GET a list of entries](/accessing/list-entries.md)
+- [GET list of all entries](/accessing/list-entries.md)
+- [GET list of entries by content type](/accessing/list-entries-by-content-type.md)
 - [Search for entries](/search/search-basics.md)

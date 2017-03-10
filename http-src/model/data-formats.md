@@ -1,6 +1,6 @@
 # Data formats
 
-The DataFormat property is used as an extension of a [DataType](./data-types) to describe or identify the structure and intent of the data. For example, a *Location* has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a DataType of *string* and a DataFormat of *html*.  
+The DataFormat property is used as an extension of a [DataType](/model/data-types.md) to describe or identify the structure and intent of the data. For example, a *Location* has a DataType of *object*, and a DataFormat of *location*. Another example is a HTML block, which has a DataType of *string* and a DataFormat of *html*.  
 
 The DataFormat is a string value and is designed to allow custom types to be added.
 
@@ -20,4 +20,3 @@ The following list contains the data formats that are currently understood by Co
 | heading | string | Represents a document heading |
 | html | string | A string of HTML markup |
 | markdown | string | A string of Markdown markup |
-

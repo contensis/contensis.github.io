@@ -10,14 +10,13 @@
 * [GET a single project](accessing/get-project.md)
 * [GET a single content type](accessing/get-contenttype.md)
 * [GET a single entry](accessing/get-entry.md)
-* [GET a list of entries](accessing/list-entries.md)
+* [GET list of all entries](accessing/list-entries.md)
+* [GET list of entries by content type](accessing/list-entries-by-content-type.md)
 * [Linked content](accessing/linked-content.md)
 
-## Field types
-* [Data types](fields/data-types.md)
-* [Data formats](fields/data-formats.md)
-
 ## Model
+* [Data types](model/data-types.md)
+* [Data formats](model/data-formats.md)
 * [Project](model/project.md)
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)

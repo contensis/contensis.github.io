@@ -1,16 +1,16 @@
-# VersionInfo
+# Version
 
-The VersionInfo object contains the version status information for the current version of the resource.
+The version object contains the version status information for the current version of the resource.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| created | string | date-time | The date and time the resource was created |
 | createdBy | string | | The user id of who created the resource |
-| modified | string | date-time | The date and time the resource version was last modified |
+| created | string | date-time | The date and time the resource was created |
 | modifiedBy | string | | The user id of who last modified the resource |
-| published | string | date-time | The date and time the resource version was last published |
+| modified | string | date-time | The date and time the resource version was last modified |
 | publishedBy | string | | The user id of who last published the resource |
-| versionNo | string | {Major}.{Minor} | The version number of the resource | 
+| published | string | date-time | The date and time the resource version was last published |
+| versionNo | string | {Major}.{Minor} | The version number of the resource |
 
 
 ## Example

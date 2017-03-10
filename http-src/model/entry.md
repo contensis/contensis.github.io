@@ -27,7 +27,7 @@ These are the standard properties that all entries have. The language property i
 | language | string | [LanguageCode](/localization.md) | The language code of the entry variation |
 | uri | string | URI | The entry uri |
 | metadata | object | | Metadata associated with the entry instance |
-| version | object | [VersionInfo](#versioninfo) | Version info specific to the entry variation |
+| version | object | [Version](/model/version.md) | Version info specific to the entry variation |
 
 
 ## Example

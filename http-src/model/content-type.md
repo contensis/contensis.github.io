@@ -16,7 +16,7 @@ A content type resource can be retrieved from the Delivery API to understand the
 | workflowId | string |  | The workflow that derived entries will  |
 | dataFormat | string |  | Either 'entry' or 'asset' |
 | previewUrl | string |  | The url that an example of an entry based on the content type can be viewed |
-| version | object | [VersionInfo](/model/version-info.md) | Version infomation about the content type |
+| version | object | [Version](/model/version.md) | Version information about the content type |
 
 ## Field
 

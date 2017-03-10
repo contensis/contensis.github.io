@@ -24,7 +24,7 @@
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
 * [Asset](model/asset.md)
-* [VersionInfo](model/version-info.md)
+* [Version](model/version.md)
 * [Composed](model/composed.md)
 * [DateRange](model/date-range.md)
 * [Image](model/image.md)

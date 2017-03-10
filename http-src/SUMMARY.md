@@ -25,6 +25,7 @@
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
 * [Version](model/version.md)
+* [Paged list](model/paged-list.md)
 ---
 * [Asset](model/asset.md)
 * [Image](model/image.md)
@@ -32,7 +33,6 @@
 * [Date range](model/date-range.md)
 * [Location](model/location.md)
 * [Quote](model/quote.md)
-* [Paged list](model/paged-list.md)
 
 ## Search
 * [Search basics](search/search-basics.md)

@@ -11,7 +11,6 @@ System fields such as id, contentTypeId, projectId, versionNo etc. are under the
 The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
 
 ### Data fields
-
 Fields defined in the Content Type for the entry can be accessed by their API id.
 
 This example demonstrates a simple search with default ordering, paging and weightings:
@@ -34,7 +33,6 @@ POST: /api/search
 ```
 
 ## Sub-queries
-
 A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of [logical operators](./query-operators.md#logical-operators).
 
 This example demonstrates a simple search with a sub-query:
@@ -63,11 +61,11 @@ This example demonstrates a simple search with a sub-query:
 ```
 
 ## Ordering
-
 Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.
 
 
-Order by 'releaseDate'.
+Order by 'releaseDate' in an ascending direction
+
 
 ```json
 {
@@ -77,7 +75,14 @@ Order by 'releaseDate'.
 }
 ```
 
+
+
+
+
+
+
 Order by 'releaseDate' in a descending direction.
+
 
 ```json
 {
@@ -87,19 +92,17 @@ Order by 'releaseDate' in a descending direction.
 }
 ```
 
-Order by 'releaseDate' in a descending direction.
 
-```json
-{
-    "orderBy": [{
-        "desc": "releaseDate"
-    },],
-}
-```
+
+
+
 
 ## Paging
+Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly.
 
-Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly. The page number can also be specified to allow which set of results is to be returned.
+
+The page number can also be specified to allow which set of results is to be returned.
+
 
 ```json
 {
@@ -108,16 +111,24 @@ Paging allows the number of results to be restricted to a defined count so that 
 }
 ```
 
+
+
+
+
+
 ## Weightings
 
 
 
-## Full example
+## Complete example
 
-The example below combines the ordering and paging concepts:
 
-```http
+The following example combines the ordering, paging and weighting concepts.
+
+
+```json
 POST: /api/delivery/projects/{projectId}/entries/search
+
 {
     "where": [
         {
@@ -144,8 +155,3 @@ POST: /api/delivery/projects/{projectId}/entries/search
     "pageSize": 50
 }
 ```
-
-|HTTP Status Code|Reason|Response Model|
-|-|-|-|
-|200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
-|500|Internal server error|[Error](/errors.md)|

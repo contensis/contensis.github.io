@@ -11,6 +11,7 @@ All assets have the following standard data fields.
 | ---- | ----------- |
 | title | The title of the asset |
 | description | The description for the asset |
+| sys.properties | A readonly collection of asset specific properties |
 
 ### Image
 In addition to the standard data fields, images have the following.
@@ -18,7 +19,6 @@ In addition to the standard data fields, images have the following.
 | Name | Description |
 | ---- | ----------- |
 | altText | The default alt text defined for the image resource |
-| sys.properties | A readonly collection of asset specific properties |
 
 ## Properties
 ### Default

@@ -1,6 +1,6 @@
 # Location
 
-The Location object represents a geographical coordinate that specifies the position of a point on the Earth's surface.
+The location object represents a geographical coordinate that specifies the position of a point on the Earth's surface.
 
 ## Properties
 

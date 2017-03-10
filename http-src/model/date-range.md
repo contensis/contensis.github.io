@@ -1,8 +1,6 @@
-# DateRange
+# Date range
 
-## Overview
-
-The DateRange object represents a start and end point in time.
+The date range object represents a start and end point in time.
 
 ## Properties
 
@@ -13,7 +11,7 @@ The DateRange object represents a start and end point in time.
 
 ## Validation
 
-The *from* value cannot be a later datetime than the *to* value.
+The *from* value cannot be greater than the *to* value.
 
 ## Example
 

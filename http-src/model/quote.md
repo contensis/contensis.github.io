@@ -1,6 +1,6 @@
 # Quote
 
-The Quote type represents a section of referenced text from an external source.
+The quote object represents a section of referenced text from an external source.
 
 ## Properties
 

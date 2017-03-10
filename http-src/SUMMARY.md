@@ -1,5 +1,6 @@
 ## HTTP Delivery API
-
+* [Introduction](README.md)
+* [Error responses](errors.md)
 
 ## Security
 * [Authentication](security/authentication.md)
@@ -23,15 +24,15 @@
 * [Project](model/project.md)
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
-* [Asset](model/asset.md)
 * [Version](model/version.md)
-* [Composed](model/composed.md)
-* [DateRange](model/date-range.md)
+---
+* [Asset](model/asset.md)
 * [Image](model/image.md)
+* [Composed](model/composed.md)
+* [Date range](model/date-range.md)
 * [Location](model/location.md)
 * [Quote](model/quote.md)
 * [Paged list](model/paged-list.md)
-* [Error](model/errors.md)
 
 ## Search
 * [Search basics](search/search-basics.md)

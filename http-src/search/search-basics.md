@@ -6,7 +6,7 @@ A query tree structure, along with order and paging specifiers, allows a search 
 
 ### System fields
 
-System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo". 
+System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo".
 
 The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
 
@@ -24,7 +24,7 @@ POST: /api/search
         {
             "field": "title",
             "contains": "Batman"
-        }, 
+        },
         {
             "field": "runtime",
             "greaterThan": 200
@@ -148,4 +148,4 @@ POST: /api/delivery/projects/{projectId}/entries/search
 |HTTP Status Code|Reason|Response Model|
 |-|-|-|
 |200|Success|[PagedList](/model/paged-list.md) of [Entry](/model/entry.md) items|
-|500|Internal Server Error|[Error](/model/errors.md)|
+|500|Internal Server Error|[Error](errors.md)|

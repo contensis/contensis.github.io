@@ -1,4 +1,4 @@
-# PagedList
+# Paged list
 
 A paged list is a structure that is used to describe paging details for listing and search results.
 

@@ -1,0 +1,806 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Asset · Contensis JS Delivery API</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="image.html" />
+    
+    
+    <link rel="prev" href="paged-list.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">JS Delivery API</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../text-to-md.html">
+            
+                <a href="../text-to-md.html">
+            
+                    
+                    IMPORTED TEXT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../key-concepts/getting-started.html">
+            
+                <a href="../key-concepts/getting-started.html">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Security</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../security/authentication.html">
+            
+                <a href="../security/authentication.html">
+            
+                    
+                    Authentication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../security/scopes.html">
+            
+                <a href="../security/scopes.html">
+            
+                    
+                    Scopes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Key concepts</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../key-concepts/data-types.html">
+            
+                <a href="../key-concepts/data-types.html">
+            
+                    
+                    Data types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../key-concepts/data-formats.html">
+            
+                <a href="../key-concepts/data-formats.html">
+            
+                    
+                    Data formats
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../localization.html">
+            
+                <a href="../localization.html">
+            
+                    
+                    Localization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../key-concepts/linked-content.html">
+            
+                <a href="../key-concepts/linked-content.html">
+            
+                    
+                    Linked content
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../key-concepts/get-project.html">
+            
+                <a href="../key-concepts/get-project.html">
+            
+                    
+                    GET a single project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../key-concepts/get-contenttype.html">
+            
+                <a href="../key-concepts/get-contenttype.html">
+            
+                    
+                    GET a single content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../key-concepts/get-entry.html">
+            
+                <a href="../key-concepts/get-entry.html">
+            
+                    
+                    GET a single entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../key-concepts/list-entries.html">
+            
+                <a href="../key-concepts/list-entries.html">
+            
+                    
+                    GET list of all entries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../key-concepts/list-entries-by-content-type.html">
+            
+                <a href="../key-concepts/list-entries-by-content-type.html">
+            
+                    
+                    GET list of entries by content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Model</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="project.html">
+            
+                <a href="project.html">
+            
+                    
+                    Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="content-type.html">
+            
+                <a href="content-type.html">
+            
+                    
+                    Content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="entry.html">
+            
+                <a href="entry.html">
+            
+                    
+                    Entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="version.html">
+            
+                <a href="version.html">
+            
+                    
+                    Version
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="paged-list.html">
+            
+                <a href="paged-list.html">
+            
+                    
+                    Paged list
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="asset.html">
+            
+                <a href="asset.html">
+            
+                    
+                    Asset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="image.html">
+            
+                <a href="image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="composed.html">
+            
+                <a href="composed.html">
+            
+                    
+                    Composed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="date-range.html">
+            
+                <a href="date-range.html">
+            
+                    
+                    Date range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="location.html">
+            
+                <a href="location.html">
+            
+                    
+                    Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="quote.html">
+            
+                <a href="quote.html">
+            
+                    
+                    Quote
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Search</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#search">
+            
+                    
+                    Search basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#query">
+            
+                    
+                    Queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#sub-queries">
+            
+                    
+                    Sub-queries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#ordering">
+            
+                    
+                    Ordering
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#paging">
+            
+                    
+                    Paging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../search/search-basics.html">
+            
+                <a href="../search/search-basics.html#weightings">
+            
+                    
+                    Weightings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../search/query-operators.html">
+            
+                <a href="../search/query-operators.html">
+            
+                    
+                    Query operators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.zengenti.com" target="blank" class="gitbook-link">
+          © Copyright Zengenti 2017
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Asset</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="assets">Assets</h1>
+<p>Assets are an extension of entries, with additional properties containing details about the file they represent. An asset is an entry with a dataFormat value equal to &apos;asset&apos;, which allows them to be identified and queried independently to entries.</p>
+<h2 id="fields">Fields</h2>
+<h3 id="standard">Standard</h3>
+<p>All assets have the following standard data fields.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>The title of the asset</td>
+</tr>
+<tr>
+<td>description</td>
+<td>The description for the asset</td>
+</tr>
+<tr>
+<td>sys.properties</td>
+<td>A readonly collection of asset specific properties</td>
+</tr>
+</tbody>
+</table>
+<h3 id="image">Image</h3>
+<p>In addition to the standard data fields, images have the following.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td>The default alt text defined for the image resource</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<h3 id="default">Default</h3>
+<p>All assets have the following default readonly properties.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>filename</td>
+<td>The name of the actual file, with extension included</td>
+</tr>
+<tr>
+<td>fileSize</td>
+<td>The file size in bytes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="extended">Extended</h3>
+<p>Extended properties are specific to a content type.</p>
+<h4 id="images">Images</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>width</td>
+<td>The width of the image</td>
+</tr>
+<tr>
+<td>height</td>
+<td>The height of the image</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-json">Example JSON</h2>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Deadpool cover&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Cover art for the Deadpool movie&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;altText&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Deadpool symbol&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sys&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;71f73a9b-2a13-4d63-bcc1-e8ee5047b01c&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;contentTypeId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;projectId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;movieDb&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en-GB&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;uri&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/site-elements/images/covers/deadpool.jpg&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;dataFormat&quot;</span><span class="token operator">:</span> <span class="token string">&quot;asset&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;metadata&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;originalId&quot;</span><span class="token operator">:</span> <span class="token number">12345</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;filename&quot;</span><span class="token operator">:</span> <span class="token string">&quot;deadpool.jpg&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;fileSize&quot;</span><span class="token operator">:</span> <span class="token number">34323</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;height&quot;</span><span class="token operator">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;width&quot;</span><span class="token operator">:</span> <span class="token number">1200</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;createdBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s.smith&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;created&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-12T09:29:18.5144641+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modifiedBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s.smith&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modified&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;publishedBy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;b.cooper&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;published&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2016-10-13T10:15:12.1973648+01:00&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;versionNo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2.0&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="paged-list.html" class="navigation navigation-prev " aria-label="Previous page: Paged list">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="image.html" class="navigation navigation-next " aria-label="Next page: Image">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Asset","level":"6.1","depth":1,"next":{"title":"Image","level":"6.2","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"previous":{"title":"Paged list","level":"5.5","depth":1,"path":"model/paged-list.md","ref":"model/paged-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/asset.md","mtime":"2017-03-10T21:39:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T22:23:55.339Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+
+    </body>
+</html>
+

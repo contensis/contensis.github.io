@@ -6,9 +6,9 @@ Returns an array of content type resources for a project.
 
 ## Parameters
 
-|Name|Parameter Type|Type|Format|Description|
+|Name|Parameter type|Type|Format|Description|
 |:-|:-|:-|:-|:-|
-|projectId|path|string||The project identifier|
+|projectId|path|string| |The project identifier|
 
 ## Example
 
@@ -20,6 +20,6 @@ GET: /api/projects/movieDb/contenttypes
 
 |HTTP Status Code|Reason|Response Model|
 |:-|:-|:-|
-|200|Success|[ContentType [...]](/model/content-type.md)|
+|200|Success|[ContentType](/model/content-type.md)|
 |404|Project not found|[Error](../model/errors.md)|
 |500|Internal Server Error|[Error](../model/errors.md)|

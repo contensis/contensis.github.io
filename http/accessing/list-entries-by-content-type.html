@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>GET a single entry · GitBook</title>
+        <title>GET list of entries by content type · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -61,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="list-entries.html" />
+    <link rel="next" href="linked-content.html" />
     
     
-    <link rel="prev" href="get-contenttype.html" />
+    <link rel="prev" href="list-entries.html" />
     
 
     </head>
@@ -200,7 +200,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="get-entry.html">
+        <li class="chapter " data-level="3.3" data-path="get-entry.html">
             
                 <a href="get-entry.html">
             
@@ -226,7 +226,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.5" data-path="list-entries-by-content-type.html">
+        <li class="chapter active" data-level="3.5" data-path="list-entries-by-content-type.html">
             
                 <a href="list-entries-by-content-type.html">
             
@@ -575,7 +575,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >GET a single entry</a>
+        <a href=".." >GET list of entries by content type</a>
     </h1>
 </div>
 
@@ -590,8 +590,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="get-a-single-entry">Get a single entry</h1>
-<p><strong>GET:</strong> /api/delivery/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong></p>
+                                <h1 id="get-a-list-entries-by-content-type">Get a list entries by content type</h1>
+<p><strong>GET:</strong> /api/delivery/<strong>{projectId}</strong>/contenttype/<strong>{contentTypeId}</strong>/entries</p>
 <h2 id="parameters">Parameters</h2>
 <table>
 <thead>
@@ -612,18 +612,18 @@
 <td style="text-align:left">The project identifier</td>
 </tr>
 <tr>
-<td style="text-align:left">entryId</td>
+<td style="text-align:left">contentTypeId</td>
 <td style="text-align:left">path</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">GUID</td>
-<td style="text-align:left">The entry identifier as a 128 bit GUID</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The content type identifier</td>
 </tr>
 <tr>
-<td style="text-align:left">lang</td>
+<td style="text-align:left">versionStatus</td>
 <td style="text-align:left">query</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">The specified language variation for the entry. If no value is provided then the projects primary language is used</td>
+<td style="text-align:left">The status of the entry, either <em>published</em> or <em>latest</em>. The default is <em>published</em></td>
 </tr>
 <tr>
 <td style="text-align:left">linkDepth</td>
@@ -632,11 +632,43 @@
 <td style="text-align:left">int</td>
 <td style="text-align:left">The depth at which to resolve the full entry data for a linked entry or asset, with a maximum depth value of 10</td>
 </tr>
+<tr>
+<td style="text-align:left">pageIndex</td>
+<td style="text-align:left">query</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The index of the result set to return</td>
+</tr>
+<tr>
+<td style="text-align:left">pageSize</td>
+<td style="text-align:left">query</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The number of items to return in the result set</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">query</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">A comma-separated list of <a href="../model/content-type.html#field">field</a> ids to order the results by. Descending order is specified using a prefixed &apos;-&apos;</td>
+</tr>
+<tr>
+<td style="text-align:left">fields</td>
+<td style="text-align:left">query</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">A comma-separated list of <a href="../model/content-type.html#field">field</a> ids to restrict the fields returned for an entry</td>
+</tr>
+<tr>
+<td style="text-align:left">lang</td>
+<td style="text-align:left">query</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"><a href="../localization.html">LanguageCode</a></td>
+<td style="text-align:left">The language variation to return for each entry</td>
+</tr>
 </tbody>
 </table>
-<h2 id="example-request">Example request</h2>
-<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/entries/99aae243-ad6e-401b-89f9-90a51def6a18/?lang=de-DE&amp;linkDepth=1
-</code></pre>
 <h2 id="response-messages">Response messages</h2>
 <table>
 <thead>
@@ -650,12 +682,7 @@
 <tr>
 <td style="text-align:left">200</td>
 <td style="text-align:left">Success</td>
-<td style="text-align:left"><a href="../model/entry.html">Entry</a></td>
-</tr>
-<tr>
-<td style="text-align:left">404</td>
-<td style="text-align:left">Entry not found</td>
-<td style="text-align:left"><a href="../model/errors.html">Error</a></td>
+<td style="text-align:left"><a href="../model/paged-list.html">PagedList</a> of <a href="../model/entry.html">Entry</a> items</td>
 </tr>
 <tr>
 <td style="text-align:left">500</td>
@@ -664,6 +691,19 @@
 </tr>
 </tbody>
 </table>
+<h2 id="example-requests">Example requests</h2>
+<p><strong>List of all movies</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries/
+</code></pre>
+<p><strong>List of all movies translated to German</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de
+</code></pre>
+<p><strong>List of all movies translated to German and ordered by release date descending</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de&amp;order=-releaseDate
+</code></pre>
+<p><strong>List of all movies with their direct child entries, assets and images resolved</strong></p>
+<pre><code class="lang-http"><span class="hljs-attribute">GET</span>: /api/delivery/projects/movieDb/contentTypes/movies/entries?linkDepth=1
+</code></pre>
 
                                 
                                 </section>
@@ -697,7 +737,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GET a single entry","level":"3.3","depth":1,"next":{"title":"GET list of all entries","level":"3.4","depth":1,"path":"accessing/list-entries.md","ref":"accessing/list-entries.md","articles":[]},"previous":{"title":"GET a single content type","level":"3.2","depth":1,"path":"accessing/get-contenttype.md","ref":"accessing/get-contenttype.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"accessing/get-entry.md","mtime":"2017-03-10T13:00:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T13:02:13.781Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GET list of entries by content type","level":"3.5","depth":1,"next":{"title":"Linked content","level":"3.6","depth":1,"path":"accessing/linked-content.md","ref":"accessing/linked-content.md","articles":[]},"previous":{"title":"GET list of all entries","level":"3.4","depth":1,"path":"accessing/list-entries.md","ref":"accessing/list-entries.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"accessing/list-entries-by-content-type.md","mtime":"2017-03-10T13:00:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T13:02:13.781Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

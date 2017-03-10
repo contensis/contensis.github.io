@@ -1,10 +1,12 @@
 # Linked content
 
-An entry can link to other entries or assets as Entry, Asset or Image field types either defined as a standard entry field or as a composed field type in the content type. These link object can be singular or arrays of links of the same content type e.g. Actors. Linked content can be [unresolved](#unresolved-entries) or [resolved](#resolved-entries) depending on whether a linkDepth value has been provided as a query string parameter to an entry retrieval operation.
+An entry can link to other entries or assets as [entry](/model/entry.md), [asset](/model/asset.md) or [image](/model/image.md) field types. They can be defined as a standard entry fields or as a [composed](/model/composed.md) field type in the content type. These link objects can be singular or arrays of links of the same content type e.g. Actors.
+
+Linked content can be [unresolved](#unresolved-entries) or [resolved](#resolved-entries) depending on whether a linkDepth value has been provided.
 
 ## Unresolved entries
 
-An unresolved entry (or asset) is essentially a subset of the entry structure with enough information to get the correct entry variation with a subsequent HTTP call. Unresolved entries and assets is the default behaviour for linked content.
+An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
@@ -21,11 +23,11 @@ An unresolved entry (or asset) is essentially a subset of the entry structure wi
 ```
 
 ## Resolved entries
-Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can potentially have major benefits to the render performance of your webpage or application, requiring much less network requests, but can also be detrimental if the linkDepth is too deep or there are many link fields.
+Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can significantly improve the render performance of your webpage or application. Whilst fewer network requests can be beneficial, it can also be detrimental if the linkDepth is too deep, or if there are many link fields.
 
 
 ### Resolution rules
-When a linkDepth is provided to an entry retrieval operation to resolve linked content, then the following rules apply:
+When a linkDepth is provided to an entry retrieval operation, then the following rules apply:
 
 - If a language **is** specified, then the specific language variation will be returned
 - If a language **is** specified but the specific language variation does not exist, then `null` will be returned or will not be included in the array

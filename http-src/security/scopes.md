@@ -4,9 +4,9 @@ OAuth 2.0 scopes allow a developer to specify which resources their application 
 
 | Scope name | Associated methods |
 |:-|:-|
-| Entry_Read | [GET a single entry](/accessing/get-entry.md)<br />[GET a list of all entries ](/accessing/list-entries.md#list-all-entries)<br />[GET a list of entries by content type](/accessing/list-entries.md#list-entries-by-content-type) |
+| Entry_Read | [GET a single entry](/accessing/get-entry.md)<br />[GET a list of all entries ](/accessing/list-entries.md#list-all-entries)<br />[GET a list of entries by content type](/accessing/list-entries-by-content-type.md) |
 | ContentType_Read | [GET a single content type](/accessing/get-contenttype.md) |
-| Project_Read | [GET a project](/accessing/get-project.md) |
+| Project_Read | [GET a single project](/accessing/get-project.md) |
 
 ## Example request
 

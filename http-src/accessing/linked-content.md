@@ -10,7 +10,7 @@ An unresolved entry (or asset) is essentially a subset of the entry structure wi
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID |
 | dataFormat | string | | Either 'entry' or 'asset' |
-| language | string | [Language code](/localization.md) | [Optional] The language code of the linked entry variation |
+| language | string | [LanguageCode](/localization.md) | [Optional] The language code of the linked entry variation |
 
 ```json
 {
@@ -21,10 +21,10 @@ An unresolved entry (or asset) is essentially a subset of the entry structure wi
 ```
 
 ## Resolved entries
-Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can potentially have major benefits to the render performance of your webpage or application, requiring much less network requests, but can also be detrimental if the linkDepth is too deep or there are many link fields. 
+Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can potentially have major benefits to the render performance of your webpage or application, requiring much less network requests, but can also be detrimental if the linkDepth is too deep or there are many link fields.
 
 
-### Resolution rules 
+### Resolution rules
 When a linkDepth is provided to an entry retrieval operation to resolve linked content, then the following rules apply:
 
 - If a language **is** specified, then the specific language variation will be returned

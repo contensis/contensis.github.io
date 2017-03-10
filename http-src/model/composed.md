@@ -1,6 +1,6 @@
 # Composed fields
 
-The composed field type contains the data that the [Composer editor](https://contensis.github.io/docs/content-types/field-editors/editor-composer.html) defines. It is an array of objects which expose *type* and *value* properties.  The *type* property is a name given to an *allowed field type validation* defined in the content type that the entry is based on. The *value* contains the data for the field.
+The composed field type contains the data that the [Composer editor](https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/field-editors/composer.aspx) defines. It is an array of objects which expose *type* and *value* properties. The *type* property is a name given to an *allowed field type validation* defined in the content type that the entry is based on. The *value* contains the data for the field.
 
 An *allowed field type* is essentially any standard field (such as Image, Heading, Location, etc.) that restricts what types of field can be added to a composed field.
 
@@ -10,7 +10,7 @@ For example, an *allowed field* could be defined with a type of *Heading* and na
 
 | Name | Type | Format | Description |
 | :--- | :--- | :----- | :---------- |
-| type | string || The name given to a field type defined in the content type. |
+| type | string || The field name given to a field type defined in the content type. |
 | value | *Any* | *Any* | The value of the field, which can be of any type. |
 
 ## Example

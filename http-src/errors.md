@@ -1,4 +1,4 @@
-# Error repsonses
+# Error responses
 
 Status codes and error responses you can encounter when using the API.
 
@@ -30,12 +30,12 @@ Each response follows the same rules.
 ```http
 500 - ServerError
 {
-    "logId": "63cb1df0-b82a-459e-accc-635e187f3b8b",
-    "message": "An error occurred ",
-    "data": {
-        "entryId": "ba8a92bd-0e5f-465e-acec-3cdb3db38df6",
-        "projectId" "moveiDb"
-    },
-    "type": "error"
+  "logId": "63cb1df0-b82a-459e-accc-635e187f3b8b",
+  "message": "An error occurred ",
+  "data": {
+      "entryId": "ba8a92bd-0e5f-465e-acec-3cdb3db38df6",
+      "projectId" "moveiDb"
+  },
+  "type": "error"
 }
 ```

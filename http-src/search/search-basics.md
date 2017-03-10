@@ -126,7 +126,7 @@ The page number can also be specified to allow which set of results is to be ret
 The following example combines the ordering, paging and weighting concepts.
 
 
-```json
+```http
 POST: /api/delivery/projects/{projectId}/entries/search
 
 {

@@ -35,7 +35,7 @@
 * [Quote](model/quote.md)
 
 ## Search
-* [Search basics](search/search-basics.md)
+* [Search basics](search/search-basics.md#search)
   * [Queries](search/search-basics.md#queries)
   * [Sub-queries](search/search-basics.md#sub-queries)
   * [Ordering](search/search-basics.md#ordering)

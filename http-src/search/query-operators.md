@@ -3,7 +3,7 @@
 ## Logical operators
 
 ### And
-This would return any document where first is 1 AND second is 2.
+This would return any document where *first* is *1* AND *second* is *2*.
 
 ```json
 {
@@ -34,6 +34,7 @@ The *And* operator is the default logical operator and is not required to be spe
 ```
 
 
+
 ### Or
 The example would return any document where *first* is *1* OR *second* is *2*.
 
@@ -52,8 +53,9 @@ The example would return any document where *first* is *1* OR *second* is *2*.
 ```
 
 
+
 ### Not
-The not expects an inner operator so in the example any document where *first* is NOT equal to *7* would be returned.
+The *not* expects an inner operator so in the example any document where *first* is NOT equal to *7* would be returned.
 
 
 ```json
@@ -72,7 +74,7 @@ The not expects an inner operator so in the example any document where *first* i
 ## Relational & equality operators
 
 ### Between
-In this example, if our field is between *18* and *45* (inclusive) it would match.
+In this example, if our field is between *18* and *45* inclusive it would match.
 
 ```json
 {
@@ -84,8 +86,9 @@ In this example, if our field is between *18* and *45* (inclusive) it would matc
 ```
 
 
+
 ### Contains
-This would match on a field called *description* containing the phrase 'batman'.
+This would match on a field called *description* containing the phrase *batman*.
 
 ```json
 {
@@ -97,9 +100,9 @@ This would match on a field called *description* containing the phrase 'batman'.
 ```
 
 
-### EndsWith
-This would find any item that has a field called *wordField* with a value ending with 'ing'.
 
+### EndsWith
+This would find any item that has a field called *wordField* with a value ending with *ing*.
 
 ```json
 {
@@ -111,8 +114,9 @@ This would find any item that has a field called *wordField* with a value ending
 ```
 
 
+
 ### EqualTo
-This would find any item that has a field called *blends* with a value exactly matching '5'. For string fields, the comparison is case-insensitive.
+This would find any item that has a field called *blends* with a value exactly matching *5*. For string fields, the comparison is case-insensitive.
 
 ```json
 {
@@ -122,6 +126,7 @@ This would find any item that has a field called *blends* with a value exactly m
     }]
 }
 ```
+
 
 
 ### Exists
@@ -137,8 +142,22 @@ In the example any document that has a field called *fieldName* would be returne
 ```
 
 
+
+### FreeText
+In the example the field *synopsis* is searched upon for any words that match *gotham* or *dark* or *knight*.
+
+```json
+{
+    "where": [{
+        "field": "synopsis",
+        "freeText": "gotham dark knight"
+    }]
+}
+```
+
+
 ### GreaterThan
-In the example any item that has a field called *first* and a value that is greater than 7 would be returned.
+In the example any item that has a field called *first* and a value that is greater than *7* would be returned.
 
 ```json
 {
@@ -150,8 +169,9 @@ In the example any item that has a field called *first* and a value that is grea
 ```
 
 
+
 ### GreaterThanOrEqualTo
-In the example any item that has a field called *first* and a value that is greater than or equal to 7 would be returned.
+In the example any item that has a field called *first* and a value that is greater than or equal to *7* would be returned.
 
 ```json
 {
@@ -163,9 +183,9 @@ In the example any item that has a field called *first* and a value that is grea
 ```
 
 
+
 ### In
-In the example any document that where the field *first* is equal to 1,7 or 11 would be returned.
-The values should be of the same type, in this case *integer*.
+In the example any document that where the field *first* is equal to *1*,*7* or *11* would be returned. The values should be of the same type, in this case *integer*.
 
 ```json
 {
@@ -177,8 +197,9 @@ The values should be of the same type, in this case *integer*.
 ```
 
 
+
 ### LessThan
-In the example any item that has a field called *first* and a value that is less than to 7 would be returned.
+In the example any item that has a field called *first* and a value that is less than *7* would be returned.
 
 ```json
 {
@@ -190,8 +211,9 @@ In the example any item that has a field called *first* and a value that is less
 ```
 
 
+
 ### LessThanOrEqualTo
-In the example any item that has a field called *first* and a value that is less than or equal to 7 would be returned.
+In the example any item that has a field called *first* and a value that is less than or equal to *7* would be returned.
 
 ```json
 {
@@ -203,27 +225,15 @@ In the example any item that has a field called *first* and a value that is less
 ```
 
 
+
 ### StartsWith
-In the example if the *name* field contains a value starting with ‘war’ it would match.
+In the example if the *name* field contains a value starting with *war* it would match.
 
 ```json
 {
     "where": [{
         "field": "name",
         "startsWith": "war"
-    }]
-}
-```
-
-
-### FreeText
-In the example the field 'synopsis' is searched upon for any words that match 'gotham' or 'dark' or 'knight'.
-
-```json
-{
-    "where": [{
-        "field": "synopsis",
-        "freeText": "gotham dark knight"
     }]
 }
 ```

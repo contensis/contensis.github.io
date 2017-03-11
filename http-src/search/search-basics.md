@@ -3,17 +3,7 @@
 A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.
 
 ## Queries
-
-### System fields
-
-System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo".
-
-The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
-
-### Data fields
-Fields defined in the Content Type for the entry can be accessed by their API id.
-
-This example demonstrates a simple search with default ordering, paging and weightings:
+This example demonstrates a simple search.
 
 ```http
 POST: /api/search
@@ -64,9 +54,7 @@ This example demonstrates a simple search with a sub-query:
 Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.
 
 
-Order by 'releaseDate' in an ascending direction
-
-
+Order by 'releaseDate' in an ascending direction.
 ```json
 {
     "orderBy": [{
@@ -74,35 +62,20 @@ Order by 'releaseDate' in an ascending direction
     }],
 }
 ```
-
-
-
-
-
-
-
 Order by 'releaseDate' in a descending direction.
-
-
 ```json
 {
     "orderBy": [{
         "desc": "releaseDate"
-    },],
+    }],
 }
 ```
-
-
-
-
-
 
 ## Paging
 Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly.
 
 
 The page number can also be specified to allow which set of results is to be returned.
-
 
 ```json
 {
@@ -111,18 +84,21 @@ The page number can also be specified to allow which set of results is to be ret
 }
 ```
 
-
-
-
-
-
 ## Weightings
 
 
+## Specifying fields
+
+### System fields
+System fields such as id, contentTypeId, projectId, versionNo etc. are under the *sys* object and can be accessed using a dot notation, e.g. sys.id, sys.contentTypeId, sys.projectId, sys.version.versionNo.
+
+The *entryTitle* field is a dynamic value, determined by the *EntryTitleField* value in the content type.
+
+### Data fields
+Fields defined in the content type for the entry can be accessed by their API id.
+
 
 ## Complete example
-
-
 The following example combines the ordering, paging and weighting concepts.
 
 

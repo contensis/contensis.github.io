@@ -3,9 +3,7 @@
 ## Logical Operators
 
 ### And
-
-This would return any document where first is 1 AND second is 2.
-The *And* operator is the default logical operator and is not required to be specified explicitly.
+This would return any document where *first* is *1* AND *second* is *2*.
 
 ```cs
 var query = new Query(
@@ -15,7 +13,8 @@ var query = new Query(
     )
 );
 ```
-Is equivalent to:
+
+The *And* operator is the default logical operator and is not required to be specified explicitly.
 
 ```cs
 var query = new Query(
@@ -23,10 +22,8 @@ var query = new Query(
     Op.EqualTo("second", 2)
 );
 ```
----
 
 ### Or
-
 The example would return any document where *first* is *1* OR *second* is *2*.
 
 ```cs
@@ -37,12 +34,11 @@ var query = new Query(
     )
 );
 ```
----
+
 
 
 ### Not
-
-The not expects an inner operator so in the example any document where *first* is NOT equal to *7* would be returned.
+The *not* expects an inner operator so in the example any document where *first* is NOT equal to *7* would be returned.
 
 ```cs
 var query = new Query(
@@ -50,9 +46,12 @@ var query = new Query(
 );
 ```
 
----
+
 
 ## Relational & equality operators
+
+### Between
+In this example, if our field is between *18* and *45* inclusive it would match.
 
 ```cs
 var query = new Query(
@@ -60,12 +59,9 @@ var query = new Query(
 );
 ```
 
----
 
 ### Contains
-
-This would match on a field called *description* containing the phrase 'batman'.
-
+This would match on a field called *description* containing the phrase *batman*.
 
 ```cs
 var query = new Query(
@@ -73,12 +69,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### EndsWith
-
-This would find any item that has a field called *wordField* with a value ending with 'ing'.
-
+This would find any item that has a field called *wordField* with a value ending with *ing*.
 
 ```cs
 var query = new Query(
@@ -86,12 +80,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### EqualTo
-
-This would find any item that has a field called *blends* with a value exactly matching '5'. For string fields, the comparison is case-insensitive.
-
+This would find any item that has a field called *blends* with a value exactly matching *5*. For string fields, the comparison is case-insensitive.
 
 ```cs
 var query = new Query(
@@ -99,13 +91,11 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### Exists
-
 In the example any document that has a field called *fieldName* would be returned.
 You can use a value of *false* if you want documents that do not contain a given field.
-
 
 ```cs
 var query = new Query(
@@ -113,12 +103,21 @@ var query = new Query(
 );
 ```
 
----
+
+
+### FreeText
+In the example the field *synopsis* is searched upon for any words that match *gotham* or *dark* or *knight*.
+
+```cs
+var query = new Query(
+  Op.FreeText("synopsis", "gotham dark night")
+);
+```
+
+
 
 ### GreaterThan
-
-In the example any item that has a field called *first* and a value that is greater than 7 would be returned.
-
+In the example any item that has a field called *first* and a value that is greater than *7* would be returned.
 
 ```cs
 var query = new Query(
@@ -126,12 +125,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### GreaterThanOrEqualTo
-
-In the example any item that has a field called *first* and a value that is greater than or equal to 7 would be returned.
-
+In the example any item that has a field called *first* and a value that is greater than or equal to *7* would be returned.
 
 ```cs
 var query = new Query(
@@ -139,13 +136,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### In
-
-In the example any document that where the field *first* is equal to 1,7 or 11 would be returned.
-The values should be of the same type, in this case *integer*.
-
+In the example any document that where the field *first* is equal to *1*,*7* or *11* would be returned. The values should be of the same type, in this case *integer*.
 
 ```cs
 var query = new Query(
@@ -153,12 +147,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### LessThan
-
-In the example any item that has a field called *first* and a value that is less than to 7 would be returned.
-
+In the example any item that has a field called *first* and a value that is less than *7* would be returned.
 
 ```cs
 var query = new Query(
@@ -166,12 +158,10 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### LessThanOrEqualTo
-
-In the example any item that has a field called *first* and a value that is less than or equal to 7 would be returned.
-
+In the example any item that has a field called *first* and a value that is less than or equal to *7* would be returned.
 
 ```cs
 var query = new Query(
@@ -179,17 +169,13 @@ var query = new Query(
 );
 ```
 
----
+
 
 ### StartsWith
-
-In the example if the *name* field contains a value starting with ‘war’ it would match.
-
+In the example if the *name* field contains a value starting with *war* it would match.
 
 ```cs
 var query = new Query(
     Op.StartsWith("name", "war")
 );
 ```
-
----

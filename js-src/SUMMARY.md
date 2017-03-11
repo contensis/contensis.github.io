@@ -1,6 +1,4 @@
 ## JS Delivery API
-* [IMPORTED TEXT](text-to-md.md)
-
 * [Introduction](README.md)
 * [Getting started](/key-concepts/getting-started.md)
 
@@ -43,8 +41,3 @@
   * [Paging](search/search-basics.md#paging)
   * [Weightings](search/search-basics.md#weightings)
 * [Query operators](search/query-operators.md)
-
-<!--## Cookbook
-* [Example one](cookbook/example-one.md)
-* [Example two](cookbook/example-two.md)
-* [Example three](cookbook/example-three.md)-->

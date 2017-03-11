@@ -99,20 +99,7 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="../text-to-md.html">
-            
-                <a href="../text-to-md.html">
-            
-                    
-                    IMPORTED TEXT
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../">
+        <li class="chapter " data-level="1.1" data-path="../">
             
                 <a href="../">
             
@@ -125,7 +112,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../key-concepts/getting-started.html">
+        <li class="chapter " data-level="1.2" data-path="../key-concepts/getting-started.html">
             
                 <a href="../key-concepts/getting-started.html">
             
@@ -611,7 +598,7 @@
                                 <h1 id="query-operators">Query operators</h1>
 <h2 id="logical-operators">Logical operators</h2>
 <h3 id="and">And</h3>
-<p>This would return any document where first is 1 AND second is 2. The And operator is the default logical operator and is not required to be specified explicitly.</p>
+<p>This would return any document where <em>first</em> is <em>1</em> AND <em>second</em> is <em>2</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
         Op<span class="token punctuation">.</span><span class="token function">and</span><span class="token punctuation">(</span>
             Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
@@ -619,14 +606,14 @@
         <span class="token punctuation">)</span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>Is equivalent to:</p>
+<p>The <em>And</em> operator is the default logical operator and is not required to be specified explicitly.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
         Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
         Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;second&apos;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="or">Or</h3>
-<p>The example would return any document where first is 1 OR second is 2.</p>
+<p>The example would return any document where <em>first</em> is <em>1</em> OR <em>second</em> is <em>2</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
         Op<span class="token punctuation">.</span><span class="token function">or</span><span class="token punctuation">(</span>
             Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
@@ -635,79 +622,80 @@
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="not">Not</h3>
-<p>The not expects an inner operator so in the example any document where first is NOT equal to 7 would be returned.</p>
+<p>The <em>not</em> expects an inner operator so in the example any document where <em>first</em> is NOT equal to <em>7</em> would be returned.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
         Op<span class="token punctuation">.</span><span class="token function">not</span><span class="token punctuation">(</span>Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 id="relational--equality-operators">Relational &amp; equality operators</h2>
 <h3 id="between">Between</h3>
-<p>In this example, if our field is between 18 and 45 (inclusive) it would match.</p>
+<p>In this example, if our field is between <em>18</em> and <em>45</em> inclusive it would match.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
     Op<span class="token punctuation">.</span><span class="token function">between</span><span class="token punctuation">(</span><span class="token string">&apos;age&apos;</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="contains">Contains</h3>
-<p>This would match on a field called description containing the phrase &apos;batman&apos;.</p>
+<p>This would match on a field called <em>description</em> containing the phrase <em>batman</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
     Op<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token string">&apos;description&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;batman&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="endswith">EndsWith</h3>
-<p>This would find any item that has a field called wordField with a value ending with &apos;ing&apos;.</p>
+<p>This would find any item that has a field called <em>wordField</em> with a value ending with <em>ing</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
     Op<span class="token punctuation">.</span><span class="token function">endsWith</span><span class="token punctuation">(</span><span class="token string">&apos;wordField&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;ing&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="equalto">EqualTo</h3>
-<p>This would find any item that has a field called blends with a value exactly matching &apos;5&apos;. For string fields, the comparison is case-insensitive.</p>
+<p>This would find any item that has a field called <em>blends</em> with a value exactly matching <em>5</em>. For string fields, the comparison is case-insensitive.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
     Op<span class="token punctuation">.</span><span class="token function">equalTo</span><span class="token punctuation">(</span><span class="token string">&apos;blends&apos;</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="exists">Exists</h3>
-<p>In the example any document that has a field called fieldName would be returned. You can use a value of false if you want documents that do not contain a given field.</p>
+<p>In the example any document that has a field called <em>fieldName</em> would be returned. You can use a value of <em>false</em> if you want documents that do not contain a given field.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
-  Op<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+  Op<span class="token punctuation">.</span><span class="token function">exists</span><span class="token punctuation">(</span><span class="token string">&apos;fieldName&apos;</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="freetext">FreeText</h3>
+<p>In the example the field <em>synopsis</em> is searched upon for any words that match <em>gotham</em> or <em>dark</em> or <em>knight</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
-  Op<span class="token punctuation">.</span><span class="token function">freeText</span><span class="token punctuation">(</span><span class="token string">&apos;title&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Batman&apos;</span><span class="token punctuation">)</span>
+  Op<span class="token punctuation">.</span><span class="token function">freeText</span><span class="token punctuation">(</span><span class="token string">&apos;synopsis&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;gotham dark night&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="greaterthan">GreaterThan</h3>
-<p>In the example any item that has a field called first and a value that is greater than 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is greater than <em>7</em> would be returned.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token function">greaterThan</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="greaterthanorequalto">GreaterThanOrEqualTo</h3>
-<p>In the example any item that has a field called first and a value that is greater than or equal to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is greater than or equal to <em>7</em> would be returned.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token function">greaterThanOrEqualTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="in">In</h3>
-<p>In the example any document that where the field first is equal to 1,7 or 11 would be returned. The values should be of the same type, in this case integer.</p>
+<p>In the example any document that where the field <em>first</em> is equal to <em>1</em>,<em>7</em> or <em>11</em> would be returned. The values should be of the same type, in this case <em>integer</em>.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token keyword">in</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="lessthan">LessThan</h3>
-<p>In the example any item that has a field called first and a value that is less than to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is less than <em>7</em> would be returned.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token function">lessThan</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="lessthanorequalto">LessThanOrEqualTo</h3>
-<p>In the example any item that has a field called first and a value that is less than or equal to 7 would be returned.</p>
+<p>In the example any item that has a field called <em>first</em> and a value that is less than or equal to <em>7</em> would be returned.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token function">lessThanOrEqualTo</span><span class="token punctuation">(</span><span class="token string">&apos;first&apos;</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="startswith">StartsWith</h3>
-<p>In the example if the name field contains a value starting with &#x2018;war&#x2019; it would match.</p>
+<p>In the example if the <em>name</em> field contains a value starting with <em>war</em> it would match.</p>
 <pre class="language-"><code class="lang-js"><span class="token keyword">var</span> query <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Query</span><span class="token punctuation">(</span>
   Op<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">&apos;name&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;war&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -751,7 +739,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"7.2","depth":1,"previous":{"title":"Weightings","level":"7.1.5","depth":2,"anchor":"#weightings","path":"search/search-basics.md","ref":"search/search-basics.md#weightings","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/query-operators.md","mtime":"2017-03-10T22:10:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-10T22:23:55.339Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"7.2","depth":1,"previous":{"title":"Weightings","level":"7.1.5","depth":2,"anchor":"#weightings","path":"search/search-basics.md","ref":"search/search-basics.md#weightings","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/query-operators.md","mtime":"2017-03-11T07:44:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T07:52:27.977Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

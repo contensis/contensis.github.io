@@ -1,9 +1,9 @@
-# Summary
+## .NET Delivery API
+* [Introduction](README.md)
 
 * [Introduction](/README.md)
 
 ## Security
-
 * [Authentication](/security/authentication.md)
 * [Scopes](/security/scopes.md)
 
@@ -34,5 +34,3 @@
 
 * [Search basics](/search/entry-search.md)
 * [Query operators](/search/query-operators.md)
-
-

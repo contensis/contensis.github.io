@@ -13,7 +13,7 @@ In this section you will be guided through defining and creating content using t
 
 ## Create a content type
 
-You can [create a new Content Type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the Content Type editors in the Contensis UI. Create a content type called *Film* with the following fields:
+You can [create a new content type](https://contensis.github.io/docs/content-types/create-a-content-type.html) easily in the content type editors in the Contensis UI. Create a content type called *Film* with the following fields:
 
 | Field name | API ID | Type | Description |
 | ---------- | ------ | ---- | ----------- |
@@ -22,7 +22,7 @@ You can [create a new Content Type](https://contensis.github.io/docs/content-typ
 | Year of release | yearOfRelease | Number (integer) | The year the film was released |
 | Cover image | coverImage | Image | A reference to the cover image asset |
 
-**TODO: define all needed films** 
+**TODO: define all needed films**
 
 ## Upload the film images
 
@@ -79,4 +79,3 @@ Great, now we can start creating the Razor View that will render the film listin
 
 </div>
 ```
-

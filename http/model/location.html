@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Location · GitBook</title>
+        <title>Location · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,19 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
         
@@ -37,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -64,7 +62,7 @@
     <link rel="next" href="quote.html" />
     
     
-    <link rel="prev" href="image.html" />
+    <link rel="prev" href="date-range.html" />
     
 
     </head>
@@ -82,16 +80,24 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
         
-        <li class="header">API Reference</li>
+        <li class="header">HTTP Delivery API</li>
         
         
     
@@ -108,12 +114,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../localization.html">
+        <li class="chapter " data-level="1.2" data-path="../errors.html">
             
-                <a href="../localization.html">
+                <a href="../errors.html">
             
                     
-                    Localization
+                    Error responses
             
                 </a>
             
@@ -170,16 +176,16 @@
 
     
         
-        <li class="header">Accessing content</li>
+        <li class="header">Key concepts</li>
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../accessing/get-entry.html">
+        <li class="chapter " data-level="3.1" data-path="../key-concepts/data-types.html">
             
-                <a href="../accessing/get-entry.html">
+                <a href="../key-concepts/data-types.html">
             
                     
-                    GET an entry
+                    Data types
             
                 </a>
             
@@ -187,12 +193,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../accessing/list-entries.html">
+        <li class="chapter " data-level="3.2" data-path="../key-concepts/data-formats.html">
             
-                <a href="../accessing/list-entries.html">
+                <a href="../key-concepts/data-formats.html">
             
                     
-                    GET list of entries
+                    Data formats
             
                 </a>
             
@@ -200,12 +206,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../accessing/get-contenttype.html">
+        <li class="chapter " data-level="3.3" data-path="../localization.html">
             
-                <a href="../accessing/get-contenttype.html">
+                <a href="../localization.html">
             
                     
-                    GET a content type
+                    Localization
             
                 </a>
             
@@ -213,22 +219,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../accessing/get-project.html">
+        <li class="chapter " data-level="3.4" data-path="../key-concepts/linked-content.html">
             
-                <a href="../accessing/get-project.html">
-            
-                    
-                    GET a project
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.5" data-path="../accessing/linked-content.html">
-            
-                <a href="../accessing/linked-content.html">
+                <a href="../key-concepts/linked-content.html">
             
                     
                     Linked content
@@ -242,16 +235,16 @@
 
     
         
-        <li class="header">Field types</li>
+        <li class="divider"></li>
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../fields/data-types.html">
+        <li class="chapter " data-level="4.1" data-path="../key-concepts/get-project.html">
             
-                <a href="../fields/data-types.html">
+                <a href="../key-concepts/get-project.html">
             
                     
-                    Data types
+                    GET a single project
             
                 </a>
             
@@ -259,12 +252,51 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../fields/data-formats.html">
+        <li class="chapter " data-level="4.2" data-path="../key-concepts/get-contenttype.html">
             
-                <a href="../fields/data-formats.html">
+                <a href="../key-concepts/get-contenttype.html">
             
                     
-                    Data formats
+                    GET a single content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../key-concepts/get-entry.html">
+            
+                <a href="../key-concepts/get-entry.html">
+            
+                    
+                    GET a single entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../key-concepts/list-entries.html">
+            
+                <a href="../key-concepts/list-entries.html">
+            
+                    
+                    GET list of all entries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../key-concepts/list-entries-by-content-type.html">
+            
+                <a href="../key-concepts/list-entries-by-content-type.html">
+            
+                    
+                    GET list of entries by content type
             
                 </a>
             
@@ -318,12 +350,12 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="asset.html">
+        <li class="chapter " data-level="5.4" data-path="version.html">
             
-                <a href="asset.html">
+                <a href="version.html">
             
                     
-                    Asset
+                    Version
             
                 </a>
             
@@ -331,85 +363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="version-info.html">
-            
-                <a href="version-info.html">
-            
-                    
-                    VersionInfo
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.6" data-path="composed.html">
-            
-                <a href="composed.html">
-            
-                    
-                    Composed
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.7" data-path="date-range.html">
-            
-                <a href="date-range.html">
-            
-                    
-                    DateRange
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.8" data-path="image.html">
-            
-                <a href="image.html">
-            
-                    
-                    Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="5.9" data-path="location.html">
-            
-                <a href="location.html">
-            
-                    
-                    Location
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.10" data-path="quote.html">
-            
-                <a href="quote.html">
-            
-                    
-                    Quote
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.11" data-path="paged-list.html">
+        <li class="chapter " data-level="5.5" data-path="paged-list.html">
             
                 <a href="paged-list.html">
             
@@ -422,12 +376,84 @@
             
         </li>
     
-        <li class="chapter " data-level="5.12" data-path="errors.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="asset.html">
             
-                <a href="errors.html">
+                <a href="asset.html">
             
                     
-                    Error
+                    Asset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="image.html">
+            
+                <a href="image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="composed.html">
+            
+                <a href="composed.html">
+            
+                    
+                    Composed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="date-range.html">
+            
+                <a href="date-range.html">
+            
+                    
+                    Date range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="6.5" data-path="location.html">
+            
+                <a href="location.html">
+            
+                    
+                    Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="quote.html">
+            
+                <a href="quote.html">
+            
+                    
+                    Quote
             
                 </a>
             
@@ -442,9 +468,9 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
             
-                <a href="../search/search-basics.html">
+                <a href="../search/search-basics.html#search">
             
                     
                     Search basics
@@ -456,7 +482,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1.1" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html#queries">
             
@@ -469,7 +495,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.2" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1.2" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html#sub-queries">
             
@@ -482,7 +508,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1.3" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html#ordering">
             
@@ -495,7 +521,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.4" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1.4" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html#paging">
             
@@ -508,7 +534,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="7.1.5" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html#weightings">
             
@@ -526,7 +552,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="../search/query-operators.html">
+        <li class="chapter " data-level="7.2" data-path="../search/query-operators.html">
             
                 <a href="../search/query-operators.html">
             
@@ -585,7 +611,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="location">Location</h1>
-<p>The Location object represents a geographical coordinate that specifies the position of a point on the Earth&apos;s surface.</p>
+<p>The location object represents a geographical coordinate that specifies the position of a point on the Earth&apos;s surface.</p>
 <h2 id="properties">Properties</h2>
 <table>
 <thead>
@@ -609,10 +635,10 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;lat&quot;</span>: <span class="hljs-number">52.415789</span>,
-    <span class="hljs-string">&quot;lng&quot;</span>: <span class="hljs-number">-2.640774</span>
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;lat&quot;</span><span class="token operator">:</span> <span class="token number">52.415789</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lng&quot;</span><span class="token operator">:</span> -<span class="token number">2.640774</span>
+<span class="token punctuation">}</span>
 </code></pre>
 
                                 
@@ -640,14 +666,24 @@
             </div>
 
             
-
+                
+                <a href="date-range.html" class="navigation navigation-prev " aria-label="Previous page: Date range">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="quote.html" class="navigation navigation-next " aria-label="Next page: Quote">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Location","level":"5.9","depth":1,"next":{"title":"Quote","level":"5.10","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"previous":{"title":"Image","level":"5.8","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"model/location.md","mtime":"2017-03-08T10:52:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T14:04:28.382Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Location","level":"6.5","depth":1,"next":{"title":"Quote","level":"6.6","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"previous":{"title":"Date range","level":"6.4","depth":1,"path":"model/date-range.md","ref":"model/date-range.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/location.md","mtime":"2017-03-10T20:14:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T07:47:08.711Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -655,6 +691,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -670,18 +710,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

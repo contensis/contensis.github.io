@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Search basics · GitBook</title>
+        <title>Search basics · Contensis HTTP Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -17,19 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
-                
-            
-                
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
         
@@ -37,6 +33,8 @@
     
 
     
+        
+        <link rel="stylesheet" href="../styles/website.css">
         
     
         
@@ -64,7 +62,7 @@
     <link rel="next" href="search-basics.html" />
     
     
-    <link rel="prev" href="../model/errors.html" />
+    <link rel="prev" href="../model/quote.html" />
     
 
     </head>
@@ -82,16 +80,24 @@
                 <nav role="navigation">
                 
 
-
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
         
-        <li class="header">API Reference</li>
+        <li class="header">HTTP Delivery API</li>
         
         
     
@@ -108,12 +114,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../localization.html">
+        <li class="chapter " data-level="1.2" data-path="../errors.html">
             
-                <a href="../localization.html">
+                <a href="../errors.html">
             
                     
-                    Localization
+                    Error responses
             
                 </a>
             
@@ -170,16 +176,16 @@
 
     
         
-        <li class="header">Accessing content</li>
+        <li class="header">Key concepts</li>
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../accessing/get-entry.html">
+        <li class="chapter " data-level="3.1" data-path="../key-concepts/data-types.html">
             
-                <a href="../accessing/get-entry.html">
+                <a href="../key-concepts/data-types.html">
             
                     
-                    GET an entry
+                    Data types
             
                 </a>
             
@@ -187,12 +193,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../accessing/list-entries.html">
+        <li class="chapter " data-level="3.2" data-path="../key-concepts/data-formats.html">
             
-                <a href="../accessing/list-entries.html">
+                <a href="../key-concepts/data-formats.html">
             
                     
-                    GET list of entries
+                    Data formats
             
                 </a>
             
@@ -200,12 +206,12 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../accessing/get-contenttype.html">
+        <li class="chapter " data-level="3.3" data-path="../localization.html">
             
-                <a href="../accessing/get-contenttype.html">
+                <a href="../localization.html">
             
                     
-                    GET a content type
+                    Localization
             
                 </a>
             
@@ -213,22 +219,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../accessing/get-project.html">
+        <li class="chapter " data-level="3.4" data-path="../key-concepts/linked-content.html">
             
-                <a href="../accessing/get-project.html">
-            
-                    
-                    GET a project
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.5" data-path="../accessing/linked-content.html">
-            
-                <a href="../accessing/linked-content.html">
+                <a href="../key-concepts/linked-content.html">
             
                     
                     Linked content
@@ -242,16 +235,16 @@
 
     
         
-        <li class="header">Field types</li>
+        <li class="divider"></li>
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../fields/data-types.html">
+        <li class="chapter " data-level="4.1" data-path="../key-concepts/get-project.html">
             
-                <a href="../fields/data-types.html">
+                <a href="../key-concepts/get-project.html">
             
                     
-                    Data types
+                    GET a single project
             
                 </a>
             
@@ -259,12 +252,51 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../fields/data-formats.html">
+        <li class="chapter " data-level="4.2" data-path="../key-concepts/get-contenttype.html">
             
-                <a href="../fields/data-formats.html">
+                <a href="../key-concepts/get-contenttype.html">
             
                     
-                    Data formats
+                    GET a single content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../key-concepts/get-entry.html">
+            
+                <a href="../key-concepts/get-entry.html">
+            
+                    
+                    GET a single entry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../key-concepts/list-entries.html">
+            
+                <a href="../key-concepts/list-entries.html">
+            
+                    
+                    GET list of all entries
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../key-concepts/list-entries-by-content-type.html">
+            
+                <a href="../key-concepts/list-entries-by-content-type.html">
+            
+                    
+                    GET list of entries by content type
             
                 </a>
             
@@ -318,12 +350,12 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="../model/asset.html">
+        <li class="chapter " data-level="5.4" data-path="../model/version.html">
             
-                <a href="../model/asset.html">
+                <a href="../model/version.html">
             
                     
-                    Asset
+                    Version
             
                 </a>
             
@@ -331,85 +363,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="../model/version-info.html">
-            
-                <a href="../model/version-info.html">
-            
-                    
-                    VersionInfo
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.6" data-path="../model/composed.html">
-            
-                <a href="../model/composed.html">
-            
-                    
-                    Composed
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.7" data-path="../model/date-range.html">
-            
-                <a href="../model/date-range.html">
-            
-                    
-                    DateRange
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.8" data-path="../model/image.html">
-            
-                <a href="../model/image.html">
-            
-                    
-                    Image
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.9" data-path="../model/location.html">
-            
-                <a href="../model/location.html">
-            
-                    
-                    Location
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.10" data-path="../model/quote.html">
-            
-                <a href="../model/quote.html">
-            
-                    
-                    Quote
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="5.11" data-path="../model/paged-list.html">
+        <li class="chapter " data-level="5.5" data-path="../model/paged-list.html">
             
                 <a href="../model/paged-list.html">
             
@@ -422,12 +376,84 @@
             
         </li>
     
-        <li class="chapter " data-level="5.12" data-path="../model/errors.html">
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../model/asset.html">
             
-                <a href="../model/errors.html">
+                <a href="../model/asset.html">
             
                     
-                    Error
+                    Asset
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../model/image.html">
+            
+                <a href="../model/image.html">
+            
+                    
+                    Image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../model/composed.html">
+            
+                <a href="../model/composed.html">
+            
+                    
+                    Composed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../model/date-range.html">
+            
+                <a href="../model/date-range.html">
+            
+                    
+                    Date range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../model/location.html">
+            
+                <a href="../model/location.html">
+            
+                    
+                    Location
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../model/quote.html">
+            
+                <a href="../model/quote.html">
+            
+                    
+                    Quote
             
                 </a>
             
@@ -442,9 +468,9 @@
         
         
     
-        <li class="chapter active" data-level="6.1" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1" data-path="search-basics.html">
             
-                <a href="search-basics.html">
+                <a href="search-basics.html#search">
             
                     
                     Search basics
@@ -456,7 +482,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.1.1" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1.1" data-path="search-basics.html">
             
                 <a href="search-basics.html#queries">
             
@@ -469,7 +495,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.2" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1.2" data-path="search-basics.html">
             
                 <a href="search-basics.html#sub-queries">
             
@@ -482,7 +508,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.3" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1.3" data-path="search-basics.html">
             
                 <a href="search-basics.html#ordering">
             
@@ -495,7 +521,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.4" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1.4" data-path="search-basics.html">
             
                 <a href="search-basics.html#paging">
             
@@ -508,7 +534,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.1.5" data-path="search-basics.html">
+        <li class="chapter " data-level="7.1.5" data-path="search-basics.html">
             
                 <a href="search-basics.html#weightings">
             
@@ -526,7 +552,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="query-operators.html">
+        <li class="chapter " data-level="7.2" data-path="query-operators.html">
             
                 <a href="query-operators.html">
             
@@ -587,85 +613,81 @@
                                 <h1 id="search">Search</h1>
 <p>A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.</p>
 <h2 id="queries">Queries</h2>
-<h3 id="system-fields">System fields</h3>
-<p>System fields such as id, contentTypeId, projectId, versionNo etc. are under the &quot;sys&quot; object and can be accessed using a dot notation, i.e. &quot;sys.id&quot;, &quot;sys.contentTypeId&quot;, &quot;sys.projectId&quot;, &quot;sys.version.versionNo&quot;. </p>
-<p>The &apos;entryTitle&apos; field is a dynamic value, determined by the &apos;EntryTitleField&apos; value in the Content Type.</p>
-<h3 id="data-fields">Data fields</h3>
-<p>Fields defined in the Content Type for the entry can be accessed by their API id.</p>
-<p>This example demonstrates a simple search with default ordering, paging and weightings:</p>
-<pre><code class="lang-http"><span class="hljs-attribute">POST</span>: /api/search
+<p>This example demonstrates a simple search.</p>
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">POST:</span> /api/search
 
-<span class="json">{
-    <span class="hljs-attr">&quot;where&quot;</span>: [
+{
+    &quot;where&quot;: [
         {
-            <span class="hljs-attr">&quot;field&quot;</span>: <span class="hljs-string">&quot;title&quot;</span>,
-            <span class="hljs-attr">&quot;contains&quot;</span>: <span class="hljs-string">&quot;Batman&quot;</span>
-        }, 
+            &quot;field&quot;: &quot;title&quot;,
+            &quot;contains&quot;: &quot;Batman&quot;
+        },
         {
-            <span class="hljs-attr">&quot;field&quot;</span>: <span class="hljs-string">&quot;runtime&quot;</span>,
-            <span class="hljs-attr">&quot;greaterThan&quot;</span>: <span class="hljs-number">200</span>
+            &quot;field&quot;: &quot;runtime&quot;,
+            &quot;greaterThan&quot;: 200
         }
     ]
 }
-</span></code></pre>
+</code></pre>
 <h2 id="sub-queries">Sub-queries</h2>
 <p>A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of <a href="query-operators.html#logical-operators">logical operators</a>.</p>
 <p>This example demonstrates a simple search with a sub-query:</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;where&quot;</span>: [
-        {
-            <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;title&quot;</span>,
-            <span class="hljs-string">&quot;contains&quot;</span>: <span class="hljs-string">&quot;Batman&quot;</span>
-        },
-        {
-            <span class="hljs-string">&quot;or&quot;</span>: [
-                {
-                    <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;releaseDate&quot;</span>,
-                    <span class="hljs-string">&quot;greaterThan&quot;</span>: <span class="hljs-number">1960</span>
-                },
-                {
-                    <span class="hljs-string">&quot;field&quot;</span>: <span class="hljs-string">&quot;tagline&quot;</span>,
-                    <span class="hljs-string">&quot;contains&quot;</span>: <span class="hljs-string">&quot;gotham&quot;</span>
-                }
-            ]
-        }
-    ]
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;where&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;title&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;contains&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Batman&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;or&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;releaseDate&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;greaterThan&quot;</span><span class="token operator">:</span> <span class="token number">1960</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;tagline&quot;</span><span class="token punctuation">,</span>
+                    <span class="token property">&quot;contains&quot;</span><span class="token operator">:</span> <span class="token string">&quot;gotham&quot;</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h2 id="ordering">Ordering</h2>
 <p>Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.</p>
-<p>Order by &apos;releaseDate&apos;.</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;orderBy&quot;</span>: [{
-        <span class="hljs-string">&quot;asc&quot;</span>: <span class="hljs-string">&quot;releaseDate&quot;</span>
-    }],
-}
+<p>Order by &apos;releaseDate&apos; in an ascending direction.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;orderBy&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;asc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;releaseDate&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p>Order by &apos;releaseDate&apos; in a descending direction.</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;orderBy&quot;</span>: [{
-        <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;releaseDate&quot;</span>
-    },],
-}
-</code></pre>
-<p>Order by &apos;releaseDate&apos; in a descending direction.</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;orderBy&quot;</span>: [{
-        <span class="hljs-string">&quot;desc&quot;</span>: <span class="hljs-string">&quot;releaseDate&quot;</span>
-    },],
-}
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;orderBy&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;releaseDate&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h2 id="paging">Paging</h2>
-<p>Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly. The page number can also be specified to allow which set of results is to be returned.</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-number">50</span>,
-    <span class="hljs-string">&quot;pageIndex&quot;</span>: <span class="hljs-number">1</span>
-}
+<p>Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly.</p>
+<p>The page number can also be specified to allow which set of results is to be returned.</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;pageSize&quot;</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;pageIndex&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <h2 id="weightings">Weightings</h2>
-<h2 id="full-example">Full example</h2>
-<p>The example below combines the ordering and paging concepts:</p>
-<pre><code class="lang-http">POST: /api/delivery/projects/{projectId}/entries/search
+<h2 id="specifying-fields">Specifying fields</h2>
+<h3 id="system-fields">System fields</h3>
+<p>System fields such as id, contentTypeId, projectId, versionNo etc. are under the <em>sys</em> object and can be accessed using a dot notation, e.g. sys.id, sys.contentTypeId, sys.projectId, sys.version.versionNo.</p>
+<p>The <em>entryTitle</em> field is a dynamic value, determined by the <em>EntryTitleField</em> value in the content type.</p>
+<h3 id="data-fields">Data fields</h3>
+<p>Fields defined in the content type for the entry can be accessed by their API id.</p>
+<h2 id="complete-example">Complete example</h2>
+<p>The following example combines the ordering, paging and weighting concepts.</p>
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">POST:</span> /api/delivery/projects/{projectId}/entries/search
+
 {
     &quot;where&quot;: [
         {
@@ -692,27 +714,6 @@
     &quot;pageSize&quot;: 50
 }
 </code></pre>
-<table>
-<thead>
-<tr>
-<th>HTTP Status Code</th>
-<th>Reason</th>
-<th>Response Model</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>200</td>
-<td>Success</td>
-<td><a href="../model/paged-list.html">PagedList</a> of <a href="../model/entry.html">Entry</a> items</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error</td>
-<td><a href="../model/errors.html">Error</a></td>
-</tr>
-</tbody>
-</table>
 
                                 
                                 </section>
@@ -739,14 +740,24 @@
             </div>
 
             
-
+                
+                <a href="../model/quote.html" class="navigation navigation-prev " aria-label="Previous page: Quote">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="search-basics.html#queries" class="navigation navigation-next " aria-label="Next page: Queries">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Search basics","level":"6.1","depth":1,"next":{"title":"Queries","level":"6.1.1","depth":2,"anchor":"#queries","path":"search/search-basics.md","ref":"search/search-basics.md#queries","articles":[]},"previous":{"title":"Error","level":"5.12","depth":1,"path":"model/errors.md","ref":"model/errors.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["theme-api"],"pluginsConfig":{"theme-api":{"languages":[{"lang":"http","name":"HTTP","default":true},{"lang":"json","name":"JSON"}],"split":true,"theme":"dark"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"search/search-basics.md","mtime":"2017-03-08T15:21:32.969Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-09T14:04:28.382Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Search basics","level":"7.1","depth":1,"next":{"title":"Queries","level":"7.1.1","depth":2,"anchor":"#queries","path":"search/search-basics.md","ref":"search/search-basics.md#queries","articles":[]},"previous":{"title":"Quote","level":"6.6","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/search-basics.md","mtime":"2017-03-11T07:44:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-11T07:47:08.711Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -754,6 +765,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
@@ -769,18 +784,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

@@ -1,19 +1,51 @@
-.api-method .api-method-code {
-    margin: 30px;
+.markdown-section code,
+.markdown-section pre>code {
+  font-size: 1em;
 }
 
-.page-wrapper {
-    padding-bottom: 30px;
+.markdown-section p code {
+font-size: 0.85em;
 }
 
-.markdown-section h1 {
-    font-size: 1.5em;
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+color: #66d9ef;
 }
 
-.markdown-section h2 {
-    font-size: 1.25em;
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+background: #222;
+text-shadow: none;
 }
 
-.markdown-section h3 {
-    font-size: 1.1em;
+pre[class*="language-"] {
+padding: 1.5em 1em;
+border-radius: 0;
+}
+
+.page-inner {
+max-width: 1000px;
+}
+
+.contensis-logo {
+width: 200px;
+height: auto;
+display: block;
+margin-left: 15px;
+}
+
+#book-search-input {
+  margin-bottom: 1em;
+}
+
+.book-summary {
+  background: #f4f4f4;
+}
+.book-summary ul.summary li.active>a {
+border-right: 4px solid #389b71;
+background: #e7e7e7;
 }

@@ -1,22 +1,29 @@
 {
+    "title": "Contensis HTTP Delivery API",
+    "links": {
+      "sidebar": {
+          "Development Home": "http://zengenti.com/en-gb/products/contensis/contensis.aspx"
+      }
+    },
     "plugins": [
-        "theme-api"
+      "-sharing",
+      "fontsettings",
+      "-highlight",
+      "prism"
     ],
     "pluginsConfig": {
-        "theme-api": {
-            "theme": "dark",
-            "split": true,
-            "languages": [
-                {
-                    "lang": "http",
-                    "name": "HTTP",
-                    "default": true
-                },
-                {
-                    "lang": "json",
-                    "name": "JSON"
-                }
-            ]
+      "fontsettings": {
+        "theme": "white",
+        "family": "sans",
+        "size": 2
+      },
+      "prism": {
+        "css": [
+          "prismjs/themes/prism-okaidia.css"
+        ],
+        "lang": {
+          "json": "json"
         }
+      }
     }
 }

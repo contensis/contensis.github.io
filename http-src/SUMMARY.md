@@ -1,38 +1,41 @@
-## API Reference
-* [Localization](localization.md)
+## HTTP Delivery API
+* [Introduction](README.md)
+* [Error responses](errors.md)
 
 ## Security
 * [Authentication](security/authentication.md)
 * [Authorization](security/authorization.md)
 * [Scopes](security/scopes.md)
 
-## Accessing content
-* [GET a single project](accessing/get-project.md)
-* [GET a single content type](accessing/get-contenttype.md)
-* [GET a single entry](accessing/get-entry.md)
-* [GET a list of entries](accessing/list-entries.md)
-* [Linked content](accessing/linked-content.md)
+## Key concepts
+* [Data types](key-concepts/data-types.md)
+* [Data formats](key-concepts/data-formats.md)
+* [Localization](localization.md)
+* [Linked content](key-concepts/linked-content.md)
+---
+* [GET a single project](key-concepts/get-project.md)
+* [GET a single content type](key-concepts/get-contenttype.md)
+* [GET a single entry](key-concepts/get-entry.md)
+* [GET list of all entries](key-concepts/list-entries.md)
+* [GET list of entries by content type](key-concepts/list-entries-by-content-type.md)
 
-## Field types
-* [Data types](fields/data-types.md)
-* [Data formats](fields/data-formats.md)
 
 ## Model
 * [Project](model/project.md)
 * [Content type](model/content-type.md)
 * [Entry](model/entry.md)
+* [Version](model/version.md)
+* [Paged list](model/paged-list.md)
+---
 * [Asset](model/asset.md)
-* [VersionInfo](model/version-info.md)
-* [Composed](model/composed.md)
-* [DateRange](model/date-range.md)
 * [Image](model/image.md)
+* [Composed](model/composed.md)
+* [Date range](model/date-range.md)
 * [Location](model/location.md)
 * [Quote](model/quote.md)
-* [Paged list](model/paged-list.md)
-* [Error](model/errors.md)
 
 ## Search
-* [Search basics](search/search-basics.md)
+* [Search basics](search/search-basics.md#search)
   * [Queries](search/search-basics.md#queries)
   * [Sub-queries](search/search-basics.md#sub-queries)
   * [Ordering](search/search-basics.md#ordering)

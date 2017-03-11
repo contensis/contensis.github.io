@@ -76,12 +76,12 @@ Paging allows the number of results to be restricted to a defined count so that 
     // Create a query
     var query = new Query(
         Op.EqualTo("contentTypeId", "film"));
-    
+
     // Set the paging options
-    query.PageSize = 50; 
+    query.PageSize = 50;
 
     // Get the 2nd result set
-    query.PageIndex = 1; 
+    query.PageIndex = 1;
 }
 ```
 
@@ -89,16 +89,14 @@ Paging allows the number of results to be restricted to a defined count so that 
 ## Specifying fields
 
 ### System fields
+System fields such as id, contentTypeId, projectId, versionNo etc. are under the *sys* object and can be accessed using a dot notation, e.g. sys.id, sys.contentTypeId, sys.projectId, sys.version.versionNo.
 
-System fields such as id, contentTypeId, projectId, versionNo etc. are under the "sys" object and can be accessed using a dot notation, i.e. "sys.id", "sys.contentTypeId", "sys.projectId", "sys.version.versionNo". 
-
-The 'entryTitle' field is a dynamic value, determined by the 'EntryTitleField' value in the Content Type.
+The *entryTitle* field is a dynamic value, determined by the *EntryTitleField* value in the content type.
 
 ### Data fields
+Fields defined in the content type for the entry can be accessed by their API id.
 
-Fields defined in the Content Type for the entry can be accessed by their API id.
-
-## Full example
+## Complete example
 
 The example below combines the ordering and paging concepts:
 
@@ -107,11 +105,11 @@ var query = new Query(
     Op.Contains("title", "Batman"),
     Op.GreaterThan("runtime", 200)
 );
- 
+
 query.OrderBy.Add("-releaseDate")
 query.PageIndex = 1;
 query.PageSize = 50;
- 
+
 // Execute the search
 var results = client.Entries.Search(query);
 ```

@@ -12,11 +12,11 @@ We envisage that the majority of requirements in your application can be fulfill
 
 ## Documentation
 
-The documentation is mainly example-driven with API references to the types for the specific languages.
+The documentation is mainly example-driven with API references to the types.
 
 ## Key concepts
 
-[Get started with the Delivery API Quickstart](/key-concepts/getting-started.md)
+[Get started with the .NET Delivery API Quickstart](/key-concepts/getting-started.md)
 
 [API Instantiation](/key-concepts/api-instantiation.md)
 

@@ -10,9 +10,9 @@ The following list contains the data formats that are understood by Contensis:
 
 | Format | Data Type | Description |
 | ------ | --------- | ----------- |
-| entry | Object | An entry format for storing content |
-| asset | Object | An asset format that represents a file resource |
-| location | Object | Represents a point on the surface of the Earth |
-| quote | Object | A quote with text and a source |
-| field | ObjectArray |Represents a composed field type, defined as an ObjectArray Data Type |
-| image | Object | Wraps an Asset with an additional Caption property |
+| entry | object | An entry format for storing content |
+| asset | object | An asset format that represents a file resource |
+| location | object | Represents a point on the surface of the Earth |
+| quote | object | A quote with text and a source |
+| field | objectArray |Represents a composed field type, defined as an ObjectArray Data Type |
+| image | object | Wraps an Asset with an additional Caption property |

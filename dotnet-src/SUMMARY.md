@@ -13,8 +13,8 @@
 * [API instantiation](/key-concepts/api-instantiation.md)
 * [Get an entry](/key-concepts/entry-get.md)
 * [Listing entries](/key-concepts/entries-list.md)
-* [Data types](/fields/data-types.md)
-* [Data format](/fields/data-format.md)
+* [Data types](/key-concepts/data-types.md)
+* [Data format](/key-concepts/data-format.md)
 * [Handling errors](/key-concepts/api-errors.md)
 * [Linked Content](/key-concepts/linked-content.md)
 

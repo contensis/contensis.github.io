@@ -2,7 +2,7 @@
 
 Returns an array of content type resources for a project.
 
-**GET:** /api/delivery/**{projectId}**/contenttypes/
+**GET:** /api/delivery/projects/**{projectId}**/contenttypes/
 
 ## Parameters
 
@@ -13,7 +13,7 @@ Returns an array of content type resources for a project.
 ## Example
 
 ```http
-GET: /api/projects/movieDb/contenttypes
+GET: /api/delivery/projects/movieDb/contenttypes
 ```
 
 ## Response Messages

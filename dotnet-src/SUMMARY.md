@@ -1,5 +1,4 @@
 ## .NET Delivery API
-* [Introduction](README.md)
 
 * [Introduction](/README.md)
 
@@ -17,18 +16,23 @@
 * [Data format](/key-concepts/data-format.md)
 * [Handling errors](/key-concepts/api-errors.md)
 * [Linked Content](/key-concepts/linked-content.md)
+* [Localization](/key-concepts/localization.md)
 
 ## Model
 
+* [Project](/model/project.md)
+* [ContentType](/model/contenttype.md)
 * [Entry](/model/entry.md)
     * [Entry methods](/model/entry-methods.md)
 * [Asset](/model/asset.md)
+* [VersionInfo](/model/versioninfo.md)
 * [ComposedField](/model/composed.md)
 * [DateRange](/model/daterange.md)
 * [Image](/model/image.md)
 * [Location](/model/location.md)
 * [Quote](/model/quote.md)
-* [VersionInfo](/model/versioninfo.md)
+* [PagedList](/model/pagedlist.md)
+* [PageOptions](/model/pageoptions.md)
 
 ## Search
 

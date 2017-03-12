@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Asset · Contensis .NET Delivery API</title>
+        <title>PagedList · Contensis .NET Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="versioninfo.html" />
+    <link rel="next" href="pageoptions.html" />
     
     
-    <link rel="prev" href="entry-methods.html" />
+    <link rel="prev" href="quote.html" />
     
 
     </head>
@@ -338,7 +338,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="4.4" data-path="asset.html">
+        <li class="chapter " data-level="4.4" data-path="asset.html">
             
                 <a href="asset.html">
             
@@ -429,7 +429,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.11" data-path="pagedlist.html">
+        <li class="chapter active" data-level="4.11" data-path="pagedlist.html">
             
                 <a href="pagedlist.html">
             
@@ -518,7 +518,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Asset</a>
+        <a href=".." >PagedList</a>
     </h1>
 </div>
 
@@ -533,103 +533,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="assets">Assets</h1>
-<p>Assets are effectively an extension of entries, with additional properties containing details about the file they represent. An asset is an entry with a dataFormat value equal to &apos;asset&apos;, which allows them to be identified and queried independently to entries.</p>
-<h2 id="standard-fields">Standard fields</h2>
-<p>All assets have the following standard entry fields:</p>
+                                <h1 id="pagedlist">PagedList</h1>
+<p>The PagedList is a object that is used to describe paging details for listing and search results.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Name</th>
+<th style="text-align:left">Property</th>
 <th style="text-align:left">Type</th>
 <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Title</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The title of the asset</td>
+<td style="text-align:left">PageIndex</td>
+<td style="text-align:left"><code>int</code></td>
+<td style="text-align:left">The index of the result set to return</td>
 </tr>
 <tr>
-<td style="text-align:left">Description</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The description for the asset</td>
+<td style="text-align:left">PageSize</td>
+<td style="text-align:left"><code>int</code></td>
+<td style="text-align:left">The size of the result set to return</td>
 </tr>
 <tr>
-<td style="text-align:left">Properties</td>
-<td style="text-align:left"><a href="#PropertiesDictionary">PropertiesDictionary</a></td>
-<td style="text-align:left">A readonly collection of asset specific fields</td>
+<td style="text-align:left">TotalCount</td>
+<td style="text-align:left"><code>int</code></td>
+<td style="text-align:left">The total number of results available</td>
+</tr>
+<tr>
+<td style="text-align:left">Items</td>
+<td style="text-align:left"><code>IList<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>T</span><span class="token punctuation">&gt;</span></span></code></td>
+<td style="text-align:left">A container for the items being returned</td>
 </tr>
 </tbody>
 </table>
-<h2 id="propertiesdictionary">PropertiesDictionary</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Name</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Filename</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The name of the actual file, with extension included</td>
-</tr>
-<tr>
-<td style="text-align:left">FileSize</td>
-<td style="text-align:left">long</td>
-<td style="text-align:left">The file size in bytes</td>
-</tr>
-<tr>
-<td style="text-align:left">Extension</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The file extension</td>
-</tr>
-<tr>
-<td style="text-align:left">FieldId</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The GUID identifier of the file resource</td>
-</tr>
-<tr>
-<td style="text-align:left">Uri</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">The URI path to the file, excluding the domain</td>
-</tr>
-<tr>
-<td style="text-align:left">[fieldName]</td>
-<td style="text-align:left">object</td>
-<td style="text-align:left">An indexed accessor to extended properties which are not exposed as typed properties</td>
-</tr>
-</tbody>
-</table>
-<h2 id="extended-properties">Extended properties</h2>
-<p>These are properties that are specific to an asset type. Currently this is limited to images, but new extended properties may be added for images (such as cameraModel) in the future or for other asset types.</p>
-<h3 id="images">Images</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Name</th>
-<th style="text-align:left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">Width</td>
-<td style="text-align:left">The width of the image</td>
-</tr>
-<tr>
-<td style="text-align:left">Height</td>
-<td style="text-align:left">The height of the image</td>
-</tr>
-<tr>
-<td style="text-align:left">AltText</td>
-<td style="text-align:left">The default alt text defined for the image resource</td>
-</tr>
-</tbody>
-</table>
+<h2 id="example">Example</h2>
+<p>The <code>PagedList</code> properties provide the information required to implement paging.</p>
+<pre class="language-"><code class="lang-cs">@<span class="token keyword">using</span> System<span class="token punctuation">.</span>Web<span class="token punctuation">;</span>
+@<span class="token keyword">using</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Delivery<span class="token punctuation">;</span>
+
+@<span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token keyword">int</span> PageSize <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Create a client instance </span>
+    <span class="token keyword">var</span> client <span class="token operator">=</span> ContensisClient<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get the pageIndex passed on the query string</span>
+    <span class="token keyword">var</span> selectedPageIndex <span class="token operator">=</span> <span class="token keyword">int</span><span class="token punctuation">.</span><span class="token function">Parse</span><span class="token punctuation">(</span>Request<span class="token punctuation">.</span>QueryString<span class="token punctuation">[</span><span class="token string">&quot;pageIndex&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get the first 10 movie entries</span>
+    <span class="token keyword">var</span> moviesList <span class="token operator">=</span> client<span class="token punctuation">.</span>Entries<span class="token punctuation">.</span><span class="token function">List</span><span class="token punctuation">(</span><span class="token string">&quot;movies&quot;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">PageOptions</span><span class="token punctuation">(</span>selectedPageIndex<span class="token punctuation">,</span> PageSize<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Calculate the total number of pages</span>
+    <span class="token keyword">var</span> pageCount <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">Ceiling</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>moviesList<span class="token punctuation">.</span>TotalCount<span class="token operator">/</span>PageSize<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Render a pager, applying a &apos;selected&apos; class for the current page</span>
+<span class="token punctuation">}</span>
+
+<span class="token operator">&lt;</span>ul <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;pager&quot;</span><span class="token operator">&gt;</span>
+    @<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> index <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> index <span class="token operator">&lt;=</span> pageCount<span class="token punctuation">;</span> index<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> selectedClass <span class="token operator">=</span> <span class="token punctuation">(</span>selectedPageIndex <span class="token operator">==</span> index <span class="token operator">?</span> <span class="token string">&quot;selected&quot;</span> <span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// The class will only be applied if selectedClass is not null</span>
+        <span class="token operator">&lt;</span>li <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;@selectedClass&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">&quot;#&quot;</span><span class="token operator">&gt;</span>@index<span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">&gt;</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">&gt;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -657,12 +626,12 @@
 
             
                 
-                <a href="entry-methods.html" class="navigation navigation-prev " aria-label="Previous page: Entry methods">
+                <a href="quote.html" class="navigation navigation-prev " aria-label="Previous page: Quote">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="versioninfo.html" class="navigation navigation-next " aria-label="Next page: VersionInfo">
+                <a href="pageoptions.html" class="navigation navigation-next " aria-label="Next page: PageOptions">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -673,7 +642,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Asset","level":"4.4","depth":1,"next":{"title":"VersionInfo","level":"4.5","depth":1,"path":"model/versioninfo.md","ref":"model/versioninfo.md","articles":[]},"previous":{"title":"Entry methods","level":"4.3.1","depth":2,"path":"model/entry-methods.md","ref":"model/entry-methods.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/asset.md","mtime":"2017-03-12T21:59:44.091Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-12T23:13:21.747Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"PagedList","level":"4.11","depth":1,"next":{"title":"PageOptions","level":"4.12","depth":1,"path":"model/pageoptions.md","ref":"model/pageoptions.md","articles":[]},"previous":{"title":"Quote","level":"4.10","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/pagedlist.md","mtime":"2017-03-12T22:14:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-12T23:13:21.747Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

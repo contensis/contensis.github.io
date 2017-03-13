@@ -542,7 +542,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="content-type">Content type</h1>
-<p>A content type resource can be retrieved from the Delivery API to understand the schema of an <a href="entry.html">entry</a>. Entries are constructed and validated using the information defined in the fields collection.</p>
+<p>A content type resource can be retrieved from the Delivery API to understand the schema of an <a href="../entry.md">entry</a>. Entries are constructed and validated using the information defined in the fields collection.</p>
 <table>
 <thead>
 <tr>
@@ -568,13 +568,13 @@
 <tr>
 <td style="text-align:left">name</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="#localizedvalue">LocalizedValue</a></td>
+<td style="text-align:left"><a href="../localisation.md">Localized value</a></td>
 <td style="text-align:left">The friendly name given to a content type</td>
 </tr>
 <tr>
 <td style="text-align:left">description</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="#localizedvalue">LocalizedValue</a></td>
+<td style="text-align:left"><a href="../localisation.md">Localized value</a></td>
 <td style="text-align:left">The description text given to a content type</td>
 </tr>
 <tr>
@@ -598,13 +598,13 @@
 <tr>
 <td style="text-align:left">defaultLanguage</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left"><a href="localization.md">Language code</a></td>
+<td style="text-align:left"><a href="../localization.html">Language code</a></td>
 <td style="text-align:left"></td>
 </tr>
 <tr>
 <td style="text-align:left">supportedLanguages</td>
 <td style="text-align:left">string [...]</td>
-<td style="text-align:left"><a href="localization.md">Language code</a></td>
+<td style="text-align:left"><a href="../localization.html">Language code</a></td>
 <td style="text-align:left"></td>
 </tr>
 <tr>
@@ -617,7 +617,7 @@
 <td style="text-align:left">dataFormat</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">Either &apos;entry&apos; or &apos;asset&apos;</td>
+<td style="text-align:left">Either <em>entry</em> or <em>asset</em></td>
 </tr>
 <tr>
 <td style="text-align:left">previewUrl</td>
@@ -628,7 +628,7 @@
 <tr>
 <td style="text-align:left">version</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="model/version.md">Version</a></td>
+<td style="text-align:left"><a href="version.html">Version</a></td>
 <td style="text-align:left">Version information about the content type</td>
 </tr>
 </tbody>
@@ -654,31 +654,31 @@
 <tr>
 <td style="text-align:left">name</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="#localizedvalue">LocalizedValue</a></td>
+<td style="text-align:left"><a href="../localisation.md">Localized value</a></td>
 <td style="text-align:left">A friendly name for the field</td>
 </tr>
 <tr>
 <td style="text-align:left">description</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="#localizedvalue">LocalizedValue</a></td>
+<td style="text-align:left"><a href="../localisation.md">Localized value</a></td>
 <td style="text-align:left">The description for the field&apos;s purpose</td>
 </tr>
 <tr>
 <td style="text-align:left">dataType</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left"><a href="key-concepts/data-types.md">DataType</a></td>
+<td style="text-align:left"><a href="../key-concepts/data-types.html">Data type</a></td>
 <td style="text-align:left">The field data type</td>
 </tr>
 <tr>
 <td style="text-align:left">dataFormat</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left"><a href="key-concepts/data-formats.md">DataType</a></td>
+<td style="text-align:left"><a href="../key-concepts/data-formats.html">Data type</a></td>
 <td style="text-align:left">The field data format</td>
 </tr>
 <tr>
 <td style="text-align:left">default</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="#localizedvalue">LocalizedValue</a></td>
+<td style="text-align:left"><a href="../localisation.md">Localized value</a></td>
 <td style="text-align:left">The default value for the field if no value is provided by an editor</td>
 </tr>
 <tr>
@@ -695,8 +695,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="localizedvalue">LocalizedValue</h2>
-<p>A localized value is a object that has values that are keyed by <a href="localization.md">language codes</a> which allows multilingual variations of a specific property.</p>
+<h2 id="localized-value">Localized value</h2>
+<p>A localized value is a object that has values that are keyed by <a href="../localization.html">language codes</a> which allows multilingual variations of a specific property.</p>
 <h2 id="example">Example</h2>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
   <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;movie&quot;</span><span class="token punctuation">,</span>
@@ -760,7 +760,7 @@
       <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
         <span class="token property">&quot;en-GB&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Release Date&quot;</span>
       <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token property">&quot;dataType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;DateTime&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;dataType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dateTime&quot;</span><span class="token punctuation">,</span>
       <span class="token property">&quot;dataFormat&quot;</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
       <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
       <span class="token property">&quot;default&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -865,7 +865,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Content type","level":"5.2","depth":1,"next":{"title":"Entry","level":"5.3","depth":1,"path":"model/entry.md","ref":"./model/entry.md","articles":[]},"previous":{"title":"Project","level":"5.1","depth":1,"path":"model/project.md","ref":"./model/project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/content-type.md","mtime":"2017-03-13T15:24:43.268Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T15:36:48.383Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Content type","level":"5.2","depth":1,"next":{"title":"Entry","level":"5.3","depth":1,"path":"model/entry.md","ref":"model/entry.md","articles":[]},"previous":{"title":"Project","level":"5.1","depth":1,"path":"model/project.md","ref":"model/project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/content-type.md","mtime":"2017-03-13T16:19:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T16:20:41.255Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

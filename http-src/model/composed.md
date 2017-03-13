@@ -4,7 +4,7 @@ The composed field type contains the data that the [composer editor](https://zen
 
 An *allowed field type* is essentially any standard field (such as Image, Heading, Location, etc.) that restricts what types of field can be added to a composed field.
 
-For example, an *allowed field* could be defined with a type of *Heading* and named "mainHeading" or with a type of *Image* and named "bannerImage". There can be multiple *allowed fields* based on the same type, but a composed field cannot contain other composed fields.
+For example, an *allowed field* could be defined with a type of *Heading* and named mainHeading or with a type of *Image* and named bannerImage. There can be multiple *allowed fields* based on the same type, but a composed field cannot contain other composed fields.
 
 ## Properties
 

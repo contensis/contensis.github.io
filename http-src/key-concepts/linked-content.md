@@ -9,7 +9,7 @@ An unresolved entry or asset is essentially a subset of the entry structure with
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID |
-| dataFormat | string | | Either 'entry' or 'asset' |
+| dataFormat | string | | Either *entry* or *asset* |
 | language | string | [Language code](./localization.md) | [Optional] The language code of the linked entry variation |
 
 ### Example

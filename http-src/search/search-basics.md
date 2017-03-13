@@ -1,6 +1,14 @@
 # Search
-
 A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.
+
+- [Queries](#queries)
+- [Sub-queries](#sub-queries)
+- [Ordering](#ordering)
+- [Paging](#paging)
+- [Weighting](#weighting)
+- [Specifying fields](#specifying-fields)
+- [Complete example](#complete-example)
+
 
 ## Queries
 This example demonstrates a simple search.
@@ -53,8 +61,9 @@ This example demonstrates a simple search with a sub-query:
 ## Ordering
 Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.
 
+### Ascending order
+Order by *releaseDate* in an ascending direction.
 
-Order by 'releaseDate' in an ascending direction.
 ```json
 {
     "orderBy": [{
@@ -62,7 +71,11 @@ Order by 'releaseDate' in an ascending direction.
     }],
 }
 ```
-Order by 'releaseDate' in a descending direction.
+
+
+
+### Descending order
+Order by *releaseDate* in a descending direction.
 ```json
 {
     "orderBy": [{
@@ -74,7 +87,6 @@ Order by 'releaseDate' in a descending direction.
 ## Paging
 Paging allows the number of results to be restricted to a defined count so that the results are easier to handle and ensures a response is returned quickly.
 
-
 The page number can also be specified to allow which set of results is to be returned.
 
 ```json
@@ -84,7 +96,7 @@ The page number can also be specified to allow which set of results is to be ret
 }
 ```
 
-## Weightings
+## Weighting
 
 @TODO: This needs fleshing out
 

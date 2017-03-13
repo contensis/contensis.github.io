@@ -21,5 +21,5 @@ GET: /api/delivery/projects/movieDb/contenttypes
 |HTTP Status Code|Reason|Response Model|
 |:-|:-|:-|
 |200|Success|[ContentType](./model/content-type.md)|
-|404|Project not found|[Error](./errors.md)|
-|500|Internal server error|[Error](./errors.md)|
+|404|Project not found|[Error](./key-concepts/errors.md)|
+|500|Internal server error|[Error](./key-concepts/errors.md)|

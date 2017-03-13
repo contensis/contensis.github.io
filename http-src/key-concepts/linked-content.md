@@ -6,7 +6,8 @@ Linked content can be [unresolved](#unresolved-entries) or [resolved](#resolved-
 ## Unresolved entries
 An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry language variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.
 
-| Property | Type | Format | Description |
+## Properties
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID |
 | dataFormat | string | | Either *entry* or *asset* |

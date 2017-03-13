@@ -11,14 +11,14 @@ These are the standard properties that all entries have. The language property i
 
 ### Entry
 
-| Property | Type | Format | Description |
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | field id | Any | Any | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id.  |
 | sys | object | [Sys](#sys) | The container of the entry system data |
 
 ### Sys
 
-| Property | Type | Format | Description |
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID|
 | projectId | string | | The API identifier of the project the entry belongs to |

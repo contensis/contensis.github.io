@@ -1,8 +1,8 @@
 # Version
-
 The version object contains the version status information for the current version of the resource.
 
-| Property | Type | Format | Description |
+## Properties
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | createdBy | string | | The user id of who created the resource |
 | created | string | datetime | The date and time the resource was created |

@@ -2,7 +2,9 @@
 
 A content type resource can be retrieved from the Delivery API to understand the schema of an [entry](/entry.md). Entries are constructed and validated using the information defined in the fields collection.
 
-| Property | Type | Format | Description |
+## Properties
+
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string | | A unique content type identifier |
 | projectId | string |  | The project identifier |
@@ -22,7 +24,9 @@ A content type resource can be retrieved from the Delivery API to understand the
 
 The field object is the definition of a field within an entry. The field also contains the validations and editor configuration that is used within the Contensis UI and services.
 
-| Property | Type | Format | Description |
+### Properties
+
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | id | string |  | A unique field identifier |
 | name | object | [Localized value](/localisation.md) | A friendly name for the field |
@@ -35,7 +39,6 @@ The field object is the definition of a field within an entry. The field also co
 
 ## Localized value
 A localized value is a object that has values that are keyed by [language codes](/localization.md) which allows multilingual variations of a specific property.
-
 
 ## Example
 

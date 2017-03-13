@@ -24,8 +24,6 @@
 
 ## Example requests
 
-@TODO: Add an example with version e.g. get latest
-
 **List of all entries - actors, movies, directors, etc.**
 
 ```http
@@ -48,6 +46,12 @@ GET: /api/delivery/projects/movieDb/entries/?lang=de&order=-sys.published
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
+```
+
+**List the latest version of all entries**
+
+```http
+GET: /api/delivery/projects/movieDb/entries/?versionStatus=latest
 ```
 
 ---

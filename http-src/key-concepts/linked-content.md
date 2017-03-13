@@ -4,7 +4,7 @@ An entry can link to other entries or assets as [entry](/model/entry.md), [asset
 Linked content can be [unresolved](#unresolved-entries) or [resolved](#resolved-entries) depending on whether a linkDepth value has been provided.
 
 ## Unresolved entries
-An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.
+An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry language variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
@@ -31,6 +31,6 @@ Entries can be resolved automatically to a maximum depth of 10 using the linkDep
 When a linkDepth is provided to an entry retrieval operation, then the following rules apply:
 
 - If a language **is** specified, then the specific language variation will be returned
-- If a language **is** specified but the specific language variation does not exist, then `null` will be returned or will not be included in the array
+- If a language **is** specified but the specific language variation does not exist, then null will be returned or will not be included in the array
 - If a language **is not** specified, then the *defaultLanguage* value defined in the [content type](/model/content-type.md) will be used to select the appropriate entry variation to return.
 - If a language **is not** specified and there is no default variation, then null is returned.

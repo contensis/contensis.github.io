@@ -31,7 +31,7 @@ Unlike entry links, an asset link is always resolved so that the full asset deta
 }
 
 <figure>
-  <img src="@coverImage.Asset.Uri" alt="@coverImage.Asset.Propeties["altText"]" width="304" height="228">
+  <img src="@coverImage.Asset.Uri" alt="@coverImage.Asset.Properties["altText"]" width="304" height="228">
   <figcaption>@coverImage.Caption</figcaption>
 </figure>
 

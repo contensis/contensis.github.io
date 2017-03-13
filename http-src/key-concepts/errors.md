@@ -7,7 +7,7 @@ The Delivery API returns error detail in a generic format so that it can be easi
 ## Typical HTTP status codes
 Below are the current status codes returned from the Delivery API.
 
-| Status Code | Error Code | Description |
+| Status code | Error code | Description |
 | ----------- | -------------- | ----------- |
 | 400 | BadRequest |  The request could not be understood or was missing required parameters |
 | 403 | AccessDenied | The action is not authorised for the current user |
@@ -22,19 +22,17 @@ Each response follows the same rules.
 | :--- | :--- | :----- | :---------- |
 | logId | string | GUID | The logId as a 128 bit GUID.<br />This can be used within the Contensis [log viewer](https://zenhub.zengenti.com/Contensis/9/kb/Tools%20and%20utilities/log-viewer/Contensis-log-viewer-overview.aspx) to understand further details about the error |
 | message | string | | A description of the error |
-| data | any | | The logId as a 128 bit GUID. Will be null for validation errors |
+| data | any | | An object containing specific data relevant to the error |
 | type | string | | The type of error - for the Delivery API, this will always be *error* |
 
 ## Example error response
-
-@TODO: Needs to be updated with a clear message.
 
 `500 - ServerError`
 
 ```json
 {
   "logId": "63cb1df0-b82a-459e-accc-635e187f3b8b",
-  "message": "An error occurred ",
+  "message": "An error occurred requesting the entry",
   "data": {
       "entryId": "ba8a92bd-0e5f-465e-acec-3cdb3db38df6",
       "projectId" "moveiDb"

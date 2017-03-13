@@ -7,6 +7,10 @@
 font-size: 0.85em;
 }
 
+.markdown-section h3 {
+  font-size: 1.17em;
+}
+
 
 .token.property,
 .token.tag,

@@ -8,7 +8,7 @@ A project resource can be retrieved from the Delivery API to understand the lang
 | name | string |  | The friendly name given to the project |
 | description | string |  | The description text given to a project |
 | supportedLanguages | string [...] |  | An array of all the languages supported by the project |
-| primaryLanguage | string | [LanguageCode](/localization.md)  | The primary language for the project |
+| primaryLanguage | string | [Language code](./localization.md)  | The primary language for the project |
 
 
 ## Example

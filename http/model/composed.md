@@ -15,7 +15,7 @@ For example, an *allowed field* could be defined with a type of *Heading* and na
 
 ## Example
 
-The JSON below shows an example composed field:
+The example shows an example composed field.
 
 ```json
 {

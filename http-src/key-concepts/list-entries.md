@@ -11,38 +11,38 @@
 | linkDepth | query | number | int | The depth at which to resolve the full entry data for a linked entry or asset, with a maximum depth value of 10 |
 | pageIndex | query | number | int | The index of the result set to return |
 | pageSize | query | number | int | The number of items to return in the result set |
-| order | query | string | | A comma-separated list of [field](/model/content-type.md#field) ids to order the results by. Descending order is specified using a prefixed '-' |
-| fields | query | string | | A comma-separated list of [field](/model/content-type.md#field) ids to restrict the fields returned for an entry |
-| lang | query | string | [LanguageCode](/localization.md) | The language variation to return for each entry |
+| order | query | string | | A comma-separated list of [field](./model/content-type.md#field) ids to order the results by. Descending order is specified using a prefixed '-' |
+| fields | query | string | | A comma-separated list of [field](./model/content-type.md#field) ids to restrict the fields returned for an entry |
+| lang | query | string | [Language code](./localization.md) | The language variation to return for each entry |
 
 ## Response messages
 
 | HTTP status code | Reason | Response model|
 |:-|:-|:-|
-| 200 | Success |[Paged list](/model/paged-list.md) of [Entry](/model/entry.md) items |
-| 500 | Internal server error | [Error](/errors.md) |
+| 200 | Success |[Paged list](./model/paged-list.md) of [Entry](./model/entry.md) items |
+| 500 | Internal server error | [Error](./key-concepts/errors.md) |
 
 ## Example requests
 
-**List of all entries - actors, movies, directors, etc.**
+### List all entries - actors, movies, directors, etc.
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/
 ```
 
-**List of all entries translated to German**
+### List all entries translated to German
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?lang=de
 ```
 
-**List of all entries translated to German and ordered by published date descending**
+### List all entries translated to German and ordered by published date descending
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?lang=de&order=-sys.published
 ```
 
-**List of all entries with their direct child entries, assets and images resolved**
+### List all entries with their direct child entries, assets and images resolved
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
@@ -54,4 +54,3 @@ GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
 GET: /api/delivery/projects/movieDb/entries/?versionStatus=latest
 ```
 
----

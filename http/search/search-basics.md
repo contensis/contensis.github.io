@@ -86,6 +86,7 @@ The page number can also be specified to allow which set of results is to be ret
 
 ## Weightings
 
+@TODO: This needs fleshing out
 
 ## Specifying fields
 
@@ -104,7 +105,6 @@ The following example combines the ordering, paging and weighting concepts.
 
 ```http
 POST: /api/delivery/projects/{projectId}/entries/search
-
 {
     "where": [
         {

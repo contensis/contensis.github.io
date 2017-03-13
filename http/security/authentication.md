@@ -21,8 +21,9 @@ scope=Entry_Read ContentType_Read Project_Read
 
 ## Successful response
 
-```http
-200 - OK
+`200 - OK`
+
+```json
 {
   "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjlmcEhwSnMxZkdnUG5NRURHdmNNbnhxUmZNMCIsImtpZCI6IjlmcEhwSnMxZkdnUG5NRURHdmNNbnhxUmZNMCJ9.eyJpc3MiOiJodHRwOi8vY21zLWRldmVsb3AuY2xvdWQuY29udGVuc2lzLmNvbS9hdXRoZW50aWNhdGUiLCJhdWQiOiJodHRwOi8vY21zLWRldmVsb3AuY2xvdWQuY29udGVuc2lzLmNvbS9hdXRoZW50aWNhdGUvcmVzb3VyY2VzIiwiZXhwIjoxNDg4Mzc5MzU4LCJuYmYiOjE0ODgzNzU3NTgsImNsaWVudF9pZCI6ImJkYTMwZTU2LTRmYWYtNDEyYy1iNDYwLTZmY2U5MzQyYjE2MiIsImNsaWVudF9zdWIiOiJiZGEzMGU1Ni00ZmFmLSQxMmMtYjQ2MC02ZmNlOTM0MmIxNjIiLCJjbGllbnRfdXNlcm5hbWUiOiJTaW1vbidzIGtleSIsInNjb3BlIjoiRW50cnlfUmVhZCJ9.g1krcmM_2Qe5ZIB_2c8LDmBVP8tc2V2j01PqvlHk8swVLTonF_x-5Iob0Tql8dJN_jDyJyJNx0dzZGAd-w1Gn8qS_6KQR9e4Uk4z1OAd6s1soo6WhXMqgbGJ8Hq9WXgOehZz_Vz2efdGFZ2JJLr7mRRNj-4XL21XhkVYXWnxXfugSZ0tJdBa2rMTxDgz8uVF9Tdrcduy7l85lOjTZL13CwMbrPQebCdTQCty7LKGfF_U3KaWyRtTXwZhUvhq-7wCtEuHymcEAa_8jokL8pT0vhPkvMKZ_SiVCkdnBbwQ6GNFMU_mfjt4b-xgxjUFsHDhQPczosxmn8I7__hRpcsZCQ",
   "expires_in": 3600,
@@ -33,9 +34,9 @@ scope=Entry_Read ContentType_Read Project_Read
 > **Note** The *expires_in* value is in seconds.
 
 ## Unsuccessful response
+`400 - BadRequest`
 
-```http
-400 - BadRequest
+```json
 {
   "error": "invalid_client"
 }

@@ -1,6 +1,5 @@
 # Query operators
 
-
 - [And](#and)
 - [Or](#or)
 - [Not](#not)
@@ -14,6 +13,7 @@
 - [GreaterThanOrEqualTo](#greaterthanorequalto)
 - [In](#in)
 - [LessThan](#lessthan)
+- [LessThanOrEqualTo](#lessthanorequalto)
 - [StartsWith](#startswith)
 
 

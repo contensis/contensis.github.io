@@ -1,5 +1,21 @@
 # Query operators
 
+- [And](#and)
+- [Or](#or)
+- [Not](#not)
+- [Between](#between)
+- [Contains](#contains)
+- [EndsWith](#endswith)
+- [EqualTo](#equalto)
+- [Exists](#exists)
+- [FreeText](#freetext)
+- [GreaterThan](#greaterthan)
+- [GreaterThanOrEqualTo](#greaterthanorequalto)
+- [In](#in)
+- [LessThan](#lessthan)
+- [LessThanOrEqualTo](#lessthanorequalto)
+- [StartsWith](#startswith)
+
 ## Logical operators
 
 ### And

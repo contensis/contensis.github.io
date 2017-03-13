@@ -1,23 +1,13 @@
-@TODO: Copy from http when signed off and dotnet example
-
 # Quote
-
 The quote object represents a section of referenced text from an external source.
 
 ## Properties
 
-| Property | Type | Format | Description |
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | text | string | | The quote text |
 | source | string | | The source of the quote |
 
 ## Example
 
-This example shows a quote object:
-
-```json
-{
-    "text": "I'll be back...",
-    "source": "The Terminator"
-}
-```
+@TODO: Example to be based on dotnet

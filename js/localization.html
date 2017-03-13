@@ -132,16 +132,16 @@
 
     
         
-        <li class="header">Security</li>
+        <li class="header">Key concepts</li>
         
         
     
-        <li class="chapter " data-level="2.1" data-path="security/authentication.html">
+        <li class="chapter " data-level="2.1" data-path="key-concepts/errors.html">
             
-                <a href="security/authentication.html">
+                <a href="key-concepts/errors.html">
             
                     
-                    Authentication
+                    Errors
             
                 </a>
             
@@ -149,14 +149,7 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Key concepts</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="key-concepts/data-types.html">
+        <li class="chapter " data-level="2.2" data-path="key-concepts/data-types.html">
             
                 <a href="key-concepts/data-types.html">
             
@@ -169,7 +162,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="key-concepts/data-formats.html">
+        <li class="chapter " data-level="2.3" data-path="key-concepts/data-formats.html">
             
                 <a href="key-concepts/data-formats.html">
             
@@ -182,7 +175,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="localization.html">
+        <li class="chapter active" data-level="2.4" data-path="localization.html">
             
                 <a href="localization.html">
             
@@ -195,7 +188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="key-concepts/linked-content.html">
+        <li class="chapter " data-level="2.5" data-path="key-concepts/linked-content.html">
             
                 <a href="key-concepts/linked-content.html">
             
@@ -215,7 +208,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="key-concepts/get-project.html">
+        <li class="chapter " data-level="3.1" data-path="key-concepts/get-project.html">
             
                 <a href="key-concepts/get-project.html">
             
@@ -228,7 +221,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="key-concepts/get-contenttype.html">
+        <li class="chapter " data-level="3.2" data-path="key-concepts/get-contenttype.html">
             
                 <a href="key-concepts/get-contenttype.html">
             
@@ -241,7 +234,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="key-concepts/get-entry.html">
+        <li class="chapter " data-level="3.3" data-path="key-concepts/get-entry.html">
             
                 <a href="key-concepts/get-entry.html">
             
@@ -254,7 +247,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="key-concepts/list-entries.html">
+        <li class="chapter " data-level="3.4" data-path="key-concepts/list-entries.html">
             
                 <a href="key-concepts/list-entries.html">
             
@@ -267,12 +260,32 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="key-concepts/list-entries-by-content-type.html">
+        <li class="chapter " data-level="3.5" data-path="key-concepts/list-entries-by-content-type.html">
             
                 <a href="key-concepts/list-entries-by-content-type.html">
             
                     
                     GET list of entries by content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Security</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="security/authentication.html">
+            
+                <a href="security/authentication.html">
+            
+                    
+                    Authentication
             
                 </a>
             
@@ -446,7 +459,7 @@
     
         <li class="chapter " data-level="7.1" data-path="search/search-basics.html">
             
-                <a href="search/search-basics.html#search">
+                <a href="search/search-basics.html">
             
                     
                     Search basics
@@ -454,77 +467,6 @@
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1.1" data-path="search/search-basics.html">
-            
-                <a href="search/search-basics.html#query">
-            
-                    
-                    Queries
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="search/search-basics.html">
-            
-                <a href="search/search-basics.html#sub-queries">
-            
-                    
-                    Sub-queries
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.3" data-path="search/search-basics.html">
-            
-                <a href="search/search-basics.html#ordering">
-            
-                    
-                    Ordering
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.4" data-path="search/search-basics.html">
-            
-                <a href="search/search-basics.html#paging">
-            
-                    
-                    Paging
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.5" data-path="search/search-basics.html">
-            
-                <a href="search/search-basics.html#weightings">
-            
-                    
-                    Weightings
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -586,7 +528,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>@TODO: Copy from http when signed off</p>
+                                <h1 id="localization">Localization</h1>
+<p>Localization for an entry is identified by a language code which is formed using a <a href="https://en.wikipedia.org/wiki/ISO_639-1" target="_blank">ISO 639-1</a> language code, or a combination of a <a href="https://en.wikipedia.org/wiki/ISO_639-1" target="_blank">ISO 639-1</a> language code and a <a href="https://en.wikipedia.org/wiki/ISO_3166-1" target="_blank">ISO 3166-1</a> country code. Effectively, a Contensis language code can represent a language generically or specifically for a certain country.</p>
+<p>The language code is lowercased and if the country code is included, then it is separated with a dash and uppercased.</p>
+<h2 id="language-code-examples">Language code examples</h2>
+<ul>
+<li>English is represented as <strong>en</strong></li>
+<li>American English is represented as <strong>en-US</strong></li>
+<li>Germany German is represented as <strong>de-DE</strong></li>
+</ul>
+<h2 id="supported-languages">Supported languages</h2>
+<p>Contensis currently supports a subset of <a href="https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/entries/multi-language-support.aspx" target="_blank">language codes</a> which can be set when creating a project, and enabled against a content type.</p>
 
                                 
                                 </section>
@@ -630,7 +582,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Localization","level":"3.3","depth":1,"next":{"title":"Linked content","level":"3.4","depth":1,"path":"key-concepts/linked-content.md","ref":"key-concepts/linked-content.md","articles":[]},"previous":{"title":"Data formats","level":"3.2","depth":1,"path":"key-concepts/data-formats.md","ref":"key-concepts/data-formats.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"localization.md","mtime":"2017-03-13T12:28:58.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T13:02:53.758Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Localization","level":"2.4","depth":1,"next":{"title":"Linked content","level":"2.5","depth":1,"path":"key-concepts/linked-content.md","ref":"key-concepts/linked-content.md","articles":[]},"previous":{"title":"Data formats","level":"2.3","depth":1,"path":"key-concepts/data-formats.md","ref":"key-concepts/data-formats.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"localization.md","mtime":"2017-03-13T16:56:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T18:12:38.179Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

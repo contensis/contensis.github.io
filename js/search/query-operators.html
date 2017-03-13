@@ -130,16 +130,16 @@
 
     
         
-        <li class="header">Security</li>
+        <li class="header">Key concepts</li>
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../security/authentication.html">
+        <li class="chapter " data-level="2.1" data-path="../key-concepts/errors.html">
             
-                <a href="../security/authentication.html">
+                <a href="../key-concepts/errors.html">
             
                     
-                    Authentication
+                    Errors
             
                 </a>
             
@@ -147,14 +147,7 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Key concepts</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../key-concepts/data-types.html">
+        <li class="chapter " data-level="2.2" data-path="../key-concepts/data-types.html">
             
                 <a href="../key-concepts/data-types.html">
             
@@ -167,7 +160,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../key-concepts/data-formats.html">
+        <li class="chapter " data-level="2.3" data-path="../key-concepts/data-formats.html">
             
                 <a href="../key-concepts/data-formats.html">
             
@@ -180,7 +173,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../localization.html">
+        <li class="chapter " data-level="2.4" data-path="../localization.html">
             
                 <a href="../localization.html">
             
@@ -193,7 +186,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4" data-path="../key-concepts/linked-content.html">
+        <li class="chapter " data-level="2.5" data-path="../key-concepts/linked-content.html">
             
                 <a href="../key-concepts/linked-content.html">
             
@@ -213,7 +206,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../key-concepts/get-project.html">
+        <li class="chapter " data-level="3.1" data-path="../key-concepts/get-project.html">
             
                 <a href="../key-concepts/get-project.html">
             
@@ -226,7 +219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../key-concepts/get-contenttype.html">
+        <li class="chapter " data-level="3.2" data-path="../key-concepts/get-contenttype.html">
             
                 <a href="../key-concepts/get-contenttype.html">
             
@@ -239,7 +232,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../key-concepts/get-entry.html">
+        <li class="chapter " data-level="3.3" data-path="../key-concepts/get-entry.html">
             
                 <a href="../key-concepts/get-entry.html">
             
@@ -252,7 +245,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="../key-concepts/list-entries.html">
+        <li class="chapter " data-level="3.4" data-path="../key-concepts/list-entries.html">
             
                 <a href="../key-concepts/list-entries.html">
             
@@ -265,12 +258,32 @@
             
         </li>
     
-        <li class="chapter " data-level="4.5" data-path="../key-concepts/list-entries-by-content-type.html">
+        <li class="chapter " data-level="3.5" data-path="../key-concepts/list-entries-by-content-type.html">
             
                 <a href="../key-concepts/list-entries-by-content-type.html">
             
                     
                     GET list of entries by content type
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Security</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../security/authentication.html">
+            
+                <a href="../security/authentication.html">
+            
+                    
+                    Authentication
             
                 </a>
             
@@ -444,7 +457,7 @@
     
         <li class="chapter " data-level="7.1" data-path="search-basics.html">
             
-                <a href="search-basics.html#search">
+                <a href="search-basics.html">
             
                     
                     Search basics
@@ -452,77 +465,6 @@
                 </a>
             
 
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1.1" data-path="search-basics.html">
-            
-                <a href="search-basics.html#query">
-            
-                    
-                    Queries
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.2" data-path="search-basics.html">
-            
-                <a href="search-basics.html#sub-queries">
-            
-                    
-                    Sub-queries
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.3" data-path="search-basics.html">
-            
-                <a href="search-basics.html#ordering">
-            
-                    
-                    Ordering
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.4" data-path="search-basics.html">
-            
-                <a href="search-basics.html#paging">
-            
-                    
-                    Paging
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="7.1.5" data-path="search-basics.html">
-            
-                <a href="search-basics.html#weightings">
-            
-                    
-                    Weightings
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -585,6 +527,23 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="query-operators">Query operators</h1>
+<ul>
+<li><a href="#and">And</a></li>
+<li><a href="#or">Or</a></li>
+<li><a href="#not">Not</a></li>
+<li><a href="#between">Between</a></li>
+<li><a href="#contains">Contains</a></li>
+<li><a href="#endswith">EndsWith</a></li>
+<li><a href="#equalto">EqualTo</a></li>
+<li><a href="#exists">Exists</a></li>
+<li><a href="#freetext">FreeText</a></li>
+<li><a href="#greaterthan">GreaterThan</a></li>
+<li><a href="#greaterthanorequalto">GreaterThanOrEqualTo</a></li>
+<li><a href="#in">In</a></li>
+<li><a href="#lessthan">LessThan</a></li>
+<li><a href="#lessthanorequalto">LessThanOrEqualTo</a></li>
+<li><a href="#startswith">StartsWith</a></li>
+</ul>
 <h2 id="logical-operators">Logical operators</h2>
 <h3 id="and">And</h3>
 <p>This would return any document where <em>first</em> is <em>1</em> AND <em>second</em> is <em>2</em>.</p>
@@ -716,7 +675,7 @@
 
             
                 
-                <a href="search-basics.html#weightings" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Weightings">
+                <a href="search-basics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Search basics">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -728,7 +687,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"7.2","depth":1,"previous":{"title":"Weightings","level":"7.1.5","depth":2,"anchor":"#weightings","path":"search/search-basics.md","ref":"search/search-basics.md#weightings","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/query-operators.md","mtime":"2017-03-11T07:44:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T13:02:53.758Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Query operators","level":"7.2","depth":1,"previous":{"title":"Search basics","level":"7.1","depth":1,"path":"search/search-basics.md","ref":"search/search-basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/query-operators.md","mtime":"2017-03-13T18:02:34.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T18:12:38.179Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

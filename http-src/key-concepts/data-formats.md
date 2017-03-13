@@ -15,8 +15,8 @@ The following list contains the data formats that are currently understood by Co
 | [location](/model/location.md) | object | Represents a point on the surface of the Earth |
 | [quote](/model/quote.md) | object | A quote with text and a source |
 | [dateRange](/model/date-range.md) | object | Represents a document heading |
-| [image](/model/image.md) | object | Wraps an Asset with an additional Caption property |
-| field | objectArray | Represents a [composed](/model/composed.md) type, defined as an `objectArray` Data Type |
+| [image](/model/image.md) | object | Wraps an Asset with an additional caption property |
+| field | objectArray | Represents a [composed](/model/composed.md) type, defined as an objectArray data type |
 | heading | string | Represents a document heading |
 | html | string | A string of HTML markup |
-| markdown | string | A string of Markdown markup |
+| markdown | string | A string of markdown markup |

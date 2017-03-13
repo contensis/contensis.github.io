@@ -27,25 +27,25 @@
 
 @TODO: Add an example with version e.g. get latest
 
-**List of all movies**
+### List of all movie entries
 
 ```http
 GET: /api/delivery/projects/movieDb/contentTypes/movies/entries/
 ```
 
-**List of all movies translated to German**
+### List of all movie entries translated to German
 
 ```http
 GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de
 ```
 
-**List of all movies translated to German and ordered by release date descending**
+### List of all movie entries translated to German and ordered by release date descending
 
 ```http
 GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?lang=de&order=-releaseDate
 ```
 
-**List of all movies with their direct child entries, assets and images resolved**
+### List of all movie entries with their direct child entries, assets and images resolved
 
 ```http
 GET: /api/delivery/projects/movieDb/contentTypes/movies/entries?linkDepth=1

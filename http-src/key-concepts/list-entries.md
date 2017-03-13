@@ -26,25 +26,25 @@
 
 @TODO: Add an example with version e.g. get latest
 
-**List of all entries - actors, movies, directors, etc.**
+### List all entries - actors, movies, directors, etc.
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/
 ```
 
-**List of all entries translated to German**
+### List all entries translated to German
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?lang=de
 ```
 
-**List of all entries translated to German and ordered by published date descending**
+### List all entries translated to German and ordered by published date descending
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?lang=de&order=-sys.published
 ```
 
-**List of all entries with their direct child entries, assets and images resolved**
+### List all entries with their direct child entries, assets and images resolved
 
 ```http
 GET: /api/delivery/projects/movieDb/entries/?linkDepth=1

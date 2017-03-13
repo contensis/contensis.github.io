@@ -12,6 +12,6 @@ GET: /api/delivery/projects/movieDb
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Project](/model/project.md) |
-| 404 | Project not found | [Error](/errors.md) |
-| 500 | Internal server error | [Error](/errors.md) |
+| 200 | Success | [Project](./model/project.md) |
+| 404 | Project not found | [Error](./errors.md) |
+| 500 | Internal server error | [Error](./errors.md) |

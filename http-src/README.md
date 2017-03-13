@@ -7,9 +7,9 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ## Key concepts
 
-- [GET a single project](/key-concepts/get-project.md)
-- [GET a single content type](/key-concepts/get-contenttype.md)
-- [GET a single entry](/key-concepts/get-entry.md)
-- [GET list of all entries](/key-concepts/list-entries.md)
-- [GET list of entries by content type](/key-concepts/list-entries-by-content-type.md)
-- [Search for entries](/search/search-basics.md)
+- [GET a single project](./key-concepts/get-project.md)
+- [GET a single content type](./key-concepts/get-contenttype.md)
+- [GET a single entry](./key-concepts/get-entry.md)
+- [GET list of all entries](./key-concepts/list-entries.md)
+- [GET list of entries by content type](./key-concepts/list-entries-by-content-type.md)
+- [Search for entries](./search/search-basics.md)

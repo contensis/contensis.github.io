@@ -5,11 +5,11 @@ The version object contains the version status information for the current versi
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | createdBy | string | | The user id of who created the resource |
-| created | string | date-time | The date and time the resource was created |
+| created | string | datetime | The date and time the resource was created |
 | modifiedBy | string | | The user id of who last modified the resource |
-| modified | string | date-time | The date and time the resource version was last modified |
+| modified | string | datetime | The date and time the resource version was last modified |
 | publishedBy | string | | The user id of who last published the resource |
-| published | string | date-time | The date and time the resource version was last published |
+| published | string | datetime | The date and time the resource version was last published |
 | versionNo | string | {Major}.{Minor} | The version number of the resource |
 
 

@@ -1,5 +1,5 @@
 # Linked content
-An entry can link to other entries or assets as [entry](./model/entry.md), [asset](./model/asset.md) or [image](./model/image.md) field types. They can be defined as a standard entry fields or as a [composed](./model/composed.md) field type in the content type. These link objects can be singular or arrays of links of the same content type e.g. Actors.
+An entry can link to other entries or assets as [entry](/model/entry.md), [asset](/model/asset.md) or [image](/model/image.md) field types. They can be defined as a standard entry fields or as a [composed](/model/composed.md) field type in the content type. These link objects can be singular or arrays of links of the same content type e.g. Actors.
 
 Linked content can be [unresolved](#unresolved-entries) or [resolved](#resolved-entries) depending on whether a linkDepth value has been provided.
 
@@ -10,7 +10,7 @@ An unresolved entry or asset is essentially a subset of the entry structure with
 | :------- | :--- | :----- | :---------- |
 | id | string | GUID | The entry identifier as a 128 bit GUID |
 | dataFormat | string | | Either *entry* or *asset* |
-| language | string | [Language code](./localization.md) | [Optional] The language code of the linked entry variation |
+| language | string | [Language code](/localization.md) | [Optional] The language code of the linked entry variation |
 
 ### Example
 This example shows an unresolved entry.

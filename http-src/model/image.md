@@ -1,5 +1,5 @@
 # Image
-An image is a container of an image asset with an associated caption.
+An image type is a container of an image asset with an associated caption.
 
 ## Properties
 

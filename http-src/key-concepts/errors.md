@@ -1,4 +1,4 @@
-# Error responses
+# Errors
 
 Status codes and error responses you can encounter when using the API.
 
@@ -23,12 +23,15 @@ Each response follows the same rules.
 | logId | string | GUID | The logId as a 128 bit GUID.<br />This can be used within the Contensis [log viewer](https://zenhub.zengenti.com/Contensis/9/kb/Tools%20and%20utilities/log-viewer/Contensis-log-viewer-overview.aspx) to understand further details about the error |
 | message | string | | A description of the error |
 | data | any | | The logId as a 128 bit GUID. Will be null for validation errors |
-| type | string | | The type of error - for the Delivery API, this will always be 'error' |
+| type | string | | The type of error - for the Delivery API, this will always be *error* |
 
 ## Example error response
 
-```http
-500 - ServerError
+@TODO: Needs to be updated with a clear message.
+
+`500 - ServerError`
+
+```json
 {
   "logId": "63cb1df0-b82a-459e-accc-635e187f3b8b",
   "message": "An error occurred ",

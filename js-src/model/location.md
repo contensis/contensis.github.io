@@ -1,3 +1,5 @@
+@TODO: Copy from http when signed off and dotnet example
+
 # Location
 
 The location object represents a geographical coordinate that specifies the position of a point on the Earth's surface.

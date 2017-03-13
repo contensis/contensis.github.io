@@ -4,7 +4,6 @@
 
 ## Security
 * [Authentication](security/authentication.md)
-* [Scopes](security/scopes.md)
 
 ## Key concepts
 * [Data types](key-concepts/data-types.md)

@@ -1,1 +1,1 @@
-@TODO: Is this required from the HTTP docs
+@TODO: Copy from http when signed off

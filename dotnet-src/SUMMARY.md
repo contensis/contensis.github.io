@@ -1,6 +1,6 @@
 ## .NET Delivery API
 
-* [Introduction](/README.md)
+* [Getting started](/README.md)
 
 ## Security
 * [Authentication](/security/authentication.md)
@@ -14,7 +14,7 @@
 * [Listing entries](/key-concepts/entries-list.md)
 * [Data types](/key-concepts/data-types.md)
 * [Data format](/key-concepts/data-format.md)
-* [Handling errors](/key-concepts/api-errors.md)
+* [Errors](/key-concepts/errors.md)
 * [Linked Content](/key-concepts/linked-content.md)
 * [Localization](/key-concepts/localization.md)
 

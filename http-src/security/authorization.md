@@ -10,8 +10,9 @@ Authorization: bearer {access_token}
 
 Periodically the access token will expire to ensure that if compromised, then any grants are short lived. This expiry can be forecast by using the *expires_in* value returned from an authentication response or can be handled by catching a `401 - Unauthorized` response.
 
-```http
 401 - Unauthorized
+
+```json
 {
   "message": "Authorization has been denied for this request."
 }

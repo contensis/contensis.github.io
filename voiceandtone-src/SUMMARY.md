@@ -2,16 +2,17 @@
 
 * [Introduction](README.md)
 
-* [Grammar and Punctuation](/grammar-punctuation/README.md)
-* [Web Elements](/web-elements/README.md)
-* [Word List](word-list.md)
+* [Grammar and punctuation](/grammar-punctuation/README.md)
+* [Web elements](/web-elements/README.md)
+* [Word list](word-list.md)
 
 ## Writing guides
 
-* [Writing Blog Posts](/writing-blog-posts/README.md)
-* [Writing For ZenHub](/writing-for-zenhub/README.md)
+* [Writing blog posts](/writing-blog-posts/README.md)
+* [Writing for ZenHub](/writing-for-zenhub/README.md)
+* [Writing developer docs](/writing-for-zenhub/README.md)
 
 ## Contensis
 * [Overview](/contensis/README.md)
-* [UI Language](/contensis/ui-language.md)
-* [UI Microcopy](/contensis/ui-micro-copy.md)
+* [UI language](/contensis/ui-language.md)
+* [UI microcopy](/contensis/ui-micro-copy.md)

@@ -24,6 +24,8 @@
 
 ## Example requests
 
+@TODO: Add an example with version e.g. get latest
+
 **List of all entries - actors, movies, directors, etc.**
 
 ```http

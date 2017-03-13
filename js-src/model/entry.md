@@ -1,3 +1,5 @@
+@TODO: Copy from http when signed off and dotnet example
+
 # Entries
 An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on.
 

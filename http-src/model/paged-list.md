@@ -9,10 +9,8 @@ A paged list is a structure that is used to describe paging details for listing 
 | totalCount | number | int | The total number of results available |
 | items | object [...] |  | A container for the items being returned |
 
-## Remarks
-The paged list properties provide the information required to implement an accurate paging control with settable page sizes.
-
 ## Example
+The paged list properties provide the information required to implement paging.
 
 ```json
 {

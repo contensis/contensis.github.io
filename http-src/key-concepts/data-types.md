@@ -1,6 +1,6 @@
 # Data types
 
-A dataType is the storage type for a field, and determines how the field data is validated and indexed for search.
+A data type is the storage type for a field, and determines how the field data is validated and indexed for search.
 
 Contensis supports the following basic data types:
 

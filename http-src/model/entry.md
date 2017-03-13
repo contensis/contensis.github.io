@@ -13,7 +13,7 @@ These are the standard properties that all entries have. The language property i
 
 | Property | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
-| [Field] | Any | Any | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id.  |
+| field id | Any | Any | Field data that is defined in the associated [content type](/model/content-type.md#field). The data is keyed by a unique field id.  |
 | sys | object | [Sys](#sys) | The container of the entry system data |
 
 ### Sys

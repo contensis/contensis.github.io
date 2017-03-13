@@ -1,3 +1,5 @@
+@TODO: Copy from http when signed off
+
 # Data formats
 
 The dataFormat property is used as an extension of a [dataType](/key-concepts/data-types.md) to describe the structure and intent of the data. For example, a *location* has a dataType of *object*, and a dataFormat of *location*. Another example is a HTML block, which has a dataType of *string* and a dataFormat of *html*.  

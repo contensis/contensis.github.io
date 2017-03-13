@@ -1,3 +1,5 @@
+@TODO: Copy from http when signed off and dotnet example
+
 # Image
 An image is a container of an image asset with an associated caption.
 

@@ -16,12 +16,8 @@ The documentation is mainly example-driven with API references to the types.
 
 ## Key concepts
 
-[Get started with the .NET Delivery API Quickstart](/key-concepts/getting-started.md)
-
-[API Instantiation](/key-concepts/api-instantiation.md)
-
-[Getting an Entry](/key-concepts/entry-get.md)
-
-[Listing Entries](/key-concepts/entries-list.md)
-
-[Searching for Entries](/search/entry-search.md)
+- [Get started with the .NET Delivery API Quickstart](/key-concepts/getting-started.md)
+- [API Instantiation](/key-concepts/api-instantiation.md)
+- [Getting an Entry](/key-concepts/entry-get.md)
+- [Listing Entries](/key-concepts/entries-list.md)
+- [Searching for Entries](/search/entry-search.md)

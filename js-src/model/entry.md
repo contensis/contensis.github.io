@@ -32,6 +32,21 @@ These are the standard properties that all entries have. The language property i
 
 ## Example
 
-This JSON example shows entry based on a movie content type.
+```html
+<h1 id="film_title"></h1>
+<p id="film_overview"></p>
+```
 
-@TODO: Show example based on the dotnet example
+```js
+(function(Zengenti) {
+    var client = Zengenti.Contensis.Client.create();
+    var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
+
+    client.entries.get(movieId).then(function(film) {       
+        $('#film_title').text(film.title);
+        $('#film_overview').text(film.overview);
+    }, function(error) {
+        console.error(error);
+    });
+})(Zengenti);
+```

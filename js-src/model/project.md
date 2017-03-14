@@ -14,4 +14,32 @@ A project resource can be retrieved from the Delivery API to understand the lang
 
 ## Example
 
-@TODO: JS Example based on Dotnet
+```html
+<select id="language_selector"></select>
+```
+
+```js
+(function(Zengenti) {
+    var client = Zengenti.Contensis.Client.create();
+
+    $(function() {
+        client.project.get().then(function(currentProject) {
+            var options = currentProject.supportedLanguages.map(function(lang) {
+
+                var selected = (lang === currentProject.primaryLanguage) ? 'selected' : '';
+
+                return $('<option />')
+                    .val(lang)
+                    .text(lang)
+                    .attr('selected', selected);
+    		});
+
+            $('#language_selector').append(options);
+
+    	}, function(error) {
+            console.error(error);
+    	});    
+    });
+    
+})(Zengenti);
+```

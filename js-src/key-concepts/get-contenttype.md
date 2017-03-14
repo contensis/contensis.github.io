@@ -1,22 +1,34 @@
 # Get a single content type
 
-**GET:** /api/delivery/**{projectId}**/contenttypes/**{contentTypeId}**
+Requesting an individual content type can be achieved by using the get method on the client's contentTypes property.
 
-## Parameters
+get(contentTypeId: string): Promise&lt;ContentType&gt;;
 
-| Name | Parameter type | Type | Format | Description |
-|:-|:-|:-|:-|:-|
-| projectId | path | string | | The project identifier |
-| contentTypeId | path | string | | The content type identifier |
+### Parameters
 
-## Example request
+| Name | Type | Description |
+|:--|:--|:--
+| contentTypeId | string | The id of the content type |
 
-@TODO: Dotnet example to JS
+### Returns
+A Promise that will resolve with the content type
+```html
+<span id="content_type_name"></span>
+```
 
-## Response messages
+```js
+(function(Zengenti) {
+    var client = Zengenti.Contensis.Client.create();
 
-| HTTP status code | Reason | Response model |
-|:-|:-|:-|
-| 200 | Success | [Content type](/model/content-type.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+    $(function() {
+        client.contentTypes.get('movie').then(function(movieContentType) {       
+        
+            $('#content_type_name').text(movieContentType.name['en-GB']);
+
+        }, function(error) {
+            console.error(error);
+        });   
+    });
+    
+})(Zengenti);
+```

@@ -1,5 +1,7 @@
 # Contensis JS Delivery API
 
+> **Please note:** This documentation is currently in draft and subject to change whilst it's being finalised.
+
 ## Introduction
 The Delivery API is our primary API, designed and focused on enabling you to get content and data into your webpages or applications as quickly and easily as possible. The data consumed from this API is read-only and focused solely on content retrieval.
 
@@ -7,7 +9,6 @@ The API is a RESTful service to ensure maximum compatibility, delivering content
 
 ## Key concepts
 
-@TODO: Replace with new JS Versions
 - [GET a single project](/key-concepts/get-project.md)
 - [GET a single content type](/key-concepts/get-contenttype.md)
 - [GET a single entry](/key-concepts/get-entry.md)

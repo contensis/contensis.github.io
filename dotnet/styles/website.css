@@ -61,3 +61,7 @@ margin-bottom: 8px;
 border-right: 4px solid #389b71;
 background: #e7e7e7;
 }
+
+.book-header h1 {
+  display: none;
+}

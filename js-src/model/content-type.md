@@ -48,9 +48,11 @@ A localized value is a object that has values that are keyed by [language codes]
 
 ```js
 (function(Zengenti) {
+    // Create a client
     var client = Zengenti.Contensis.Client.create();
 
     $(function() {
+        // Get the movie content type
         client.contentTypes.get('movie').then(function(movieContentType) {       
         
             $('#content_type_name').text(movieContentType.name['en-GB']);

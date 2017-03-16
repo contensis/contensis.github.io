@@ -2,7 +2,7 @@
 
 Requesting an individual content type can be achieved by using the get method on the client's contentTypes property.
 
-get(contentTypeId: string): Promise&lt;ContentType&gt;;
+**get(contentTypeId: string): Promise&lt;ContentType&gt;;**
 
 ### Parameters
 
@@ -18,9 +18,11 @@ A Promise that will resolve with the content type
 
 ```js
 (function(Zengenti) {
+    // Create a client
     var client = Zengenti.Contensis.Client.create();
 
     $(function() {
+        // Get the movie content type
         client.contentTypes.get('movie').then(function(movieContentType) {       
         
             $('#content_type_name').text(movieContentType.name['en-GB']);

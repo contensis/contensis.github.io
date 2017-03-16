@@ -39,14 +39,21 @@ These are the standard properties that all entries have. The language property i
 
 ```js
 (function(Zengenti) {
+    // Create a client
     var client = Zengenti.Contensis.Client.create();
-    var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
 
-    client.entries.get(movieId).then(function(film) {       
-        $('#film_title').text(film.title);
-        $('#film_overview').text(film.overview);
-    }, function(error) {
-        console.error(error);
+    $(function() {
+        var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
+
+        // Get the default language variation of the film
+        client.entries.get(movieId).then(function(film) {    
+            // display the film's title and overview   
+            $('#film_title').text(film.title);
+            $('#film_overview').text(film.overview);
+        }, function(error) {
+            console.error(error);
+        });
+
     });
 })(Zengenti);
 ```

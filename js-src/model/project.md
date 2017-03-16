@@ -20,21 +20,28 @@ A project resource can be retrieved from the Delivery API to understand the lang
 
 ```js
 (function(Zengenti) {
+    // Create a client
     var client = Zengenti.Contensis.Client.create();
 
     $(function() {
+        // Get the current project
         client.project.get().then(function(currentProject) {
-            var options = currentProject.supportedLanguages.map(function(lang) {
 
+            for (var i = 0, ilen = currentProject.supportedLanguages.length; i < ilen; i++) {
+
+                // loop through the project's supported languages and add them to the language selector
+                
+                // check if the supported language is the primary language, if it is select the option
                 var selected = (lang === currentProject.primaryLanguage) ? 'selected' : '';
 
-                return $('<option />')
+                var option = $('<option />')
                     .val(lang)
                     .text(lang)
                     .attr('selected', selected);
-    		});
 
-            $('#language_selector').append(options);
+                $('#language_selector').append(option);
+
+            }
 
     	}, function(error) {
             console.error(error);

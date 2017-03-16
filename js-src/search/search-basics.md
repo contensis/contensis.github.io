@@ -10,7 +10,7 @@ A query tree structure, along with order and paging specifiers, allows a search 
 - [Complete example](#complete-example)
 
 ```js
-search(query: Query): Promise<PagedList<Entry>>;
+search(query: Query): Promise<PagedList<Entry>>; @TODO: linkDepth
 ```
 
 ## Query

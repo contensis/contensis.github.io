@@ -62,7 +62,7 @@
     <link rel="next" href="content-type.html" />
     
     
-    <link rel="prev" href="../security/authentication.html" />
+    <link rel="prev" href="../key-concepts/list-entries-by-content-type.html" />
     
 
     </head>
@@ -109,19 +109,6 @@
             
                     
                     Introduction
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="../key-concepts/getting-started.html">
-            
-                <a href="../key-concepts/getting-started.html">
-            
-                    
-                    Getting started
             
                 </a>
             
@@ -181,19 +168,6 @@
             
                     
                     Localization
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="../key-concepts/linked-content.html">
-            
-                <a href="../key-concepts/linked-content.html">
-            
-                    
-                    Linked content
             
                 </a>
             
@@ -276,31 +250,11 @@
 
     
         
-        <li class="header">Security</li>
-        
-        
-    
-        <li class="chapter " data-level="4.1" data-path="../security/authentication.html">
-            
-                <a href="../security/authentication.html">
-            
-                    
-                    Authentication
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
         <li class="header">Model</li>
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="project.html">
+        <li class="chapter active" data-level="4.1" data-path="project.html">
             
                 <a href="project.html">
             
@@ -313,7 +267,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.2" data-path="content-type.html">
+        <li class="chapter " data-level="4.2" data-path="content-type.html">
             
                 <a href="content-type.html">
             
@@ -326,7 +280,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.3" data-path="entry.html">
+        <li class="chapter " data-level="4.3" data-path="entry.html">
             
                 <a href="entry.html">
             
@@ -339,7 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="version.html">
+        <li class="chapter " data-level="4.4" data-path="version.html">
             
                 <a href="version.html">
             
@@ -352,7 +306,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="paged-list.html">
+        <li class="chapter " data-level="4.5" data-path="paged-list.html">
             
                 <a href="paged-list.html">
             
@@ -372,7 +326,7 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="asset.html">
+        <li class="chapter " data-level="5.1" data-path="asset.html">
             
                 <a href="asset.html">
             
@@ -385,7 +339,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="image.html">
+        <li class="chapter " data-level="5.2" data-path="image.html">
             
                 <a href="image.html">
             
@@ -398,7 +352,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="composed.html">
+        <li class="chapter " data-level="5.3" data-path="composed.html">
             
                 <a href="composed.html">
             
@@ -411,7 +365,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="date-range.html">
+        <li class="chapter " data-level="5.4" data-path="date-range.html">
             
                 <a href="date-range.html">
             
@@ -424,7 +378,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="location.html">
+        <li class="chapter " data-level="5.5" data-path="location.html">
             
                 <a href="location.html">
             
@@ -437,7 +391,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="quote.html">
+        <li class="chapter " data-level="5.6" data-path="quote.html">
             
                 <a href="quote.html">
             
@@ -457,7 +411,7 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="6.1" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html">
             
@@ -470,7 +424,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="../search/query-operators.html">
+        <li class="chapter " data-level="6.2" data-path="../search/query-operators.html">
             
                 <a href="../search/query-operators.html">
             
@@ -577,21 +531,28 @@
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>language_selector<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
 <pre class="language-"><code class="lang-js"><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>Zengenti<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Create a client</span>
     <span class="token keyword">var</span> client <span class="token operator">=</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Client<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// Get the current project</span>
         client<span class="token punctuation">.</span>project<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>currentProject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token keyword">var</span> options <span class="token operator">=</span> currentProject<span class="token punctuation">.</span>supportedLanguages<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>lang<span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> ilen <span class="token operator">=</span> currentProject<span class="token punctuation">.</span>supportedLanguages<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ilen<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+                <span class="token comment" spellcheck="true">// loop through the project&apos;s supported languages and add them to the language selector</span>
+
+                <span class="token comment" spellcheck="true">// check if the supported language is the primary language, if it is select the option</span>
                 <span class="token keyword">var</span> selected <span class="token operator">=</span> <span class="token punctuation">(</span>lang <span class="token operator">===</span> currentProject<span class="token punctuation">.</span>primaryLanguage<span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token string">&apos;selected&apos;</span> <span class="token punctuation">:</span> <span class="token string">&apos;&apos;</span><span class="token punctuation">;</span>
 
-                <span class="token keyword">return</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;&lt;option /&gt;&apos;</span><span class="token punctuation">)</span>
+                <span class="token keyword">var</span> option <span class="token operator">=</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;&lt;option /&gt;&apos;</span><span class="token punctuation">)</span>
                     <span class="token punctuation">.</span><span class="token function">val</span><span class="token punctuation">(</span>lang<span class="token punctuation">)</span>
                     <span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>lang<span class="token punctuation">)</span>
                     <span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">&apos;selected&apos;</span><span class="token punctuation">,</span> selected<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#language_selector&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#language_selector&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token punctuation">}</span>
 
         <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -627,7 +588,7 @@
 
             
                 
-                <a href="../security/authentication.html" class="navigation navigation-prev " aria-label="Previous page: Authentication">
+                <a href="../key-concepts/list-entries-by-content-type.html" class="navigation navigation-prev " aria-label="Previous page: GET list of entries by content type">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -643,7 +604,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Project","level":"5.1","depth":1,"next":{"title":"Content type","level":"5.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"previous":{"title":"Authentication","level":"4.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/project.md","mtime":"2017-03-14T17:51:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:27:27.443Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Project","level":"4.1","depth":1,"next":{"title":"Content type","level":"4.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"previous":{"title":"GET list of entries by content type","level":"3.5","depth":1,"path":"key-concepts/list-entries-by-content-type.md","ref":"key-concepts/list-entries-by-content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/project.md","mtime":"2017-03-16T12:51:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:53:39.230Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

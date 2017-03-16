@@ -116,19 +116,6 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../key-concepts/getting-started.html">
-            
-                <a href="../key-concepts/getting-started.html">
-            
-                    
-                    Getting started
-            
-                </a>
-            
-
-            
-        </li>
-    
 
     
         
@@ -181,19 +168,6 @@
             
                     
                     Localization
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="../key-concepts/linked-content.html">
-            
-                <a href="../key-concepts/linked-content.html">
-            
-                    
-                    Linked content
             
                 </a>
             
@@ -276,31 +250,11 @@
 
     
         
-        <li class="header">Security</li>
-        
-        
-    
-        <li class="chapter " data-level="4.1" data-path="../security/authentication.html">
-            
-                <a href="../security/authentication.html">
-            
-                    
-                    Authentication
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-    
-        
         <li class="header">Model</li>
         
         
     
-        <li class="chapter " data-level="5.1" data-path="project.html">
+        <li class="chapter " data-level="4.1" data-path="project.html">
             
                 <a href="project.html">
             
@@ -313,7 +267,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.2" data-path="content-type.html">
+        <li class="chapter " data-level="4.2" data-path="content-type.html">
             
                 <a href="content-type.html">
             
@@ -326,7 +280,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.3" data-path="entry.html">
+        <li class="chapter " data-level="4.3" data-path="entry.html">
             
                 <a href="entry.html">
             
@@ -339,7 +293,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.4" data-path="version.html">
+        <li class="chapter " data-level="4.4" data-path="version.html">
             
                 <a href="version.html">
             
@@ -352,7 +306,7 @@
             
         </li>
     
-        <li class="chapter " data-level="5.5" data-path="paged-list.html">
+        <li class="chapter " data-level="4.5" data-path="paged-list.html">
             
                 <a href="paged-list.html">
             
@@ -372,7 +326,7 @@
         
         
     
-        <li class="chapter " data-level="6.1" data-path="asset.html">
+        <li class="chapter " data-level="5.1" data-path="asset.html">
             
                 <a href="asset.html">
             
@@ -385,7 +339,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="image.html">
+        <li class="chapter " data-level="5.2" data-path="image.html">
             
                 <a href="image.html">
             
@@ -398,7 +352,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="composed.html">
+        <li class="chapter " data-level="5.3" data-path="composed.html">
             
                 <a href="composed.html">
             
@@ -411,7 +365,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="date-range.html">
+        <li class="chapter " data-level="5.4" data-path="date-range.html">
             
                 <a href="date-range.html">
             
@@ -424,7 +378,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.5" data-path="location.html">
+        <li class="chapter active" data-level="5.5" data-path="location.html">
             
                 <a href="location.html">
             
@@ -437,7 +391,7 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="quote.html">
+        <li class="chapter " data-level="5.6" data-path="quote.html">
             
                 <a href="quote.html">
             
@@ -457,7 +411,7 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="../search/search-basics.html">
+        <li class="chapter " data-level="6.1" data-path="../search/search-basics.html">
             
                 <a href="../search/search-basics.html">
             
@@ -470,7 +424,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="../search/query-operators.html">
+        <li class="chapter " data-level="6.2" data-path="../search/query-operators.html">
             
                 <a href="../search/query-operators.html">
             
@@ -556,7 +510,38 @@
 </tbody>
 </table>
 <h2 id="example">Example</h2>
-<p>@TODO: Example to be based on dotnet</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>map<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>Zengenti<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Create a client</span>
+    <span class="token keyword">var</span> client <span class="token operator">=</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Client<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> movieId <span class="token operator">=</span> <span class="token string">&apos;d11315cb-4278-455b-84bb-04698db0ebd2&apos;</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// Get the default language variation of the film</span>
+        client<span class="token punctuation">.</span>entries<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span>movieId<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>film<span class="token punctuation">)</span> <span class="token punctuation">{</span>   
+            <span class="token comment" spellcheck="true">// get the filming location of the film </span>
+            <span class="token keyword">var</span> filmingLocation <span class="token operator">=</span> film<span class="token punctuation">.</span>filmingLocation<span class="token punctuation">;</span>
+
+            <span class="token comment" spellcheck="true">// combine lat/lng into a string</span>
+            <span class="token keyword">var</span> latLng <span class="token operator">=</span> filmingLocation<span class="token punctuation">.</span>lat <span class="token operator">+</span> <span class="token string">&apos;,&apos;</span> <span class="token operator">+</span> filmingLocation<span class="token punctuation">.</span>lng<span class="token punctuation">;</span>
+
+            <span class="token comment" spellcheck="true">// Use Google map API to generate a map image </span>
+            <span class="token keyword">var</span> imgUrl <span class="token operator">=</span> <span class="token string">&quot;https://maps.googleapis.com/maps/api/staticmap?center=&quot;</span> <span class="token operator">+</span> latLng <span class="token operator">+</span> <span class="token string">&quot;&amp;zoom=14&amp;size=400x300&amp;sensor=false&quot;</span><span class="token punctuation">;</span>
+
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;&lt;img /&gt;&apos;</span><span class="token punctuation">)</span>                <span class="token comment" spellcheck="true">// create an image element</span>
+                <span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">&apos;src&apos;</span><span class="token punctuation">,</span> imgUrl<span class="token punctuation">)</span>    <span class="token comment" spellcheck="true">// set the src of the image to the Google map</span>
+                <span class="token punctuation">.</span><span class="token function">appendTo</span><span class="token punctuation">(</span><span class="token string">&apos;#map&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">// add the image to the map container</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Zengenti<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -600,7 +585,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Location","level":"6.5","depth":1,"next":{"title":"Quote","level":"6.6","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"previous":{"title":"Date range","level":"6.4","depth":1,"path":"model/date-range.md","ref":"model/date-range.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/location.md","mtime":"2017-03-13T17:58:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:27:27.443Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Location","level":"5.5","depth":1,"next":{"title":"Quote","level":"5.6","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"previous":{"title":"Date range","level":"5.4","depth":1,"path":"model/date-range.md","ref":"model/date-range.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/location.md","mtime":"2017-03-16T12:51:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:53:39.230Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

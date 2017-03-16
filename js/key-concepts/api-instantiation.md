@@ -17,8 +17,8 @@ The default configuration for Client's is set already when the Api is registered
 This be overridden globally
 ```js
 (function(Zengenti) {
-    var ContensisClient = Zengenti.Contensis.Client;
-    ContensisClient.configure({
+    // set the default configuration for all clients
+    Zengenti.Contensis.Client.configure({
         rootUrl: 'http://cms.contensis.com',
         accessToken: 'XXXXXXX',
         projectId: 'myProject',
@@ -36,9 +36,11 @@ All operations for the API hang off the ContensisClient type, which is created u
 
 ```js
 (function(Zengenti) {
-    var ContensisClient = Zengenti.Contensis.Client;
-    var client1 = Client.create();
-    var client2 = Client.create({
+    // Create with default configuration
+    var client1 = Zengenti.Contensis.Client.create();
+
+    // Create a client with specific configuration
+    var client2 = Zengenti.Contensis.Client.create({
         rootUrl: 'http://cms.contensis.com',
         projectId: 'myProject',
         language: 'en-GB',

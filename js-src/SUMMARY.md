@@ -1,6 +1,5 @@
 ## JS Delivery API
 * [Introduction](README.md)
-* [Getting started](/key-concepts/getting-started.md)
 
 
 ## Key concepts

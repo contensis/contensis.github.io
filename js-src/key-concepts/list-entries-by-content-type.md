@@ -1,18 +1,19 @@
 # Get a list entries by content type
 Requesting all entries for a content type can be achieved by using the list method on the client's entries property.
 
-list(contentTypeId: string): Promise<PagedList<Entry>>; @TODO: document paged list
-list(options: EntryListOptions): Promise<PagedList<Entry>>; @TODO: document options
+**list(contentTypeId: string): Promise&lt;PagedList&lt;Entry&gt;&gt;**
+
+**list(options: EntryListOptions): Promise&lt;PagedList&lt;Entry&gt;&gt;**
 
 ### Parameters			
-| Name | Description |
-|:--|:--|
-| contentTypeId | The id of the content type |
-| options | An object specifying the content type id, language, page options, ordering, fields to return and linkDepth.|
+| Name | Type | Description |
+|:--|:--|:--
+| contentTypeId | string | The id of the content type |
+| options | [EntryListOptions](/model/entry-list-options.md) | An object specifying the content type id, language, page options, ordering, fields to return and linkDepth.|
 
 
 ### Returns
-A Promise that will resolve with a paged list of entries
+A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry](/model/entry.md)
 
 ### Example - using content type id
 ```html

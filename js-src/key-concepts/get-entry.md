@@ -1,20 +1,18 @@
 # Get a single entry
 Requesting an individual entry can be achieved by using the get method on the client's entries property.
 
-@TODO: document options
-
-**get(id: string): Promise&lt;Entry&gt;;**
-**get(options: EntryGetOptions): Promise&lt;Entry&gt;;**
+**get(id: string): Promise&lt;Entry&gt;**
+**get(options: EntryGetOptions): Promise&lt;Entry&gt;**
 
 ### Parameters			
-| Name | Description |
-|:--|:--|
-| id | The id of the entry |
-| options | An object specifying the id, language and linkDepth.|
+| Name | Type | Description |
+|:--|:--|:--
+| id | string | The id of the entry |
+| options | [EntryGetOptions](/model/entry-get-options.md) | An object specifying the id, language and linkDepth.|
 
 
 ### Returns
-A Promise that will resolve with the entry
+A Promise that will resolve with the [Entry](/model/entry.md)
 
 ### Example - using entry id
 ```html

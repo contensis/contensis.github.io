@@ -5,7 +5,8 @@ Requesting the current project can be achieved by using the get method on the cl
 **get(): Promise&lt;Project&gt;**
 
 ### Returns
-A Promise that will resolve with the project
+A Promise that will resolve with the [Project](/model/project.md)
+
 ```html
 <select id="language_selector"></select>
 ```

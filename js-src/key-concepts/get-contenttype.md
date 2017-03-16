@@ -2,7 +2,7 @@
 
 Requesting an individual content type can be achieved by using the get method on the client's contentTypes property.
 
-**get(contentTypeId: string): Promise&lt;ContentType&gt;;**
+**get(contentTypeId: string): Promise&lt;ContentType&gt;**
 
 ### Parameters
 
@@ -11,7 +11,8 @@ Requesting an individual content type can be achieved by using the get method on
 | contentTypeId | string | The id of the content type |
 
 ### Returns
-A Promise that will resolve with the content type
+A Promise that will resolve with the [Content Type](/model/content-type.md)
+
 ```html
 <span id="content_type_name"></span>
 ```

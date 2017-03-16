@@ -15,4 +15,36 @@ The *from* value cannot be greater than the *to* value.
 
 ## Example
 
-@TODO: Example to be based on the dotnet example
+```html
+<div id="film_start"></div>
+
+<div id="film_end"></div>
+```
+
+```js
+(function(Zengenti) {
+    // Create a client
+    var client = Zengenti.Contensis.Client.create();
+
+    $(function() {
+        var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
+
+        // Get the default language variation of the film
+        client.entries.get(movieId).then(function(film) {    
+            // Get the filming period quote value
+            var filmingPeriod = film.filmingPeriod;  
+
+            // display the filming period
+            $('#film_start')
+    	        .text(filmingPeriod.from);
+
+            $('#film_end')
+    	        .text(filmingPeriod.to);
+
+        }, function(error) {
+            console.error(error);
+        });
+
+    });
+})(Zengenti);
+```

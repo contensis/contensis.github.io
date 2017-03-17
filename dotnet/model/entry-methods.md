@@ -31,7 +31,7 @@ dynamic title = entry.Get("title")
 
 ---
 
-## Get`<T>`
+## Get &lt;T&gt;
 
 Gets a field from an entry by *fieldName* and returns a typed object instance.
 
@@ -46,7 +46,7 @@ public T Get<T>(string fieldName)
 ### Parameters
 
 *T*
-> The type to attempt to cast the field data to. The type will either be a [DataType](/common/data-types), a supported [Data Format type](/common/types/README.md) or a [custom type]()
+> The type to attempt to cast the field data to. The type will either be a [DataType](/key-concepts/data-types.md), a supported [DataFormat](/key-concepts/data-format.md) type or a custom type.
 
 *fieldName*
 > Type: string  

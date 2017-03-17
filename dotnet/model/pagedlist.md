@@ -2,8 +2,8 @@
 
 The PagedList is a object that is used to describe paging details for listing and search results.
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | PageIndex | `int` | The index of the result set to return |
 | PageSize | `int` | The size of the result set to return |
 | TotalCount | `int` | The total number of results available |

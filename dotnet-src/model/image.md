@@ -4,10 +4,10 @@ The Image type represents a link to an image with an associated caption, if requ
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
-| Caption | `string` | The image caption, defined in the entry |
-| Asset | `Asset` | The asset that is linked to from the entry |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
+| Caption | string | The image caption, defined in the entry |
+| Asset | [Asset](/model/asset.md) | The asset that is linked to from the entry |
 
 ## Remarks
 
@@ -24,14 +24,14 @@ Unlike entry links, an asset link is always resolved so that the full asset deta
 
 @{
     // Retrieve a film by it's ID.
-    var filmEntry = client.Get("0aabad4e-a083-4a88-bd75-b2674e2f8298");
+    var movie = client.Get("0aabad4e-a083-4a88-bd75-b2674e2f8298");
 
     // Get the field value as an Image instance.
-    var coverImage = film.Get<Image>("coverImage");
+    var coverImage = movie.Get<Image>("posterImage");
 }
 
 <figure>
-  <img src="@coverImage.Asset.Uri" alt="@coverImage.Asset.Properties["altText"]" width="304" height="228">
+  <img src="@coverImage.Asset.Uri" alt="@coverImage.Asset.Get("altText")" width="304" height="228">
   <figcaption>@coverImage.Caption</figcaption>
 </figure>
 

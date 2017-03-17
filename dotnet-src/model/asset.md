@@ -12,6 +12,13 @@ All assets have the following standard entry fields:
 | Description | string | The description for the asset |
 | Properties | [PropertiesDictionary](#PropertiesDictionary) | A readonly collection of asset specific fields |
 
+### Image
+In addition to the standard data fields, images have the following.
+
+| Name | Description |
+| ---- | ----------- |
+| altText | The default alt text defined for the image resource |
+
 ## PropertiesDictionary
 
 | Name | Type | Description |
@@ -33,4 +40,3 @@ These are properties that are specific to an asset type. Currently this is limit
 | :--- | :---------- |
 | Width | The width of the image |
 | Height | The height of the image |
-| AltText | The default alt text defined for the image resource |

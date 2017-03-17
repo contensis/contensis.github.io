@@ -1,1 +1,5 @@
 # Linked Content
+
+Assets,
+
+## Images

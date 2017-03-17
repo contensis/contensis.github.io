@@ -5,8 +5,8 @@ The Location class represents a geographic coordinate that specifies the positio
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | Lat | double | The north-south position |
 | Lng | double | The east-west position |
 

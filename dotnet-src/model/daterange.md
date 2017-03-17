@@ -4,8 +4,8 @@ The DateRange type represents a start and end point in time.
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | From | DateTime? | The datetime the range starts |
 | To | DateTime? | The datetime the range ends |
 

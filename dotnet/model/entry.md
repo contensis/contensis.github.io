@@ -8,11 +8,9 @@ An entry definition in the Delivery API contains a mixture of standard propertie
 
 These are the standard properties that all entries have. An entry can have multiple language variations, which can be be edited, versioned and published independently. In the Delivery API context only a single language variation is available for an entry at any one time. 
 
-### Entry
-
-| Property | Type | Description |
+| Name | Type | Description |
 | :------- | :--- | :---------- |
-| Id | Integer | The entry identifier |
+| Id | int | The entry identifier |
 | ContentTypeId | string  | The API identifier of the content type that the entry is based on |
 | ProjectId | string | The API identifer of the project the entry belongs to |
 | DataFormat | string | Either 'entry' or 'asset' |
@@ -25,5 +23,5 @@ These are the standard properties that all entries have. An entry can have multi
 | Method | Returns | Description |
 | :----- | :------ | :-----------|
 | [Get(string fieldName)](./entry-methods.html#get) | dynamic | Gets a field item by name and returns a dynamic object |
-| [Get`<Type>`(string fieldName)](./entry-methods.html#gett) | `<Type>` | Gets a field item by name and attempts to cast to the specified generic type |
+| [Get&lt;Type&gt;(string fieldName)](./entry-methods.html#gett) | &lt;Type&gt; | Gets a field item by name and attempts to cast to the specified generic type |
 | [HasValue(string fieldName)](./entry-methods.html#hasvalue) | bool | A helper function to determine whether a field exists and has a value |

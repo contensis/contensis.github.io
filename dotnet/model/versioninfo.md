@@ -6,8 +6,8 @@ This type contains all the information relating to the versioning information fo
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | Created | `DateTime` | The date the entry was created |
 | CreatedBy | `string` | The user id of who created the entry |
 | Modified | `DateTime` | The date the entry version was last modified |

@@ -4,7 +4,7 @@ The PageOption type defines page index and page size parameters required for lis
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | PageIndex | `int` | The index of the result set to return |
 | PageSize | `int` | The number of items to return |

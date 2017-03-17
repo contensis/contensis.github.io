@@ -4,8 +4,8 @@ The Quote type represents a section of referenced text from an external source.
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
+| Name | Type | Description |
+| :--- | :--- | :---------- |
 | Text | string | The quote text |
 | Source | string | The source of the quote |
 

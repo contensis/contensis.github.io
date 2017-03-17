@@ -9,7 +9,7 @@ Contensis supports the following basic data types:
 | string | Used for text entries such as titles, content or markup |
 | integer | A whole number |
 | decimal | A number with a fractional part |
-| boolean | A value of `true` or `false` |
+| boolean | A value of *true* or *false* |
 | dateTime | A point in time |
 | object | Any arbitrary structure as JSON or a string |
 | stringArray | An array of strings |

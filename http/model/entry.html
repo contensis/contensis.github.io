@@ -88,7 +88,7 @@
     
         
         <li>
-            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+            <a href="https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx" target="_blank" class="custom-link">Development Home</a>
         </li>
     
     
@@ -544,14 +544,14 @@
                                 <h1 id="entries">Entries</h1>
 <p>An entry definition in the Delivery API contains a mixture of standard properties and properties that have been defined by the content type that an entry is based on.</p>
 <h2 id="data-properties">Data properties</h2>
-<p>Data properties are items defined by the <a href="model/content-type.md#field">fields collection</a> set in a content type.</p>
+<p>Data properties are items defined by the <a href="content-type.html#field">fields collection</a> set in a content type.</p>
 <h2 id="standard-properties">Standard properties</h2>
 <p>These are the standard properties that all entries have. The language property is the indexer for the entry data as an entry can have multiple language variations which can be be edited and versioned independently. In the Delivery API context only a single language variation is available on an entry.</p>
 <h3 id="entry">Entry</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Property</th>
+<th style="text-align:left">Name</th>
 <th style="text-align:left">Type</th>
 <th style="text-align:left">Format</th>
 <th style="text-align:left">Description</th>
@@ -562,7 +562,7 @@
 <td style="text-align:left">field id</td>
 <td style="text-align:left">Any</td>
 <td style="text-align:left">Any</td>
-<td style="text-align:left">Field data that is defined in the associated <a href="model/content-type.md#field">content type</a>. The data is keyed by a unique field id.</td>
+<td style="text-align:left">Field data that is defined in the associated <a href="content-type.html#field">content type</a>. The data is keyed by a unique field id.</td>
 </tr>
 <tr>
 <td style="text-align:left">sys</td>
@@ -576,7 +576,7 @@
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Property</th>
+<th style="text-align:left">Name</th>
 <th style="text-align:left">Type</th>
 <th style="text-align:left">Format</th>
 <th style="text-align:left">Description</th>
@@ -605,12 +605,12 @@
 <td style="text-align:left">dataFormat</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">Either &apos;entry&apos; or &apos;asset&apos;</td>
+<td style="text-align:left">Either <em>entry</em> or <em>asset</em></td>
 </tr>
 <tr>
 <td style="text-align:left">language</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left"><a href="localization.md">Language code</a></td>
+<td style="text-align:left"><a href="../localization.html">Language code</a></td>
 <td style="text-align:left">The language code of the entry variation</td>
 </tr>
 <tr>
@@ -628,7 +628,7 @@
 <tr>
 <td style="text-align:left">version</td>
 <td style="text-align:left">object</td>
-<td style="text-align:left"><a href="model/version.md">Version</a></td>
+<td style="text-align:left"><a href="version.html">Version</a></td>
 <td style="text-align:left">Version info specific to the entry variation</td>
 </tr>
 </tbody>
@@ -727,7 +727,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Entry","level":"5.3","depth":1,"next":{"title":"Version","level":"5.4","depth":1,"path":"model/version.md","ref":"./model/version.md","articles":[]},"previous":{"title":"Content type","level":"5.2","depth":1,"path":"model/content-type.md","ref":"./model/content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/entry.md","mtime":"2017-03-13T15:24:43.272Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T15:36:48.383Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Entry","level":"5.3","depth":1,"next":{"title":"Version","level":"5.4","depth":1,"path":"model/version.md","ref":"model/version.md","articles":[]},"previous":{"title":"Content type","level":"5.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"model/entry.md","mtime":"2017-03-17T14:08:23.738Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-17T14:15:18.476Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

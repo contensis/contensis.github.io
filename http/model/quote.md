@@ -1,10 +1,9 @@
 # Quote
-
 The quote object represents a section of referenced text from an external source.
 
 ## Properties
 
-| Property | Type | Format | Description |
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | text | string | | The quote text |
 | source | string | | The source of the quote |

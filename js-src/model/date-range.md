@@ -1,15 +1,13 @@
-@TODO: Copy from http when signed off and dotnet example
-
 # Date range
 
 The date range object represents a start and end point in time.
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
-| from | datetime | The datetime the range starts |
-| to | datetime | The datetime the range ends |
+| Name | Type | Format | Description |
+| :------- | :--- | :-- | :---------- |
+| from | datetime | | The date and time the range starts |
+| to | datetime | | The date and time the range ends |
 
 ## Validation
 
@@ -17,9 +15,36 @@ The *from* value cannot be greater than the *to* value.
 
 ## Example
 
-```json
-{
-    "from": "2006-12-06T09:00:00",
-    "to": "2009-09-10T09:00:00"
-}
+```html
+<div id="film_start"></div>
+
+<div id="film_end"></div>
+```
+
+```js
+(function(Zengenti) {
+    // Create a client
+    var client = Zengenti.Contensis.Client.create();
+
+    $(function() {
+        var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
+
+        // Get the default language variation of the film
+        client.entries.get(movieId).then(function(film) {    
+            // Get the filming period quote value
+            var filmingPeriod = film.filmingPeriod;  
+
+            // display the filming period
+            $('#film_start')
+    	        .text(filmingPeriod.from);
+
+            $('#film_end')
+    	        .text(filmingPeriod.to);
+
+        }, function(error) {
+            console.error(error);
+        });
+
+    });
+})(Zengenti);
 ```

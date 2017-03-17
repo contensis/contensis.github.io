@@ -1,11 +1,9 @@
-@TODO: Copy from http when signed off and dotnet example
-
 # Image
-An image is a container of an image asset with an associated caption.
+An image type is a container of an image asset with an associated caption.
 
 ## Properties
 
-| Property | Type | Format | Description |
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | asset | object | [Asset](/model/asset.md) | The asset that is linked to from the entry |
 | caption | string |  | The image caption, defined in the entry |
@@ -15,36 +13,42 @@ An image is a container of an image asset with an associated caption.
 
 ## Example
 
-```json
-{
-    "asset": {
-        "title": "Fight Club Poster",
-        "description": "Fight Club main poster artwork",
-        "altText": "Fight Club",
-        "sys": {
-            "id": "a83c9fcc-51ef-41aa-878f-af5a33ba4b2f",
-            "projectId": "movieDb",
-            "contentTypeId": "Image",
-            "dataFormat": "asset",
-            "language": "en-GB",
-            "uri": "/images/1999/drama/fight-club.jpeg",
-            "properties": {
-                "filename": "fight-club.jpeg",
-                "fileSize": 6033,
-                "width": 300,
-                "height": 450
-            },
-            "version": {
-                "createdBy": "c.alahniuk",
-                "created": "1999-11-02T17:30:31.73",
-                "modifiedBy": "b.pitt",
-                "modified": "1999-11-02T17:30:31.73",
-                "publishedBy": "d.fincher",
-                "published": "1999-11-02T17:30:31.73",
-                "versionNo": "1.0"
-            }
-        }
-    },
-    "caption": "Fight club is a great film!"
-}
+```html
+<figure id="film_cover">
+    <img />
+    <figcaption />
+</figure>
+```
+
+```js
+(function(Zengenti) {
+    // Create a client
+    var client = Zengenti.Contensis.Client.create();
+
+    $(function() {
+        var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
+
+        // Get the default language variation of the film
+        client.entries.get(movieId).then(function(film) {    
+            // Get the cover image value
+            var coverImage = film.coverImage;  
+
+            // display the cover image
+            $('img', '#film_cover')
+    	        .attr({
+                	src: coverImage.asset.uri,
+                    altText: coverImage.asset.properties.altText,
+                    width: coverImage.asset.properties.width,
+                    height: coverImage.asset.properties.height
+                });
+            // display the image caption
+            $('figcaption', '#film_cover')
+    	        .text(coverImage.caption);
+
+        }, function(error) {
+            console.error(error);
+        });
+
+    });
+})(Zengenti);
 ```

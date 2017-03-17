@@ -88,7 +88,7 @@
     
         
         <li>
-            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+            <a href="https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx" target="_blank" class="custom-link">Development Home</a>
         </li>
     
     
@@ -543,6 +543,15 @@
                                 
                                 <h1 id="search">Search</h1>
 <p>A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.</p>
+<ul>
+<li><a href="#queries">Queries</a></li>
+<li><a href="#sub-queries">Sub-queries</a></li>
+<li><a href="#ordering">Ordering</a></li>
+<li><a href="#paging">Paging</a></li>
+<li><a href="#weighting">Weighting</a></li>
+<li><a href="#specifying-fields">Specifying fields</a></li>
+<li><a href="#complete-example">Complete example</a></li>
+</ul>
 <h2 id="queries">Queries</h2>
 <p>This example demonstrates a simple search.</p>
 <pre class="language-"><code class="lang-http"><span class="token header-name keyword">POST:</span> /api/search
@@ -561,7 +570,7 @@
 }
 </code></pre>
 <h2 id="sub-queries">Sub-queries</h2>
-<p>A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of <a href="query-operators.html#logical-operators">logical operators</a>.</p>
+<p>A sub-query is a query within another query that is used as a condition to further restrict the results. Effectively they are defined by an explicit nesting of <a href="../query-operators.md#logical-operators">logical operators</a>.</p>
 <p>This example demonstrates a simple search with a sub-query:</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     <span class="token property">&quot;where&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
@@ -586,14 +595,16 @@
 </code></pre>
 <h2 id="ordering">Ordering</h2>
 <p>Results can be ordered by one or more fields in an ascending or descending direction. Order clauses are prioritised in the order that they are added. By default, if no order clauses are specified then the entry results are ordered by the EntryTitle in an ascending direction.</p>
-<p>Order by &apos;releaseDate&apos; in an ascending direction.</p>
+<h3 id="ascending-order">Ascending order</h3>
+<p>Order by <em>releaseDate</em> in an ascending direction.</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     <span class="token property">&quot;orderBy&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
         <span class="token property">&quot;asc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;releaseDate&quot;</span>
     <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p>Order by &apos;releaseDate&apos; in a descending direction.</p>
+<h3 id="descending-order">Descending order</h3>
+<p>Order by <em>releaseDate</em> in a descending direction.</p>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
     <span class="token property">&quot;orderBy&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
         <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;releaseDate&quot;</span>
@@ -608,7 +619,7 @@
     <span class="token property">&quot;pageIndex&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="weightings">Weightings</h2>
+<h2 id="weighting">Weighting</h2>
 <p>@TODO: This needs fleshing out</p>
 <h2 id="specifying-fields">Specifying fields</h2>
 <h3 id="system-fields">System fields</h3>
@@ -688,7 +699,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Search basics","level":"7.1","depth":1,"next":{"title":"Query operators","level":"7.2","depth":1,"path":"search/query-operators.md","ref":"./search/query-operators.md","articles":[]},"previous":{"title":"Quote","level":"6.6","depth":1,"path":"model/quote.md","ref":"./model/quote.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"search/search-basics.md","mtime":"2017-03-13T14:27:00.410Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-13T15:36:48.383Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Search basics","level":"7.1","depth":1,"next":{"title":"Query operators","level":"7.2","depth":1,"path":"search/query-operators.md","ref":"search/query-operators.md","articles":[]},"previous":{"title":"Quote","level":"6.6","depth":1,"path":"model/quote.md","ref":"model/quote.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"search/search-basics.md","mtime":"2017-03-17T14:08:23.789Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-17T14:15:18.476Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,11 +1,19 @@
 # Search
+A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of Operators enable individual field level evaluation.
 
-A query tree structure, along with order and paging specifiers, allows a search to be performed against indexed documents held in ElasticSearch. The query API allows any required sub-query structure to be defined and a comprehensive selection of operators enable individual field level evaluation.
+- [Query](#query)
+- [Sub-queries](#sub-queries)
+- [Ordering](#ordering)
+- [Paging](#paging)
+- [Weighting](#weighting)
+- [Specifying fields](#specifying-fields)
+- [Complete example](#complete-example)
 
 ```js
-search(query: Query): Promise<PagedList<Entry>>;
-```
+**search(query: Query): Promise&lt;PagedList&lt;Entry&gt;&gt;**
 
+**search(query: Query, linkDepth: number): Promise&lt;PagedList&lt;Entry&gt;&gt;**
+```
 
 ## Query
 This example demonstrates a simple search with default ordering and paging options.
@@ -60,17 +68,23 @@ Results can be ordered by one or more fields in an ascending or descending direc
 var OrderBy = Zengenti.Contensis.OrderBy;
 ```
 
+### Ascending order
 Order by 'releaseDate' in an ascending direction.
+
 ```js
 query.orderBy = OrderBy.asc('releaseDate');
 ```
 
+### Descending order
 Order by 'releaseDate' in a descending direction.
+
 ```js
 query.orderBy = OrderBy.desc('releaseDate');
 ```
 
+### Multiple clauses
 Multiple order clauses.
+
 ```js
 query.orderBy = OrderBy.asc('title').desc('releaseDate');
 ```
@@ -87,7 +101,7 @@ query.pageSize = 50;
 query.pageIndex = 1;
 ```
 
-### Weightings
+### Weighting
 All query operators can have a weight applied.
 
 ```js

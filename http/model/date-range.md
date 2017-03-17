@@ -4,10 +4,10 @@ The date range object represents a start and end point in time.
 
 ## Properties
 
-| Property | Type | Description |
-| :------- | :--- | :---------- |
-| from | datetime | The datetime the range starts |
-| to | datetime | The datetime the range ends |
+| Name | Type | Format | Description |
+| :------- | :--- | :-- | :---------- |
+| from | datetime | | The date and time the range starts |
+| to | datetime | | The date and time the range ends |
 
 ## Validation
 

@@ -1,36 +1,96 @@
-## Listing entries
-Requesting a list of entries can be achieved by using one of the List method overloads.
+# Get a list of all entries by content type
+Requesting all entries for a content type can be achieved by using the list method on the client's entries property.
 
-list(contentTypeId: string): Promise<PagedList<Entry>>;
-list(options: EntryListOptions): Promise<PagedList<Entry>>;
+**list(): Promise&lt;PagedList&lt;Entry&gt;&gt;**
 
-### Parameters
-| Name | Description |
-|:--|:--|
-| id | The id of the entry |
-| options | An object specifying the contentTypeId, language, pageOptions, order, linkDepth, fields. |
+**list(options: EntryListOptions): Promise&lt;PagedList&lt;Entry&gt;&gt;**
+
+### Parameters			
+| Name | Type | Description |
+|:--|:--|:--
+| options | [EntryListOptions](/model/entry-list-options.md) | An object specifying the language, page options, ordering, fields to return and linkDepth.|
+
+
 
 ### Returns
-A Promise that will resolve with a PagedList of entries
+A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry](/model/entry.md)
+
+### Example - using content type id
+```html
+<ul id="entry_list">
+</ul>
+```
 
 ```js
 (function(Zengenti) {
-    var client = Zengenti.Contensis.Client.create();    
-    client.entries.list('movies').then(function (films) {
-        // films are available
-        // films.pageIndex
-        // films.pageSize
-        // films.totalCount
-        // films.items
+    var client = Zengenti.Contensis.Client.create();
+    client.entries.list().then(function(listOfEntries) {    
+
+        for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
+            var entry = listOfEntries.items[i];
+            $('#entry_list').append($('<li />').text(film.entryTitle));
+        }
+
     }, function(error) {
         console.error(error);
     });
+})(Zengenti);
+```
 
-    client.entries.list({ contentTypeId: 'movies', language: 'fr-FR', pageOptions: { pageIndex: 1, pageSize: 10 } }).then(function (films) {
-        // films are available        
+### Example - using entry list options
+
+```html
+<ul id="entry_list">
+</ul>
+```
+
+```js
+(function(Zengenti) {
+    var client = Zengenti.Contensis.Client.create();
+    var options = {
+        language: 'fr-FR',
+        order: ['entryTitle'],
+        fields: ['entryTitle']
+        linkDepth: 1
+    };
+    client.entries.list(options).then(function(listOfEntries) {    
+
+        for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
+            var entry = listOfEntries.items[i];
+            $('#entry_list').append($('<li />').text(film.entryTitle));
+        }
+
     }, function(error) {
         console.error(error);
     });
+})(Zengenti);
 
+(function(Zengenti) {
+    // Create a client
+    var client = Zengenti.Contensis.Client.create();
+
+    $(function() {
+        // specify the options
+        var options = {
+            language: 'fr-FR',  // get french variations
+            order: ['entryTitle'],   // order by entryTitle field
+            fields: ['entryTitle'],  // only return entryTitle field
+            linkDepth: 1
+        };
+
+        // Get the list using the options
+        client.entries.list(options).then(function(listOfEntries) {    
+
+            for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
+                // loop through the entries adding their title to the list
+                var entry = listOfEntries.items[i];
+                $('#entry_list').append($('<li />').text(film.entryTitle));
+            }
+
+        }, function(error) {
+            console.error(error);
+        });
+
+    });
 })(Zengenti);
 ```

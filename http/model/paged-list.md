@@ -2,7 +2,8 @@
 
 A paged list is a structure that is used to describe paging details for listing and search results.
 
-| Property | Type | Format | Description |
+## Properties
+| Name | Type | Format | Description |
 | :------- | :--- | :----- | :---------- |
 | pageIndex | number | int | The index of the result set to return |
 | pageSize | number | int | The size of the result set to return |

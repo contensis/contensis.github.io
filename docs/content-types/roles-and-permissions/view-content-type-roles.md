@@ -1,2 +1,0 @@
-# View content type roles
-

@@ -29,17 +29,17 @@ An image type is a container of an image asset with an associated caption.
         var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';
 
         // Get the default language variation of the film
-        client.entries.get(movieId).then(function(film) {    
+        client.entries.get({ id: movieId, linkDepth: 1 }).then(function(film) {    
             // Get the cover image value
             var coverImage = film.coverImage;  
 
             // display the cover image
             $('img', '#film_cover')
     	        .attr({
-                	src: coverImage.asset.uri,
-                    altText: coverImage.asset.properties.altText,
-                    width: coverImage.asset.properties.width,
-                    height: coverImage.asset.properties.height
+                	src: coverImage.asset.sys.uri,
+                    altText: coverImage.asset.altText,
+                    width: coverImage.asset.sys.properties.width,
+                    height: coverImage.asset.sys.properties.height
                 });
             // display the image caption
             $('figcaption', '#film_cover')

@@ -28,7 +28,7 @@ A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry]
 
     $(function() {
         // Get a list of movies
-        client.entries.list('movies').then(function(listOfFilms) {    
+        client.entries.list('movie').then(function(listOfFilms) {    
 
             for (var i = 0, ilen = listOfFilms.items.length; i < ilen; i++) {
                 // loop through the entries adding their title to the list
@@ -59,7 +59,7 @@ A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry]
     $(function() {
         // specify the options
         var options = {
-            contentTypeId: 'movies', // get a list of movies
+            contentTypeId: 'movie', // get a list of movies
             language: 'fr-FR',  // get french variations
             order: ['title'],   // order by title field
             fields: ['title'],  // only return title field

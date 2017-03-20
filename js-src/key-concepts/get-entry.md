@@ -57,7 +57,7 @@ A Promise that will resolve with the [Entry](/model/entry.md)
         var movieId = 'd11315cb-4278-455b-84bb-04698db0ebd2';   
 
         // Get the French variation of the film with a link depth of 2
-        client.entries.get( { id: movieId, language: 'fr-fr', linkDepth: 2 }).then(function(film) {
+        client.entries.get( { id: movieId, language: 'fr-FR', linkDepth: 2 }).then(function(film) {
             // display the film's title and overview
             $('#film_title').text(film.title);
             $('#film_overview').text(film.overview);

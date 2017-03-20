@@ -47,7 +47,7 @@ The paged list properties provide the information required to implement paging.
             }
 
             // calculate the total number of pages
-            var pageCount = Math.ceil(listOfFilm.totalCount / listOfFilms.pageSize);
+            var pageCount = Math.ceil(listOfFilms.totalCount / listOfFilms.pageSize);
             // empty the pager list
             $('#film_pager').empty();
             for (var iPage = 1; iPage <= pageCount; iPage++) {               
@@ -55,7 +55,7 @@ The paged list properties provide the information required to implement paging.
                 var link = $('<a />')
                             .text(iPage)
                             .attr('href', '#')
-                            .data('pageIndex', iPage);  // set the page index as data on the link
+                            .data('pageIndex', iPage - 1);  // set the page index as data on the link
 
                 var listItem = $('<li />');
                 if (pageIndex === iPage) {
@@ -85,7 +85,7 @@ The paged list properties provide the information required to implement paging.
         });
 
         // load the first page
-        loadPage(1);
+        loadPage(0);
 
     });
 

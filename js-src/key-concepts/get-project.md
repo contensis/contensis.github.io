@@ -21,9 +21,8 @@ A Promise that will resolve with the [Project](/model/project.md)
         client.project.get().then(function(currentProject) {
 
             for (var i = 0, ilen = currentProject.supportedLanguages.length; i < ilen; i++) {
-
                 // loop through the project's supported languages and add them to the language selector
-                
+                var lang = currentProject.supportedLanguages[i];
                 // check if the supported language is the primary language, if it is select the option
                 var selected = (lang === currentProject.primaryLanguage) ? 'selected' : '';
 

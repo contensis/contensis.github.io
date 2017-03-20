@@ -24,15 +24,15 @@ A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry]
 ```js
 (function(Zengenti) {
     var client = Zengenti.Contensis.Client.create();
-    client.entries.list().then(function(listOfEntries) {    
-
-        for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
-            var entry = listOfEntries.items[i];
-            $('#entry_list').append($('<li />').text(film.entryTitle));
-        }
-
-    }, function(error) {
-        console.error(error);
+    $(function() {
+        client.entries.list().then(function(listOfEntries) {    
+            for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
+                var entry = listOfEntries.items[i];
+                $('#entry_list').append($('<li />').text(film.entryTitle));
+            }
+        }, function(error) {
+            console.error(error);
+        });
     });
 })(Zengenti);
 ```
@@ -45,26 +45,6 @@ A Promise that will resolve with a [Paged List](/model/paged-list.md) of [Entry]
 ```
 
 ```js
-(function(Zengenti) {
-    var client = Zengenti.Contensis.Client.create();
-    var options = {
-        language: 'fr-FR',
-        order: ['entryTitle'],
-        fields: ['entryTitle']
-        linkDepth: 1
-    };
-    client.entries.list(options).then(function(listOfEntries) {    
-
-        for (var i = 0, ilen = listOfEntries.items.length; i < ilen; i++) {
-            var entry = listOfEntries.items[i];
-            $('#entry_list').append($('<li />').text(film.entryTitle));
-        }
-
-    }, function(error) {
-        console.error(error);
-    });
-})(Zengenti);
-
 (function(Zengenti) {
     // Create a client
     var client = Zengenti.Contensis.Client.create();

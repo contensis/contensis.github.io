@@ -1,14 +1,14 @@
 ## .NET Delivery API
 
-* [Getting started](/README.md)
+* [Introduction](/README.md)
+* [Getting started](/getting-started.md)
 
 ## Security
 * [Authentication](/security/authentication.md)
-* [Scopes](/security/scopes.md)
+<!--* [Scopes](/security/scopes.md)-->
 
 ## Key concepts
 
-* [Getting started](/key-concepts/getting-started.md)
 * [API instantiation](/key-concepts/api-instantiation.md)
 * [Get an entry](/key-concepts/entry-get.md)
 * [Listing entries](/key-concepts/entries-list.md)
@@ -26,6 +26,9 @@
     * [Entry methods](/model/entry-methods.md)
 * [Asset](/model/asset.md)
 * [VersionInfo](/model/versioninfo.md)
+* [Metadata](/model/metadata.md)
+* [ContensisClientConfiguration](/model/contensisclientconfiguration.md)
+---
 * [ComposedField](/model/composed.md)
 * [DateRange](/model/daterange.md)
 * [Image](/model/image.md)

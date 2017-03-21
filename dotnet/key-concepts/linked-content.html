@@ -553,9 +553,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="linked-content">Linked Content</h1>
-<p>Assets,</p>
-<h2 id="images">Images</h2>
+                                <h1 id="linked-content">Linked content</h1>
+<p>An entry can link to other entries or assets as <a href="../model/entry.html">entry</a>, <a href="../model/asset.html">asset</a> or <a href="../model/image.html">image</a> field types. They can be defined as a standard entry field or as a <a href="../model/composed.html">composed</a> field type in the content type. These links can be singular or multiples of the same content type e.g. Actors.</p>
+<p>Linked content can be <a href="#unresolved-entries">unresolved</a> or <a href="#resolved-entries">resolved</a> depending on whether a linkDepth value has been provided. The .NET Delivery API helps you as a developer to not have to worry about entry resolving as it will automatically resolve unresolved entries when they are accessed.</p>
+<h2 id="unresolved-entries">Unresolved entries</h2>
+<p>An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry language variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.</p>
+<h2 id="resolved-entries">Resolved entries</h2>
+<p>Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can significantly improve the render performance of your webpage or application. Whilst fewer network requests can be beneficial, it can also be detrimental if the linkDepth is too deep, or if there are many link fields.</p>
+<h3 id="resolution-rules">Resolution rules</h3>
+<p>When a linked entry is accessed then the following rules apply:</p>
+<ul>
+<li>If a language <strong>has</strong> been specified in the link, then the specific language variation will be returned.</li>
+<li>If a language <strong>has</strong> been specified in the link, but the specific language variation does not exist, then null will be returned or will not be included in the array.</li>
+<li>If a language <strong>has not</strong> been specified, then the <em>defaultLanguage</em> value defined in the <a href="../model/content-type.md">content type</a> will be used to select the appropriate entry variation to return.</li>
+<li>If a language <strong>has not</strong> been specified and there is no default variation, then null will be returned.</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>The following examples demonstrate how entries can be accessed. Accessing the entries will auto-resolve them if they are unresolved.</p>
+<h5 id="get-a-single-linked-entry-or-asset">Get a single linked entry or asset</h5>
+<pre class="language-"><code class="lang-cs">@<span class="token keyword">using</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Delivery<span class="token punctuation">;</span>
+
+@<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Create a client</span>
+    <span class="token keyword">var</span> client <span class="token operator">=</span> ContensisClient<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get a specific entry that has linked content</span>
+    <span class="token keyword">var</span> movie <span class="token operator">=</span> client<span class="token punctuation">.</span>Entries<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;654fb097-8104-411c-8c6a-5e9050cc49c2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get the director entry associated with the movie</span>
+    <span class="token keyword">var</span> director <span class="token operator">=</span> movie<span class="token punctuation">.</span><span class="token generic-method function">Get<span class="token punctuation">&lt;</span>Entry<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token string">&quot;director&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Alternatively get the entry as a dynamic object</span>
+    <span class="token keyword">var</span> dynamicDirector <span class="token operator">=</span> movie<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;director&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h5 id="get-a-list-of-linked-entries-or-assets">Get a list of linked entries or assets</h5>
+<pre class="language-"><code class="lang-cs">@<span class="token keyword">using</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Delivery<span class="token punctuation">;</span>
+
+@<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Create a client</span>
+    <span class="token keyword">var</span> client <span class="token operator">=</span> ContensisClient<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get a specific entry that has linked content</span>
+    <span class="token keyword">var</span> movie <span class="token operator">=</span> client<span class="token punctuation">.</span>Entries<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;654fb097-8104-411c-8c6a-5e9050cc49c2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Get the actors associated with the movies</span>
+    <span class="token keyword">var</span> actors <span class="token operator">=</span> movie<span class="token punctuation">.</span><span class="token generic-method function">Get<span class="token punctuation">&lt;</span>Entry[]<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token string">&quot;actors&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Alternatively the entries can be returned as a list...</span>
+    <span class="token keyword">var</span> actorList <span class="token operator">=</span> movie<span class="token punctuation">.</span>Get<span class="token operator">&lt;</span>List<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token string">&quot;actors&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// ... or as a dynamic object</span>
+    <span class="token keyword">var</span> dynamicActors <span class="token operator">=</span> movies<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;actors&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
 
                                 
                                 </section>
@@ -599,7 +650,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linked Content","level":"3.7","depth":1,"next":{"title":"Localization","level":"3.8","depth":1,"path":"key-concepts/localization.md","ref":"key-concepts/localization.md","articles":[]},"previous":{"title":"Errors","level":"3.6","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/linked-content.md","mtime":"2017-03-14T15:31:32.415Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-17T14:15:07.901Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linked Content","level":"3.7","depth":1,"next":{"title":"Localization","level":"3.8","depth":1,"path":"key-concepts/localization.md","ref":"key-concepts/localization.md","articles":[]},"previous":{"title":"Errors","level":"3.6","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/linked-content.md","mtime":"2017-03-21T16:15:20.013Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T16:19:05.464Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

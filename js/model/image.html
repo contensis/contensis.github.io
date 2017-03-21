@@ -88,7 +88,7 @@
     
         
         <li>
-            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+            <a href="https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx" target="_blank" class="custom-link">Development Home</a>
         </li>
     
     
@@ -513,7 +513,42 @@
 <p><strong>Note</strong> The caption property allows instance specific text to be associated with a linked image asset.</p>
 </blockquote>
 <h2 id="example">Example</h2>
-<p>@TODO: Example to be based on dotnet example</p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figure</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>film_cover<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>figcaption</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>figure</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>Zengenti<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Create a client</span>
+    <span class="token keyword">var</span> client <span class="token operator">=</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Client<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> movieId <span class="token operator">=</span> <span class="token string">&apos;d11315cb-4278-455b-84bb-04698db0ebd2&apos;</span><span class="token punctuation">;</span>
+
+        <span class="token comment" spellcheck="true">// Get the default language variation of the film</span>
+        client<span class="token punctuation">.</span>entries<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> movieId<span class="token punctuation">,</span> linkDepth<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>film<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
+            <span class="token comment" spellcheck="true">// Get the cover image value</span>
+            <span class="token keyword">var</span> coverImage <span class="token operator">=</span> film<span class="token punctuation">.</span>coverImage<span class="token punctuation">;</span>  
+
+            <span class="token comment" spellcheck="true">// display the cover image</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;img&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;#film_cover&apos;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    src<span class="token punctuation">:</span> coverImage<span class="token punctuation">.</span>asset<span class="token punctuation">.</span>sys<span class="token punctuation">.</span>uri<span class="token punctuation">,</span>
+                    altText<span class="token punctuation">:</span> coverImage<span class="token punctuation">.</span>asset<span class="token punctuation">.</span>altText<span class="token punctuation">,</span>
+                    width<span class="token punctuation">:</span> coverImage<span class="token punctuation">.</span>asset<span class="token punctuation">.</span>sys<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>width<span class="token punctuation">,</span>
+                    height<span class="token punctuation">:</span> coverImage<span class="token punctuation">.</span>asset<span class="token punctuation">.</span>sys<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>height
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">// display the image caption</span>
+            <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;figcaption&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;#film_cover&apos;</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span>coverImage<span class="token punctuation">.</span>caption<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Zengenti<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -557,7 +592,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Image","level":"5.2","depth":1,"next":{"title":"Composed","level":"5.3","depth":1,"path":"model/composed.md","ref":"model/composed.md","articles":[]},"previous":{"title":"Asset","level":"5.1","depth":1,"path":"model/asset.md","ref":"model/asset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"model/image.md","mtime":"2017-03-13T17:56:05.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:53:39.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Image","level":"5.2","depth":1,"next":{"title":"Composed","level":"5.3","depth":1,"path":"model/composed.md","ref":"model/composed.md","articles":[]},"previous":{"title":"Asset","level":"5.1","depth":1,"path":"model/asset.md","ref":"model/asset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"model/image.md","mtime":"2017-03-21T09:47:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T09:49:14.357Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

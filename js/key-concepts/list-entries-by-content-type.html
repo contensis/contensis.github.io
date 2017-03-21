@@ -88,7 +88,7 @@
     
         
         <li>
-            <a href="http://zengenti.com/en-gb/products/contensis/contensis.aspx" target="_blank" class="custom-link">Development Home</a>
+            <a href="https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx" target="_blank" class="custom-link">Development Home</a>
         </li>
     
     
@@ -484,29 +484,32 @@
                                 
                                 <h1 id="get-a-list-entries-by-content-type">Get a list entries by content type</h1>
 <p>Requesting all entries for a content type can be achieved by using the list method on the client&apos;s entries property.</p>
-<p>list(contentTypeId: string): Promise<pagedlist<entry>&gt;; @TODO: document paged list
-list(options: EntryListOptions): Promise<pagedlist<entry>&gt;; @TODO: document options</pagedlist<entry></pagedlist<entry></p>
+<p><strong>list(contentTypeId: string): Promise&lt;PagedList&lt;Entry&gt;&gt;</strong></p>
+<p><strong>list(options: EntryListOptions): Promise&lt;PagedList&lt;Entry&gt;&gt;</strong></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
 <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left">contentTypeId</td>
+<td style="text-align:left">string</td>
 <td style="text-align:left">The id of the content type</td>
 </tr>
 <tr>
 <td style="text-align:left">options</td>
+<td style="text-align:left"><a href="../model/entry-list-options.md">EntryListOptions</a></td>
 <td style="text-align:left">An object specifying the content type id, language, page options, ordering, fields to return and linkDepth.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="returns">Returns</h3>
-<p>A Promise that will resolve with a paged list of entries</p>
+<p>A Promise that will resolve with a <a href="../model/paged-list.html">Paged List</a> of <a href="../model/entry.html">Entry</a></p>
 <h3 id="example---using-content-type-id">Example - using content type id</h3>
 <pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>film_list<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
@@ -517,7 +520,7 @@ list(options: EntryListOptions): Promise<pagedlist<entry>&gt;; @TODO: document o
 
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// Get a list of movies</span>
-        client<span class="token punctuation">.</span>entries<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token string">&apos;movies&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>listOfFilms<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
+        client<span class="token punctuation">.</span>entries<span class="token punctuation">.</span><span class="token function">list</span><span class="token punctuation">(</span><span class="token string">&apos;movie&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>listOfFilms<span class="token punctuation">)</span> <span class="token punctuation">{</span>    
 
             <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> ilen <span class="token operator">=</span> listOfFilms<span class="token punctuation">.</span>items<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> ilen<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 <span class="token comment" spellcheck="true">// loop through the entries adding their title to the list</span>
@@ -543,7 +546,7 @@ list(options: EntryListOptions): Promise<pagedlist<entry>&gt;; @TODO: document o
     <span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token comment" spellcheck="true">// specify the options</span>
         <span class="token keyword">var</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
-            contentTypeId<span class="token punctuation">:</span> <span class="token string">&apos;movies&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// get a list of movies</span>
+            contentTypeId<span class="token punctuation">:</span> <span class="token string">&apos;movie&apos;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// get a list of movies</span>
             language<span class="token punctuation">:</span> <span class="token string">&apos;fr-FR&apos;</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// get french variations</span>
             order<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;title&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>   <span class="token comment" spellcheck="true">// order by title field</span>
             fields<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;title&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment" spellcheck="true">// only return title field</span>
@@ -609,7 +612,7 @@ list(options: EntryListOptions): Promise<pagedlist<entry>&gt;; @TODO: document o
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GET list of entries by content type","level":"3.5","depth":1,"next":{"title":"Project","level":"4.1","depth":1,"path":"model/project.md","ref":"model/project.md","articles":[]},"previous":{"title":"GET list of all entries","level":"3.4","depth":1,"path":"key-concepts/list-entries.md","ref":"key-concepts/list-entries.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"http://zengenti.com/en-gb/products/contensis/contensis.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/list-entries-by-content-type.md","mtime":"2017-03-16T12:51:56.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-16T12:53:39.230Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GET list of entries by content type","level":"3.5","depth":1,"next":{"title":"Project","level":"4.1","depth":1,"path":"model/project.md","ref":"model/project.md","articles":[]},"previous":{"title":"GET list of all entries","level":"3.4","depth":1,"path":"key-concepts/list-entries.md","ref":"key-concepts/list-entries.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/list-entries-by-content-type.md","mtime":"2017-03-21T09:47:47.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T09:49:14.357Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

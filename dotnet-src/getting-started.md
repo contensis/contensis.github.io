@@ -58,7 +58,7 @@ Create a new C# Razor View called *Movie-Listing* within the demo folder with th
 
 @{
     // Add foundation to help align elements
-  	CurrentContext.Page.CSS.Add("https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css");
+    CurrentContext.Page.CSS.Add("https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css");
   
     // Create a client to allow access to the content
     var client = ContensisClient.Create();
@@ -71,7 +71,6 @@ Create a new C# Razor View called *Movie-Listing* within the demo folder with th
 
 @foreach(var movie in movies.Items)
 {
-  
     <div class="row">
         <div class="large-2 columns">
             <img src="@(movie.Get<Image>("posterImage").Asset.Uri)">
@@ -100,26 +99,24 @@ Add the following code into the razor view and insert the razor view into a plac
 
 
 ```cs
-
 @using System.Web;
 @using Zengenti.Contensis.Delivery
 
 @{
     // Add foundation to help align elements
-  	CurrentContext.Page.CSS.Add("https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css");
+    CurrentContext.Page.CSS.Add("https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css");
   
     // Create a client to allow access to the content
     var client = ContensisClient.Create();
   
   	// Get entry id passed in on the querystring
-  	var movieId = Request.QueryString["id"];
+    var movieId = Request.QueryString["id"];
 
     // Get the entry by id
     var movie = client.Entries.Get(movieId);
 }
 
 <div class="movie-record">
-
     <div class="row">
         <div class="medium-2 columns"><img src="@(movie.Get<Image>("posterImage").Asset.Uri)" /></div>
         <div class="medium-10 columns"><h2>@movie.Get("title")</h2></div>
@@ -136,10 +133,7 @@ Add the following code into the razor view and insert the razor view into a plac
         <div class="medium-2 columns">Runtime</div>
         <div class="medium-10 columns">@movie.Get("runtime") minutes</div>
     </div>
-
-
 </div>
-
 ```
 
 This should output the following webpage when previewed.

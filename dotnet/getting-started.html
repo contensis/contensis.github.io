@@ -554,21 +554,21 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="getting-started">Getting started</h1>
-<p>In this section you will be guided through rendering content created using the editor screens in the Contensis UI into Razor views using the .NET Delivery API. Throughout the documentation we use examples based on movies.</p>
+<p>This guide will take you through rendering content created using the content type builder and entries screens in Contensis, into razor views using the .NET Delivery API. Throughout the documentation we use examples based on movies.</p>
 <h2 id="assumptions">Assumptions</h2>
 <ul>
-<li>You have an understanding of managing and creating content in the navigation tree.</li>
-<li>You know how to create and edit webpages and Razor Views.</li>
+<li>You have an understanding of managing and creating content in the project explorer.</li>
+<li>You know how to create and edit pages and razor views.</li>
 </ul>
 <h2 id="create-a-new-project-optional">Create a new project (optional)</h2>
-<p><a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/Create-a-project.aspx" target="_blank">Projects</a> are the home for all your content in Contensis. Either use an existing test project or create a new project called MovieDB using the default values for assets and languages (you may need to <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Configuration/Setup-and-configure-a-publishing-server.aspx" target="_blank">set up a publishing server</a> to be able to run the examples if one is not set up already).</p>
+<p>Projects are the home for all your content in Contensis. Either use an existing project or create a <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/Create-a-project.aspx" target="_blank">new project</a> called MovieDB. You can use the default values for assets and languages. If you&apos;re creating a new project you&apos;ll need to setup a publishing server, <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Configuration/Setup-and-configure-a-publishing-server.aspx" target="_blank">follow our guide</a> to get one up and running.</p>
 <h2 id="create-a-movie-content-type">Create a movie content type</h2>
-<p>You can <a href="https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/content-types/create-a-content-type.aspx" target="_blank">create a new content type</a> easily in the content type editors in the Contensis UI. Create a content type called <em>Movie</em> with the following fields:</p>
+<p>You can <a href="https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/content-types/create-a-content-type.aspx" target="_blank">create a new content type</a> using the content type builder. Create a new content type called <em>Movie</em> with the following fields.</p>
 <table>
 <thead>
 <tr>
 <th>Field name</th>
-<th>Api id</th>
+<th>API id</th>
 <th>Type</th>
 <th>Description</th>
 </tr>
@@ -578,49 +578,48 @@
 <td>Title</td>
 <td>title</td>
 <td>Text</td>
-<td>The title of the movie</td>
+<td>The title of the movie.</td>
 </tr>
 <tr>
 <td>Overview</td>
 <td>overview</td>
 <td>Text</td>
-<td>A overview of what the movie is about</td>
+<td>An overview of what the movie is about.</td>
 </tr>
 <tr>
 <td>Release Date</td>
 <td>releaseDate</td>
 <td>Date</td>
-<td>The date the movie was released</td>
+<td>The date the movie was released.</td>
 </tr>
 <tr>
 <td>Runtime</td>
 <td>runtime</td>
 <td>number (integer)</td>
-<td>The runtime in minutes</td>
+<td>The runtime in minutes.</td>
 </tr>
 <tr>
-<td>Poster Image</td>
+<td>Poster image</td>
 <td>posterImage</td>
 <td>Image</td>
-<td>A reference to the cover image asset</td>
+<td>A reference to the cover image asset.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="create-a-folder">Create a folder</h2>
-<p>Lets create a folder called &apos;Movies Demo&apos; in the Contensis navigation tree to contain our webpage and razor view files. In that folder create a child folder called <em>images</em> to contain our image files. If you don&apos;t already have one, then create a basic template that can be used to create the webpages from and assign the template to the new folder. Ensure that the folder also has <em>C# Razor View</em> and <em>Image</em> content types assigned.</p>
+<p>Lets create a folder called <em>Movies Demo</em> in the project explorer to contain our page and razor views. In that folder create a sub folder called <em>images</em> to contain our poster images. If you don&apos;t already have one, then create a basic template that can be used to create the pages from and assign the template to the new folder. Ensure that the folder also has <em>C# Razor View</em> and <em>Image</em> content types assigned.</p>
 <p>We will end up with the following folder and file structure.</p>
-<p><img src="images/movie-demo-files.png" alt="Demo folder structure"></p>
+<p><img src="images/movie-demo-files.png" alt="Example folder structure in the project explorer"></p>
 <h2 id="create-some-movies">Create some movies</h2>
 <p>Now it&apos;s time to create some content!</p>
-<p>Head over to either <a href="http://www.imdb.com/" target="_blank">IMDB</a> or <a href="https://www.themoviedb.org/" target="_blank">The Movie DB</a> and choose 5 of your favourite movies to use to create the entries.</p>
-<p>Content will benefit from the inclusion of images, so add the cover images for the movies into the images folder and link to them from your newly created entries. Images are added to Contensis by <a href="https://zenhub.zengenti.com/Contensis/9/kb/Assets-uploadable-content/Images/upload-an-image.aspx" target="_blank">uploading them into the contensis tree</a> and can then be referenced within an entry as either a direct <a href="key-concepts/linked-content.html">asset link</a> or as an <a href="key-concepts/linked-content.html#images">image</a>. We will be using the image type so that we can add captions!</p>
+<p>Head over to either <a href="http://www.imdb.com/" target="_blank">IMDB</a> or <a href="https://www.themoviedb.org/" target="_blank">The Movie DB</a> and choose 5 of your favourite movies to use, and then <a href="https://zenhub.zengenti.com/Contensis/9/kb/content-types-and-entries/entries/Create-an-entry.aspx" target="_blank">create</a> a set of entries from you new content type.</p>
+<p>The content will benefit from the inclusion of images, so <a href="https://zenhub.zengenti.com/Contensis/9/kb/Assets-uploadable-content/Images/upload-an-image.aspx" target="_blank">upload</a> the cover images for the movies into the images folder and link to them from your newly created entries.</p>
 <h2 id="create-a-movie-listing-in-a-razor-view">Create a movie listing in a razor view</h2>
-<p>Next create the Razor View that will render the movie listing in a Contensis webpage. First, ensure that you have a new webpage called &apos;Movies&apos; created in the demo folder with a placeholder that allows Razor Views. </p>
+<p>Next we&apos;ll create the razor view that will render the movie listing in a Contensis page. First, ensure that you have a new page called &apos;Movies&apos; created in the demo folder with a placeholder that supports razor views.</p>
 <blockquote>
-<p><strong>NOTE</strong> 
-If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/R83/Development/Razor/Razoroverview.aspx" target="_blank">learn how to create your own pages with Razor views</a>.</p>
+<p><strong>Note</strong> If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/9/Development/Razor/Razoroverview.aspx" target="_blank">learn how to create your own pages with razor views</a>.</p>
 </blockquote>
-<p>Create a new C# Razor View called <em>Movie-Listing</em> within the demo folder with the following code. </p>
+<p>Create a new C# razor view called <em>movie-listing</em> within the demo folder with the following code.</p>
 <pre class="language-"><code class="lang-cs">@<span class="token keyword">using</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Delivery
 
 @<span class="token punctuation">{</span>
@@ -648,13 +647,14 @@ If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/
 
 <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
 </code></pre>
-<p>Submit and approve the razor view so that it can be used in a webpage. Insert the razor view into the placeholder in the Movies webpage and you can then preview the changes.</p>
-<p>This should output the following webpage when previewed.</p>
-<p><img src="images/movie-listing.png" alt="movie-listing"></p>
+<p>Submit and approve the razor view so that it can be used in a page. Insert the razor view into the placeholder in the <em>Movies</em> page and you can then preview the changes.</p>
+<h3 id="example-output">Example output</h3>
+<p>This should output the following page when previewed.</p>
+<p><img src="images/movie-listing.png" alt="movie listing"></p>
 <h2 id="create-a-movie-record-page">Create a movie record page</h2>
 <p>Now we have a listing page, lets create a record page to display further details about a movie.</p>
-<p>First, create a new webpage based on your basic template called <em>Movie Record</em> and a new razor view called <em>Movie Record</em>.</p>
-<p>Add the following code into the razor view and insert the razor view into a placeholder in the new webpage.</p>
+<p>First, create a new page based on your basic template called <em>Movie record</em> and a new razor view called <em>Movie record</em>.</p>
+<p>Add the following code into the razor view and insert the razor view into a placeholder in the new page.</p>
 <pre class="language-"><code class="lang-cs">@<span class="token keyword">using</span> System<span class="token punctuation">.</span>Web<span class="token punctuation">;</span>
 @<span class="token keyword">using</span> Zengenti<span class="token punctuation">.</span>Contensis<span class="token punctuation">.</span>Delivery
 
@@ -665,7 +665,7 @@ If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/
     <span class="token comment" spellcheck="true">// Create a client to allow access to the content</span>
     <span class="token keyword">var</span> client <span class="token operator">=</span> ContensisClient<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-      <span class="token comment" spellcheck="true">// Get entry id passed in on the querystring</span>
+    <span class="token comment" spellcheck="true">// Get entry id passed in on the query string</span>
     <span class="token keyword">var</span> movieId <span class="token operator">=</span> Request<span class="token punctuation">.</span>QueryString<span class="token punctuation">[</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 
     <span class="token comment" spellcheck="true">// Get the entry by id</span>
@@ -691,8 +691,11 @@ If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/
     <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
 <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
 </code></pre>
-<p>This should output the following webpage when previewed.</p>
+<h2 id="example-output">Example output</h2>
+<p>This should output the following page when previewed.</p>
 <p><img src="images/movie-record.png" alt="movie-listing"></p>
+<h2 id="summary">Summary</h2>
+<p>We hope this demonstrates that by using a couple of basic razor views you can easily display new types of content in Contensis web site.</p>
 
                                 
                                 </section>
@@ -736,7 +739,7 @@ If you don&apos;t know how, then <a href="https://zenhub.zengenti.com/Contensis/
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Getting started","level":"1.2","depth":1,"next":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"getting-started.md","mtime":"2017-03-17T15:31:32.357Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T12:19:46.504Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Getting started","level":"1.2","depth":1,"next":{"title":"Authentication","level":"2.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"getting-started.md","mtime":"2017-03-22T17:19:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T17:20:26.737Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

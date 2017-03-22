@@ -21,7 +21,3 @@ The *VersionNo* follows a two-part versioning scheme:
 
 The *minor* part is incremented on every successful update to the entry. The *major* part is incremented once the entry has been approved and subsequently published, which in turn resets the *minor* part to zero.
 
-
-## Example
-
-@todo: example based on dotnet example

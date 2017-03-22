@@ -15,9 +15,10 @@
 * [GET list of entries by content type](/key-concepts/list-entries-by-content-type.md)
 
 ## Security
-* [Authentication](/security/authentication.md)
-* [Authorization](/security/authorization.md)
-* [Scopes](/security/scopes.md)
+* [Access token](/security/access-token.md)
+<!--* [Authentication](/security/authentication.md)-->
+<!--* [Authorization](/security/authorization.md)-->
+<!--* [Scopes](/security/scopes.md)-->
 
 ## Model
 * [Project](/model/project.md)

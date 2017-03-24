@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Linked Content · Contensis .NET Delivery API</title>
+        <title>Linked content · Contensis .NET Delivery API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -239,7 +239,7 @@
                 <a href="linked-content.html">
             
                     
-                    Linked Content
+                    Linked content
             
                 </a>
             
@@ -538,7 +538,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Linked Content</a>
+        <a href=".." >Linked content</a>
     </h1>
 </div>
 
@@ -555,11 +555,11 @@
                                 
                                 <h1 id="linked-content">Linked content</h1>
 <p>An entry can link to other entries or assets as <a href="../model/entry.html">entry</a>, <a href="../model/asset.html">asset</a> or <a href="../model/image.html">image</a> field types. They can be defined as a standard entry field or as a <a href="../model/composed.html">composed</a> field type in the content type. These links can be singular or multiples of the same content type e.g. Actors.</p>
-<p>Linked content can be <a href="#unresolved-entries">unresolved</a> or <a href="#resolved-entries">resolved</a> depending on whether a linkDepth value has been provided. The .NET Delivery API helps you as a developer to not have to worry about entry resolving as it will automatically resolve unresolved entries when they are accessed.</p>
+<p>Linked content can be <a href="#unresolved-entries">unresolved</a> or <a href="#resolved-entries">resolved</a> depending on whether a linkDepth value has been provided.</p>
 <h2 id="unresolved-entries">Unresolved entries</h2>
 <p>An unresolved entry or asset is essentially a subset of the entry structure with enough information to get the correct entry language variation. A subsequent HTTP call is required to obtain the linked content. Unresolved entries and assets is the default behaviour for linked content.</p>
 <h2 id="resolved-entries">Resolved entries</h2>
-<p>Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can significantly improve the render performance of your webpage or application. Whilst fewer network requests can be beneficial, it can also be detrimental if the linkDepth is too deep, or if there are many link fields.</p>
+<p>Entries can be resolved automatically to a maximum depth of 10 using the linkDepth parameter in any retrieval operation. Being able to resolve entries in a single HTTP call can significantly improve the render performance of your webpage or application. Whilst fewer network requests can be beneficial, it can also be detrimental if the linkDepth is too deep, or if there are many linked fields.</p>
 <h3 id="resolution-rules">Resolution rules</h3>
 <p>When a linked entry is accessed then the following rules apply:</p>
 <ul>
@@ -650,7 +650,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Linked Content","level":"3.7","depth":1,"next":{"title":"Localization","level":"3.8","depth":1,"path":"key-concepts/localization.md","ref":"key-concepts/localization.md","articles":[]},"previous":{"title":"Errors","level":"3.6","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/linked-content.md","mtime":"2017-03-22T09:34:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-22T17:20:26.737Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linked content","level":"3.7","depth":1,"next":{"title":"Localization","level":"3.8","depth":1,"path":"key-concepts/localization.md","ref":"key-concepts/localization.md","articles":[]},"previous":{"title":"Errors","level":"3.6","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/linked-content.md","mtime":"2017-03-24T12:01:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-24T12:36:16.189Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

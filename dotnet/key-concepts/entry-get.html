@@ -556,15 +556,15 @@
                                 <h1 id="getting-an-entry">Getting an entry</h1>
 <p>Requesting an individual entry can be achieved by using one of the <code>Get</code> method overloads.</p>
 <ul>
-<li><a href="#get-by-guid-id">Get(Guid id, string language, int entryLinkDepth)</a></li>
-<li><a href="#get-by-string-id">Get(string id, string language, int entryLinkDepth)</a></li>
-<li><a href="#get-by-guid-id-async">GetAsync(Guid id, string language, int entryLinkDepth)</a>  </li>
-<li><a href="#get-by-string-id-async">GetAsync(string id, string id, int entryLinkDepth)</a></li>
+<li><a href="#get-by-guid-id">Get(Guid id, string language, int linkDepth)</a></li>
+<li><a href="#get-by-string-id">Get(string id, string language, int linkDepth)</a></li>
+<li><a href="#get-by-guid-id-async">GetAsync(Guid id, string language, int linkDepth)</a>  </li>
+<li><a href="#get-by-string-id-async">GetAsync(string id, string id, int linkDepth)</a></li>
 </ul>
 <h2 id="get-by-guid-id">Get by Guid id</h2>
 <p>Gets an entry by its <code>Guid</code> identifier.</p>
 <h3 id="syntax">Syntax</h3>
-<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> Entry <span class="token function">Get</span><span class="token punctuation">(</span>Guid id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> entryLinkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> Entry <span class="token function">Get</span><span class="token punctuation">(</span>Guid id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> linkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -577,7 +577,7 @@
 <blockquote>
 <p>Type: <code>string</code><br>The specified language variation for the entry. If no value is provided then the project default language is used.</p>
 </blockquote>
-<p><em>entryLinkDepth</em></p>
+<p><em>linkDepth</em></p>
 <blockquote>
 <p>Type: <code>int</code><br>The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  <strong>Please note:</strong> linked assets are always fully resolved.</p>
 </blockquote>
@@ -594,7 +594,7 @@ Entry film <span class="token operator">=</span> client<span class="token punctu
 <h2 id="get-by-string-id">Get by string id</h2>
 <p>Gets an entry by its identifier.</p>
 <h3 id="syntax">Syntax</h3>
-<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> Entry <span class="token function">Get</span><span class="token punctuation">(</span><span class="token keyword">string</span> id<span class="token punctuation">,</span> <span class="token keyword">string</span> languageCode <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> entryLinkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> Entry <span class="token function">Get</span><span class="token punctuation">(</span><span class="token keyword">string</span> id<span class="token punctuation">,</span> <span class="token keyword">string</span> languageCode <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> linkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -607,7 +607,7 @@ Entry film <span class="token operator">=</span> client<span class="token punctu
 <blockquote>
 <p>Type: <code>string</code><br>The specified language variation for the entry. If no value is provided then the project default language is used.</p>
 </blockquote>
-<p><em>entryLinkDepth</em></p>
+<p><em>linkDepth</em></p>
 <blockquote>
 <p>Type: <code>int</code><br>The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  <strong>Please note:</strong> linked assets are always fully resolved.</p>
 </blockquote>
@@ -624,7 +624,7 @@ Entry film <span class="token operator">=</span> client<span class="token punctu
 <h2 id="get-by-guid-id-async">Get by Guid id async</h2>
 <p>Gets an entry by its <code>Guid</code> identifier asynchronously.</p>
 <h3 id="syntax">Syntax</h3>
-<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> <span class="token keyword">async</span> Task<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span> <span class="token function">GetAsync</span><span class="token punctuation">(</span>Guid id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> entryLinkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> <span class="token keyword">async</span> Task<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span> <span class="token function">GetAsync</span><span class="token punctuation">(</span>Guid id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> linkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -637,7 +637,7 @@ Entry film <span class="token operator">=</span> client<span class="token punctu
 <blockquote>
 <p>Type: <code>string</code><br>The specified language variation for the entry. If no value is provided then the project default language is used.</p>
 </blockquote>
-<p><em>entryLinkDepth</em></p>
+<p><em>linkDepth</em></p>
 <blockquote>
 <p>Type: <code>int</code><br>The depth at which to resolve the full entry data for a linked entry, with a maximum depth value of 10. By default, no entry data is resolved for linked entries.  <strong>Please note:</strong> linked assets are always fully resolved.</p>
 </blockquote>
@@ -654,7 +654,7 @@ Entry film <span class="token operator">=</span> <span class="token keyword">awa
 <h2 id="get-by-string-id-async">Get by string id async</h2>
 <p>Gets an entry by its <code>string</code> identifier asynchronously.</p>
 <h3 id="syntax">Syntax</h3>
-<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> <span class="token keyword">async</span> Task<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span> <span class="token function">GetAsync</span><span class="token punctuation">(</span><span class="token keyword">string</span> id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> entryLinkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+<pre class="language-"><code class="lang-cs"><span class="token keyword">public</span> <span class="token keyword">async</span> Task<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span> <span class="token function">GetAsync</span><span class="token punctuation">(</span><span class="token keyword">string</span> id<span class="token punctuation">,</span> <span class="token keyword">string</span> language <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token keyword">int</span> linkDepth <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -667,7 +667,7 @@ Entry film <span class="token operator">=</span> <span class="token keyword">awa
 <blockquote>
 <p>Type: <code>string</code><br>The specified language variation for the entry. If no value is provided then the project default language is used.</p>
 </blockquote>
-<p><em>entryLinkDepth</em></p>
+<p><em>linkDepth</em></p>
 <blockquote>
 <p>Type: <code>int</code><br>The depth at which to resolve the full entry data for a linked entry. The max depth that can be specified is 10 - larger values will be handled as being 10. By default, no entry data is resolved.</p>
 </blockquote>
@@ -724,7 +724,7 @@ Entry film <span class="token operator">=</span> <span class="token keyword">awa
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Get an entry","level":"3.2","depth":1,"next":{"title":"Listing entries","level":"3.3","depth":1,"path":"key-concepts/entries-list.md","ref":"key-concepts/entries-list.md","articles":[]},"previous":{"title":"API instantiation","level":"3.1","depth":1,"path":"key-concepts/api-instantiation.md","ref":"key-concepts/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"ga":{"configuration":"auto","token":"UA-96163335-1"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/entry-get.md","mtime":"2017-03-10T13:00:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-24T16:21:42.692Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get an entry","level":"3.2","depth":1,"next":{"title":"Listing entries","level":"3.3","depth":1,"path":"key-concepts/entries-list.md","ref":"key-concepts/entries-list.md","articles":[]},"previous":{"title":"API instantiation","level":"3.1","depth":1,"path":"key-concepts/api-instantiation.md","ref":"key-concepts/api-instantiation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"ga":{"configuration":"auto","token":"UA-96163335-1"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis .NET Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/entry-get.md","mtime":"2017-03-24T16:44:48.055Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-24T17:15:28.769Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

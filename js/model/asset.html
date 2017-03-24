@@ -484,28 +484,35 @@
                                 
                                 <h1 id="assets">Assets</h1>
 <p>Assets are an extension of entries, with additional properties containing details about the file they represent. An asset is an entry with a dataFormat value equal to <em>asset</em>, which allows them to be identified and queried independently to entries.</p>
-<h2 id="fields">Fields</h2>
-<h3 id="standard">Standard</h3>
-<p>All assets have the following standard data fields.</p>
+<h2 id="standard-fields">Standard Fields</h2>
+<p>All assets have the following standard entry fields:</p>
 <table>
 <thead>
 <tr>
 <th>Name</th>
+<th>Type</th>
+<th>Format</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>title</td>
+<td>string</td>
+<td></td>
 <td>The title of the asset</td>
 </tr>
 <tr>
 <td>description</td>
+<td>string</td>
+<td></td>
 <td>The description for the asset</td>
 </tr>
 <tr>
-<td>sys.properties</td>
-<td>A readonly collection of asset specific properties</td>
+<td>sys</td>
+<td>object</td>
+<td><a href="#sys">Sys</a></td>
+<td>The container of the entry system data</td>
 </tr>
 </tbody>
 </table>
@@ -515,13 +522,72 @@
 <thead>
 <tr>
 <th>Name</th>
+<th>Type</th>
+<th>Format</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>altText</td>
+<td>string</td>
+<td></td>
 <td>The default alt text defined for the image resource</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sys">Sys</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">GUID</td>
+<td style="text-align:left">The asset identifier as a 128 bit GUID</td>
+</tr>
+<tr>
+<td style="text-align:left">projectId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The API identifier of the project the entry belongs to</td>
+</tr>
+<tr>
+<td style="text-align:left">contentTypeId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The API identifier of the content type that the entry is based on</td>
+</tr>
+<tr>
+<td style="text-align:left">dataFormat</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><em>asset</em></td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"><a href="../localization.html">Language code</a></td>
+<td style="text-align:left">The language code of the asset variation</td>
+</tr>
+<tr>
+<td style="text-align:left">version</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left"><a href="version.html">Version</a></td>
+<td style="text-align:left">Version info specific to the entry variation</td>
+</tr>
+<tr>
+<td style="text-align:left">properties</td>
+<td style="text-align:left">object</td>
+<td style="text-align:left"><a href="#Properties">Properties</a></td>
+<td style="text-align:left">The container of asset specific properties</td>
 </tr>
 </tbody>
 </table>
@@ -531,18 +597,30 @@
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>filename</td>
-<td>The name of the actual file, with extension included</td>
+<td style="text-align:left">uri</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The URI path to the file, excluding the domain</td>
 </tr>
 <tr>
-<td>fileSize</td>
-<td>The file size in bytes</td>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The name of the actual file, with extension included</td>
+</tr>
+<tr>
+<td style="text-align:left">fileSize</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The file size in bytes</td>
 </tr>
 </tbody>
 </table>
@@ -552,23 +630,27 @@
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>width</td>
-<td>The width of the image</td>
+<td style="text-align:left">width</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The width of the image</td>
 </tr>
 <tr>
-<td>height</td>
-<td>The height of the image</td>
+<td style="text-align:left">height</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The height of the image</td>
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example</h2>
-<p>@TODO: Example to be based on dotnet example</p>
 
                                 
                                 </section>
@@ -612,7 +694,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Asset","level":"5.1","depth":1,"next":{"title":"Image","level":"5.2","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"previous":{"title":"Paged list","level":"4.5","depth":1,"path":"model/paged-list.md","ref":"model/paged-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"model/asset.md","mtime":"2017-03-13T17:55:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-21T09:49:14.357Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Asset","level":"5.1","depth":1,"next":{"title":"Image","level":"5.2","depth":1,"path":"model/image.md","ref":"model/image.md","articles":[]},"previous":{"title":"Paged list","level":"4.5","depth":1,"path":"model/paged-list.md","ref":"model/paged-list.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism","ga"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"ga":{"configuration":"auto","token":"UA-96163335-1"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis JS Delivery API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"model/asset.md","mtime":"2017-03-22T09:34:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-24T16:22:01.907Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -623,6 +705,10 @@
     
         
         <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
         
     
         

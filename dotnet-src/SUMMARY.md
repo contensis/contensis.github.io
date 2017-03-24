@@ -15,7 +15,7 @@
 * [Data types](/key-concepts/data-types.md)
 * [Data format](/key-concepts/data-format.md)
 * [Errors](/key-concepts/errors.md)
-* [Linked Content](/key-concepts/linked-content.md)
+* [Linked content](/key-concepts/linked-content.md)
 * [Localization](/key-concepts/localization.md)
 
 ## Model

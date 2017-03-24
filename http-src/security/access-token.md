@@ -10,6 +10,15 @@ The accessToken can be obtained from the Contensis global settings screen from a
 GET: /api/delivery/projects/website/contenttypes/movies/?accessToken=kJpUHbj3HEO8u7mTzEgIqI5gVN1K5Y8DUZSPwmSMOzzDl7dB
 ```
 
+## Header example
+
+```http
+GET: /api/delivery/projects/website/contenttypes/movies/
+Content-Type: application/json
+Accept: application/json
+accessToken: kJpUHbj3HEO8u7mTzEgIqI5gVN1K5Y8DUZSPwmSMOzzDl7dB
+```
+
 ## Authorization claims
 
 The Delivery API is limited to the following authorization claims which restricts resource access to read-only.

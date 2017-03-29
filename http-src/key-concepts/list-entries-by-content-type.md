@@ -1,6 +1,6 @@
 # Get a list entries by content type
 
-**GET:** /api/delivery/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
+<span class="label label--get">GET</span> /api/delivery/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries
 
 ## Parameters
 

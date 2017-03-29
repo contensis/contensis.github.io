@@ -2,7 +2,7 @@
 
 Returns an array of content type resources for a project.
 
-**GET:** /api/delivery/projects/**{projectId}**/contenttypes/
+<span class="label label--get">GET</span> /api/delivery/projects/**{projectId}**/contenttypes/
 
 ## Parameters
 

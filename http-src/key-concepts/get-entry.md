@@ -1,6 +1,6 @@
 # Get a single entry
 
-**GET:** /api/delivery/projects/**{projectId}**/entries/**{entryId}**
+<span class="label label--get">GET</span> /api/delivery/projects/**{projectId}**/entries/**{entryId}**
 
 ## Parameters
 

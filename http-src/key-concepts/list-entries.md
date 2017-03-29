@@ -1,6 +1,6 @@
 # Get a list of all entries
 
-**GET:** /api/delivery/projects/**{projectId}**/entries
+<span class="label label--get">GET</span> /api/delivery/projects/**{projectId}**/entries
 
 ## Parameters
 
@@ -53,4 +53,3 @@ GET: /api/delivery/projects/movieDb/entries/?linkDepth=1
 ```http
 GET: /api/delivery/projects/movieDb/entries/?versionStatus=latest
 ```
-

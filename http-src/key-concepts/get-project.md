@@ -1,6 +1,6 @@
 # Get a single project
 
-**GET:** /api/delivery/projects/**{projectId}**
+<span class="label label--get">GET</span> /api/delivery/projects/**{projectId}**
 
 ## Example request
 

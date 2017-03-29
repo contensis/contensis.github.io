@@ -65,3 +65,38 @@ background: #e7e7e7;
 .book-header h1 {
   display: none;
 }
+
+.label {
+display: inline-block;
+border-radius: 4px;
+background-color: #333;
+color: #fff;
+padding: 0.125em 0.375em;
+text-align: center;
+font-size: 0.625em; /* 10px */
+font-weight: bold;
+}
+
+.label--big {
+font-size: 0.875em;
+}
+
+.label--get {
+background-color: #6bbd5b;
+}
+
+.label--post {
+background-color: #248fb2;
+}
+
+.label--put {
+background-color: #9b708b;
+}
+
+.label--delete {
+background-color: #e27a7a;
+}
+
+.label--patch {
+background-color: #e09d43;
+}

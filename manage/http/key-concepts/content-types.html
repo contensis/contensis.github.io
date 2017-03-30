@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Errors · Contensis HTTP Management API</title>
+        <title>Get a content type · Contensis HTTP Management API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="localization.html" />
+    <link rel="next" href="content-types.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="projects.html" />
     
 
     </head>
@@ -123,7 +123,7 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="errors.html">
+        <li class="chapter " data-level="2.1" data-path="errors.html">
             
                 <a href="errors.html">
             
@@ -513,7 +513,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Errors</a>
+        <a href=".." >Get a content type</a>
     </h1>
 </div>
 
@@ -528,7 +528,304 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="errors">Errors</h1>
+                                <h1 id="content-types">Content types</h1>
+<h2 id="get-a-content-type">Get a content type</h2>
+<p>Gets an existing content type by the content type id.</p>
+<p><span class="label label--get">GET</span> /api/management/projects/<strong>{projectId}</strong>/contenttypes/<strong>{contentTypeId}</strong></p>
+<h3 id="example-request">Example request</h3>
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">GET:</span> /api/delivery/projects/movieDb/contenttypes/movie/
+</code></pre>
+<h3 id="response-messages">Response messages</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">HTTP status code</th>
+<th style="text-align:left">Reason</th>
+<th style="text-align:left">Response model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">200</td>
+<td style="text-align:left">Success</td>
+<td style="text-align:left"><a href="../model/content-type.html">Content Type</a></td>
+</tr>
+<tr>
+<td style="text-align:left">404</td>
+<td style="text-align:left">Project not found</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+<tr>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Internal server error</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-a-content-type">Create a content type</h2>
+<p>Creates a new content type resource.</p>
+<p><span class="label label--post">POST</span> /api/management/projects/<strong>{projectId}</strong>/contenttypes/</p>
+<h3 id="example-request">Example request</h3>
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">POST:</span> /api/delivery/projects/movieDb/contenttypes/
+
+{
+  &quot;id&quot;: &quot;movie&quot;,
+  &quot;projectId&quot;: &quot;website&quot;,
+  &quot;name&quot;: {
+    &quot;en-GB&quot;: &quot;Movie&quot;
+  },
+  &quot;description&quot;: {
+    &quot;en-GB&quot;: &quot;A movie type&quot;
+  },
+  &quot;entryTitleField&quot;: &quot;title&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;id&quot;: &quot;title&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Title&quot;
+      },
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;editor&quot;: {
+        &quot;id&quot;: &quot;text&quot;,
+        &quot;instructions&quot;: {
+          &quot;en-GB&quot;: &quot;The title of the movie&quot;
+        },
+        &quot;properties&quot;: {
+          &quot;placeholderText&quot;: {
+            &quot;en-GB&quot;: &quot;Enter the full title of the movie appropriate to the region&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;id&quot;: &quot;tagline&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Tagline&quot;
+      },
+      &quot;dataType&quot;: &quot;string&quot;,
+    },
+    {
+      &quot;id&quot;: &quot;overview&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Overview&quot;
+      },
+      &quot;dataType&quot;: &quot;String&quot;,
+      &quot;dataFormat&quot;: &quot;html&quot;,
+    },
+    {
+      &quot;id&quot;: &quot;releaseDate&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Release Date&quot;
+      },
+      &quot;dataType&quot;: &quot;dateTime&quot;,
+      &quot;validations&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;actors&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Actors&quot;
+      },
+      &quot;dataType&quot;: &quot;ObjectArray&quot;,
+      &quot;dataFormat&quot;: &quot;entry&quot;,
+      &quot;validations&quot;: {
+        &quot;contentType&quot;: {
+          &quot;contentType&quot;: &quot;actor&quot;
+        }
+      }
+    }
+  ],
+  &quot;defaultLanguage&quot;: &quot;en-GB&quot;,
+  &quot;supportedLanguages&quot;: [
+    &quot;en-GB&quot;,
+    &quot;fr-FR&quot;,
+    &quot;de-DE&quot;,
+    &quot;es&quot;
+  ],
+  &quot;workflowId&quot;: &quot;ContensisMultilingual&quot;,
+  &quot;dataFormat&quot;: &quot;entry&quot;
+}
+</code></pre>
+<h3 id="response-messages">Response messages</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">HTTP status code</th>
+<th style="text-align:left">Reason</th>
+<th style="text-align:left">Response model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">200</td>
+<td style="text-align:left">Success</td>
+<td style="text-align:left"><a href="../model/content-type.html">Content Type</a></td>
+</tr>
+<tr>
+<td style="text-align:left">404</td>
+<td style="text-align:left">Project not found</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+<tr>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Internal server error</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>TODO: Add validation responses</strong></p>
+<h3 id="validations">Validations</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project does not exist</td>
+<td>A project must exist to be able to create content types</td>
+</tr>
+<tr>
+<td>Non-unique id</td>
+<td>The content type must be unique for the project</td>
+</tr>
+</tbody>
+</table>
+<h3 id="remarks">Remarks</h3>
+<p>If the <em>defaultLanguage</em> value is not included in the <em>supportedLanguages</em> array then it will automatically added by the service when the project is created. Additionally, if the <em>defaultLanguage</em> is not specified then the <a href="../model/project.html">project</a> <em>primaryLanguage</em> will be automatically set as the value by the service.</p>
+<h2 id="update-a-content-type">Update a content type</h2>
+<p>Creates a new content type resource.</p>
+<p><span class="label label--put">PUT</span> /api/management/projects/<strong>{projectId}</strong>/contenttypes/<strong>{contentTypeId}</strong></p>
+<h3 id="example-request">Example request</h3>
+<pre class="language-"><code class="lang-http"><span class="token header-name keyword">PUT:</span> /api/delivery/projects/movieDb/contenttypes/movie
+
+{
+  &quot;id&quot;: &quot;movie&quot;,
+  &quot;projectId&quot;: &quot;website&quot;,
+  &quot;name&quot;: {
+    &quot;en-GB&quot;: &quot;Movie&quot;
+  },
+  &quot;description&quot;: {
+    &quot;en-GB&quot;: &quot;A movie type&quot;
+  },
+  &quot;entryTitleField&quot;: &quot;title&quot;,
+  &quot;fields&quot;: [
+    {
+      &quot;id&quot;: &quot;title&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Title&quot;
+      },
+      &quot;dataType&quot;: &quot;string&quot;,
+      &quot;editor&quot;: {
+        &quot;id&quot;: &quot;text&quot;,
+        &quot;instructions&quot;: {
+          &quot;en-GB&quot;: &quot;The title of the movie&quot;
+        },
+        &quot;properties&quot;: {
+          &quot;placeholderText&quot;: {
+            &quot;en-GB&quot;: &quot;Enter the full title of the movie appropriate to the region&quot;
+          }
+        }
+      }
+    },
+    {
+      &quot;id&quot;: &quot;tagline&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Tagline&quot;
+      },
+      &quot;dataType&quot;: &quot;string&quot;,
+    },
+    {
+      &quot;id&quot;: &quot;overview&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Overview&quot;
+      },
+      &quot;dataType&quot;: &quot;String&quot;,
+      &quot;dataFormat&quot;: &quot;html&quot;,
+    },
+    {
+      &quot;id&quot;: &quot;releaseDate&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Release Date&quot;
+      },
+      &quot;dataType&quot;: &quot;dateTime&quot;,
+      &quot;validations&quot;: null
+    },
+    {
+      &quot;id&quot;: &quot;actors&quot;,
+      &quot;name&quot;: {
+        &quot;en-GB&quot;: &quot;Actors&quot;
+      },
+      &quot;dataType&quot;: &quot;ObjectArray&quot;,
+      &quot;dataFormat&quot;: &quot;entry&quot;,
+      &quot;validations&quot;: {
+        &quot;contentType&quot;: {
+          &quot;contentType&quot;: &quot;actor&quot;
+        }
+      }
+    }
+  ],
+  &quot;defaultLanguage&quot;: &quot;en-GB&quot;,
+  &quot;supportedLanguages&quot;: [
+    &quot;en-GB&quot;,
+    &quot;fr-FR&quot;,
+    &quot;de-DE&quot;,
+    &quot;es&quot;
+  ],
+  &quot;workflowId&quot;: &quot;ContensisMultilingual&quot;,
+  &quot;dataFormat&quot;: &quot;entry&quot;
+}
+</code></pre>
+<h3 id="response-messages">Response messages</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">HTTP status code</th>
+<th style="text-align:left">Reason</th>
+<th style="text-align:left">Response model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">200</td>
+<td style="text-align:left">Success</td>
+<td style="text-align:left"><a href="../model/content-type.html">Content Type</a></td>
+</tr>
+<tr>
+<td style="text-align:left">404</td>
+<td style="text-align:left">Project not found</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+<tr>
+<td style="text-align:left">500</td>
+<td style="text-align:left">Internal server error</td>
+<td style="text-align:left"><a href="errors.html">Error</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>TODO: Add validation responses</strong></p>
+<h3 id="validations">Validations</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project does not exist</td>
+<td>A project must exist to be able to create content types</td>
+</tr>
+<tr>
+<td>Non-unique id</td>
+<td>The content type must be unique for the project</td>
+</tr>
+</tbody>
+</table>
+<h3 id="remarks">Remarks</h3>
+<p>If the <em>defaultLanguage</em> value is not included in the <em>supportedLanguages</em> array then it will automatically added by the service when the project is created. Additionally, if the <em>defaultLanguage</em> is not specified then the <a href="../model/project.html">project</a> <em>primaryLanguage</em> will be automatically set as the value by the service.</p>
 
                                 
                                 </section>
@@ -556,12 +853,12 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="projects.html#delete-a-project" class="navigation navigation-prev " aria-label="Previous page: Delete a project">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="localization.html" class="navigation navigation-next " aria-label="Next page: Localization">
+                <a href="content-types.html#create-a-content-type" class="navigation navigation-next " aria-label="Next page: Create a content type">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -572,7 +869,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Errors","level":"2.1","depth":1,"next":{"title":"Localization","level":"2.2","depth":1,"path":"key-concepts/localization.md","ref":"key-concepts/localization.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/errors.md","mtime":"2017-03-24T16:42:06.712Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T13:52:43.953Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Get a content type","level":"5.1","depth":1,"next":{"title":"Create a content type","level":"5.2","depth":1,"anchor":"#create-a-content-type","path":"key-concepts/content-types.md","ref":"key-concepts/content-types.md#create-a-content-type","articles":[]},"previous":{"title":"Delete a project","level":"4.5","depth":1,"anchor":"#delete-a-project","path":"key-concepts/projects.md","ref":"key-concepts/projects.md#delete-a-project","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"key-concepts/content-types.md","mtime":"2017-03-30T13:22:50.906Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T13:52:43.953Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

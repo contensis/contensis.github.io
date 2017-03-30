@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Authorization · Contensis HTTP Management API</title>
+        <title>Project · Contensis HTTP Management API</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="scopes.html" />
+    <link rel="next" href="content-type.html" />
     
     
-    <link rel="prev" href="authentication.html" />
+    <link rel="prev" href="../key-concepts/projects.html" />
     
 
     </head>
@@ -156,9 +156,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="authentication.html">
+        <li class="chapter " data-level="3.1" data-path="../security/authentication.html">
             
-                <a href="authentication.html">
+                <a href="../security/authentication.html">
             
                     
                     Authentication
@@ -169,9 +169,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.2" data-path="authorization.html">
+        <li class="chapter " data-level="3.2" data-path="../security/authorization.html">
             
-                <a href="authorization.html">
+                <a href="../security/authorization.html">
             
                     
                     Authorization
@@ -182,9 +182,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="scopes.html">
+        <li class="chapter " data-level="3.3" data-path="../security/scopes.html">
             
-                <a href="scopes.html">
+                <a href="../security/scopes.html">
             
                     
                     Scopes
@@ -444,9 +444,9 @@
         
         
     
-        <li class="chapter " data-level="7.1" data-path="../model/project.html">
+        <li class="chapter active" data-level="7.1" data-path="project.html">
             
-                <a href="../model/project.html">
+                <a href="project.html">
             
                     
                     Project
@@ -457,9 +457,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="../model/content-type.html">
+        <li class="chapter " data-level="7.2" data-path="content-type.html">
             
-                <a href="../model/content-type.html">
+                <a href="content-type.html">
             
                     
                     Content type
@@ -470,9 +470,9 @@
             
         </li>
     
-        <li class="chapter " data-level="7.3" data-path="../model/version.html">
+        <li class="chapter " data-level="7.3" data-path="version.html">
             
-                <a href="../model/version.html">
+                <a href="version.html">
             
                     
                     Version
@@ -513,7 +513,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Authorization</a>
+        <a href=".." >Project</a>
     </h1>
 </div>
 
@@ -528,21 +528,64 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="authorization">Authorization</h1>
-<h2 id="bearer-token">Bearer token</h2>
-<p>On a successful authentication response the <em>access_token</em> value must be set as the Authorization HTTP header for all REST requests and must be formatted as follows:</p>
-<pre class="language-"><code class="lang-http"><span class="token header-name keyword">Authorization:</span> bearer {access_token}
-</code></pre>
-<p>Periodically the access token will expire to ensure that if compromised, then any grants are short lived. This expiry can be forecast by using the <em>expires_in</em> value returned from an authentication response or can be handled by catching a <code>401 - Unauthorized</code> response.</p>
-<p>401 - Unauthorized</p>
+                                <h1 id="project">Project</h1>
+<p>A project resource can be retrieved from the Delivery API to understand the languages that the project supports and which language is the primary language.</p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Format</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">id</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">A unique project identifier</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The friendly name given to the project</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">The description text given to a project</td>
+</tr>
+<tr>
+<td style="text-align:left">supportedLanguages</td>
+<td style="text-align:left">string [...]</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">An array of all the languages supported by the project</td>
+</tr>
+<tr>
+<td style="text-align:left">primaryLanguage</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"><a href="../localization.md">Language code</a></td>
+<td style="text-align:left">The primary language for the project</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example">Example</h2>
 <pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
-  <span class="token property">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Authorization has been denied for this request.&quot;</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;movieDb&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Movie Database&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;...&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;supportedLanguage&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">&quot;en-GB&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;en-US&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;fr&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;primaryLanguage&quot;</span><span class="token operator">:</span> <span class="token string">&quot;en-GB&quot;</span>
 <span class="token punctuation">}</span>
 </code></pre>
-<p>On an expiry a new access token will need to be requested using the same mechanism as the initial token request.</p>
-<blockquote>
-<p><strong>Note</strong>  - If you want to implement your own Delivery API wrapper, then it must implement the <a href="https://tools.ietf.org/html/rfc6749#section-4.4" target="_blank">OAuth 2.0 client credential flow</a> using the discovery document located at <code>https://*YOUR_CMS_URL*/authenticate</code>.</p>
-</blockquote>
 
                                 
                                 </section>
@@ -570,12 +613,12 @@
 
             
                 
-                <a href="authentication.html" class="navigation navigation-prev " aria-label="Previous page: Authentication">
+                <a href="../key-concepts/projects.html#delete-an-entry" class="navigation navigation-prev " aria-label="Previous page: Delete an entry">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="scopes.html" class="navigation navigation-next " aria-label="Next page: Scopes">
+                <a href="content-type.html" class="navigation navigation-next " aria-label="Next page: Content type">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -586,7 +629,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Authorization","level":"3.2","depth":1,"next":{"title":"Scopes","level":"3.3","depth":1,"path":"security/scopes.md","ref":"security/scopes.md","articles":[]},"previous":{"title":"Authentication","level":"3.1","depth":1,"path":"security/authentication.md","ref":"security/authentication.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"security/authorization.md","mtime":"2017-03-24T16:42:06.720Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T13:52:43.953Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Project","level":"7.1","depth":1,"next":{"title":"Content type","level":"7.2","depth":1,"path":"model/content-type.md","ref":"model/content-type.md","articles":[]},"previous":{"title":"Delete an entry","level":"6.6","depth":1,"anchor":"#delete-an-entry","path":"key-concepts/projects.md","ref":"key-concepts/projects.md#delete-an-entry","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"model/project.md","mtime":"2017-03-29T15:22:50.154Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-30T13:52:43.953Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

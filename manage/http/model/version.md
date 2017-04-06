@@ -13,9 +13,9 @@ The version object contains the version status information for the current versi
 | versionNo | string | {Major}.{Minor} | The version number of the resource |
 
 
-## Remarks
+## VersionNo
 
-The *VersionNo* follows a two-part versioning scheme:
+The *versionNo* value follows a two-part versioning scheme:
 
 > {Major}.{Minor}
 

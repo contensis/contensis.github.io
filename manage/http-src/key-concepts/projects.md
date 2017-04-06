@@ -9,7 +9,7 @@ Gets an existing project by the project id.
 ### Example request
 
 ```http
-GET: /api/delivery/projects/movieDb/
+GET: /api/management/projects/movieDb/
 ```
 
 ### Response messages
@@ -33,7 +33,7 @@ Creates a new project resource.
 ### Example request
 
 ```http
-POST: /api/delivery/projects/
+POST: /api/management/projects/
 
 {
     "id": "movieDb",
@@ -78,7 +78,7 @@ Updates an existing project resource.
 ### Example request
 
 ```http
-PUT: /api/delivery/projects/movieDb
+PUT: /api/management/projects/movieDb
 
 {
     "id": "movieDb",
@@ -115,7 +115,7 @@ Returns a list of the project resources for a Contensis instance.
 ### Example request
 
 ```http
-GET: /api/delivery/projects/
+GET: /api/management/projects/
 ```
 
 ### Response messages
@@ -143,7 +143,7 @@ Project_delete
 ### Example request
 
 ```http
-DELETE: /api/delivery/projects/movieDb/
+DELETE: /api/management/projects/movieDb/
 ```
 
 ### Response messages

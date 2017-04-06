@@ -29,17 +29,20 @@
 
 ## Entries
 
-* [Get an entry](/key-concepts/projects.md#get-a-entry)
+* [Get an entry](/key-concepts/entries.md#get-an-entry)
 * [Create an entry](/key-concepts/entries.md#create-an-entry)
-* [Update an entry](/key-concepts/projects.md#update-an-entry)
-* [Publish an entry](/key-concepts/projects.md#publish-an-entry)
-* [List entries](/key-concepts/projects.md#list-entries)
-* [Delete an entry](/key-concepts/projects.md#delete-an-entry)
+* [Update an entry](/key-concepts/entries.md#update-an-entry)
+* [Publish an entry](/key-concepts/entries.md#publish-an-entry)
+* [List entries](/key-concepts/entries.md#list-entries)
+* [List entries by content type](/key-concepts/entries.md#list-entries)
+* [Delete an entry](/key-concepts/entries.md#delete-an-entry)
+* [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation)
 
 ## Models
 
 * [Project](/model/project.md)
 * [Content type](/model/content-type.md)
+* [Entry](/model/entry.md)
 * [Version](/model/version.md)
 
 

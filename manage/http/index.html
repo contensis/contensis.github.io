@@ -424,7 +424,7 @@
     
         <li class="chapter " data-level="6.6" data-path="key-concepts/entries.html">
             
-                <a href="key-concepts/entries.html#list-entries">
+                <a href="key-concepts/entries.html#list-entries-by-content-type">
             
                     
                     List entries by content type
@@ -622,7 +622,7 @@
 </tr>
 <tr>
 <td><a href="key-concepts/content-types.html#publish-a-content-type">Publish a content type</a></td>
-<td><span class="label label--post">POST</span> /api/management/projects/<strong>{projectId}</strong>/contenttypes/<strong>{contentTypeId}</strong>/workflow/</td>
+<td><span class="label label--post">POST</span> /api/management/workflow/</td>
 </tr>
 <tr>
 <td><a href="key-concepts/content-types.html#list-content-types">List content types</a></td>
@@ -644,7 +644,7 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="key-concepts/projects.html#get-a-entry">Get an entry</a></td>
+<td><a href="key-concepts/entries.html#get-an-entry">Get an entry</a></td>
 <td><span class="label label--get">GET</span> /api/management/projects/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong></td>
 </tr>
 <tr>
@@ -652,43 +652,28 @@
 <td><span class="label label--post">POST</span> /api/management/projects/<strong>{projectId}</strong>/entries/</td>
 </tr>
 <tr>
-<td><a href="key-concepts/projects.html#update-an-entry">Update an entry</a></td>
+<td><a href="key-concepts/entries.html#update-an-entry">Update an entry variation</a></td>
 <td><span class="label label--put">PUT</span> /api/management/projects/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong></td>
 </tr>
 <tr>
-<td><a href="key-concepts/projects.html#publish-an-entry">Publish an entry</a></td>
-<td><span class="label label--post">POST</span> /api/management/projects/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong>/workflow/</td>
+<td><a href="key-concepts/entries.html#publish-an-entry">Publish an entry</a></td>
+<td><span class="label label--post">POST</span> /api/management/workflow/</td>
 </tr>
 <tr>
-<td><a href="key-concepts/projects.html#list-entries">List entries</a></td>
+<td><a href="key-concepts/entries.html#list-entries">List entries</a></td>
 <td><span class="label label--get">GET</span> /api/management/projects/<strong>{projectId}</strong>/entries/</td>
 </tr>
 <tr>
-<td><a href="key-concepts/projects.html#list-entries">List entries by content type</a></td>
+<td><a href="key-concepts/entries.html#list-entries-by-content-type">List entries by content type</a></td>
 <td><span class="label label--get">GET</span> /api/management/projects/<strong>{projectId}</strong>/contenttypes/<strong>{contentTypeId}</strong>/entries/</td>
 </tr>
 <tr>
-<td><a href="key-concepts/projects.html#delete-an-entry">Delete an entry</a></td>
+<td><a href="key-concepts/entries.html#delete-an-entry">Delete an entry</a></td>
 <td><span class="label label--delete">DELETE</span> /api/management/projects/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong></td>
 </tr>
-</tbody>
-</table>
-<h3 id="workflow">Workflow</h3>
-<table>
-<thead>
 <tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="key-concepts/content-types.html#publish-a-content-type">Publish a resource</a></td>
-<td></td>
-</tr>
-<tr>
-<td><a href="key-concepts/content-types.html#publish-a-content-type">Publish an entry</a></td>
-<td></td>
+<td><a href="key-concepts/entries.html#delete-an-entry-variation">Delete an entry variation</a></td>
+<td><span class="label label--delete">DELETE</span> /api/management/projects/<strong>{projectId}</strong>/entries/<strong>{entryId}</strong>/<strong>{language}</strong>/</td>
 </tr>
 </tbody>
 </table>
@@ -731,7 +716,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Errors","level":"2.1","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"README.md","mtime":"2017-04-04T15:22:05.128Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T08:11:26.948Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Errors","level":"2.1","depth":1,"path":"key-concepts/errors.md","ref":"key-concepts/errors.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"json":"json"}},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Contensis HTTP Management API","links":{"sidebar":{"Development Home":"https://zenhub.zengenti.com/Contensis/9/development/Contensis-development.aspx"}},"gitbook":"*"},"file":{"path":"README.md","mtime":"2017-04-06T14:06:42.808Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-06T14:10:34.698Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

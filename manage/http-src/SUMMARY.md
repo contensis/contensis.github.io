@@ -34,7 +34,7 @@
 * [Update an entry](/key-concepts/entries.md#update-an-entry)
 * [Publish an entry](/key-concepts/entries.md#publish-an-entry)
 * [List entries](/key-concepts/entries.md#list-entries)
-* [List entries by content type](/key-concepts/entries.md#list-entries)
+* [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type)
 * [Delete an entry](/key-concepts/entries.md#delete-an-entry)
 * [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation)
 

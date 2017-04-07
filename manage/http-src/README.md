@@ -1,6 +1,14 @@
 # Contensis HTTP Management API
 
 
+<ul class="methods">
+  <li class="method__item method__item--put"><span class="label label--big label--put">PUT</span>  /api/delivery/projects/{projectId}</li>
+  <li class="method__item method__item--post"><span class="label label--big label--post">POST</span> /api/delivery/projects/{projectId}</li>
+  <li class="method__item method__item--get"><span class="label label--big label--get">GET</span> /api/delivery/projects/{projectId}</li>
+  <li class="method__item method__item--delete"><span class="label label--big label--delete">DELETE</span> /api/delivery/projects/{projectId}</li>
+  <li class="method__item method__item--patch"><span class="label label--big label--patch">PATCH</span> /api/delivery/projects/{projectId}</li>
+</li>
+
 ## Introduction
 
 ## Key concepts

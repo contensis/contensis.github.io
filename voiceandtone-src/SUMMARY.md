@@ -10,6 +10,8 @@
 
 * [Writing blog posts](/writing-blog-posts/README.md)
 * [Writing for ZenHub](/writing-for-zenhub/README.md)
+* [- Markdown authoring](/writing-for-zenhub/markdown-authoring.md)
+
 * [Writing developer docs](/writing-for-zenhub/README.md)
 
 ## Contensis

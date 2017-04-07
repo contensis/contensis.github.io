@@ -1,0 +1,103 @@
+.page-inner {
+max-width: 1000px;
+}
+
+.contensis-logo {
+width: 160px;
+height: auto;
+display: block;
+margin-left: 15px;
+margin-bottom: 8px;
+}
+
+#book-search-input {
+  margin-bottom: 5px;
+}
+
+.book-summary {
+  background: #f4f4f4;
+}
+
+.book-summary ul.summary {
+  border-top: 1px solid rgba(0,0,0,.07);
+  padding-top: 8px;
+}
+
+.book-summary ul.summary li.active>a {
+border-right: 4px solid #389b71;
+background: #e7e7e7;
+}
+
+.book-header h1 {
+  display: none;
+}
+
+.label {
+display: inline-block;
+border-radius: 4px;
+background-color: #333;
+color: #fff;
+padding: 0.125em 0.375em;
+text-align: center;
+font-size: 0.875em; /* 14px */
+font-weight: bold;
+}
+
+.label--big {
+font-size: 1em;
+}
+
+.label--get {
+background-color: #6bbd5b;
+}
+
+.label--post {
+background-color: #248fb2;
+}
+
+.label--put {
+background-color: #9b708b;
+}
+
+.label--delete {
+background-color: #e27a7a;
+}
+
+.label--patch {
+background-color: #e09d43;
+}
+
+.alert-box {
+display: block;
+margin-bottom: 20px;
+margin-bottom: 1.25rem;
+position: relative;
+padding: .875rem 1.25rem .875rem 1.25rem;
+transition: opacity 300ms ease-out;
+background-color: #0079a1;
+border-color: #0079a1;
+color: #fff;
+}
+
+.alert-box p {
+  margin-bottom: 0;
+}
+
+.alert-box a {
+color: #fff;
+text-decoration: underline;
+}
+.alert-box a:hover {
+color: #f2f2f2;
+}
+
+.alert-box.warning {
+background-color: #C84F4F;
+color: #fff;
+}
+
+.alert-box.info {
+background-color: #a0d3e8;
+border-color: #74bfdd;
+color: #4f4f4f;
+}

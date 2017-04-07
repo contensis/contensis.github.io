@@ -27,6 +27,12 @@ This is an aside
 </aside>
 ```
 
+**Example**
+
+<aside class="alert-box info">
+<p><strong>Info</strong>: This is an info box</p>
+</aside>
+
 ### Warning box
 
 ```
@@ -34,3 +40,7 @@ This is an aside
 This is an aside
 </aside>
 ```
+**Example**
+<aside class="alert-box warning">
+<p><strong>Warning</strong>: Deleting a content type is irreversible, only do this if you are confident that the entries and content type are not in use and are no longer required.</p>
+</aside>

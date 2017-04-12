@@ -12,7 +12,11 @@
 * [Writing for ZenHub](/writing-for-zenhub/README.md)
 * [- Markdown authoring](/writing-for-zenhub/markdown-authoring.md)
 
-* [Writing developer docs](/writing-for-zenhub/README.md)
+## Developer documentation
+* [Writing developer docs](/writing-for-developers/README.md)
+* [Markdown conventions](/writing-for-developers/markdown-conventions.md)
+* [Methods](/writing-for-developers/methods.md)
+
 
 ## Contensis
 * [Overview](/contensis/README.md)

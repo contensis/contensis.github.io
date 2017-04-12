@@ -17,10 +17,9 @@ GET: /api/management/projects/movieDb/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
-
-
 
 
 
@@ -52,9 +51,12 @@ POST: /api/management/projects/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Project](/model/project.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 201 | Created | [Project](/model/project.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 409 | ResourceAlreadyExists | [Error](/key-concepts/errors.md) |
+| 422 | ValidationError | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
+
 **TODO: Add validation responses**
 
 ### Validations
@@ -66,7 +68,7 @@ POST: /api/management/projects/
 
 ### Remarks
 
-If the *primaryLanguage* value is not included in the *supportedLanguages* array then it will automatically added by the service when the project is created.
+If the *primaryLanguage* value is not included in the *supportedLanguages* array then it will automatically be added by the service when the project is created.
 
 
 ## Update a project
@@ -98,8 +100,10 @@ PUT: /api/management/projects/movieDb
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
+
 **TODO: Add validation responses**
 
 
@@ -118,11 +122,13 @@ Returns a list of the project resources for a Contensis instance.
 GET: /api/management/projects/
 ```
 
+
 ### Response messages
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Project [...]](/model/project.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -136,10 +142,6 @@ Deletes a project resource.
 
 <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**
 
-### Required scope
-
-Project_delete
-
 ### Example request
 
 ```http
@@ -151,8 +153,10 @@ DELETE: /api/management/projects/movieDb/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Project](/model/project.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
+
 **TODO: Add validation responses**
 
 ### Validations

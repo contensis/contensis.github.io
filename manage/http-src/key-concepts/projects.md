@@ -131,8 +131,7 @@ GET: /api/management/projects/
 |:-|:-|:-|
 | 200 | Success | [Project [...]](/model/project.md) |
 | 401 | Unauthorized | [Error](/key-concepts/errors.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
-| 500 | Internal server error | [Error](/key-concepts/errors.md) |
+| 500 | InternalServerError | [Error](/key-concepts/errors.md) |
 
 
 

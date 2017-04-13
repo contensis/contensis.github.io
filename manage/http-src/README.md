@@ -7,7 +7,7 @@
   <li class="method__item method__item--get"><span class="label label--big label--get">GET</span> /api/delivery/projects/{projectId}</li>
   <li class="method__item method__item--delete"><span class="label label--big label--delete">DELETE</span> /api/delivery/projects/{projectId}</li>
   <li class="method__item method__item--patch"><span class="label label--big label--patch">PATCH</span> /api/delivery/projects/{projectId}</li>
-</li>
+</ul>
 
 ## Introduction
 
@@ -47,5 +47,3 @@
 | [List entries by content type](/key-concepts/entries.md#list-entries-by-content-type) | <span class="label label--get">GET</span> /api/management/projects/**{projectId}**/contenttypes/**{contentTypeId}**/entries/ |
 | [Delete an entry](/key-concepts/entries.md#delete-an-entry) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**
 | [Delete an entry variation](/key-concepts/entries.md#delete-an-entry-variation) | <span class="label label--delete">DELETE</span> /api/management/projects/**{projectId}**/entries/**{entryId}**/**{language}**/
-
-

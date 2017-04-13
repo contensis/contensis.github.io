@@ -26,7 +26,8 @@ GET: /api/management/projects/movieDb/contenttypes/movie/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Content Type](/model/content-type.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | Project or content type not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
 ### Remarks
@@ -137,7 +138,8 @@ POST: /api/management/projects/movieDb/contenttypes/
 
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
-| 200 | Success | [Content Type](/model/content-type.md) |
+| 201 | Created | [Content Type](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
@@ -261,7 +263,8 @@ PUT: /api/management/projects/movieDb/contenttypes/movie
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Content Type](/model/content-type.md) |
-| 404 | Project not found | [Error](/key-concepts/errors.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
+| 404 | Project or content type not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
 
@@ -306,6 +309,7 @@ GET: /api/management/projects/movieDb/contenttypes/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Content Type [...]](/model/content-type.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -331,4 +335,5 @@ DELETE: /api/management/projects/movieDb/contenttypes/actor
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success |  |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |

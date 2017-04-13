@@ -1,2 +1,3 @@
 _book/
 *.orig
+node_modules

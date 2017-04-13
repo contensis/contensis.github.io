@@ -28,6 +28,7 @@ GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -101,6 +102,7 @@ POST: /api/management/projects/movieDb/entries/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Content Type](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
@@ -183,6 +185,7 @@ PUT: /api/management/projects/movieDb/entries/71f73a9b-2a13-4d63-bcc1-e8ee5047b0
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Content Type](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 **TODO: Add validation responses**
@@ -230,6 +233,7 @@ GET: /api/management/projects/movieDb/entries/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -271,6 +275,7 @@ GET: /api/management/projects/movieDb/contenttypes/movie/entries/
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -308,6 +313,7 @@ GET: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e8ee
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |
 
@@ -340,5 +346,6 @@ DELETE: /api/management/projects/movieDb/entries/movie/71f73a9b-2a13-4d63-bcc1-e
 | HTTP status code | Reason | Response model |
 |:-|:-|:-|
 | 200 | Success | [Entry](/model/entry.md) |
+| 401 | Unauthorized | [Error](/key-concepts/errors.md) |
 | 404 | Project not found | [Error](/key-concepts/errors.md) |
 | 500 | Internal server error | [Error](/key-concepts/errors.md) |

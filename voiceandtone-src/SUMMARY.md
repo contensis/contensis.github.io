@@ -13,9 +13,10 @@
 * [- Markdown authoring](/writing-for-zenhub/markdown-authoring.md)
 
 ## Developer documentation
-* [Writing developer docs](/writing-for-developers/README.md)
-* [Markdown conventions](/writing-for-developers/markdown-conventions.md)
-* [Methods](/writing-for-developers/methods.md)
+* [Writing API docs](/writing-api-docs/README.md)
+* [Markdown conventions](/writing-api-docs/markdown-conventions.md)
+* [API Methods](/writing-api-docs/methods.md)
+* [Code examples](/writing-api-docs/code-examples.md)
 
 
 ## Contensis

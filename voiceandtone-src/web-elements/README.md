@@ -42,10 +42,23 @@ Title-case examples to avoid:
 Todo
 
 ## Links
-Todo
+Meaningful link text makes pages more friendly for visitors (especially those using screen readers) and search engines. The link text should always describe what the user will see when they click on it. It should never be "Click Here", "Here", or the URL itself. 
+
+For example, if you want to link to a page about permissions, don't do this:
+
+...an administrator needs to setup their permissions. Read more about permissions <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/permissions.aspx">here</a>.
+
+**Do this, instead:**
+
+...an administrator needs to setup their <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/permissions.aspx">permissions</a>.
 
 ## Paragraphs
 Use blank lines to demarcate paragraphs. Do not indent the first line of a paragraph.
+
+## Poster images
+Make sure they’re compressed for web. Try to avoid images with white edges as this causes the image to bleed into the page. If you can't avoid white edges, add a grey stroke (in the HTML code).
+
+Poster images for ZenHub videos need to be 1280 x 720px.
 
 ## Tables
 - Do not use bold headings
@@ -54,12 +67,11 @@ Use blank lines to demarcate paragraphs. Do not indent the first line of a parag
 - Tables need captions (right click, properties, add caption)
 - Don’t have p tags in table contents i.e. `<td>Hello</td>` not `<td><p>hello</p></td>`
 
-
 ## Underlining
 Never underline anything
 
 ## Video
-Todo
+Typically videos are inserted below the intro paragraph on a ZenHub page. Choose a good poster image.
 
 ## URLS
 We use lowercase characters in out URL structures in all cases.

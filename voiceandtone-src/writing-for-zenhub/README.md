@@ -1,4 +1,3 @@
-# ZenHub
 We would like ZenHub learning articles to be understood by everyone. This means we're writing for a general audience rather than one very familiar with particular techniques or terminology. Assume the person you're writing for doesn't delve deeper than the basics of Microsoft Word, and I mean they can just about make stuff bold or right align an address for a letter.
 
 The audience will differ for other areas on ZenHub such as the Development / Template areas, but using this as a rule of thumb ensures we cater for the widest audience possible.

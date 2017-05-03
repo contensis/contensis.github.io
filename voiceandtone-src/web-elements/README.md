@@ -2,7 +2,14 @@
 Todo
 
 ## Bullet lists
-Use bullet lists where appropriate, but don't shoehorn a paragraph into a list. Keep the listed items in the same part of speech. 
+Use bullet lists where appropriate, but don't shoehorn a paragraph into a list. 
+
+- If a bullet wraps onto more than one line then shorten it or add it to a paragraph
+- Be consistent about adding full stops at the end of a bullet – don’t unless it’s a sentence.
+- Be consistent about using capitals at the start of a bullet - don’t unless it’s a sentence.
+- If the list is too long (15+) then split the list into two or more sub categories.
+
+Keep the listed items in the same part of speech. 
 For example, if you want to say that new features include a list of things, don't do this:
 
 - The Forms builder lets you create customisable forms
@@ -15,11 +22,6 @@ For example, if you want to say that new features include a list of things, don'
 - Link management
 - Form element styling
 - Email notifications
-
-- If a bullet wraps onto more than one line then shorten it or add it to a paragraph
-- Be consistent about adding full stops at the end of a bullet – don’t unless it’s a sentence.
-- Be consistent about using capitals at the start of a bullet - don’t unless it’s a sentence.
-- If the list is too long (15+) then split the list into two or more sub categories.
 
 ## Code
 Use monospaced fonts for short code snippets and settings. Use gists for longer bits of code.

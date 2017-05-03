@@ -2,10 +2,7 @@
 Todo
 
 ## Bullet lists
-Use bullet lists where appropriate, but don't shoehorn a paragraph into a list.
-
-Keep the listed items in the same part of speech:
-
+Use bullet lists where appropriate, but don't shoehorn a paragraph into a list. Keep the listed items in the same part of speech. 
 For example, if you want to say that new features include a list of things, don't do this:
 
 - The Forms builder lets you create customisable forms
@@ -79,7 +76,7 @@ Poster images for ZenHub videos need to be 1280 x 720px.
 - Don’t have p tags in table contents i.e. `<td>Hello</td>` not `<td><p>hello</p></td>`
 
 ## Underlining
-Never underline anything
+Never underline anything.
 
 ## Video
 Typically videos are inserted below the intro paragraph on a ZenHub page. Choose a good poster image.

@@ -22,7 +22,7 @@ Spell checking and code quality go hand in hand. Both make it easy for people (o
 *   [CSS Style Guide](http://intranet.zengenti.com/Knowledge-Hub/Professional-Services/Best-Practices/CSSstyleguide.aspx)
 
 ### Accessibility
-It's important to review any creation so that it is accessible.
+It's important to review any content you create so that it is accessible.
 
 *   WAVE [Web Accessibility Evaluation Tool](http://wave.webaim.org/extension/)
 *   Preview your page and run this Chrome/Firefox extension

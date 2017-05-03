@@ -1,5 +1,3 @@
-# Web elements and layout
-
 ## Animation
 Todo
 

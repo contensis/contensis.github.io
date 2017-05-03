@@ -1,26 +1,43 @@
 # Word list
 These words can be slippery. Here's how we write them.
 
+- bypass (one word)
 - check in / check out (no hyphen)
 - Contensis (capital C)
+- datacentre (one word)
+- decoupled (one word)
 - email (no hyphen)
+- fail-over (jargon - try not to use
 - front-end / back-end (hyphenated)
 - help desk (two words, no hyphen)
 - JavaScript (capital J, capital S)
 - knowledge base (two words)
 - login and logout are nouns (usually used as adjectives), e.g., "Click the login button."
-Log in and log out are verbs, e.g., "Log in to the website."
-- markup
+- Log in and log out are verbs, e.g., "Log in to the website."
+- markup (one word)
 - metadata (one word)
+- microsite (one word)
+- misspelt or misspelled (either is correct, we prefer misspelled)
+- pre-populated (hyphenated)
+- prerequisite (one word)
 - rename (no hyphen)
+- reuse (one word)
+- reusable (one word)
+- re-size (hyphenated)
+- setup (Problematic! Set up is a verb, so it’s not hyphenated, and it’s two words. But a setup is one word)
 - stylesheets (one word)
 - subdomain (one word)
+- subfolder (one word)
+- subsection (one word)
 - subtemplate (no hyphen)
-- tree view
-- Untick / uncheck (no hyphen)
+- troubleshooting (one word)
+- untick / uncheck (no hyphen)
+- webchat
 - webpage (one word)
 - webservers (one word, or can use just ‘server’)
 - web controls (two words)
+- webhook (one word)
+- wireframe / wireframing (one word)
 - ZenHub (always call it ZenHub - capital Z, capital H)
 
 # Miscellaneous

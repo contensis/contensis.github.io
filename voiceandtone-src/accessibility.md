@@ -4,7 +4,7 @@ When writing for Zengenti please be aware of inclusivity needs and that helping 
 
 ## Guidelines
 We aim for Web Content Accessibility Guidelines (WCAG) 2.0 AA standards.
-If you find any areas that do not conform to this standard please raise then with our internal QA, [Sam](mailto:s.clifford@zengenti.com).
+If you find any areas that do not conform to this standard please raise them with our internal QA, [Sam](mailto:s.clifford@zengenti.com).
 
 ### Code validation
 When making any changes ensure that your changes validate.

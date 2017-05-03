@@ -91,7 +91,6 @@ But not when it’s just a noun:
 
 *You can use our professional services.*
 
-
 ## Ellipsis
 The ellipsis (…) shows where words are removed. It's usually used in quotations. It's not a common punctuation point, so you're unlikely to need to use one. It's sometimes used to show a pause in narrative text, so it might crop up in blog posts. It's ok to use three full-stops without spaces (...). But, don't overuse it, or your text will appear... <- unfinished.
 
@@ -107,7 +106,6 @@ Gilding is choosing complex, uncommon words when there are simpler, more common 
 - Operate – run
 - Solutions – systems, answers, products, services
 - Action  – do
-
 
 ## Jargon
 Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. **We don’t like jargon.**
@@ -160,7 +158,6 @@ Use blockquotes when quoting more than a line or two – this is common in testi
 > We love using Contensis for our website. It has changed the way we run our organisation, and it's brought much joy to the very nature of our field. We've seen an increase of 10,000% in our productivity. I cannot recommend it enough. - Jon Lewis, Ludlow University
 
 Quotation marks can indicate string literals in code: "ContentNode".
-
 
 ## Semicolons
 Semicolons (;) are used to join independent clauses in sentences. That means that they're not often used; and if they are, they're used sparingly. It is almost always better to write two simpler sentences.

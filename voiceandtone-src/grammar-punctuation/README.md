@@ -41,17 +41,31 @@ Capitalise these things:
 - The first word in a heading or title
 - Button text in the Contensis UI if they are capitalised in the button (e.g. **Save**, **Submit & Approve**)
 
-Headings, titles, and menu options should be sentence case (capitalise the first word, and any proper nouns).
+Headings, titles, and menu options should be sentence case (capitalise the first word, and any proper nouns):
 
-Do not capitalise these things:
+**Capitalise headings like this:**
 
-- Words for products and services unless they're proper nouns (Quality Assurance Module is one of our modules)
-- Words for departments (professional services, marketing, product)
-- Job titles (head of marketing) unless they form part of a name (which is rare in business): Professor John Smith is a professor
-- Seasons (spring, winter, autumn, summer)
-- Compass points (north, south, east, west)
+- *Does your university website showcase the 5 things applicants care about the most?*
+- *Contensis features overview*
+- *A little bit about us*
 
-Never use capitals to draw attention to words. Don't do this:
+**Do not capitalise headings like this:**
+
+- *Where We Will All Be In 5 Years*
+- *Our Story As A Company*
+- *Don't Screw The Customer*
+
+**Do not capitalise these things:**
+
+- Words for products and services unless they're proper nouns – *Quality Assurance Module* is one of our modules
+- Words for departments – professional services, marketing, product
+- Job titles (e.g. head of marketing) unless they form part of a name (which is rare in business): Professor John Smith is a professor
+- Seasons – spring, winter, autumn, summer
+- Compass points – north, south, east, west
+
+Never use capitals to draw attention to words. 
+
+**Don't do this:**
 
 *We stand by our Products and Services.*
 
@@ -68,7 +82,7 @@ A colon (:) means something follows. You never need a colon and a dash (:-). Do 
 > * Front-end development
 
 ## Commas
-Use commas when you need a pause. Also, use them when beginning a sentence with things like: also, so, and when-phrases like when using this,. Commas are used to break up lists of words. So we can list apples, oranges, and bananas. Use them to stack adjectives up like handy, resourceful phrases.
+Use commas when you need a pause. Also, use them when beginning a sentence with things like: also, so, and when-phrases like *when using this, do that*. Commas are used to break up lists of words. So we can list apples, oranges, and bananas. Use them to stack adjectives up like handy, resourceful phrases.
 
 **We use the Oxford comma**, which means that when stacking up comma-separated words, we put a comma between the last two items in the list:
 
@@ -95,7 +109,7 @@ But not when it’s just a noun:
 The ellipsis (…) shows where words are removed. It's usually used in quotations. It's not a common punctuation point, so you're unlikely to need to use one. It's sometimes used to show a pause in narrative text, so it might crop up in blog posts. It's ok to use three full-stops without spaces (...). But, don't overuse it, or your text will appear... <- unfinished.
 
 ## Exclamation points
-Exclamation points (!) show strong emotion – they literally mean the previous words are shouted or exclaimed. Don't use them unless absolutely necessary.
+Exclamation points (!) show strong emotion – they literally mean the previous words are shouted or exclaimed. **Don't use them unless absolutely necessary.**
 
 They're fine in code blocks (where they're called *bangs* like in hash bang: #!). 
 
@@ -105,7 +119,7 @@ Gilding is choosing complex, uncommon words when there are simpler, more common 
 - Achieve – meet, do
 - Operate – run
 - Solutions – systems, answers, products, services
-- Action  – do
+- Action (as a verb) – do
 
 ## Jargon
 Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. **We don’t like jargon.**
@@ -118,10 +132,10 @@ Avoid corporate jargon:
 - Solutions
 - Ourselves (and other reflexive pronouns: yourself/selves)
 
-Often, the most useful word is a technical term. It’s not jargon if it’s the best word for a concept. But, we need to consider non-technical readers. So, it’s usually fine to use server, because most people will understand it. But, if we’re talking about using SANs for cloud hosting, we should explain what they are.
+Often, the most useful word is a technical term. Its not jargon if it’s the best word for a concept. But, we need to consider non-technical readers. So, it’s usually fine to use server, because most people will understand it. But, if we’re talking about using SANs for cloud hosting, we should explain what they are.
 
 ## Numbers
-- For numbers under 10, spell out the number. For all numbers 10 and over, use the numeral.
+- For numbers under 10, spell out the number. For numbers 10 and over, use the numeral (0 to 9).
 - For numerals over 999 - use a comma every three spaces for clarity: 9,000 or 9,999,999
 - Spell out common fractions like one quarter.
 - Use a 0 where there’s no digit before the decimal point – 0.99.
@@ -137,7 +151,7 @@ Often, the most useful word is a technical term. It’s not jargon if it’s the
 - Use *to* in date ranges (2015 to 2016, Monday to Friday, 9am to 5pm)
 
 ### Money
-The currency sign goes before the amount: £45 or $56. Make sure to use both decimal places if pence are involved: £45.90.
+The currency sign goes before the amount: £45 or $56. Make sure to use both decimal places if pence or cents are involved: £45.90 or $36.05.
 
 ### Time
 Use *am* and *pm* (9am, 12pm). If you need minutes, use a colon (9:30am). It's also acceptable to use the 24-hr clock, but you need a colon every time (13:00).
@@ -151,7 +165,7 @@ Question marks turn a sentence into a question. Use them when you ask a question
 ## Quotation marks
 Quotation marks only mark quotes. Don't use them to draw attention to a "word." Use italics (\<em> ... \</em>) when you need to indicate a specific *word*. We use the British system of quotes, using a single quote, then a double for a quote within a quote:
 
-Jon Lewis said: 'I asked him whether he liked it, and he said: "Yes, indeed I do."'
+*Jon said: 'I asked him whether he liked it, and he said: "Yes, indeed I do."'*
 
 Use blockquotes when quoting more than a line or two – this is common in testimonials.
 

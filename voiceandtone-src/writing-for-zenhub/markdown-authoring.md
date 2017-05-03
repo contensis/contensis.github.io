@@ -1,5 +1,3 @@
-# Markdown authoring
-
 When writing documentation for ZenHub we use markdown and GitHub as a means of collaboration and not introducing presentation in to our writing.
 
 

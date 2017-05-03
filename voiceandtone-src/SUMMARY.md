@@ -4,7 +4,7 @@
 
 * [Grammar and punctuation](/grammar-punctuation/README.md)
 * [Web elements](/web-elements/README.md)
-* [Layout](/layout.md)
+* [Accessibility](/accessibility.md)
 * [Word list](word-list.md)
 
 ## Writing guides

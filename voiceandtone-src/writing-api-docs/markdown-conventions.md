@@ -20,7 +20,7 @@ This is a paragraph and *these terms are in italic*.
 [Link text](http://www.bbc.co.uk)
 
 ## Tables
-Tables in markdown at times can be tedious an online generator like [Tables Generator](http://www.tablesgenerator.com/markdown_tables) or [Truben tables](http://truben.no/table/) can be helpful to generate them for you.
+Tables in markdown can be tedious. An online generator like [Tables Generator](http://www.tablesgenerator.com/markdown_tables) or [Truben tables](http://truben.no/table/) can be helpful to generate them for you.
 
 ```
 | First header | Second header |
@@ -35,7 +35,7 @@ Tables in markdown at times can be tedious an online generator like [Tables Gene
 | Row two, item one | Row two, item two |
 
 ### Column alignment
-If you feel the column contents are should be aligned to a particular edge or centre you can use the GitHub flavoured approach of using a `:` in the row separator.
+If you feel the column contents should be aligned to a particular edge or centre, you can use the GitHub flavoured approach of using a colon `:` in the row separator.
 
 ```
 | First header | Second header | Third header |
@@ -50,7 +50,7 @@ If you feel the column contents are should be aligned to a particular edge or ce
 | Row two, item one | Row two, item two | Row two, item three |
 
 ## Headings
-Headings use the `#` notation followed by a space. Whilst some markdown editors allow you to not use the space, it provides a way to clearly parse the data at a later time.
+Headings use the hash `#` notation followed by a space. While some markdown editors allow you to not use the space, it provides a way to clearly parse the data later.
 
 ```
 # Heading 1
@@ -65,7 +65,7 @@ Headings use the `#` notation followed by a space. Whilst some markdown editors 
 #### Heading 4
 
 ## Unordered lists
-We use hyphenated unordered lists use the number notation `-` followed by a space. We do not use the `*` notation as it can get confusing with it being used by **Bold** or *italics*.
+We use hyphenated unordered lists. Use `-` followed by a space. We do not use the `*` notation, because it can get confusing with it being used by **Bold** or *italics*.
 
 ```
 - List item one

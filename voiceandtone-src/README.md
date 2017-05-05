@@ -50,4 +50,5 @@ Before you write for Zengenti, it’s important to think about our users. Though
 - Be an educator, not a salesperson. Show people how easy it is to use Contensis.
 - Keep your language and style consistent across articles.
 
-**Always proofread your work. Ask a colleague if possible or take a break and check it with fresh eyes before making it public**
+
+**Always proofread your work. Ask a colleague if possible or take a break and check it with fresh eyes before making it public.**

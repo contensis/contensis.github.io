@@ -29,6 +29,9 @@ Apostrophes are also used to show where letters have been replaced in abbreviati
 
 *It's doing its job.*
 
+## Bold
+Use bold to indicate Contensis specific buttons e.g. **Submit & Approve**
+
 ## Capitalisation
 Capitalise these things:
 
@@ -120,6 +123,9 @@ Gilding is choosing complex, uncommon words when there are simpler, more common 
 - Operate – run
 - Solutions – systems, answers, products, services
 - Action (as a verb) – do
+
+## Italics
+Use Italics only for natural emphasis or to refer to sections/areas of Contensis eg. _Management Console_
 
 ## Jargon
 Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. **We don’t like jargon.**

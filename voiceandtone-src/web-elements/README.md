@@ -37,6 +37,8 @@ When documenting behaviour in the Contensis UI we should refer to a click as a p
 Use monospaced fonts for short code snippets and settings. Use gists for longer bits of code.
 
 ## Headings
+Headings are essential for SEO and accessibility. Headings range in importance from H1 to H6, and should be properly organised to make your page accessible to screen readers and search engines. 
+
 Follow semantic headings. So, a heading 1 is followed by a heading 2 – and not a heading 3, 4, or 5.
 
 **We use sentence-case capitalisation** in headings instead of title case. So, capitalise the first word (and any proper nouns), but not every word in a heading:
@@ -50,8 +52,12 @@ Title-case examples to avoid:
 - Finding the Right People for your Team
 - Inserting Scripts into a Template
 
-## Images
-Todo
+## Images and videos
+It’s sometimes quicker to share a concept using an image or video. Videos and images should reinforce the text on the page. Never introduce ideas in visuals that aren’t explained in the text on the page.
+
+- Use alt-text to provide assistive technology with the meaning behind the image.
+- Control image or video size, quality and format to deliver a fast loading, responsive site.
+- Different types of images should be encoded into different formats depending on what type of image it is, what the browser supports, and what needs the page has. Consider this from the outset.
 
 ## Layout
 A good rule of thumb is to consider your mobile readers from the start. 
@@ -74,7 +80,9 @@ For example, if you want to link to a page about permissions, don't do this:
 ...an administrator needs to setup their <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/permissions.aspx">permissions</a>.
 
 ## Paragraphs
-Use blank lines to demarcate paragraphs. Do not indent the first line of a paragraph.
+Each paragraph should address a single point or idea. They should not be too long, nor should they ramble. Start each paragraph with one or two sentences containing the key information or conclusion.
+
+- Use blank lines to demarcate paragraphs. Do not indent the first line of a paragraph.
 
 ## Poster images
 Make sure they’re compressed for web. Try to avoid images with white edges – this causes the image to bleed into the page. If you can't avoid white edges, add a grey stroke (in the HTML code).

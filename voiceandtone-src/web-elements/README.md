@@ -92,7 +92,7 @@ Poster images for ZenHub videos need to be 1280 x 720px.
 Never underline anything.
 
 ## Video
-We usually show videos below the intro paragraph on a ZenHub page. It's good practice a good poster image.
+We usually show videos below the intro paragraph on a ZenHub page. It's good practice to display a helpful/informative poster image.
 
 ## URLS
 We use lowercase characters in out URL structures in all cases.

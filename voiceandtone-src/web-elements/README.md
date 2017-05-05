@@ -1,6 +1,15 @@
 ## Animation
 Todo
 
+## Buttons and icons
+When referring to specific buttons or icons – use the label or name as it is displayed in the UI.
+
+- If a button is labelled (e.g. Save), always use the label
+- If an icon isn’t labelled (e.g. Management Console), refer to it consistently:
+- Management Console – not “Cog icon,” the cog, etc
+- Project Search – not the spyglass, the search icon
+- When referring to a button, use of capitals is acceptable (to maintain consistency with Contensis UI)
+
 ## Bullet lists
 Use bullet lists where appropriate, but don't shoehorn a paragraph into a list. 
 
@@ -20,6 +29,9 @@ Keep the listed items in the same part of speech. For example, if you want to sa
 - Link management
 - Form element styling
 - Email notifications
+
+## Click, tap or press
+When documenting behaviour in the Contensis UI we should refer to a click as a press. This ensures we are covering touch behaviour or trackpad behaviour where a click isn't actually happening. 
 
 ## Code
 Use monospaced fonts for short code snippets and settings. Use gists for longer bits of code.

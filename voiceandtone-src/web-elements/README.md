@@ -6,7 +6,7 @@ When referring to specific buttons or icons – use the label or name as it is d
 
 - If a button is labelled (e.g. Save), always use the label
 - If an icon isn’t labelled (e.g. Management Console), refer to it consistently:
-- Management Console – not “Cog icon,” the cog, etc
+Management Console – not “Cog icon,” the cog, etc
 - Project Search – not the spyglass, the search icon
 - When referring to a button, use of capitals is acceptable (to maintain consistency with Contensis UI)
 

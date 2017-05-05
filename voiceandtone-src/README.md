@@ -51,4 +51,4 @@ Before you write for Zengenti, it’s important to think about our users. Though
 - Keep your language and style consistent across articles.
 
 
-**Always proofread your work. Ask a colleague if possible or take a break and check it with fresh eyes before making it public.**
+_Always proofread your work. Ask a colleague to check it, if possible or take a break and read it again with fresh eyes before making it public._

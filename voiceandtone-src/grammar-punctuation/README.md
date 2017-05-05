@@ -124,6 +124,27 @@ Gilding is choosing complex, uncommon words when there are simpler, more common 
 - Solutions – systems, answers, products, services
 - Action (as a verb) – do
 
+## Grammatical person
+Use 1st and 2nd person as much as possible in your writing.
+
+### 1st Person 
+e.g. “I/we will take the third left”
+When referring to the company use “we” unless the document is highly formal.
+
+### 2nd Person
+e.g. “You will take the third left”
+Be careful with 2nd person – if you get it wrong you can lose the reader 
+“We know you hate orange so we’ve made everything red!” - the reader may hate red and love orange.
+
+That said, it can be quite effective:
+“A lot of you have told us that you’d like to see more training courses, so...”
+A 3rd person version which is less engaging “Clients have told us that they would like to see more training courses so...”
+
+### 3rd Person
+e.g. “He/they will take the third left”
+We should use 3rd person when referring to our products
+“It is a great software solution..”
+
 ## Italics
 Use Italics only for natural emphasis or to refer to sections/areas of Contensis eg. _Management Console_
 
@@ -181,3 +202,6 @@ Quotation marks can indicate string literals in code: "ContentNode".
 
 ## Semicolons
 Semicolons (;) are used to join independent clauses in sentences. That means that they're not often used; and if they are, they're used sparingly. It is almost always better to write two simpler sentences.
+
+## Spelling
+Use UK English rather than US English for everything apart from API documentation (don't change the name of a US/Canadian company or organisation though).

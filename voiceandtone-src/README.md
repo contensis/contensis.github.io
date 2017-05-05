@@ -2,47 +2,52 @@
 
 Before you write for Zengenti, it’s important to think about our users. Though our voice doesn’t change much, our tone adapts to our users’ feelings.
 
-## Website text:
-- Be confident in explaining why Contensis is so great. 
-- Be specific about Contensis’s features, so people can make their own comparisons.
-- Delight people with design, data, and helpful information about Contensis.
-- Relay our personality and sense of humor, but don’t go crazy (think clever, not silly).
+## Blogs
+- Sound human, and relay Zengenti’s personality without getting in the way.
+- Don’t market features—explain them.
+- Every blog should teach readers something. Enlighten them with extra links, tips, information that makes them smarter, or sneak peeks into our company personality.
 
-## ZenHub articles:
-- Be straightforward. Your priority is to answer questions and inform readers so they can get back to work.
-- Be an educator, not a salesperson. Show people how easy it is to use Contensis.
-- Keep your language and style consistent across articles.
-
-## Forum responses:
+## Forum responses
 - Offer a solution or next step.
 - Find opportunities to sound positive, mention new features and encourage users to upgrade.
 - Show willing and make it clear that we are there for our customers.
 - Be tactful when letting users know that what they are asking about is really a work request.
 
-## Forms:
+## Forms
 - Use plain language and common terms to describe form fields.
 - Help readers understand the information you’re asking for.
 - Don't ask for information we won't use, make the process as quick as possible.
 
-## Formal writing:
+## Formal writing
 - Be thorough. Provide examples and explanations, not summaries. Include links to relevant resources.
 - Write as calmly and clearly as possible, within the obvious constraints. Only use legal jargon when it’s absolutely necessary.
 - Don’t dumb anything down or joke around. This type of writing is serious business and we can be held to account on it.
 
-## Blogs:
-- Sound human, and relay Zengenti’s personality without getting in the way.
-- Don’t market features—explain them.
-- Every blog should teach readers something. Enlighten them with extra links, tips, information that makes them smarter, or sneak peeks into our company personality.
-
-## Social media posts:
-- Get to the point. You have 140 characters in an endless stream of tweets, and people are busy.
-- Delight our followers with good news when you can.
-- Be appropriate. During major news events, turn off scheduled and promoted tweets. Do not post personal or political views on any company social media channel.
-
-## Incident messages:
+## Incident messages
 - Offer a solution or next step.
 - Be straightforward. Explain what’s going on asap.
 - Be calm. Don’t use exclamation points and be sparing with your use of alarming words like “alert” or "immediately."
 - Be serious. Don’t joke around with people who are frustrated.
 
-**Always proofread your work. Ask a colleague or take a break and check it with fresh eyes before making it public**
+## Social media posts
+- Get to the point. You have 140 characters in an endless stream of tweets, and people are busy.
+- Delight our followers with good news when you can.
+- Be appropriate. During major news events, turn off scheduled and promoted tweets. Do not post personal or political views on any company social media channel.
+
+## Sales documents
+- Use the latest information about Contensis and keep technical terms consistent.
+- Don't assume that the recipient knows anything about Zengenti or Contensis.
+- Don't slate our competitors.
+
+## Website text
+- Be confident in explaining why Contensis is so great. 
+- Be specific about Contensis’s features, so people can make their own comparisons.
+- Delight people with design, data, and helpful information about Contensis.
+- Relay our personality and sense of humor, but don’t go crazy (think clever, not silly).
+
+## ZenHub articles
+- Be straightforward. Your priority is to answer questions and inform readers so they can get back to work.
+- Be an educator, not a salesperson. Show people how easy it is to use Contensis.
+- Keep your language and style consistent across articles.
+
+**Always proofread your work. Ask a colleague if possible or take a break and check it with fresh eyes before making it public**

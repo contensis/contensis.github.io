@@ -1,5 +1,5 @@
 # Summary
-* [Introduction](README.md)
+* [Voice and tone](README.md)
 
 * [Accessibility](/accessibility.md)
 * [Grammar and punctuation](/grammar-punctuation/README.md)

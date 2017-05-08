@@ -89,6 +89,10 @@ Make sure they’re compressed for web. Try to avoid images with white edges –
 
 Poster images for ZenHub videos need to be 1280 x 720px.
 
+## Screenshots
+- Screenshots illustrate a procedure that's difficult to understand. You don't have to have a screenshot for every step - just the ones where you want to make sure someone doesn't miss an important detail.
+- They include enough context that someone can tell what part of the interface they are viewing, don't include the whole screen if its unnecessary, crop to the area thats valid.
+
 ## Tables
 - Do not use bold headings
 - Headings should always be in a `<thead>`

@@ -52,12 +52,6 @@ Some additional things to consider:
 - Use full sentences when describing how to access the user interface, don’t just say Management Console instead ‘Click the cog icon in the top toolbar or in the navigator panel to open the management console’
 - Include expected results when giving instructions (for example, Click OK and the window will close).
 
-## Adding Screenshots
-Ideally learning articles should be written to work without screenshots, however they do make things easier for novice users.
-### What makes a good screenshot?
-- Screenshots illustrate a procedure that's difficult to understand. You don't have to have a screenshot for every step - just the ones where you want to make sure someone doesn't miss an important detail.
-- They include enough context that someone can tell what part of the interface they are viewing, don't include the whole screen if its unnecessary, crop to the area thats valid.
-
 ## Content Tuning
 So you’ve written a support article, but it doesn’t end there. You will need to fine tune your content to ensure it appears in the search as expected. Try some search terms that user may use.
 

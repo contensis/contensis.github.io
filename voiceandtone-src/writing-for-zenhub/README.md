@@ -1,10 +1,10 @@
-We would like our content to be understood by everyone. This means we're writing for a general audience rather than one very familiar with particular techniques or terminology. Assume the person you're writing for doesn't delve deeper than the basics of Microsoft Word, unless you are writing something like developer documentation. 
+We want our content to be understood by everyone. This means we're writing for a general audience rather than one very familiar with particular techniques or terminology. Assume the person you're writing for doesn't delve deeper than the basics of Microsoft Word, unless you are writing something like developer documentation. 
 
 ## Consider your audience
 Always bear in mind what you are trying to say and who you are addressing. You’re not writing for yourself, and you shouldn’t be writing for your boss – you’re writing for your visitors. Why should they care what you are saying? 
 
 ### User personas
-A user persona is a character that represents the mindset of a similar, and significant, group of people. Personas are useful when deciding how to best serve the needs of your audience. 
+A user persona is a character that represents the mindset of a similar, and significant, group of people. Personas are useful when deciding how to best serve the needs of your audience. If you want to know more about personas check out our <a href="https://zengenti.com/en-gb/site/downloads/Writing-for-the-Web-eBook2.2.pdf">Writing for the Web eBook</a>.
 
 ### User stories
 User stories are used in agile software development to help teams define the requirements they need to build. They specify – in detail – what a user needs to do with the software without saying how it can be accomplished. User stories help to keep your different end users at the front of your mind. The chances are that these users will have different priorities and a variety of needs. When you create content, make sure you are addressing these needs.

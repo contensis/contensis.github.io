@@ -3,7 +3,6 @@
 * [Grammar and punctuation](/grammar-punctuation/README.md)
 * [Markdown](/writing-for-zenhub/markdown-authoring.md)
 * [Voice and tone](README.md)
-* [Style](/writing-for-zenhub/README.md)
 * [Web elements and layout](/web-elements/README.md)
 * [Words](word-list.md)
 

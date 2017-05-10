@@ -19,7 +19,7 @@ We write for our users. Though our voice doesn’t change much, our tone adapts 
 - Don't ask for information we won't use.
 - Make the process as quick as possible.
 
-## Formal writing (what's formal writing?)
+## Formal writing (e.g. contracts)
 - Be thorough. 
 - Provide examples and explanations, not summaries. 
 - Include links to relevant resources.
@@ -58,4 +58,4 @@ We write for our users. Though our voice doesn’t change much, our tone adapts 
 - Keep the language and style consistent across articles – don't innovate when we need clarity.
 
 
-_Always proofread your work. Ask a colleague to check it, if possible or take a break and read it again with fresh eyes before making it public._
+_Always proofread your work. Ask a colleague to check it, or take a break and read it again with fresh eyes before publishing._

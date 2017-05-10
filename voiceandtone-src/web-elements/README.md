@@ -1,6 +1,3 @@
-## Animation
-Todo
-
 ## Buttons and icons
 When referring to specific buttons or icons – use the label or name as it is displayed in the UI.
 

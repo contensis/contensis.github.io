@@ -15,4 +15,3 @@
 ## Contensis
 * [Overview](/contensis/README.md)
 * [UI language](/contensis/ui-language.md)
-* [UI microcopy](/contensis/ui-micro-copy.md)

@@ -1,4 +1,4 @@
-t## How we do
+## How we do
 * [Accessibility](/accessibility.md)
 * [Grammar and punctuation](/grammar-punctuation/README.md)
 * [Markdown](/writing-for-zenhub/markdown-authoring.md)

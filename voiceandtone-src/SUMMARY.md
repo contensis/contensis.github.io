@@ -1,4 +1,4 @@
-## How we do
+t## How we do
 * [Accessibility](/accessibility.md)
 * [Grammar and punctuation](/grammar-punctuation/README.md)
 * [Markdown](/writing-for-zenhub/markdown-authoring.md)
@@ -13,5 +13,5 @@
 * [Code examples](/writing-api-docs/code-examples.md)
 
 ## Contensis
-* [Overview](/contensis/README.md)
+* [UI elements](/contensis/README.md)
 * [UI language](/contensis/ui-language.md)

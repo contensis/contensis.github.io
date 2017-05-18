@@ -4,6 +4,7 @@
 * [Markdown](/writing-for-zenhub/markdown.md)
 * [Voice and tone](README.md)
 * [Web elements and layout](/web-elements/README.md)
+* [Style](/writing-for-zenhub/style.md)
 * [Tricky words](word-list.md)
 
 ## Developer documentation

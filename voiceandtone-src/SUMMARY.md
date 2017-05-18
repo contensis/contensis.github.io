@@ -8,10 +8,10 @@
 * [Tricky words](word-list.md)
 
 ## Developer documentation
-* [Writing API docs](/writing-api-docs/README.md)
-* [Markdown conventions](/writing-api-docs/markdown-conventions.md)
 * [API Methods](/writing-api-docs/methods.md)
 * [Code examples](/writing-api-docs/code-examples.md)
+* [Markdown conventions](/writing-api-docs/markdown-conventions.md)
+* [Writing API docs](/writing-api-docs/README.md)
 
 ## Contensis
 * [UI elements](/contensis/README.md)

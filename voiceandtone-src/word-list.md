@@ -20,6 +20,7 @@ These words can be slippery. Here's how we write them.
 - misspelt or misspelled (either is correct, we prefer misspelled)
 - pre-populated (hyphenated)
 - prerequisite (one word)
+- program / programme (UK spelling is programme unless it is a computer program; 'I saw a fascinating TV programme about computer programs'
 - rename (no hyphen)
 - reuse (one word)
 - reusable (one word)

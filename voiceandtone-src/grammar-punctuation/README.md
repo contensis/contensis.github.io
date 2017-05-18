@@ -1,4 +1,4 @@
-## a or an before H?
+## A or an before H?
 Use an before a silent H: an heir, an hour, an honest politician, an honorary consul; use a before an aspirated H: a hero, a hotel, a historian (but don’t change a direct quote if the speaker says, for example, “an historic”). With abbreviations, be guided by pronunciation: eg an LSE student
 
 ## Acronyms and abbreviations

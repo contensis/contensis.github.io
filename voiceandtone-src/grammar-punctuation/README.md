@@ -1,3 +1,5 @@
+## a or an before H?
+Use an before a silent H: an heir, an hour, an honest politician, an honorary consul; use a before an aspirated H: a hero, a hotel, a historian (but don’t change a direct quote if the speaker says, for example, “an historic”). With abbreviations, be guided by pronunciation: eg an LSE student
 
 ## Acronyms and abbreviations
 For abbreviations of technical terms, introduce the full phrase before using its acronym. For example, we can talk about information architecture (IA), then use IA when appropriate. Some acronyms have become the term for the thing, so there are exceptions.
@@ -14,6 +16,8 @@ Avoid these acronyms, because they are unclear or are internal jargon:
 For the sake of clarity, do not overuse *i.e* and *e.g.* If you must use them, [here's a nice explanation](http://theoatmeal.com/comics/ie) of how it's done.
 
 We use *e.g.* or *i.e.* not *e.g.,* or *i.e.,*
+
+Do not use full stops in abbreviations, or spaces between initials, including those in proper names: IMF, mph, 4am, M&S, No 10, AN Wilson, WH Smith, etc.
 
 ## Ampersands (&)
 Use the word *and* instead of an ampersand (&) when you're writing. Ampersands can be used in code blocks.

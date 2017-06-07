@@ -12,6 +12,7 @@ These words can be slippery. Here's how we write them.
 - go-live (hyphenated)
 - help desk (two words, no hyphen)
 - JavaScript (capital J, capital S)
+- kick start (two words)
 - knowledge base (two words)
 - login and logout are nouns (usually used as adjectives), e.g., "Click the login button."
 - Log in and log out are verbs, e.g., "Log in to the website."

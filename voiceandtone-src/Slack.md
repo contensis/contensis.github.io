@@ -13,8 +13,8 @@ This is where our users can talk to each other. We encourage existing clients to
 - If you are not sure how to do something - test it out here first: https://zenslackpilot.slack.com/home
 
 ## Expectation management for clients
-- This is not a backdoor to the helpdesk or extended PS support.
-- We won’t answer all queries. This is place for users to answer each other's queries and we will dip in and out as we currently do with the forums.
-- We will try to answer within a day - this is not instant chat.
+- This is not a backdoor to the helpdesk or a way to extend PS support.
+- We won’t answer all queries. This is place for users to answer each other's queries and we will dip in and out as we currently do with the forums (do try to help out if people are being ignored though).
+- We are not comitting ourselves to instant chat.
 - We will have default ‘do not disturb’ hours - 09:00 - 17:00.
 

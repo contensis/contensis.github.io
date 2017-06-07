@@ -9,6 +9,7 @@ These words can be slippery. Here's how we write them.
 - email (no hyphen)
 - fail-over (jargon - try not to use
 - front-end / back-end (hyphenated)
+- go-live (hyphenated)
 - help desk (two words, no hyphen)
 - JavaScript (capital J, capital S)
 - knowledge base (two words)

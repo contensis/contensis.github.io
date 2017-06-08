@@ -4,7 +4,7 @@ This is where our users can talk to each other. We encourage existing clients to
 
 ## Staff etiquette
 - The Contensis Slack channel is a a public-facing channel and only for communicating with customers, so no work or personal stuff on there please no turd emojis, off-colour jokes, gratuitous gifs etc. We can be informal, but never unprofessional.
-- Sign up with your full name so you can be found in the member directory and smart photo eg. your staff photo.
+- Sign up with your full name so you can be found in the member directory and smart photo eg. your staff photo. IN the 'What I do' section of your user profile please preface your job title with 'Zengenti -' so people know who we are.
 - Set your status as ‘away’ unless actually active.
 - If you know the answer to a query, answer it straight in the main post. If it will require further discussion create a sub thread.
 - Try to answer queries publicly - don’t initiate private messages or channels unless the client is complaining.

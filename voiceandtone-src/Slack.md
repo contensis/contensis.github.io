@@ -3,7 +3,7 @@
 This is where our users can talk to each other. We encourage existing clients to ask questions and share ideas with other Contensis users, designers and developers. We dip in when we can to help out if a question is not being answered and we moderate any unhelpful behaviour.   
 
 ## Staff etiquette
-- The Contensis Slack channel is a a public-facing channel and only for communicating with customers, so no work or personal stuff on there please no turd emojis, off-colour jokes, etc. We can be informal, but never unprofessional.
+- The Contensis Slack channel is a a public-facing channel and only for communicating with customers, so no work or personal stuff on there please no turd emojis, off-colour jokes, gratuitous gifs etc. We can be informal, but never unprofessional.
 - Sign up with your full name so you can be found in the member directory and smart photo eg. your staff photo.
 - Set your status as ‘away’ unless actually active.
 - If you know the answer to a query, answer it straight in the main post. If it will require further discussion create a sub thread.

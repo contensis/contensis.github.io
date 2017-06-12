@@ -3,7 +3,7 @@
 This is where our users can talk to each other. We encourage existing clients to ask questions and share ideas with other Contensis users, designers and developers. We dip in when we can to help out if a question is not being answered and we moderate any unhelpful behaviour.   
 
 ## Staff etiquette
-- Sign up with your full first and last names so you can be found in the member directory and smart photo eg. your staff photo. The best way to show we are from Zengenti is to add it to your last name eg. Lambert - Zengenti. In the 'What I do' section of your user profile please add your job title.
+- Sign up with your full first and last names so you can be found in the member directory and smart photo eg. your staff photo. The best way to show we are from Zengenti is to add it to your last name eg. 'Smith - Zengenti'. In the 'What I do' section of your user profile please add your job title.
 - The Contensis Slack channel is a a public-facing channel, so no internal work or personal stuff on there please - definately no turd emojis, off-colour jokes, gratuitous gifs etc. We can be informal, but never unprofessional.
 - If you know the answer to a query, answer it straight in the main post. If it will require further discussion create a sub thread.
 - Try to answer queries publicly - don’t initiate private messages or channels unless the client is complaining.

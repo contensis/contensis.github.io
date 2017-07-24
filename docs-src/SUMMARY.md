@@ -10,6 +10,17 @@
 	* [Delete an API key](/api-keys/delete-an-api-key.md)
 	* [Disable an API key](/api-keys/disable-an-api-key.md)
 
+## Components
+	* [View and filter components](/components/view-and-filter-components.md)
+	* [Create a component](/components/create-a-component.md)
+	* [Add fields to a component](/components/add-fields-to-a-component.md)
+	* [Remove fields from a component](/components/remove-fields-from-a-component.md)
+	* [Update a component](/components/update-a-component.md)
+	* [Delete a component](/components/delete-a-component.md)
+	* [Versioning](/components/versioning.md)
+	* [Workflow states](/components/workflow-states.md)
+
+
 ## Content Types
 * [View and filter content types](/content-types/view-and-filter-content-types.md)
 * [Create a content type](/content-types/create-a-content-type.md)

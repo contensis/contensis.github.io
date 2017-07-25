@@ -11,6 +11,7 @@
 	* [Disable an API key](/api-keys/disable-an-api-key.md)
 
 ## Components
+* [Overview](/components/README.md)
 	* [View and filter components](/components/view-and-filter-components.md)
 	* [Create a component](/components/create-a-component.md)
 	* [Add fields to a component](/components/add-fields-to-a-component.md)
@@ -19,7 +20,6 @@
 	* [Delete a component](/components/delete-a-component.md)
 	* [Versioning](/components/versioning.md)
 	* [Workflow states](/components/workflow-states.md)
-
 
 ## Content Types
 * [View and filter content types](/content-types/view-and-filter-content-types.md)

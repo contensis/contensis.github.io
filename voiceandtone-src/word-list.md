@@ -8,6 +8,7 @@ These words can be slippery. Here's how we write them.
 - Contensis (capital C)
 - datacentre (one word)
 - decoupled (one word)
+- dropdown (one word)
 - email (no hyphen)
 - fail-over (jargon - try not to use
 - front-end / back-end (hyphenated)

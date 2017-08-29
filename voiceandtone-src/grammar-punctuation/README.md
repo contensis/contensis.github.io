@@ -34,7 +34,7 @@ Apostrophes are also used to show where letters have been replaced in abbreviati
 *It's doing its job.*
 
 ## Bold
-Use bold to indicate Contensis specific buttons e.g. **Submit & Approve**
+Use bold to indicate Contensis specific buttons that are being used e.g. Click **Submit & Approve**
 
 ## Capitalisation
 Capitalise these things:
@@ -150,7 +150,7 @@ We should use 3rd person when referring to our products
 “It is a great software solution..”
 
 ## Italics
-Use Italics only for natural emphasis or to refer to sections/areas of Contensis eg. _Management Console_
+Use Italics only for natural emphasis or to refer to sections/areas of Contensis eg. Navigate to the _Management Console_
 
 ## Jargon
 Jargon is language that’s overused in a community. At Zengenti, we tend to run into two particular forms: corporate and technical jargon. **We don’t like jargon.**

@@ -8,9 +8,9 @@ Another indication that the item is in draft is that it has no major version in 
 
 ## Awaiting publish
 
-When a component has been published at least once, and had further changes saved to it, the component will be _Awaiting Publish_ until it is published. It's effectively published and has a new draft state. Components that are _Awaiting Publish_ will be highlighted in orange.
+When a component has been published at least once, and had further changes saved to it, the component will be _Awaiting publish_ until it is published. It's effectively published and has a new draft state. Components that are _Awaiting publish_ will be highlighted in orange.
 
-Another indication that the item is _Awaiting Publish_ is that it will have major and minor version numbers _e.g._ 1.6.
+Another indication that the item is _Awaiting publish_ is that it will have major and minor version numbers _e.g._ 1.6.
 
 ## Published
 

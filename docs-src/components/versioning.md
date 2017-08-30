@@ -9,6 +9,6 @@ Each time a change is made to a component and saved the minor version number is 
 
 ## Publishing a component
 
-When a component is ready for publishing, pressing **Publish** in the _Component Builder_ will change the major version number.
+When a component is ready for publishing, pressing **Publish** in the _Component builder_ will change the major version number.
 
 > _e.g._ Having added all my fields to a newly created component and saved it. Pressing **Publish** increments the version number from 0.2 to 1.0 and changes the workflow state of the component to _Published_.

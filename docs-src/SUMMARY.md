@@ -18,8 +18,10 @@
 	* [Remove fields from a component](/components/remove-fields-from-a-component.md)
 	* [Update a component](/components/update-a-component.md)
 	* [Delete a component](/components/delete-a-component.md)
+	* [Component usage](/components/component-usage.md)
 	* [Versioning](/components/versioning.md)
 	* [Workflow states](/components/workflow-states.md)
+	* [Add component to a content type](/components/add-a-component-to-a-content-type.md)
 
 ## Content Types
 * [View and filter content types](/content-types/view-and-filter-content-types.md)

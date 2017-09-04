@@ -30,6 +30,7 @@ These words can be slippery. Here's how we write them.
 - prerequisite (one word)
 - program / programme (UK spelling is programme unless it is a computer program; 'I saw a fascinating TV programme about computer programs'
 - rename (no hyphen)
+- read-only (hyphenated)
 - reuse (one word)
 - reusable (one word)
 - re-size (hyphenated)

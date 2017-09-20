@@ -12,6 +12,7 @@ These words can be slippery. Here's how we write them.
 - email (no hyphen)
 - fail-over (jargon - try not to use
 - front-end / back-end (hyphenated)
+- GitHub (capital G, capital H)
 - go-live (hyphenated)
 - help desk (two words, no hyphen)
 - higher-level (hyphenated)

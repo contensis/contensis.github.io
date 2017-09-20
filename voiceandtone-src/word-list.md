@@ -20,12 +20,12 @@ These words can be slippery. Here's how we write them.
 - kick start (two words)
 - knowledge base (two words)
 - login and logout are nouns (usually used as adjectives), e.g., "Click the login button."
-- Log in and log out are verbs, e.g., "Log in to the website."
+- log in and log out are verbs, e.g., "Log in to the website."
 - markup (one word)
 - metadata (one word)
 - microsite (one word)
 - misspelt or misspelled (either is correct, we prefer misspelled)
-- Pre-discovery (hyphenated)
+- pre-discovery (hyphenated)
 - pre-populated (hyphenated)
 - prerequisite (one word)
 - program / programme (UK spelling is programme unless it is a computer program; 'I saw a fascinating TV programme about computer programs'

@@ -7,7 +7,7 @@ We write for our users. Though our voice doesn’t change much, our tone adapts 
 - Don’t market features – explain them.
 - Every post should teach readers something. Enlighten them with extra links, tips, and information that makes them smarter – or sneak peeks into our company personality.
 
-## Forum responses
+## Slack responses
 - Offer a solution or next step.
 - Find opportunities to sound positive, mention new features and encourage users to upgrade.
 - Show willingness and make it clear that we are there for them.

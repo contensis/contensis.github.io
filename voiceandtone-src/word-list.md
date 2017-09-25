@@ -20,8 +20,10 @@ These words can be slippery. Here's how we write them.
 - kick-off (hyphenated)
 - kick start (two words)
 - knowledge base (two words)
-- login and logout are nouns (usually used as adjectives), e.g., "Click the login button."
-- log in and log out are verbs, e.g., "Log in to the website."
+- Licence (noun e.g., 'your licence key')
+- License (verb e.g., 'talk to us about licensing options')
+- login and logout are nouns (usually used as adjectives), e.g., 'Click the login button'
+- log in and log out are verbs, e.g., 'Log in to the website'
 - markup (one word)
 - metadata (one word)
 - microsite (one word)

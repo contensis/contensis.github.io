@@ -10,7 +10,7 @@ These words can be slippery. Here's how we write them.
 - decoupled (one word)
 - dropdown (one word)
 - email (no hyphen)
-- fail-over (jargon - try not to use
+- fail-over (jargon - try not to use)
 - front-end / back-end (hyphenated)
 - GitHub (capital G, capital H)
 - go-live (hyphenated)
@@ -31,7 +31,7 @@ These words can be slippery. Here's how we write them.
 - pre-discovery (hyphenated)
 - pre-populated (hyphenated)
 - prerequisite (one word)
-- program / programme (UK spelling is programme unless it is a computer program; 'I saw a fascinating TV programme about computer programs'
+- program / programme (UK spelling is programme unless it is a computer program; 'I saw a fascinating TV programme about computer programs')
 - rename (no hyphen)
 - read-only (hyphenated)
 - reuse (one word)

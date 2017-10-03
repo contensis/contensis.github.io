@@ -24,6 +24,7 @@ These words can be slippery. Here's how we write them.
 - License (verb e.g., 'talk to us about licensing Contensis')
 - login and logout are nouns (usually used as adjectives), e.g., 'Click the login button'
 - log in and log out are verbs, e.g., 'Log in to the website'
+- lower case (two words)
 - markup (one word)
 - metadata (one word)
 - microsite (one word)
@@ -45,6 +46,7 @@ These words can be slippery. Here's how we write them.
 - subtemplate (no hyphen)
 - troubleshooting (one word)
 - untick / uncheck (no hyphen)
+- upper case (two words)
 - webchat
 - webpage (one word)
 - webservers (one word, or can use just ‘server’)

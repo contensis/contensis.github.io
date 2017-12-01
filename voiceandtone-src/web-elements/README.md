@@ -101,7 +101,7 @@ Poster images for ZenHub videos need to be 1280 x 720px.
 - Don’t have \<p> tags in table contents i.e. `<td>Hello</td>` not `<td><p>hello</p></td>`
 
 ## Underlining
-Never underline anything.
+Never underline anything that is not a link.
 
 ## Video
 We usually show videos below the intro paragraph on a ZenHub page. It's good practice to display a helpful/informative poster image.

@@ -76,6 +76,9 @@ For example, if you want to link to a page about permissions, don't do this:
 
 ...an administrator needs to setup their <a href="https://zenhub.zengenti.com/Contensis/9/kb/setup-and-configuration/Administration/permissions.aspx">permissions</a>.
 
+### Formatting links
+Links anywhere in body text should be underlined, but not in titles, long lists or landing pages. 
+
 ## Paragraphs
 Each paragraph should address a single point or idea. They should not be too long, nor should they ramble. Start each paragraph with one or two sentences containing the key information or conclusion.
 

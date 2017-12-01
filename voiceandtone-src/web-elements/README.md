@@ -109,4 +109,4 @@ We usually show videos below the intro paragraph on a ZenHub page. It's good pra
 ## URLS
 We use lowercase characters in out URL structures in all cases.
 
-For example: https://zenhub.zengenti.com/contensis/r83/kb/assets-uploadable-content/video/insert-a-video.aspx
+For example: https://zenhub.zengenti.com/Contensis/10.1/kb/Assets-uploadable-content/Video/Insert-a-video.aspx
